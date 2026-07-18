@@ -47,6 +47,43 @@ import base64 as _base64  # noqa: E402
 FAVICON = "data:image/svg+xml;base64," + _base64.b64encode(_SVG_FAVICON.encode()).decode()
 TAG_FAVICON = f'<link rel="icon" href="{FAVICON}">'
 
+_SVG_MARCA = _SVG_FAVICON.replace("<svg ", "<svg width='34' height='34' ")
+
+# CSS do cabeçalho de marca, compartilhado por todas as páginas (site, relatório, apoio)
+CSS_MARCA = """
+.topo-site { display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+  padding-bottom:14px; border-bottom:1px solid #232D31; margin-bottom:20px; }
+.brand { display:inline-flex; align-items:center; gap:10px; text-decoration:none; }
+.wordmark { font-size:25px; font-weight:800; letter-spacing:.20em; color:#F4F5F6; }
+.brand-o { color:#8FCB9B; }
+.brand-tag { color:#8b98a9; font-size:11.5px; letter-spacing:.10em; text-transform:uppercase; }
+.topo-site input { margin-left:auto; background:#182024; color:#F4F5F6;
+  border:1px solid #314045; border-radius:8px; padding:7px 12px; font-size:13.5px; width:250px; }
+"""
+
+
+def marca_html(inicio_href: str | None = None, com_busca_ticker: bool = False) -> str:
+    """Cabeçalho de marca (bússola + SCOUT + tagline), como manda a vitrine."""
+    conteudo = (
+        f"{_SVG_MARCA}"
+        '<span class="wordmark">SC<span class="brand-o">O</span>UT</span>'
+    )
+    if inicio_href:
+        marca = f'<a class="brand" href="{inicio_href}" title="todos os fundos">{conteudo}</a>'
+    else:
+        marca = f'<span class="brand">{conteudo}</span>'
+    tagline = (
+        '<span class="brand-tag">nós exploramos. '
+        '<span class="brand-o">você decide.</span></span>'
+    )
+    busca = (
+        '<input id="ir-ticker" placeholder="ir para um fundo… (ex.: HGLG11)" '
+        'onkeydown="irTicker(event, this)">'
+        if com_busca_ticker
+        else ""
+    )
+    return f'<header class="topo-site">{marca}{tagline}{busca}</header>'
+
 
 def salvar(
     completo: AnaliseCompleta,
@@ -251,18 +288,18 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
   padding:6px 16px; font-size:13px; font-weight:600; cursor:pointer; margin-top:10px; }}
 .ver-mais:hover {{ border-color:#8FCB9B; }}
 .rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:30px; padding-top:14px; }}
+{CSS_MARCA}
 @media print {{ body {{ background:#fff; color:#111; }} }}
 </style>
 </head>
 <body>
 <div class="pagina">
-  <div class="marca">SCOUT — nós exploramos, você decide</div>
+  {marca_html("index.html" if publicados is not None else None, com_busca_ticker=publicados is not None)}
   <div class="topo">
     <h1>{_e(raiox.ticker)} <small>{_e(raiox.nome)}</small></h1>
     {_selo_html(raiox)}
     <a class="btn-topo" href="#calculadoras">🧮 Calculadoras</a>
   </div>
-  {_nav_site(publicados)}
   <div class="meta">
     {_e(raiox.cnpj)} · {_e(raiox.classificacao)} · Gestão {_e(raiox.gestao.lower())}<br>
     informes CVM até <b>{_e(raiox.dados_ate)}</b>{_cotacao_em(raiox, agora)} · relatório gerado em {agora.strftime("%d/%m/%Y %H:%M")}
@@ -377,17 +414,6 @@ if (document.getElementById('rt-valor')) {{ calcRetro(); }}
 
 def _e(texto: str) -> str:
     return html_escape.escape(str(texto), quote=True)
-
-
-def _nav_site(publicados: set[str] | None) -> str:
-    """Barra de navegação entre páginas — só no site (relatório local é avulso)."""
-    if publicados is None:
-        return ""
-    return (
-        '<div class="nav-site"><a href="index.html">← todos os fundos</a>'
-        '<input id="ir-ticker" placeholder="ir para outro fundo… (ex.: HGLG11)" '
-        'onkeydown="irTicker(event, this)"></div>'
-    )
 
 
 def _link_se_publicado(ticker: str, publicados: set[str] | None) -> str:

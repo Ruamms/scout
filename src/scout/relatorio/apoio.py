@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from .html import TAG_FAVICON
+from .html import CSS_MARCA, TAG_FAVICON, marca_html
 
 CHAVE_PIX = "ruamms3@gmail.com"
 NOME_RECEBEDOR = "Ruan Sampaio"
@@ -89,11 +89,13 @@ textarea {{ width:100%; background:#182024; color:#8b98a9; border:1px solid #232
 button {{ background:#8FCB9B; color:#101415; border:0; border-radius:8px; padding:8px 18px; font-weight:700; cursor:pointer; margin-top:8px; }}
 a {{ color:#8FCB9B; }}
 .rodape {{ color:#66707d; font-size:12px; margin-top:30px; }}
+{CSS_MARCA}
+.topo-site {{ justify-content:center; }}
 </style>
 </head>
 <body>
 <div class="pagina">
-  <div class="marca">SCOUT</div>
+  {marca_html("index.html")}
   <h1>☕ Apoie o projeto</h1>
   <p>O Scout é gratuito e de código aberto. Se ele te ajudou, qualquer
   contribuição via PIX ajuda a manter o projeto vivo — pagando os custos de

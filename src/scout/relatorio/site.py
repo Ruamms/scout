@@ -135,11 +135,12 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
 .bloco ol {{ padding-left:22px; font-size:13.5px; }}
 .bloco li {{ margin:4px 0; }}
 .rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:30px; padding-top:14px; }}
+{relatorio_html.CSS_MARCA}
 </style>
 </head>
 <body>
 <div class="pagina">
-  <div class="marca">SCOUT</div>
+  {relatorio_html.marca_html()}
   <h1>Lemos os documentos oficiais para que você não precise</h1>
   <div class="meta" style="font-size:14.5px;margin-bottom:4px">"Será que tem algum problema
   escondido naquele relatório?" — essa dúvida vira uma lista de alertas com a conta e a

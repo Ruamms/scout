@@ -78,9 +78,12 @@ def test_paginas_do_site_tem_navegacao_e_sem_links_mortos(con, tmp_path):
     # com limite=2 (maiores PLs: BETA e GAMA), ALFA11 fica fora do site
     assert not (tmp_path / "site" / "ALFA11.html").exists()
     pagina = (tmp_path / "site" / "BETA11.html").read_text(encoding="utf-8")
-    # navegação: voltar ao índice + salto por ticker
-    assert 'href="index.html">← todos os fundos</a>' in pagina
+    # navegação: a marca no topo volta ao índice + salto por ticker no header
+    assert 'class="brand" href="index.html"' in pagina
+    assert 'id="ir-ticker"' in pagina
     assert "function irTicker" in pagina
+    # header de marca visível (wordmark com o O verde)
+    assert 'class="wordmark">SC<span class="brand-o">O</span>UT</span>' in pagina
     # ALFA11 é fundo irmão (mesmo administrador) mas não tem página: sem link morto
     assert 'href="ALFA11.html"' not in pagina
     assert "ALFA11" in pagina  # segue visível, como texto

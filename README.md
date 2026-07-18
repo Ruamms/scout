@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/scout-logo.png" alt="Scout — nós exploramos, você decide" width="420">
+  <img src="assets/scout-banner.png" alt="Scout — nós exploramos, você decide" width="420">
 </p>
 
 # Scout
