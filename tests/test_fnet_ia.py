@@ -94,18 +94,31 @@ def test_analisar_relatorio_monta_chamada_ao_ollama(monkeypatch):
     import io
     import urllib.request
 
+    fluxo = b"\n".join(
+        json.dumps(evento).encode()
+        for evento in (
+            {"message": {"content": "• fato "}},
+            {"message": {"content": "extraído"}},
+            {"message": {"content": ""}, "done": True},
+        )
+    )
+
     def _urlopen(requisicao, timeout=None):
         capturado["url"] = requisicao.full_url
         capturado["corpo"] = json.loads(requisicao.data)
-        return io.BytesIO(json.dumps({"message": {"content": "• fato extraído"}}).encode())
+        return io.BytesIO(fluxo)
 
     monkeypatch.setattr(urllib.request, "urlopen", _urlopen)
-    saida = ia.analisar_relatorio("texto do relatório", "CONTEXTO X", modelo="teste:1b")
+    progresso = []
+    saida = ia.analisar_relatorio(
+        "texto do relatório", "CONTEXTO X", modelo="teste:1b", ao_progresso=progresso.append
+    )
     assert saida == "• fato extraído"
+    assert progresso == [1, 2]  # um callback por trecho com conteúdo
     assert capturado["url"].endswith("/api/chat")
     corpo = capturado["corpo"]
     assert corpo["model"] == "teste:1b"
-    assert corpo["stream"] is False
+    assert corpo["stream"] is True
     assert "nunca invente" in corpo["messages"][0]["content"]
     assert "CONTEXTO X" in corpo["messages"][1]["content"]
     assert "texto do relatório" in corpo["messages"][1]["content"]
@@ -143,7 +156,9 @@ def test_cli_ia_fluxo_completo(con, zip_cvm, tmp_path, monkeypatch):
         lambda con_, cnpj, destino=None: (caminho_pdf, _DOCUMENTOS[1]),
     )
     monkeypatch.setattr(
-        modulo_ia, "analisar_relatorio", lambda texto, ctx, modelo=None: "• fato citado"
+        modulo_ia,
+        "analisar_relatorio",
+        lambda texto, ctx, modelo=None, ao_progresso=None: "• fato citado",
     )
     resultado = CliRunner().invoke(app, ["ia", "tste11"])
     assert resultado.exit_code == 0, resultado.output

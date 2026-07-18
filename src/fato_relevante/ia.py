@@ -68,14 +68,23 @@ def extrair_texto_pdf(caminho: Path, max_paginas: int = 40) -> str:
 
 
 def analisar_relatorio(
-    texto_relatorio: str, contexto_fundo: str, modelo: str | None = None
+    texto_relatorio: str,
+    contexto_fundo: str,
+    modelo: str | None = None,
+    ao_progresso=None,
 ) -> str:
-    """Envia o relatório + contexto determinístico ao modelo local."""
+    """Envia o relatório + contexto determinístico ao modelo local.
+
+    A resposta vem em STREAMING: em máquinas onde o modelo não cabe todo
+    na GPU, o processamento do prompt pode levar minutos — com stream a
+    conexão nunca fica ociosa e dá para mostrar progresso
+    (`ao_progresso(n_trechos)` é chamado a cada pedaço recebido).
+    """
     modelo = modelo or MODELO_PADRAO
     corpo = json.dumps(
         {
             "model": modelo,
-            "stream": False,
+            "stream": True,
             "options": {"temperature": 0.2},
             "messages": [
                 {"role": "system", "content": PROMPT_SISTEMA},
@@ -95,9 +104,22 @@ def analisar_relatorio(
         data=corpo,
         headers={"Content-Type": "application/json"},
     )
-    with urllib.request.urlopen(requisicao, timeout=600) as resposta:
-        dados = json.load(resposta)
-    return dados.get("message", {}).get("content", "").strip()
+    pedacos: list[str] = []
+    # timeout por LEITURA: o primeiro token só chega depois do modelo processar
+    # o prompt inteiro, o que pode demorar bastante em GPU pequena
+    with urllib.request.urlopen(requisicao, timeout=1800) as resposta:
+        for linha in resposta:
+            if not linha.strip():
+                continue
+            evento = json.loads(linha)
+            trecho = evento.get("message", {}).get("content", "")
+            if trecho:
+                pedacos.append(trecho)
+                if ao_progresso:
+                    ao_progresso(len(pedacos))
+            if evento.get("done"):
+                break
+    return "".join(pedacos).strip()
 
 
 def contexto_do_raiox(raiox) -> str:

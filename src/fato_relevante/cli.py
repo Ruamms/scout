@@ -377,8 +377,17 @@ def ia(
 
         raiox = analise.montar_raio_x(con, ticker)
         contexto = modulo_ia.contexto_do_raiox(raiox) if raiox else ""
-        console.print(f"Lendo com o modelo [bold]{modelo_final}[/] (local)… pode levar alguns minutos.")
-        leitura = modulo_ia.analisar_relatorio(texto, contexto, modelo_final)
+        console.print(
+            f"Lendo com o modelo [bold]{modelo_final}[/] (local)… a primeira resposta "
+            "pode demorar alguns minutos enquanto o modelo processa o relatório."
+        )
+        with console.status("processando o relatório…") as estado:
+            leitura = modulo_ia.analisar_relatorio(
+                texto,
+                contexto,
+                modelo_final,
+                ao_progresso=lambda n: estado.update(f"gerando a leitura… {n} trechos recebidos"),
+            )
 
         console.print()
         console.print(
