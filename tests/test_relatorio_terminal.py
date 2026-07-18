@@ -1,5 +1,7 @@
 from rich.console import Console
+from typer.testing import CliRunner
 
+from fato_relevante.cli import app
 from fato_relevante.dados_exemplo import raio_x_exemplo
 from fato_relevante.modelos import RaioX
 from fato_relevante.relatorio.terminal import renderizar
@@ -24,6 +26,19 @@ def test_renderiza_raio_x_completo():
 def test_dados_de_exemplo_exibem_aviso():
     saida = _render(raio_x_exemplo("XPTO11"))
     assert "DADOS DE EXEMPLO" in saida
+
+
+def test_cli_analisar_renderiza_ticker():
+    resultado = CliRunner().invoke(app, ["analisar", "adsh11"])
+    assert resultado.exit_code == 0
+    assert "ADSH11" in resultado.output
+
+
+def test_cli_sem_argumentos_fora_de_terminal_mostra_ajuda():
+    # stdin do CliRunner não é um TTY, então deve cair na ajuda, não no interativo
+    resultado = CliRunner().invoke(app, [])
+    assert resultado.exit_code == 0
+    assert "analisar" in resultado.output
 
 
 def test_sem_red_flags_mostra_nenhum_alerta():

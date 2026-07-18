@@ -23,10 +23,46 @@ _garantir_stdio_utf8()
 
 app = typer.Typer(
     help="Fato Relevante — o raio-x dos ativos da bolsa. Fatos, não dicas.",
-    no_args_is_help=True,
+    no_args_is_help=False,
     add_completion=False,
 )
 console = Console()
+
+
+@app.callback(invoke_without_command=True)
+def principal(ctx: typer.Context) -> None:
+    """Sem argumentos: modo interativo (ex.: duplo clique no fato.exe)."""
+    if ctx.invoked_subcommand is not None:
+        return
+    if sys.stdin is not None and sys.stdin.isatty() and console.is_terminal:
+        _modo_interativo()
+    else:
+        typer.echo(ctx.get_help())
+
+
+def _modo_interativo() -> None:
+    console.print()
+    console.print("[bold]FATO RELEVANTE[/] [dim]— o raio-x dos ativos da bolsa[/]")
+    console.print("[dim]Digite o ticker de um ativo (ex.: ADSH11) ou Enter para sair.[/]")
+    while True:
+        console.print()
+        try:
+            ticker = console.input("[bold cyan]ticker> [/]").strip()
+        except (EOFError, KeyboardInterrupt):
+            break
+        if not ticker:
+            break
+        _exibir_raio_x(ticker)
+
+
+def _exibir_raio_x(ticker: str, html: bool = False) -> None:
+    from .dados_exemplo import raio_x_exemplo
+    from .relatorio.terminal import renderizar
+
+    raiox = raio_x_exemplo(ticker.strip().upper())
+    renderizar(raiox, console)
+    if html:
+        console.print("[yellow]Relatório HTML ainda não implementado (milestone 5 do ROADMAP).[/]")
 
 
 @app.command()
@@ -35,13 +71,7 @@ def analisar(
     html: bool = typer.Option(False, "--html", help="Gera o relatório em HTML e abre no navegador."),
 ) -> None:
     """Monta o raio-x de um ativo a partir do cache local de dados oficiais."""
-    from .dados_exemplo import raio_x_exemplo
-    from .relatorio.terminal import renderizar
-
-    raiox = raio_x_exemplo(ticker.strip().upper())
-    renderizar(raiox, console)
-    if html:
-        console.print("[yellow]Relatório HTML ainda não implementado (milestone 5 do ROADMAP).[/]")
+    _exibir_raio_x(ticker, html)
 
 
 @app.command()
