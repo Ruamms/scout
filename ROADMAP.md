@@ -20,7 +20,7 @@ A visão de produto completa (referências de mercado, backlog e decisões de de
 - [x] **M7 — Raio-x do administrador** — seção "Administrador" no terminal e no HTML: outros FIIs da mesma casa com ticker (derivado do ISIN), idade, segmento e **selo individual** (calculado sem cotação), com link cruzado entre relatórios; migração automática da base (recarrega informes mensais para preencher o administrador histórico)
 - [x] **M8 — Ranking / pesquisa avançada** — `fato ranking --por dy|pvp|pl|cotistas|cotacao --top N --sem-alertas --segmento X`: varre a base inteira (~1.300 fundos ativos em segundos), por padrão só fundos com ticker (negociáveis); "sem alertas" = selo verde/amarelo; critério e filtros sempre explícitos no rodapé ("fato ordenado, não recomendação"); relatório do fundo ganhou a seção **Pares do segmento** (5 maiores por PL + média do segmento, com selo e links cruzados)
   - P/VP e cotação nos rankings dependem do cache de cotações (o site do M9 terá todas)
-- [ ] **M9 — Site estático** — GitHub Actions gera as páginas de todos os FIIs + rankings 1x/dia e publica no GitHub Pages
+- [x] **M9 — Site estático** — `fato site` gera índice buscável + página de cada FII negociável + rankings do dia + página de apoio; workflow do GitHub Actions (`.github/workflows/site.yml`) roda 1x/dia útil e publica no GitHub Pages (requer habilitar Pages: Settings → Pages → Source: GitHub Actions)
 
 ## Fase 2 — Camada qualitativa
 

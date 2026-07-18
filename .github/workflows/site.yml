@@ -1,0 +1,58 @@
+name: site
+
+on:
+  schedule:
+    - cron: "0 10 * * 1-5"  # ~07:00 BRT, dias úteis
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Instalar dependências
+        run: uv sync
+
+      # cache do banco local entre execuções: o `fato atualizar` só rebaixa
+      # os 2 últimos anos, então o cache poupa ~20 downloads da CVM por dia
+      - name: Cache da base de dados
+        uses: actions/cache@v4
+        with:
+          path: ~/.fato-relevante/fato.db
+          key: fato-db-${{ github.run_id }}
+          restore-keys: fato-db-
+
+      - name: Atualizar dados da CVM
+        run: uv run fato atualizar
+
+      - name: Gerar site
+        run: uv run fato site --destino _site
+
+      - name: Publicar artefato do Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

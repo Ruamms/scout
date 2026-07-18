@@ -176,6 +176,37 @@ def ranking(
 
 
 @app.command()
+def site(
+    destino: str = typer.Option(None, "--destino", help="Pasta de saída (padrão: dados/site)."),
+    sem_cotacoes: bool = typer.Option(False, "--sem-cotacoes", help="Não busca cotações na internet."),
+    limite: int = typer.Option(None, "--limite", help="Gera só os N maiores fundos (para teste)."),
+) -> None:
+    """Gera o site estático completo: índice buscável + página de cada FII."""
+    from pathlib import Path
+
+    from . import armazenamento
+    from .relatorio import site as modulo_site
+
+    con = armazenamento.conectar()
+    try:
+        if armazenamento.base_vazia(con):
+            console.print("[yellow]Base local vazia.[/] Rode [bold]fato atualizar[/] primeiro.")
+            raise typer.Exit(1)
+        pasta = Path(destino) if destino else armazenamento.diretorio_dados() / "site"
+        console.print(f"Gerando site em [bold]{pasta}[/]…")
+        resumo = modulo_site.gerar(
+            con,
+            pasta,
+            com_cotacoes=not sem_cotacoes,
+            limite=limite,
+            ao_progredir=lambda msg: console.print(f"  [dim]{msg}[/]"),
+        )
+        console.print(f"[green]{resumo['paginas']} páginas geradas em {resumo['destino']}[/]")
+    finally:
+        con.close()
+
+
+@app.command()
 def atualizar() -> None:
     """Baixa/atualiza os dados abertos da CVM para o cache local."""
     from . import armazenamento

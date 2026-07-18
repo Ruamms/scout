@@ -55,8 +55,10 @@ class AnaliseCompleta:
     graficos: DadosGraficos
 
 
-def montar_completo(con: sqlite3.Connection, ticker: str) -> AnaliseCompleta | None:
-    raiox = montar_raio_x(con, ticker)
+def montar_completo(
+    con: sqlite3.Connection, ticker: str, varredura: list | None = None
+) -> AnaliseCompleta | None:
+    raiox = montar_raio_x(con, ticker, varredura=varredura)
     if raiox is None:
         return None
     fundo = armazenamento.resolver_fundo(con, raiox.ticker)
@@ -214,7 +216,11 @@ def _acumulado_indice(
     return acumulado
 
 
-def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:
+def montar_raio_x(
+    con: sqlite3.Connection, ticker: str, varredura: list | None = None
+) -> RaioX | None:
+    """Monta o raio-x. `varredura` (ranking.varrer pré-computado) evita
+    varrer o segmento de novo ao gerar muitas páginas de uma vez."""
     ticker = ticker.strip().upper()
     fundo = armazenamento.resolver_fundo(con, ticker)
     if fundo is None:
@@ -240,7 +246,7 @@ def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:
     )
     resultado = redflags.avaliar(contexto)
     admin = armazenamento.administrador_do_fundo(con, fundo.cnpj)
-    pares, pares_media = _pares_do_segmento(con, fundo.cnpj, fundo.segmento)
+    pares, pares_media = _pares_do_segmento(con, fundo.cnpj, fundo.segmento, varredura)
 
     notas = []
     if not cotacoes:
@@ -351,29 +357,36 @@ _ticker_do_isin = series.ticker_do_isin
 
 
 def _pares_do_segmento(
-    con: sqlite3.Connection, cnpj: str, segmento: str, top: int = 5
+    con: sqlite3.Connection,
+    cnpj: str,
+    segmento: str,
+    varredura: list | None = None,
+    top: int = 5,
 ) -> tuple[list, dict]:
     """Maiores pares do mesmo segmento (por PL) + médias do segmento."""
     if not segmento or segmento == "—":
         return [], {}
-    cnpjs = {
-        linha["cnpj"]
-        for linha in con.execute(
-            """
-            WITH ultimo AS (
-                SELECT cnpj, MAX(competencia) AS competencia FROM informes_gerais GROUP BY cnpj
+    if varredura is not None:
+        resumos = [r for r in varredura if r.segmento == segmento]
+    else:
+        cnpjs = {
+            linha["cnpj"]
+            for linha in con.execute(
+                """
+                WITH ultimo AS (
+                    SELECT cnpj, MAX(competencia) AS competencia FROM informes_gerais GROUP BY cnpj
+                )
+                SELECT g.cnpj FROM informes_gerais g
+                JOIN ultimo u ON u.cnpj = g.cnpj AND u.competencia = g.competencia
+                WHERE g.segmento = ?
+                """,
+                (segmento,),
             )
-            SELECT g.cnpj FROM informes_gerais g
-            JOIN ultimo u ON u.cnpj = g.cnpj AND u.competencia = g.competencia
-            WHERE g.segmento = ?
-            """,
-            (segmento,),
-        )
-    }
-    if len(cnpjs) < 2:
-        return [], {}
-    resumos = ranking.varrer(con, cnpjs=cnpjs)
-    if not resumos:
+        }
+        if len(cnpjs) < 2:
+            return [], {}
+        resumos = ranking.varrer(con, cnpjs=cnpjs)
+    if len(resumos) < 2:
         return [], {}
 
     def _media(campo: str) -> float | None:

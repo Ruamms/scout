@@ -28,6 +28,12 @@ Números vêm de código. Texto vem de IA. Nunca o contrário.
 | Fundamentus | Snapshot atual para validação cruzada |
 | brapi.dev | Série histórica de cotações |
 
+## Site
+
+O raio-x de todos os FIIs negociáveis, atualizado diariamente via GitHub Actions:
+**https://ruamms.github.io/fato-relevante/** — índice buscável, página por fundo,
+rankings do dia com critérios explícitos.
+
 ## Como rodar
 
 Com [uv](https://docs.astral.sh/uv/) instalado:

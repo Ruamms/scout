@@ -61,11 +61,12 @@ def montar(
     sem_alertas: bool = False,
     segmento: str | None = None,
     apenas_negociaveis: bool = True,
+    fundos: list[FundoResumo] | None = None,
 ) -> Ranking:
     if por not in CRITERIOS:
         raise ValueError(f"critério desconhecido: {por} (use {', '.join(CRITERIOS)})")
     descricao, campo, decrescente = CRITERIOS[por]
-    fundos = varrer(con)
+    fundos = list(fundos) if fundos is not None else varrer(con)
     total = len(fundos)
     filtros = []
     if apenas_negociaveis:
