@@ -137,6 +137,45 @@ def analisar(
 
 
 @app.command()
+def ranking(
+    por: str = typer.Option("dy", "--por", help="Critério: dy, pvp, pl, cotistas ou cotacao."),
+    top: int = typer.Option(10, "--top", help="Quantos fundos listar."),
+    sem_alertas: bool = typer.Option(
+        False, "--sem-alertas", help="Só fundos sem alertas de atenção ou graves."
+    ),
+    segmento: str = typer.Option(None, "--segmento", help="Filtra por segmento (contém)."),
+    incluir_nao_listados: bool = typer.Option(
+        False, "--incluir-nao-listados", help="Inclui fundos sem ticker (não negociáveis)."
+    ),
+) -> None:
+    """Ranking de FIIs da base local — fato ordenado com critério explícito."""
+    from . import armazenamento
+    from . import ranking as modulo_ranking
+    from .relatorio.terminal import renderizar_ranking
+
+    con = armazenamento.conectar()
+    try:
+        if armazenamento.base_vazia(con):
+            console.print("[yellow]Base local vazia.[/] Rode [bold]fato atualizar[/] primeiro.")
+            raise typer.Exit(1)
+        try:
+            resultado = modulo_ranking.montar(
+                con,
+                por=por,
+                top=top,
+                sem_alertas=sem_alertas,
+                segmento=segmento,
+                apenas_negociaveis=not incluir_nao_listados,
+            )
+        except ValueError as erro:
+            console.print(f"[red]{erro}[/]")
+            raise typer.Exit(1) from erro
+        renderizar_ranking(resultado, console)
+    finally:
+        con.close()
+
+
+@app.command()
 def atualizar() -> None:
     """Baixa/atualiza os dados abertos da CVM para o cache local."""
     from . import armazenamento

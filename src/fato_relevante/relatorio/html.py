@@ -224,6 +224,8 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
 
   {_secao_administrador(raiox)}
 
+  {_secao_pares(raiox)}
+
   <h2>Gráficos</h2>
   {"".join(secoes_graficos) or '<p class="na">sem séries suficientes para gráficos</p>'}
 
@@ -445,6 +447,48 @@ def _secao_administrador(raiox: RaioX, limite: int = 12) -> str:
   </table>
   <div class="nota">selo calculado sem cotação de bolsa (P/VP fora) · o link abre o relatório do
   fundo se ele já tiver sido gerado · ticker derivado do ISIN</div>
+  </div>
+"""
+
+
+def _secao_pares(raiox: RaioX) -> str:
+    if not raiox.pares:
+        return ""
+
+    def _celula(valor, formatador):
+        return formatador(valor) if valor is not None else "—"
+
+    linhas = []
+    for par in raiox.pares:
+        cor = _COR_SELO.get(par.selo.nivel, "#94a3b8")
+        rotulo = (
+            f'<a href="{_e(par.ticker)}.html">{_e(par.ticker)}</a>' if par.ticker else _e(par.nome[:30])
+        )
+        linhas.append(
+            f"<tr><td>{rotulo}</td><td>{_e(par.nome[:40])}</td>"
+            f"<td>{_celula(par.dy_12m, formato.percentual)}</td>"
+            f"<td>{_celula(par.pvp, formato.decimal)}</td>"
+            f"<td>{_celula(par.pl, formato.moeda_compacta)}</td>"
+            f'<td><span class="selo" style="background:{cor};font-size:11px;padding:2px 10px">'
+            f"{_e(par.selo.rotulo)}</span></td></tr>"
+        )
+    media = raiox.pares_media
+    linhas.append(
+        f'<tr style="border-top:2px solid #2a3441"><td colspan="2"><b>média do segmento '
+        f"({media.get('n', 0)} fundos)</b></td>"
+        f"<td><b>{_celula(media.get('dy'), formato.percentual)}</b></td>"
+        f"<td><b>{_celula(media.get('pvp'), formato.decimal)}</b></td>"
+        f"<td><b>{_celula(media.get('pl'), formato.moeda_compacta)}</b></td><td></td></tr>"
+    )
+    return f"""
+  <h2>Pares do segmento — {_e(raiox.classificacao)}{_ajuda("Pares do segmento")}</h2>
+  <div class="grafico" style="overflow-x:auto">
+  <table class="imoveis">
+    <thead><tr><th>ticker</th><th>fundo</th><th>DY 12m</th><th>P/VP</th><th>PL</th><th>selo</th></tr></thead>
+    <tbody>{"".join(linhas)}</tbody>
+  </table>
+  <div class="nota">os {len(raiox.pares)} maiores fundos do mesmo segmento (por PL) ·
+  P/VP só para fundos com cotação em cache · comparação de fatos, não recomendação</div>
   </div>
 """
 

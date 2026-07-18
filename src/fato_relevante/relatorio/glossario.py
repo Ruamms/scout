@@ -67,6 +67,11 @@ TERMOS = {
         "A evolução do tamanho do fundo. Crescimento por emissão de cotas não é a mesma "
         "coisa que crescimento por valorização — confira o número de cotas junto."
     ),
+    "Pares do segmento": (
+        "Os maiores fundos que atuam no mesmo segmento deste, com a média do segmento na "
+        "última linha. Comparar com pares dá contexto: um DY alto pode ser normal no "
+        "segmento — ou um ponto fora da curva que merece investigação."
+    ),
     "Administrador": (
         "A instituição responsável legal pelo fundo (contrata gestora, presta contas à "
         "CVM). Ver os outros fundos da mesma casa ajuda a formar opinião sobre o "

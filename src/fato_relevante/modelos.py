@@ -95,6 +95,8 @@ class RaioX:
     imoveis_em: str = ""  # competência do informe trimestral dos imóveis
     administrador: str = ""
     fundos_irmaos: list[FundoIrmao] = field(default_factory=list)
+    pares: list = field(default_factory=list)          # FundoResumo dos maiores pares do segmento
+    pares_media: dict = field(default_factory=dict)    # médias do segmento: dy, pvp, pl, n
     selo: Selo | None = None
     red_flags_avaliadas: bool = True
     exemplo: bool = False

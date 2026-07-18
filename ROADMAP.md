@@ -18,7 +18,8 @@ A visão de produto completa (referências de mercado, backlog e decisões de de
   - gotcha de escala CVM: no mesmo arquivo, vacância/inadimplência são FRAÇÃO (1.0=100%) e % receita é PERCENTUAL (0-100)
   - pendente: agrupamento por estado (parsing de endereço), setores/inquilinos, e usar reservas acumuladas para refinar a regra de distribuição
 - [x] **M7 — Raio-x do administrador** — seção "Administrador" no terminal e no HTML: outros FIIs da mesma casa com ticker (derivado do ISIN), idade, segmento e **selo individual** (calculado sem cotação), com link cruzado entre relatórios; migração automática da base (recarrega informes mensais para preencher o administrador histórico)
-- [ ] **M8 — Ranking / pesquisa avançada** — `fato ranking`: top N fundos por DY/P-VP/PL/cotistas com filtro "sem alertas" e por segmento; critério sempre explícito na saída; inclui a comparação com pares do mesmo segmento na página do fundo (estilo "comparando com outros FIIs")
+- [x] **M8 — Ranking / pesquisa avançada** — `fato ranking --por dy|pvp|pl|cotistas|cotacao --top N --sem-alertas --segmento X`: varre a base inteira (~1.300 fundos ativos em segundos), por padrão só fundos com ticker (negociáveis); "sem alertas" = selo verde/amarelo; critério e filtros sempre explícitos no rodapé ("fato ordenado, não recomendação"); relatório do fundo ganhou a seção **Pares do segmento** (5 maiores por PL + média do segmento, com selo e links cruzados)
+  - P/VP e cotação nos rankings dependem do cache de cotações (o site do M9 terá todas)
 - [ ] **M9 — Site estático** — GitHub Actions gera as páginas de todos os FIIs + rankings 1x/dia e publica no GitHub Pages
 
 ## Fase 2 — Camada qualitativa

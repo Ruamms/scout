@@ -10,7 +10,7 @@ from __future__ import annotations
 import dataclasses
 import sqlite3
 
-from . import armazenamento, formato, redflags, series
+from . import armazenamento, formato, ranking, redflags, series
 from .modelos import FundoIrmao, Imovel, IndicadorLinha, RaioX
 from .redflags.contexto import Contexto
 
@@ -240,6 +240,7 @@ def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:
     )
     resultado = redflags.avaliar(contexto)
     admin = armazenamento.administrador_do_fundo(con, fundo.cnpj)
+    pares, pares_media = _pares_do_segmento(con, fundo.cnpj, fundo.segmento)
 
     notas = []
     if not cotacoes:
@@ -295,6 +296,8 @@ def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:
         else "",
         administrador=admin["administrador"] if admin else "",
         fundos_irmaos=_fundos_irmaos(con, admin, fundo.cnpj) if admin else [],
+        pares=pares,
+        pares_media=pares_media,
         selo=redflags.selo(resultado),
         red_flags_avaliadas=True,
         exemplo=False,
@@ -318,7 +321,7 @@ def _fundos_irmaos(con: sqlite3.Connection, admin, cnpj_fundo: str) -> list[Fund
         )
         irmaos.append(
             FundoIrmao(
-                ticker=_ticker_do_isin(linha["isin"]),
+                ticker=series.ticker_do_isin(linha["isin"]),
                 nome=linha["nome"] or linha["cnpj"],
                 segmento=linha["segmento"] or "—",
                 anos=len(serie) / 12,
@@ -328,11 +331,51 @@ def _fundos_irmaos(con: sqlite3.Connection, admin, cnpj_fundo: str) -> list[Fund
     return irmaos
 
 
-def _ticker_do_isin(isin: str | None) -> str:
-    """BRHGLGCTF004 -> HGLG11 (convenção da B3 para cotas de FII)."""
-    if not isin or len(isin) < 6 or not isin.startswith("BR"):
-        return ""
-    return f"{isin[2:6]}11"
+_ticker_do_isin = series.ticker_do_isin
+
+
+def _pares_do_segmento(
+    con: sqlite3.Connection, cnpj: str, segmento: str, top: int = 5
+) -> tuple[list, dict]:
+    """Maiores pares do mesmo segmento (por PL) + médias do segmento."""
+    if not segmento or segmento == "—":
+        return [], {}
+    cnpjs = {
+        linha["cnpj"]
+        for linha in con.execute(
+            """
+            WITH ultimo AS (
+                SELECT cnpj, MAX(competencia) AS competencia FROM informes_gerais GROUP BY cnpj
+            )
+            SELECT g.cnpj FROM informes_gerais g
+            JOIN ultimo u ON u.cnpj = g.cnpj AND u.competencia = g.competencia
+            WHERE g.segmento = ?
+            """,
+            (segmento,),
+        )
+    }
+    if len(cnpjs) < 2:
+        return [], {}
+    resumos = ranking.varrer(con, cnpjs=cnpjs)
+    if not resumos:
+        return [], {}
+
+    def _media(campo: str) -> float | None:
+        valores = [getattr(r, campo) for r in resumos if getattr(r, campo) is not None]
+        return sum(valores) / len(valores) if valores else None
+
+    media = {
+        "dy": _media("dy_12m"),
+        "pvp": _media("pvp"),
+        "pl": _media("pl"),
+        "n": len(resumos),
+    }
+    pares = sorted(
+        (r for r in resumos if r.cnpj != cnpj),
+        key=lambda r: r.pl or 0,
+        reverse=True,
+    )[:top]
+    return pares, media
 
 
 def _marcar_alertas(indicadores: list[IndicadorLinha], flags) -> list[IndicadorLinha]:

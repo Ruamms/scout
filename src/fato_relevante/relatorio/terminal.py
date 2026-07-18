@@ -203,6 +203,47 @@ def _bloco_red_flag(flag: RedFlag) -> Group:
     return Group(cabecalho, Padding(corpo, (0, 0, 0, 8)))
 
 
+def renderizar_ranking(resultado, console: Console) -> None:
+    from .. import formato
+
+    tabela = Table(
+        title=f"RANKING — {resultado.descricao}",
+        title_justify="left",
+        title_style="bold",
+        box=box.SIMPLE_HEAD,
+        pad_edge=False,
+        padding=(0, 1, 0, 1),
+    )
+    tabela.add_column("ticker", no_wrap=True, min_width=6)
+    tabela.add_column("fundo", no_wrap=True, max_width=22)
+    tabela.add_column("DY 12m", justify="right", no_wrap=True, min_width=6)
+    tabela.add_column("P/VP", justify="right", no_wrap=True)
+    tabela.add_column("PL", justify="right", no_wrap=True, min_width=9)
+    tabela.add_column("selo", no_wrap=True)
+    for fundo in resultado.linhas:
+        tabela.add_row(
+            fundo.ticker or "—",
+            fundo.nome[:22],
+            formato.percentual(fundo.dy_12m) if fundo.dy_12m is not None else "—",
+            formato.decimal(fundo.pvp) if fundo.pvp is not None else "—",
+            formato.moeda_compacta(fundo.pl) if fundo.pl is not None else "—",
+            Text(f" {fundo.selo.rotulo} ", style=f"bold black on {fundo.selo.cor}"),
+        )
+    console.print()
+    console.print(tabela)
+    console.print(
+        Padding(
+            Text(
+                f"critério: {resultado.descricao} · filtros: {resultado.filtros} · "
+                f"{resultado.total_avaliado} fundos avaliados · "
+                "ranking é fato ordenado, não recomendação",
+                style="dim italic",
+            ),
+            (1, 0, 1, 2),
+        )
+    )
+
+
 def _sem_alerta(raiox: RaioX) -> Padding:
     texto = Text.assemble(
         ("✓ sem alerta: ", "green"),

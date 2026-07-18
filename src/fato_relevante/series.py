@@ -7,6 +7,13 @@ de red flags.
 from __future__ import annotations
 
 
+def ticker_do_isin(isin: str | None) -> str:
+    """BRHGLGCTF004 -> HGLG11 (convenção da B3 para cotas de FII)."""
+    if not isin or len(isin) < 6 or not isin.startswith("BR"):
+        return ""
+    return f"{isin[2:6]}11"
+
+
 def competencia_menos_meses(competencia: str, meses: int) -> str:
     ano, mes = int(competencia[:4]), int(competencia[5:7])
     total = ano * 12 + (mes - 1) - meses
