@@ -105,6 +105,25 @@ def test_gerar_html_completo(con, zip_cvm):
     assert 'class="dica"' in pagina
 
 
+def test_calculadoras_prefilled_com_dados_do_fundo(con, zip_cvm):
+    completo = _completo(con, zip_cvm)
+    pagina = relatorio_html.gerar(completo)
+    assert "Uma cota por mês" in pagina
+    assert "Projeção de aportes" in pagina
+    # pré-preenchidas: preço = última cotação (100.00) e rendimento = dy*vp ajustado
+    assert 'id="uc-preco" value="100.00"' in pagina
+    assert 'id="uc-rend" value="1.05"' in pagina  # 0.011 * 95.45
+    assert "function calcUmaCota" in pagina and "function calcAportes" in pagina
+    assert "não promessa de rentabilidade" in pagina
+
+
+def test_sem_cotacao_nao_mostra_calculadoras(con, zip_cvm):
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
+    completo = analise.montar_completo(con, "tste11")
+    pagina = relatorio_html.gerar(completo)
+    assert "Uma cota por mês" not in pagina
+
+
 def test_salvar_html_escreve_arquivo(con, zip_cvm, tmp_path):
     completo = _completo(con, zip_cvm)
     caminho = relatorio_html.salvar(completo, tmp_path / "rel")

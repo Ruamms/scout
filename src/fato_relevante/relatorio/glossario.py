@@ -67,4 +67,17 @@ TERMOS = {
         "A evolução do tamanho do fundo. Crescimento por emissão de cotas não é a mesma "
         "coisa que crescimento por valorização — confira o número de cotas junto."
     ),
+    "Calculadoras": (
+        "Simulações matemáticas com os números deste fundo já preenchidos — você pode "
+        "editar tudo. São contas, não previsões: rendimento passado não garante o futuro."
+    ),
+    "Uma cota por mês": (
+        "O marco em que o investimento \"gira sozinho\": com essa quantidade de cotas, os "
+        "rendimentos de um mês pagam uma cota nova. A partir daí o reinvestimento acelera "
+        "sem dinheiro novo do bolso."
+    ),
+    "Projeção de aportes": (
+        "Juros compostos na prática: aporte inicial + aportes mensais rendendo à taxa "
+        "definida. Reinvestir os rendimentos é o que faz a curva dobrar no longo prazo."
+    ),
 }

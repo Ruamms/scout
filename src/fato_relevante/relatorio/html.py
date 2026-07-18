@@ -179,6 +179,18 @@ ul {{ padding-left:20px; }} li {{ margin:3px 0; }}
   font-size:12.5px; font-weight:400; line-height:1.45; text-transform:none; letter-spacing:0;
   text-align:left; box-shadow:0 6px 20px rgba(0,0,0,.45); }}
 .ajuda:hover .dica, .ajuda:focus .dica {{ visibility:visible; opacity:1; }}
+.calc {{ background:#121a24; border:1px solid #1f2a38; border-radius:10px; padding:16px; margin-bottom:14px; }}
+.calc h3 {{ font-size:15px; color:#aeb9c7; margin-bottom:4px; }}
+.calc .desc {{ color:#8b98a9; font-size:13px; margin-bottom:12px; }}
+.calc .campos {{ display:flex; flex-wrap:wrap; gap:10px; align-items:end; }}
+.calc label {{ display:block; color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; margin-bottom:3px; }}
+.calc input[type=number] {{ background:#0b1017; color:#dbe3ec; border:1px solid #2a3441; border-radius:8px; padding:8px 10px; width:130px; font-size:15px; }}
+.calc .check {{ display:flex; align-items:center; gap:6px; color:#aeb9c7; font-size:13px; padding-bottom:8px; }}
+.calc .resultado {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:10px; margin-top:14px; }}
+.calc .res {{ background:#0b1017; border:1px solid #1f2a38; border-radius:9px; padding:10px 12px; }}
+.calc .res .rotulo {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; }}
+.calc .res .num {{ font-size:19px; font-weight:700; margin-top:2px; color:#5eead4; }}
+.calc .aviso {{ color:#66707d; font-size:11.5px; margin-top:10px; }}
 .rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #1f2a38; margin-top:30px; padding-top:14px; }}
 @media print {{ body {{ background:#fff; color:#111; }} }}
 </style>
@@ -203,6 +215,8 @@ ul {{ padding-left:20px; }} li {{ margin:3px 0; }}
   <h2>Gráficos</h2>
   {"".join(secoes_graficos) or '<p class="na">sem séries suficientes para gráficos</p>'}
 
+  {_secao_calculadoras(completo)}
+
   <div class="rodape">{_RODAPE}<br>
   Projeto open source: <a href="https://github.com/Ruamms/fato-relevante">github.com/Ruamms/fato-relevante</a>
   · <a href="apoie.html">☕ Apoie o projeto (PIX)</a></div>
@@ -213,6 +227,38 @@ function mostrar(botao, idPainel) {{
   card.querySelectorAll('.painel').forEach(p => p.hidden = (p.dataset.painel !== idPainel));
   card.querySelectorAll('.abas button').forEach(b => b.classList.toggle('ativo', b === botao));
 }}
+
+const brl = v => v.toLocaleString('pt-BR', {{style: 'currency', currency: 'BRL', maximumFractionDigits: 0}});
+const num = id => parseFloat(document.getElementById(id).value) || 0;
+const põe = (id, texto) => document.getElementById(id).textContent = texto;
+
+function calcUmaCota() {{
+  const preco = num('uc-preco'), rend = num('uc-rend');
+  if (preco <= 0 || rend <= 0) {{ põe('uc-cotas', '—'); põe('uc-invest', '—'); return; }}
+  const cotas = Math.ceil(preco / rend);
+  põe('uc-cotas', cotas.toLocaleString('pt-BR'));
+  põe('uc-invest', brl(cotas * preco));
+}}
+
+function calcAportes() {{
+  const inicial = num('pa-inicial'), mensal = num('pa-mensal');
+  const meses = Math.round(num('pa-anos') * 12), taxa = num('pa-taxa') / 100;
+  const reinvestir = document.getElementById('pa-reinvestir').checked;
+  let saldo = inicial, rendimentos = 0;
+  for (let m = 0; m < meses; m++) {{
+    const rendeu = saldo * taxa;
+    rendimentos += rendeu;
+    if (reinvestir) saldo += rendeu;
+    saldo += mensal;
+  }}
+  const aportado = inicial + mensal * meses;
+  põe('pa-aportado', brl(aportado));
+  põe('pa-final', brl(reinvestir ? saldo : aportado));
+  põe('pa-rendimentos', brl(rendimentos));
+  põe('pa-renda', brl((reinvestir ? saldo : aportado) * taxa));
+}}
+
+if (document.getElementById('uc-preco')) {{ calcUmaCota(); calcAportes(); }}
 </script>
 </body>
 </html>
@@ -283,6 +329,71 @@ def _secao_flags(raiox: RaioX) -> str:
     for nota in raiox.notas:
         partes.append(f'<p class="na">· {_e(nota)}</p>')
     return "".join(partes)
+
+
+def _secao_calculadoras(completo: AnaliseCompleta) -> str:
+    """Calculadoras interativas pré-preenchidas com os dados reais do fundo."""
+    dados = completo.graficos
+    preco = dados.cotacao[-1][1] if dados.cotacao else 0
+    rendimento = next(
+        (valor for valor in reversed(dados.rend_por_mes) if valor), 0
+    )
+    dys = [valor for _, valor in dados.dy_por_mes]
+    dy_medio = sum(dys) / len(dys) if dys else 0
+    if not preco or not rendimento:
+        return ""
+
+    def _n(valor: float, casas: int = 2) -> str:
+        return f"{valor:.{casas}f}"
+
+    return f"""
+  <h2>Calculadoras{_ajuda("Calculadoras")}</h2>
+
+  <div class="calc">
+    <h3>Uma cota por mês{_ajuda("Uma cota por mês")}</h3>
+    <p class="desc">Quantas cotas você precisaria ter para os rendimentos mensais
+    comprarem, sozinhos, pelo menos uma cota nova por mês.</p>
+    <div class="campos">
+      <div><label for="uc-preco">Preço da cota (R$)</label>
+      <input type="number" id="uc-preco" value="{_n(preco)}" step="0.01" min="0.01" oninput="calcUmaCota()"></div>
+      <div><label for="uc-rend">Rendimento mensal por cota (R$)</label>
+      <input type="number" id="uc-rend" value="{_n(rendimento)}" step="0.01" min="0" oninput="calcUmaCota()"></div>
+    </div>
+    <div class="resultado">
+      <div class="res"><div class="rotulo">Cotas necessárias</div><div class="num" id="uc-cotas">—</div></div>
+      <div class="res"><div class="rotulo">Investimento equivalente</div><div class="num" id="uc-invest">—</div></div>
+    </div>
+    <p class="aviso">Valores pré-preenchidos com a cotação atual e o último rendimento
+    estimado deste fundo — edite à vontade. Simulação matemática, não projeção de resultado.</p>
+  </div>
+
+  <div class="calc">
+    <h3>Projeção de aportes{_ajuda("Projeção de aportes")}</h3>
+    <p class="desc">Quanto o patrimônio acumularia aportando todo mês, com os rendimentos
+    no ritmo que você definir.</p>
+    <div class="campos">
+      <div><label for="pa-inicial">Aporte inicial (R$)</label>
+      <input type="number" id="pa-inicial" value="1000" step="100" min="0" oninput="calcAportes()"></div>
+      <div><label for="pa-mensal">Aporte mensal (R$)</label>
+      <input type="number" id="pa-mensal" value="300" step="50" min="0" oninput="calcAportes()"></div>
+      <div><label for="pa-anos">Prazo (anos)</label>
+      <input type="number" id="pa-anos" value="10" step="1" min="1" max="50" oninput="calcAportes()"></div>
+      <div><label for="pa-taxa">Rendimento mensal (%)</label>
+      <input type="number" id="pa-taxa" value="{_n(dy_medio)}" step="0.05" min="0" oninput="calcAportes()"></div>
+      <div class="check"><input type="checkbox" id="pa-reinvestir" checked onchange="calcAportes()">
+      <label for="pa-reinvestir" style="all:unset;cursor:pointer">reinvestir os rendimentos</label></div>
+    </div>
+    <div class="resultado">
+      <div class="res"><div class="rotulo">Total aportado</div><div class="num" id="pa-aportado">—</div></div>
+      <div class="res"><div class="rotulo">Patrimônio final</div><div class="num" id="pa-final">—</div></div>
+      <div class="res"><div class="rotulo">Rendimentos no período</div><div class="num" id="pa-rendimentos">—</div></div>
+      <div class="res"><div class="rotulo">Renda mensal ao final</div><div class="num" id="pa-renda">—</div></div>
+    </div>
+    <p class="aviso">O rendimento padrão é a média mensal do DY deste fundo nos últimos 12
+    meses — o futuro pode ser diferente. Não considera variação do preço da cota, impostos
+    ou emissões. Simulação matemática, não promessa de rentabilidade.</p>
+  </div>
+"""
 
 
 def _card_grafico(titulo: str, svg: str, nota: str = "", chave_ajuda: str = "") -> str:
