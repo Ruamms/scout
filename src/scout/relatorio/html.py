@@ -33,6 +33,19 @@ _RODAPE = (
     "todos os alertas são públicos e auditáveis no código-fonte."
 )
 
+# O glifo da marca (bússola do logo) desenhado em SVG: favicon nítido em
+# qualquer tamanho, embutido na página — sem arquivo externo.
+FAVICON = (
+    "data:image/svg+xml,"
+    "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'>"
+    "<rect width='64' height='64' rx='14' fill='%23101415'/>"
+    "<circle cx='32' cy='32' r='21' fill='none' stroke='%238FCB9B' stroke-width='6'/>"
+    "<polygon points='47,17 36,27 17,47 28,37' fill='%238FCB9B'/>"
+    "<circle cx='32' cy='32' r='4.5' fill='%23101415'/>"
+    "</svg>"
+)
+TAG_FAVICON = f'<link rel="icon" href="{FAVICON}">'
+
 
 def salvar(completo: AnaliseCompleta, destino: Path, agora: datetime | None = None) -> Path:
     destino.mkdir(parents=True, exist_ok=True)
@@ -158,6 +171,7 @@ def gerar(completo: AnaliseCompleta, agora: datetime | None = None) -> str:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{_e(raiox.ticker)} — Scout</title>
+{TAG_FAVICON}
 <style>
 :root {{ color-scheme: dark; }}
 html {{ scroll-behavior: smooth; }}

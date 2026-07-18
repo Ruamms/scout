@@ -100,6 +100,7 @@ def _indice(fundos: list, base: list, agora: datetime) -> str:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Scout — o raio-x dos FIIs</title>
+{relatorio_html.TAG_FAVICON}
 <style>
 :root {{ color-scheme: dark; }}
 * {{ box-sizing:border-box; margin:0; }}

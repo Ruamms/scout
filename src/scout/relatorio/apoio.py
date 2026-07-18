@@ -9,6 +9,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from .html import TAG_FAVICON
+
 CHAVE_PIX = "ruamms3@gmail.com"
 NOME_RECEBEDOR = "Ruan Sampaio"
 CIDADE = "BRASIL"
@@ -72,6 +74,7 @@ def gerar() -> str:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Apoie o Scout</title>
+{TAG_FAVICON}
 <style>
 * {{ box-sizing:border-box; margin:0; }}
 body {{ background:#101415; color:#F4F5F6; font-family:system-ui,sans-serif; line-height:1.6; }}
