@@ -1,6 +1,10 @@
+<p align="center">
+  <img src="assets/scout-logo.png" alt="Scout — nós exploramos, você decide" width="420">
+</p>
+
 # Scout
 
-**Conhecimento antes da decisão.**
+**Nós exploramos. Você decide.**
 
 O scout vai antes. Observa. Lê o terreno. Encontra os perigos. Volta —
 e entrega o relatório para quem vai tomar a decisão. É exatamente isso
