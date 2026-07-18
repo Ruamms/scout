@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# Dados baixados (cache local — nunca versionar)
+data/
+*.sqlite
+*.db
+
+# IDE / SO
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# Segredos
+.env
