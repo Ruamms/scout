@@ -38,10 +38,9 @@ _RODAPE = (
 FAVICON = (
     "data:image/svg+xml,"
     "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'>"
-    "<rect width='64' height='64' rx='14' fill='%23101415'/>"
-    "<circle cx='32' cy='32' r='21' fill='none' stroke='%238FCB9B' stroke-width='6'/>"
-    "<polygon points='47,17 36,27 17,47 28,37' fill='%238FCB9B'/>"
-    "<circle cx='32' cy='32' r='4.5' fill='%23101415'/>"
+    "<circle cx='32' cy='32' r='23' fill='none' stroke='%238FCB9B' stroke-width='6'/>"
+    "<polygon points='54,10 38,25 10,54 26,39' fill='%238FCB9B'/>"
+    "<circle cx='32' cy='32' r='6' fill='%23101415'/>"
     "</svg>"
 )
 TAG_FAVICON = f'<link rel="icon" href="{FAVICON}">'
@@ -493,7 +492,8 @@ def _secao_administrador(raiox: RaioX, limite: int = 12) -> str:
         oculta = ' class="admin-extra" hidden' if indice >= limite else ""
         linhas.append(
             f"<tr{oculta}><td>{rotulo}</td><td>{_e(irmao.nome[:44])}</td>"
-            f"<td>{idade}</td><td>{_e(irmao.segmento)}</td><td>{selo}</td></tr>"
+            f'<td style="white-space:nowrap">{idade}</td>'
+            f"<td>{_e(irmao.segmento)}</td><td>{selo}</td></tr>"
         )
     botao = ""
     if len(raiox.fundos_irmaos) > limite:
