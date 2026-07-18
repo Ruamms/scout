@@ -370,7 +370,7 @@ def _secao_calculadoras(completo: AnaliseCompleta) -> str:
   <div class="calc">
     <h3>Projeção de aportes{_ajuda("Projeção de aportes")}</h3>
     <p class="desc">Quanto o patrimônio acumularia aportando todo mês, com os rendimentos
-    no ritmo que você definir.</p>
+    no ritmo que você definir. Edite os campos e os resultados se atualizam sozinhos.</p>
     <div class="campos">
       <div><label for="pa-inicial">Aporte inicial (R$)</label>
       <input type="number" id="pa-inicial" value="1000" step="100" min="0" oninput="calcAportes()"></div>

@@ -68,8 +68,9 @@ TERMOS = {
         "coisa que crescimento por valorização — confira o número de cotas junto."
     ),
     "Calculadoras": (
-        "Simulações matemáticas com os números deste fundo já preenchidos — você pode "
-        "editar tudo. São contas, não previsões: rendimento passado não garante o futuro."
+        "Simulações matemáticas com os números deste fundo já preenchidos. Não tem botão "
+        "de calcular: edite qualquer campo e os resultados se atualizam na hora. São "
+        "contas, não previsões — rendimento passado não garante o futuro."
     ),
     "Uma cota por mês": (
         "O marco em que o investimento \"gira sozinho\": com essa quantidade de cotas, os "
