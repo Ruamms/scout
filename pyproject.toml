@@ -1,0 +1,28 @@
+[project]
+name = "fato-relevante"
+version = "0.1.0"
+description = "O raio-x dos ativos da bolsa — fatos, não dicas."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Ruamms", email = "ruamms3@gmail.com" }]
+requires-python = ">=3.11"
+dependencies = [
+    "typer>=0.12",
+    "rich>=13.7",
+]
+
+[project.urls]
+Repository = "https://github.com/Ruamms/fato-relevante"
+
+[project.scripts]
+fato = "fato_relevante.cli:app"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fato_relevante"]
