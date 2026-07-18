@@ -6,6 +6,7 @@ __pycache__/
 venv/
 build/
 dist/
+*.spec
 
 # Dados baixados (cache local — nunca versionar)
 data/

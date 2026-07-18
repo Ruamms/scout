@@ -28,6 +28,28 @@ Números vêm de código. Texto vem de IA. Nunca o contrário.
 | Fundamentus | Snapshot atual para validação cruzada |
 | brapi.dev | Série histórica de cotações |
 
+## Como rodar
+
+Com [uv](https://docs.astral.sh/uv/) instalado:
+
+```
+uv sync
+uv run fato analisar ADSH11
+```
+
+### Gerar o executável (Windows)
+
+Rode `gerar_exe.bat` na raiz do projeto. Ele sincroniza as dependências e
+empacota tudo com PyInstaller num único `dist\fato.exe`, que funciona em
+qualquer Windows sem Python instalado:
+
+```
+dist\fato.exe analisar ADSH11
+```
+
+> Nota: antivírus às vezes desconfiam de executáveis PyInstaller recém-gerados
+> (falso positivo conhecido). Se o Defender reclamar, é isso.
+
 ## Status
 
 🚧 Em construção — acompanhe o [ROADMAP](ROADMAP.md).

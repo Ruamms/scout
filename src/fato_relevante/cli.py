@@ -2,8 +2,24 @@
 
 from __future__ import annotations
 
+import sys
+
 import typer
 from rich.console import Console
+
+
+def _garantir_stdio_utf8() -> None:
+    """Evita UnicodeEncodeError quando a saída é redirecionada (pipe/arquivo).
+
+    Em console interativo o Windows usa WriteConsoleW e nada muda; em pipe,
+    o Python herda a codepage legada (cp850/cp1252), que não tem ⚠, · etc.
+    """
+    for stream in (sys.stdout, sys.stderr):
+        if stream is not None and hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="replace")
+
+
+_garantir_stdio_utf8()
 
 app = typer.Typer(
     help="Fato Relevante — o raio-x dos ativos da bolsa. Fatos, não dicas.",

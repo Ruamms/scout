@@ -18,7 +18,10 @@ Repository = "https://github.com/Ruamms/fato-relevante"
 fato = "fato_relevante.cli:app"
 
 [dependency-groups]
-dev = ["pytest>=8"]
+dev = [
+    "pytest>=8",
+    "pyinstaller>=6.10",
+]
 
 [build-system]
 requires = ["hatchling"]
