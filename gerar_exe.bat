@@ -7,6 +7,19 @@ echo  Fato Relevante - gerador de executavel
 echo ============================================
 echo.
 
+rem garante o uv (ja vimos ele instalado so no escopo do usuario e invisivel ao duplo clique)
+python -m uv --version >nul 2>&1
+if errorlevel 1 (
+    echo [0/2] Instalando uv...
+    python -m pip install --quiet uv
+    if errorlevel 1 python -m pip install --quiet --user uv
+    python -m uv --version >nul 2>&1
+    if errorlevel 1 (
+        echo Nao foi possivel instalar o uv. Rode manualmente: python -m pip install uv
+        goto :erro
+    )
+)
+
 echo [1/2] Sincronizando dependencias (uv sync)...
 python -m uv sync --group dev
 if errorlevel 1 goto :erro
