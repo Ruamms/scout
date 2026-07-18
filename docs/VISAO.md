@@ -78,6 +78,13 @@ Todo alerta de imóvel segue o padrão do produto: fato + fonte + data, e **nunc
 4. **Idade/retrofit/sinistros do imóvel** — não existe estruturado; é extraído dos relatórios gerenciais e fatos relevantes pela camada de IA (Fase 2), sempre com citação do trecho.
 5. **Criminalidade** — explorar com MUITA cautela e prioridade baixa: apenas agregado municipal de fonte oficial (Atlas da Violência/IPEA), citado como estatística com ano; nunca rotular área ("perigosa"). Risco reputacional/jurídico alto; só entra se agregar valor claro.
 
+### Comparador de instituições financeiras (ideia futura, pós-v1)
+Tela para ajudar o leigo a decidir onde abrir conta, começando **apenas por bancos S1** (segmentação oficial do BCB, Res. 4.553 — os maiores e mais supervisionados):
+- Tarifas por serviço (transferência, manutenção mensal, custódia...) — fonte oficial: dados abertos de tarifas bancárias do Banco Central (API Olinda), por instituição e serviço.
+- Prazo de liquidação/disponibilidade do dinheiro (D+0 vs D+2 — escopo exato a definir: resgate, transferência ou repasse de corretora).
+- Qualquer taxa recorrente, sempre com valor, fonte e data da coleta.
+- Mesmo princípio do resto do produto: tabela de fatos comparáveis, sem "melhor banco" — o critério de ordenação é do usuário.
+
 ### Ideias registradas (sem prioridade definida)
 - Checklist buy-and-hold com critérios públicos (estilo Investidor10, mas com fonte por critério).
 - Comparação com pares do mesmo segmento e vs média do segmento.
