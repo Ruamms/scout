@@ -90,10 +90,11 @@ def salvar(
     destino: Path,
     agora: datetime | None = None,
     publicados: set[str] | None = None,
+    leitura: dict | None = None,
 ) -> Path:
     destino.mkdir(parents=True, exist_ok=True)
     caminho = destino / f"{completo.raiox.ticker}.html"
-    caminho.write_text(gerar(completo, agora, publicados), encoding="utf-8")
+    caminho.write_text(gerar(completo, agora, publicados, leitura), encoding="utf-8")
     return caminho
 
 
@@ -101,9 +102,11 @@ def gerar(
     completo: AnaliseCompleta,
     agora: datetime | None = None,
     publicados: set[str] | None = None,
+    leitura: dict | None = None,
 ) -> str:
     """`publicados` = tickers com página no site: liga a navegação entre
-    páginas e evita links mortos (None = relatório local avulso)."""
+    páginas e evita links mortos (None = relatório local avulso).
+    `leitura` = leitura por IA persistida (leituras/<TICKER>.json)."""
     raiox = completo.raiox
     dados = completo.graficos
     agora = agora or datetime.now()
@@ -315,6 +318,8 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
   {_secao_administrador(raiox, publicados=publicados)}
 
   {_secao_pares(raiox, publicados=publicados)}
+
+  {_secao_ia(leitura, agora)}
 
   <h2>Gráficos</h2>
   {"".join(secoes_graficos) or '<p class="na">sem séries suficientes para gráficos</p>'}
@@ -636,6 +641,53 @@ def _secao_pares(raiox: RaioX, publicados: set[str] | None = None) -> str:
   </table>
   <div class="nota">os {len(raiox.pares)} maiores fundos do mesmo segmento (por PL) ·
   P/VP só para fundos com cotação em cache · comparação de fatos, não recomendação</div>
+  </div>
+"""
+
+
+def _texto_ia_para_html(texto: str) -> str:
+    """Render mínimo do texto do modelo: escapa tudo e converte só **negrito**."""
+    import re as _re
+
+    escapado = _e(texto)
+    return _re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", escapado)
+
+
+def _secao_ia(leitura: dict | None, agora: datetime) -> str:
+    if not leitura or not leitura.get("relatorio", {}).get("texto"):
+        return ""
+    relatorio = leitura["relatorio"]
+    data_documento = relatorio.get("data_entrega", "")[:10]
+    aviso_idade = ""
+    try:
+        dia, mes, ano = data_documento.split("/")
+        idade_dias = (agora - datetime(int(ano), int(mes), int(dia))).days
+        if idade_dias > 40:
+            aviso_idade = (
+                f' <span style="color:#D9B44A">⚠ documento de {idade_dias} dias atrás — '
+                "pode existir relatório mais recente ainda não lido</span>"
+            )
+    except ValueError:
+        pass
+    fatos = leitura.get("fatos", {})
+    bloco_fatos = ""
+    if fatos.get("texto"):
+        datas = ", ".join(fatos.get("datas", []))
+        bloco_fatos = (
+            f'<h3 style="font-size:15px;color:#aeb9c7;margin:16px 0 8px">Fatos relevantes recentes'
+            f' <span style="color:#8b98a9;font-weight:400">({_e(datas)})</span></h3>'
+            f'<div style="white-space:pre-wrap">{_texto_ia_para_html(fatos["texto"])}</div>'
+        )
+    gerada = leitura.get("gerada_em", "")[:10]
+    return f"""
+  <h2>🤖 Leitura por IA{_ajuda("Leitura por IA")}</h2>
+  <div class="grafico">
+  <div class="nota" style="margin-bottom:10px">relatório gerencial de <b>{_e(data_documento)}</b>{aviso_idade}
+  · lida por IA local ({_e(leitura.get("modelo", "?"))}) em {_e(gerada)}</div>
+  <div style="white-space:pre-wrap">{_texto_ia_para_html(relatorio["texto"])}</div>
+  {bloco_fatos}
+  <div class="nota" style="margin-top:12px">Resumo gerado por IA a partir dos documentos oficiais —
+  pode conter erros de leitura; os trechos citados permitem conferir no original. Não é recomendação.</div>
   </div>
 """
 

@@ -61,6 +61,48 @@ def test_seleciona_relatorio_e_fatos():
     assert [fato["id"] for fato in fatos] == [120]
 
 
+def test_garantir_fatos_relevantes_baixa_e_e_idempotente(con, tmp_path, monkeypatch):
+    downloads = []
+    monkeypatch.setattr(fnet, "listar", lambda cnpj, quantidade=30: _DOCUMENTOS)
+    monkeypatch.setattr(
+        fnet, "baixar", lambda id_fnet: downloads.append(id_fnet) or _pdf_minimo()
+    )
+    documentos = fnet.garantir_fatos_relevantes(con, "11.111.111/0001-11", destino=tmp_path)
+    assert [meta["id"] for _, meta in documentos] == [120]
+    assert documentos[0][0].exists()
+    assert downloads == [120]
+    # segunda chamada: cache, sem novo download
+    fnet.garantir_fatos_relevantes(con, "11.111.111/0001-11", destino=tmp_path)
+    assert downloads == [120]
+
+
+def test_analisar_fatos_relevantes_monta_prompt(monkeypatch):
+    import io
+    import urllib.request
+
+    capturado = {}
+    fluxo = json.dumps({"message": {"content": "• lido"}, "done": True}).encode()
+
+    def _urlopen(requisicao, timeout=None):
+        capturado["corpo"] = json.loads(requisicao.data)
+        return io.BytesIO(fluxo)
+
+    monkeypatch.setattr(urllib.request, "urlopen", _urlopen)
+    saida = ia.analisar_fatos_relevantes(
+        [("18/06/2026", "texto do fato A"), ("01/05/2026", "texto do fato B")],
+        "CONTEXTO Y",
+        modelo="teste:1b",
+    )
+    assert saida == "• lido"
+    corpo = capturado["corpo"]
+    assert "Fato Relevante" in corpo["messages"][0]["content"]  # prompt específico
+    assert "nunca invente" in corpo["messages"][0]["content"]
+    usuario = corpo["messages"][1]["content"]
+    assert "CONTEXTO Y" in usuario
+    assert "entregue em 18/06/2026" in usuario and "texto do fato A" in usuario
+    assert "entregue em 01/05/2026" in usuario and "texto do fato B" in usuario
+
+
 def test_garantir_relatorio_baixa_e_e_idempotente(con, tmp_path, monkeypatch):
     downloads = []
     monkeypatch.setattr(fnet, "listar", lambda cnpj, quantidade=30: _DOCUMENTOS)
@@ -160,11 +202,119 @@ def test_cli_ia_fluxo_completo(con, zip_cvm, tmp_path, monkeypatch):
         "analisar_relatorio",
         lambda texto, ctx, modelo=None, ao_progresso=None: "• fato citado",
     )
+    caminho_fato = tmp_path / "120.pdf"
+    caminho_fato.write_bytes(_pdf_minimo("Comunicado sobre venda de ativo " * 20))
+    monkeypatch.setattr(
+        modulo_fnet,
+        "garantir_fatos_relevantes",
+        lambda con_, cnpj, quantidade=3, destino=None: [(caminho_fato, _DOCUMENTOS[2])],
+    )
+    monkeypatch.setattr(
+        modulo_ia,
+        "analisar_fatos_relevantes",
+        lambda fatos, ctx, modelo=None, ao_progresso=None: "• comunicado resumido",
+    )
     resultado = CliRunner().invoke(app, ["ia", "tste11"])
     assert resultado.exit_code == 0, resultado.output
     assert "Leitura do relatório gerencial" in resultado.output
     assert "fato citado" in resultado.output
+    assert "Fatos relevantes recentes" in resultado.output
+    assert "comunicado resumido" in resultado.output
     assert "Não é recomendação" in resultado.output
+
+
+def test_cli_ia_sem_fatos_pula_comunicados(con, zip_cvm, tmp_path, monkeypatch):
+    from typer.testing import CliRunner
+
+    from scout import ia as modulo_ia
+    from scout.cli import app
+    from scout.coleta import cvm
+    from scout.coleta import fnet as modulo_fnet
+
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
+    monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
+    caminho_pdf = tmp_path / "150.pdf"
+    caminho_pdf.write_bytes(_pdf_minimo("Texto longo do relatorio " * 50))
+    monkeypatch.setattr(modulo_ia, "disponivel", lambda: True)
+    monkeypatch.setattr(modulo_ia, "modelos_instalados", lambda: ["qwen2.5:14b"])
+    monkeypatch.setattr(
+        modulo_fnet,
+        "garantir_relatorio",
+        lambda con_, cnpj, destino=None: (caminho_pdf, _DOCUMENTOS[1]),
+    )
+    monkeypatch.setattr(
+        modulo_ia,
+        "analisar_relatorio",
+        lambda texto, ctx, modelo=None, ao_progresso=None: "• fato citado",
+    )
+    resultado = CliRunner().invoke(app, ["ia", "tste11", "--sem-fatos"])
+    assert resultado.exit_code == 0, resultado.output
+    assert "Fatos relevantes recentes" not in resultado.output
+
+
+def test_leituras_salvar_carregar(tmp_path):
+    from datetime import datetime
+
+    from scout import leituras
+
+    dados = leituras.montar(
+        "tste11",
+        "teste:1b",
+        _DOCUMENTOS[1],
+        "leitura do relatório",
+        [_DOCUMENTOS[2]],
+        "leitura dos fatos",
+        agora=datetime(2026, 7, 18, 23, 0),
+    )
+    caminho = leituras.salvar(tmp_path / "leituras", dados)
+    assert caminho.name == "TSTE11.json"
+    todas = leituras.carregar_todas(tmp_path / "leituras")
+    assert todas["TSTE11"]["relatorio"]["id"] == 150
+    assert todas["TSTE11"]["fatos"]["ids"] == [120]
+    assert leituras.carregar(tmp_path / "leituras", "tste11")["modelo"] == "teste:1b"
+
+
+def test_cli_ia_lote_incremental(con, zip_cvm, tmp_path, monkeypatch):
+    from typer.testing import CliRunner
+
+    from scout import cli as modulo_cli
+    from scout import ia as modulo_ia
+    from scout.cli import app
+    from scout.coleta import cvm
+    from scout.coleta import fnet as modulo_fnet
+
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
+    monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
+    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30: _DOCUMENTOS)
+    caminho_pdf = tmp_path / "doc.pdf"
+    caminho_pdf.write_bytes(_pdf_minimo("Relatorio para o lote " * 50))
+    monkeypatch.setattr(
+        modulo_fnet, "_garantir_documento", lambda con_, cnpj, doc, destino: caminho_pdf
+    )
+    chamadas = []
+    monkeypatch.setattr(
+        modulo_ia,
+        "analisar_relatorio",
+        lambda texto, ctx, modelo=None, ao_progresso=None: chamadas.append("rel") or "L",
+    )
+    monkeypatch.setattr(
+        modulo_ia,
+        "analisar_fatos_relevantes",
+        lambda fatos, ctx, modelo=None, ao_progresso=None: chamadas.append("fatos") or "F",
+    )
+    pasta = tmp_path / "leituras"
+
+    resultado = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta)])
+    assert resultado.exit_code == 0, resultado.output
+    assert "1 lidos, 0 já em dia" in resultado.output
+    assert chamadas == ["rel", "fatos"]
+    assert (pasta / "TSTE11.json").exists()
+
+    # segunda rodada: mesmo documento no FNET -> nada a fazer
+    resultado2 = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta)])
+    assert "0 lidos, 1 já em dia" in resultado2.output
+    assert chamadas == ["rel", "fatos"]  # a IA não foi chamada de novo
 
 
 def test_cli_ia_sem_ollama_orienta_instalacao(con, zip_cvm, tmp_path, monkeypatch):

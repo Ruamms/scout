@@ -31,6 +31,7 @@ def gerar(
     ao_progredir: Callable[[str], None] | None = None,
     ao_item: Callable[[str, int, int], None] | None = None,
     agora: datetime | None = None,
+    leituras_dir: Path | None = None,
 ) -> dict:
     """`ao_progredir(msg)` = log textual esporádico; `ao_item(fase, atual, total)`
     = callback por item, para barras de progresso."""
@@ -66,13 +67,24 @@ def gerar(
         por_ticker = {resumo.ticker: resumo for resumo in base if resumo.ticker}
         fundos = [por_ticker.get(resumo.ticker, resumo) for resumo in fundos]
 
+    from .. import leituras as modulo_leituras
+
+    todas_leituras = (
+        modulo_leituras.carregar_todas(leituras_dir) if leituras_dir else {}
+    )
     tickers_no_site = {resumo.ticker for resumo in fundos}
     publicados = []
     for posicao, resumo in enumerate(fundos, start=1):
         completo = analise.montar_completo(con, resumo.ticker, varredura=base)
         if completo is None:
             continue
-        relatorio_html.salvar(completo, destino, agora=agora, publicados=tickers_no_site)
+        relatorio_html.salvar(
+            completo,
+            destino,
+            agora=agora,
+            publicados=tickers_no_site,
+            leitura=todas_leituras.get(resumo.ticker),
+        )
         publicados.append(resumo)
         item("páginas", posicao, len(fundos))
         if posicao % 50 == 0:

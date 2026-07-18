@@ -29,11 +29,27 @@ def so_digitos(cnpj: str) -> str:
     return re.sub(r"\D", "", cnpj)
 
 
+def _abrir_com_retry(requisicao, timeout: int, tentativas: int = 3):
+    """O FNET oscila (timeouts esporádicos); espera 5s/20s entre tentativas."""
+    import time
+    import urllib.error
+
+    ultimo_erro: Exception | None = None
+    for tentativa in range(tentativas):
+        try:
+            return urllib.request.urlopen(requisicao, timeout=timeout)
+        except (urllib.error.URLError, OSError, TimeoutError) as erro:
+            ultimo_erro = erro
+            if tentativa < tentativas - 1:
+                time.sleep(5 * (tentativa + 1) ** 2)
+    raise ultimo_erro
+
+
 def listar(cnpj: str, quantidade: int = 30) -> list[dict]:
     """Documentos mais recentes do fundo no FNET (mais novo primeiro)."""
     url = URL_PESQUISA.format(cnpj=so_digitos(cnpj), quantidade=quantidade)
     requisicao = urllib.request.Request(url, headers=_HEADERS)
-    with urllib.request.urlopen(requisicao, timeout=60) as resposta:
+    with _abrir_com_retry(requisicao, timeout=60) as resposta:
         dados = json.load(resposta)
     return [
         {
@@ -51,7 +67,7 @@ def baixar(id_fnet: int) -> bytes:
     requisicao = urllib.request.Request(
         URL_DOWNLOAD.format(id=id_fnet), headers=_HEADERS
     )
-    with urllib.request.urlopen(requisicao, timeout=180) as resposta:
+    with _abrir_com_retry(requisicao, timeout=180) as resposta:
         return resposta.read()
 
 
@@ -83,22 +99,46 @@ def garantir_relatorio(
     relatorio = ultimo_relatorio_gerencial(documentos)
     if relatorio is None:
         return None
-    registrado = armazenamento.documento(con, cnpj, relatorio["id"])
-    if registrado and registrado["arquivo"] and Path(registrado["arquivo"]).exists():
-        return Path(registrado["arquivo"]), relatorio
+    return _garantir_documento(con, cnpj, relatorio, destino), relatorio
 
-    conteudo = baixar(relatorio["id"])
+
+def garantir_fatos_relevantes(
+    con: sqlite3.Connection,
+    cnpj: str,
+    quantidade: int = 3,
+    destino: Path | None = None,
+) -> list[tuple[Path, dict]]:
+    """Garante os últimos fatos relevantes baixados; retorna [(caminho, metadados)].
+
+    Mesmo cache idempotente do relatório gerencial.
+    """
+    destino = destino or armazenamento.diretorio_dados() / "documentos"
+    documentos = listar(cnpj)
+    return [
+        (_garantir_documento(con, cnpj, fato, destino), fato)
+        for fato in fatos_relevantes(documentos, quantidade)
+    ]
+
+
+def _garantir_documento(
+    con: sqlite3.Connection, cnpj: str, documento_: dict, destino: Path
+) -> Path:
+    registrado = armazenamento.documento(con, cnpj, documento_["id"])
+    if registrado and registrado["arquivo"] and Path(registrado["arquivo"]).exists():
+        return Path(registrado["arquivo"])
+
+    conteudo = baixar(documento_["id"])
     pasta = destino / so_digitos(cnpj)
     pasta.mkdir(parents=True, exist_ok=True)
-    caminho = pasta / f"{relatorio['id']}.pdf"
+    caminho = pasta / f"{documento_['id']}.pdf"
     caminho.write_bytes(conteudo)
     armazenamento.gravar_documento(
         con,
         cnpj,
-        relatorio["id"],
-        relatorio["tipo"],
-        relatorio["categoria"],
-        relatorio["data_entrega"],
+        documento_["id"],
+        documento_["tipo"],
+        documento_["categoria"],
+        documento_["data_entrega"],
         str(caminho),
     )
-    return caminho, relatorio
+    return caminho

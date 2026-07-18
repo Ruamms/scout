@@ -92,6 +92,12 @@ TERMOS = {
         "A evolução da área vaga ao longo do tempo. Vacância subindo trimestre após "
         "trimestre importa mais do que um número alto isolado."
     ),
+    "Leitura por IA": (
+        "Um modelo de inteligência artificial rodando localmente (sem nuvem) leu o "
+        "relatório oficial do fundo e extraiu os fatos, citando os trechos. A IA não "
+        "calcula números nem dá opinião — e o documento original está sempre a um "
+        "clique para conferência."
+    ),
     "Calculadoras": (
         "Simulações matemáticas com os números deste fundo já preenchidos. Não tem botão "
         "de calcular: edite qualquer campo e os resultados se atualizam na hora. São "

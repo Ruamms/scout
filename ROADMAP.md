@@ -26,7 +26,7 @@ A visão de produto completa (referências de mercado, backlog e decisões de de
 
 - [x] **Coletor FNET** — `coleta/fnet.py`: lista documentos do fundo na API pública do FNET (B3), baixa o último relatório gerencial (PDF direto) com cache idempotente em `<dados>/documentos/<cnpj>/`
 - [x] **LLM local (Ollama)** — `scout ia TICKER`: extrai o texto do PDF (pypdf), monta o contexto determinístico (indicadores + red flags) e pede ao modelo local APENAS a extração de fatos com citação do trecho — nunca números novos, nunca recomendação. Requer Ollama instalado (`winget install Ollama.Ollama` + `ollama pull qwen2.5:14b`)
-- [ ] **Fatos relevantes por IA** — ler também os fatos relevantes do FNET (prioridade: é o que falta para a promessa "lemos os documentos oficiais" cobrir os documentos que assustam)
+- [x] **Fatos relevantes por IA** — ler também os fatos relevantes do FNET (prioridade: é o que falta para a promessa "lemos os documentos oficiais" cobrir os documentos que assustam) - FEITO: scout ia le os ultimos 3 fatos relevantes (cache idempotente, bloco por comunicado com data/resumo/citacao, --sem-fatos pula, escaneados apontados para leitura manual)
 - [ ] **Oscilações com contexto** — cruzar variações de cotação com fatos/eventos do período (fatos relevantes do FNET)
 - [ ] **Gestor** — identificar a gestora via FNET e enriquecer o raio-x do administrador
 - [ ] **Leitura de IA no relatório HTML** — incluir a seção gerada (com aviso claro de origem) na página do fundo

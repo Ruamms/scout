@@ -266,6 +266,9 @@ def site(
     destino: str = typer.Option(None, "--destino", help="Pasta de saída (padrão: dados/site)."),
     sem_cotacoes: bool = typer.Option(False, "--sem-cotacoes", help="Não busca cotações na internet."),
     limite: int = typer.Option(None, "--limite", help="Gera só os N maiores fundos (para teste)."),
+    leituras: str = typer.Option(
+        None, "--leituras", help="Pasta com as leituras por IA (leituras/) para embutir nas páginas."
+    ),
 ) -> None:
     """Gera o site estático completo: índice buscável + página de cada FII."""
     from pathlib import Path
@@ -279,6 +282,7 @@ def site(
             console.print("[yellow]Base local vazia.[/] Rode [bold]scout atualizar[/] primeiro.")
             raise typer.Exit(1)
         pasta = Path(destino) if destino else armazenamento.diretorio_dados() / "site"
+        pasta_leituras = Path(leituras) if leituras else None
         console.print(f"Gerando site em [bold]{pasta}[/]…")
         if not console.is_terminal:
             resumo = modulo_site.gerar(
@@ -287,6 +291,7 @@ def site(
                 com_cotacoes=not sem_cotacoes,
                 limite=limite,
                 ao_progredir=lambda msg: console.print(f"  [dim]{msg}[/]"),
+                leituras_dir=pasta_leituras,
             )
         else:
             from rich.progress import BarColumn, Progress, TaskProgressColumn, TextColumn
@@ -310,6 +315,7 @@ def site(
                     com_cotacoes=not sem_cotacoes,
                     limite=limite,
                     ao_item=_item,
+                    leituras_dir=pasta_leituras,
                 )
         console.print(f"[green]{resumo['paginas']} páginas geradas em {resumo['destino']}[/]")
     finally:
@@ -320,8 +326,11 @@ def site(
 def ia(
     ticker: str = typer.Argument(..., help="Código de negociação do FII, ex.: HGLG11."),
     modelo: str = typer.Option(None, "--modelo", help="Modelo do Ollama (padrão: qwen2.5:14b)."),
+    sem_fatos: bool = typer.Option(
+        False, "--sem-fatos", help="Lê só o relatório gerencial, sem os fatos relevantes."
+    ),
 ) -> None:
-    """Lê o último relatório gerencial do fundo com IA local (Ollama)."""
+    """Lê o relatório gerencial e os fatos relevantes do fundo com IA local (Ollama)."""
     from rich.panel import Panel
 
     from . import analise, armazenamento
@@ -333,25 +342,7 @@ def ia(
         if armazenamento.base_vazia(con):
             console.print("[yellow]Base local vazia.[/] Rode [bold]scout atualizar[/] primeiro.")
             raise typer.Exit(1)
-        if not modulo_ia.disponivel():
-            console.print(
-                "[red]Ollama não encontrado em http://localhost:11434.[/]\n"
-                "Para usar a leitura por IA local (grátis, nada sai da sua máquina):\n"
-                "  1. instale:  [bold]winget install Ollama.Ollama[/]\n"
-                "  2. baixe um modelo:  [bold]ollama pull qwen2.5:14b[/]  "
-                "(ou [bold]llama3.1:8b[/] se tiver menos de 16 GB de RAM)\n"
-                "  3. rode de novo:  [bold]scout ia " + ticker.upper() + "[/]"
-            )
-            raise typer.Exit(1)
-        modelo_final = modelo or modulo_ia.MODELO_PADRAO
-        instalados = modulo_ia.modelos_instalados()
-        if not any(nome.startswith(modelo_final.split(":")[0]) for nome in instalados):
-            console.print(
-                f"[red]Modelo '{modelo_final}' não está instalado no Ollama.[/] "
-                f"Instalados: {', '.join(instalados) or 'nenhum'}.\n"
-                f"Baixe com: [bold]ollama pull {modelo_final}[/] ou use [bold]--modelo[/]."
-            )
-            raise typer.Exit(1)
+        modelo_final = _preparar_ia(modelo)
 
         fundo = armazenamento.resolver_fundo(con, ticker)
         if fundo is None:
@@ -402,6 +393,204 @@ def ia(
             "[dim italic]Resumo gerado por IA a partir do relatório oficial — pode conter "
             "erros de leitura; os trechos citados permitem conferir. Não é recomendação "
             "de investimento.[/]"
+        )
+
+        if not sem_fatos:
+            _ler_fatos_relevantes(con, fundo, contexto, modelo_final, ticker)
+    finally:
+        con.close()
+
+
+def _preparar_ia(modelo: str | None) -> str:
+    """Garante Ollama de pé e o modelo instalado; retorna o nome final."""
+    from . import ia as modulo_ia
+
+    if not modulo_ia.disponivel():
+        console.print(
+            "[red]Ollama não encontrado em http://localhost:11434.[/]\n"
+            "Para usar a leitura por IA local (grátis, nada sai da sua máquina):\n"
+            "  1. instale:  [bold]winget install Ollama.Ollama[/]\n"
+            "  2. baixe um modelo:  [bold]ollama pull qwen2.5:14b[/]  "
+            "(ou [bold]llama3.1:8b[/] se tiver menos de 16 GB de RAM)\n"
+            "  3. rode de novo o comando"
+        )
+        raise typer.Exit(1)
+    modelo_final = modelo or modulo_ia.MODELO_PADRAO
+    instalados = modulo_ia.modelos_instalados()
+    if not any(nome.startswith(modelo_final.split(":")[0]) for nome in instalados):
+        console.print(
+            f"[red]Modelo '{modelo_final}' não está instalado no Ollama.[/] "
+            f"Instalados: {', '.join(instalados) or 'nenhum'}.\n"
+            f"Baixe com: [bold]ollama pull {modelo_final}[/] ou use [bold]--modelo[/]."
+        )
+        raise typer.Exit(1)
+    return modelo_final
+
+
+def _ler_fatos_relevantes(con, fundo, contexto: str, modelo_final: str, ticker: str) -> None:
+    from rich.panel import Panel
+
+    from . import ia as modulo_ia
+    from .coleta import fnet
+
+    console.print()
+    console.print(f"Buscando os últimos fatos relevantes de {ticker.upper()} no FNET…")
+    try:
+        documentos = fnet.garantir_fatos_relevantes(con, fundo.cnpj)
+    except Exception:
+        console.print("[yellow]Não foi possível buscar os fatos relevantes agora (rede?).[/]")
+        return
+    if not documentos:
+        console.print("[dim]Nenhum fato relevante recente encontrado para este fundo.[/]")
+        return
+
+    fatos, ilegiveis = [], []
+    for caminho, meta in documentos:
+        texto = modulo_ia.extrair_texto_pdf(caminho, max_paginas=6)
+        if len(texto) < 200:
+            ilegiveis.append(meta["data_entrega"][:10])
+            continue
+        fatos.append((meta["data_entrega"][:10], texto))
+        console.print(f"  [dim]fato relevante de {meta['data_entrega'][:10]} — {caminho}[/]")
+    if ilegiveis:
+        console.print(
+            f"  [yellow]{len(ilegiveis)} documento(s) sem texto extraível (imagem/escaneado): "
+            f"{', '.join(ilegiveis)} — abra os originais.[/]"
+        )
+    if not fatos:
+        return
+
+    with console.status("lendo os fatos relevantes…") as estado:
+        leitura = modulo_ia.analisar_fatos_relevantes(
+            fatos,
+            contexto,
+            modelo_final,
+            ao_progresso=lambda n: estado.update(f"lendo os fatos relevantes… {n} trechos"),
+        )
+    console.print()
+    console.print(
+        Panel(
+            leitura,
+            title=f"[bold]Fatos relevantes recentes — {ticker.upper()} ({len(fatos)} documento(s))[/]",
+            subtitle=f"[dim]IA local ({modelo_final}) · originais em ~/.scout/documentos[/]",
+            padding=(1, 2),
+        )
+    )
+    console.print(
+        "[dim italic]Resumos gerados por IA a partir dos comunicados oficiais, com citação "
+        "para conferência. Não é recomendação de investimento.[/]"
+    )
+
+
+@app.command(name="ia-lote")
+def ia_lote(
+    modelo: str = typer.Option(None, "--modelo", help="Modelo do Ollama (dica: llama3.1:8b é bem mais rápido para o lote)."),
+    destino: str = typer.Option("leituras", "--destino", help="Pasta dos JSONs de leitura (versionada no repo)."),
+    limite: int = typer.Option(None, "--limite", help="Só os N maiores fundos (para teste)."),
+    sem_fatos: bool = typer.Option(False, "--sem-fatos", help="Só relatórios gerenciais."),
+) -> None:
+    """Lê com IA os relatórios de TODOS os fundos negociáveis (incremental).
+
+    Documento já lido (mesmo id no FNET) é pulado — o lote é retomável e a
+    rodada mensal só processa o que é novo.
+    """
+    import time as _time
+    from pathlib import Path
+
+    from . import analise, armazenamento, leituras, ranking
+    from . import ia as modulo_ia
+    from .coleta import fnet
+
+    con = armazenamento.conectar()
+    try:
+        if armazenamento.base_vazia(con):
+            console.print("[yellow]Base local vazia.[/] Rode [bold]scout atualizar[/] primeiro.")
+            raise typer.Exit(1)
+        modelo_final = _preparar_ia(modelo)
+        pasta = Path(destino)
+
+        base = ranking.varrer(con)
+        fundos = sorted(
+            (resumo for resumo in base if resumo.ticker),
+            key=lambda resumo: resumo.pl or 0,
+            reverse=True,
+        )
+        vistos: set[str] = set()
+        fundos = [f for f in fundos if not (f.ticker in vistos or vistos.add(f.ticker))]
+        if limite:
+            fundos = fundos[:limite]
+
+        console.print(
+            f"Lote de leitura por IA: {len(fundos)} fundos · modelo [bold]{modelo_final}[/] · "
+            f"destino [bold]{pasta}[/] · incremental por documento (interrompeu? rode de novo que continua)"
+        )
+        novos, pulados, erros = 0, 0, 0
+        inicio = _time.monotonic()
+        for posicao, resumo in enumerate(fundos, start=1):
+            prefixo = f"[{posicao}/{len(fundos)}] {resumo.ticker}"
+            try:
+                docs = fnet.listar(resumo.cnpj)
+                relatorio = fnet.ultimo_relatorio_gerencial(docs)
+                if relatorio is None:
+                    console.print(f"{prefixo}: [dim]sem relatório gerencial no FNET[/]")
+                    pulados += 1
+                    continue
+                fatos_meta = [] if sem_fatos else fnet.fatos_relevantes(docs, 3)
+                existente = leituras.carregar(pasta, resumo.ticker)
+                if existente and existente["relatorio"]["id"] == relatorio["id"] and set(
+                    existente.get("fatos", {}).get("ids", [])
+                ) >= {meta["id"] for meta in fatos_meta}:
+                    pulados += 1
+                    continue  # nada novo desde a última leitura
+
+                raiox = analise.montar_raio_x(con, resumo.ticker, varredura=base)
+                contexto = modulo_ia.contexto_do_raiox(raiox) if raiox else ""
+
+                caminho = fnet._garantir_documento(
+                    con, resumo.cnpj, relatorio, armazenamento.diretorio_dados() / "documentos"
+                )
+                texto = modulo_ia.extrair_texto_pdf(caminho)
+                if len(texto) < 500:
+                    console.print(f"{prefixo}: [yellow]PDF sem texto extraível — pulado[/]")
+                    erros += 1
+                    continue
+                leitura_relatorio = modulo_ia.analisar_relatorio(texto, contexto, modelo_final)
+
+                texto_fatos = None
+                if fatos_meta:
+                    fatos = []
+                    for meta in fatos_meta:
+                        caminho_fato = fnet._garantir_documento(
+                            con, resumo.cnpj, meta, armazenamento.diretorio_dados() / "documentos"
+                        )
+                        texto_fato = modulo_ia.extrair_texto_pdf(caminho_fato, max_paginas=6)
+                        if len(texto_fato) >= 200:
+                            fatos.append((meta["data_entrega"][:10], texto_fato))
+                    if fatos:
+                        texto_fatos = modulo_ia.analisar_fatos_relevantes(fatos, contexto, modelo_final)
+
+                leituras.salvar(
+                    pasta,
+                    leituras.montar(
+                        resumo.ticker, modelo_final, relatorio, leitura_relatorio, fatos_meta, texto_fatos
+                    ),
+                )
+                novos += 1
+                decorrido = _time.monotonic() - inicio
+                console.print(
+                    f"{prefixo}: [green]lido[/] "
+                    f"[dim]({decorrido / max(novos, 1):.0f}s/fundo em média)[/]"
+                )
+            except KeyboardInterrupt:
+                console.print("\n[yellow]Interrompido — rode de novo para continuar de onde parou.[/]")
+                break
+            except Exception as erro:  # fundo problemático não derruba o lote
+                erros += 1
+                console.print(f"{prefixo}: [red]erro[/] [dim]{erro}[/]")
+
+        console.print(
+            f"\n[bold]Lote concluído:[/] {novos} lidos, {pulados} já em dia, {erros} com erro.\n"
+            f"Para publicar no site: [bold]git add {pasta} && git commit -m 'leituras' && git push[/]"
         )
     finally:
         con.close()

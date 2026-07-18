@@ -73,13 +73,54 @@ def analisar_relatorio(
     modelo: str | None = None,
     ao_progresso=None,
 ) -> str:
-    """Envia o relatório + contexto determinístico ao modelo local.
+    """Envia o relatório + contexto determinístico ao modelo local."""
+    conteudo = (
+        "CONTEXTO (calculado por código a partir de dados oficiais — "
+        f"use apenas para conectar fatos, não recalcule):\n{contexto_fundo}\n\n"
+        f"RELATÓRIO GERENCIAL (texto extraído do PDF):\n{texto_relatorio}"
+    )
+    return _conversar(PROMPT_SISTEMA, conteudo, modelo, ao_progresso)
 
-    A resposta vem em STREAMING: em máquinas onde o modelo não cabe todo
-    na GPU, o processamento do prompt pode levar minutos — com stream a
-    conexão nunca fica ociosa e dá para mostrar progresso
-    (`ao_progresso(n_trechos)` é chamado a cada pedaço recebido).
-    """
+
+PROMPT_FATOS = (
+    "Você é um extrator de fatos de comunicados 'Fato Relevante' de fundos "
+    "imobiliários brasileiros. Regras invioláveis:\n"
+    "1. Para CADA documento fornecido, produza um bloco com: a data, um título "
+    "de uma linha dizendo O QUE aconteceu, um resumo de 1 a 3 linhas e a "
+    "citação do trecho-chave entre aspas.\n"
+    "2. Relate APENAS o que está escrito — nunca invente, nunca calcule "
+    "números novos, nunca extrapole consequências.\n"
+    "3. NUNCA dê opinião de investimento ou recomendação. Fatos, não dicas.\n"
+    "4. Se o texto do documento se conectar aos indicadores do contexto, "
+    "aponte a conexão em uma frase.\n"
+    "5. Responda em português, do documento mais recente para o mais antigo."
+)
+
+
+def analisar_fatos_relevantes(
+    fatos: list[tuple[str, str]],
+    contexto_fundo: str,
+    modelo: str | None = None,
+    ao_progresso=None,
+) -> str:
+    """Lê os fatos relevantes (lista de (data_entrega, texto)) de uma vez."""
+    blocos = "\n\n".join(
+        f"=== FATO RELEVANTE entregue em {data} ===\n{texto[:8000]}"
+        for data, texto in fatos
+    )
+    conteudo = (
+        "CONTEXTO (calculado por código a partir de dados oficiais — "
+        f"use apenas para conectar fatos, não recalcule):\n{contexto_fundo}\n\n"
+        f"DOCUMENTOS:\n{blocos}"
+    )
+    return _conversar(PROMPT_FATOS, conteudo, modelo, ao_progresso)
+
+
+def _conversar(prompt_sistema: str, conteudo_usuario: str, modelo: str | None, ao_progresso) -> str:
+    """Chamada ao Ollama em STREAMING: em máquinas onde o modelo não cabe
+    todo na GPU, o processamento do prompt pode levar minutos — com stream
+    a conexão nunca fica ociosa e dá para mostrar progresso
+    (`ao_progresso(n_trechos)` é chamado a cada pedaço recebido)."""
     modelo = modelo or MODELO_PADRAO
     corpo = json.dumps(
         {
@@ -87,15 +128,8 @@ def analisar_relatorio(
             "stream": True,
             "options": {"temperature": 0.2},
             "messages": [
-                {"role": "system", "content": PROMPT_SISTEMA},
-                {
-                    "role": "user",
-                    "content": (
-                        "CONTEXTO (calculado por código a partir de dados oficiais — "
-                        f"use apenas para conectar fatos, não recalcule):\n{contexto_fundo}\n\n"
-                        f"RELATÓRIO GERENCIAL (texto extraído do PDF):\n{texto_relatorio}"
-                    ),
-                },
+                {"role": "system", "content": prompt_sistema},
+                {"role": "user", "content": conteudo_usuario},
             ],
         }
     ).encode("utf-8")

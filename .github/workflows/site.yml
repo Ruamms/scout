@@ -45,7 +45,7 @@ jobs:
         run: uv run scout atualizar
 
       - name: Gerar site
-        run: uv run scout site --destino _site
+        run: uv run scout site --destino _site --leituras leituras
 
       - name: Publicar artefato do Pages
         uses: actions/upload-pages-artifact@v3
