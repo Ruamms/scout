@@ -1,6 +1,7 @@
 # Roadmap
 
 Cada etapa é pensada para gerar valor sozinha — e virar conteúdo (post/vídeo) ao ser concluída.
+A visão de produto completa (referências de mercado, backlog e decisões de design) está em [docs/VISAO.md](docs/VISAO.md). **v1 = 100% FIIs.**
 
 ## Fase 1 — Fundação (MVP CLI, foco em FIIs)
 
@@ -11,19 +12,25 @@ Cada etapa é pensada para gerar valor sozinha — e virar conteúdo (post/víde
 - [x] **Motor de red flags** — 6 regras auditáveis, cada uma com severidade, evidência numérica e fonte; regras sem histórico suficiente aparecem como "não avaliadas" (nunca como aprovação silenciosa)
   - distribuição acima da variação patrimonial · diluição destrutiva por emissão · VP/cota em queda relevante · base de cotistas (mínimo legal de 100 para isenção de IR, Lei 14.754/2023) · P/VP fora da faixa histórica · rendimentos irregulares
   - pendente para leva 2: vacância fora da curva (precisa do informe trimestral da CVM)
-- [ ] **Relatório de saída** — raio-x do ativo em Markdown/HTML apresentável (bom de ler e bom de filmar)
+- [ ] **M5 — Relatório HTML com gráficos** — página única auto-contida (gráficos SVG gerados em Python): cotação, dividendos+DY, PL anual, P/VP vs média; selo-síntese dos alertas (critérios públicos — ver VISAO.md); data de atualização por fonte; disclaimer
+- [ ] **M6 — Informe trimestral CVM** — lista de imóveis resumida (por estado + top imóveis por % da receita, com vacância e inadimplência individuais); vacância com histórico; resultado financeiro real → red flag de distribuição exata; red flags de vacância e de "fundo novo"
+- [ ] **M7 — Raio-x do administrador** — outros FIIs do mesmo administrador, com idade, segmento e contagem de alertas, linkáveis
+- [ ] **M8 — Site estático** — GitHub Actions gera as páginas de todos os FIIs 1x/dia e publica no GitHub Pages
 
 ## Fase 2 — Camada qualitativa
 
 - [ ] **Coletor FNET** — localizar e baixar o último relatório gerencial e fatos relevantes do fundo
 - [ ] **LLM local (Ollama)** — extração de fatos dos relatórios: resumo com citação do trecho-fonte, conectado aos indicadores da Fase 1
 - [ ] **Oscilações com contexto** — cruzar variações de cotação com fatos/eventos do período
+- [ ] **Gestor** — identificar a gestora via FNET e enriquecer o raio-x do administrador
 
-## Fase 3 — Expansão
+## Fase 3 — Outras classes (depois da v1 FII completa)
 
-- [ ] **Ações** — adaptar coletor e indicadores para demonstrações de companhias abertas (DFP/ITR da CVM)
+- [ ] **Ações** — DFP/ITR da CVM + Formulário de Referência (histórico de diretoria, sempre factual)
+- [ ] **ETFs** — composição, taxa, tracking error
+- [ ] **Renda fixa/CDB** — alerta de concentração acima do teto do FGC (R$ 250 mil) e saúde do emissor (IF.data/BCB)
 - [ ] **Comparação entre ativos** — mesmo raio-x lado a lado
-- [ ] **API/site** — expor o núcleo via FastAPI; coleta agendada; front
+- [ ] **API/site dinâmico** — expor o núcleo via FastAPI quando o site estático não bastar
 
 ## Princípios que não mudam
 
