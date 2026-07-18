@@ -17,7 +17,10 @@ _COR_SEVERIDADE = {
     Severidade.BAIXA: "black on cyan",
 }
 
-_RODAPE = "Isto não é recomendação de investimento. Fontes: dados abertos da CVM."
+_RODAPE = (
+    "Isto não é recomendação de investimento. "
+    "Fontes: dados abertos da CVM; cotações via Yahoo Finance."
+)
 
 
 def renderizar(raiox: RaioX, console: Console) -> None:
@@ -48,11 +51,13 @@ def _cabecalho(raiox: RaioX) -> Panel:
         ("  ·  ", "dim"),
         (raiox.cnpj, "dim"),
     )
-    linha2 = Text(
+    detalhes = (
         f"{raiox.classificacao}  ·  Gestão {raiox.gestao.lower()}"
-        f"  ·  informes CVM até {raiox.dados_ate}",
-        style="dim",
+        f"  ·  informes CVM até {raiox.dados_ate}"
     )
+    if raiox.cotacao_em:
+        detalhes += f"  ·  cotação de {raiox.cotacao_em}"
+    linha2 = Text(detalhes, style="dim")
     return Panel(
         Group(linha1, linha2),
         title="[bold]FATO RELEVANTE[/] [dim]— o raio-x dos ativos da bolsa[/]",

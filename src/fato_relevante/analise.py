@@ -13,7 +13,6 @@ from . import armazenamento
 from .modelos import IndicadorLinha, RaioX
 
 _NOTAS_FASE_ATUAL = [
-    "cotação de mercado e P/VP entram com o coletor de cotações (milestone 3)",
     "motor de red flags entra no milestone 4",
 ]
 
@@ -26,8 +25,12 @@ def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:
     serie = armazenamento.serie_complemento(con, fundo.cnpj)
     if not serie:
         return None
+    cotacoes = armazenamento.serie_cotacoes(con, ticker)
+    meta_cotacao = armazenamento.cotacao_meta(con, ticker)
     atual = serie[-1]
-    indicadores = _montar_indicadores(serie)
+    notas = list(_NOTAS_FASE_ATUAL)
+    if not cotacoes:
+        notas.insert(0, "sem cotação de bolsa para este ticker")
     return RaioX(
         ticker=ticker,
         nome=fundo.nome,
@@ -35,19 +38,46 @@ def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:
         classificacao=fundo.segmento,
         gestao=fundo.tipo_gestao,
         dados_ate=_competencia_br(atual["competencia"]),
-        indicadores=indicadores,
+        cotacao_em=_dia_br(meta_cotacao["cotado_em"]) if meta_cotacao else "",
+        indicadores=_montar_indicadores(serie, cotacoes, meta_cotacao),
         red_flags=[],
         sem_alerta=[],
-        notas=list(_NOTAS_FASE_ATUAL),
+        notas=notas,
         red_flags_avaliadas=False,
         exemplo=False,
     )
 
 
-def _montar_indicadores(serie: list[sqlite3.Row]) -> list[IndicadorLinha]:
+def _montar_indicadores(
+    serie: list[sqlite3.Row],
+    cotacoes: list[sqlite3.Row],
+    meta_cotacao: sqlite3.Row | None,
+) -> list[IndicadorLinha]:
     atual = serie[-1]
     primeira = serie[0]["competencia"]
+    vp_ajustada = _serie_vp_ajustada(serie)
     linhas = []
+
+    preco = meta_cotacao["preco_atual"] if meta_cotacao else None
+    if preco is not None and cotacoes:
+        linhas.append(
+            IndicadorLinha(
+                "Cotação",
+                f"R$ {_decimal(preco)}",
+                _oscilacao_12m(cotacoes, preco),
+                _oscilacao_no_ano(cotacoes, preco),
+            )
+        )
+        vp = atual["vp_cota"]
+        if vp:
+            linhas.append(
+                IndicadorLinha(
+                    "P/VP",
+                    _decimal(preco / vp),
+                    "—",
+                    _media_pvp(cotacoes, vp_ajustada),
+                )
+            )
 
     pl = atual["patrimonio_liquido"]
     if pl is not None:
@@ -67,7 +97,7 @@ def _montar_indicadores(serie: list[sqlite3.Row]) -> list[IndicadorLinha]:
                 "VP/cota",
                 _decimal(vp),
                 _variacao_12m(serie, "vp_cota"),
-                _media_historica(serie, "vp_cota", prefixo="média "),
+                _media_vp_ajustada(vp_ajustada),
             )
         )
 
@@ -116,6 +146,70 @@ def _montar_indicadores(serie: list[sqlite3.Row]) -> list[IndicadorLinha]:
         )
 
     return linhas
+
+
+# --- cotações e P/VP --------------------------------------------------------
+
+
+def _oscilacao_12m(cotacoes: list[sqlite3.Row], preco_atual: float) -> str:
+    alvo = _competencia_menos_meses(cotacoes[-1]["competencia"], 12)
+    base = next((c["fechamento"] for c in cotacoes if c["competencia"] == alvo), None)
+    if not base:
+        return "—"
+    return _percentual(100 * (preco_atual - base) / base, sinal=True)
+
+
+def _oscilacao_no_ano(cotacoes: list[sqlite3.Row], preco_atual: float) -> str:
+    dezembro = f"{int(cotacoes[-1]['competencia'][:4]) - 1}-12"
+    base = next((c["fechamento"] for c in cotacoes if c["competencia"] == dezembro), None)
+    if not base:
+        return "—"
+    return f"{_percentual(100 * (preco_atual - base) / base, sinal=True)} no ano"
+
+
+def _media_pvp(cotacoes: list[sqlite3.Row], vp_ajustada: dict[str, float]) -> str:
+    razoes = [
+        c["fechamento"] / vp_ajustada[c["competencia"]]
+        for c in cotacoes
+        if c["fechamento"] and vp_ajustada.get(c["competencia"])
+    ]
+    if not razoes:
+        return "—"
+    return f"média {_decimal(sum(razoes) / len(razoes))}"
+
+
+def _media_vp_ajustada(vp_ajustada: dict[str, float]) -> str:
+    if not vp_ajustada:
+        return "—"
+    valores = list(vp_ajustada.values())
+    return f"média {_decimal(sum(valores) / len(valores))}"
+
+
+def _serie_vp_ajustada(serie: list[sqlite3.Row]) -> dict[str, float]:
+    """VP/cota com desdobramentos neutralizados (na base de cotas atual).
+
+    A CVM publica o VP/cota da época; um desdobramento 10:1 faz o valor
+    despencar 90% de um mês para o outro sem perda patrimonial nenhuma.
+    Saltos além de 2,5x para qualquer lado são tratados como evento de
+    cotas (desdobramento/grupamento) e neutralizados, para que médias e
+    comparações históricas façam sentido.
+    """
+    bruta = [
+        (linha["competencia"], linha["vp_cota"])
+        for linha in serie
+        if linha["vp_cota"]
+    ]
+    ajustada: dict[str, float] = {}
+    fator = 1.0
+    vp_posterior = None
+    for competencia, vp in reversed(bruta):
+        if vp_posterior is not None:
+            razao = vp / vp_posterior
+            if razao >= 2.5 or razao <= 0.4:
+                fator *= vp_posterior / vp
+        ajustada[competencia] = vp * fator
+        vp_posterior = vp
+    return ajustada
 
 
 # --- séries -----------------------------------------------------------------
@@ -171,6 +265,12 @@ def _competencia_menos_meses(competencia: str, meses: int) -> str:
 
 def _competencia_br(competencia: str) -> str:
     return f"{competencia[5:7]}/{competencia[:4]}"
+
+
+def _dia_br(data_iso: str | None) -> str:
+    if not data_iso or len(data_iso) < 10:
+        return ""
+    return f"{data_iso[8:10]}/{data_iso[5:7]}/{data_iso[:4]}"
 
 
 # --- formatação pt-BR -------------------------------------------------------

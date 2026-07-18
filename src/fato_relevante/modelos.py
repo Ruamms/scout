@@ -53,6 +53,7 @@ class RaioX:
     classificacao: str
     gestao: str
     dados_ate: str
+    cotacao_em: str = ""
     indicadores: list[IndicadorLinha] = field(default_factory=list)
     red_flags: list[RedFlag] = field(default_factory=list)
     sem_alerta: list[str] = field(default_factory=list)

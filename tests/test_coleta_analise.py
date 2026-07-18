@@ -1,45 +1,12 @@
-import io
-import zipfile
-
 import pytest
 
 from fato_relevante import analise, armazenamento
 from fato_relevante.coleta import cvm
 
 
-def _zip_cvm(novo_schema: bool, ano: int = 2026) -> bytes:
-    cnpj_col = "CNPJ_Fundo_Classe" if novo_schema else "CNPJ_Fundo"
-    nome_col = "Nome_Fundo_Classe" if novo_schema else "Nome_Fundo"
-    geral = (
-        f"{cnpj_col};Data_Referencia;Versao;{nome_col};Codigo_ISIN;"
-        "Segmento_Atuacao;Tipo_Gestao;Quantidade_Cotas_Emitidas\n"
-        f"11.111.111/0001-11;{ano}-01-01;1;FUNDO TESTE FII;BRTSTECTF004;Shoppings;Ativa;1000\n"
-        f"11.111.111/0001-11;{ano}-02-01;1;FUNDO TESTE FII;BRTSTECTF004;Shoppings;Ativa;1100\n"
-    )
-    complemento = (
-        f"{cnpj_col};Data_Referencia;Versao;Valor_Ativo;Patrimonio_Liquido;"
-        "Cotas_Emitidas;Valor_Patrimonial_Cotas;Percentual_Rentabilidade_Patrimonial_Mes;"
-        "Percentual_Dividend_Yield_Mes;Percentual_Amortizacao_Cotas_Mes;Total_Numero_Cotistas\n"
-        f"11.111.111/0001-11;{ano}-01-01;1;1200000.50;1000000;1000;100.5;0.008;0.009;;500\n"
-        f"11.111.111/0001-11;{ano}-02-01;1;1300000;1050000;1100;95.45;0.007;0.011;;520\n"
-    )
-    buffer = io.BytesIO()
-    with zipfile.ZipFile(buffer, "w") as zf:
-        zf.writestr(f"inf_mensal_fii_geral_{ano}.csv", geral.encode("latin-1"))
-        zf.writestr(f"inf_mensal_fii_complemento_{ano}.csv", complemento.encode("latin-1"))
-    return buffer.getvalue()
-
-
-@pytest.fixture()
-def con(tmp_path):
-    conexao = armazenamento.conectar(tmp_path)
-    yield conexao
-    conexao.close()
-
-
 @pytest.mark.parametrize("novo_schema", [True, False], ids=["pos_rcvm175", "pre_rcvm175"])
-def test_carga_normaliza_os_dois_vocabularios(con, novo_schema):
-    gerais, complementos = cvm.carregar_zip(con, _zip_cvm(novo_schema), "inf_mensal_fii_2026.zip")
+def test_carga_normaliza_os_dois_vocabularios(con, zip_cvm, novo_schema):
+    gerais, complementos = cvm.carregar_zip(con, zip_cvm(novo_schema), "inf_mensal_fii_2026.zip")
     assert (gerais, complementos) == (2, 2)
     linha = con.execute(
         "SELECT * FROM informes_complemento ORDER BY competencia DESC LIMIT 1"
@@ -52,8 +19,8 @@ def test_carga_normaliza_os_dois_vocabularios(con, novo_schema):
     assert not armazenamento.base_vazia(con)
 
 
-def test_resolver_fundo_pelo_isin(con):
-    cvm.carregar_zip(con, _zip_cvm(True), "inf_mensal_fii_2026.zip")
+def test_resolver_fundo_pelo_isin(con, zip_cvm):
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     fundo = armazenamento.resolver_fundo(con, "tste11")
     assert fundo is not None
     assert fundo.cnpj == "11.111.111/0001-11"
@@ -61,14 +28,14 @@ def test_resolver_fundo_pelo_isin(con):
     assert fundo.segmento == "Shoppings"
 
 
-def test_ticker_desconhecido_retorna_none(con):
-    cvm.carregar_zip(con, _zip_cvm(True), "inf_mensal_fii_2026.zip")
+def test_ticker_desconhecido_retorna_none(con, zip_cvm):
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     assert armazenamento.resolver_fundo(con, "XPTO11") is None
     assert analise.montar_raio_x(con, "XPTO11") is None
 
 
-def test_montar_raio_x_com_dados_reais(con):
-    cvm.carregar_zip(con, _zip_cvm(True), "inf_mensal_fii_2026.zip")
+def test_montar_raio_x_com_dados_reais(con, zip_cvm):
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     raiox = analise.montar_raio_x(con, "tste11")
     assert raiox is not None
     assert raiox.ticker == "TSTE11"
@@ -89,13 +56,16 @@ def test_montar_raio_x_com_dados_reais(con):
     assert dy.doze_meses == "2,00% 12m"
 
 
-def test_cli_analisar_com_base_carregada(con, tmp_path, monkeypatch):
+def test_cli_analisar_com_base_carregada(con, zip_cvm, tmp_path, monkeypatch):
     from typer.testing import CliRunner
 
     from fato_relevante.cli import app
+    from fato_relevante.coleta import cotacoes
 
-    cvm.carregar_zip(con, _zip_cvm(True), "inf_mensal_fii_2026.zip")
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     monkeypatch.setenv("FATO_DATA_DIR", str(tmp_path))
+    # a CLI sincroniza cotações antes de analisar; teste não vai à rede
+    monkeypatch.setattr(cotacoes, "garantir_atualizada", lambda con, ticker: None)
     resultado = CliRunner().invoke(app, ["analisar", "tste11"])
     assert resultado.exit_code == 0
     assert "TSTE11" in resultado.output

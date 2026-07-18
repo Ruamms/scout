@@ -59,10 +59,13 @@ def _exibir_raio_x(ticker: str, html: bool = False, interativo: bool = False) ->
     from . import analise, armazenamento
     from .relatorio.terminal import renderizar
 
+    from .coleta import cotacoes
+
     con = armazenamento.conectar()
     try:
         if armazenamento.base_vazia(con) and not _oferecer_atualizacao(con, interativo):
             return False
+        aviso_cotacao = cotacoes.garantir_atualizada(con, ticker)
         raiox = analise.montar_raio_x(con, ticker)
         if raiox is None:
             console.print(
@@ -70,6 +73,9 @@ def _exibir_raio_x(ticker: str, html: bool = False, interativo: bool = False) ->
                 "[dim]Confira o código ou rode 'fato atualizar' para renovar a base.[/]"
             )
             return False
+        sem_cotacao = any("sem cotação de bolsa" in nota for nota in raiox.notas)
+        if aviso_cotacao and not sem_cotacao:
+            raiox.notas.insert(0, aviso_cotacao)
         renderizar(raiox, console)
         if html:
             console.print("[yellow]Relatório HTML ainda não implementado (milestone 5 do ROADMAP).[/]")

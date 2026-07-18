@@ -29,6 +29,19 @@ CREATE TABLE IF NOT EXISTS informes_gerais (
     PRIMARY KEY (cnpj, competencia)
 );
 CREATE INDEX IF NOT EXISTS idx_gerais_isin ON informes_gerais (isin);
+CREATE TABLE IF NOT EXISTS cotacoes (
+    ticker               TEXT NOT NULL,
+    competencia          TEXT NOT NULL,  -- AAAA-MM
+    fechamento           REAL,
+    fechamento_ajustado  REAL,
+    PRIMARY KEY (ticker, competencia)
+);
+CREATE TABLE IF NOT EXISTS cotacoes_meta (
+    ticker        TEXT PRIMARY KEY,
+    preco_atual   REAL,
+    cotado_em     TEXT,  -- data do último pregão (AAAA-MM-DD)
+    atualizado_em TEXT   -- data da última sincronização local (AAAA-MM-DD)
+);
 CREATE TABLE IF NOT EXISTS informes_complemento (
     cnpj                   TEXT NOT NULL,
     competencia            TEXT NOT NULL,  -- AAAA-MM
@@ -118,3 +131,41 @@ def serie_complemento(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:
         "SELECT * FROM informes_complemento WHERE cnpj = ? ORDER BY competencia",
         (cnpj,),
     ).fetchall()
+
+
+def gravar_cotacoes(
+    con: sqlite3.Connection,
+    ticker: str,
+    candles: list[tuple[str, float, float]],
+    preco_atual: float,
+    cotado_em: str,
+    atualizado_em: str,
+) -> None:
+    con.executemany(
+        """
+        INSERT OR REPLACE INTO cotacoes (ticker, competencia, fechamento, fechamento_ajustado)
+        VALUES (?, ?, ?, ?)
+        """,
+        [(ticker, competencia, fechamento, ajustado) for competencia, fechamento, ajustado in candles],
+    )
+    con.execute(
+        """
+        INSERT OR REPLACE INTO cotacoes_meta (ticker, preco_atual, cotado_em, atualizado_em)
+        VALUES (?, ?, ?, ?)
+        """,
+        (ticker, preco_atual, cotado_em, atualizado_em),
+    )
+    con.commit()
+
+
+def serie_cotacoes(con: sqlite3.Connection, ticker: str) -> list[sqlite3.Row]:
+    return con.execute(
+        "SELECT * FROM cotacoes WHERE ticker = ? ORDER BY competencia",
+        (ticker,),
+    ).fetchall()
+
+
+def cotacao_meta(con: sqlite3.Connection, ticker: str) -> sqlite3.Row | None:
+    return con.execute(
+        "SELECT * FROM cotacoes_meta WHERE ticker = ?", (ticker,)
+    ).fetchone()
