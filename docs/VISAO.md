@@ -27,9 +27,9 @@
 - Carteira de imóveis: donut por estado + card por imóvel com área e **vacância individual**.
 - Dividendos: barras (R$) + linha (DY%) no mesmo gráfico, por ano.
 - Rentabilidade vs CDI, IPCA e IFIX.
-- **Selo de 4 níveis** (Azulim/Viável/Requer atenção/Bomba — "viável para estudo") — principal produto, atrás de paywall; critérios não são públicos.
+- **Selo de 4 níveis** com enquadramento "viável para estudo" — principal produto, atrás de paywall; critérios não são públicos.
 - Simuladores (bola de neve, rentabilidade), comparador, votação da comunidade.
-- Disclaimer: "fins informativos… não tem o objetivo de sugerir compra ou venda".
+- Disclaimer no rodapé posicionando o site como informativo, sem sugestão de compra/venda.
 - **Não mostra data de atualização dos dados nem administrador/gestor.**
 
 ### Onde nós ganhamos (dados que eles não mostram ou escondem)
@@ -46,13 +46,14 @@
 - [ ] **M5 — Relatório HTML com gráficos**: página única auto-contida (SVG gerado em Python, sem lib JS externa) com: cotação, dividendos/DY (barras+linha), PL anual, P/VP vs média; selo-síntese dos alertas; data de atualização de cada fonte no cabeçalho; disclaimer.
 - [ ] **M6 — Informe trimestral CVM**: lista de imóveis resumida (pizza por estado + top imóveis por % da receita, com vacância e inadimplência individuais); vacância física/financeira com histórico; resultado financeiro real (`Rendimentos_Declarados` vs `Resultado_Financeiro_Liquido` → red flag de distribuição EXATA, sem proxy); receita; red flag de vacância; regra "fundo novo" (<24 meses de histórico = ponto de atenção explícito).
 - [ ] **M7 — Raio-x do administrador**: armazenar administrador (já vem no informe mensal); na página do fundo, listar outros FIIs do mesmo administrador com idade, segmento e contagem de alertas, cada um linkável ("gestor administra outros N fundos: XXXX11 (8 anos, logística, sem alertas)…").
-- [ ] **M8 — Site estático**: GitHub Actions roda o coletor 1x/dia, gera a página HTML de todos os FIIs e publica no GitHub Pages (grátis). Página índice com busca simples client-side.
+- [ ] **M8 — Ranking / pesquisa avançada**: `fato ranking` varre a base inteira (motor de red flags roda para todos os fundos — é só SQLite + aritmética) e responde consultas como "10 fundos sem alertas com maior DY 12m", "10 sem alertas com menor P/VP", "10 com maior PL"; filtros combináveis (`--sem-alertas`, `--segmento`, `--top N`, `--por dy|pvp|pl|cotistas`). Rankings que dependem de cotação usam os tickers com cotação em cache (o site do M9 terá todas). Ranking é fato ordenado com critério explícito — não é recomendação, e o critério aparece no cabeçalho da saída.
+- [ ] **M9 — Site estático**: GitHub Actions roda o coletor 1x/dia, gera a página HTML de todos os FIIs + páginas de ranking e publica no GitHub Pages (grátis). Página índice com busca simples client-side. Pré-requisito: revisar fonte de cotações (ver revisão de propriedade intelectual).
 
 ### Selo-síntese (decisão de design)
 Inspirado no selo da AUVP, mas com duas diferenças de princípio: os critérios são públicos (é literalmente o resultado do motor de red flags) e o texto é factual:
 - **Sem alertas** (verde) — todas as regras avaliadas, nenhuma disparou
 - **Alertas leves** (amarelo) — só alertas de severidade baixa
-- **Requer atenção** (laranja) — algum alerta de severidade média
+- **Atenção** (laranja) — algum alerta de severidade média
 - **Alerta grave** (vermelho) — algum alerta de severidade alta
 - **Histórico insuficiente** (cinza) — regras demais não avaliadas para sintetizar (fundos novos)
 
@@ -83,6 +84,16 @@ Todo alerta de imóvel segue o padrão do produto: fato + fonte + data, e **nunc
 - Rentabilidade vs CDI/IPCA/IFIX.
 - Tabela de proventos com histórico completo.
 - FAQ por ativo (gerada das próprias métricas).
+
+## Revisão de propriedade intelectual (18/07/2026)
+
+Auditoria do que usamos das referências (Investidor10, AUVP) e das fontes:
+
+- **O que é livre**: ideias e funcionalidades (gráficos, toggles ano/mês, comparação com benchmarks, checklist, ranking) não são protegidas por copyright — só a expressão delas. Todo o nosso código, textos, CSS e visual são originais.
+- **O que evitamos de propósito**: nomes dos selos da AUVP (nossos níveis têm nomes e critérios próprios; "Requer atenção" foi renomeado para "Atenção" por coincidir com rótulo deles); textos e thresholds do checklist do Investidor10 (quando implementarmos, critérios e redação próprios); qualquer asset (ícone, imagem, trecho de página) das referências — nada foi copiado para o repo.
+- **Citação de concorrentes**: mencionar Investidor10/AUVP em documentação de análise é uso nominativo legítimo; não usar as marcas deles na interface do produto.
+- **Dados**: CVM e Banco Central são dados públicos oficiais (uso livre). **Yahoo Finance é o ponto de atenção**: a API de cotações é não-oficial; para uso pessoal/local o risco é baixo, mas antes do site público em escala vale migrar preço histórico para fonte oficial (COTAHIST da B3) ou API licenciada — registrado como pré-requisito do M9.
+- **Nossa marca**: "Fato Relevante" é termo genérico de mercado (bom para nós), mas antes de qualquer uso comercial vale busca no INPI por marcas registradas no mesmo nicho.
 
 ## Distribuição / site
 - v1 site: **GitHub Pages + GitHub Actions** (grátis, sem servidor, repo público já dá tudo). Limites confortáveis: 1 GB de site, ~100 GB/mês de banda.

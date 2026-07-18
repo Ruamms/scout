@@ -16,7 +16,8 @@ A visão de produto completa (referências de mercado, backlog e decisões de de
   - pendente: linha do IFIX no gráfico de rentabilidade (sem fonte pública programável hoje — Yahoo não tem histórico do índice, Stooq exige desafio JS; candidata futura: arquivos oficiais da B3)
 - [ ] **M6 — Informe trimestral CVM** — lista de imóveis resumida (por estado + top imóveis por % da receita, com vacância e inadimplência individuais); vacância com histórico; resultado financeiro real → red flag de distribuição exata; red flags de vacância e de "fundo novo"
 - [ ] **M7 — Raio-x do administrador** — outros FIIs do mesmo administrador, com idade, segmento e contagem de alertas, linkáveis
-- [ ] **M8 — Site estático** — GitHub Actions gera as páginas de todos os FIIs 1x/dia e publica no GitHub Pages
+- [ ] **M8 — Ranking / pesquisa avançada** — `fato ranking`: top N fundos por DY/P-VP/PL/cotistas com filtro "sem alertas" e por segmento; critério sempre explícito na saída
+- [ ] **M9 — Site estático** — GitHub Actions gera as páginas de todos os FIIs + rankings 1x/dia e publica no GitHub Pages
 
 ## Fase 2 — Camada qualitativa
 

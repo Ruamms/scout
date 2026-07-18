@@ -163,7 +163,8 @@ ul {{ padding-left:20px; }} li {{ margin:3px 0; }}
   {"".join(secoes_graficos) or '<p class="na">sem séries suficientes para gráficos</p>'}
 
   <div class="rodape">{_RODAPE}<br>
-  Projeto open source: <a href="https://github.com/Ruamms/fato-relevante">github.com/Ruamms/fato-relevante</a></div>
+  Projeto open source: <a href="https://github.com/Ruamms/fato-relevante">github.com/Ruamms/fato-relevante</a>
+  · <a href="apoie.html">☕ Apoie o projeto (PIX)</a></div>
 </div>
 <script>
 function mostrar(botao, idPainel) {{

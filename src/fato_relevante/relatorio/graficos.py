@@ -45,7 +45,7 @@ def grafico_linhas(
     dominio = sorted({competencia for _, pontos in series for competencia, _ in pontos})
     posicao = {competencia: indice for indice, competencia in enumerate(dominio)}
 
-    partes = [_abre_svg(), *_grade_y(minimo, maximo, formatador), *_rotulos_anos(dominio)]
+    partes = [_abre_svg(), *_grade_y(minimo, maximo, formatador), *_rotulos_eixo_x(dominio)]
     if linha_media is not None:
         y = _escala_y(linha_media, minimo, maximo)
         partes.append(
@@ -66,6 +66,16 @@ def grafico_linhas(
             f'<polyline points="{coordenadas}" fill="none" stroke="{cor}" '
             'stroke-width="2" stroke-linejoin="round"/>'
         )
+        # pontos com tooltip nativo (mês + valor); visíveis quando a série é curta
+        raio = 3 if len(pontos) <= 40 else 6
+        opacidade = "1" if len(pontos) <= 40 else "0"
+        for competencia, v in pontos:
+            x = _escala_x(posicao[competencia], len(dominio))
+            y = _escala_y(v, minimo, maximo)
+            partes.append(
+                f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{raio}" fill="{cor}" opacity="{opacidade}">'
+                f"<title>{nome} · {formato.competencia_curta(competencia)}: {formatador(v)}</title></circle>"
+            )
         if len(series) > 1:
             partes.append(
                 f'<text x="{MARGEM_ESQ + 8 + indice * 170}" y="{MARGEM_TOPO + 12}" '
@@ -97,9 +107,11 @@ def grafico_barras(pontos: list[Ponto], formatador: Formatador | None = None) ->
         y = _escala_y(valor, 0, maximo)
         base = ALTURA - MARGEM_BAIXO
         centro = x + largura_barra / 2
+        rotulo_bonito = formato.competencia_curta(rotulo) if _parece_competencia(rotulo) else rotulo
         partes.append(
             f'<rect x="{x:.1f}" y="{y:.1f}" width="{largura_barra:.1f}" '
-            f'height="{max(base - y, 0):.1f}" rx="3" fill="{CORES[0]}" opacity="0.85"/>'
+            f'height="{max(base - y, 0):.1f}" rx="3" fill="{CORES[0]}" opacity="0.85">'
+            f"<title>{rotulo_bonito}: {formatador(valor)}</title></rect>"
         )
         if mostrar_valores:
             partes.append(
@@ -109,7 +121,7 @@ def grafico_barras(pontos: list[Ponto], formatador: Formatador | None = None) ->
         if indice % passo_rotulo == 0:
             partes.append(
                 f'<text x="{centro:.1f}" y="{ALTURA - MARGEM_BAIXO + 18}" text-anchor="middle" '
-                f'fill="{COR_TEXTO}" font-size="12">{rotulo}</text>'
+                f'fill="{COR_TEXTO}" font-size="12">{rotulo_bonito}</text>'
             )
     partes.append("</svg>")
     return "".join(partes)
@@ -157,6 +169,32 @@ def _grade_y(minimo: float, maximo: float, formatador: Formatador) -> list[str]:
         partes.append(
             f'<text x="{MARGEM_ESQ - 8}" y="{y + 4:.1f}" text-anchor="end" '
             f'fill="{COR_TEXTO}" font-size="11">{formatador(valor)}</text>'
+        )
+    return partes
+
+
+def _parece_competencia(rotulo: str) -> bool:
+    return len(rotulo) == 7 and rotulo[4] == "-"
+
+
+def _rotulos_eixo_x(dominio: list[str]) -> list[str]:
+    """Rótulos do eixo X: janelas curtas ganham mês ('mai/26'); longas, o ano."""
+    if len(dominio) <= 30:
+        return _rotulos_meses(dominio)
+    return _rotulos_anos(dominio)
+
+
+def _rotulos_meses(dominio: list[str]) -> list[str]:
+    partes = []
+    passo = max(1, -(-len(dominio) // 10))
+    total = len(dominio)
+    for indice, competencia in enumerate(dominio):
+        if indice % passo:
+            continue
+        x = _escala_x(indice, total)
+        partes.append(
+            f'<text x="{x:.1f}" y="{ALTURA - MARGEM_BAIXO + 18}" text-anchor="middle" '
+            f'fill="{COR_TEXTO}" font-size="12">{formato.competencia_curta(competencia)}</text>'
         )
     return partes
 

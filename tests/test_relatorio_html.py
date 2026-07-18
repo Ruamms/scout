@@ -62,7 +62,8 @@ def test_grafico_linhas_gera_svg_com_media():
     assert svg.startswith("<svg")
     assert "polyline" in svg
     assert "média" in svg
-    assert "2025" in svg
+    # janela curta ganha rótulo de mês no eixo
+    assert "jan/25" in svg
 
 
 def test_grafico_barras_gera_svg_com_rotulos():

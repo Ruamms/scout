@@ -52,7 +52,7 @@ def selo(resultado: Resultado) -> Selo:
     if Severidade.ALTA in severidades:
         return Selo("grave", "Alerta grave", "Ao menos um alerta de severidade alta disparou", "red")
     if Severidade.MEDIA in severidades:
-        return Selo("atencao", "Requer atenção", "Ao menos um alerta de severidade média disparou", "dark_orange")
+        return Selo("atencao", "Atenção", "Ao menos um alerta de severidade média disparou", "dark_orange")
     if len(resultado.nao_avaliadas) > _MAX_NAO_AVALIADAS_PARA_SINTESE:
         return Selo(
             "insuficiente",
