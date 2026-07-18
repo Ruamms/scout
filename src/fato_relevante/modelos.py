@@ -66,6 +66,17 @@ class Imovel:
 
 
 @dataclass(frozen=True)
+class FundoIrmao:
+    """Outro fundo do mesmo administrador, para o cruzamento do raio-x."""
+
+    ticker: str  # derivado do ISIN; "" quando não derivável
+    nome: str
+    segmento: str
+    anos: float
+    selo: Selo | None
+
+
+@dataclass(frozen=True)
 class RaioX:
     """Resultado completo da análise de um ativo."""
 
@@ -82,6 +93,8 @@ class RaioX:
     notas: list[str] = field(default_factory=list)
     imoveis: list[Imovel] = field(default_factory=list)
     imoveis_em: str = ""  # competência do informe trimestral dos imóveis
+    administrador: str = ""
+    fundos_irmaos: list[FundoIrmao] = field(default_factory=list)
     selo: Selo | None = None
     red_flags_avaliadas: bool = True
     exemplo: bool = False

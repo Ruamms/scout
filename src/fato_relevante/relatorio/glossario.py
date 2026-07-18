@@ -67,6 +67,12 @@ TERMOS = {
         "A evolução do tamanho do fundo. Crescimento por emissão de cotas não é a mesma "
         "coisa que crescimento por valorização — confira o número de cotas junto."
     ),
+    "Administrador": (
+        "A instituição responsável legal pelo fundo (contrata gestora, presta contas à "
+        "CVM). Ver os outros fundos da mesma casa ajuda a formar opinião sobre o "
+        "histórico de quem toca este — muitos fundos com alerta é um padrão que merece "
+        "atenção."
+    ),
     "Vacância": (
         "Percentual da área dos imóveis que está vazia, sem inquilino. Área vaga não gera "
         "aluguel — e o fundo ainda paga condomínio e IPTU dela. Ponderada pela área de "

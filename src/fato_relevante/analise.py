@@ -11,7 +11,7 @@ import dataclasses
 import sqlite3
 
 from . import armazenamento, formato, redflags, series
-from .modelos import Imovel, IndicadorLinha, RaioX
+from .modelos import FundoIrmao, Imovel, IndicadorLinha, RaioX
 from .redflags.contexto import Contexto
 
 # regra disparada -> linha de indicador que ganha o ⚠
@@ -239,6 +239,7 @@ def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:
         tem_informe_trimestral=bool(imoveis_atuais or resultados),
     )
     resultado = redflags.avaliar(contexto)
+    admin = armazenamento.administrador_do_fundo(con, fundo.cnpj)
 
     notas = []
     if not cotacoes:
@@ -292,10 +293,46 @@ def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:
         imoveis_em=formato.competencia_br(imoveis_atuais[0]["competencia"])
         if imoveis_atuais
         else "",
+        administrador=admin["administrador"] if admin else "",
+        fundos_irmaos=_fundos_irmaos(con, admin, fundo.cnpj) if admin else [],
         selo=redflags.selo(resultado),
         red_flags_avaliadas=True,
         exemplo=False,
     )
+
+
+def _fundos_irmaos(con: sqlite3.Connection, admin, cnpj_fundo: str) -> list[FundoIrmao]:
+    """Outros fundos do mesmo administrador, cada um com seu selo (sem cotação)."""
+    irmaos = []
+    for linha in armazenamento.fundos_do_administrador(
+        con, admin["cnpj_administrador"], cnpj_fundo
+    ):
+        serie = armazenamento.serie_complemento(con, linha["cnpj"])
+        if not serie:
+            continue
+        contexto = Contexto(
+            serie=serie,
+            vp_ajustada=series.serie_vp_ajustada(serie),
+            imoveis_atuais=armazenamento.imoveis_atuais(con, linha["cnpj"]),
+            resultados=armazenamento.serie_resultados(con, linha["cnpj"]),
+        )
+        irmaos.append(
+            FundoIrmao(
+                ticker=_ticker_do_isin(linha["isin"]),
+                nome=linha["nome"] or linha["cnpj"],
+                segmento=linha["segmento"] or "—",
+                anos=len(serie) / 12,
+                selo=redflags.selo(redflags.avaliar(contexto)),
+            )
+        )
+    return irmaos
+
+
+def _ticker_do_isin(isin: str | None) -> str:
+    """BRHGLGCTF004 -> HGLG11 (convenção da B3 para cotas de FII)."""
+    if not isin or len(isin) < 6 or not isin.startswith("BR"):
+        return ""
+    return f"{isin[2:6]}11"
 
 
 def _marcar_alertas(indicadores: list[IndicadorLinha], flags) -> list[IndicadorLinha]:

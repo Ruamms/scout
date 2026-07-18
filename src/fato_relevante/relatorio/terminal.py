@@ -37,6 +37,8 @@ def renderizar(raiox: RaioX, console: Console) -> None:
     console.print(_tabela_indicadores(raiox))
     if raiox.imoveis:
         console.print(_tabela_imoveis(raiox))
+    if raiox.fundos_irmaos:
+        console.print(_tabela_administrador(raiox))
     console.print(_secao_red_flags(raiox))
     if raiox.sem_alerta:
         console.print(_sem_alerta(raiox))
@@ -126,6 +128,42 @@ def _tabela_imoveis(raiox: RaioX, limite: int = 5) -> Table:
         tabela.add_row(
             Text(f"… e mais {len(raiox.imoveis) - limite} imóveis", style="dim"),
             "", "", "", "",
+        )
+    return tabela
+
+
+def _tabela_administrador(raiox: RaioX, limite: int = 8) -> Table:
+    tabela = Table(
+        title=(
+            f"ADMINISTRADOR — {raiox.administrador} · "
+            f"administra outros {len(raiox.fundos_irmaos)} FIIs"
+        ),
+        title_justify="left",
+        title_style="bold",
+        box=box.SIMPLE_HEAD,
+        pad_edge=False,
+        padding=(0, 2, 0, 1),
+    )
+    tabela.add_column("")
+    tabela.add_column("idade", justify="right")
+    tabela.add_column("segmento")
+    tabela.add_column("selo")
+    for irmao in raiox.fundos_irmaos[:limite]:
+        selo = (
+            Text(f" {irmao.selo.rotulo} ", style=f"bold black on {irmao.selo.cor}")
+            if irmao.selo
+            else Text("—")
+        )
+        tabela.add_row(
+            irmao.ticker or irmao.nome[:30],
+            f"{irmao.anos:.0f} anos" if irmao.anos >= 1 else "<1 ano",
+            irmao.segmento,
+            selo,
+        )
+    if len(raiox.fundos_irmaos) > limite:
+        tabela.add_row(
+            Text(f"… e mais {len(raiox.fundos_irmaos) - limite} fundos", style="dim"),
+            "", "", "",
         )
     return tabela
 

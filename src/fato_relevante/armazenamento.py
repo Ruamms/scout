@@ -19,15 +19,18 @@ CREATE TABLE IF NOT EXISTS cargas (
     carregado_em TEXT NOT NULL
 );
 CREATE TABLE IF NOT EXISTS informes_gerais (
-    cnpj           TEXT NOT NULL,
-    competencia    TEXT NOT NULL,  -- AAAA-MM
-    nome           TEXT,
-    segmento       TEXT,
-    tipo_gestao    TEXT,
-    isin           TEXT,
-    cotas_emitidas REAL,
+    cnpj               TEXT NOT NULL,
+    competencia        TEXT NOT NULL,  -- AAAA-MM
+    nome               TEXT,
+    segmento           TEXT,
+    tipo_gestao        TEXT,
+    isin               TEXT,
+    cotas_emitidas     REAL,
+    administrador      TEXT,
+    cnpj_administrador TEXT,
     PRIMARY KEY (cnpj, competencia)
 );
+CREATE INDEX IF NOT EXISTS idx_gerais_admin ON informes_gerais (cnpj_administrador);
 CREATE INDEX IF NOT EXISTS idx_gerais_isin ON informes_gerais (isin);
 CREATE TABLE IF NOT EXISTS cotacoes (
     ticker               TEXT NOT NULL,
@@ -97,8 +100,23 @@ def conectar(diretorio: Path | None = None) -> sqlite3.Connection:
     destino.mkdir(parents=True, exist_ok=True)
     con = sqlite3.connect(destino / "fato.db")
     con.row_factory = sqlite3.Row
+    _migrar(con)
     con.executescript(_SCHEMA)
     return con
+
+
+def _migrar(con: sqlite3.Connection) -> None:
+    """Ajusta bases criadas por versões antigas do schema."""
+    tabelas = {linha[0] for linha in con.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+    if "informes_gerais" not in tabelas:
+        return
+    colunas = {linha[1] for linha in con.execute("PRAGMA table_info(informes_gerais)")}
+    if "administrador" not in colunas:
+        con.execute("ALTER TABLE informes_gerais ADD COLUMN administrador TEXT")
+        con.execute("ALTER TABLE informes_gerais ADD COLUMN cnpj_administrador TEXT")
+        # força a recarga dos informes mensais para preencher o administrador histórico
+        con.execute("DELETE FROM cargas WHERE arquivo LIKE 'inf_mensal%'")
+        con.commit()
 
 
 def base_vazia(con: sqlite3.Connection) -> bool:
@@ -198,6 +216,47 @@ def cotacao_meta(con: sqlite3.Connection, ticker: str) -> sqlite3.Row | None:
     return con.execute(
         "SELECT * FROM cotacoes_meta WHERE ticker = ?", (ticker,)
     ).fetchone()
+
+
+def administrador_do_fundo(con: sqlite3.Connection, cnpj: str) -> sqlite3.Row | None:
+    """Administrador mais recente informado pelo fundo."""
+    return con.execute(
+        """
+        SELECT administrador, cnpj_administrador
+          FROM informes_gerais
+         WHERE cnpj = ? AND administrador IS NOT NULL
+         ORDER BY competencia DESC
+         LIMIT 1
+        """,
+        (cnpj,),
+    ).fetchone()
+
+
+def fundos_do_administrador(
+    con: sqlite3.Connection, cnpj_administrador: str, excluir_cnpj: str
+) -> list[sqlite3.Row]:
+    """Outros fundos cujo informe mais recente aponta o mesmo administrador."""
+    return con.execute(
+        """
+        WITH ultimo AS (
+            SELECT cnpj, MAX(competencia) AS competencia
+              FROM informes_gerais
+             GROUP BY cnpj
+        )
+        SELECT g.cnpj,
+               g.nome,
+               g.segmento,
+               g.isin,
+               (SELECT MIN(competencia) FROM informes_gerais i WHERE i.cnpj = g.cnpj) AS inicio,
+               g.competencia AS fim
+          FROM informes_gerais g
+          JOIN ultimo u ON u.cnpj = g.cnpj AND u.competencia = g.competencia
+         WHERE g.cnpj_administrador = ?
+           AND g.cnpj <> ?
+         ORDER BY inicio
+        """,
+        (cnpj_administrador, excluir_cnpj),
+    ).fetchall()
 
 
 def serie_imoveis(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:

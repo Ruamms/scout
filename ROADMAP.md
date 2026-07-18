@@ -17,7 +17,7 @@ A visão de produto completa (referências de mercado, backlog e decisões de de
 - [x] **M6 — Informe trimestral CVM** — coletor dos informes trimestrais (2016+); tabela de imóveis com área, % da receita, vacância e inadimplência POR IMÓVEL (terminal + HTML); indicador e gráfico de vacância ponderada por área; 3 red flags novas: **rendimentos vs resultado financeiro (exata, substitui o proxy)**, **vacância alta** e **fundo novo (<24 meses)**; motor ganhou supressão de regra (proxy some quando a exata roda)
   - gotcha de escala CVM: no mesmo arquivo, vacância/inadimplência são FRAÇÃO (1.0=100%) e % receita é PERCENTUAL (0-100)
   - pendente: agrupamento por estado (parsing de endereço), setores/inquilinos, e usar reservas acumuladas para refinar a regra de distribuição
-- [ ] **M7 — Raio-x do administrador** — outros FIIs do mesmo administrador, com idade, segmento e contagem de alertas, linkáveis
+- [x] **M7 — Raio-x do administrador** — seção "Administrador" no terminal e no HTML: outros FIIs da mesma casa com ticker (derivado do ISIN), idade, segmento e **selo individual** (calculado sem cotação), com link cruzado entre relatórios; migração automática da base (recarrega informes mensais para preencher o administrador histórico)
 - [ ] **M8 — Ranking / pesquisa avançada** — `fato ranking`: top N fundos por DY/P-VP/PL/cotistas com filtro "sem alertas" e por segmento; critério sempre explícito na saída; inclui a comparação com pares do mesmo segmento na página do fundo (estilo "comparando com outros FIIs")
 - [ ] **M9 — Site estático** — GitHub Actions gera as páginas de todos os FIIs + rankings 1x/dia e publica no GitHub Pages
 

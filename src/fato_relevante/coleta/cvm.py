@@ -195,8 +195,9 @@ def _gravar_gerais(con: sqlite3.Connection, linhas: list[dict]) -> int:
         con.execute(
             """
             INSERT OR REPLACE INTO informes_gerais
-                (cnpj, competencia, nome, segmento, tipo_gestao, isin, cotas_emitidas)
-            VALUES (?, ?, ?, ?, ?, ?, ?)
+                (cnpj, competencia, nome, segmento, tipo_gestao, isin, cotas_emitidas,
+                 administrador, cnpj_administrador)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 *chave,
@@ -205,6 +206,8 @@ def _gravar_gerais(con: sqlite3.Connection, linhas: list[dict]) -> int:
                 linha.get("Tipo_Gestao") or None,
                 linha.get("Codigo_ISIN") or None,
                 _numero(linha.get("Quantidade_Cotas_Emitidas")),
+                linha.get("Nome_Administrador") or None,
+                linha.get("CNPJ_Administrador") or None,
             ),
         )
         total += 1

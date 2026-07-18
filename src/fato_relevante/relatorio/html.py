@@ -222,6 +222,8 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
 
   {_secao_imoveis(raiox)}
 
+  {_secao_administrador(raiox)}
+
   <h2>Gráficos</h2>
   {"".join(secoes_graficos) or '<p class="na">sem séries suficientes para gráficos</p>'}
 
@@ -400,6 +402,49 @@ def _secao_imoveis(raiox: RaioX, limite: int = 10) -> str:
     <tbody>{"".join(linhas)}{rodape_tabela}</tbody>
   </table>
   <div class="nota">informe trimestral de {_e(raiox.imoveis_em)} · ordenados por participação na receita</div>
+  </div>
+"""
+
+
+def _secao_administrador(raiox: RaioX, limite: int = 12) -> str:
+    if not raiox.fundos_irmaos:
+        return ""
+    linhas = []
+    for irmao in raiox.fundos_irmaos[:limite]:
+        cor = _COR_SELO.get(irmao.selo.nivel, "#94a3b8") if irmao.selo else "#94a3b8"
+        selo = (
+            f'<span class="selo" style="background:{cor};font-size:11px;padding:2px 10px" '
+            f'title="{_e(irmao.selo.descricao)}">{_e(irmao.selo.rotulo)}</span>'
+            if irmao.selo
+            else "—"
+        )
+        rotulo = (
+            f'<a href="{_e(irmao.ticker)}.html">{_e(irmao.ticker)}</a>'
+            if irmao.ticker
+            else _e(irmao.nome[:40])
+        )
+        idade = f"{irmao.anos:.0f} anos" if irmao.anos >= 1 else "&lt;1 ano"
+        linhas.append(
+            f"<tr><td>{rotulo}</td><td>{_e(irmao.nome[:44])}</td>"
+            f"<td>{idade}</td><td>{_e(irmao.segmento)}</td><td>{selo}</td></tr>"
+        )
+    rodape_tabela = ""
+    if len(raiox.fundos_irmaos) > limite:
+        rodape_tabela = (
+            f'<tr><td colspan="5" class="na">… e mais '
+            f"{len(raiox.fundos_irmaos) - limite} fundos do mesmo administrador</td></tr>"
+        )
+    return f"""
+  <h2>Administrador{_ajuda("Administrador")}</h2>
+  <div class="grafico" style="overflow-x:auto">
+  <p class="desc" style="color:#aeb9c7;font-size:13.5px;margin-bottom:10px">
+  <b>{_e(raiox.administrador)}</b> administra outros {len(raiox.fundos_irmaos)} FIIs na base da CVM:</p>
+  <table class="imoveis">
+    <thead><tr><th>ticker</th><th>fundo</th><th>idade</th><th>segmento</th><th>selo</th></tr></thead>
+    <tbody>{"".join(linhas)}{rodape_tabela}</tbody>
+  </table>
+  <div class="nota">selo calculado sem cotação de bolsa (P/VP fora) · o link abre o relatório do
+  fundo se ele já tiver sido gerado · ticker derivado do ISIN</div>
   </div>
 """
 
