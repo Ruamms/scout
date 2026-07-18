@@ -402,7 +402,10 @@ def _secao_flags(raiox: RaioX) -> str:
         partes.append('<p class="ok">✓ nenhum alerta disparado</p>')
     if raiox.sem_alerta:
         itens = "".join(f"<li>{_e(texto)}</li>" for texto in raiox.sem_alerta)
-        partes.append(f'<p class="ok">✓ sem alerta:</p><ul class="ok">{itens}</ul>')
+        partes.append(
+            '<p class="ok">✓ Verificações que rodaram e passaram sem alerta:</p>'
+            f'<ul class="ok">{itens}</ul>'
+        )
     for nota in raiox.notas:
         partes.append(f'<p class="na">· {_e(nota)}</p>')
     return "".join(partes)

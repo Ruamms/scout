@@ -246,7 +246,7 @@ def renderizar_ranking(resultado, console: Console) -> None:
 
 def _sem_alerta(raiox: RaioX) -> Padding:
     texto = Text.assemble(
-        ("✓ sem alerta: ", "green"),
+        ("✓ verificações que passaram sem alerta: ", "green"),
         ("; ".join(raiox.sem_alerta), "dim"),
     )
     return Padding(texto, (1, 0, 0, 2))
