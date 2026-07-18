@@ -1,25 +1,38 @@
 # Fato Relevante
 
-**O raio-x dos ativos da bolsa.**
+**Pare de garimpar 20 PDFs para entender um FII.**
+
+Tudo o que os documentos oficiais dizem sobre um fundo imobiliário, numa página só —
+com alertas que mostram a conta, a fonte e **exatamente o que merece a sua atenção**.
 
 > *EN summary: Fato Relevante is an open-source tool that builds a fact-based "x-ray" of Brazilian REITs (FIIs) from official public data (CVM open data, B3/FNET filings, Central Bank series). A deterministic engine computes indicators and auditable red flags; a local LLM (Ollama) reads management reports and extracts quoted facts. Facts with sources — never buy/sell recommendations.*
 
-## O que é
+## O problema
 
-Ferramenta open source que monta um raio-x de FIIs a partir de **dados públicos oficiais** (ações e outras classes no roadmap). O princípio cabe em uma frase: **fatos, não dicas**. Tudo o que aparece na tela tem fonte, data e critério público — a decisão de investir é sempre do investidor.
+Entender um único FII hoje significa cruzar informes mensais e trimestrais na CVM,
+relatórios gerenciais em PDF no FNET, cotação num site, vacância em outro — e torcer
+para nenhum deles esconder o critério. Quem faz isso para 5 fundos desiste no terceiro.
 
-## Como funciona
+## O que o Fato Relevante entrega
 
-Duas camadas, com uma fronteira rígida entre elas:
+Um **raio-x por fundo**: indicadores com histórico e explicação para leigos, **red flags
+com evidência** ("distribuiu R$ 710M com resultado de R$ 473M — veja a fonte"), os
+imóveis com vacância e inadimplência um a um, os outros fundos do mesmo administrador,
+os pares do segmento, gráficos comparando com CDI e inflação, calculadoras com dados
+reais — e a IA local lendo o relatório gerencial e citando os trechos que importam.
 
-1. **Camada quantitativa (determinística, sem IA)** — baixa o histórico oficial (informes mensais e trimestrais da CVM desde 2016), calcula os indicadores (PL, VP/cota ajustado por desdobramento, P/VP, DY, vacância ponderada por área, diluição…) e roda **9 red flags auditáveis** — cada alerta traz o fato, a conta que o disparou e a fonte. Um **selo de síntese** (Sem alertas → Alerta grave) resume o resultado com critérios 100% públicos.
-2. **Camada qualitativa (IA local)** — baixa o último relatório gerencial no FNET e um LLM rodando **na sua máquina** (Ollama) extrai os fatos citando os trechos. O modelo **nunca produz números**: recebe os indicadores prontos como contexto e só interpreta texto.
+Você ainda vai abrir o PDF de vez em quando — mas vai abrir **o PDF certo, sabendo o
+que procurar**.
 
-Números vêm de código. Texto vem de IA. Nunca o contrário.
+O princípio cabe em uma frase: **fatos, não dicas**. A decisão é sempre do investidor.
 
-## O que o raio-x mostra
+## Por que confiar
 
-Indicadores com histórico e glossário para leigos (ícones "?"), red flags com evidência, **imóveis do fundo** com vacância e inadimplência individuais, **outros fundos do mesmo administrador** (cada um com seu selo), **pares do segmento** com a média, gráficos (cotação × VP, P/VP, DY em R$/cota, PL, vacância, rentabilidade × CDI × IPCA com e sem reinvestimento) e calculadoras interativas — incluindo "e se eu tivesse investido?", que usa o passado real, não projeção.
+Porque nada aqui é caixa-preta:
+
+1. **Todo número sai de código determinístico** sobre dados oficiais (CVM desde 2016, FNET, Banco Central) — nunca de IA. As **9 red flags** têm critérios públicos neste repositório: você pode auditar cada limiar.
+2. **A IA só interpreta texto** — roda 100% na sua máquina (Ollama), recebe os indicadores prontos e extrai fatos do relatório **citando os trechos** para você conferir no original. Nunca produz números, nunca opina.
+3. **"Não avaliado" é diferente de "aprovado"**: quando falta histórico para uma regra rodar, a tela diz isso — honestidade que gráfico bonito não substitui.
 
 ## Fontes de dados
 

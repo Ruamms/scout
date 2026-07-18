@@ -138,7 +138,10 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
 <body>
 <div class="pagina">
   <div class="marca">FATO RELEVANTE</div>
-  <h1>O raio-x dos FIIs</h1>
+  <h1>Pare de garimpar 20 PDFs para entender um FII</h1>
+  <div class="meta" style="font-size:14.5px;margin-bottom:4px">Tudo o que os documentos oficiais
+  dizem sobre um fundo, numa página — com alertas que mostram a conta, a fonte e o que
+  merece a sua atenção.</div>
   <div class="meta">{len(fundos)} fundos negociáveis analisados com dados públicos oficiais ·
   atualizado em {agora.strftime("%d/%m/%Y %H:%M")} ·
   <a href="apoie.html">☕ apoie o projeto</a></div>
