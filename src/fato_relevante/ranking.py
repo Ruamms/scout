@@ -32,6 +32,7 @@ class FundoResumo:
     meses: int
     flags: int             # alertas disparados (sem regras de cotação)
     selo: Selo
+    motivos: tuple[str, ...] = ()  # títulos dos alertas disparados
 
 
 # critério -> (descrição exibida, campo, maior é melhor?)
@@ -131,6 +132,7 @@ def varrer(con: sqlite3.Connection, cnpjs: set[str] | None = None) -> list[Fundo
                 meses=len(serie),
                 flags=len(resultado.flags),
                 selo=redflags.selo(resultado),
+                motivos=tuple(flag.titulo for flag in resultado.flags),
             )
         )
     return resumos

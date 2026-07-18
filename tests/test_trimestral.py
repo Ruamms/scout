@@ -164,7 +164,7 @@ def test_html_botao_ver_todos_imoveis(con, zip_cvm, zip_trimestral):
     pagina = relatorio_html.gerar(completo)
     assert "ver todos os 15 imóveis" in pagina
     assert pagina.count('class="imovel-extra" hidden') == 5
-    assert "function verImoveis" in pagina
+    assert "function verMais" in pagina
 
 
 def test_html_com_secao_imoveis_e_grafico_vacancia(con, zip_cvm, zip_trimestral):

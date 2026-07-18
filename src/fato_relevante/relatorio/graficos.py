@@ -236,13 +236,17 @@ def _rotulos_anos(dominio: list[str]) -> list[str]:
     total = len(dominio)
     anos_no_eixo = len({competencia[:4] for competencia in dominio})
     pular_impares = anos_no_eixo > 12
+    ultimo_x = -100.0
     for indice, competencia in enumerate(dominio):
         ano = competencia[:4]
         if ano != ultimo_ano and not (pular_impares and int(ano) % 2):
             x = _escala_x(indice, total)
+            if x - ultimo_x < 42:  # evita rótulos sobrepostos (ex.: "2016 2017" colados)
+                continue
             partes.append(
                 f'<text x="{x:.1f}" y="{ALTURA - MARGEM_BAIXO + 18}" text-anchor="middle" '
                 f'fill="{COR_TEXTO}" font-size="12">{ano}</text>'
             )
             ultimo_ano = ano
+            ultimo_x = x
     return partes

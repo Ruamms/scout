@@ -69,13 +69,32 @@ def gerar(completo: AnaliseCompleta, agora: datetime | None = None) -> str:
             )
         )
     if dados.vacancia:
-        secoes_graficos.append(
-            _card_grafico(
-                "Vacância (%)",
-                graficos.grafico_linhas(
-                    [("Vacância", dados.vacancia)], formatador=lambda v: formato.percentual(v)
+        pct = lambda v: formato.percentual(v)  # noqa: E731
+        paineis_vacancia = [
+            ("Histórico", graficos.grafico_linhas([("Vacância", dados.vacancia)], formatador=pct))
+        ]
+        if len(dados.vacancia) > 12:
+            paineis_vacancia.insert(
+                0,
+                (
+                    "3 anos",
+                    graficos.grafico_linhas(
+                        [("Vacância", dados.vacancia[-12:])],
+                        formatador=pct,
+                        valores_nos_pontos=True,
+                    ),
                 ),
-                nota="vacância física ponderada pela área dos imóveis, por trimestre",
+            )
+        secoes_graficos.append(
+            _card_grafico_abas(
+                "Vacância (%)",
+                paineis_vacancia,
+                nota=(
+                    "vacância física ponderada pela área dos imóveis, por trimestre "
+                    "(dado trimestral da CVM — não existe abertura mensal) · "
+                    "no histórico completo, o valor de cada ponto aparece ao passar o mouse"
+                ),
+                chave_ajuda="Vacância (%)",
             )
         )
     if dados.rentabilidade:
@@ -149,7 +168,7 @@ a {{ color:#5eead4; }}
 .topo {{ display:flex; flex-wrap:wrap; align-items:baseline; gap:10px 14px; }}
 .marca {{ color:#8b98a9; font-size:14px; letter-spacing:.14em; text-transform:uppercase; }}
 h1 {{ font-size:34px; }} h1 small {{ color:#8b98a9; font-size:17px; font-weight:400; }}
-.selo {{ display:inline-block; padding:4px 14px; border-radius:999px; font-weight:700; font-size:14px; color:#0b1017; }}
+.selo {{ display:inline-block; padding:4px 14px; border-radius:999px; font-weight:700; font-size:14px; color:#0b1017; white-space:nowrap; }}
 .btn-topo {{ margin-left:auto; background:#1a2432; border:1px solid #2a3441; color:#5eead4; text-decoration:none; padding:6px 14px; border-radius:8px; font-size:13px; font-weight:600; }}
 .btn-topo:hover {{ border-color:#5eead4; }}
 .meta {{ color:#8b98a9; font-size:13px; margin-top:6px; }}
@@ -290,10 +309,10 @@ function atualizaRent() {{
   card.querySelectorAll('.painel').forEach(p => p.hidden = (p.dataset.painel !== alvo));
 }}
 
-function verImoveis(botao) {{
+function verMais(botao, classe) {{
   const card = botao.closest('.grafico');
   const abertas = botao.textContent === botao.dataset.menos;
-  card.querySelectorAll('.imovel-extra').forEach(tr => tr.hidden = abertas);
+  card.querySelectorAll('.' + classe).forEach(tr => tr.hidden = abertas);
   botao.textContent = abertas ? botao.dataset.mais : botao.dataset.menos;
 }}
 
@@ -404,7 +423,7 @@ def _secao_imoveis(raiox: RaioX, limite: int = 10) -> str:
     botao = ""
     if len(raiox.imoveis) > limite:
         botao = (
-            f'<button class="ver-mais" onclick="verImoveis(this)" '
+            f'<button class="ver-mais" onclick="verMais(this, \'imovel-extra\')" '
             f'data-mais="ver todos os {len(raiox.imoveis)} imóveis" data-menos="mostrar menos">'
             f"ver todos os {len(raiox.imoveis)} imóveis</button>"
         )
@@ -425,29 +444,25 @@ def _secao_administrador(raiox: RaioX, limite: int = 12) -> str:
     if not raiox.fundos_irmaos:
         return ""
     linhas = []
-    for irmao in raiox.fundos_irmaos[:limite]:
-        cor = _COR_SELO.get(irmao.selo.nivel, "#94a3b8") if irmao.selo else "#94a3b8"
-        selo = (
-            f'<span class="selo" style="background:{cor};font-size:11px;padding:2px 10px" '
-            f'title="{_e(irmao.selo.descricao)}">{_e(irmao.selo.rotulo)}</span>'
-            if irmao.selo
-            else "—"
-        )
+    for indice, irmao in enumerate(raiox.fundos_irmaos):
+        selo = _selo_tabela(irmao.selo, irmao.motivos)
         rotulo = (
             f'<a href="{_e(irmao.ticker)}.html">{_e(irmao.ticker)}</a>'
             if irmao.ticker
             else _e(irmao.nome[:40])
         )
         idade = f"{irmao.anos:.0f} anos" if irmao.anos >= 1 else "&lt;1 ano"
+        oculta = ' class="admin-extra" hidden' if indice >= limite else ""
         linhas.append(
-            f"<tr><td>{rotulo}</td><td>{_e(irmao.nome[:44])}</td>"
+            f"<tr{oculta}><td>{rotulo}</td><td>{_e(irmao.nome[:44])}</td>"
             f"<td>{idade}</td><td>{_e(irmao.segmento)}</td><td>{selo}</td></tr>"
         )
-    rodape_tabela = ""
+    botao = ""
     if len(raiox.fundos_irmaos) > limite:
-        rodape_tabela = (
-            f'<tr><td colspan="5" class="na">… e mais '
-            f"{len(raiox.fundos_irmaos) - limite} fundos do mesmo administrador</td></tr>"
+        botao = (
+            f'<button class="ver-mais" onclick="verMais(this, \'admin-extra\')" '
+            f'data-mais="ver todos os {len(raiox.fundos_irmaos)} fundos" data-menos="mostrar menos">'
+            f"ver todos os {len(raiox.fundos_irmaos)} fundos</button>"
         )
     return f"""
   <h2>Administrador{_ajuda("Administrador")}</h2>
@@ -456,12 +471,25 @@ def _secao_administrador(raiox: RaioX, limite: int = 12) -> str:
   <b>{_e(raiox.administrador)}</b> administra outros {len(raiox.fundos_irmaos)} FIIs na base da CVM:</p>
   <table class="imoveis">
     <thead><tr><th>ticker</th><th>fundo</th><th>idade</th><th>segmento</th><th>selo</th></tr></thead>
-    <tbody>{"".join(linhas)}{rodape_tabela}</tbody>
+    <tbody>{"".join(linhas)}</tbody>
   </table>
-  <div class="nota">selo calculado sem cotação de bolsa (P/VP fora) · o link abre o relatório do
-  fundo se ele já tiver sido gerado · ticker derivado do ISIN</div>
+  {botao}
+  <div class="nota">selo calculado sem cotação de bolsa (P/VP fora) · passe o mouse no selo para
+  ver o motivo · o link abre o relatório do fundo se ele já tiver sido gerado · ticker derivado do ISIN</div>
   </div>
 """
+
+
+def _selo_tabela(selo, motivos: tuple[str, ...]) -> str:
+    """Selo compacto para tabelas, com o MOTIVO no tooltip."""
+    if selo is None:
+        return "—"
+    cor = _COR_SELO.get(selo.nivel, "#94a3b8")
+    dica = "Alertas: " + "; ".join(motivos) if motivos else selo.descricao
+    return (
+        f'<span class="selo" style="background:{cor};font-size:11px;padding:2px 10px" '
+        f'title="{_e(dica)}">{_e(selo.rotulo)}</span>'
+    )
 
 
 def _secao_pares(raiox: RaioX) -> str:
@@ -473,7 +501,6 @@ def _secao_pares(raiox: RaioX) -> str:
 
     linhas = []
     for par in raiox.pares:
-        cor = _COR_SELO.get(par.selo.nivel, "#94a3b8")
         rotulo = (
             f'<a href="{_e(par.ticker)}.html">{_e(par.ticker)}</a>' if par.ticker else _e(par.nome[:30])
         )
@@ -482,8 +509,7 @@ def _secao_pares(raiox: RaioX) -> str:
             f"<td>{_celula(par.dy_12m, formato.percentual)}</td>"
             f"<td>{_celula(par.pvp, formato.decimal)}</td>"
             f"<td>{_celula(par.pl, formato.moeda_compacta)}</td>"
-            f'<td><span class="selo" style="background:{cor};font-size:11px;padding:2px 10px">'
-            f"{_e(par.selo.rotulo)}</span></td></tr>"
+            f"<td>{_selo_tabela(par.selo, par.motivos)}</td></tr>"
         )
     media = raiox.pares_media
     linhas.append(

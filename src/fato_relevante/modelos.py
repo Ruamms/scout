@@ -74,6 +74,7 @@ class FundoIrmao:
     segmento: str
     anos: float
     selo: Selo | None
+    motivos: tuple[str, ...] = ()  # títulos dos alertas que definiram o selo
 
 
 @dataclass(frozen=True)

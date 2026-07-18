@@ -59,6 +59,8 @@ def test_html_com_secao_administrador(con):
     pagina = relatorio_html.gerar(completo)
     assert "ADMIN EXEMPLO" in pagina
     assert 'href="IRMO11.html"' in pagina  # link cruzado para o relatório do irmão
+    # o selo do irmão traz o MOTIVO no tooltip (fundo novo, 1 mês de histórico)
+    assert 'title="Alertas: ' in pagina
 
 
 def test_ticker_do_isin():

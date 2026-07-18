@@ -333,13 +333,15 @@ def _fundos_irmaos(con: sqlite3.Connection, admin, cnpj_fundo: str) -> list[Fund
             imoveis_atuais=armazenamento.imoveis_atuais(con, linha["cnpj"]),
             resultados=armazenamento.serie_resultados(con, linha["cnpj"]),
         )
+        resultado = redflags.avaliar(contexto)
         irmaos.append(
             FundoIrmao(
                 ticker=series.ticker_do_isin(linha["isin"]),
                 nome=linha["nome"] or linha["cnpj"],
                 segmento=linha["segmento"] or "—",
                 anos=len(serie) / 12,
-                selo=redflags.selo(redflags.avaliar(contexto)),
+                selo=redflags.selo(resultado),
+                motivos=tuple(flag.titulo for flag in resultado.flags),
             )
         )
     return irmaos
