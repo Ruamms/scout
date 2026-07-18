@@ -96,6 +96,13 @@ def test_gerar_html_completo(con, zip_cvm):
     # gráficos SVG embutidos e disclaimer
     assert pagina.count("<svg") >= 2
     assert "não é recomendação de investimento" in pagina
+    # glossário para leigos: todo indicador exibido tem um "?" com explicação
+    from fato_relevante.relatorio.glossario import TERMOS
+
+    for linha in completo.raiox.indicadores:
+        assert linha.nome in TERMOS, f"indicador sem verbete no glossário: {linha.nome}"
+    assert pagina.count('class="ajuda"') >= len(completo.raiox.indicadores)
+    assert 'class="dica"' in pagina
 
 
 def test_salvar_html_escreve_arquivo(con, zip_cvm, tmp_path):

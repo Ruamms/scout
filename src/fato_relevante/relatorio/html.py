@@ -10,6 +10,7 @@ from .. import formato
 from ..analise import AnaliseCompleta
 from ..modelos import RaioX, Severidade
 from . import graficos
+from .glossario import TERMOS
 
 _COR_SELO = {
     "sem_alertas": "#22c55e",
@@ -126,7 +127,10 @@ def gerar(completo: AnaliseCompleta, agora: datetime | None = None) -> str:
             )
         secoes_graficos.append(
             _card_grafico_abas(
-                "Patrimônio líquido", paineis, nota="* ano parcial · visão mensal: últimos 12 meses"
+                "Patrimônio líquido",
+                paineis,
+                nota="* ano parcial · visão mensal: últimos 12 meses",
+                chave_ajuda="Patrimônio líquido (gráfico)",
             )
         )
 
@@ -166,6 +170,15 @@ ul {{ padding-left:20px; }} li {{ margin:3px 0; }}
 .grafico .cab {{ display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; }}
 .abas button {{ background:#1a2432; color:#8b98a9; border:1px solid #2a3441; border-radius:7px; padding:3px 12px; font-size:12px; cursor:pointer; }}
 .abas button.ativo {{ background:#5eead4; color:#0b1017; border-color:#5eead4; font-weight:700; }}
+.ajuda {{ display:inline-flex; align-items:center; justify-content:center; width:15px; height:15px;
+  border-radius:50%; background:#2a3441; color:#8b98a9; font-size:10px; font-weight:700;
+  cursor:help; position:relative; vertical-align:middle; margin-left:5px; }}
+.ajuda .dica {{ visibility:hidden; opacity:0; transition:opacity .15s; position:absolute; z-index:10;
+  bottom:135%; left:50%; transform:translateX(-50%); width:270px; background:#1a2432;
+  border:1px solid #2a3441; border-radius:9px; padding:10px 12px; color:#dbe3ec;
+  font-size:12.5px; font-weight:400; line-height:1.45; text-transform:none; letter-spacing:0;
+  text-align:left; box-shadow:0 6px 20px rgba(0,0,0,.45); }}
+.ajuda:hover .dica, .ajuda:focus .dica {{ visibility:visible; opacity:1; }}
 .rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #1f2a38; margin-top:30px; padding-top:14px; }}
 @media print {{ body {{ background:#fff; color:#111; }} }}
 </style>
@@ -184,7 +197,7 @@ ul {{ padding-left:20px; }} li {{ margin:3px 0; }}
 
   <div class="cards">{_cards_indicadores(raiox)}</div>
 
-  <h2>🚩 Red flags</h2>
+  <h2>🚩 Red flags{_ajuda("Red flags")}</h2>
   {_secao_flags(raiox)}
 
   <h2>Gráficos</h2>
@@ -226,6 +239,14 @@ def _cotacao_em(raiox: RaioX) -> str:
     return f" · cotação de <b>{_e(raiox.cotacao_em)}</b>"
 
 
+def _ajuda(termo: str) -> str:
+    """Ícone '?' com a explicação do glossário (hover/toque); vazio se não houver."""
+    texto = TERMOS.get(termo)
+    if not texto:
+        return ""
+    return f'<span class="ajuda" tabindex="0">?<span class="dica">{_e(texto)}</span></span>'
+
+
 def _cards_indicadores(raiox: RaioX) -> str:
     cards = []
     for linha in raiox.indicadores:
@@ -235,7 +256,7 @@ def _cards_indicadores(raiox: RaioX) -> str:
         separador = " · " if extra and historico else ""
         cards.append(
             f'<div class="{classe}"><div class="nome">{_e(linha.nome)}'
-            f'{" ⚠" if linha.alerta else ""}</div>'
+            f'{" ⚠" if linha.alerta else ""}{_ajuda(linha.nome)}</div>'
             f'<div class="valor">{_e(linha.atual)}</div>'
             f'<div class="extra">{extra}{separador}{historico}</div></div>'
         )
@@ -264,18 +285,21 @@ def _secao_flags(raiox: RaioX) -> str:
     return "".join(partes)
 
 
-def _card_grafico(titulo: str, svg: str, nota: str = "") -> str:
+def _card_grafico(titulo: str, svg: str, nota: str = "", chave_ajuda: str = "") -> str:
     rodape = f'<div class="nota">{_e(nota)}</div>' if nota else ""
-    return f'<div class="grafico"><h3>{_e(titulo)}</h3>{svg}{rodape}</div>'
+    ajuda = _ajuda(chave_ajuda or titulo)
+    return f'<div class="grafico"><h3>{_e(titulo)}{ajuda}</h3>{svg}{rodape}</div>'
 
 
-def _card_grafico_abas(titulo: str, paineis: list[tuple[str, str]], nota: str = "") -> str:
+def _card_grafico_abas(
+    titulo: str, paineis: list[tuple[str, str]], nota: str = "", chave_ajuda: str = ""
+) -> str:
     """Card com painéis alternáveis (ex.: Ano/Mês) via botões — JS inline mínimo."""
     paineis = [(rotulo, svg) for rotulo, svg in paineis if svg]
     if not paineis:
         return ""
     if len(paineis) == 1:
-        return _card_grafico(titulo, paineis[0][1], nota)
+        return _card_grafico(titulo, paineis[0][1], nota, chave_ajuda)
     botoes = "".join(
         f'<button class="{"ativo" if indice == 0 else ""}" '
         f"onclick=\"mostrar(this,'{_e(rotulo)}')\">{_e(rotulo)}</button>"
@@ -286,7 +310,8 @@ def _card_grafico_abas(titulo: str, paineis: list[tuple[str, str]], nota: str = 
         for indice, (rotulo, svg) in enumerate(paineis)
     )
     rodape = f'<div class="nota">{_e(nota)}</div>' if nota else ""
+    ajuda = _ajuda(chave_ajuda or titulo)
     return (
-        f'<div class="grafico"><div class="cab"><h3>{_e(titulo)}</h3>'
+        f'<div class="grafico"><div class="cab"><h3>{_e(titulo)}{ajuda}</h3>'
         f'<div class="abas">{botoes}</div></div>{corpo}{rodape}</div>'
     )
