@@ -52,6 +52,7 @@ class IndicadorLinha:
     doze_meses: str
     historico: str
     alerta: bool = False
+    alerta_motivo: str = ""  # título(s) da(s) red flag(s) que marcaram a linha
 
 
 @dataclass(frozen=True)

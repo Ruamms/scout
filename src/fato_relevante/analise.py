@@ -408,13 +408,15 @@ def _pares_do_segmento(
 
 
 def _marcar_alertas(indicadores: list[IndicadorLinha], flags) -> list[IndicadorLinha]:
-    nomes_com_alerta = {
-        _INDICADOR_DA_REGRA[flag.codigo]
-        for flag in flags
-        if flag.codigo in _INDICADOR_DA_REGRA
-    }
+    motivos: dict[str, list[str]] = {}
+    for flag in flags:
+        nome = _INDICADOR_DA_REGRA.get(flag.codigo)
+        if nome:
+            motivos.setdefault(nome, []).append(flag.titulo)
     return [
-        dataclasses.replace(linha, alerta=True) if linha.nome in nomes_com_alerta else linha
+        dataclasses.replace(linha, alerta=True, alerta_motivo="; ".join(motivos[linha.nome]))
+        if linha.nome in motivos
+        else linha
         for linha in indicadores
     ]
 

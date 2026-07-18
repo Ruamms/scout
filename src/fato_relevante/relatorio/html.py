@@ -373,9 +373,13 @@ def _cards_indicadores(raiox: RaioX) -> str:
         extra = f"12m: {_e(linha.doze_meses)}" if linha.doze_meses != "—" else ""
         historico = _e(linha.historico) if linha.historico != "—" else ""
         separador = " · " if extra and historico else ""
+        aviso = ""
+        if linha.alerta:
+            motivo = linha.alerta_motivo or "ver a seção Red flags"
+            aviso = f' <span style="cursor:help" title="Alerta: {_e(motivo)}">⚠</span>'
         cards.append(
             f'<div class="{classe}"><div class="nome">{_e(linha.nome)}'
-            f'{" ⚠" if linha.alerta else ""}{_ajuda(linha.nome)}</div>'
+            f"{aviso}{_ajuda(linha.nome)}</div>"
             f'<div class="valor">{_e(linha.atual)}</div>'
             f'<div class="extra">{extra}{separador}{historico}</div></div>'
         )

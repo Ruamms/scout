@@ -167,6 +167,20 @@ def test_html_botao_ver_todos_imoveis(con, zip_cvm, zip_trimestral):
     assert "function verMais" in pagina
 
 
+def test_indicador_com_alerta_traz_motivo_no_tooltip(con, zip_cvm, zip_trimestral):
+    from fato_relevante.relatorio import html as relatorio_html
+
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
+    cvm.carregar_zip_trimestral(con, zip_trimestral(), "inf_trimestral_fii_2026.zip")
+    raiox = analise.montar_raio_x(con, "tste11")
+    vacancia_linha = next(l for l in raiox.indicadores if l.nome == "Vacância")
+    assert vacancia_linha.alerta is True
+    assert "Vacância física alta" in vacancia_linha.alerta_motivo
+    completo = analise.montar_completo(con, "tste11")
+    pagina = relatorio_html.gerar(completo)
+    assert 'title="Alerta: Vacância física alta"' in pagina
+
+
 def test_html_com_secao_imoveis_e_grafico_vacancia(con, zip_cvm, zip_trimestral):
     from fato_relevante.relatorio import html as relatorio_html
 
