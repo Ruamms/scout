@@ -43,16 +43,69 @@ def principal(ctx: typer.Context) -> None:
 def _modo_interativo() -> None:
     console.print()
     console.print("[bold]FATO RELEVANTE[/] [dim]— o raio-x dos ativos da bolsa[/]")
-    console.print("[dim]Digite o ticker de um ativo (ex.: ADSH11) ou Enter para sair.[/]")
+    console.print(
+        "[dim]Comandos: [bold]TICKER[/bold] · [bold]TICKER html[/bold] (relatório com gráficos) · "
+        "[bold]atualizar[/bold] · [bold]ranking \\[dy|pvp|pl|cotistas] \\[sem-alertas][/bold] · "
+        "[bold]ia TICKER[/bold] · [bold]sair[/bold][/]"
+    )
     while True:
         console.print()
         try:
-            ticker = console.input("[bold cyan]ticker> [/]").strip()
+            entrada = console.input("[bold cyan]fato> [/]").strip()
         except (EOFError, KeyboardInterrupt):
             break
-        if not ticker:
+        if not entrada:
             break
-        _exibir_raio_x(ticker, interativo=True)
+        try:
+            if not _executar_entrada(entrada):
+                break
+        except typer.Exit:
+            pass  # o erro já foi explicado na tela; o modo interativo continua
+
+
+def _executar_entrada(entrada: str) -> bool:
+    """Interpreta uma linha do modo interativo. False encerra o loop."""
+    tokens = entrada.split()
+    if tokens and tokens[0].lower() == "fato":  # quem digita 'fato analisar X' também acerta
+        tokens = tokens[1:]
+    if not tokens:
+        return True
+    comando = tokens[0].lower()
+
+    if comando in ("sair", "exit", "quit"):
+        return False
+    if comando == "atualizar":
+        from . import armazenamento
+
+        con = armazenamento.conectar()
+        try:
+            _executar_atualizacao(con)
+        finally:
+            con.close()
+        return True
+    if comando == "ranking":
+        from . import ranking as modulo_ranking
+
+        por = next((t.lower() for t in tokens[1:] if t.lower() in modulo_ranking.CRITERIOS), "dy")
+        sem_alertas = any("sem-alertas" in t.lower() for t in tokens[1:])
+        _mostrar_ranking(por=por, top=10, sem_alertas=sem_alertas, segmento=None)
+        return True
+    if comando == "ia":
+        if len(tokens) < 2:
+            console.print("[yellow]Uso: ia TICKER (ex.: ia HGLG11)[/]")
+            return True
+        ia(ticker=tokens[1], modelo=None)
+        return True
+    if comando == "analisar":
+        tokens = tokens[1:]
+        if not tokens:
+            console.print("[yellow]Uso: analisar TICKER \\[html][/]")
+            return True
+
+    ticker = tokens[0]
+    html = any(t.lower() in ("html", "--html") for t in tokens[1:])
+    _exibir_raio_x(ticker, html=html, interativo=True)
+    return True
 
 
 def _exibir_raio_x(ticker: str, html: bool = False, interativo: bool = False) -> bool:
@@ -172,6 +225,16 @@ def ranking(
     ),
 ) -> None:
     """Ranking de FIIs da base local — fato ordenado com critério explícito."""
+    _mostrar_ranking(por, top, sem_alertas, segmento, incluir_nao_listados)
+
+
+def _mostrar_ranking(
+    por: str,
+    top: int = 10,
+    sem_alertas: bool = False,
+    segmento: str | None = None,
+    incluir_nao_listados: bool = False,
+) -> None:
     from . import armazenamento
     from . import ranking as modulo_ranking
     from .relatorio.terminal import renderizar_ranking
