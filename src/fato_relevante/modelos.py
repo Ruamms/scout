@@ -34,6 +34,16 @@ class RedFlag:
 
 
 @dataclass(frozen=True)
+class Selo:
+    """Síntese mecânica dos alertas — critérios públicos, nunca veredito."""
+
+    nivel: str  # sem_alertas | leves | atencao | grave | insuficiente
+    rotulo: str
+    descricao: str
+    cor: str  # nome de cor rich / hex para HTML
+
+
+@dataclass(frozen=True)
 class IndicadorLinha:
     """Uma linha da tabela de indicadores, já formatada para exibição."""
 
@@ -59,5 +69,6 @@ class RaioX:
     red_flags: list[RedFlag] = field(default_factory=list)
     sem_alerta: list[str] = field(default_factory=list)
     notas: list[str] = field(default_factory=list)
+    selo: Selo | None = None
     red_flags_avaliadas: bool = True
     exemplo: bool = False

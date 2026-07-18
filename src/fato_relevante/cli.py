@@ -66,22 +66,36 @@ def _exibir_raio_x(ticker: str, html: bool = False, interativo: bool = False) ->
         if armazenamento.base_vazia(con) and not _oferecer_atualizacao(con, interativo):
             return False
         aviso_cotacao = cotacoes.garantir_atualizada(con, ticker)
-        raiox = analise.montar_raio_x(con, ticker)
-        if raiox is None:
+        completo = analise.montar_completo(con, ticker)
+        if completo is None:
             console.print(
                 f"[red]Ticker '{ticker.strip().upper()}' não encontrado nos informes da CVM.[/] "
                 "[dim]Confira o código ou rode 'fato atualizar' para renovar a base.[/]"
             )
             return False
+        raiox = completo.raiox
         sem_cotacao = any("sem cotação de bolsa" in nota for nota in raiox.notas)
         if aviso_cotacao and not sem_cotacao:
             raiox.notas.insert(0, aviso_cotacao)
         renderizar(raiox, console)
         if html:
-            console.print("[yellow]Relatório HTML ainda não implementado (milestone 5 do ROADMAP).[/]")
+            _gerar_html(completo)
+        elif interativo:
+            console.print(f"  [dim]relatório com gráficos: fato analisar {raiox.ticker} --html[/]")
         return True
     finally:
         con.close()
+
+
+def _gerar_html(completo) -> None:
+    import webbrowser
+
+    from . import armazenamento
+    from .relatorio import html as relatorio_html
+
+    caminho = relatorio_html.salvar(completo, armazenamento.diretorio_dados() / "relatorios")
+    console.print(f"Relatório salvo em [bold]{caminho}[/] — abrindo no navegador…")
+    webbrowser.open(caminho.as_uri())
 
 
 def _oferecer_atualizacao(con, interativo: bool) -> bool:

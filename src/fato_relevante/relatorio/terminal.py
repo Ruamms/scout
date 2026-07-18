@@ -44,13 +44,16 @@ def renderizar(raiox: RaioX, console: Console) -> None:
 
 
 def _cabecalho(raiox: RaioX) -> Panel:
-    linha1 = Text.assemble(
+    pedacos: list = [
         (f" {raiox.ticker} ", "bold black on white"),
         ("  "),
         (raiox.nome, "bold"),
         ("  ·  ", "dim"),
         (raiox.cnpj, "dim"),
-    )
+    ]
+    if raiox.selo is not None:
+        pedacos += [("  "), (f" {raiox.selo.rotulo} ", f"bold black on {raiox.selo.cor}")]
+    linha1 = Text.assemble(*pedacos)
     detalhes = (
         f"{raiox.classificacao}  ·  Gestão {raiox.gestao.lower()}"
         f"  ·  informes CVM até {raiox.dados_ate}"

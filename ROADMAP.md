@@ -12,7 +12,7 @@ A visão de produto completa (referências de mercado, backlog e decisões de de
 - [x] **Motor de red flags** — 6 regras auditáveis, cada uma com severidade, evidência numérica e fonte; regras sem histórico suficiente aparecem como "não avaliadas" (nunca como aprovação silenciosa)
   - distribuição acima da variação patrimonial · diluição destrutiva por emissão · VP/cota em queda relevante · base de cotistas (mínimo legal de 100 para isenção de IR, Lei 14.754/2023) · P/VP fora da faixa histórica · rendimentos irregulares
   - pendente para leva 2: vacância fora da curva (precisa do informe trimestral da CVM)
-- [ ] **M5 — Relatório HTML com gráficos** — página única auto-contida (gráficos SVG gerados em Python): cotação, dividendos+DY, PL anual, P/VP vs média; selo-síntese dos alertas (critérios públicos — ver VISAO.md); data de atualização por fonte; disclaimer
+- [x] **M5 — Relatório HTML com gráficos** — página única auto-contida (~15 KB, gráficos SVG gerados em Python puro): cotação × VP/cota, P/VP com média histórica, DY por ano, PL por ano; selo-síntese de 5 níveis (critérios públicos — ver VISAO.md) no HTML e no terminal; data de atualização por fonte; disclaimer; `fato analisar TICKER --html` salva e abre no navegador
 - [ ] **M6 — Informe trimestral CVM** — lista de imóveis resumida (por estado + top imóveis por % da receita, com vacância e inadimplência individuais); vacância com histórico; resultado financeiro real → red flag de distribuição exata; red flags de vacância e de "fundo novo"
 - [ ] **M7 — Raio-x do administrador** — outros FIIs do mesmo administrador, com idade, segmento e contagem de alertas, linkáveis
 - [ ] **M8 — Site estático** — GitHub Actions gera as páginas de todos os FIIs 1x/dia e publica no GitHub Pages

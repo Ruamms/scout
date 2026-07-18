@@ -24,6 +24,74 @@ _INDICADOR_DA_REGRA = {
 }
 
 
+@dataclasses.dataclass(frozen=True)
+class DadosGraficos:
+    """Séries brutas para o relatório HTML (gráficos SVG)."""
+
+    cotacao: list[tuple[str, float]]
+    vp_ajustado: list[tuple[str, float]]
+    pvp: list[tuple[str, float]]
+    pvp_media: float | None
+    dy_por_ano: list[tuple[str, float]]
+    pl_por_ano: list[tuple[str, float]]
+
+
+@dataclasses.dataclass(frozen=True)
+class AnaliseCompleta:
+    raiox: RaioX
+    graficos: DadosGraficos
+
+
+def montar_completo(con: sqlite3.Connection, ticker: str) -> AnaliseCompleta | None:
+    raiox = montar_raio_x(con, ticker)
+    if raiox is None:
+        return None
+    fundo = armazenamento.resolver_fundo(con, raiox.ticker)
+    serie = armazenamento.serie_complemento(con, fundo.cnpj)
+    cotacoes = armazenamento.serie_cotacoes(con, raiox.ticker)
+    vp_ajustada = series.serie_vp_ajustada(serie)
+    return AnaliseCompleta(raiox=raiox, graficos=_dados_graficos(serie, cotacoes, vp_ajustada))
+
+
+def _dados_graficos(
+    serie: list[sqlite3.Row],
+    cotacoes: list[sqlite3.Row],
+    vp_ajustada: dict[str, float],
+) -> DadosGraficos:
+    cotacao = [
+        (linha["competencia"], linha["fechamento"])
+        for linha in cotacoes
+        if linha["fechamento"]
+    ]
+    pvp = [
+        (competencia, fechamento / vp_ajustada[competencia])
+        for competencia, fechamento in cotacao
+        if vp_ajustada.get(competencia)
+    ]
+    pvp_media = sum(v for _, v in pvp) / len(pvp) if pvp else None
+
+    dy_por_ano: dict[str, float] = {}
+    pl_por_ano: dict[str, float] = {}
+    for linha in serie:
+        ano = linha["competencia"][:4]
+        if series.dy_valido(linha["dy_mes"]):
+            dy_por_ano[ano] = dy_por_ano.get(ano, 0.0) + linha["dy_mes"] * 100
+        if linha["patrimonio_liquido"] is not None:
+            pl_por_ano[ano] = linha["patrimonio_liquido"]  # último mês do ano vence
+
+    ano_parcial = serie[-1]["competencia"][:4] if serie else ""
+    rotulo = lambda ano: f"{ano}*" if ano == ano_parcial else ano  # noqa: E731
+
+    return DadosGraficos(
+        cotacao=cotacao,
+        vp_ajustado=sorted(vp_ajustada.items()),
+        pvp=pvp,
+        pvp_media=pvp_media,
+        dy_por_ano=[(rotulo(ano), valor) for ano, valor in sorted(dy_por_ano.items())],
+        pl_por_ano=[(rotulo(ano), valor) for ano, valor in sorted(pl_por_ano.items())],
+    )
+
+
 def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:
     ticker = ticker.strip().upper()
     fundo = armazenamento.resolver_fundo(con, ticker)
@@ -70,6 +138,7 @@ def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:
         red_flags=resultado.flags,
         sem_alerta=resultado.aprovadas,
         notas=notas,
+        selo=redflags.selo(resultado),
         red_flags_avaliadas=True,
         exemplo=False,
     )
