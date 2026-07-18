@@ -117,6 +117,38 @@ def test_calculadoras_prefilled_com_dados_do_fundo(con, zip_cvm):
     assert "não promessa de rentabilidade" in pagina
 
 
+def test_botao_calculadoras_e_ancora(con, zip_cvm):
+    completo = _completo(con, zip_cvm)
+    pagina = relatorio_html.gerar(completo)
+    assert 'href="#calculadoras"' in pagina
+    assert 'id="calculadoras"' in pagina
+
+
+def test_calculadora_retroativa_com_rentabilidade(con, zip_cvm):
+    import json
+
+    from fato_relevante.coleta import cvm as cvm_mod
+
+    cvm_mod.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
+    candles = [(f"{ano}-{mes:02d}", 100.0 + i, 100.0 + i) for i, (ano, mes) in enumerate(
+        [(2025, m) for m in range(1, 13)] + [(2026, 1), (2026, 2)]
+    )]
+    armazenamento.gravar_cotacoes(con, "TSTE11", candles, 115.0, "2026-02-17", "2026-02-18")
+    armazenamento.gravar_indice(
+        con, "CDI", [(f"{a}-{m:02d}", 1.0) for a in (2025, 2026) for m in range(1, 13)], "2026-02-18"
+    )
+    completo = analise.montar_completo(con, "tste11")
+    pagina = relatorio_html.gerar(completo)
+    assert "E se eu tivesse investido?" in pagina
+    assert "const RETRO = " in pagina
+    assert "function calcRetro" in pagina
+    # o JSON embutido carrega o % final de cada série por janela
+    trecho = pagina.split("const RETRO = ")[1].split(";</script>")[0]
+    retro = json.loads(trecho)
+    assert "12 meses" in retro
+    assert "Fundo" in retro["12 meses"] and "CDI" in retro["12 meses"]
+
+
 def test_sem_cotacao_nao_mostra_calculadoras(con, zip_cvm):
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     completo = analise.montar_completo(con, "tste11")

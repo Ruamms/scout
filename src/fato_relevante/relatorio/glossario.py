@@ -86,6 +86,11 @@ TERMOS = {
         "de calcular: edite qualquer campo e os resultados se atualizam na hora. São "
         "contas, não previsões — rendimento passado não garante o futuro."
     ),
+    "E se eu tivesse investido?": (
+        "Diferente de uma projeção, aqui a conta usa o que de fato aconteceu: a "
+        "rentabilidade real do fundo (com os rendimentos pagos) e os índices oficiais do "
+        "mesmo período. Serve para comparar, não para prever."
+    ),
     "Uma cota por mês": (
         "O marco em que o investimento \"gira sozinho\": com essa quantidade de cotas, os "
         "rendimentos de um mês pagam uma cota nova. A partir daí o reinvestimento acelera "

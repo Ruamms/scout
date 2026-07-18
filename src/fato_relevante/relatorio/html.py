@@ -152,6 +152,7 @@ def gerar(completo: AnaliseCompleta, agora: datetime | None = None) -> str:
 <title>{_e(raiox.ticker)} — Fato Relevante</title>
 <style>
 :root {{ color-scheme: dark; }}
+html {{ scroll-behavior: smooth; }}
 * {{ box-sizing: border-box; margin: 0; }}
 body {{ background:#0b1017; color:#dbe3ec; font-family:system-ui,-apple-system,sans-serif; line-height:1.5; }}
 .pagina {{ max-width:960px; margin:0 auto; padding:28px 20px 40px; }}
@@ -160,6 +161,8 @@ a {{ color:#5eead4; }}
 .marca {{ color:#8b98a9; font-size:14px; letter-spacing:.14em; text-transform:uppercase; }}
 h1 {{ font-size:34px; }} h1 small {{ color:#8b98a9; font-size:17px; font-weight:400; }}
 .selo {{ display:inline-block; padding:4px 14px; border-radius:999px; font-weight:700; font-size:14px; color:#0b1017; }}
+.btn-topo {{ margin-left:auto; background:#1a2432; border:1px solid #2a3441; color:#5eead4; text-decoration:none; padding:6px 14px; border-radius:8px; font-size:13px; font-weight:600; }}
+.btn-topo:hover {{ border-color:#5eead4; }}
 .meta {{ color:#8b98a9; font-size:13px; margin-top:6px; }}
 .cards {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:10px; margin:22px 0; }}
 .card {{ background:#121a24; border:1px solid #1f2a38; border-radius:10px; padding:12px 14px; }}
@@ -195,6 +198,7 @@ ul {{ padding-left:20px; }} li {{ margin:3px 0; }}
 .calc .campos {{ display:flex; flex-wrap:wrap; gap:10px; align-items:end; }}
 .calc label {{ display:block; color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; margin-bottom:3px; }}
 .calc input[type=number] {{ background:#0b1017; color:#dbe3ec; border:1px solid #2a3441; border-radius:8px; padding:8px 10px; width:130px; font-size:15px; }}
+.calc select {{ background:#0b1017; color:#dbe3ec; border:1px solid #2a3441; border-radius:8px; padding:8px 10px; font-size:15px; }}
 .calc .check {{ display:flex; align-items:center; gap:6px; color:#aeb9c7; font-size:13px; padding-bottom:8px; }}
 .calc .resultado {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:10px; margin-top:14px; }}
 .calc .res {{ background:#0b1017; border:1px solid #1f2a38; border-radius:9px; padding:10px 12px; }}
@@ -215,6 +219,7 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
   <div class="topo">
     <h1>{_e(raiox.ticker)} <small>{_e(raiox.nome)}</small></h1>
     {_selo_html(raiox)}
+    <a class="btn-topo" href="#calculadoras">🧮 Calculadoras</a>
   </div>
   <div class="meta">
     {_e(raiox.cnpj)} · {_e(raiox.classificacao)} · Gestão {_e(raiox.gestao.lower())}<br>
@@ -274,7 +279,21 @@ function calcAportes() {{
   põe('pa-renda', brl((reinvestir ? saldo : aportado) * taxa));
 }}
 
+function calcRetro() {{
+  if (typeof RETRO === 'undefined') return;
+  const valor = num('rt-valor');
+  const janela = document.getElementById('rt-janela').value;
+  const series = RETRO[janela] || {{}};
+  const alvo = document.getElementById('rt-resultado');
+  alvo.innerHTML = Object.entries(series).map(([nome, pct]) =>
+    `<div class="res"><div class="rotulo">${{nome === 'Fundo' ? 'no fundo' : 'no ' + nome}}</div>` +
+    `<div class="num">${{brl(valor * (1 + pct / 100))}}</div>` +
+    `<div class="rotulo">${{pct >= 0 ? '+' : ''}}${{pct.toLocaleString('pt-BR', {{maximumFractionDigits: 2}})}}%</div></div>`
+  ).join('');
+}}
+
 if (document.getElementById('uc-preco')) {{ calcUmaCota(); calcAportes(); }}
+if (document.getElementById('rt-valor')) {{ calcRetro(); }}
 </script>
 </body>
 </html>
@@ -396,7 +415,9 @@ def _secao_calculadoras(completo: AnaliseCompleta) -> str:
         return f"{valor:.{casas}f}"
 
     return f"""
-  <h2>Calculadoras{_ajuda("Calculadoras")}</h2>
+  <h2 id="calculadoras">Calculadoras{_ajuda("Calculadoras")}</h2>
+
+  {_calculadora_retroativa(completo)}
 
   <div class="calc">
     <h3>Uma cota por mês{_ajuda("Uma cota por mês")}</h3>
@@ -442,6 +463,42 @@ def _secao_calculadoras(completo: AnaliseCompleta) -> str:
     meses — o futuro pode ser diferente. Não considera variação do preço da cota, impostos
     ou emissões. Simulação matemática, não promessa de rentabilidade.</p>
   </div>
+"""
+
+
+def _calculadora_retroativa(completo: AnaliseCompleta) -> str:
+    """"E se eu tivesse investido?" — usa a rentabilidade REAL que aconteceu."""
+    import json
+
+    rentabilidade = completo.graficos.rentabilidade
+    if not rentabilidade:
+        return ""
+    # % final acumulado de cada série por janela: {"12 meses": {"Fundo": 5.1, ...}}
+    finais = {
+        janela: {nome: pontos[-1][1] for nome, pontos in series_janela if pontos}
+        for janela, series_janela in rentabilidade.items()
+    }
+    opcoes = "".join(
+        f'<option value="{_e(janela)}">{_e("há " + janela.replace("máximo", "todo o histórico"))}</option>'
+        for janela in finais
+    )
+    return f"""
+  <div class="calc">
+    <h3>E se eu tivesse investido?{_ajuda("E se eu tivesse investido?")}</h3>
+    <p class="desc">Simulação com o passado que realmente aconteceu — rentabilidade do fundo
+    com proventos, comparada ao CDI e à inflação no mesmo período.</p>
+    <div class="campos">
+      <div><label for="rt-valor">Se você tivesse investido (R$)</label>
+      <input type="number" id="rt-valor" value="1000" step="100" min="1" oninput="calcRetro()"></div>
+      <div><label for="rt-janela">Período</label>
+      <select id="rt-janela" onchange="calcRetro()">{opcoes}</select></div>
+    </div>
+    <div class="resultado" id="rt-resultado"></div>
+    <p class="aviso">Cálculo sobre a rentabilidade observada no período (fundo: cotação
+    ajustada por proventos; CDI e IPCA: Banco Central). Passado real, não projeção —
+    e passado não garante futuro.</p>
+  </div>
+  <script>const RETRO = {json.dumps(finais, ensure_ascii=False)};</script>
 """
 
 

@@ -102,6 +102,15 @@ Auditoria do que usamos das referências (Investidor10, AUVP) e das fontes:
 - **Dados**: CVM e Banco Central são dados públicos oficiais (uso livre). **Yahoo Finance é o ponto de atenção**: a API de cotações é não-oficial; para uso pessoal/local o risco é baixo, mas antes do site público em escala vale migrar preço histórico para fonte oficial (COTAHIST da B3) ou API licenciada — registrado como pré-requisito do M9.
 - **Nossa marca**: "Fato Relevante" é termo genérico de mercado (bom para nós), mas antes de qualquer uso comercial vale busca no INPI por marcas registradas no mesmo nicho.
 
+## Sustentação financeira do site (estratégia registrada em 18/07/2026)
+
+Princípio: transparência radical — o usuário sempre sabe por que está vendo o que está vendo.
+
+1. **Apoio voluntário (já implementado)**: página de PIX com a mensagem "mantenha o site sem anúncios". É o modelo padrão do site.
+2. **Janela de anúncios transparente (ideia para o site, M9+)**: nos períodos de maior volume da B3 (5–10 dias, ex.: temporadas de resultados), exibir anúncios COM aviso prévio: "durante o período X exibiremos anúncios para pagar os custos do site". Fora da janela, zero anúncio.
+   - Pontos a resolver antes de ligar: rede de anúncios sem tracking invasivo (avaliar EthicalAds/Carbon Ads vs AdSense), banner de consentimento/LGPD se houver cookies, e o texto do aviso — a coerência com a promessa "sem anúncios" exige que a janela seja exceção anunciada, não regra silenciosa.
+   - Métrica de decisão: se o apoio voluntário cobrir os custos (GitHub Pages = R$ 0 no início), a janela nem liga.
+
 ## Distribuição / site
 - v1 site: **GitHub Pages + GitHub Actions** (grátis, sem servidor, repo público já dá tudo). Limites confortáveis: 1 GB de site, ~100 GB/mês de banda.
 - Quando precisar de busca server-side, login ou dados por usuário: migrar para Cloudflare Pages (estático, grátis, mais banda) ou FastAPI num host pequeno — o núcleo Python já foi desenhado para isso.

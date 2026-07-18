@@ -92,8 +92,9 @@ a {{ color:#5eead4; }}
 <div class="pagina">
   <div class="marca">FATO RELEVANTE</div>
   <h1>☕ Apoie o projeto</h1>
-  <p>O Fato Relevante é gratuito e de código aberto. Se ele te ajudou,
-  qualquer contribuição via PIX ajuda a manter o projeto vivo.</p>
+  <p>O Fato Relevante é gratuito e de código aberto. Se ele te ajudou, qualquer
+  contribuição via PIX ajuda a manter o projeto vivo — pagando os custos de
+  infraestrutura e mantendo o site <b>sem anúncios</b>.</p>
   <div class="qr">{qr_svg(payload)}</div>
   <p>Chave PIX (e-mail):</p>
   <div class="chave">{CHAVE_PIX}</div>
