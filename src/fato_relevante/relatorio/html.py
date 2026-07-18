@@ -105,10 +105,9 @@ def gerar(completo: AnaliseCompleta, agora: datetime | None = None) -> str:
                 "Dividend yield (%)",
                 paineis,
                 nota=(
-                    "* ano parcial · visão mensal: últimos 36 meses · "
+                    "* ano parcial · visão mensal: últimos 12 meses · "
                     "≈ R$ = rendimento por cota estimado (DY informado à CVM × VP ajustado da cota, "
-                    "na base de cotas atual); "
-                    "na visão mensal, o R$/cota aparece ao passar o mouse na barra"
+                    "na base de cotas atual)"
                 ),
             )
         )
@@ -116,10 +115,19 @@ def gerar(completo: AnaliseCompleta, agora: datetime | None = None) -> str:
         paineis = [("Ano", graficos.grafico_barras(dados.pl_por_ano, formatador=formato.moeda_compacta))]
         if len(dados.pl_por_mes) >= 6:
             paineis.append(
-                ("Mês", graficos.grafico_linhas([("PL", dados.pl_por_mes)], formatador=formato.moeda_compacta))
+                (
+                    "Mês",
+                    graficos.grafico_linhas(
+                        [("PL", dados.pl_por_mes[-12:])],
+                        formatador=formato.moeda_compacta,
+                        valores_nos_pontos=True,
+                    ),
+                )
             )
         secoes_graficos.append(
-            _card_grafico_abas("Patrimônio líquido", paineis, nota="* ano parcial")
+            _card_grafico_abas(
+                "Patrimônio líquido", paineis, nota="* ano parcial · visão mensal: últimos 12 meses"
+            )
         )
 
     return f"""<!doctype html>

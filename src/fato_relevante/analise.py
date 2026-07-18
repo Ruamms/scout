@@ -36,7 +36,7 @@ class DadosGraficos:
     pvp: Serie
     pvp_media: float | None
     dy_por_ano: Serie
-    dy_por_mes: Serie  # últimos 36 meses
+    dy_por_mes: Serie  # últimos 12 meses
     # rendimento estimado em R$/cota (DY × VP da cota do mês), alinhado às séries de DY
     rend_por_ano: list[float | None]
     rend_por_mes: list[float | None]
@@ -129,9 +129,9 @@ def _dados_graficos(
         pvp=pvp,
         pvp_media=pvp_media,
         dy_por_ano=[(rotulo(ano), dy_por_ano[ano]) for ano in anos_dy],
-        dy_por_mes=dy_por_mes[-36:],
+        dy_por_mes=dy_por_mes[-12:],
         rend_por_ano=[rend_por_ano.get(ano) for ano in anos_dy],
-        rend_por_mes=rend_por_mes[-36:],
+        rend_por_mes=rend_por_mes[-12:],
         pl_por_ano=[(rotulo(ano), valor) for ano, valor in sorted(pl_por_ano.items())],
         pl_por_mes=pl_por_mes,
         rentabilidade=_rentabilidades(ajustado, indices),

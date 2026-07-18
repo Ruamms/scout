@@ -83,6 +83,15 @@ def test_barras_anuais_mostram_extra_no_topo():
     assert "<title>2025: 9,10%</title>" in svg  # sem extra, tooltip só com %
 
 
+def test_linha_com_valores_nos_pontos():
+    pontos = [(f"2025-{m:02d}", float(m)) for m in range(1, 13)]
+    svg = graficos.grafico_linhas(
+        [("PL", pontos)], formatador=lambda v: f"R$ {formato.decimal(v)}", valores_nos_pontos=True
+    )
+    # valor escrito acima de cada ponto (além do tooltip)
+    assert svg.count('font-size="10">R$ ') == 12
+
+
 def test_barras_mensais_extra_so_no_tooltip_e_valor_vertical():
     pontos = [(f"2024-{m:02d}", 1.0) for m in range(1, 13)] + [
         (f"2025-{m:02d}", 1.0) for m in range(1, 13)

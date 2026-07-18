@@ -32,6 +32,7 @@ def grafico_linhas(
     formatador: Formatador | None = None,
     linha_media: float | None = None,
     rotulo_media: str = "média",
+    valores_nos_pontos: bool = False,
 ) -> str:
     """Gráfico de linhas; `series` = [(nome, [(competencia, valor), ...])]."""
     formatador = formatador or (lambda v: formato.decimal(v))
@@ -76,6 +77,11 @@ def grafico_linhas(
                 f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{raio}" fill="{cor}" opacity="{opacidade}">'
                 f"<title>{nome} · {formato.competencia_curta(competencia)}: {formatador(v)}</title></circle>"
             )
+            if valores_nos_pontos and len(pontos) <= 13:
+                partes.append(
+                    f'<text x="{x:.1f}" y="{y - 10:.1f}" text-anchor="middle" '
+                    f'fill="{COR_TEXTO}" font-size="10">{formatador(v)}</text>'
+                )
         if len(series) > 1:
             partes.append(
                 f'<text x="{MARGEM_ESQ + 8 + indice * 170}" y="{MARGEM_TOPO + 12}" '
