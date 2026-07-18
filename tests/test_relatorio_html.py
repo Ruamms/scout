@@ -109,11 +109,12 @@ def test_cli_html_gera_e_abre(con, zip_cvm, tmp_path, monkeypatch):
     from typer.testing import CliRunner
 
     from fato_relevante.cli import app
-    from fato_relevante.coleta import cotacoes
+    from fato_relevante.coleta import cotacoes, indices
 
     _completo(con, zip_cvm)
     monkeypatch.setenv("FATO_DATA_DIR", str(tmp_path))
     monkeypatch.setattr(cotacoes, "garantir_atualizada", lambda con, ticker: None)
+    monkeypatch.setattr(indices, "garantir_atualizados", lambda con: None)
     abertos = []
     import webbrowser
 

@@ -59,13 +59,14 @@ def _exibir_raio_x(ticker: str, html: bool = False, interativo: bool = False) ->
     from . import analise, armazenamento
     from .relatorio.terminal import renderizar
 
-    from .coleta import cotacoes
+    from .coleta import cotacoes, indices
 
     con = armazenamento.conectar()
     try:
         if armazenamento.base_vazia(con) and not _oferecer_atualizacao(con, interativo):
             return False
         aviso_cotacao = cotacoes.garantir_atualizada(con, ticker)
+        aviso_indices = indices.garantir_atualizados(con)
         completo = analise.montar_completo(con, ticker)
         if completo is None:
             console.print(
@@ -77,6 +78,8 @@ def _exibir_raio_x(ticker: str, html: bool = False, interativo: bool = False) ->
         sem_cotacao = any("sem cotação de bolsa" in nota for nota in raiox.notas)
         if aviso_cotacao and not sem_cotacao:
             raiox.notas.insert(0, aviso_cotacao)
+        if aviso_indices:
+            raiox.notas.insert(0, aviso_indices)
         renderizar(raiox, console)
         if html:
             _gerar_html(completo)

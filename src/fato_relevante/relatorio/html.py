@@ -67,21 +67,39 @@ def gerar(completo: AnaliseCompleta, agora: datetime | None = None) -> str:
                 ),
             )
         )
-    if dados.dy_por_ano:
+    if dados.rentabilidade:
+        pct = lambda v: formato.percentual(v)  # noqa: E731
+        paineis = [
+            (janela, graficos.grafico_linhas(series_janela, formatador=pct))
+            for janela, series_janela in dados.rentabilidade.items()
+        ]
         secoes_graficos.append(
-            _card_grafico(
-                "Dividend yield por ano (%)",
-                graficos.grafico_barras(dados.dy_por_ano, formatador=lambda v: formato.percentual(v)),
-                nota="* ano parcial",
+            _card_grafico_abas(
+                "Rentabilidade acumulada (com proventos) × CDI × IPCA",
+                paineis,
+                nota="fundo: cotação ajustada por proventos (Yahoo); CDI e IPCA: Banco Central (SGS)",
+            )
+        )
+    if dados.dy_por_ano:
+        pct = lambda v: formato.percentual(v)  # noqa: E731
+        paineis = [("Ano", graficos.grafico_barras(dados.dy_por_ano, formatador=pct))]
+        if len(dados.dy_por_mes) >= 6:
+            paineis.append(("Mês", graficos.grafico_barras(dados.dy_por_mes, formatador=pct)))
+        secoes_graficos.append(
+            _card_grafico_abas(
+                "Dividend yield (%)",
+                paineis,
+                nota="* ano parcial · visão mensal: últimos 36 meses",
             )
         )
     if dados.pl_por_ano:
-        secoes_graficos.append(
-            _card_grafico(
-                "Patrimônio líquido por ano",
-                graficos.grafico_barras(dados.pl_por_ano, formatador=formato.moeda_compacta),
-                nota="* ano parcial",
+        paineis = [("Ano", graficos.grafico_barras(dados.pl_por_ano, formatador=formato.moeda_compacta))]
+        if len(dados.pl_por_mes) >= 6:
+            paineis.append(
+                ("Mês", graficos.grafico_linhas([("PL", dados.pl_por_mes)], formatador=formato.moeda_compacta))
             )
+        secoes_graficos.append(
+            _card_grafico_abas("Patrimônio líquido", paineis, nota="* ano parcial")
         )
 
     return f"""<!doctype html>
@@ -117,6 +135,9 @@ ul {{ padding-left:20px; }} li {{ margin:3px 0; }}
 .grafico {{ background:#121a24; border:1px solid #1f2a38; border-radius:10px; padding:14px 16px 8px; margin-bottom:14px; }}
 .grafico h3 {{ font-size:15px; color:#aeb9c7; margin-bottom:8px; }}
 .grafico .nota {{ color:#66707d; font-size:11px; }}
+.grafico .cab {{ display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; }}
+.abas button {{ background:#1a2432; color:#8b98a9; border:1px solid #2a3441; border-radius:7px; padding:3px 12px; font-size:12px; cursor:pointer; }}
+.abas button.ativo {{ background:#5eead4; color:#0b1017; border-color:#5eead4; font-weight:700; }}
 .rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #1f2a38; margin-top:30px; padding-top:14px; }}
 @media print {{ body {{ background:#fff; color:#111; }} }}
 </style>
@@ -144,6 +165,13 @@ ul {{ padding-left:20px; }} li {{ margin:3px 0; }}
   <div class="rodape">{_RODAPE}<br>
   Projeto open source: <a href="https://github.com/Ruamms/fato-relevante">github.com/Ruamms/fato-relevante</a></div>
 </div>
+<script>
+function mostrar(botao, idPainel) {{
+  const card = botao.closest('.grafico');
+  card.querySelectorAll('.painel').forEach(p => p.hidden = (p.dataset.painel !== idPainel));
+  card.querySelectorAll('.abas button').forEach(b => b.classList.toggle('ativo', b === botao));
+}}
+</script>
 </body>
 </html>
 """
@@ -210,3 +238,26 @@ def _secao_flags(raiox: RaioX) -> str:
 def _card_grafico(titulo: str, svg: str, nota: str = "") -> str:
     rodape = f'<div class="nota">{_e(nota)}</div>' if nota else ""
     return f'<div class="grafico"><h3>{_e(titulo)}</h3>{svg}{rodape}</div>'
+
+
+def _card_grafico_abas(titulo: str, paineis: list[tuple[str, str]], nota: str = "") -> str:
+    """Card com painéis alternáveis (ex.: Ano/Mês) via botões — JS inline mínimo."""
+    paineis = [(rotulo, svg) for rotulo, svg in paineis if svg]
+    if not paineis:
+        return ""
+    if len(paineis) == 1:
+        return _card_grafico(titulo, paineis[0][1], nota)
+    botoes = "".join(
+        f'<button class="{"ativo" if indice == 0 else ""}" '
+        f"onclick=\"mostrar(this,'{_e(rotulo)}')\">{_e(rotulo)}</button>"
+        for indice, (rotulo, _) in enumerate(paineis)
+    )
+    corpo = "".join(
+        f'<div class="painel" data-painel="{_e(rotulo)}"{"" if indice == 0 else " hidden"}>{svg}</div>'
+        for indice, (rotulo, svg) in enumerate(paineis)
+    )
+    rodape = f'<div class="nota">{_e(nota)}</div>' if nota else ""
+    return (
+        f'<div class="grafico"><div class="cab"><h3>{_e(titulo)}</h3>'
+        f'<div class="abas">{botoes}</div></div>{corpo}{rodape}</div>'
+    )

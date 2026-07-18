@@ -24,16 +24,23 @@ _INDICADOR_DA_REGRA = {
 }
 
 
+Serie = list[tuple[str, float]]
+
+
 @dataclasses.dataclass(frozen=True)
 class DadosGraficos:
     """Séries brutas para o relatório HTML (gráficos SVG)."""
 
-    cotacao: list[tuple[str, float]]
-    vp_ajustado: list[tuple[str, float]]
-    pvp: list[tuple[str, float]]
+    cotacao: Serie
+    vp_ajustado: Serie
+    pvp: Serie
     pvp_media: float | None
-    dy_por_ano: list[tuple[str, float]]
-    pl_por_ano: list[tuple[str, float]]
+    dy_por_ano: Serie
+    dy_por_mes: Serie  # últimos 36 meses
+    pl_por_ano: Serie
+    pl_por_mes: Serie
+    # janela ("12 meses"/"5 anos"/"máximo") -> [(nome da série, pontos % acumulado)]
+    rentabilidade: dict[str, list[tuple[str, Serie]]]
 
 
 @dataclasses.dataclass(frozen=True)
@@ -50,18 +57,30 @@ def montar_completo(con: sqlite3.Connection, ticker: str) -> AnaliseCompleta | N
     serie = armazenamento.serie_complemento(con, fundo.cnpj)
     cotacoes = armazenamento.serie_cotacoes(con, raiox.ticker)
     vp_ajustada = series.serie_vp_ajustada(serie)
-    return AnaliseCompleta(raiox=raiox, graficos=_dados_graficos(serie, cotacoes, vp_ajustada))
+    indices = {
+        nome: armazenamento.serie_indice(con, nome) for nome in ("CDI", "IPCA")
+    }
+    return AnaliseCompleta(
+        raiox=raiox, graficos=_dados_graficos(serie, cotacoes, vp_ajustada, indices)
+    )
 
 
 def _dados_graficos(
     serie: list[sqlite3.Row],
     cotacoes: list[sqlite3.Row],
     vp_ajustada: dict[str, float],
+    indices: dict[str, dict[str, float]] | None = None,
 ) -> DadosGraficos:
+    indices = indices or {}
     cotacao = [
         (linha["competencia"], linha["fechamento"])
         for linha in cotacoes
         if linha["fechamento"]
+    ]
+    ajustado = [
+        (linha["competencia"], linha["fechamento_ajustado"])
+        for linha in cotacoes
+        if linha["fechamento_ajustado"]
     ]
     pvp = [
         (competencia, fechamento / vp_ajustada[competencia])
@@ -72,12 +91,16 @@ def _dados_graficos(
 
     dy_por_ano: dict[str, float] = {}
     pl_por_ano: dict[str, float] = {}
+    dy_por_mes: list[tuple[str, float]] = []
+    pl_por_mes: list[tuple[str, float]] = []
     for linha in serie:
         ano = linha["competencia"][:4]
         if series.dy_valido(linha["dy_mes"]):
             dy_por_ano[ano] = dy_por_ano.get(ano, 0.0) + linha["dy_mes"] * 100
+            dy_por_mes.append((linha["competencia"], linha["dy_mes"] * 100))
         if linha["patrimonio_liquido"] is not None:
             pl_por_ano[ano] = linha["patrimonio_liquido"]  # último mês do ano vence
+            pl_por_mes.append((linha["competencia"], linha["patrimonio_liquido"]))
 
     ano_parcial = serie[-1]["competencia"][:4] if serie else ""
     rotulo = lambda ano: f"{ano}*" if ano == ano_parcial else ano  # noqa: E731
@@ -88,8 +111,51 @@ def _dados_graficos(
         pvp=pvp,
         pvp_media=pvp_media,
         dy_por_ano=[(rotulo(ano), valor) for ano, valor in sorted(dy_por_ano.items())],
+        dy_por_mes=dy_por_mes[-36:],
         pl_por_ano=[(rotulo(ano), valor) for ano, valor in sorted(pl_por_ano.items())],
+        pl_por_mes=pl_por_mes,
+        rentabilidade=_rentabilidades(ajustado, indices),
     )
+
+
+def _rentabilidades(
+    ajustado: list[tuple[str, float]],
+    indices: dict[str, dict[str, float]],
+) -> dict[str, list[tuple[str, list[tuple[str, float]]]]]:
+    """Retorno % acumulado do fundo (com proventos) vs índices, por janela."""
+    janelas = {"12 meses": 13, "5 anos": 61, "máximo": None}
+    resultado: dict[str, list] = {}
+    for nome_janela, tamanho in janelas.items():
+        recorte = ajustado[-tamanho:] if tamanho else ajustado
+        if len(recorte) < 3 or (tamanho and len(ajustado) < tamanho):
+            continue
+        series_janela = [("Fundo", _acumulado_fundo(recorte))]
+        competencias = [competencia for competencia, _ in recorte]
+        for nome_indice, valores in indices.items():
+            acumulado = _acumulado_indice(valores, competencias)
+            if len(acumulado) >= 3:
+                series_janela.append((nome_indice, acumulado))
+        resultado[nome_janela] = series_janela
+    return resultado
+
+
+def _acumulado_fundo(pontos: list[tuple[str, float]]) -> list[tuple[str, float]]:
+    base = pontos[0][1]
+    return [(competencia, 100 * (valor / base - 1)) for competencia, valor in pontos]
+
+
+def _acumulado_indice(
+    valores: dict[str, float], competencias: list[str]
+) -> list[tuple[str, float]]:
+    """Acumula o índice mensal sobre as competências do fundo (base 0 na 1ª)."""
+    acumulado = [(competencias[0], 0.0)]
+    fator = 1.0
+    for competencia in competencias[1:]:
+        if competencia not in valores:
+            break  # índice ainda não publicado para o mês (IPCA atrasa ~1 mês)
+        fator *= 1 + valores[competencia] / 100
+        acumulado.append((competencia, 100 * (fator - 1)))
+    return acumulado
 
 
 def montar_raio_x(con: sqlite3.Connection, ticker: str) -> RaioX | None:

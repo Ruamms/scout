@@ -62,12 +62,13 @@ def test_cli_analisar_com_base_carregada(con, zip_cvm, tmp_path, monkeypatch):
     from typer.testing import CliRunner
 
     from fato_relevante.cli import app
-    from fato_relevante.coleta import cotacoes
+    from fato_relevante.coleta import cotacoes, indices
 
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     monkeypatch.setenv("FATO_DATA_DIR", str(tmp_path))
-    # a CLI sincroniza cotações antes de analisar; teste não vai à rede
+    # a CLI sincroniza cotações e índices antes de analisar; teste não vai à rede
     monkeypatch.setattr(cotacoes, "garantir_atualizada", lambda con, ticker: None)
+    monkeypatch.setattr(indices, "garantir_atualizados", lambda con: None)
     resultado = CliRunner().invoke(app, ["analisar", "tste11"])
     assert resultado.exit_code == 0
     assert "TSTE11" in resultado.output

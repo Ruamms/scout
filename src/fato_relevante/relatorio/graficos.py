@@ -41,9 +41,11 @@ def grafico_linhas(
     if not valores:
         return ""
     minimo, maximo = _faixa(valores)
-    eixo_x = max((pontos for _, pontos in series), key=len)
+    # domínio comum: séries de tamanhos diferentes precisam compartilhar o eixo X
+    dominio = sorted({competencia for _, pontos in series for competencia, _ in pontos})
+    posicao = {competencia: indice for indice, competencia in enumerate(dominio)}
 
-    partes = [_abre_svg(), *_grade_y(minimo, maximo, formatador), *_rotulos_anos(eixo_x)]
+    partes = [_abre_svg(), *_grade_y(minimo, maximo, formatador), *_rotulos_anos(dominio)]
     if linha_media is not None:
         y = _escala_y(linha_media, minimo, maximo)
         partes.append(
@@ -57,8 +59,8 @@ def grafico_linhas(
     for indice, (nome, pontos) in enumerate(series):
         cor = CORES[indice % len(CORES)]
         coordenadas = " ".join(
-            f"{_escala_x(i, len(pontos)):.1f},{_escala_y(v, minimo, maximo):.1f}"
-            for i, (_, v) in enumerate(pontos)
+            f"{_escala_x(posicao[competencia], len(dominio)):.1f},{_escala_y(v, minimo, maximo):.1f}"
+            for competencia, v in pontos
         )
         partes.append(
             f'<polyline points="{coordenadas}" fill="none" stroke="{cor}" '
@@ -66,7 +68,7 @@ def grafico_linhas(
         )
         if len(series) > 1:
             partes.append(
-                f'<text x="{MARGEM_ESQ + 8 + indice * 200}" y="{MARGEM_TOPO + 12}" '
+                f'<text x="{MARGEM_ESQ + 8 + indice * 170}" y="{MARGEM_TOPO + 12}" '
                 f'fill="{cor}" font-size="12" font-weight="bold">— {nome}</text>'
             )
     partes.append("</svg>")
@@ -84,6 +86,11 @@ def grafico_barras(pontos: list[Ponto], formatador: Formatador | None = None) ->
     passo = area / len(pontos)
     largura_barra = min(passo * 0.62, 64)
 
+    # com muitas barras (visão mensal), rótulos e valores viram poluição:
+    # espaça os rótulos e omite o valor no topo
+    passo_rotulo = max(1, -(-len(pontos) // 12))
+    mostrar_valores = len(pontos) <= 15
+
     partes = [_abre_svg(), *_grade_y(0, maximo, formatador)]
     for indice, (rotulo, valor) in enumerate(pontos):
         x = MARGEM_ESQ + passo * indice + (passo - largura_barra) / 2
@@ -94,14 +101,16 @@ def grafico_barras(pontos: list[Ponto], formatador: Formatador | None = None) ->
             f'<rect x="{x:.1f}" y="{y:.1f}" width="{largura_barra:.1f}" '
             f'height="{max(base - y, 0):.1f}" rx="3" fill="{CORES[0]}" opacity="0.85"/>'
         )
-        partes.append(
-            f'<text x="{centro:.1f}" y="{y - 6:.1f}" text-anchor="middle" '
-            f'fill="{COR_TEXTO}" font-size="11">{formatador(valor)}</text>'
-        )
-        partes.append(
-            f'<text x="{centro:.1f}" y="{ALTURA - MARGEM_BAIXO + 18}" text-anchor="middle" '
-            f'fill="{COR_TEXTO}" font-size="12">{rotulo}</text>'
-        )
+        if mostrar_valores:
+            partes.append(
+                f'<text x="{centro:.1f}" y="{y - 6:.1f}" text-anchor="middle" '
+                f'fill="{COR_TEXTO}" font-size="11">{formatador(valor)}</text>'
+            )
+        if indice % passo_rotulo == 0:
+            partes.append(
+                f'<text x="{centro:.1f}" y="{ALTURA - MARGEM_BAIXO + 18}" text-anchor="middle" '
+                f'fill="{COR_TEXTO}" font-size="12">{rotulo}</text>'
+            )
     partes.append("</svg>")
     return "".join(partes)
 
@@ -152,14 +161,14 @@ def _grade_y(minimo: float, maximo: float, formatador: Formatador) -> list[str]:
     return partes
 
 
-def _rotulos_anos(pontos: list[Ponto]) -> list[str]:
+def _rotulos_anos(dominio: list[str]) -> list[str]:
     """Um rótulo por virada de ano (competências AAAA-MM no eixo X)."""
     partes = []
     ultimo_ano = ""
-    total = len(pontos)
-    anos_no_eixo = len({competencia[:4] for competencia, _ in pontos})
+    total = len(dominio)
+    anos_no_eixo = len({competencia[:4] for competencia in dominio})
     pular_impares = anos_no_eixo > 12
-    for indice, (competencia, _) in enumerate(pontos):
+    for indice, competencia in enumerate(dominio):
         ano = competencia[:4]
         if ano != ultimo_ano and not (pular_impares and int(ano) % 2):
             x = _escala_x(indice, total)

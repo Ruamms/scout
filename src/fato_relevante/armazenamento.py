@@ -42,6 +42,16 @@ CREATE TABLE IF NOT EXISTS cotacoes_meta (
     cotado_em     TEXT,  -- data do último pregão (AAAA-MM-DD)
     atualizado_em TEXT   -- data da última sincronização local (AAAA-MM-DD)
 );
+CREATE TABLE IF NOT EXISTS indices (
+    serie       TEXT NOT NULL,  -- CDI, IPCA...
+    competencia TEXT NOT NULL,  -- AAAA-MM
+    valor       REAL,           -- % no mês
+    PRIMARY KEY (serie, competencia)
+);
+CREATE TABLE IF NOT EXISTS indices_meta (
+    serie         TEXT PRIMARY KEY,
+    atualizado_em TEXT
+);
 CREATE TABLE IF NOT EXISTS informes_complemento (
     cnpj                   TEXT NOT NULL,
     competencia            TEXT NOT NULL,  -- AAAA-MM
@@ -168,4 +178,38 @@ def serie_cotacoes(con: sqlite3.Connection, ticker: str) -> list[sqlite3.Row]:
 def cotacao_meta(con: sqlite3.Connection, ticker: str) -> sqlite3.Row | None:
     return con.execute(
         "SELECT * FROM cotacoes_meta WHERE ticker = ?", (ticker,)
+    ).fetchone()
+
+
+def gravar_indice(
+    con: sqlite3.Connection,
+    serie: str,
+    valores: list[tuple[str, float]],
+    atualizado_em: str,
+) -> None:
+    con.executemany(
+        "INSERT OR REPLACE INTO indices (serie, competencia, valor) VALUES (?, ?, ?)",
+        [(serie, competencia, valor) for competencia, valor in valores],
+    )
+    con.execute(
+        "INSERT OR REPLACE INTO indices_meta (serie, atualizado_em) VALUES (?, ?)",
+        (serie, atualizado_em),
+    )
+    con.commit()
+
+
+def serie_indice(con: sqlite3.Connection, serie: str) -> dict[str, float]:
+    return {
+        linha["competencia"]: linha["valor"]
+        for linha in con.execute(
+            "SELECT competencia, valor FROM indices WHERE serie = ? ORDER BY competencia",
+            (serie,),
+        )
+        if linha["valor"] is not None
+    }
+
+
+def indice_meta(con: sqlite3.Connection, serie: str) -> sqlite3.Row | None:
+    return con.execute(
+        "SELECT * FROM indices_meta WHERE serie = ?", (serie,)
     ).fetchone()
