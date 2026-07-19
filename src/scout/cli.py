@@ -217,17 +217,33 @@ def _executar_atualizacao(con) -> None:
     )
     from .coleta import b3fundos, b3rf, cda, empresas, etf_renda, fundamentos
 
+    # empresas ANTES das cotações: o ajuste por eventos precisa dos papéis
+    passos = [
+        ("informes da CVM", lambda p: cvm.atualizar(con, ao_progredir=p)),
+        ("empresas (IBrX-100)", lambda p: empresas.atualizar_empresas(con, ao_progredir=p)),
+        ("balanços (DFP)", lambda p: fundamentos.atualizar(con, ao_progredir=p)),
+        ("cotações da B3", lambda p: b3.atualizar(con, ao_progredir=p)),
+        ("ETFs listados", lambda p: b3fundos.atualizar_etfs(con, ao_progredir=p)),
+        ("carteiras de ETF", lambda p: cda.atualizar_composicao(con, ao_progredir=p)),
+        ("cotações de renda fixa", lambda p: b3rf.atualizar_diaria(con, ao_progredir=p)),
+        ("proventos de ETF", lambda p: etf_renda.atualizar_proventos(con, ao_progredir=p)),
+    ]
+
+    def _rodar(avancar) -> None:
+        # cada etapa é ISOLADA: uma fonte fora do ar (ex.: um proxy da B3
+        # inacessível do GitHub Actions) não pode derrubar as demais e publicar
+        # o site pela metade — foi assim que os ETFs zeraram
+        for nome, passo in passos:
+            try:
+                passo(avancar)
+            except Exception as erro:  # noqa: BLE001
+                console.print(
+                    f"  [yellow]etapa '{nome}' falhou[/] "
+                    f"[dim]({type(erro).__name__}: {erro}) — seguindo com as demais[/]"
+                )
+
     if not console.is_terminal:
-        progresso = lambda msg: console.print(f"  [dim]{msg}[/]")  # noqa: E731
-        cvm.atualizar(con, ao_progredir=progresso)
-        # empresas ANTES das cotações: o ajuste por eventos precisa dos papéis
-        empresas.atualizar_empresas(con, ao_progredir=progresso)
-        fundamentos.atualizar(con, ao_progredir=progresso)  # balanços (DFP) das empresas
-        b3.atualizar(con, ao_progredir=progresso)
-        b3fundos.atualizar_etfs(con, ao_progredir=progresso)
-        cda.atualizar_composicao(con, ao_progredir=progresso)
-        b3rf.atualizar_diaria(con, ao_progredir=progresso)
-        etf_renda.atualizar_proventos(con, ao_progredir=progresso)
+        _rodar(lambda msg: console.print(f"  [dim]{msg}[/]"))
     else:
         with Progress(
             TextColumn("[progress.description]{task.description}"),
@@ -241,15 +257,7 @@ def _executar_atualizacao(con) -> None:
                 barra.console.print(f"  [dim]{msg}[/]")
                 barra.advance(tarefa)
 
-            cvm.atualizar(con, ao_progredir=_avanca)
-            # empresas ANTES das cotações: o ajuste por eventos precisa dos papéis
-            empresas.atualizar_empresas(con, ao_progredir=_avanca)
-            fundamentos.atualizar(con, ao_progredir=_avanca)  # balanços (DFP) das empresas
-            b3.atualizar(con, ao_progredir=_avanca)
-            b3fundos.atualizar_etfs(con, ao_progredir=_avanca)
-            cda.atualizar_composicao(con, ao_progredir=_avanca)
-            b3rf.atualizar_diaria(con, ao_progredir=_avanca)
-            etf_renda.atualizar_proventos(con, ao_progredir=_avanca)
+            _rodar(_avanca)
     console.print("[green]Base atualizada.[/]")
 
 

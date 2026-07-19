@@ -64,10 +64,15 @@ def atualizar_etfs(
     """Sincroniza a tabela `etfs` (1x/semana): lista os dois tipos e busca o
     detalhe (ticker+CNPJ) só de quem ainda não temos — com pausa de cortesia."""
     hoje = hoje or date.today()
+    listados = con.execute(
+        "SELECT COUNT(*) FROM etfs WHERE listado IS NULL OR listado = 1"
+    ).fetchone()[0]
     carga = con.execute(
         "SELECT carregado_em FROM cargas WHERE arquivo = 'ETFS_B3'"
     ).fetchone()
-    if carga and carga[0]:
+    # respeita o frescor semanal, MENOS quando não há ETF listado — aí re-sincroniza
+    # para se auto-curar (foi assim que o site zerou os ETFs)
+    if carga and carga[0] and listados > 0:
         idade = (hoje - date.fromisoformat(str(carga[0])[:10])).days
         if idade < DIAS_FRESCOR:
             return None
@@ -111,8 +116,18 @@ def atualizar_etfs(
             novos += 1
     # quem sumiu da listagem foi deslistado: sai do site e do lote na hora.
     # Linhas de curadoria manual (sem id_fnet, ex.: XFIX11) nunca são mexidas.
+    # SEGURANÇA: só deslista se a listagem veio SAUDÁVEL (perto do que já temos).
+    # Uma resposta parcial/degradada da B3 (ex.: proxy inacessível do GitHub
+    # Actions devolvendo poucos/zero resultados) marcaria quase tudo como
+    # deslistado e zeraria os ETFs do site — foi o que aconteceu.
+    ja_listados = con.execute(
+        "SELECT COUNT(*) FROM etfs WHERE id_fnet IS NOT NULL AND (listado IS NULL OR listado = 1)"
+    ).fetchone()[0]
+    # saudável = trouxe pelo menos 80% do que já tínhamos; abaixo disso é fonte
+    # degradada e não se deslista nada (senão zeraria o site num erro da B3)
+    listagem_saudavel = len(na_listagem) >= int(0.8 * ja_listados)
     deslistados = 0
-    if na_listagem:  # listagem vazia = falha da fonte; não deslista ninguém
+    if listagem_saudavel:
         for linha in con.execute(
             "SELECT cnpj, ticker, id_fnet, listado FROM etfs WHERE id_fnet IS NOT NULL"
         ).fetchall():
@@ -130,6 +145,11 @@ def atualizar_etfs(
         "SELECT COUNT(*) FROM etfs WHERE listado IS NULL OR listado = 1"
     ).fetchone()[0]
     mensagem = f"ETFs listados na B3: {total} no total ({novos} novos nesta rodada)"
+    if not listagem_saudavel and ja_listados:
+        mensagem += (
+            f" · listagem parcial ({len(na_listagem)} de ~{ja_listados}) — "
+            "deslistagem pulada por segurança"
+        )
     if deslistados:
         mensagem += f" · {deslistados} saíram da listagem (deslistados)"
     if ao_progredir:

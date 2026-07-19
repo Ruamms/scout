@@ -449,7 +449,8 @@ tbody tr:hover td {{ background:#182024; }}
     <tbody>{"".join(linhas)}</tbody>
   </table>
   <div class="rodape">Não é recomendação de investimento. Fontes: B3 e CVM — critérios públicos:
-  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>
+  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
+  <a href="apoie.html">☕ apoie o projeto</a></div>
 </div>
 <script>
 let classeAtiva = '';
@@ -551,7 +552,8 @@ tbody tr:hover td {{ background:#182024; }}
   </div>
   <div id="tabela"></div>
   <div class="rodape">Comparação factual com dados públicos oficiais — não é recomendação de investimento.
-  Critérios e código: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>
+  Critérios e código: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
+  <a href="apoie.html">☕ apoie o projeto</a></div>
 </div>
 <script>
 const DADOS = {json_dados};
@@ -715,7 +717,8 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
 
   <div class="rodape">Isto não é recomendação de investimento. Fontes: dados abertos da CVM,
   Banco Central (SGS) e cotações oficiais da B3 (COTAHIST). Critérios de todos os alertas são públicos:
-  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>
+  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
+  <a href="apoie.html">☕ apoie o projeto</a></div>
 </div>
 <script>
 // aviso de beta: aparece só na primeira visita (dispensado fica em localStorage)

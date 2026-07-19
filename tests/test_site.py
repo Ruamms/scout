@@ -163,6 +163,9 @@ def test_paginas_sem_artefatos_de_template(con, tmp_path):
         # todo bloco <style> precisa ter chaves balanceadas (CSS válido de forma)
         for bloco in re.findall(r"<style>(.*?)</style>", conteudo, re.S):
             assert bloco.count("{") == bloco.count("}"), f"CSS desbalanceado em {arquivo.name}"
+        # o "apoie o projeto" tem que estar em TODA página (menos a própria apoie)
+        if arquivo.name != "apoie.html":
+            assert 'href="apoie.html"' in conteudo, f"sem link de apoio em {arquivo.name}"
 
 
 def test_home_multiclasse_com_busca_ao_vivo_e_menu(con, tmp_path):

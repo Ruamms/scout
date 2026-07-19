@@ -561,6 +561,29 @@ def test_listagem_vazia_nao_deslista_ninguem(con, monkeypatch):
     assert len(armazenamento.etfs_listados(con)) == 4  # ninguém deslistado
 
 
+def test_listagem_parcial_degradada_nao_deslista(con, monkeypatch):
+    """Resposta parcial da B3 (< 80% do que temos) não deslista — foi o que
+    zerou os ETFs do site publicado (proxy da B3 degradado no GitHub Actions)."""
+    from scout import armazenamento
+
+    monkeypatch.setattr(b3fundos, "listar", _lista_fake)
+    monkeypatch.setattr(b3fundos, "detalhar", lambda i, r, t: _DETALHES[i])
+    monkeypatch.setattr(b3fundos.time, "sleep", lambda s: None)
+    b3fundos.atualizar_etfs(con, hoje=date(2026, 7, 19))  # 4 ETFs
+
+    # a B3 devolve só 1 de 4 (degradada) -> segurança: não deslista ninguém
+    def _so_um(tipo):
+        return (
+            [{"id": 1234, "acronym": "BOVA", "fundName": "ISHARES", "tradingName": "BOVA"}]
+            if tipo == "ETF"
+            else []
+        )
+
+    monkeypatch.setattr(b3fundos, "listar", _so_um)
+    b3fundos.atualizar_etfs(con, hoje=date(2026, 7, 27))
+    assert len(armazenamento.etfs_listados(con)) == 4  # nada deslistado
+
+
 def test_etf_em_liquidacao_ganha_flag_alta_na_pagina(con):
     from scout.relatorio import etf_html
 
