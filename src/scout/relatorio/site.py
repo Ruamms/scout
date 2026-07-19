@@ -422,7 +422,9 @@ input#busca {{ width:100%; background:#182024; color:#F4F5F6; border:1px solid #
 .filtro.ativo {{ background:#8FCB9B; color:#101415; border-color:#8FCB9B; font-weight:700; }}
 table {{ width:100%; border-collapse:collapse; font-size:13.5px; }}
 th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em;
-  text-align:left; padding:6px 10px; border-bottom:1px solid #314045; }}
+  text-align:left; padding:8px 10px;
+  position:sticky; top:0; z-index:2; background:#101415;
+  box-shadow:inset 0 -1px 0 #314045; }}
 td {{ padding:7px 10px; border-bottom:1px solid #232D31; }}
 td:nth-child(n+4), th:nth-child(n+4) {{ text-align:right; }}
 tbody tr:hover td {{ background:#182024; }}
@@ -639,7 +641,8 @@ input#busca {{ width:100%; background:#182024; color:#F4F5F6; border:1px solid #
 @keyframes desliza {{ 0% {{ margin-left:-40%; }} 100% {{ margin-left:100%; }} }}
 table {{ width:100%; border-collapse:collapse; font-size:13.5px; }}
 th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em;
-  text-align:left; padding:6px 10px; border-bottom:1px solid #314045; position:sticky; top:0; background:#101415; }}
+  text-align:left; padding:8px 10px; position:sticky; top:0; z-index:2; background:#101415;
+  box-shadow:inset 0 -1px 0 #314045; }}
 td {{ padding:7px 10px; border-bottom:1px solid #232D31; }}
 tbody tr:hover td {{ background:#182024; }}
 .btn-todos {{ display:block; margin:12px auto 0; background:#232D31; border:1px solid #314045;
