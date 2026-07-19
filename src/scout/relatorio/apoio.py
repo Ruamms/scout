@@ -59,14 +59,25 @@ def qr_svg(payload: str) -> str:
     return imagem.to_string(encoding="unicode")
 
 
-def salvar(destino: Path) -> Path:
+def salvar(destino: Path, analytics: str = "") -> Path:
     destino.mkdir(parents=True, exist_ok=True)
     caminho = destino / "apoie.html"
-    caminho.write_text(gerar(), encoding="utf-8")
+    caminho.write_text(gerar(analytics), encoding="utf-8")
     return caminho
 
 
-def gerar() -> str:
+def _nota_privacidade(analytics: str = "") -> str:
+    base = "O Scout não usa cookies e não coleta dados pessoais."
+    if (analytics or "").strip():
+        base += (
+            " Medimos apenas páginas vistas e termos de busca, de forma anônima "
+            "e agregada (GoatCounter, sem cookies), para entender o que é útil e "
+            "priorizar o que ainda falta cobrir."
+        )
+    return base
+
+
+def gerar(analytics: str = "") -> str:
     payload = payload_pix()
     return f"""<!doctype html>
 <html lang="pt-BR">
@@ -107,6 +118,7 @@ a {{ color:#8FCB9B; }}
   <textarea id="payload" rows="3" readonly onclick="this.select()">{payload}</textarea>
   <br><button onclick="navigator.clipboard.writeText(document.getElementById('payload').value).then(()=>this.textContent='Copiado!')">Copiar código PIX</button>
   <div class="rodape">
+  <p style="color:#66707d;font-size:12px;margin-bottom:10px">{_nota_privacidade(analytics)}</p>
   Contato: <a href="mailto:{EMAIL_CONTATO}">{EMAIL_CONTATO}</a>{_link_linkedin()}<br>
   Projeto open source:
   <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>

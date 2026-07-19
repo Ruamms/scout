@@ -170,6 +170,7 @@ async function buscaTopo() {
   const achados = _ativosTopo.filter(a =>
     a.t.toLowerCase().includes(termo) || a.n.toLowerCase().includes(termo) || a.c.toLowerCase().includes(termo)
   ).slice(0, 8);
+  if (window.scoutBusca) scoutBusca(termo, achados.length > 0);
   if (!achados.length) { caixa.hidden = true; caixa.innerHTML = ''; return; }
   caixa.innerHTML = achados.map(a =>
     `<a href="${a.t}.html"><span class="tk">${a.t}</span><span class="nm">${a.n}</span>` +
@@ -196,6 +197,32 @@ function navegaTopo(evento) {
   }
 }
 """
+
+
+def analytics_script(codigo: str | None) -> str:
+    """Snippet de analytics sem cookie (GoatCounter) para injetar no <head>.
+
+    Vazio quando não há código configurado — build local e testes ficam sem
+    rede e sem rastreio. Além da contagem de páginas vistas, define
+    `window.scoutBusca(termo, temResultado)`: registra O QUE as pessoas
+    pesquisam como evento ANÔNIMO e agregado (nunca ligado a identidade),
+    sanitizado a [A-Z0-9] (só o formato de ticker; texto livre é descartado)
+    e com debounce (as teclas intermediárias colapsam num evento só). A busca
+    SEM resultado vira um caminho próprio — é a demanda que ainda não cobrimos.
+    """
+    codigo = (codigo or "").strip()
+    if not codigo:
+        return ""
+    url = f"https://{codigo}.goatcounter.com/count"
+    return (
+        f'<script data-goatcounter="{url}" async src="//gc.zgo.at/count.js"></script>\n'
+        "<script>(function(){var t=null;window.scoutBusca=function(termo,tem){"
+        "var q=(termo||'').toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,12);"
+        "if(q.length<2)return;clearTimeout(t);t=setTimeout(function(){"
+        "if(!window.goatcounter||!window.goatcounter.count)return;"
+        "window.goatcounter.count({path:(tem?'busca/':'busca-vazia/')+q,"
+        "title:tem?'Busca':'Busca sem resultado',event:true});},1200);};})();</script>"
+    )
 
 
 def marca_html(inicio_href: str | None = None, com_busca_ticker: bool = False) -> str:

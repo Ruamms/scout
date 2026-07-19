@@ -318,12 +318,20 @@ def site(
     leituras: str = typer.Option(
         None, "--leituras", help="Pasta com as leituras por IA (leituras/) para embutir nas páginas."
     ),
+    analytics: str = typer.Option(
+        None,
+        "--analytics",
+        help="Código GoatCounter (analytics sem cookie). Padrão: variável SCOUT_ANALYTICS.",
+    ),
 ) -> None:
     """Gera o site estático completo: índice buscável + página de cada FII."""
+    import os
     from pathlib import Path
 
     from . import armazenamento
     from .relatorio import site as modulo_site
+
+    codigo_analytics = analytics if analytics is not None else os.environ.get("SCOUT_ANALYTICS", "")
 
     con = armazenamento.conectar()
     try:
@@ -341,6 +349,7 @@ def site(
                 limite=limite,
                 ao_progredir=lambda msg: console.print(f"  [dim]{msg}[/]"),
                 leituras_dir=pasta_leituras,
+                analytics=codigo_analytics,
             )
         else:
             from rich.progress import BarColumn, Progress, TaskProgressColumn, TextColumn
@@ -365,6 +374,7 @@ def site(
                     limite=limite,
                     ao_item=_item,
                     leituras_dir=pasta_leituras,
+                    analytics=codigo_analytics,
                 )
         console.print(f"[green]{resumo['paginas']} páginas geradas em {resumo['destino']}[/]")
     finally:

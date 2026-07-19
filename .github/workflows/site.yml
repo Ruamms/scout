@@ -44,7 +44,12 @@ jobs:
         continue-on-error: true
         run: uv run scout atualizar
 
+      # analytics sem cookie (GoatCounter): defina a variável de repositório
+      # SCOUT_ANALYTICS com o código (subdomínio) em Settings → Secrets and
+      # variables → Actions → Variables. Vazia = nenhum rastreio (padrão).
       - name: Gerar site
+        env:
+          SCOUT_ANALYTICS: ${{ vars.SCOUT_ANALYTICS }}
         run: uv run scout site --destino _site --leituras leituras
 
       - name: Publicar artefato do Pages

@@ -33,9 +33,11 @@ def gerar(
     ao_item: Callable[[str, int, int], None] | None = None,
     agora: datetime | None = None,
     leituras_dir: Path | None = None,
+    analytics: str = "",
 ) -> dict:
     """`ao_progredir(msg)` = log textual esporádico; `ao_item(fase, atual, total)`
-    = callback por item, para barras de progresso."""
+    = callback por item, para barras de progresso. `analytics` = código
+    GoatCounter (analytics sem cookie); vazio = nenhum rastreio (padrão)."""
     destino.mkdir(parents=True, exist_ok=True)
     progresso = ao_progredir or (lambda mensagem: None)
     item = ao_item or (lambda fase, atual, total: None)
@@ -119,7 +121,7 @@ def gerar(
     )
     progresso(f"etfs: {len(etfs_publicados)} páginas")
 
-    apoio.salvar(destino)
+    apoio.salvar(destino, analytics)
     momento = agora or datetime.now()
     import json as _json
 
@@ -134,7 +136,27 @@ def gerar(
     (destino / "comparar.html").write_text(
         _pagina_comparar(publicados), encoding="utf-8"
     )
+    total_analytics = _injetar_analytics(destino, analytics)
+    if total_analytics:
+        progresso(f"analytics sem cookie (GoatCounter) em {total_analytics} páginas")
     return {"paginas": len(publicados), "etfs": len(etfs_publicados), "destino": str(destino)}
+
+
+def _injetar_analytics(destino: Path, codigo: str) -> int:
+    """Injeta o snippet de analytics antes de `</head>` em TODAS as páginas —
+    um único ponto cobre home, listagens, páginas de ativo e apoio. Vazio
+    quando não há código: nada é injetado (build local/testes ficam limpos)."""
+    snippet = relatorio_html.analytics_script(codigo)
+    if not snippet:
+        return 0
+    total = 0
+    for caminho in destino.glob("*.html"):
+        conteudo = caminho.read_text(encoding="utf-8")
+        if "goatcounter" in conteudo or "</head>" not in conteudo:
+            continue  # idempotente; página sem <head> (não deve acontecer) é pulada
+        caminho.write_text(conteudo.replace("</head>", snippet + "\n</head>", 1), encoding="utf-8")
+        total += 1
+    return total
 
 
 def _ativos_busca(fundos: list, etfs: list[dict]) -> list[dict]:
@@ -297,6 +319,7 @@ function buscar() {{
   const achados = ATIVOS.filter(a =>
     a.t.toLowerCase().includes(termo) || a.n.toLowerCase().includes(termo) || a.c.toLowerCase().includes(termo)
   ).slice(0, 8);
+  if (window.scoutBusca) scoutBusca(termo, achados.length > 0);
   if (!achados.length) {{
     caixa.innerHTML = '<a><span class="nm">nada encontrado — cobrimos FIIs e ETFs da B3</span></a>';
     caixa.hidden = false;

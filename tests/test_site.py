@@ -19,6 +19,42 @@ def _base(con):
     return con
 
 
+def test_sem_analytics_nenhum_rastreio_no_site(con, tmp_path):
+    _base(con)
+    site.gerar(con, tmp_path / "site", com_cotacoes=False)  # padrão: sem código
+    for arquivo in (tmp_path / "site").glob("*.html"):
+        conteudo = arquivo.read_text(encoding="utf-8")
+        assert "goatcounter" not in conteudo, f"rastreio inesperado em {arquivo.name}"
+    # a busca chama o gancho, que fica inerte sem o snippet (window.scoutBusca undefined)
+    home = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+    assert "if (window.scoutBusca) scoutBusca(termo" in home
+
+
+def test_analytics_sem_cookie_injeta_e_registra_buscas(con, tmp_path):
+    from tests.test_etfs import _semear_etf
+
+    _base(con)
+    _semear_etf(con)
+    site.gerar(con, tmp_path / "site", com_cotacoes=False, analytics="scout")
+    paginas = list((tmp_path / "site").glob("*.html"))
+    # o snippet entra em TODAS as páginas, uma vez, antes do </head>
+    for arquivo in paginas:
+        conteudo = arquivo.read_text(encoding="utf-8")
+        assert conteudo.count("goatcounter.com/count") >= 1, f"sem analytics em {arquivo.name}"
+        assert "scout.goatcounter.com/count" in conteudo
+        cabeca, _, resto = conteudo.partition("</head>")
+        assert "goatcounter" in cabeca and "goatcounter" not in resto  # dentro do <head>
+    # evento de busca: caminho distinto para busca com e sem resultado
+    home = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+    assert "window.scoutBusca=function" in home
+    assert "busca-vazia/" in home  # a demanda não coberta
+    # termo sanitizado a [A-Z0-9] (texto livre/pessoal nunca é enviado)
+    assert "replace(/[^A-Z0-9]/g,'')" in home
+    # nota de transparência na página de apoio
+    apoie = (tmp_path / "site" / "apoie.html").read_text(encoding="utf-8")
+    assert "sem cookies" in apoie and "GoatCounter" in apoie
+
+
 def test_gerar_site_completo(con, tmp_path):
     _base(con)
     resumo = site.gerar(
