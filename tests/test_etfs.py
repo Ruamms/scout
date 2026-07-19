@@ -378,7 +378,6 @@ def test_proventos_de_etf_extrai_e_grava(con, monkeypatch):
         etf_renda.fnet, "listar", lambda cnpj, quantidade=40, timeout=60, tentativas=3: docs
     )
     monkeypatch.setattr(etf_renda.fnet, "baixar", lambda id_doc, timeout=180, tentativas=3: _XML_PROVENTO)
-    monkeypatch.setattr(etf_renda.time, "sleep", lambda s: None)
 
     mensagem = etf_renda.atualizar_proventos(con, hoje=date(2026, 7, 19))
     assert "1 avisos novos" in mensagem and "1 ETFs distribuem" in mensagem
@@ -415,7 +414,6 @@ def test_proventos_repete_busca_do_fnet_que_oscilou(con, monkeypatch):
 
     monkeypatch.setattr(etf_renda.fnet, "listar", _listar)
     monkeypatch.setattr(etf_renda.fnet, "baixar", lambda id_doc, timeout=180, tentativas=3: _XML_PROVENTO)
-    monkeypatch.setattr(etf_renda.time, "sleep", lambda s: None)
 
     mensagem = etf_renda.atualizar_proventos(con, hoje=date(2026, 7, 19))
     assert chamadas["n"] == 2  # 1ª falhou -> 2ª passada recuperou
