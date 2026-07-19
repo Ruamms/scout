@@ -126,7 +126,10 @@ def _conversar(prompt_sistema: str, conteudo_usuario: str, modelo: str | None, a
         {
             "model": modelo,
             "stream": True,
-            "options": {"temperature": 0.2},
+            # num_ctx: o padrão do modelo (32k) desperdiça VRAM — nossos prompts
+            # nunca passam de ~10k tokens (relatório ≤24k chars, fatos ≤8k cada);
+            # com 16k o cache de contexto encolhe e mais camadas cabem na GPU
+            "options": {"temperature": 0.2, "num_ctx": 16384},
             "messages": [
                 {"role": "system", "content": prompt_sistema},
                 {"role": "user", "content": conteudo_usuario},
