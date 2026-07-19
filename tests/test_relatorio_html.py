@@ -198,8 +198,8 @@ def test_secao_ia_explica_fundo_sem_relatorio_gerencial(con, zip_cvm):
     # com fatos relevantes lidos, eles aparecem mesmo sem relatório gerencial
     com_fatos = leituras.montar_sem_relatorio(
         "TSTE11",
-        fatos_meta=[{"id": 120, "data_entrega": "18/06/2026 18:58"}],
-        texto_fatos="resumo dos fatos",
+        docs_meta=[{"id": 120, "data_entrega": "18/06/2026 18:58"}],
+        texto_docs="resumo dos fatos",
         modelo="teste:1b",
         agora=datetime(2026, 7, 18, 23, 0),
     )
@@ -247,6 +247,27 @@ def test_oscilacoes_sem_sustos(con, zip_cvm):
     pagina = relatorio_html.gerar(completo)
     assert "Oscilações com contexto" in pagina
     assert "sem sustos" in pagina
+
+
+def test_secao_ia_formato_novo_com_rotulos(con, zip_cvm):
+    completo = _completo(con, zip_cvm)
+    leitura = {
+        "ticker": "TSTE11",
+        "modelo": "teste:1b",
+        "gerada_em": "2026-07-19T04:00:00",
+        "relatorio": {"id": 1, "data_entrega": "10/07/2026 18:00", "texto": "leitura"},
+        "comunicados": {
+            "ids": [9, 10],
+            "datas": ["05/07/2026", "01/06/2026"],
+            "rotulos": ["Fato Relevante", "Assembleia AGE"],
+            "texto": "bloco dos comunicados",
+        },
+    }
+    pagina = relatorio_html.gerar(completo, leitura=leitura)
+    assert "Fatos relevantes, comunicados e assembleias" in pagina
+    assert "Assembleia AGE de 01/06/2026" in pagina
+    assert "downloadDocumento?id=10" in pagina
+    assert "bloco dos comunicados" in pagina
 
 
 def test_sem_cotacao_nao_mostra_calculadoras(con, zip_cvm):

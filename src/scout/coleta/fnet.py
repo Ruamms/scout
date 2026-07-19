@@ -86,6 +86,34 @@ def fatos_relevantes(documentos: list[dict], quantidade: int = 3) -> list[dict]:
     ][:quantidade]
 
 
+def comunicados_e_assembleias(documentos: list[dict], hoje=None) -> list[dict]:
+    """Comunicados ao Mercado (até 2) e Assembleias (até 2) dos últimos 12
+    meses, com um `rotulo` legível para o prompt e a página. Junto com os
+    fatos relevantes, cobrem a notícia que não aparece nos informes."""
+    from datetime import date, datetime
+
+    hoje = hoje or date.today()
+
+    def _recente(documento_: dict) -> bool:
+        try:
+            entrega = datetime.strptime(documento_["data_entrega"][:10], "%d/%m/%Y").date()
+        except ValueError:
+            return False
+        return (hoje - entrega).days <= 365
+
+    comunicados = [
+        {**documento_, "rotulo": "Comunicado ao Mercado"}
+        for documento_ in documentos
+        if documento_["categoria"].lower() == "comunicado ao mercado" and _recente(documento_)
+    ][:2]
+    assembleias = [
+        {**documento_, "rotulo": f"Assembleia {documento_['tipo']}".strip()}
+        for documento_ in documentos
+        if documento_["categoria"].lower() == "assembleia" and _recente(documento_)
+    ][:2]
+    return comunicados + assembleias
+
+
 def garantir_relatorio(
     con: sqlite3.Connection, cnpj: str, destino: Path | None = None
 ) -> tuple[Path, dict] | None:

@@ -49,29 +49,46 @@ def salvar(pasta: Path, dados: dict) -> Path:
     return arquivo
 
 
+def _bloco_comunicados(docs_meta: list[dict], texto: str | None) -> dict:
+    """Bloco de comunicados lidos (fatos relevantes, comunicados ao mercado,
+    assembleias) — o `rotulo` diz o que cada documento é."""
+    return {
+        "ids": [meta["id"] for meta in docs_meta],
+        "datas": [meta["data_entrega"][:10] for meta in docs_meta],
+        "rotulos": [meta.get("rotulo", "Fato Relevante") for meta in docs_meta],
+        "texto": texto,
+    }
+
+
+def ids_comunicados(leitura: dict | None) -> set:
+    """Ids dos comunicados já lidos, aceitando o formato novo (`comunicados`)
+    e o legado (`fatos`)."""
+    if not leitura:
+        return set()
+    bloco = leitura.get("comunicados") or leitura.get("fatos") or {}
+    return set(bloco.get("ids", []))
+
+
 def montar_sem_relatorio(
     ticker: str,
-    fatos_meta: list[dict] = (),
-    texto_fatos: str | None = None,
+    docs_meta: list[dict] = (),
+    texto_docs: str | None = None,
     modelo: str | None = None,
     agora: datetime | None = None,
 ) -> dict:
     """Marcador para fundo SEM relatório gerencial no FNET (documento opcional
     — muitos fundos nunca publicam um). Persistido para a página explicar por
-    que não há leitura do relatório; os FATOS RELEVANTES, quando existem, são
-    lidos mesmo assim e viajam junto. Reverificado a cada rodada do lote."""
+    que não há leitura do relatório; fatos relevantes, comunicados e
+    assembleias, quando existem, são lidos mesmo assim e viajam junto.
+    Reverificado a cada rodada do lote."""
     agora = agora or datetime.now()
     dados = {
         "ticker": ticker.upper(),
         "sem_relatorio": True,
         "verificado_em": agora.isoformat(timespec="seconds"),
-        "fatos": {
-            "ids": [meta["id"] for meta in fatos_meta],
-            "datas": [meta["data_entrega"][:10] for meta in fatos_meta],
-            "texto": texto_fatos,
-        },
+        "comunicados": _bloco_comunicados(docs_meta, texto_docs),
     }
-    if modelo and texto_fatos:
+    if modelo and texto_docs:
         dados["modelo"] = modelo
     return dados
 
@@ -81,8 +98,8 @@ def montar(
     modelo: str,
     relatorio_meta: dict,
     texto_relatorio: str,
-    fatos_meta: list[dict],
-    texto_fatos: str | None,
+    docs_meta: list[dict],
+    texto_docs: str | None,
     agora: datetime | None = None,
 ) -> dict:
     agora = agora or datetime.now()
@@ -95,9 +112,5 @@ def montar(
             "data_entrega": relatorio_meta["data_entrega"],
             "texto": texto_relatorio,
         },
-        "fatos": {
-            "ids": [meta["id"] for meta in fatos_meta],
-            "datas": [meta["data_entrega"][:10] for meta in fatos_meta],
-            "texto": texto_fatos,
-        },
+        "comunicados": _bloco_comunicados(docs_meta, texto_docs),
     }

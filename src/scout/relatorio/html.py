@@ -742,18 +742,19 @@ def _secao_oscilacoes(completo: AnaliseCompleta, leitura: dict | None, visiveis:
     if not completo.graficos.cotacao:
         return ""
 
-    # fatos relevantes já lidos pela IA entram como evento do mês, com link
+    # documentos já lidos pela IA (fatos, comunicados, assembleias) entram
+    # como evento do mês, com link para o original
     fatos_por_mes: dict[str, list[str]] = {}
     if leitura:
-        fatos = leitura.get("fatos", {})
-        for id_doc, data in zip(fatos.get("ids", []), fatos.get("datas", [])):
+        _, documentos = _documentos_lidos(leitura)
+        for id_doc, data, rotulo in documentos:
             try:
                 dia, mes, ano = data.split("/")
                 chave = f"{ano}-{mes}"
             except ValueError:
                 continue
             fatos_por_mes.setdefault(chave, []).append(
-                f'fato relevante publicado em {_e(data)} '
+                f'{_e(rotulo.lower())} publicado em {_e(data)} '
                 f'(<a href="{URL_DOWNLOAD.format(id=id_doc)}" target="_blank" rel="noopener">ver original</a>)'
             )
 
@@ -793,32 +794,44 @@ def _secao_oscilacoes(completo: AnaliseCompleta, leitura: dict | None, visiveis:
   {botao}
   <div class="nota" style="margin-top:8px">meses em que a cota (ajustada por desdobramento) variou
   mais de ±10% · os eventos listados ocorreram no mesmo período — é coincidência de calendário
-  registrada como fato, <b>não</b> afirmação de causa · fatos relevantes: apenas os já lidos pela IA</div>
+  registrada como fato, <b>não</b> afirmação de causa · fatos/comunicados: apenas os já lidos pela IA</div>
   </div>
 """
 
 
+def _documentos_lidos(leitura: dict) -> tuple[dict, list[tuple]]:
+    """Bloco de comunicados lidos (novo `comunicados` ou legado `fatos`) +
+    lista de (id, data, rotulo) por documento."""
+    bloco = leitura.get("comunicados") or leitura.get("fatos") or {}
+    ids = bloco.get("ids", [])
+    datas = bloco.get("datas", [])
+    rotulos = bloco.get("rotulos", ["Fato Relevante"] * len(ids))
+    if len(datas) != len(ids):
+        datas = [f"doc {id_doc}" for id_doc in ids]
+    if len(rotulos) != len(ids):
+        rotulos = ["Fato Relevante"] * len(ids)
+    return bloco, list(zip(ids, datas, rotulos))
+
+
 def _bloco_fatos_ia(leitura: dict) -> str:
-    """Bloco 'Fatos relevantes recentes' da leitura por IA, com links para os
-    documentos originais no FNET."""
+    """Bloco 'Fatos relevantes, comunicados e assembleias' da leitura por IA,
+    com link para cada documento original no FNET."""
     from ..coleta.fnet import URL_DOWNLOAD
 
-    fatos = leitura.get("fatos", {})
-    if not fatos.get("texto"):
+    bloco, documentos = _documentos_lidos(leitura)
+    if not bloco.get("texto"):
         return ""
-    datas = fatos.get("datas", [])
-    ids = fatos.get("ids", [])
-    links_fatos = ""
-    if ids:
-        links_fatos = " · originais: " + ", ".join(
-            f'<a href="{URL_DOWNLOAD.format(id=id_doc)}" target="_blank" rel="noopener">'
-            f"{_e(data)}</a>"
-            for id_doc, data in zip(ids, datas if len(datas) == len(ids) else [f"doc {i}" for i in ids])
-        )
+    so_fatos = all(rotulo == "Fato Relevante" for _, _, rotulo in documentos)
+    titulo = "Fatos relevantes recentes" if so_fatos else "Fatos relevantes, comunicados e assembleias"
+    links = " · ".join(
+        f'<a href="{URL_DOWNLOAD.format(id=id_doc)}" target="_blank" rel="noopener">'
+        f"{_e(rotulo)} de {_e(data)}</a>"
+        for id_doc, data, rotulo in documentos
+    )
     return (
-        f'<h3 style="font-size:15px;color:#aeb9c7;margin:16px 0 8px">Fatos relevantes recentes'
-        f' <span style="color:#8b98a9;font-weight:400">({_e(", ".join(datas))}{links_fatos})</span></h3>'
-        f'<div style="white-space:pre-wrap">{_texto_ia_para_html(fatos["texto"])}</div>'
+        f'<h3 style="font-size:15px;color:#aeb9c7;margin:16px 0 8px">{titulo}'
+        f' <span style="color:#8b98a9;font-weight:400">({links})</span></h3>'
+        f'<div style="white-space:pre-wrap">{_texto_ia_para_html(bloco["texto"])}</div>'
     )
 
 
@@ -827,7 +840,7 @@ def _secao_ia(leitura: dict | None, agora: datetime) -> str:
         verificado = leitura.get("verificado_em", "")[:10]
         bloco_fatos = _bloco_fatos_ia(leitura)
         nota_fatos = (
-            " Os <b>fatos relevantes</b> publicados pelo fundo foram lidos pela IA e estão abaixo."
+            " Os <b>fatos relevantes e comunicados</b> publicados pelo fundo foram lidos pela IA e estão abaixo."
             if bloco_fatos
             else " Sem relatório, não há o que a IA ler."
         )

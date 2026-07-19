@@ -561,67 +561,78 @@ def ia_lote(
             prefixo = f"[{posicao}/{len(fundos)}] {resumo.ticker}"
             inicio_fundo = _time.monotonic()
 
-            def _ler_fatos(fatos_meta: list[dict], contexto: str) -> str | None:
-                fatos = []
-                for meta in fatos_meta:
-                    caminho_fato = fnet._garantir_documento(
+            def _ler_documentos(docs_meta: list[dict], contexto: str) -> str | None:
+                itens = []
+                for meta in docs_meta:
+                    caminho_doc = fnet._garantir_documento(
                         con, resumo.cnpj, meta, armazenamento.diretorio_dados() / "documentos"
                     )
-                    texto_fato = modulo_ia.extrair_texto_pdf(caminho_fato, max_paginas=6)
-                    if len(texto_fato) >= 200:
-                        fatos.append((meta["data_entrega"][:10], texto_fato))
-                if not fatos:
+                    texto_doc = modulo_ia.extrair_texto_pdf(caminho_doc, max_paginas=6)
+                    if len(texto_doc) >= 200:
+                        itens.append(
+                            (meta.get("rotulo", "Fato Relevante"), meta["data_entrega"][:10], texto_doc)
+                        )
+                if not itens:
                     return None
-                with console.status(f"{prefixo}: lendo os fatos relevantes…") as estado:
-                    return modulo_ia.analisar_fatos_relevantes(
-                        fatos,
+                with console.status(f"{prefixo}: lendo fatos e comunicados…") as estado:
+                    return modulo_ia.analisar_comunicados(
+                        itens,
                         contexto,
                         modelo_final,
                         ao_progresso=lambda n: estado.update(
-                            f"{prefixo}: lendo os fatos relevantes… {n} trechos recebidos"
+                            f"{prefixo}: lendo fatos e comunicados… {n} trechos recebidos"
                         ),
                     )
 
             try:
                 docs = fnet.listar(resumo.cnpj)
                 relatorio = fnet.ultimo_relatorio_gerencial(docs)
-                fatos_meta = [] if sem_fatos else fnet.fatos_relevantes(docs, 3)
+                docs_meta = (
+                    []
+                    if sem_fatos
+                    else [
+                        {**meta, "rotulo": "Fato Relevante"}
+                        for meta in fnet.fatos_relevantes(docs, 3)
+                    ]
+                    + fnet.comunicados_e_assembleias(docs)
+                )
                 existente = leituras.carregar(pasta, resumo.ticker)
+                ids_novos = {meta["id"] for meta in docs_meta}
                 if relatorio is None:
-                    # relatório gerencial é opcional no FNET; os fatos relevantes,
-                    # quando existem, são lidos mesmo assim
-                    if existente and existente.get("sem_relatorio") and set(
-                        existente.get("fatos", {}).get("ids", [])
-                    ) >= {meta["id"] for meta in fatos_meta}:
+                    # relatório gerencial é opcional no FNET; fatos relevantes,
+                    # comunicados e assembleias, quando existem, são lidos mesmo assim
+                    if existente and existente.get("sem_relatorio") and leituras.ids_comunicados(
+                        existente
+                    ) >= ids_novos:
                         pulados += 1
-                        continue  # já marcado e sem fato novo
-                    texto_fatos = None
-                    if fatos_meta:
+                        continue  # já marcado e sem documento novo
+                    texto_docs = None
+                    if docs_meta:
                         raiox = analise.montar_raio_x(con, resumo.ticker, varredura=base)
                         contexto = modulo_ia.contexto_do_raiox(raiox) if raiox else ""
-                        texto_fatos = _ler_fatos(fatos_meta, contexto)
+                        texto_docs = _ler_documentos(docs_meta, contexto)
                     leituras.salvar(
                         pasta,
                         leituras.montar_sem_relatorio(
-                            resumo.ticker, fatos_meta, texto_fatos, modelo=modelo_final
+                            resumo.ticker, docs_meta, texto_docs, modelo=modelo_final
                         ),
                     )
-                    if texto_fatos:
+                    if texto_docs:
                         novos += 1
                         _registrar(
                             f"{resumo.ticker}\tsem-relatorio-fatos-lidos\t{_time.monotonic() - inicio_fundo:.0f}s"
                         )
                         console.print(
-                            f"{prefixo}: [green]fatos relevantes lidos[/] [dim](fundo sem relatório gerencial)[/]"
+                            f"{prefixo}: [green]fatos/comunicados lidos[/] [dim](fundo sem relatório gerencial)[/]"
                         )
                     else:
                         pulados += 1
                         _registrar(f"{resumo.ticker}\tsem-relatorio")
                         console.print(f"{prefixo}: [dim]sem relatório gerencial no FNET[/]")
                     continue
-                if existente and existente.get("relatorio") and existente["relatorio"]["id"] == relatorio["id"] and set(
-                    existente.get("fatos", {}).get("ids", [])
-                ) >= {meta["id"] for meta in fatos_meta}:
+                if existente and existente.get("relatorio") and existente["relatorio"]["id"] == relatorio["id"] and leituras.ids_comunicados(
+                    existente
+                ) >= ids_novos:
                     pulados += 1
                     if pulados % 25 == 0:
                         console.print(f"[dim][{posicao}/{len(fundos)}] {pulados} fundos já em dia até aqui…[/]")
@@ -649,12 +660,12 @@ def ia_lote(
                         ),
                     )
 
-                texto_fatos = _ler_fatos(fatos_meta, contexto) if fatos_meta else None
+                texto_docs = _ler_documentos(docs_meta, contexto) if docs_meta else None
 
                 leituras.salvar(
                     pasta,
                     leituras.montar(
-                        resumo.ticker, modelo_final, relatorio, leitura_relatorio, fatos_meta, texto_fatos
+                        resumo.ticker, modelo_final, relatorio, leitura_relatorio, docs_meta, texto_docs
                     ),
                 )
                 novos += 1

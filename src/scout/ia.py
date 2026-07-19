@@ -90,8 +90,9 @@ def analisar_relatorio(
 
 
 PROMPT_FATOS = (
-    "Você é um extrator de fatos de comunicados 'Fato Relevante' de fundos "
-    "imobiliários brasileiros. Regras invioláveis:\n"
+    "Você é um extrator de fatos de comunicados oficiais de fundos imobiliários "
+    "brasileiros — fatos relevantes, comunicados ao mercado e editais/atas de "
+    "assembleia. Regras invioláveis:\n"
     "1. Para CADA documento fornecido, produza um bloco com: a data, um título "
     "de uma linha dizendo O QUE aconteceu, um resumo de 1 a 3 linhas e a "
     "citação do trecho-chave entre aspas — se o texto trouxer marcadores "
@@ -105,16 +106,18 @@ PROMPT_FATOS = (
 )
 
 
-def analisar_fatos_relevantes(
-    fatos: list[tuple[str, str]],
+def analisar_comunicados(
+    itens: list[tuple[str, str, str]],
     contexto_fundo: str,
     modelo: str | None = None,
     ao_progresso=None,
 ) -> str:
-    """Lê os fatos relevantes (lista de (data_entrega, texto)) de uma vez."""
+    """Lê comunicados oficiais de uma vez — `itens` = (rotulo, data, texto).
+    Uma única chamada ao modelo para todos os documentos; o corte de 5000
+    caracteres por documento mantém o total dentro do contexto de 16k."""
     blocos = "\n\n".join(
-        f"=== FATO RELEVANTE entregue em {data} ===\n{texto[:8000]}"
-        for data, texto in fatos
+        f"=== {rotulo.upper()} entregue em {data} ===\n{texto[:5000]}"
+        for rotulo, data, texto in itens
     )
     conteudo = (
         "CONTEXTO (calculado por código a partir de dados oficiais — "
@@ -122,6 +125,21 @@ def analisar_fatos_relevantes(
         f"DOCUMENTOS:\n{blocos}"
     )
     return _conversar(PROMPT_FATOS, conteudo, modelo, ao_progresso)
+
+
+def analisar_fatos_relevantes(
+    fatos: list[tuple[str, str]],
+    contexto_fundo: str,
+    modelo: str | None = None,
+    ao_progresso=None,
+) -> str:
+    """Compatibilidade: fatos relevantes (lista de (data_entrega, texto))."""
+    return analisar_comunicados(
+        [("Fato Relevante", data, texto) for data, texto in fatos],
+        contexto_fundo,
+        modelo,
+        ao_progresso,
+    )
 
 
 def _conversar(prompt_sistema: str, conteudo_usuario: str, modelo: str | None, ao_progresso) -> str:

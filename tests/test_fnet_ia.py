@@ -61,6 +61,25 @@ def test_seleciona_relatorio_e_fatos():
     assert [fato["id"] for fato in fatos] == [120]
 
 
+def test_comunicados_e_assembleias_selecao():
+    from datetime import date
+
+    docs = [
+        {"id": 1, "tipo": "", "categoria": "Comunicado ao Mercado", "data_entrega": "10/07/2026 10:00"},
+        {"id": 2, "tipo": "AGO", "categoria": "Assembleia", "data_entrega": "05/05/2026 10:00"},
+        {"id": 3, "tipo": "AGE", "categoria": "Assembleia", "data_entrega": "03/03/2026 10:00"},
+        {"id": 4, "tipo": "AGE", "categoria": "Assembleia", "data_entrega": "01/01/2026 10:00"},
+        {"id": 5, "tipo": "", "categoria": "Comunicado ao Mercado", "data_entrega": "10/07/2024 10:00"},
+        {"id": 6, "tipo": "Relatório Gerencial", "categoria": "Relatórios", "data_entrega": "10/07/2026 10:00"},
+    ]
+    selecionados = fnet.comunicados_e_assembleias(docs, hoje=date(2026, 7, 19))
+    # 2 assembleias no máximo (a 3ª fica fora), comunicado velho (>12m) fica fora
+    assert [d["id"] for d in selecionados] == [1, 2, 3]
+    assert selecionados[0]["rotulo"] == "Comunicado ao Mercado"
+    assert selecionados[1]["rotulo"] == "Assembleia AGO"
+    assert selecionados[2]["rotulo"] == "Assembleia AGE"
+
+
 def test_garantir_fatos_relevantes_baixa_e_e_idempotente(con, tmp_path, monkeypatch):
     downloads = []
     monkeypatch.setattr(fnet, "listar", lambda cnpj, quantidade=30: _DOCUMENTOS)
@@ -95,7 +114,9 @@ def test_analisar_fatos_relevantes_monta_prompt(monkeypatch):
     )
     assert saida == "• lido"
     corpo = capturado["corpo"]
-    assert "Fato Relevante" in corpo["messages"][0]["content"]  # prompt específico
+    # prompt cobre os comunicados oficiais (fatos, comunicados, assembleias)
+    assert "fatos relevantes" in corpo["messages"][0]["content"]
+    assert "comunicados ao mercado" in corpo["messages"][0]["content"]
     assert "nunca invente" in corpo["messages"][0]["content"]
     usuario = corpo["messages"][1]["content"]
     assert "CONTEXTO Y" in usuario
@@ -272,8 +293,12 @@ def test_leituras_salvar_carregar(tmp_path):
     assert caminho.name == "TSTE11.json"
     todas = leituras.carregar_todas(tmp_path / "leituras")
     assert todas["TSTE11"]["relatorio"]["id"] == 150
-    assert todas["TSTE11"]["fatos"]["ids"] == [120]
+    assert todas["TSTE11"]["comunicados"]["ids"] == [120]
+    assert todas["TSTE11"]["comunicados"]["rotulos"] == ["Fato Relevante"]
     assert leituras.carregar(tmp_path / "leituras", "tste11")["modelo"] == "teste:1b"
+    # formato legado ("fatos") continua legível para a incrementalidade
+    assert leituras.ids_comunicados({"fatos": {"ids": [7, 8]}}) == {7, 8}
+    assert leituras.ids_comunicados(todas["TSTE11"]) == {120}
 
 
 def test_cli_ia_lote_incremental(con, zip_cvm, tmp_path, monkeypatch):
@@ -302,8 +327,8 @@ def test_cli_ia_lote_incremental(con, zip_cvm, tmp_path, monkeypatch):
     )
     monkeypatch.setattr(
         modulo_ia,
-        "analisar_fatos_relevantes",
-        lambda fatos, ctx, modelo=None, ao_progresso=None: chamadas.append("fatos") or "F",
+        "analisar_comunicados",
+        lambda itens, ctx, modelo=None, ao_progresso=None: chamadas.append("fatos") or "F",
     )
     pasta = tmp_path / "leituras"
 
@@ -391,18 +416,19 @@ def test_cli_ia_lote_sem_relatorio_le_fatos_relevantes(con, zip_cvm, tmp_path, m
     )
     monkeypatch.setattr(
         modulo_ia,
-        "analisar_fatos_relevantes",
-        lambda fatos, ctx, modelo=None, ao_progresso=None: "fatos lidos pela ia",
+        "analisar_comunicados",
+        lambda itens, ctx, modelo=None, ao_progresso=None: "fatos lidos pela ia",
     )
     pasta = tmp_path / "leituras"
 
     resultado = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta)])
     assert resultado.exit_code == 0, resultado.output
-    assert "fatos relevantes lidos" in resultado.output
+    assert "fatos/comunicados lidos" in resultado.output
     leitura = json.loads((pasta / "TSTE11.json").read_text(encoding="utf-8"))
     assert leitura["sem_relatorio"] is True
-    assert leitura["fatos"]["texto"] == "fatos lidos pela ia"
-    assert leitura["fatos"]["ids"] == [120]
+    assert leitura["comunicados"]["texto"] == "fatos lidos pela ia"
+    assert leitura["comunicados"]["ids"] == [120]
+    assert leitura["comunicados"]["rotulos"] == ["Fato Relevante"]
     historico = (pasta / "_historico.txt").read_text(encoding="utf-8")
     assert "sem-relatorio-fatos-lidos" in historico
 
