@@ -34,7 +34,7 @@ if defined UV (
 
 echo.
 echo [2/2] Gerando executavel...
-.venv\Scripts\pyinstaller --onefile --console --clean --noconfirm --name scout src\scout\__main__.py
+.venv\Scripts\pyinstaller --onefile --console --clean --noconfirm --name scout --icon assets\scout.ico src\scout\__main__.py
 if errorlevel 1 goto :erro
 
 echo.

@@ -109,6 +109,11 @@ def _oscilacoes(
         for linha in cotacoes
         if linha["fechamento_ajustado"]
     ]
+    bruto = {
+        linha["competencia"]: linha["fechamento"]
+        for linha in cotacoes
+        if linha["fechamento"]
+    }
     cotas = {
         linha["competencia"]: linha["cotas_emitidas"]
         for linha in serie
@@ -127,6 +132,14 @@ def _oscilacoes(
         variacao = 100 * (preco - preco_anterior) / preco_anterior
         if abs(variacao) < LIMIAR_OSCILACAO:
             continue
+        # fundo ilíquido: preço BRUTO parado (sem negócio) com a série ajustada
+        # saltando é artefato do ajuste de proventos sobre preço defasado —
+        # exige que o preço real também tenha se movido, na mesma direção
+        bruto_anterior, bruto_mes = bruto.get(mes_anterior), bruto.get(mes)
+        if bruto_anterior and bruto_mes:
+            variacao_bruta = 100 * (bruto_mes - bruto_anterior) / bruto_anterior
+            if abs(variacao_bruta) < LIMIAR_OSCILACAO or (variacao_bruta > 0) != (variacao > 0):
+                continue
         eventos = []
         base_cotas, cotas_mes = cotas.get(mes_anterior), cotas.get(mes)
         if base_cotas and cotas_mes and cotas_mes >= base_cotas * 2.5:

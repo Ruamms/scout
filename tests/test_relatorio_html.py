@@ -232,6 +232,22 @@ def test_oscilacoes_com_contexto(con, zip_cvm):
     assert "não</b> afirmação de causa" in pagina
 
 
+def test_oscilacao_de_ajuste_sobre_preco_parado_nao_conta(con, zip_cvm):
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
+    # preço bruto PARADO (fundo sem negócio) e série ajustada saltando +11%:
+    # artefato de ajuste de proventos, não oscilação real
+    armazenamento.gravar_cotacoes(
+        con,
+        "TSTE11",
+        [("2026-01", 100.0, 90.0), ("2026-02", 100.0, 100.0)],
+        100.0,
+        "2026-02-17",
+        "2026-02-18",
+    )
+    completo = analise.montar_completo(con, "tste11")
+    assert completo.oscilacoes == []
+
+
 def test_oscilacoes_sem_sustos(con, zip_cvm):
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     armazenamento.gravar_cotacoes(
