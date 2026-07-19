@@ -92,7 +92,121 @@ def gerar(
     (destino / "index.html").write_text(
         _indice(publicados, base, agora or datetime.now()), encoding="utf-8"
     )
+    (destino / "comparar.html").write_text(
+        _pagina_comparar(publicados), encoding="utf-8"
+    )
     return {"paginas": len(publicados), "destino": str(destino)}
+
+
+def _pagina_comparar(fundos: list) -> str:
+    """Comparador lado a lado: os MESMOS fatos de cada fundo, em colunas.
+    Sem destaque de 'vencedor' — comparação de fatos, não recomendação."""
+    import json as _json
+
+    from .. import formato
+
+    def _ou_traco(valor, formatador):
+        return formatador(valor) if valor is not None else "—"
+
+    dados = {
+        resumo.ticker: {
+            "nome": resumo.nome[:60],
+            "segmento": resumo.segmento,
+            "selo": resumo.selo.rotulo,
+            "cor": _COR_SELO.get(resumo.selo.nivel, "#94a3b8"),
+            "motivos": list(resumo.motivos),
+            "cotacao": _ou_traco(resumo.cotacao, lambda v: f"R$ {formato.decimal(v)}"),
+            "dy": _ou_traco(resumo.dy_12m, formato.percentual),
+            "pvp": _ou_traco(resumo.pvp, formato.decimal),
+            "pl": _ou_traco(resumo.pl, formato.moeda_compacta),
+            "cotistas": _ou_traco(resumo.cotistas, lambda v: f"{v:,.0f}".replace(",", ".")),
+            "idade": f"{resumo.meses / 12:.0f} anos" if resumo.meses >= 12 else f"{resumo.meses} meses",
+        }
+        for resumo in fundos
+    }
+    json_dados = _json.dumps(dados, ensure_ascii=False).replace("</", "<\\/")
+    opcoes = "".join(f'<option value="{r.ticker}">{r.ticker}</option>' for r in fundos)
+    return f"""<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comparar FIIs — Scout</title>
+{relatorio_html.TAG_FAVICON}
+<style>
+:root {{ color-scheme: dark; }}
+* {{ box-sizing:border-box; margin:0; }}
+body {{ background:#101415; color:#F4F5F6; font-family:system-ui,sans-serif; line-height:1.5; }}
+.pagina {{ max-width:960px; margin:0 auto; padding:28px 20px 40px; }}
+h1 {{ font-size:24px; margin:8px 0 4px; }}
+.meta {{ color:#8b98a9; font-size:13px; margin-bottom:16px; }}
+a {{ color:#8FCB9B; }}
+select {{ background:#182024; color:#F4F5F6; border:1px solid #314045; border-radius:8px;
+  padding:9px 12px; font-size:15px; min-width:130px; }}
+.seletores {{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }}
+table {{ width:100%; border-collapse:collapse; font-size:14px; }}
+th, td {{ padding:9px 10px; border-bottom:1px solid #232D31; text-align:left; }}
+th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; }}
+td:first-child {{ color:#8b98a9; font-size:12.5px; text-transform:uppercase; letter-spacing:.04em; white-space:nowrap; }}
+tbody tr:hover td {{ background:#182024; }}
+.selo {{ display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700;
+  font-size:11px; color:#101415; white-space:nowrap; }}
+.rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:26px; padding-top:12px; }}
+{relatorio_html.CSS_MARCA}
+</style>
+</head>
+<body>
+<div class="pagina">
+  {relatorio_html.marca_html("index.html")}
+  <h1>⚖ Comparar fundos</h1>
+  <div class="meta">os mesmos fatos, lado a lado — sem "vencedor": a decisão é sua ·
+  <a href="index.html">voltar para todos os fundos</a></div>
+  <div class="seletores">
+    <select id="f1" onchange="renderiza()"><option value="">fundo 1…</option>{opcoes}</select>
+    <select id="f2" onchange="renderiza()"><option value="">fundo 2…</option>{opcoes}</select>
+    <select id="f3" onchange="renderiza()"><option value="">fundo 3 (opcional)…</option>{opcoes}</select>
+  </div>
+  <div id="tabela"></div>
+  <div class="rodape">Comparação factual com dados públicos oficiais — não é recomendação de investimento.
+  Critérios e código: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>
+</div>
+<script>
+const DADOS = {json_dados};
+const LINHAS = [
+  ["Fundo", d => d.nome],
+  ["Segmento", d => d.segmento],
+  ["Selo", d => `<span class="selo" style="background:${{d.cor}}" title="${{(d.motivos || []).join('; ')}}">${{d.selo}}</span>`],
+  ["Cotação", d => d.cotacao],
+  ["DY 12 meses", d => d.dy],
+  ["P/VP", d => d.pvp],
+  ["Patrimônio", d => d.pl],
+  ["Cotistas", d => d.cotistas],
+  ["Idade na base", d => d.idade],
+  ["Alertas", d => (d.motivos && d.motivos.length) ? d.motivos.join("<br>") : "nenhum alerta disparado"],
+];
+function renderiza() {{
+  const escolhidos = ["f1", "f2", "f3"]
+    .map(id => document.getElementById(id).value)
+    .filter(t => t && DADOS[t]);
+  const alvo = document.getElementById("tabela");
+  if (escolhidos.length < 2) {{ alvo.innerHTML = '<p class="meta">escolha pelo menos dois fundos acima.</p>'; return; }}
+  const cabecalho = "<tr><th></th>" + escolhidos.map(t => `<th><a href="${{t}}.html">${{t}}</a></th>`).join("") + "</tr>";
+  const corpo = LINHAS.map(([rotulo, extrator]) =>
+    "<tr><td>" + rotulo + "</td>" + escolhidos.map(t => "<td>" + extrator(DADOS[t]) + "</td>").join("") + "</tr>"
+  ).join("");
+  alvo.innerHTML = "<table><thead>" + cabecalho + "</thead><tbody>" + corpo + "</tbody></table>";
+}}
+renderiza();
+const parametros = new URLSearchParams(location.search);
+["f1", "f2", "f3"].forEach(id => {{
+  const ticker = (parametros.get(id) || "").toUpperCase();
+  if (ticker && DADOS[ticker]) document.getElementById(id).value = ticker;
+}});
+renderiza();
+</script>
+</body>
+</html>
+"""
 
 
 _VISIVEIS_DE_INICIO = 50  # tabela abre com os maiores por PL; o resto sob demanda
@@ -185,6 +299,7 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
   fonte de cada um. Informes da CVM, relatório gerencial e cotações, num raio-x por fundo.</div>
   <div class="meta">{len(fundos)} fundos negociáveis analisados com dados públicos oficiais ·
   atualizado em {agora.strftime("%d/%m/%Y %H:%M")} ·
+  <a href="comparar.html">⚖ comparar fundos</a> ·
   <a href="apoie.html">☕ apoie o projeto</a></div>
 
   <div class="atualizacao">

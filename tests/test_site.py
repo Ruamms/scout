@@ -89,6 +89,21 @@ def test_paginas_do_site_tem_navegacao_e_sem_links_mortos(con, tmp_path):
     assert "ALFA11" in pagina  # segue visível, como texto
 
 
+def test_pagina_comparar_fundos(con, tmp_path):
+    _base(con)
+    site.gerar(con, tmp_path / "site", com_cotacoes=False)
+    indice = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+    assert 'href="comparar.html"' in indice
+    comparar = (tmp_path / "site" / "comparar.html").read_text(encoding="utf-8")
+    # dados embutidos e seletores para todos os fundos publicados
+    assert "const DADOS" in comparar
+    assert '"ALFA11"' in comparar and '"BETA11"' in comparar
+    assert comparar.count('<option value="ALFA11">') == 3  # nos 3 seletores
+    # comparação de fatos, nunca recomendação
+    assert "não é recomendação" in comparar
+    assert 'sem "vencedor"' in comparar
+
+
 def test_indice_tem_aviso_de_beta_dispensavel(con, tmp_path):
     _base(con)
     site.gerar(con, tmp_path / "site", com_cotacoes=False)
