@@ -29,7 +29,7 @@ A visão de produto completa (referências de mercado, backlog e decisões de de
 - [x] **Fatos relevantes por IA** — ler também os fatos relevantes do FNET (prioridade: é o que falta para a promessa "lemos os documentos oficiais" cobrir os documentos que assustam) - FEITO: scout ia le os ultimos 3 fatos relevantes (cache idempotente, bloco por comunicado com data/resumo/citacao, --sem-fatos pula, escaneados apontados para leitura manual)
 - [ ] **Oscilações com contexto** — cruzar variações de cotação com fatos/eventos do período (fatos relevantes do FNET)
 - [ ] **Gestor** — identificar a gestora via FNET e enriquecer o raio-x do administrador
-- [ ] **Leitura de IA no relatório HTML** — incluir a seção gerada (com aviso claro de origem) na página do fundo
+- [x] **Leitura de IA no relatório HTML** — FEITO junto com as leituras versionadas: secao "Leitura por IA" na pagina do fundo (leituras/*.json via scout ia-lote), com modelo, data, aviso de idade >40 dias e glossario
 
 ## Fase 3 — Outras classes (depois da v1 FII completa)
 
