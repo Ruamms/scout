@@ -193,6 +193,20 @@ CREATE TABLE IF NOT EXISTS papeis (
     isin    TEXT,
     tipo    TEXT               -- ON | PN | PNA | PNB | UNT
 );
+CREATE TABLE IF NOT EXISTS fundamentos (
+    cod_cvm            TEXT NOT NULL,
+    ano                INTEGER NOT NULL,  -- exercício (DT_FIM_EXERC)
+    receita            REAL,   -- em reais (escala já aplicada)
+    resultado_bruto    REAL,
+    ebit               REAL,   -- só comercial; nulo em instituição financeira
+    lucro_liquido      REAL,
+    ativo_total        REAL,
+    patrimonio_liquido REAL,
+    caixa              REAL,   -- caixa + aplicações financeiras
+    divida_bruta       REAL,   -- empréstimos e financiamentos (circ + não circ)
+    setor_financeiro   INTEGER DEFAULT 0,  -- 1 = DRE de intermediação (banco/seguradora)
+    PRIMARY KEY (cod_cvm, ano)
+);
 CREATE TABLE IF NOT EXISTS acao_eventos (
     ticker TEXT NOT NULL,
     data   TEXT NOT NULL,  -- lastDatePrior (último dia "com"), AAAA-MM-DD
@@ -595,6 +609,13 @@ def empresas_listadas(con: sqlite3.Connection, so_ibrx: bool = True) -> list[sql
 def papeis_da_empresa(con: sqlite3.Connection, cod_cvm: str) -> list[sqlite3.Row]:
     return con.execute(
         "SELECT * FROM papeis WHERE cod_cvm = ? ORDER BY ticker", (cod_cvm,)
+    ).fetchall()
+
+
+def fundamentos_da_empresa(con: sqlite3.Connection, cod_cvm: str) -> list[sqlite3.Row]:
+    """Série anual de balanços da empresa (mais antigo → mais recente)."""
+    return con.execute(
+        "SELECT * FROM fundamentos WHERE cod_cvm = ? ORDER BY ano", (cod_cvm,)
     ).fetchall()
 
 

@@ -215,13 +215,14 @@ def _executar_atualizacao(con) -> None:
         + len(cvm.anos_pendentes(con, hoje, cvm.nome_arquivo_trimestral))
         + len(b3.arquivos_pendentes(con, hoje))
     )
-    from .coleta import b3fundos, b3rf, cda, empresas, etf_renda
+    from .coleta import b3fundos, b3rf, cda, empresas, etf_renda, fundamentos
 
     if not console.is_terminal:
         progresso = lambda msg: console.print(f"  [dim]{msg}[/]")  # noqa: E731
         cvm.atualizar(con, ao_progredir=progresso)
         # empresas ANTES das cotações: o ajuste por eventos precisa dos papéis
         empresas.atualizar_empresas(con, ao_progredir=progresso)
+        fundamentos.atualizar(con, ao_progredir=progresso)  # balanços (DFP) das empresas
         b3.atualizar(con, ao_progredir=progresso)
         b3fundos.atualizar_etfs(con, ao_progredir=progresso)
         cda.atualizar_composicao(con, ao_progredir=progresso)
@@ -243,6 +244,7 @@ def _executar_atualizacao(con) -> None:
             cvm.atualizar(con, ao_progredir=_avanca)
             # empresas ANTES das cotações: o ajuste por eventos precisa dos papéis
             empresas.atualizar_empresas(con, ao_progredir=_avanca)
+            fundamentos.atualizar(con, ao_progredir=_avanca)  # balanços (DFP) das empresas
             b3.atualizar(con, ao_progredir=_avanca)
             b3fundos.atualizar_etfs(con, ao_progredir=_avanca)
             cda.atualizar_composicao(con, ao_progredir=_avanca)
