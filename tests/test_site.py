@@ -31,7 +31,7 @@ def test_gerar_site_completo(con, tmp_path):
     assert (pasta / "BETA11.html").exists()
     assert (pasta / "apoie.html").exists()
 
-    indice = (pasta / "index.html").read_text(encoding="utf-8")
+    indice = (pasta / "fiis.html").read_text(encoding="utf-8")
     assert "3 fundos negociáveis" in indice
     assert 'href="ALFA11.html"' in indice
     assert "atualizado em 18/07/2026 07:00" in indice
@@ -104,6 +104,28 @@ def test_pagina_comparar_fundos(con, tmp_path):
     assert 'sem "vencedor"' in comparar
 
 
+def test_home_multiclasse_com_busca_ao_vivo_e_menu(con, tmp_path):
+    _base(con)
+    site.gerar(con, tmp_path / "site", com_cotacoes=False, agora=datetime(2026, 7, 19, 9, 0))
+    home = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+    # busca ao vivo: índice de ativos embutido + dropdown de resultados
+    assert "const ATIVOS" in home
+    assert '"t": "ALFA11"' in home or '"t":"ALFA11"' in home
+    assert 'id="resultados"' in home
+    assert "function buscar" in home and "function navegar" in home
+    # mega-menu com as duas classes
+    assert "FIIs ▾" in home and "ETFs ▾" in home
+    assert 'href="fiis.html"' in home and 'href="etfs.html"' in home
+    # blocos por classe
+    assert "Fundos Imobiliários" in home
+    assert "ETFs" in home
+    # princípios na home
+    assert "fatos, não dicas" in home
+    assert "Não é recomendação" in home
+    # aviso de beta mora na home agora
+    assert 'id="aviso-beta"' in home
+
+
 def test_indice_tem_aviso_de_beta_dispensavel(con, tmp_path):
     _base(con)
     site.gerar(con, tmp_path / "site", com_cotacoes=False)
@@ -123,7 +145,7 @@ def test_indice_recolhe_tabela_grande(con, tmp_path, monkeypatch):
     _base(con)
     monkeypatch.setattr(site, "_VISIVEIS_DE_INICIO", 1)
     site.gerar(con, tmp_path / "site", com_cotacoes=False)
-    indice = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+    indice = (tmp_path / "site" / "fiis.html").read_text(encoding="utf-8")
     # só o maior fundo visível de início; o resto recolhido mas presente (a busca acha todos)
     assert indice.count('class="fundo-extra" hidden') == 2
     assert "Mostrar todos os 3 fundos" in indice
@@ -134,7 +156,7 @@ def test_indice_recolhe_tabela_grande(con, tmp_path, monkeypatch):
 def test_indice_pequeno_ja_mostra_tudo(con, tmp_path):
     _base(con)
     site.gerar(con, tmp_path / "site", com_cotacoes=False)
-    indice = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+    indice = (tmp_path / "site" / "fiis.html").read_text(encoding="utf-8")
     # 3 fundos <= limite: nenhuma linha recolhida e o botão nasce escondido
     assert 'class="fundo-extra"' not in indice
     assert "hidden>Mostrar todos" in indice

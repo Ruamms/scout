@@ -110,13 +110,276 @@ def gerar(
     progresso(f"etfs: {len(etfs_publicados)} páginas")
 
     apoio.salvar(destino)
+    momento = agora or datetime.now()
+    (destino / "fiis.html").write_text(_indice(publicados, base, momento), encoding="utf-8")
     (destino / "index.html").write_text(
-        _indice(publicados, base, agora or datetime.now()), encoding="utf-8"
+        _home(publicados, etfs_publicados, momento), encoding="utf-8"
     )
     (destino / "comparar.html").write_text(
         _pagina_comparar(publicados), encoding="utf-8"
     )
     return {"paginas": len(publicados), "etfs": len(etfs_publicados), "destino": str(destino)}
+
+
+# CSS + HTML do menu superior com dropdowns (mega-menu), compartilhado pelas
+# páginas de navegação (home, fiis, etfs, comparar). HTML/CSS/JS puro — o
+# GitHub Pages não impõe limitação nenhuma a menu interativo.
+CSS_MENU = """
+.nav {{ display:flex; align-items:center; gap:4px; margin:14px 0 6px; flex-wrap:wrap; }}
+.nav .item {{ position:relative; }}
+.nav .topo-btn {{ background:none; border:none; color:#aeb9c7; font-size:14.5px; font-weight:600;
+  padding:8px 14px; border-radius:8px; cursor:pointer; }}
+.nav .topo-btn:hover, .nav .item.aberto .topo-btn {{ background:#182024; color:#8FCB9B; }}
+.nav .painel {{ display:none; position:absolute; top:100%; left:0; z-index:40; min-width:230px;
+  background:#182024; border:1px solid #314045; border-radius:12px; padding:10px;
+  box-shadow:0 14px 40px rgba(0,0,0,.5); }}
+.nav .item.aberto .painel {{ display:block; }}
+.nav .painel a {{ display:block; color:#F4F5F6; text-decoration:none; font-size:13.5px;
+  padding:8px 10px; border-radius:8px; }}
+.nav .painel a:hover {{ background:#232D31; color:#8FCB9B; }}
+.nav .painel .grupo {{ color:#66707d; font-size:11px; text-transform:uppercase;
+  letter-spacing:.06em; padding:6px 10px 2px; }}
+.nav > a {{ color:#aeb9c7; font-size:14.5px; font-weight:600; text-decoration:none;
+  padding:8px 14px; border-radius:8px; }}
+.nav > a:hover {{ background:#182024; color:#8FCB9B; }}
+"""
+
+JS_MENU = """
+document.querySelectorAll('.nav .topo-btn').forEach(botao => {
+  botao.addEventListener('click', evento => {
+    evento.stopPropagation();
+    const item = botao.parentElement;
+    const estava = item.classList.contains('aberto');
+    document.querySelectorAll('.nav .item').forEach(i => i.classList.remove('aberto'));
+    if (!estava) item.classList.add('aberto');
+  });
+});
+document.addEventListener('click', () => {
+  document.querySelectorAll('.nav .item').forEach(i => i.classList.remove('aberto'));
+});
+"""
+
+
+def menu_html() -> str:
+    return """
+  <nav class="nav">
+    <div class="item">
+      <button class="topo-btn" type="button">FIIs ▾</button>
+      <div class="painel">
+        <a href="fiis.html">Todos os FIIs</a>
+        <a href="fiis.html#rankings">Rankings do dia</a>
+        <a href="comparar.html">⚖ Comparar FIIs</a>
+      </div>
+    </div>
+    <div class="item">
+      <button class="topo-btn" type="button">ETFs ▾</button>
+      <div class="painel">
+        <a href="etfs.html">Todos os ETFs</a>
+        <div class="grupo">por classe</div>
+        <a href="etfs.html?classe=Ações Brasil">Ações Brasil</a>
+        <a href="etfs.html?classe=Ações Internacionais">Ações Internacionais</a>
+        <a href="etfs.html?classe=Renda Fixa">Renda Fixa</a>
+        <a href="etfs.html?classe=Cripto">Cripto</a>
+      </div>
+    </div>
+    <a href="apoie.html">☕ Apoie</a>
+  </nav>
+"""
+
+
+def _home(fundos: list, etfs: list[dict], agora: datetime) -> str:
+    """Home multi-classe: busca ao vivo em TUDO que temos + resumo por classe."""
+    import json as _json
+
+    ativos = []
+    for resumo in fundos:
+        ativos.append(
+            {
+                "t": resumo.ticker,
+                "n": resumo.nome[:48],
+                "c": "FII",
+                "s": resumo.selo.nivel,
+                "r": resumo.selo.rotulo,
+            }
+        )
+    for dados in etfs:
+        ativos.append(
+            {
+                "t": dados["etf"]["ticker"],
+                "n": (dados["etf"]["denominacao"] or "")[:48],
+                "c": dados["classe"] or "ETF",
+                "s": dados["selo"].nivel if dados["selo"] else "",
+                "r": dados["selo"].rotulo if dados["selo"] else "",
+            }
+        )
+    json_ativos = _json.dumps(ativos, ensure_ascii=False).replace("</", "<\\/")
+    cores_selo = _json.dumps(_COR_SELO)
+
+    classes_etf: dict[str, int] = {}
+    for dados in etfs:
+        chave = dados["classe"] or "?"
+        classes_etf[chave] = classes_etf.get(chave, 0) + 1
+    pills = " ".join(
+        f'<a class="pill" href="etfs.html?classe={_e(classe)}">{_e(classe)} <b>{total}</b></a>'
+        for classe, total in sorted(classes_etf.items(), key=lambda kv: -kv[1])
+    )
+
+    return f"""<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scout — fatos, não dicas</title>
+{relatorio_html.TAG_FAVICON}
+<style>
+:root {{ color-scheme: dark; }}
+* {{ box-sizing:border-box; margin:0; }}
+body {{ background:#101415; color:#F4F5F6; font-family:system-ui,sans-serif; line-height:1.5; }}
+.pagina {{ max-width:1020px; margin:0 auto; padding:28px 20px 40px; }}
+h1 {{ font-size:30px; margin:14px 0 6px; }}
+.meta {{ color:#8b98a9; font-size:14px; }}
+a {{ color:#8FCB9B; }}
+.busca-caixa {{ position:relative; margin:22px 0 8px; }}
+input#busca {{ width:100%; background:#182024; color:#F4F5F6; border:1px solid #314045;
+  border-radius:12px; padding:14px 18px; font-size:17px; }}
+#resultados {{ position:absolute; top:100%; left:0; right:0; z-index:30; background:#182024;
+  border:1px solid #314045; border-radius:12px; margin-top:6px; overflow:hidden;
+  box-shadow:0 16px 44px rgba(0,0,0,.55); }}
+#resultados a {{ display:flex; align-items:center; gap:10px; padding:10px 14px;
+  color:#F4F5F6; text-decoration:none; border-bottom:1px solid #232D31; }}
+#resultados a:last-child {{ border-bottom:none; }}
+#resultados a:hover, #resultados a.foco {{ background:#232D31; }}
+#resultados .tk {{ font-weight:800; min-width:74px; }}
+#resultados .nm {{ color:#8b98a9; font-size:13px; flex:1; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }}
+#resultados .badge {{ font-size:10.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
+  background:#232D31; color:#8FCB9B; border:1px solid #314045; border-radius:99px; padding:2px 9px; white-space:nowrap; }}
+#resultados .ponto {{ width:9px; height:9px; border-radius:50%; flex-shrink:0; }}
+.blocos {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; margin-top:22px; }}
+.bloco {{ background:#182024; border:1px solid #232D31; border-radius:12px; padding:18px; }}
+.bloco h2 {{ font-size:18px; margin-bottom:4px; }}
+.bloco .num {{ font-size:30px; font-weight:800; color:#8FCB9B; }}
+.bloco p {{ color:#8b98a9; font-size:13.5px; margin:6px 0 10px; }}
+.pill {{ display:inline-block; background:#232D31; border:1px solid #314045; color:#aeb9c7;
+  border-radius:99px; padding:3px 12px; font-size:12px; text-decoration:none; margin:2px 2px 2px 0; }}
+.pill:hover {{ border-color:#8FCB9B; color:#8FCB9B; }}
+.pill b {{ color:#8FCB9B; }}
+.btn {{ display:inline-block; background:#3E8E7E; color:#F4F5F6; border-radius:8px; padding:8px 18px;
+  font-size:13.5px; font-weight:700; text-decoration:none; }}
+.rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:30px; padding-top:14px; }}
+#aviso-beta {{ position:fixed; inset:0; background:rgba(16,20,21,.75); z-index:50;
+  display:flex; align-items:center; justify-content:center; padding:20px; }}
+#aviso-beta[hidden] {{ display:none; }}
+.beta-caixa {{ background:#182024; border:1px solid #314045; border-radius:12px; padding:22px 24px;
+  max-width:440px; font-size:14px; box-shadow:0 12px 40px rgba(0,0,0,.5); }}
+.beta-caixa p {{ color:#aeb9c7; margin:10px 0 14px; }}
+.beta-caixa button {{ background:#3E8E7E; color:#F4F5F6; border:none; border-radius:8px;
+  padding:8px 22px; font-size:13.5px; font-weight:700; cursor:pointer; }}
+{CSS_MENU}
+{relatorio_html.CSS_MARCA}
+</style>
+</head>
+<body>
+<div id="aviso-beta" hidden>
+  <div class="beta-caixa">
+    <b>🧭 O Scout está em beta.</b>
+    <p>Os dados vêm de fontes oficiais, mas o site é novo e pode conter falhas. Encontrou algo estranho?
+    Reporte em <a href="https://github.com/Ruamms/scout/issues" target="_blank" rel="noopener">github.com/Ruamms/scout/issues</a>
+    ou por e-mail: <a href="mailto:ruamms3@gmail.com">ruamms3@gmail.com</a>.</p>
+    <button onclick="fecharBeta()">Entendi</button>
+  </div>
+</div>
+<div class="pagina">
+  {relatorio_html.marca_html()}
+  {menu_html()}
+  <h1>Lemos os documentos oficiais para que você não precise</h1>
+  <div class="meta">Raio-x com dados públicos oficiais (CVM, B3, Banco Central), alertas com a conta
+  e a fonte, e IA local lendo os relatórios — fatos, não dicas. A decisão é sua.</div>
+
+  <div class="busca-caixa">
+    <input id="busca" type="search" autocomplete="off"
+     placeholder="Digite um ticker ou nome… (ex.: MXRF11, BOVA, shopping)"
+     oninput="buscar()" onkeydown="navegar(event)">
+    <div id="resultados" hidden></div>
+  </div>
+  <div class="meta" style="font-size:12px">a busca cobre tudo o que já analisamos: {len(fundos)} FIIs e {len(etfs)} ETFs</div>
+
+  <div class="blocos">
+    <div class="bloco">
+      <h2>🏢 Fundos Imobiliários</h2>
+      <div class="num">{len(fundos)}</div>
+      <p>Raio-x completo: red flags com evidência, parecer do auditor, imóveis com vacância,
+      gestora, leitura por IA dos relatórios e comunicados.</p>
+      <a class="btn" href="fiis.html">ver todos os FIIs</a>
+      <a class="pill" href="fiis.html#rankings" style="margin-left:8px">rankings do dia</a>
+      <a class="pill" href="comparar.html">⚖ comparar</a>
+    </div>
+    <div class="bloco">
+      <h2>📊 ETFs</h2>
+      <div class="num">{len(etfs)}</div>
+      <p>Cada página traz as REGRAS do tipo (distribuição, tributação) que quase ninguém conta,
+      a carteira oficial e o selo com alertas próprios da classe.</p>
+      <a class="btn" href="etfs.html">ver todos os ETFs</a>
+      <div style="margin-top:10px">{pills}</div>
+    </div>
+  </div>
+
+  <div class="rodape">Não é recomendação de investimento. Fontes: dados abertos da CVM, B3 (COTAHIST
+  e fundos listados) e Banco Central. Critérios públicos e auditáveis:
+  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
+  <a href="apoie.html">☕ apoie o projeto</a> · atualizado em {agora.strftime("%d/%m/%Y %H:%M")}</div>
+</div>
+<script>
+const ATIVOS = {json_ativos};
+const CORES_SELO = {cores_selo};
+let indiceFoco = -1;
+
+function buscar() {{
+  const termo = document.getElementById('busca').value.trim().toLowerCase();
+  const caixa = document.getElementById('resultados');
+  indiceFoco = -1;
+  if (termo.length < 2) {{ caixa.hidden = true; caixa.innerHTML = ''; return; }}
+  const achados = ATIVOS.filter(a =>
+    a.t.toLowerCase().includes(termo) || a.n.toLowerCase().includes(termo) || a.c.toLowerCase().includes(termo)
+  ).slice(0, 8);
+  if (!achados.length) {{
+    caixa.innerHTML = '<a><span class="nm">nada encontrado — cobrimos FIIs e ETFs da B3</span></a>';
+    caixa.hidden = false;
+    return;
+  }}
+  caixa.innerHTML = achados.map(a =>
+    `<a href="${{a.t}}.html"><span class="tk">${{a.t}}</span><span class="nm">${{a.n}}</span>` +
+    (a.s ? `<span class="ponto" style="background:${{CORES_SELO[a.s] || '#94a3b8'}}" title="${{a.r}}"></span>` : '') +
+    `<span class="badge">${{a.c}}</span></a>`
+  ).join('');
+  caixa.hidden = false;
+}}
+
+function navegar(evento) {{
+  const links = document.querySelectorAll('#resultados a[href]');
+  if (!links.length) return;
+  if (evento.key === 'ArrowDown' || evento.key === 'ArrowUp') {{
+    evento.preventDefault();
+    indiceFoco = (indiceFoco + (evento.key === 'ArrowDown' ? 1 : -1) + links.length) % links.length;
+    links.forEach((l, i) => l.classList.toggle('foco', i === indiceFoco));
+  }} else if (evento.key === 'Enter') {{
+    (links[Math.max(indiceFoco, 0)]).click();
+  }} else if (evento.key === 'Escape') {{
+    document.getElementById('resultados').hidden = true;
+  }}
+}}
+
+if (!localStorage.getItem('scout-beta-visto')) {{
+  document.getElementById('aviso-beta').hidden = false;
+}}
+function fecharBeta() {{
+  localStorage.setItem('scout-beta-visto', '1');
+  document.getElementById('aviso-beta').hidden = true;
+}}
+{JS_MENU}
+</script>
+</body>
+</html>
+"""
 
 
 def _indice_etfs(etfs: list[dict], agora) -> str:
@@ -185,12 +448,14 @@ tbody tr:hover td {{ background:#182024; }}
 .selo {{ display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700;
   font-size:11px; color:#101415; white-space:nowrap; }}
 .rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:26px; padding-top:12px; }}
+{CSS_MENU}
 {relatorio_html.CSS_MARCA}
 </style>
 </head>
 <body>
 <div class="pagina">
   {relatorio_html.marca_html("index.html")}
+  {menu_html()}
   <h1>ETFs</h1>
   <div class="meta">{len(etfs)} ETFs com dados oficiais (B3 + CVM) · cada página traz as
   REGRAS do tipo (distribuição, tributação) que quase ninguém conta ·
@@ -220,6 +485,13 @@ function filtraClasse(botao, classe) {{
   document.querySelectorAll('.filtro').forEach(b => b.classList.toggle('ativo', b === botao));
   filtrar();
 }}
+// ?classe=X na URL (vindo do menu ou da home) pré-seleciona o filtro
+const classeUrl = new URLSearchParams(location.search).get('classe');
+if (classeUrl) {{
+  const botao = Array.from(document.querySelectorAll('.filtro')).find(b => b.textContent === classeUrl);
+  if (botao) filtraClasse(botao, classeUrl);
+}}
+{JS_MENU}
 </script>
 </body>
 </html>
@@ -280,13 +552,15 @@ tbody tr:hover td {{ background:#182024; }}
 .selo {{ display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700;
   font-size:11px; color:#101415; white-space:nowrap; }}
 .rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:26px; padding-top:12px; }}
+{CSS_MENU}
 {relatorio_html.CSS_MARCA}
 </style>
 </head>
 <body>
 <div class="pagina">
   {relatorio_html.marca_html("index.html")}
-  <h1>⚖ Comparar fundos</h1>
+  {menu_html()}
+  <h1>⚖ Comparar FIIs</h1>
   <div class="meta">os mesmos fatos, lado a lado — sem "vencedor": a decisão é sua ·
   <a href="index.html">voltar para todos os fundos</a></div>
   <div class="seletores">
@@ -331,6 +605,7 @@ const parametros = new URLSearchParams(location.search);
   if (ticker && DADOS[ticker]) document.getElementById(id).value = ticker;
 }});
 renderiza();
+{JS_MENU}
 </script>
 </body>
 </html>
@@ -358,7 +633,7 @@ def _indice(fundos: list, base: list, agora: datetime) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Scout — o raio-x dos FIIs</title>
+<title>FIIs — Scout</title>
 {relatorio_html.TAG_FAVICON}
 <style>
 :root {{ color-scheme: dark; }}
@@ -405,6 +680,7 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
 .beta-caixa p {{ color:#aeb9c7; margin:10px 0 14px; }}
 .beta-caixa button {{ background:#3E8E7E; color:#F4F5F6; border:none; border-radius:8px;
   padding:8px 22px; font-size:13.5px; font-weight:700; cursor:pointer; }}
+{CSS_MENU}
 {relatorio_html.CSS_MARCA}
 </style>
 </head>
@@ -420,8 +696,9 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
   </div>
 </div>
 <div class="pagina">
-  {relatorio_html.marca_html()}
-  <h1>Lemos os documentos oficiais para que você não precise</h1>
+  {relatorio_html.marca_html("index.html")}
+  {menu_html()}
+  <h1>Fundos Imobiliários</h1>
   <div class="meta" style="font-size:14.5px;margin-bottom:4px">"Será que tem algum problema
   escondido naquele relatório?" — essa dúvida vira uma lista de alertas com a conta e a
   fonte de cada um. Informes da CVM, relatório gerencial e cotações, num raio-x por fundo.</div>
@@ -450,7 +727,7 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
    {"hidden" if len(fundos) <= _VISIVEIS_DE_INICIO else ""}>Mostrar todos os {len(fundos)} fundos
    (acima: os {min(len(fundos), _VISIVEIS_DE_INICIO)} maiores por patrimônio)</button>
 
-  <h2>Rankings do dia</h2>
+  <h2 id="rankings">Rankings do dia</h2>
   <div class="blocos">{rankings}</div>
   <p class="meta" style="margin-top:8px">rankings são fatos ordenados com critério explícito — não recomendação ·
   só fundos negociáveis · "sem alertas de atenção" = selo verde ou amarelo</p>
@@ -517,6 +794,7 @@ async function statusAtualizacao() {{
   }} catch (e) {{ texto.textContent = ''; }}
 }}
 statusAtualizacao();
+{JS_MENU}
 </script>
 </body>
 </html>
