@@ -252,9 +252,14 @@ h2 {{ font-size:18px; margin:26px 0 10px; }}
 .flag {{ background:#182024; border:1px solid #232D31; border-left:4px solid; border-radius:10px; padding:14px 16px; margin-bottom:10px; }}
 .flag .sev {{ font-size:12px; font-weight:800; letter-spacing:.08em; }}
 .flag h3 {{ font-size:16px; margin:2px 0 6px; }}
-.flag .evid, .flag .fonte {{ color:#8b98a9; font-size:13px; }}
+.flag .evid {{ background:#101415; border:1px solid #232D31; border-radius:7px; padding:6px 10px;
+  font-family:ui-monospace,Consolas,monospace; font-size:12.5px; color:#aeb9c7; margin-top:8px; }}
+.flag .fonte {{ color:#66707d; font-size:12px; margin-top:5px; }}
 .ok {{ color:#4ade80; font-size:14px; }} .na {{ color:#8b98a9; font-size:13px; }}
 ul {{ padding-left:20px; }} li {{ margin:3px 0; }}
+ul.ok {{ list-style:none; padding-left:6px; }}
+ul.ok li {{ color:#8b98a9; }}
+ul.ok li::before {{ content:'✓  '; color:#4ade80; font-weight:700; }}
 .grafico {{ background:#182024; border:1px solid #232D31; border-radius:10px; padding:14px 16px 8px; margin-bottom:14px; }}
 .grafico h3 {{ font-size:15px; color:#aeb9c7; margin-bottom:8px; }}
 .grafico .nota {{ color:#66707d; font-size:11px; }}
@@ -286,6 +291,7 @@ ul {{ padding-left:20px; }} li {{ margin:3px 0; }}
 table.imoveis {{ width:100%; border-collapse:collapse; font-size:13.5px; }}
 table.imoveis th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; text-align:left; padding:6px 10px; border-bottom:1px solid #314045; }}
 table.imoveis td {{ padding:7px 10px; border-bottom:1px solid #232D31; }}
+table.imoveis tbody tr:hover td {{ background:#1d262b; }}
 table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-align:right; }}
 .ver-mais {{ background:#232D31; color:#8FCB9B; border:1px solid #314045; border-radius:8px;
   padding:6px 16px; font-size:13px; font-weight:600; cursor:pointer; margin-top:10px; }}

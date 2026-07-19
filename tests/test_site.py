@@ -89,6 +89,27 @@ def test_paginas_do_site_tem_navegacao_e_sem_links_mortos(con, tmp_path):
     assert "ALFA11" in pagina  # segue visível, como texto
 
 
+def test_indice_recolhe_tabela_grande(con, tmp_path, monkeypatch):
+    _base(con)
+    monkeypatch.setattr(site, "_VISIVEIS_DE_INICIO", 1)
+    site.gerar(con, tmp_path / "site", com_cotacoes=False)
+    indice = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+    # só o maior fundo visível de início; o resto recolhido mas presente (a busca acha todos)
+    assert indice.count('class="fundo-extra" hidden') == 2
+    assert "Mostrar todos os 3 fundos" in indice
+    assert "function mostrarTodos" in indice
+    assert "hidden>Mostrar todos" not in indice  # botão visível
+
+
+def test_indice_pequeno_ja_mostra_tudo(con, tmp_path):
+    _base(con)
+    site.gerar(con, tmp_path / "site", com_cotacoes=False)
+    indice = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+    # 3 fundos <= limite: nenhuma linha recolhida e o botão nasce escondido
+    assert 'class="fundo-extra"' not in indice
+    assert "hidden>Mostrar todos" in indice
+
+
 def test_relatorio_local_nao_tem_navegacao_de_site(con):
     from scout import analise
     from scout.relatorio import html as relatorio_html

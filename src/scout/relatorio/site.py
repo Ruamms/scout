@@ -97,8 +97,14 @@ def gerar(
     return {"paginas": len(publicados), "destino": str(destino)}
 
 
+_VISIVEIS_DE_INICIO = 50  # tabela abre com os maiores por PL; o resto sob demanda
+
+
 def _indice(fundos: list, base: list, agora: datetime) -> str:
-    linhas = "".join(_linha_fundo(resumo) for resumo in fundos)
+    linhas = "".join(
+        _linha_fundo(resumo, extra=posicao >= _VISIVEIS_DE_INICIO)
+        for posicao, resumo in enumerate(fundos)
+    )
     rankings = "".join(
         _bloco_ranking(titulo, ranking.montar(None, por=por, top=10, sem_alertas=sem_alertas, fundos=base))
         for titulo, por, sem_alertas in (
@@ -137,6 +143,10 @@ table {{ width:100%; border-collapse:collapse; font-size:13.5px; }}
 th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em;
   text-align:left; padding:6px 10px; border-bottom:1px solid #314045; position:sticky; top:0; background:#101415; }}
 td {{ padding:7px 10px; border-bottom:1px solid #232D31; }}
+tbody tr:hover td {{ background:#182024; }}
+.btn-todos {{ display:block; margin:12px auto 0; background:#232D31; border:1px solid #314045;
+  color:#8FCB9B; padding:8px 22px; border-radius:8px; font-size:13.5px; font-weight:600; cursor:pointer; }}
+.btn-todos:hover {{ border-color:#8FCB9B; }}
 td:not(:first-child):not(:nth-child(2)):not(:nth-child(3)), th:not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {{ text-align:right; }}
 .selo {{ display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700;
   font-size:11px; color:#101415; white-space:nowrap; }}
@@ -176,6 +186,9 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
     <thead><tr><th>ticker</th><th>fundo</th><th>segmento</th><th>DY 12m</th><th>P/VP</th><th>PL</th><th>selo</th></tr></thead>
     <tbody>{linhas}</tbody>
   </table>
+  <button id="ver-todos" class="btn-todos" onclick="mostrarTodos()"
+   {"hidden" if len(fundos) <= _VISIVEIS_DE_INICIO else ""}>Mostrar todos os {len(fundos)} fundos
+   (acima: os {min(len(fundos), _VISIVEIS_DE_INICIO)} maiores por patrimônio)</button>
 
   <h2>Rankings do dia</h2>
   <div class="blocos">{rankings}</div>
@@ -187,11 +200,23 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
   <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>
 </div>
 <script>
+let todosVisiveis = false;
+
 function filtrar(texto) {{
   const termo = texto.trim().toLowerCase();
   document.querySelectorAll('#fundos tbody tr').forEach(tr => {{
-    tr.hidden = termo !== '' && !tr.dataset.busca.includes(termo);
+    const casa = termo === '' || tr.dataset.busca.includes(termo);
+    const recolhida = termo === '' && !todosVisiveis && tr.classList.contains('fundo-extra');
+    tr.hidden = !casa || recolhida;
   }});
+  const botao = document.getElementById('ver-todos');
+  if (botao) botao.hidden = todosVisiveis || termo !== '' || !document.querySelector('.fundo-extra');
+}}
+
+function mostrarTodos() {{
+  todosVisiveis = true;
+  document.querySelectorAll('.fundo-extra').forEach(tr => tr.hidden = false);
+  document.getElementById('ver-todos').hidden = true;
 }}
 
 // status da atualização via API pública do GitHub (repo público: sem token)
@@ -229,15 +254,16 @@ statusAtualizacao();
 """
 
 
-def _linha_fundo(resumo) -> str:
+def _linha_fundo(resumo, extra: bool = False) -> str:
     def _ou_traco(valor, formatador):
         return formatador(valor) if valor is not None else "—"
 
     cor = _COR_SELO.get(resumo.selo.nivel, "#94a3b8")
     dica = "Alertas: " + "; ".join(resumo.motivos) if resumo.motivos else resumo.selo.descricao
     busca = f"{resumo.ticker} {resumo.nome} {resumo.segmento}".lower().replace('"', "")
+    oculta = ' class="fundo-extra" hidden' if extra else ""
     return (
-        f'<tr data-busca="{busca}">'
+        f'<tr data-busca="{busca}"{oculta}>'
         f'<td><a href="{resumo.ticker}.html">{resumo.ticker}</a></td>'
         f"<td>{resumo.nome[:42]}</td><td>{resumo.segmento}</td>"
         f"<td>{_ou_traco(resumo.dy_12m, formato.percentual)}</td>"
