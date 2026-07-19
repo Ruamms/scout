@@ -157,10 +157,27 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
 .bloco ol {{ padding-left:22px; font-size:13.5px; }}
 .bloco li {{ margin:4px 0; }}
 .rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:30px; padding-top:14px; }}
+#aviso-beta {{ position:fixed; inset:0; background:rgba(16,20,21,.75); z-index:50;
+  display:flex; align-items:center; justify-content:center; padding:20px; }}
+.beta-caixa {{ background:#182024; border:1px solid #314045; border-radius:12px; padding:22px 24px;
+  max-width:440px; font-size:14px; box-shadow:0 12px 40px rgba(0,0,0,.5); }}
+.beta-caixa p {{ color:#aeb9c7; margin:10px 0 14px; }}
+.beta-caixa button {{ background:#3E8E7E; color:#F4F5F6; border:none; border-radius:8px;
+  padding:8px 22px; font-size:13.5px; font-weight:700; cursor:pointer; }}
 {relatorio_html.CSS_MARCA}
 </style>
 </head>
 <body>
+<div id="aviso-beta" hidden>
+  <div class="beta-caixa">
+    <b>🧭 O Scout está em beta.</b>
+    <p>Os dados vêm de fontes oficiais, mas o site é novo e pode conter falhas de exibição ou
+    leitura. Encontrou algo estranho? Ajude reportando em
+    <a href="https://github.com/Ruamms/scout/issues" target="_blank" rel="noopener">github.com/Ruamms/scout/issues</a>
+    ou por e-mail: <a href="mailto:ruamms3@gmail.com">ruamms3@gmail.com</a>.</p>
+    <button onclick="fecharBeta()">Entendi</button>
+  </div>
+</div>
 <div class="pagina">
   {relatorio_html.marca_html()}
   <h1>Lemos os documentos oficiais para que você não precise</h1>
@@ -200,6 +217,15 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
   <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>
 </div>
 <script>
+// aviso de beta: aparece só na primeira visita (dispensado fica em localStorage)
+if (!localStorage.getItem('scout-beta-visto')) {{
+  document.getElementById('aviso-beta').hidden = false;
+}}
+function fecharBeta() {{
+  localStorage.setItem('scout-beta-visto', '1');
+  document.getElementById('aviso-beta').hidden = true;
+}}
+
 let todosVisiveis = false;
 
 function filtrar(texto) {{

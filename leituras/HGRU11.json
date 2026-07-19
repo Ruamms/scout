@@ -1,0 +1,23 @@
+{
+  "ticker": "HGRU11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T01:28:43",
+  "relatorio": {
+    "id": 1246173,
+    "data_entrega": "13/07/2026 19:34",
+    "texto": "- **Aquisições de novos ativos**: O Fundo adquiriu um portfólio de cinco lojas localizadas no Leblon, Rio de Janeiro, por R$ 100,4 milhões e o ativo São Judas SBC em São Bernardo do Campo, SP, por R$ 50 milhões. [página 5]\n\n- **Vacância**: A vacância física do Fundo permaneceu estável em 0,8% ao final de junho. [página 4]\n\n- **Alavancagem financeira**: O Fundo mantém uma alavancagem financeira atual de 5,5%, com projeção para reduzir gradualmente nos próximos anos. [página 16]\n\n- **Resultado distribuível**: Em junho, o resultado distribuível foi de R$ 1,37/cota, com distribuição de rendimentos de R$ 0,95/cota a ser pago no dia 14 de julho. [página 4]\n\n- **Emissão de cotas**: A 6ª emissão de cotas do HGRU totalizou R$ 205,7 milhões em captação, embora o volume captado tenha ficado abaixo das expectativas devido ao contexto adverso no mercado. [página 6]\n\n- **Riscos mencionados**: O relatório destaca a trajetória da política fiscal e a inflação acima da meta como principais riscos de curto prazo, especialmente no segundo semestre do ano eleitoral. [página 3]\n\nO que observar em seguida:\n- A evolução das condições de mercado para futuras emissões de cotas.\n- O progresso na desalavancagem conforme a projeção apresentada pela gestão."
+  },
+  "fatos": {
+    "ids": [
+      1237796,
+      1224300,
+      1201741
+    ],
+    "datas": [
+      "01/07/2026",
+      "18/06/2026",
+      "22/05/2026"
+    ],
+    "texto": "### 01/07/2026\n**O Fundo adquiriu cinco imóveis comerciais no Leblon, Rio de Janeiro, e um imóvel em São Bernardo do Campo.**\n\nO Fundo celebrou Compromisso de Venda e Compra (CVC) e Escrituras de Cessão de Direitos Aquisitivos para a aquisição de cinco imóveis comerciais no Leblon, Rio de Janeiro, pelo montante total de R$ 100.425.000,00 (cem milhões, quatrocentos e vinte e cinco mil reais), com um cap rate equivalente a 9,40% ao ano. Além disso, o Fundo concluiu a aquisição de um imóvel em São Bernardo do Campo por R$ 50.000.000,00 (cinquenta milhões de reais), com cap rate de 10%.\n\n*\"O pagamento do Preço foi realizado da seguinte forma: (i) R$ 6.135.115,86 em moeda corrente nacional; e (ii) R$ 94.289.884,14 mediante compensação com o crédito do Fundo decorrente da obrigação das vendedoras dos Imóveis de subscrição e integralização de 730.986 cotas no âmbito da Sexta Emissão do Fundo.\"* (p. 2)\n\n### 18/06/2026\n**O Fundo será rebalanceado em índice internacional em 19 de junho de 2026.**\n\nEm 19 de junho de 2026, haverá um rebalanceamento da carteira do índice internacional ao qual o Fundo faz parte. Esse processo ocorre periodicamente e a última vez foi em 20 de março de 2026.\n\n*\"Em 19 de junho de 2026, haverá rebalanceamento de carteira de índice internacional, com possível ajuste de composição da carteira, da qual o Fundo é parte.\"* (p. 1)\n\n### 22/05/2026\n**Aprovada a sexta emissão de cotas do Fundo no valor inicial de R$ 1,5 bilhão.**\n\nO Fundo aprovou a sexta emissão de cotas com um montante inicial de R$ 1.500.000.020,19 (um bilhão, quinhentos milhões e vinte reais e dezenove centavos), podendo ser aumentado em até 25% para R$ 1.874.999.993,02 (um bilhão, oitocentos e setenta e quatro milhões, novecentos e noventa e nove mil, novecentos e noventa e três reais e dois centavos).\n\n*\"O montante da Oferta será de inicialmente R$ 1.500.000.020,19 (um bilhão, quinhentos milhões e vinte reais e dezenove centavos), equivalente a 11.639.637 cotas.\"* (p. 2)"
+  }
+}

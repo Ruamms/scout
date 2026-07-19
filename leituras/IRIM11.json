@@ -1,0 +1,15 @@
+{
+  "ticker": "IRIM11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T01:51:44",
+  "relatorio": {
+    "id": 1246365,
+    "data_entrega": "13/07/2026 20:30",
+    "texto": "- **Distribuição de Rendimento**: O fundo distribuiu um rendimento de R$ 1,18 por cota em junho, com resultado distribuível de R$ 0,97 por cota. [página 2]\n\n- **Reserva de Resultado**: Foi constituída uma reserva de resultado equivalente a 5% do resultado gerado, totalizando R$ 0,27 por cota ao final de junho. [página 2]\n\n- **Fatores para o Forte Resultado**: A correção monetária mais elevada e o pagamento de juros semestrais de alguns CRIs foram os principais fatores que impulsionaram o resultado do mês. [página 2]\n\n- **Alocação dos Recursos**: O fundo alocou recursos provenientes de pré-pagamentos em um novo FII de Geração Distribuída e outras alocações pontuais em CRIs. [página 2]\n\n- **Pipeline Futuro**: Para os próximos meses, o pipeline de novos CRIs supera o caixa disponível, potencialmente necessitando do uso de alavancagem via operações compromissadas reversas. [página 2]\n\n- **Evolução da Cota Patrimonial**: A cota patrimonial do fundo foi R$ 82,59 no final de junho, com um DY patrimonial de 14,93% nos últimos 12 meses. [página 3]\n\n- **Alerta Selo Atenção**: O selo \"Atenção\" indica que o rendimento do fundo está acima do resultado financeiro e há emissão de cotas com queda no valor patrimonial ajustado. [sem página específica, mas mencionado no contexto]\n\nO que observar em seguida:\n- **Desempenho futuro da alavancagem**: Monitorar o uso planejado de alavancagem para financiar novos investimentos.\n- **Distribuição futura de rendimentos**: Verificar se os próximos pagamentos seguirão a tendência recente de distribuições significativas."
+  },
+  "fatos": {
+    "ids": [],
+    "datas": [],
+    "texto": null
+  }
+}

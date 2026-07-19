@@ -182,6 +182,18 @@ def test_leitura_ia_explica_jargao_para_leigos():
     assert saida.endswith("Novos CRI em análise.")
 
 
+def test_secao_ia_explica_fundo_sem_relatorio_gerencial(con, zip_cvm):
+    from scout import leituras
+
+    completo = _completo(con, zip_cvm)
+    marcador = leituras.montar_sem_relatorio("TSTE11", agora=datetime(2026, 7, 18, 23, 0))
+    pagina = relatorio_html.gerar(completo, leitura=marcador)
+    # a caixa da IA existe e explica a ausência, em vez de sumir sem aviso
+    assert "Leitura por IA" in pagina
+    assert "não publicou relatório gerencial" in pagina
+    assert "2026-07-18" in pagina
+
+
 def test_sem_cotacao_nao_mostra_calculadoras(con, zip_cvm):
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     completo = analise.montar_completo(con, "tste11")

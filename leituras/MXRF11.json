@@ -1,0 +1,19 @@
+{
+  "ticker": "MXRF11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T00:35:13",
+  "relatorio": {
+    "id": 1227475,
+    "data_entrega": "24/06/2026 18:26",
+    "texto": "- **Mudança na carteira**: O fundo realizou diversas alienações parciais de CRIs e adquiriu novas tranches em mercado primário. \"No mês de maio o Fundo realizou diversas alienações parciais, dentre elas os CRIs República do Libano, FGR, Helbor e VCA e alienou totalmente os CRIs Oba BTS Taubaté e Matheus Ilheus\", além da aquisição de uma nova tranche do CRI Mitre Michigan (24F2269312 e 24F2269311) em um volume total de R$ 30 milhões. [página 8]\n\n- **Novo investimento**: O fundo adquiriu um novo CRI no mercado primário: \"CRI Econ (26D4571142) – R$ 20 milhões | CDI+ 2,00% a.a.\" [página 9]\n\n- **Emissão de cotas**: O fundo iniciou sua 12ª oferta de cotas no mês de junho buscando uma captação base de R$ 1 bilhão. \"Ainda, entende que com captações mais fracas na classe de FIIs de papel e níveis de juros futuros em patamares muito elevados, há oportunidades muito interessantes em termos de risco-retorno no momento para novos investimentos\". [página 3]\n\n- **Rendimentos distribuídos**: O fundo realizou a distribuição de R$ 0,100 por cota em 15/06/2026. \"A distribuição de R$ 0,100 por cota foi realizada em 15/06/2026 para os detentores de cotas do Fundo em 29/05/2026.\" [página 4]\n\n- **Rendimentos acima do resultado financeiro**: O fundo distribuiu R$ 777,9 milhões vs um resultado financeiro líquido de R$ 531,6 milhões. \"Distribuição de R$ 0,100 por cota foi realizada em 15/06/2026 para os detentores de cotas do Fundo em 29/05/2026.\" [página 4]\n\n- **Tributação**: Pessoas físicas que detêm volume inferior a 10% do total do fundo são isentas de Imposto de Renda nos rendimentos distribuídos e tributadas em 20% sobre eventual ganho de capital na venda da cota. [página 2]\n\n- **Risco**: O ambiente econômico é marcado por volatilidade intensa, principalmente devido às discussões eleitorais e pressões inflacionárias. \"No cenário doméstico, o mês apresentou maior grau de dificuldade, marcado por volatilidade mais intensa nos ativos.\" [página 3]\n\n- **Desempenho do fundo**: O rendimento distribuído representou resultado equivalente a 88,88% do CDI no período. \"O valor distribuído representou, considerando o preço de fechamento da cota no mês (R$ 9,98), resultado equivalente a 88,88% do CDI no período.\" [página 4]\n\n**O que observar em seguida:**\n- A evolução das taxas de juros e inflação nos próximos meses.\n- O desempenho da carteira após as recentes alienações parciais."
+  },
+  "fatos": {
+    "ids": [
+      1236643
+    ],
+    "datas": [
+      "01/07/2026"
+    ],
+    "texto": "### 01/07/2026\n**O que aconteceu:** MXRF11 aprovou a emissão de novas cotas com preço de R$ 9,37.\n\n**Resumo:** O BTG PACTUAL SERVIÇOS FINANCEIROS S.A. e XP VISTA ASSET MANAGEMENT LTDA., como administrador e gestor respectivamente do MAXI RENDA FUNDO DE INVESTIMENTO IMOBILIÁRIO – FII, aprovaram a 12ª emissão de cotas no valor de R$ 9,37 cada. A emissão será realizada sob o rito automático de registro da CVM.\n\n**Trecho-chave:**\n\"Na presente data, o Administrador, conforme recomendação do Gestor, aprovou, por meio do ato do Administrador (“Ato do Administrador”), o preço de emissão das cotas a serem emitidas no âmbito da Emissão (“Novas Cotas”), no valor de R$ 9,37 (nove reais e trinta e sete centavos), com base no valor patrimonial das cotas do Fundo em 31 de maio de 2026, sem considerar a Taxa de Distribuição Primária (conforme abaixo definido) (“Preço de Emissão”).\"\n\n**Conexão aos indicadores:** A emissão ocorre enquanto o valor patrimonial por cota do fundo está em queda (-4,92% nos últimos 24 meses), conforme alertado no contexto."
+  }
+}

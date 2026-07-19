@@ -1,0 +1,21 @@
+{
+  "ticker": "RECR11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T02:55:55",
+  "relatorio": {
+    "id": 1241637,
+    "data_entrega": "07/07/2026 19:34",
+    "texto": "1. **Aquisições de CRIs**: O fundo adquiriu novas cotas em vários CRIs, incluindo \"CRI Realiza FIT\", \"Villagio Jardins\", \"Ativos Residenciais Diversificados\", \"FIT VIC\", \"Pulverizado Lançamentos Residenciais\" e \"Crediblue Aquisição Residencial\". [página 3]\n2. **Alienações de CRIs**: O fundo realizou a alienação das cotas dos CRIs \"Matarazzo Retail IV\" e \"Matarazzo Retail\", totalizando R$ 24.024.459. [página 4]\n3. **Compromissada**: Realizou uma operação compromissada reversa captando um montante equivalente a R$ 25.519.027, com vencimento em Dez/2026. [página 4]\n4. **Vacância física alta**: A vacância ponderada por área é de 100%, indicando que todos os ativos estão desocupados ou não geram renda. [página 2]\n5. **Rendimentos acima do resultado financeiro**: O fundo distribuiu R$ 436,9 milhões em rendimentos no último trimestre, enquanto o resultado financeiro líquido foi de R$ 289 milhões. [página 2]\n6. **Alocação dos ativos**: 95% do patrimônio está alocado em CRIs e FIIs, com destaque para os CRIs que representam 92% do total. [página 5]\n\nO que observar em seguida:\n1. Desempenho futuro das operações compromissadas.\n2. Mudanças na alocação de ativos e impacto sobre a vacância física alta."
+  },
+  "fatos": {
+    "ids": [
+      1192680,
+      1155743
+    ],
+    "datas": [
+      "14/05/2026",
+      "07/04/2026"
+    ],
+    "texto": "### 14/05/2026\n**O que aconteceu:** Prazo de exclusividade para a venda de unidades do Edifício Morumbi Plaza terminou sem a celebração do Compromisso.\n\n**Resumo:** O Fundo REC Recebíveis Imobiliários informa que o prazo de exclusividade concedido ao potencial comprador das unidades no Edifício Morumbi Plaza expirou sem a formalização do contrato. As negociações continuarão com outros interessados, mas as conversas com o comprador original permanecem em andamento.\n\n**Trecho-chave:**\n\"O Prazo de Exclusividade concedido ao potencial comprador para celebração do Compromisso de Compra e Venda (“Compromisso”) das unidades 11, 31, 41 , 51, 61, 71 e 81... encerrou-se sem a formalização do respectivo Compromisso.\" (p. 1)\n\n### 07/04/2026\n**O que aconteceu:** Fundo REC Recebíveis Imobiliários realiza oferta pública de distribuição primária de novas cotas.\n\n**Resumo:** O Fundo anunciou a realização da Oferta Pública Primária, com o preço de emissão das Novas Cotas sendo R$ 89,00 cada. A oferta terá um valor total inicial de R$ 409.934.000,00 e poderá ser reduzida caso não atinja o montante mínimo estabelecido.\n\n**Trecho-chave:**\n\"O preço de emissão é de R$ 89,00 (oitenta e nove reais) por cada uma das Novas Cotas... O Valor Total da Emissão será de , inicialmente, R$ 409.934.000,00 (quatrocentos e nove milhões, novecentos e trinta e quatro mil reais).\" (p. 2)"
+  }
+}

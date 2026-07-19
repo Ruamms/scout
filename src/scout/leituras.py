@@ -49,6 +49,18 @@ def salvar(pasta: Path, dados: dict) -> Path:
     return arquivo
 
 
+def montar_sem_relatorio(ticker: str, agora: datetime | None = None) -> dict:
+    """Marcador para fundo SEM relatório gerencial no FNET (documento opcional
+    — muitos fundos nunca publicam um). Persistido para a página explicar por
+    que não há leitura por IA; reverificado a cada rodada do lote."""
+    agora = agora or datetime.now()
+    return {
+        "ticker": ticker.upper(),
+        "sem_relatorio": True,
+        "verificado_em": agora.isoformat(timespec="seconds"),
+    }
+
+
 def montar(
     ticker: str,
     modelo: str,

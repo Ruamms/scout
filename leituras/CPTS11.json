@@ -1,0 +1,21 @@
+{
+  "ticker": "CPTS11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T01:02:06",
+  "relatorio": {
+    "id": 1237800,
+    "data_entrega": "01/07/2026 22:11",
+    "texto": "- **Rentabilidade e Dividendos**: O fundo apresentou rentabilidade a mercado de -2,52% em maio, enquanto o IFIX recuou -1,33%. A distribuição mensal foi de R$ 0,09 por cota (equivalente a 129,1% do CDI), com um DY anualizado de 15,09%.\n\n- **Mudanças na Carteira**: O fundo realizou compras definitivas no valor de R$ 456.530.079 em CRIs e vendas definitivas no valor de R$ 19 milhões também em CRIs.\n\n- **Perfil de Crédito**: A carteira de crédito do fundo é composta por 18 casos, representando 23,7% dos ativos totais, com todas as operações indexadas ao IPCA e sem nenhuma operação estressada ou inadimplente.\n\n- **Carteira de FIIs**: A carteira de FIIs do fundo é composta por 81 FIIs, representando 61,3% dos ativos totais. O segmento com maior percentual é o de Shoppings (20,7%).\n\n- **Potencial de Valorização**: Há um potencial de valorização em relação à cota patrimonial de +15,1%, e de +1,8% caso todos os FIIs fossem marcados a seu valor patrimonial.\n\n- **Desempenho dos CRIs**: A rentabilidade da carteira de CRIs foi positiva com uma marcação a mercado de IPCA+ 8,67%.\n\nO que observar em seguida:\n1. Evolução das taxas de juros e impacto na rentabilidade futura.\n2. Movimentações adicionais na carteira de FIIs e CRIs nos próximos meses."
+  },
+  "fatos": {
+    "ids": [
+      1087834,
+      1087833
+    ],
+    "datas": [
+      "19/01/2026",
+      "19/01/2026"
+    ],
+    "texto": "### 19/01/2026\n**O que aconteceu:** Aprovação da 15ª emissão de cotas do Capitânia Securities II Fundo de Investimento Imobiliário.\n\n**Resumo:** O BTG Pactual Serviços Financeiros S.A. aprovou, por meio do Instrumento Particular de Deliberação Conjunta, a realização da 15ª emissão de cotas com montante inicial de R$ 300 milhões e preço de emissão de R$ 8,96 por cota. A distribuição será feita sob o regime de melhores esforços de colocação e destinada a investidores profissionais.\n\n**Trecho-chave:** \"foi aprovado, na presente data, por meio do “Instrumento Particular de Deliberação Conjunta do Capitânia Securities II Fundo de Investimento Imobiliário Responsabilidade Limitada” (“Ato de Aprovação da Oferta”), a realização da 15ª (décima quinta) emissão de cotas da Classe (“Novas Cotas” e “Emissão”, respectivamente), as quais serão objeto de distribuição pública primária, sob o rito de registro automático junto à CVM e sob o regime de melhores esforços de colocação\" (p. 1).\n\n---\n\n**Conexão com indicadores:** Esta emissão pode contribuir para aumentar o número total de cotas do fundo, impactando diretamente os indicadores como Valor Patrimonial por Cota (VP/cota) e o número total de cotistas."
+  }
+}

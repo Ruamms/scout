@@ -1,0 +1,15 @@
+{
+  "ticker": "KNHY11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T01:12:42",
+  "relatorio": {
+    "id": 1242369,
+    "data_entrega": "08/07/2026 18:37",
+    "texto": "1. **Compra de novos ativos**: No mês de junho, foram realizados investimentos em novas operações de CRI no valor total de R$ 50,3 milhões.\n   - \"No mês de junho, realizamos investimento em novas operações de CRI, no valor total de R$ 50,3 milhões.\" (p. 2)\n\n2. **Alocação da carteira**: O fundo apresenta alocação de 102,4% em ativos alvo e 4,4% em instrumentos de caixa.\n   - \"O portfólio é dedicado ao investimento em Ativos de renda fixa de natureza Imobiliária, especialmente em Certificados de Recebíveis Imobiliários (“CRI”), predominantemente indexados à inflação.\" (p. 1)\n\n3. **Resultado financeiro**: O resultado líquido do fundo foi R$ 43,5 milhões no mês de junho.\n   - \"Resultado Líquido: R$ 43,5 milhões\" (página não especificada)\n\n4. **Dividendos distribuídos**: Os dividendos referentes a junho serão pagos em 13/07/26 e são de R$ 1,20 por cota.\n   - \"Os dividendos referentes a junho, cuja distribuição ocorrerá no dia 13/07/2026, são de R$ 1,20 por cota.\" (p. 1)\n\n5. **Operações compromissadas reversas**: O fundo possui operações compromissadas reversas lastreadas em CRI, representando aproximadamente 7% do patrimônio líquido.\n   - \"O Fundo possui atualmente operações compromissadas reversas lastreadas em CRI. Essas operações permitem maior flexibilidade e dinamismo na alocação de recursos.\" (p. 2)\n\n6. **Projeções inflacionárias**: A projeção mais recente indica uma inflação de 0,33% para junho, com estimativas de 5,33% a.a. em 2026 e 4,17% a.a. em 2027.\n   - \"O último relatório do Boletim Focus indica que a mediana das projeções dos economistas de mercado para o IPCA está em 5,33% a.a. para 2026 e 4,17% a.a. em 2027.\" (página não especificada)\n\nO que observar em seguida:\n- Novas compras ou vendas de ativos no próximo relatório.\n- Eventuais ajustes na alocação da carteira entre CRI indexados à inflação e CDI."
+  },
+  "fatos": {
+    "ids": [],
+    "datas": [],
+    "texto": null
+  }
+}

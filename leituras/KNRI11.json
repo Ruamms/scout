@@ -1,0 +1,15 @@
+{
+  "ticker": "KNRI11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T00:20:15",
+  "relatorio": {
+    "id": 1238321,
+    "data_entrega": "02/07/2026 17:42",
+    "texto": "1. A vacância física do fundo foi reduzida de 4,09% no mês anterior para 3,90% em junho de 2026.\n2. A vacância financeira caiu de 5,39% para 4,93% entre maio e junho de 2026.\n3. O Fundo Kinea Renda Imobiliária teve a entrada da empresa Nomos Investimentos no edifício Botafogo Trade Center, ocupando uma área de 975 m².\n4. A Bain & Company assumiu o espaço anteriormente ocupado pelo escritório SVMFA em um contrato concluído dentro do próprio mês de desocupação.\n5. O Edifício Biosquare está em desenvolvimento com avanços recentes, já locado para uma companhia relevante no setor corporativo.\n6. A reavaliação anual da carteira imobiliária apontou valorização de aproximadamente 0,6% frente ao valor contábil registrado em maio de 2026.\n7. O Fundo distribuirá R$1,38 por cota no mês de julho de 2026, incluindo uma distribuição extraordinária de R$0,28 por cota.\n8. A taxa de administração do fundo é equivalente a 1,11% ao ano sobre o valor de mercado das cotas.\n\nO que observar em seguida:\n- Desenvolvimento e conclusão da obra no Edifício Biosquare.\n- Movimentações futuras na carteira imobiliária para manter ou melhorar os indicadores de vacância."
+  },
+  "fatos": {
+    "ids": [],
+    "datas": [],
+    "texto": null
+  }
+}

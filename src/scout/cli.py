@@ -541,21 +541,37 @@ def ia_lote(
             f"Lote de leitura por IA: {len(fundos)} fundos · modelo [bold]{modelo_final}[/] · "
             f"destino [bold]{pasta}[/] · incremental por documento (interrompeu? rode de novo que continua)"
         )
+        from datetime import datetime as _dt
+
+        arquivo_historico = pasta / "_historico.txt"
+
+        def _registrar(linha: str) -> None:
+            """Histórico permanente do lote (versionado junto com as leituras):
+            o que foi lido, o que não tinha relatório e o que falhou — com data,
+            para comparar rodadas futuras."""
+            pasta.mkdir(parents=True, exist_ok=True)
+            with arquivo_historico.open("a", encoding="utf-8") as saida:
+                saida.write(f"{_dt.now():%Y-%m-%d %H:%M:%S}\t{linha}\n")
+
+        _registrar(f"--- lote iniciado · modelo {modelo_final} · {len(fundos)} fundos na fila")
         novos, pulados = 0, 0
         falhas: list[tuple[str, str]] = []
         inicio = _time.monotonic()
         for posicao, resumo in enumerate(fundos, start=1):
             prefixo = f"[{posicao}/{len(fundos)}] {resumo.ticker}"
+            inicio_fundo = _time.monotonic()
             try:
                 docs = fnet.listar(resumo.cnpj)
                 relatorio = fnet.ultimo_relatorio_gerencial(docs)
                 if relatorio is None:
                     console.print(f"{prefixo}: [dim]sem relatório gerencial no FNET[/]")
+                    leituras.salvar(pasta, leituras.montar_sem_relatorio(resumo.ticker))
+                    _registrar(f"{resumo.ticker}\tsem-relatorio")
                     pulados += 1
                     continue
                 fatos_meta = [] if sem_fatos else fnet.fatos_relevantes(docs, 3)
                 existente = leituras.carregar(pasta, resumo.ticker)
-                if existente and existente["relatorio"]["id"] == relatorio["id"] and set(
+                if existente and existente.get("relatorio") and existente["relatorio"]["id"] == relatorio["id"] and set(
                     existente.get("fatos", {}).get("ids", [])
                 ) >= {meta["id"] for meta in fatos_meta}:
                     pulados += 1
@@ -573,6 +589,7 @@ def ia_lote(
                 if len(texto) < 500:
                     console.print(f"{prefixo}: [yellow]PDF sem texto extraível — pulado[/]")
                     falhas.append((resumo.ticker, "PDF sem texto extraível (imagem/escaneado)"))
+                    _registrar(f"{resumo.ticker}\terro\tPDF sem texto extraível")
                     continue
                 with console.status(f"{prefixo}: lendo o relatório com IA…") as estado:
                     leitura_relatorio = modulo_ia.analisar_relatorio(
@@ -613,15 +630,18 @@ def ia_lote(
                 )
                 novos += 1
                 decorrido = _time.monotonic() - inicio
+                _registrar(f"{resumo.ticker}\tlido\t{_time.monotonic() - inicio_fundo:.0f}s")
                 console.print(
                     f"{prefixo}: [green]lido[/] "
                     f"[dim]({decorrido / max(novos, 1):.0f}s/fundo em média)[/]"
                 )
             except KeyboardInterrupt:
                 console.print("\n[yellow]Interrompido — rode de novo para continuar de onde parou.[/]")
+                _registrar(f"--- lote interrompido pelo usuário em {resumo.ticker}")
                 break
             except Exception as erro:  # fundo problemático não derruba o lote
                 falhas.append((resumo.ticker, str(erro)[:120]))
+                _registrar(f"{resumo.ticker}\terro\t{str(erro)[:120]}")
                 console.print(f"{prefixo}: [red]erro[/] [dim]{erro}[/]")
 
         if falhas:
@@ -633,6 +653,7 @@ def ia_lote(
         elif not apenas_erros or novos:
             arquivo_erros.unlink(missing_ok=True)  # rodada limpa: some a lista antiga
 
+        _registrar(f"--- lote encerrado · {novos} lidos, {pulados} em dia/sem relatório, {len(falhas)} erros")
         console.print(
             f"\n[bold]Lote concluído:[/] {novos} lidos, {pulados} já em dia, {len(falhas)} com erro."
         )

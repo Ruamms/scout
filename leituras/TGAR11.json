@@ -1,0 +1,19 @@
+{
+  "ticker": "TGAR11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T02:20:28",
+  "relatorio": {
+    "id": 1224927,
+    "data_entrega": "19/06/2026 18:02",
+    "texto": "1. **Venda do ativo Valle dos Ipês**: Em maio, o fundo realizou a venda do empreendimento Valle dos Ipês por R$ 15,63 milhões, com uma TIR de 25,16% ao ano (p. 7).\n   \n2. **Emissão do Termo de Verificação de Obras (TVO) para Esmeralda do Tapajós**: As obras deste empreendimento foram concluídas e ele teve a melhor performance de vendas desde o início, com 156 unidades comercializadas no mês (p. 7).\n\n3. **Aquisição e venda de operações financeiras**: O fundo realizou a compra de duas operações por R$ 6,80 milhões e vendeu outras duas por R$ 5,97 milhões (p. 8).\n\n4. **Investimento no FII TG Eurogarden Master**: O fundo investiu R$ 36,9 milhões na subclasse subordinada do FII TG Eurogarden Master para ampliar sua exposição ao crédito imobiliário estruturado (p. 8).\n\n5. **Swap de indexador**: A gestão realizou uma operação de swap para proteger o fundo contra riscos decorrentes do descasamento entre os indexadores dos ativos e do passivo, reduzindo o custo econômico das cotas seniores (p. 8).\n\n6. **Desempenho de vendas em maio**: No mês de maio, foram comercializadas 42 unidades no total, resultando em R$ 10,48 milhões de VGV vendido (p. 7).\n\n7. **Inadimplência do portfólio**: O relatório menciona a inadimplência média do portfólio de equity urbanismo e incorporação, com valores variando entre 3% e 19%, mas não fornece detalhes específicos sobre mudanças recentes (p. 7).\n\n**O que observar em seguida:**\n- Desempenho futuro das vendas do Esmeralda do Tapajós.\n- Impacto da swap de indexador na rentabilidade a longo prazo."
+  },
+  "fatos": {
+    "ids": [
+      1244348
+    ],
+    "datas": [
+      "10/07/2026"
+    ],
+    "texto": "### 10/07/2026\n**O que aconteceu:** O Fundo de Investimento Imobiliário TG Ativo Real anunciou uma alteração no seu regulamento para evitar sobreposição econômica de taxas de gestão.\n\n**Resumo:** A administração e a gestora do fundo decidiram incluir um item no regulamento que estabelece descontos na taxa de gestão quando o fundo investir em outros fundos sob sua própria gestão. Esta medida visa alinhar os interesses com os cotistas e promover maior transparência.\n\n**Trecho-chave:** \"Na hipótese de o Fundo realizar investimentos em fundos de investimentos sob a gestão da TG Core Asset, e que estejam sujeitos à cobrança de taxa de gestão própria, o Gestor deverá conceder desconto na taxa de gestão do Fundo correspondente à parcela incidente sobre o valor aloca\ndo em tais fundos, de modo a mitigar a sobreposição de taxas de gestão.\" (p. 1)"
+  }
+}

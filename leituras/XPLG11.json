@@ -1,0 +1,21 @@
+{
+  "ticker": "XPLG11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T00:13:27",
+  "relatorio": {
+    "id": 1241569,
+    "data_entrega": "07/07/2026 19:21",
+    "texto": "1. **Mudanças na carteira**: O fundo registrou expansão de 1.894 m² por uma locatária no Syslog Galeão e renovação contratual da Premier Pet, ocupando 6.087 m², além da saída definitiva da Memodoc que ocupava 3.886 m² no HGLG WL.\n   - \"Neste mês, ocorreram as seguintes movimentações de locatários: (i) expansão de 1.894 m² de ABL por uma locatária no empreendimento Syslog Galeão [...]\" [página 2]\n   \n2. **Vacância e inadimplência**: A vacância física foi de 8,0% e a financeira de 3,8%. A inadimplência representou 1,0% da Receita de Locação mensal do Fundo.\n   - \"Vacância física¹ 8,0%\" [página 5]\n   - \"A inadimplência observada em junho representou 1,0% da Receita de Locação mensal do Fundo e está relacionada a 6 locatários.\" [página 2]\n\n3. **Distribuição de rendimentos**: O fundo declarou distribuição de R$ 0,82/cota para os detentores de cotas em 30/06/26.\n   - \"No mês de junho de 2026, foi declarada a distribuição de R$ 0,82/cota para os detentores de cotas com ticker XPLG11 em 30/06/26 [...]\" [página 2]\n\n4. **Evolução do patrimônio líquido**: O patrimônio líquido do fundo foi de R$ 5,397 bilhões.\n   - \"Patrimônio Líquido: R$ 5.397.457.621,00\" [página 2]\n\n5. **Estratégia de distribuição**: A Gestora busca adotar uma estratégia de uniformização de distribuição de rendimentos em consonância com o fluxo de caixa do semestre.\n   - \"A Gestora e o Administrador buscam, observada a legislação aplicável, adotar uma estratégia de uniformização de distribuição de rendimentos em consonância com o fluxo de caixa do semestre.\" [página 2]\n\n6. **Riscos mencionados**: A gestão menciona que os rendimentos declarados superaram o resultado financeiro e há emissão de cotas com VP/cota em queda.\n   - \"Alertas disparados: Rendimentos acima do resultado financeiro: rendimentos declarados 4T R$ 484,9M vs resultado financeiro líquido 4T R$ 342,1M | Emissão de cotas com VP/cota em queda: cotas +73,54% em 24m; VP/cota ajustado -6,87% no período\" [Conexão com os indicadores]\n\nO que observar em seguida:\n- Movimentações futuras na carteira de locatários.\n- Atualizações sobre a inadimplência e negociações com as locatárias inadimplentes."
+  },
+  "fatos": {
+    "ids": [
+      1196011,
+      1165621
+    ],
+    "datas": [
+      "15/05/2026",
+      "16/04/2026"
+    ],
+    "texto": "### 15/05/2026\n**O XP Log FII retifica denominações de dois empreendimentos adquiridos.**\nO Fundo corrigiu as referências dos galpões logísticos GLP Jundiaí I e II, localizados no município de Jundiaí, SP, para CD Jundiaí I e II respectivamente. As características dos imóveis permanecem inalteradas.\n\n*\"Leia-se: (e) CD Jundiaí I: empreendimento logístico com aproximadamente 54.201,79 m² de área bruta locável 95% alugada, localizado no município de Jundiaí, Estado de São Paulo, às margens da Rodovia Anhanguera, no Sítio Correa, Bairro do Castanho, e registrado junto ao 2º cartório de registro de imóveis do município de Jundiaí, Estado de São Paulo sob a matrícula de nº 31.512 (“ CD Jundiaí I”); e (f) CD Jundiaí II : empreendimento logístico com aproximadamente 45.593,70 m² de área bruta locável alugada, localizado no município de Jundiaí, Estado de São Paulo, na Avenida Industrial, Bairro do Engordadouro, e registrado junto ao 1º cartório de registro de imóveis do município de Jundiaí, Estado de São Paulo sob a matrícula de nº 11.545 (“CD Jundiaí II”).”* (p. 1)\n\n### 16/04/2026\n**XP Log FII conclui aquisição de portfólio logístico no âmbito da 9ª Emissão de Cotas.**\nO Fundo adquiriu cinco galpões logísticos com área total de aproximadamente 257 mil m², localizados em Piracicaba e Jundiaí (SP). O preço da transação foi de R$ 919 milhões, sendo parte paga em moeda corrente nacional e outra por meio de subscrição de cotas.\n\n*\"O Preço da Transação (“Preço da Transação”) acordado entre as partes para a aquisição dos imóveis supra é de R$ 919.092.610,65 (novecentos e dezenove milhões, noventa e dois mil, seiscentos e dez reais e sessenta e cinco centavos), a ser pago da seguinte forma:\"* (p. 1)"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "ticker": "VISC11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T00:48:49",
+  "relatorio": {
+    "id": 1241558,
+    "data_entrega": "07/07/2026 19:17",
+    "texto": "- **Crescimento do NOI e Vendas**: O portfólio do fundo apresentou crescimento de 11,7% no NOI caixa por m² e 12,7% nas vendas por m² em comparação com o mesmo período do ano anterior. [página 5]\n\n- **Resultado Financeiro e Distribuição**: Em junho, o resultado total foi de R$ 0,88/cota e a distribuição realizada foi de R$ 0,84/cota. O fundo ainda possui um resultado acumulado não distribuído de R$ 1,24 por cota que poderá ser utilizado para futuras distribuições. [página 5]\n\n- **Inadimplência e Descontos**: A inadimplência líquida do mês foi de aproximadamente 1,2%, uma queda de 0,2 ponto percentual em relação ao mesmo período do ano anterior. Os descontos atingiram 1,8% do faturamento total, um aumento de 0,1 ponto percentual comparado ao mesmo período do ano anterior. [página 5]\n\n- **Taxa de Ocupação**: A taxa de ocupação do fundo encerrou o mês de maio em 94,0%. [página 5]\n\n- **Projeção de Consumo de Caixa**: O Fundo dispõe de R$ 157,9 milhões em caixa e apresenta uma projeção de despesas para 2026 de aproximadamente R$ 137,7 milhões. A gestão está focada em gerar liquidez por meio da venda de ativos e nova emissão de cotas, sem descartar a possibilidade de alavancagem. [página 11]\n\n- **Obrigações à Prazo**: O Fundo possui obrigações referentes a aquisições prévias no valor total de R$ 1,073 bilhão, incluindo parcelas do Shopping Paralela FII e do BH Shopping. [página 10]\n\n- **Cenário Macroeconômico**: O cenário macroeconômico apresentou melhora marginal em junho, principalmente devido à queda no preço do petróleo que reduziu parte da pressão inflacionária observada anteriormente. No entanto, incertezas relacionadas à inflação e política monetária americana continuam relevantes. [página 4]\n\n- **Volume de Negociação**: O volume médio diário de negociação das cotas na B3 foi de R$ 8,5 milhões, representando um giro equivalente a 6% das cotas do Fundo. [página 9]\n\n**O que observar em seguida:**\n1. Desempenho futuro da inadimplência e descontos.\n2. Progresso nas estratégias de gerenciamento de caixa e alavancagem."
+  },
+  "fatos": {
+    "ids": [
+      1227676
+    ],
+    "datas": [
+      "25/06/2026"
+    ],
+    "texto": "**Data:** 25/06/2026  \n**O que aconteceu:** Vinci Shopping Centers FII contratou um segundo formador de mercado para fomentar a liquidez de suas cotas na B3.  \n**Resumo:** A VINCI REAL ESTATE GESTORA DE RECURSOS LTDA., gestora do VISC11, e a BRL TRUST DISTRIBUIDORA, administradora do fundo, informaram que o Fundo contratou a SUNO DESENVOLVIMENTO LTDA. para exercer essa função na bolsa de valores.  \n**Trecho-chave:** \"O Fundo contratou a SUNO DESENVOLVIMENTO LTDA, inscrita no CNPJ sob o nº 42.390.456/0001-55, para exercer a função de segundo formador de mercado do fundo, no âmbito da B3 S.A. – Brasil, Bolsa, Balcão (“B3”), com a finalidade de fomentar a liquidez de suas cotas.\" (p. 1)  \n\n**Conexões:** Esta medida visa potencialmente melhorar a liquidez das cotas do fundo, o que pode ser relevante considerando os indicadores recentes do patrimônio líquido e valorização da cota que apresentaram quedas nos últimos 12 meses."
+  }
+}

@@ -686,6 +686,17 @@ def _texto_ia_para_html(texto: str) -> str:
 
 
 def _secao_ia(leitura: dict | None, agora: datetime) -> str:
+    if leitura and leitura.get("sem_relatorio"):
+        verificado = leitura.get("verificado_em", "")[:10]
+        return f"""
+  <h2>🤖 Leitura por IA{_ajuda("Leitura por IA")}</h2>
+  <div class="grafico">
+  <div class="nota" style="font-size:13px">Este fundo <b>não publicou relatório gerencial</b> no FNET
+  (é um documento opcional — muitos fundos divulgam apenas os informes obrigatórios da CVM,
+  que já alimentam os indicadores e alertas desta página). Sem relatório, não há o que a IA ler.
+  Verificado em {_e(verificado)}; a checagem se repete a cada rodada de leituras.</div>
+  </div>
+"""
     if not leitura or not leitura.get("relatorio", {}).get("texto"):
         return ""
     relatorio = leitura["relatorio"]

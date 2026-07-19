@@ -1,0 +1,23 @@
+{
+  "ticker": "HGLG11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-18T22:49:40",
+  "relatorio": {
+    "id": 1246174,
+    "data_entrega": "13/07/2026 19:34",
+    "texto": "1. **Movimentações de locatários:** No mês de junho, houve entradas e saídas de locatários em vários ativos do fundo: entrada da Fuleda no ativo Guarulhos, entrada da Shinedux no Syslog Galeão, entrada da Shopee no CLE, e saída da TLS do CLE. A vacância física reduziu para 3,1% e é projetada em 3,3% para julho/2026, com a saída prevista da Cargill elevando a vacância para 4,0%. (p. 4)\n\n2. **Conclusão de obra:** A obra do ativo HGLG Simões Filho G100 foi concluída, com o galpão em plena operação e todas as licenças emitidas. (p. 5)\n\n3. **Assinatura contrato BTS:** Concluiu-se a assinatura do contrato BTS (Build to Suit) com o Mercado Livre para o ativo HGLG Itupeva G400, que ocupará toda a área de ABL (52.200 m²), com um aluguel de R$ 37,05/m² e um Yield on Cost estimado de aproximadamente 11,8% após a conclusão da obra. (p. 5)\n\n4. **Alavancagem financeira:** O Fundo encerrou junho com uma alavancagem financeira de 8,7%, que sobe para 10,3% se considerar a dívida contraída via SPE. A gestão projeta reduzir essa alavancagem para 8,4% do patrimônio líquido ao final de 2026 e continuar reduzindo nos anos seguintes. (p. 9)\n\n5. **Evolução da obra G200:** O avanço físico da obra no mês de junho ficou em 5,1% enquanto o avanço financeiro se encontra em 26,8%. As chuvas na região têm atrasado as frentes de terraplenagem e fundações. (p. 20)\n\n6. **Estratégia comercial:** O Fundo mantém um portfólio resiliente com poucas áreas vazias e demandas frequentes. Em Guarulhos, há tratativas avançadas para ocupar o módulo disponível. A gestão continua focada em analisar novos projetos de desenvolvimento e aquisição, além de negociações de desinvestimentos potenciais. (p. 19)\n\n7. **Emissão futura:** O Fundo aguarda um parecer da CVM sobre a não concessão do direito de reembolso em caso de reorganização societária para os fundos envolvidos na transação, com expectativa de que o processo seja iniciado no 2S26. (p. 6)\n\n**O que observar em seguida:**\n1. Evolução da obra do ativo HGLG Simões Filho G200.\n2. Movimentações futuras de locatários, especialmente a saída prevista da Cargill no ativo Goiânia."
+  },
+  "fatos": {
+    "ids": [
+      1224302,
+      1182193,
+      1179548
+    ],
+    "datas": [
+      "18/06/2026",
+      "07/05/2026",
+      "04/05/2026"
+    ],
+    "texto": "### 18/06/2026\n**O que aconteceu:** O Fundo HGLG11 comunicou a realização de um rebalanceamento periódico em sua carteira de índice internacional.\n\n**Resumo:** Este processo ocorreu em 19 de junho de 2026 e pode resultar em ajustes na composição da carteira, conforme metodologia do índice. O último rebalanceamento foi realizado em 20 de março de 2026.\n> \"Em 19 de junho de 2026, haverá rebalanceamento de carteira de índice internacional, com possível ajuste de composição da carteira, da qual o Fundo é parte.\"\n\n### 07/05/2026\n**O que aconteceu:** O Fundo HGLG11 adquiriu participação remanescente em galpões e áreas adicionais no empreendimento logístico localizado na Rodovia BA-093, Simões Filho.\n\n**Resumo:** A aquisição incluiu 10% da participação nos galpões G100 e G200 (em desenvolvimento) por R$79.221.455,32, além de áreas para desaceleração e compensação ambiental sem custo específico.\n> \"Em 07 de maio de 2026, o Fundo celebrou Instrumento Particular de Transação (“Transação”) em conjunto com sua investida, Simões Filho SPE, e CONSUL ENGENHARIA LTDA.\"\n\n### 04/05/2026\n**O que aconteceu:** O Fundo HGLG11 concluiu a aquisição de imóveis detidos pelo PATL11 por um valor total de R$354.900.000,00.\n\n**Resumo:** A transação incluiu quatro propriedades em Jundiaí (SP), Ribeirão das Neves (MG) e Itatiaia (RJ). O preço final foi ajustado devido a reparos necessários no imóvel Jundiaí 2.\n> \"Em continuidade ao divulgado por meio do Fato Relevante de 30 de dezembro de 2025 e conforme aprovado na Assembleia Geral Extraordinária de Cotistas do Fundo, apurada em 30 de dezembro de 2025, foi lavrada, na presente data, a Escritura Pública de Venda e Compra (“Escritura”), por meio do qual o Fundo concluiu a aquisição da totalidade dos imóveis detidos pelo Pátria Logística Fundo de Investimento Imobiliário – Responsabilidade Limitada.\""
+  }
+}

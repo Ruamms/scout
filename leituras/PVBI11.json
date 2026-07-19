@@ -1,0 +1,15 @@
+{
+  "ticker": "PVBI11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T01:57:44",
+  "relatorio": {
+    "id": 1225100,
+    "data_entrega": "19/06/2026 20:11",
+    "texto": "1. **Mudanças na carteira**: Em maio, o Fundo registrou a entrada de dois novos locatários (Aguassanta e CSL) no ativo VOC, reduzindo a vacância física de 18,5% para 17,1%. [página 4]\n2. **Vacância comentada**: A vacância física do Fundo foi de 17,1%, enquanto a financeira era de 18,9%. Projeções indicam que a vacância pode aumentar para 24,9% em julho/26. [página 4]\n3. **Obras e reformas**: O Fundo aprovou um processo de retrofit no The One, focado na modernização do edifício e potencialização da atratividade, incluindo áreas de lobby e halls dos elevadores. As obras começaram em junho. [página 4]\n4. **Alavancagem**: Em 31/05, o Fundo não possuía alavancagem, obrigação por aquisição de imóveis ou endividamento financeiro. [página 5]\n5. **Reajustes e revisões**: Foram realizados reajustes em 25.092 m² do portfólio do Fundo, adicionando R$ 0,02/cota à receita recorrente. [página 5]\n6. **Eventos societários**: O relatório não menciona eventos societários relevantes para o período analisado.\n7. **Riscos citados pela gestão**: A gestão destaca a alta vacância física (24,49%) como um risco significativo. [página 1]\n8. **Indicadores financeiros**: O rendimento anunciado foi de R$ 0,40/cota em maio, com expectativa de manutenção até o final do semestre. [página 4]\n\n**O que observar em seguida:**\n- A evolução da vacância física e financeira nos próximos trimestres.\n- Progresso nas obras de retrofit no The One e novas locações previstas para os ativos mencionados."
+  },
+  "fatos": {
+    "ids": [],
+    "datas": [],
+    "texto": null
+  }
+}
