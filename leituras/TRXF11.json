@@ -1,23 +1,58 @@
 {
   "ticker": "TRXF11",
   "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-18T23:56:25",
+  "gerada_em": "2026-07-19T06:41:05",
   "relatorio": {
     "id": 1239614,
     "data_entrega": "03/07/2026 18:52",
     "texto": "1. **Aquisições de imóveis:** O TRXF11 celebrou CCVs para aquisição do edifício Dynamic Faria Lima, localizado em São Paulo/SP (página 6), e do Hotel Emiliano, na praia de Copacabana, no Rio de Janeiro/RJ (página 6).\n2. **Aquisições indiretas:** O TRXF11 adquiriu cotas do FII Brio Renda Imobiliária por R$ 135 milhões (página 7), que detém ativos logísticos multilocatários voltados a operações de self-storage.\n3. **Vendas de imóveis:** O TRXF11 alienou nove imóveis locados ao Carrefour, Grupo Mateus e Assaí por R$ 672 milhões (página 9), gerando um lucro estimado de R$ 230 milhões.\n4. **Proposta vinculante para venda:** O Fundo firmou proposta vinculante para alienar 15 imóveis locados à Caixa Econômica Federal e outros por R$ 207,25 milhões (página 7).\n5. **Distribuição extraordinária de dividendos:** Foi anunciada distribuição extraordinária de R$ 1,50 por cota com DY mensal de 1,63% ou anualizado de 19,60%, a ser pago em 14/07/2026 (página 7).\n6. **Vacância:** A vacância física do TRXF11 é de 0,67% e financeira de 0,42% (página 5).\n7. **Estrutura financeira:** O guidance de distribuição segue entre R$ 0,90 e R$ 0,93 por cota até dezembro de 2026 (página 7).\n8. **Liquidez:** A liquidez média diária do TRXF11 é de R$ 22,27 milhões (página 5).\n\n**O que observar em seguida:**\n- Progresso das negociações para a alienação dos 15 imóveis locados à Caixa Econômica Federal e outros.\n- Realização da distribuição extraordinária de R$ 1,50 por cota."
   },
-  "fatos": {
+  "comunicados": {
     "ids": [
       1236651,
       1227439,
-      1224386
+      1224386,
+      1216564,
+      1200284,
+      1211438,
+      1168322
     ],
     "datas": [
       "01/07/2026",
       "24/06/2026",
-      "18/06/2026"
+      "18/06/2026",
+      "10/06/2026",
+      "20/05/2026",
+      "02/06/2026",
+      "23/04/2026"
     ],
-    "texto": "### 01/07/2026\n**O que aconteceu:** TRXF11 concluiu a compra e venda de ações para aquisição indireta do Hotel Emiliano Rio de Janeiro.\n\n**Resumo:** O Fundo adquiriu as ações da FORTE MAR EMPREENDIMENTOS E PARTICIPAÇÕES S.A., proprietária do imóvel onde está inserido o Hotel Emiliano, por R$ 260 milhões. A operação incluiu a celebração de um contrato de locação de longo prazo com o hotel.\n\n**Trecho-chave:** \"Em continuidade ao Fato Relevante divulgado em 24 de junho de 2026, o Fundo concluiu, nesta data, a aquisição da totalidade das ações de emissão da FORTE MAR EMPREENDIMENTOS E PARTICIPAÇÕES S.A. (\"Companhia\"), sociedade proprietária do imóvel no qual está inserido o empreendimento hoteleiro conhecido como Hotel Emiliano Rio de Janeiro, localizado na Avenida Atlântica nº 3.804, Copacabana, Rio de Janeiro/RJ (“Imóvel” e “Hotel Emiliano”), nos termos do Contrato de Compra e Venda de Ações e Outras Avenças (\"CVC\") celebrado anteriormente (\"Transação\").\"\n\n---\n\n### 24/06/2026\n**O que aconteceu:** TRXF11 celebrou contrato de compra e venda de ações para aquisição indireta do Hotel Emiliano Rio de Janeiro.\n\n**Resumo:** O Fundo assinou um contrato com FORTE MAR EMPREENDIMENTOS E PARTICIPAÇÕES S.A. para adquirir as ações da empresa, proprietária do imóvel onde está inserido o Hotel Emiliano, por R$ 260 milhões. A operação incluiu a celebração de um contrato de locação de longo prazo com o hotel.\n\n**Trecho-chave:** \"O Fundo celebrou, nesta data, o Contrato de Compra e Venda de Ações e Outras Avenças (“CVC”), tendo por objeto a aquisição da totalidade das ações de emissão da FORTE MAR EMPREENDIMENTOS E PARTICIPAÇÕES S.A. (“Companhia”), sociedade proprietária do imóvel no qual está inserido o empreendimento hoteleiro conhecido como Hotel Emiliano Rio de Janeiro, localizado na Avenida Atlântica nº 3.804, Copacabana, Rio de Janeiro/RJ (“Imóvel” e “Hotel Emiliano”) (“Transação”).\"\n\n---\n\n### 18/06/2026\n**O que aconteceu:** TRXF11 celebrou contrato de locação na modalidade \"built to suit\" para aquisição, desenvolvimento, construção e locação de imóvel à empresa de \"e-commerce\".\n\n**Resumo:** O Fundo assinou um contrato com uma das maiores empresas de e-commerce do Brasil para a aquisição, desenvolvimento, construção e locação de um centro de distribuição logística em Osório/RS. A operação incluiu o compromisso de investimento de R$ 15,4 milhões.\n\n**Trecho-chave:** \"O Fundo celebrou , nesta data, o “Contrato de Locação por Encomenda” (“Contrato de Locação”) com uma das maiores empresas de  “e-commerce” atuante no Brasil (“Locatária”), a qual, inclusive, já é locatária do Fundo, tendo por objeto a aquisição, desenvolvimento, construção e locação de um imóvel localizado na cidade de Osório, Estado do Rio Grande do Sul (“Imóvel”), na modalidade “built to suit”.\"\n\n---\n\n**Conexões com indicadores:** O fundo TRXF11 continua expandindo seu portfólio através da aquisição de ativos imobiliários em regiões estratégicas e operados por empresas líderes, alinhado à sua estratégia de investimento."
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 01/07/2026\n\n**O que aconteceu:**  \nTRXF11 concluiu a compra e venda de ações para aquisição indireta do Hotel Emiliano Rio de Janeiro.\n\n**Resumo:**\nA transação foi finalizada com o pagamento da primeira parcela no valor de R$ 114.720.223,05 e a celebração de um contrato de locação de longo prazo para garantir a continuidade da operação hoteleira sob a marca \"Emiliano\". O valor total da transação é de R$ 260 milhões.\n\n**Trecho-chave:**\n\"O Fundo concluiu, nesta data, a aquisição da totalidade das ações de emissão da FORTE MAR EMPREENDIMENTOS E PARTICIPAÇÕES S.A., sociedade proprietária do imóvel no qual está inserido o empreendimento hoteleiro conhecido como Hotel Emiliano Rio de Janeiro.\" (p. 1)\n\n---\n\n### 24/06/2026\n\n**O que aconteceu:**  \nTRXF11 celebrou contrato de compra e venda de ações para aquisição indireta do Hotel Emiliano Rio de Janeiro.\n\n**Resumo:**\nA transação foi estruturada com o pagamento total de R$ 260 milhões, dividido em três parcelas. A expectativa é que a conclusão da transação ocorra até 30 de junho de 2026.\n\n**Trecho-chave:**\n\"O Fundo celebrou, nesta data, o Contrato de Compra e Venda de Ações e Outras Avenças (“CVC”), tendo por objeto a aquisição da totalidade das ações de emissão da FORTE MAR EMPREENDIMENTOS E PARTICIPAÇÕES S.A. (\"Companhia\"), sociedade proprietária do imóvel no qual está inserido o empreendimento hoteleiro conhecido como Hotel Emiliano Rio de Janeiro.\" (p. 1)\n\n---\n\n### 18/06/2026\n\n**O que aconteceu:**  \nTRXF11 celebrou contrato de locação na modalidade \"built to suit\" para aquisição, desenvolvimento, construção e locação de imóvel à empresa de \"e-commerce\".\n\n**Resumo:**\nO Fundo adquiriu um terreno em Osório/RS com o objetivo de construir um centro de distribuição logística \"last-mile\". O contrato prevê um prazo de 120 meses, com penalidade por rescisão antecipada e garantia locatícia.\n\n**Trecho-chave:**\n\"O Fundo celebrou , nesta data, o “Contrato de Locação por Encomenda” (“Contrato de Locação ”) com uma das maiores empresas de  “e-commerce” atuante no Brasil (\"Locatária\"), tendo por objeto a aquisição, desenvolvimento, construção e locação de um imóvel localizado na cidade de Osório, Estado do Rio Grande do Sul (“Imóvel”), na modalidade “built to suit”. \" (p. 1)\n\n---\n\n### 10/06/2026\n\n**O que aconteceu:**  \nTRXF11 celebrou proposta vinculante para a alienação de portfólio de 15 imóveis.\n\n**Resumo:**\nA transação envolveu a venda de 15 imóveis detidos pelo Fundo, com múltiplos locatários, por um valor total de R$ 207.252.400,00 em cotas da BRC Renda Urbana FII. A expectativa é que o lucro estimado seja de aproximadamente R$ 0,51 por cota do Fundo.\n\n**Trecho-chave:**\n\"O Fundo celebrou, nesta data, uma “Proposta Vinculante de Aquisição de Portfólio Imobiliário Mediante Dação em Pagamento de Cotas” (“Proposta”) com o BRC RENDA URBANA — FUNDO DE INVESTIMENTO IMOBILIÁRIO (“BRC”) tendo por objeto a definição dos principais termos e condições comerciais acordados para a venda de 15 (quinze) imóveis.\" (p. 1)\n\n---\n\n### 20/05/2026\n\n**O que aconteceu:**  \nTRXF11 celebrou memorando de entendimentos para a venda do domínio pleno dos imóveis localizados em Goiânia.\n\n**Resumo:**\nA transação envolveu dois imóveis locados à Companhia Brasileira de Distribuição (Pão de Açúcar) com prazo até julho de 2035. O valor total da venda é de aproximadamente R$ 74 milhões, a ser pago em parcelas.\n\n**Trecho-chave:**\n\"A Administradora e a Gestora comunicam ainda que, uma vez confirmada a viabilidade da aquisição dos Imóveis pelo interessado, serão formalizados os instrumentos jurídicos pertinentes, que regrarão os termos e condições aos quais se sujeitarão a conclusão definitiva da venda e compra do s Imóveis.\" (p. 2)\n\n---\n\n### 02/06/2026\n\n**O que aconteceu:**  \nTRXF11 realizou assembleia geral ordinária por meio de consulta formal para aprovar as demonstrações financeiras referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:**\nA assembleia foi realizada com a participação de cotistas representando aproximadamente 1,71% das cotas emitidas do Fundo. As demonstrações financeiras foram aprovadas sem quaisquer ressalvas pelos cotistas desimpedidos e aptos a deliberar.\n\n**Trecho-chave:**\n\"A Administradora informa que as Demonstrações Financeiras objeto desta Consulta Formal foi aprovada, sem quaisquer ressalvas, pelos cotistas desimpedidos e aptos a deliberar.\" (p. 1)\n\n---\n\n### 23/04/2026\n\n**O que aconteceu:**  \nTRXF11 convocou assembleia geral ordinária por meio de consulta formal para aprovar as demonstrações financeiras referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:**\nA assembleia foi convocada para deliberar sobre a aprovação das Demonstrações Financeiras do Fundo, que serão votadas pelos cotistas inscritos no registro de cotistas na data da convocação. A consulta formal ocorrerá até 24 de maio de 2026.\n\n**Trecho-chave:**\n\"A Administradora vem, por meio desta, convocar V.Sas. a participar da Assembleia Geral Ordinária do Fundo (“AGO”), a ser realizada de forma não presencial, por meio de consulta formal.\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": 91.43
+  },
+  "parecer": {
+    "id": 1240493,
+    "data_entrega": "06/07/2026 17:17",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
   }
 }

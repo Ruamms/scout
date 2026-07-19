@@ -139,7 +139,7 @@ def carregar_registro(con: sqlite3.Connection, conteudo: bytes, hoje: date | Non
             (linha.get("Tipo_Pessoa_Gestor") or "").strip() or None,
         )
         for linha in linhas
-        if (linha.get("Tipo_Fundo") or "").strip().upper() == "FII"
+        if (linha.get("Tipo_Fundo") or "").strip().upper() in ("FII", "FIIM")
         and armazenamento.so_digitos(linha.get("CNPJ_Fundo"))
     ]
     return armazenamento.gravar_cadastro(con, registros, hoje.isoformat())

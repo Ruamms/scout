@@ -115,6 +115,68 @@ def test_extrair_carteiras_e_verificador():
     assert "captação" in especiais[0]["motivo"] or "captação" in especiais[1]["motivo"]
 
 
+def _semear_etf(con):
+    from scout import armazenamento
+
+    con.execute(
+        "INSERT INTO etfs (cnpj, ticker, radical, id_fnet, tipo_b3, denominacao) "
+        "VALUES ('10406511000161', 'BOVA11', 'BOVA', 1, 'ETF', 'ISHARES IBOVESPA FUNDO DE ÍNDICE')"
+    )
+    candles = [(f"2025-{m:02d}", 100.0 + m, 100.0 + m) for m in range(1, 13)]
+    candles += [("2026-01", 169.12, 169.12)]
+    armazenamento.gravar_cotacoes(con, "BOVA11", candles, 169.12, "2026-06-30", "2026-07-19T07:00:00")
+    con.execute("INSERT INTO etf_carteira VALUES ('10406511000161', '2026-06', 'Ações', 93.0)")
+    con.execute("INSERT INTO etf_carteira VALUES ('10406511000161', '2026-06', 'Renda Fixa', 7.0)")
+    con.execute("INSERT INTO etf_pl VALUES ('10406511000161', '2026-06', 1500000000)")
+    con.commit()
+
+
+def test_pagina_etf_com_carteirinha_de_regras(con):
+    from datetime import datetime
+
+    from scout.relatorio import etf_html
+
+    _semear_etf(con)
+    classificacoes = {
+        "10406511000161": {"classificacao_scout": "Ações Brasil", "observacoes": "", "gestor": "BLACKROCK"}
+    }
+    dados = etf_html.montar_dados_etf(con, "bova11", classificacoes)
+    assert dados is not None
+    assert dados["classe"] == "Ações Brasil"
+    pagina = etf_html.gerar(dados, agora=datetime(2026, 7, 19, 7, 0))
+    assert "BOVA11" in pagina
+    # carteirinha de regras do tipo: a pegadinha da isenção está lá
+    assert "SEM a isenção de R$ 20 mil/mês" in pagina
+    assert "REINVESTIDOS dentro do fundo" in pagina
+    # cards e composição
+    assert "R$ 169,12" in pagina
+    assert "R$ 1,5B" in pagina
+    assert "93,00%" in pagina
+    assert "fechamento oficial" in pagina
+    # não é recomendação, nunca
+    assert "não é recomendação" in pagina
+
+    # ticker que não é ETF -> None
+    assert etf_html.montar_dados_etf(con, "HGLG11", classificacoes) is None
+
+
+def test_site_publica_etfs(con, tmp_path):
+    from scout.relatorio import site
+
+    from conftest import montar_zip_universo
+    from scout.coleta import cvm
+
+    cvm.carregar_zip(con, montar_zip_universo(), "inf_mensal_fii_2026.zip")
+    _semear_etf(con)
+    site.gerar(con, tmp_path / "site", com_cotacoes=False)
+    assert (tmp_path / "site" / "BOVA11.html").exists()
+    listagem = (tmp_path / "site" / "etfs.html").read_text(encoding="utf-8")
+    assert 'href="BOVA11.html"' in listagem
+    assert "function filtraClasse" in listagem
+    indice = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+    assert 'href="etfs.html"' in indice
+
+
 def test_cotahist_codbdi_14_entra_como_etf(con):
     from tests.test_cotacoes import _linha_cotahist, _zip_cotahist
 

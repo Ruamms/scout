@@ -1,23 +1,59 @@
 {
   "ticker": "XPML11",
   "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-18T23:37:56",
+  "gerada_em": "2026-07-19T06:15:36",
   "relatorio": {
     "id": 1241526,
     "data_entrega": "07/07/2026 19:08",
     "texto": "1. **Distribuição de Rendimentos**: O fundo divulgou distribuição de rendimentos no valor de R$ 0,92 por cota em 18/06/2026, com pagamento em 25/06/26 para os detentores de cotas em 18/06/26. [página 3]\n\n2. **Vacância e Inadimplência**: O fundo não forneceu detalhes específicos sobre vacância e inadimplência no relatório, mas mencionou que esses indicadores foram consistentes com o desempenho observado anteriormente. [página 8]\n\n3. **Obrigações Financeiras**: O XP Malls FII tem compromissos financeiros futuros relacionados a transações realizadas para adquirir ativos de qualidade, incluindo parcelas de CRI (Certificados de Recebíveis Imobiliários) que devem ser pagas nos próximos anos. [página 5]\n\n4. **Carteira de Ativos**: A carteira do fundo é composta por 26 shopping centers com uma Área Bruta Locável (ABL) totalizando aproximadamente 1,140 mil m² e mais de 5.200 lojas. [página 9]\n\n5. **Indicadores Operacionais**: O fundo apresentou indicadores operacionais consistentes em maio/26, com vendas/m² anualizadas atingindo R$ 1.757/m² e NOI Caixa/m² mensal permanecendo em R$ 130/m². [página 8]\n\n6. **Eventos Societários**: O fundo realizou o pagamento de uma amortização extraordinária de aproximadamente R$ 88 milhões nos CRIs das séries 469ª e 470ª da True Securitizadora S.A. em janeiro/24. [página 7]\n\n7. **Diversificação Regional**: A carteira do fundo é diversificada geograficamente, com maior presença no sudeste (72% de ABL), seguido pelo nordeste (16%), sul (9%) e norte (3%). [página 9]\n\n8. **Transações Recentes**: O fundo realizou várias aquisições recentes em shopping centers, incluindo participações no Shopping Cidade São Paulo, Grand Plaza Shopping, Tietê Plaza Shopping, entre outros. [página 10-13]\n\n**O que observar em seguida:**\n1. **Novas transações**: Monitorar quaisquer novas aquisições ou alienações de ativos.\n2. **Indicadores operacionais detalhados**: Verificar se há atualizações sobre vacância e inadimplência nos próximos relatórios."
   },
-  "fatos": {
+  "comunicados": {
     "ids": [
       1179371,
       1137563,
-      1117697
+      1117697,
+      1170636,
+      1117698,
+      1057915,
+      1057907
     ],
     "datas": [
       "04/05/2026",
       "13/03/2026",
-      "18/02/2026"
+      "18/02/2026",
+      "27/04/2026",
+      "18/02/2026",
+      "10/12/2025",
+      "10/12/2025"
     ],
-    "texto": "### 04/05/2026\n**O que aconteceu:** XP Malls vendeu participação em Shops Jardins para FII JCCJ11.\n\n**Resumo:** O fundo concluiu a alienação total de suas ações da SPE Cidade Jardim Shops S.A., correspondendo a 30% do Shops Jardins, por R$20.000.018,36. A transação permitiu consolidar a estrutura do portfólio e reduzir a exposição a ativos não core da estratégia do fundo.\n\n**Trecho-chave:** \"O Fundo concluiu, na presente data, a alienação total das suas ações da SPE Cidade Jardim Shops S.A. que correspondem a 30,00% (trinta por cento) de participação no Shops Jardins para o fundo de investimento JHSF CAPITAL MALLS - FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA.\" (p. 1)\n\n---\n\n### 13/03/2026\n**O que aconteceu:** XP Malls adquiriu participações em cinco ativos administrados pela Iguatemi.\n\n**Resumo:** O fundo concluiu a aquisição de participações em cinco ativos da Iguatemi, incluindo o Shopping Pátio Higienópolis e outros shopping centers localizados no interior de São Paulo e Rio Grande do Sul. A transação totalizou R$608.670.605,05.\n\n**Trecho-chave:** \"O XP Malls adquiriu dos Vendedores as participações descritas abaixo: (i) 9,00% do Shopping Pátio Higienópolis; (ii) 9,00% do Iguatemi Alphaville; (iii) 23,96% do Iguatemi Ribeirão Preto; (iv) 18,00% do Iguatemi São José do Rio Preto; e (v) 7,00% do Shopping Praia de Belas.\" (p. 1)\n\n---\n\n### 18/02/2026\n**O que aconteceu:** XP Malls realizou a 14ª emissão de cotas.\n\n**Resumo:** O fundo emitiu 3.698.225 novas cotas no valor unitário de R$108,16 cada, totalizando R$400 milhões e dezesseis reais sem considerar a taxa de distribuição primária. A emissão foi destinada exclusivamente a investidores profissionais.\n\n**Trecho-chave:** \"O Administrador informou aos Cotistas e ao mercado em geral que, em 26 de janeiro de 2026, foi iniciado o prazo de 14 (quatorze) Dias Úteis para exercício do Direito de Preferência pelos Cotistas.\" (p. 2)\n\n---\n\n**Conexão com indicadores:** A emissão de novas cotas pode explicar a estabilidade no número de cotas e na cotação, enquanto o aumento da base patrimonial reflete os investimentos recentes em ativos imobiliários."
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 04/05/2026\n\n**O que aconteceu:** XP Malls concluiu a alienação total das suas ações da SPE Cidade Jardim Shops para o fundo de investimento JHSF Capital Malls.\n\n**Resumo:** A transação envolveu uma parcela de R$ 20.000.018,36 paga na presente data por meio da compensação de créditos entre o saldo a receber do XP Malls e a pagar do Comprador, mediante subscrição de cotas pelo Fundo na 3ª emissão do FII JCCJ11.\n\n**Trecho-chave:**\n\"O valor total da transação é de R$ 20.000.018,36 (vinte milhões, dezoito reais e trinta e seis centavos), sendo a estrutura de pagamento detalhada abaixo:\" (p. 1)\n\n### 13/03/2026\n\n**O que aconteceu:** XP Malls concluiu a aquisição de participações em cinco ativos administrados pela Iguatemi.\n\n**Resumo:** O valor total da transação é de R$ 608.670.605,05 e envolve participação no Shopping Pátio Higienópolis (9%), Iguatemi Alphaville (9%), Iguatemi Ribeirão Preto (23,96%), Iguatemi São José do Rio Preto (18%) e Shopping Praia de Belas (7%).\n\n**Trecho-chave:**\n\"O valor total da Transação é de R$ 608.670.605,05 (seiscentos e oito milhões, seiscentos e setenta mil, seiscentos e cinco reais e cinco centavos), sendo a estrutura de pagamento detalhada abaixo:\" (p. 1)\n\n### 27/04/2026\n\n**O que aconteceu:** XP Malls divulgou os dados para participação na apresentação trimestral de resultados do 1º trimestre de 2026.\n\n**Resumo:** A apresentação será realizada em 25 de maio às 17h (horário de Brasília) e o link de acesso estará disponível no site da XP Malls.\n\n**Trecho-chave:**\n\"Segunda-feira, 25 de maio de 2026 Às 17h00 (horário de Brasília)\" (p. 1)\n\n### 18/02/2026\n\n**O que aconteceu:** XP Malls encerrou o período de exercício do direito de preferência para a oferta pública de distribuição de cotas da 14ª emissão.\n\n**Resumo:** Foram subscritas e integralizadas por cotistas, no âmbito do Direito de Preferência, 468.636 novas cotas, equivalentes a R$ 51.025.087,68.\n\n**Trecho-chave:**\n\"De acordo com as informações recebidas da B3 e do BTG PACTUAL SERVIÇOS FINANCEIROS S.A., até o momento foram subscritas e integralizadas por Cotistas, no âmbito do Direito de Preferência, 468.636 (quatrocentas e sessenta e oito mil, seiscentas e trinta e seis) Novas Cotas, equivalentes a R$ 51.025.087,68 (cinquenta e um milhões, vinte e cinco mil, oitenta e sete reais e sessenta e oito centavos), considerando a Taxa de Distribuição Primária.\" (p. 2)\n\n### 10/12/2025\n\n**O que aconteceu:** XP Malls realizou assembleia geral ordinária para aprovar as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 30.06.2025.\n\n**Resumo:** A assembleia foi realizada de forma não presencial, com quórum representando 4% das cotas emitidas pelo Fundo.\n\n**Trecho-chave:**\n\"Os cotistas aprovaram, sem quaisquer restrições ou ressalvas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 30.06.2025,\" (p. 1)\n\n---\n\n**Conexão com indicadores:** A venda do Shops Jardins para o fundo de investimento JHSF Capital Malls pode ser uma estratégia para otimizar a alocação de capital e concentrar-se em ativos mais relevantes, alinhando-se à tendência de redução da exposição a ativos não core da estratégia do Fundo."
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 106.87
+  },
+  "parecer": {
+    "id": 1017678,
+    "data_entrega": "20/10/2025 21:26",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
   }
 }

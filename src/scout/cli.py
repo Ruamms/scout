@@ -108,6 +108,32 @@ def _executar_entrada(entrada: str) -> bool:
     return True
 
 
+def _exibir_etf(con, ticker: str, html: bool) -> bool:
+    """Ticker de ETF: gera a página própria (raio-x de ETF) e abre no navegador."""
+    from . import armazenamento
+    from .relatorio import etf_html
+
+    dados = etf_html.montar_dados_etf(con, ticker)
+    if dados is None:
+        return False
+    destino = armazenamento.diretorio_dados() / "relatorios"
+    destino.mkdir(parents=True, exist_ok=True)
+    caminho = destino / f"{dados['etf']['ticker']}.html"
+    caminho.write_text(etf_html.gerar(dados), encoding="utf-8")
+    classe = dados["classe"] or "ETF"
+    console.print(
+        f"[bold]{dados['etf']['ticker']}[/] é um ETF ([green]{classe}[/]) — "
+        f"página própria gerada em [dim]{caminho}[/]"
+    )
+    if html:
+        import webbrowser
+
+        webbrowser.open(caminho.as_uri())
+    else:
+        console.print(f"  [dim]abra com: scout analisar {dados['etf']['ticker']} --html[/]")
+    return True
+
+
 def _exibir_raio_x(ticker: str, html: bool = False, interativo: bool = False) -> bool:
     from . import analise, armazenamento
     from .relatorio.terminal import renderizar
@@ -122,6 +148,8 @@ def _exibir_raio_x(ticker: str, html: bool = False, interativo: bool = False) ->
         aviso_indices = indices.garantir_atualizados(con)
         completo = analise.montar_completo(con, ticker)
         if completo is None:
+            if _exibir_etf(con, ticker, html):
+                return True
             console.print(
                 f"[red]Ticker '{ticker.strip().upper()}' não encontrado nos informes da CVM.[/] "
                 "[dim]Confira o código ou rode 'scout atualizar' para renovar a base.[/]"

@@ -165,7 +165,9 @@ def test_migracao_adiciona_colunas_e_forca_recarga(tmp_path):
     con = armazenamento.conectar(tmp_path)
     colunas = {linha[1] for linha in con.execute("PRAGMA table_info(informes_gerais)")}
     assert "administrador" in colunas and "cnpj_administrador" in colunas
-    cargas = [linha[0] for linha in con.execute("SELECT arquivo FROM cargas")]
-    # mensais precisam recarregar (para preencher o administrador); trimestral fica
-    assert cargas == ["inf_trimestral_fii_2020.zip"]
+    cargas = {linha[0] for linha in con.execute("SELECT arquivo FROM cargas")}
+    # mensais precisam recarregar (para preencher o administrador); trimestral fica;
+    # o marcador COTAHIST_V2_ETFS é criado pela migração das cotações
+    assert "inf_trimestral_fii_2020.zip" in cargas
+    assert not any(arquivo.startswith("inf_mensal") for arquivo in cargas)
     con.close()

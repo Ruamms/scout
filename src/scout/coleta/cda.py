@@ -109,9 +109,21 @@ def extrair_carteiras(conteudo: bytes, cnpjs: set[str]) -> tuple[dict, dict, str
 
 
 def carregar_classificacoes(raiz: Path | None = None) -> dict[str, dict]:
-    """dados/classificacao_etfs.csv -> {cnpj: {ticker, classificacao_scout, ...}}."""
-    caminho = (raiz or Path(".")) / "dados" / "classificacao_etfs.csv"
-    if not caminho.exists():
+    """dados/classificacao_etfs.csv -> {cnpj: {ticker, classificacao_scout, ...}}.
+
+    Procura no repositório (curadoria editável) e, no executável PyInstaller,
+    nos dados embutidos (sys._MEIPASS)."""
+    import sys
+
+    candidatos = [
+        (raiz or Path(".")) / "dados" / "classificacao_etfs.csv",
+        Path(__file__).resolve().parents[3] / "dados" / "classificacao_etfs.csv",
+    ]
+    meipass = getattr(sys, "_MEIPASS", None)
+    if meipass:
+        candidatos.insert(0, Path(meipass) / "dados" / "classificacao_etfs.csv")
+    caminho = next((c for c in candidatos if c.exists()), None)
+    if caminho is None:
         return {}
     with caminho.open(encoding="utf-8-sig", newline="") as fh:
         return {

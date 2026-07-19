@@ -12,9 +12,10 @@ from collections.abc import Callable
 from datetime import datetime
 from pathlib import Path
 
-from .. import analise, formato, ranking
+from .. import analise, armazenamento, formato, ranking
 from . import apoio
 from . import html as relatorio_html
+from .html import _e
 
 _COR_SELO = relatorio_html._COR_SELO
 _URL_WORKFLOW = "https://github.com/Ruamms/scout/actions/workflows/site.yml"
@@ -88,6 +89,26 @@ def gerar(
         if posicao % 50 == 0:
             progresso(f"páginas: {posicao}/{len(fundos)}")
 
+    # páginas de ETF (classe própria — ver docs/ETFS.md)
+    from ..coleta import cda as coleta_cda
+    from . import etf_html
+
+    classificacoes = coleta_cda.carregar_classificacoes()
+    etfs_publicados = []
+    for etf in armazenamento.etfs_listados(con):
+        dados_etf = etf_html.montar_dados_etf(con, etf["ticker"], classificacoes)
+        if dados_etf is None or not (dados_etf["cotacao"] or dados_etf["pl"]):
+            continue  # sem preço nem carteira: página vazia não ajuda ninguém
+        (destino / f"{etf['ticker']}.html").write_text(
+            etf_html.gerar(dados_etf, agora=agora), encoding="utf-8"
+        )
+        etfs_publicados.append(dados_etf)
+        item("etfs", len(etfs_publicados), len(etfs_publicados))
+    (destino / "etfs.html").write_text(
+        _indice_etfs(etfs_publicados, agora or datetime.now()), encoding="utf-8"
+    )
+    progresso(f"etfs: {len(etfs_publicados)} páginas")
+
     apoio.salvar(destino)
     (destino / "index.html").write_text(
         _indice(publicados, base, agora or datetime.now()), encoding="utf-8"
@@ -95,7 +116,103 @@ def gerar(
     (destino / "comparar.html").write_text(
         _pagina_comparar(publicados), encoding="utf-8"
     )
-    return {"paginas": len(publicados), "destino": str(destino)}
+    return {"paginas": len(publicados), "etfs": len(etfs_publicados), "destino": str(destino)}
+
+
+def _indice_etfs(etfs: list[dict], agora) -> str:
+    """Listagem dos ETFs publicados — filtro por classe + busca simples."""
+    from .. import formato
+
+    classes = sorted({dados["classe"] or "?" for dados in etfs})
+    botoes = "".join(
+        f'<button class="filtro" onclick="filtraClasse(this, \'{_e(classe)}\')">{_e(classe)}</button>'
+        for classe in classes
+    )
+    linhas = []
+    for dados in sorted(etfs, key=lambda d: d["etf"]["ticker"]):
+        etf = dados["etf"]
+        classe = dados["classe"] or "?"
+        preco = f"R$ {formato.decimal(dados['preco_atual'])}" if dados["preco_atual"] else "—"
+        variacao = (
+            formato.percentual(dados["variacao_12m"], sinal=True)
+            if dados["variacao_12m"] is not None
+            else "—"
+        )
+        pl = formato.moeda_compacta(dados["pl"]["pl"]) if dados["pl"] else "—"
+        busca = f"{etf['ticker']} {etf['denominacao'] or ''} {classe}".lower().replace('"', "")
+        linhas.append(
+            f'<tr data-busca="{busca}" data-classe="{_e(classe)}">'
+            f'<td><a href="{etf["ticker"]}.html">{etf["ticker"]}</a></td>'
+            f"<td>{_e((etf['denominacao'] or '')[:48])}</td>"
+            f"<td>{_e(classe)}</td><td>{preco}</td><td>{variacao}</td><td>{pl}</td></tr>"
+        )
+    return f"""<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ETFs — Scout</title>
+{relatorio_html.TAG_FAVICON}
+<style>
+:root {{ color-scheme: dark; }}
+* {{ box-sizing:border-box; margin:0; }}
+body {{ background:#101415; color:#F4F5F6; font-family:system-ui,sans-serif; line-height:1.5; }}
+.pagina {{ max-width:1020px; margin:0 auto; padding:28px 20px 40px; }}
+h1 {{ font-size:24px; margin:8px 0 4px; }}
+.meta {{ color:#8b98a9; font-size:13px; margin-bottom:12px; }}
+a {{ color:#8FCB9B; }}
+input#busca {{ width:100%; background:#182024; color:#F4F5F6; border:1px solid #314045;
+  border-radius:10px; padding:11px 15px; font-size:15px; margin:8px 0 10px; }}
+.filtros {{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }}
+.filtro {{ background:#232D31; color:#8b98a9; border:1px solid #314045; border-radius:99px;
+  padding:4px 14px; font-size:12.5px; cursor:pointer; }}
+.filtro.ativo {{ background:#8FCB9B; color:#101415; border-color:#8FCB9B; font-weight:700; }}
+table {{ width:100%; border-collapse:collapse; font-size:13.5px; }}
+th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em;
+  text-align:left; padding:6px 10px; border-bottom:1px solid #314045; }}
+td {{ padding:7px 10px; border-bottom:1px solid #232D31; }}
+td:nth-child(n+4), th:nth-child(n+4) {{ text-align:right; }}
+tbody tr:hover td {{ background:#182024; }}
+.rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:26px; padding-top:12px; }}
+{relatorio_html.CSS_MARCA}
+</style>
+</head>
+<body>
+<div class="pagina">
+  {relatorio_html.marca_html("index.html")}
+  <h1>ETFs</h1>
+  <div class="meta">{len(etfs)} ETFs com dados oficiais (B3 + CVM) · cada página traz as
+  REGRAS do tipo (distribuição, tributação) que quase ninguém conta ·
+  <a href="index.html">ver FIIs</a> · atualizado em {agora.strftime("%d/%m/%Y %H:%M")}</div>
+  <input id="busca" type="search" placeholder="Busque por ticker, nome ou classe… (ex.: BOVA, cripto, renda fixa)"
+   oninput="filtrar()">
+  <div class="filtros"><button class="filtro ativo" onclick="filtraClasse(this, '')">Todas</button>{botoes}</div>
+  <table id="etfs">
+    <thead><tr><th>ticker</th><th>fundo</th><th>classe</th><th>preço (D-1)</th><th>12 meses</th><th>PL</th></tr></thead>
+    <tbody>{"".join(linhas)}</tbody>
+  </table>
+  <div class="rodape">Não é recomendação de investimento. Fontes: B3 e CVM — critérios públicos:
+  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>
+</div>
+<script>
+let classeAtiva = '';
+function filtrar() {{
+  const termo = document.getElementById('busca').value.trim().toLowerCase();
+  document.querySelectorAll('#etfs tbody tr').forEach(tr => {{
+    const casaTermo = termo === '' || tr.dataset.busca.includes(termo);
+    const casaClasse = classeAtiva === '' || tr.dataset.classe === classeAtiva;
+    tr.hidden = !(casaTermo && casaClasse);
+  }});
+}}
+function filtraClasse(botao, classe) {{
+  classeAtiva = classe;
+  document.querySelectorAll('.filtro').forEach(b => b.classList.toggle('ativo', b === botao));
+  filtrar();
+}}
+</script>
+</body>
+</html>
+"""
 
 
 def _pagina_comparar(fundos: list) -> str:
@@ -299,6 +416,7 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
   fonte de cada um. Informes da CVM, relatório gerencial e cotações, num raio-x por fundo.</div>
   <div class="meta">{len(fundos)} fundos negociáveis analisados com dados públicos oficiais ·
   atualizado em {agora.strftime("%d/%m/%Y %H:%M")} ·
+  <a href="etfs.html">📊 ETFs</a> ·
   <a href="comparar.html">⚖ comparar fundos</a> ·
   <a href="apoie.html">☕ apoie o projeto</a></div>
 

@@ -206,6 +206,18 @@ def _migrar(con: sqlite3.Connection) -> None:
             # recarga dos trimestrais para preencher o acumulado histórico
             con.execute("DELETE FROM cargas WHERE arquivo LIKE 'inf_trimestral%'")
             con.commit()
+    if "cargas" in tabelas:
+        marcador = con.execute(
+            "SELECT 1 FROM cargas WHERE arquivo = 'COTAHIST_V2_ETFS'"
+        ).fetchone()
+        if marcador is None:
+            # COTAHIST v2: os arquivos passaram a incluir ETFs (codbdi 14);
+            # bases que já carregaram só FIIs precisam rebaixar
+            con.execute("DELETE FROM cargas WHERE arquivo LIKE 'COTAHIST_A%' OR arquivo LIKE 'COTAHIST_M%'")
+            con.execute(
+                "INSERT INTO cargas (arquivo, carregado_em) VALUES ('COTAHIST_V2_ETFS', datetime('now'))"
+            )
+            con.commit()
 
 
 def base_vazia(con: sqlite3.Connection) -> bool:
@@ -451,6 +463,42 @@ def imoveis_atuais(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:
         """,
         (cnpj, cnpj),
     ).fetchall()
+
+
+def etf_por_ticker(con: sqlite3.Connection, ticker: str) -> sqlite3.Row | None:
+    return con.execute(
+        "SELECT * FROM etfs WHERE ticker = ?", (ticker.strip().upper(),)
+    ).fetchone()
+
+
+def etfs_listados(con: sqlite3.Connection) -> list[sqlite3.Row]:
+    """Todos os ETFs com código de negociação, para o site."""
+    return con.execute(
+        "SELECT * FROM etfs WHERE ticker IS NOT NULL AND ticker <> '' ORDER BY ticker"
+    ).fetchall()
+
+
+def etf_carteira_atual(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:
+    return con.execute(
+        """
+        SELECT grupo, pct, competencia FROM etf_carteira
+         WHERE cnpj = ?
+           AND competencia = (SELECT MAX(competencia) FROM etf_carteira WHERE cnpj = ?)
+         ORDER BY pct DESC
+        """,
+        (cnpj, cnpj),
+    ).fetchall()
+
+
+def etf_pl_atual(con: sqlite3.Connection, cnpj: str) -> sqlite3.Row | None:
+    return con.execute(
+        """
+        SELECT pl, competencia FROM etf_pl
+         WHERE cnpj = ?
+         ORDER BY competencia DESC LIMIT 1
+        """,
+        (cnpj,),
+    ).fetchone()
 
 
 def setores_atuais(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:

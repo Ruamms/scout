@@ -1,10 +1,30 @@
 {
   "ticker": "PMRV11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-19T03:36:45",
-  "fatos": {
-    "ids": [],
-    "datas": [],
-    "texto": null
+  "verificado_em": "2026-07-19T06:16:50",
+  "comunicados": {
+    "ids": [
+      1237258,
+      1236999
+    ],
+    "datas": [
+      "01/07/2026",
+      "01/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 30/06/2026\n**Assembleia Geral Ordinária aprovou as demonstrações financeiras do exercício social de 2025**\nA assembleia, realizada em 30 de junho de 2026, deliberou e aprovou as demonstrações financeiras referentes ao exercício social encerrado em 31 de dezembro de 2025. \"Após promover as diligências necessárias e realizar o cômputo dos votos, a Administradora apurou que a matéria constante da Ordem do Dia foi aprovada pela totalidade das Cotas Subscritas presentes.\" (p. 1)\n\n### 30/06/2026\n**Consulta Formal realizada para deliberar sobre as demonstrações financeiras de 2025**\nA consulta formal, convocada em 1º de junho e realizada em 30 de junho de 2026, deliberou e aprovou as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025. (p. 1)"
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1208460,
+    "data_entrega": "29/05/2026 20:49",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
   }
 }

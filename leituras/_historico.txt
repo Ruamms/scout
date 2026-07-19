@@ -21,3 +21,13 @@
 2026-07-19 04:41:49	--- lote iniciado · modelo qwen2.5:14b · 1031 fundos na fila
 2026-07-19 04:52:54	KNCR11	lido	666s
 2026-07-19 05:06:49	PBLV11	sem-relatorio-fatos-lidos	834s
+2026-07-19 05:24:37	HGLG11	lido	1068s
+2026-07-19 05:24:40	--- lote interrompido pelo usuário em BTLG11
+2026-07-19 05:24:40	--- lote encerrado · 3 lidos, 0 em dia/sem relatório, 0 erros
+2026-07-19 05:28:49	--- lote iniciado · modelo qwen2.5:14b · 1031 fundos na fila
+2026-07-19 05:33:20	HGLG11	erro	The read operation timed out
+2026-07-19 05:57:13	BTLG11	lido	1434s
+2026-07-19 05:58:28	KNIP11	lido	75s
+2026-07-19 06:15:38	XPML11	lido	1029s
+2026-07-19 06:16:51	PMRV11	sem-relatorio-fatos-lidos	73s
+2026-07-19 06:41:05	TRXF11	lido	1454s

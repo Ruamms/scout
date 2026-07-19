@@ -1,21 +1,48 @@
 {
   "ticker": "BTLG11",
   "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-18T23:06:52",
+  "gerada_em": "2026-07-19T05:57:13",
   "relatorio": {
     "id": 1237771,
     "data_entrega": "01/07/2026 20:50",
     "texto": "1. **Renovação e novos contratos**: O fundo concluiu renovações com ganhos reais de aluguel, como no BTLG Louveira III (+9,2% em aluguéis) e o BTLG Cotia (renovado por mais 5 anos). Além disso, uma nova locação foi fechada no BTLG Cabreúva com um contrato de 10 anos. \"No BTLG Louveira III, a renovação por mais 5 anos foi concluída com ganho real de 9,2% no aluguel\", (página 2).\n\n2. **Redução da vacância**: A vacância do portfólio será reduzida para 2,1%, principalmente devido à nova locação no BTLG Cabreúva que passará a apresentar apenas 6% de área vaga. \"Com essa movimentação, a vacância consolidada do portfólio será reduzida para 2,1%\", (página 2).\n\n3. **Emissão de cotas**: A 16ª emissão do fundo está em andamento e já foi concluída a primeira liquidação, aumentando o patrimônio líquido de R$5,5 bilhões para R$7,1 bilhões. \"A emissão do Fundo segue em andamento, tendo a primeira liquidação já sido concluída e refletida no patrimônio\", (página 2).\n\n4. **Reavaliação Patrimonial**: O fundo está passando pelo processo anual de reavaliação patrimonial, cujos efeitos devem ser refletidos ainda em julho. \"O Fundo está passando pelo processo anual de reavaliação patrimonial, cujos efeitos devem ser refletidos ainda no mês de julho\", (página 2).\n\n5. **Distribuição de dividendos**: Em junho, o fundo distribuiu R$0,81 por cota, representando um dividend yield anualizado de 9,4% com base no preço de fechamento de maio. \"Em Junho de 2026, o Fundo distribuiu R$0,81 por cota\", (página 2).\n\n6. **Alavancagem**: O fundo mantém uma alavancagem baixa com um LTV de 2,1%. \"As obrigações do BTLG possuem perfil de longo prazo e são pouco representativos frente ao patrimônio do Fundo (2,1%)\", (página 8).\n\n7. **Vendas de ativos corporativos**: O fundo recebeu R$560 milhões referente à alienação dos dois imóveis corporativos adquiridos na operação de compra do SARE 11 - Santander Renda de Aluguéis FII, gerando um lucro de aproximadamente R$27 milhões. \"O fundo recebeu R$560 milhões referente à alienação dos dois imóveis corporativos\", (página 10).\n\n8. **Vacância financeira**: O portfólio mantém uma vacância financeira de 2,1%, reforçando a resiliência e atratividade dos ativos. \"O portfólio mantém vacância financeira de 2,1%\", (página 2).\n\n**O que observar em seguida:**\n- A conclusão do processo anual de reavaliação patrimonial no mês de julho.\n- O progresso da 16ª emissão e seus impactos no patrimônio líquido."
   },
-  "fatos": {
+  "comunicados": {
     "ids": [
       1182231,
-      1168504
+      1168504,
+      1165722,
+      1248085,
+      1199677,
+      1073901,
+      1061355
     ],
     "datas": [
       "07/05/2026",
-      "24/04/2026"
+      "24/04/2026",
+      "16/04/2026",
+      "14/07/2026",
+      "19/05/2026",
+      "31/12/2025",
+      "12/12/2025"
     ],
-    "texto": "### 07/05/2026\n**Não haverá atualização do preço de emissão na décima sexta emissão**\n\nO BTG PACTUAL LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO comunicou que o Preço de Emissão permanecerá no valor de R$ 102,51 por Nova Cota da Décima Sexta Emissão.\n\n*\"O Preço de Emissão permanece no valor de R$ 102,51 (cento e dois reais e cinquenta e um centavos) por Nova Cota da Décima Sexta Emissão.\"* (p. 1)\n\n### 24/04/2026\n**Aprovada a décima sexta emissão de cotas**\n\nO BTG PACTUAL LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO aprovou a realização da Décima Sexta Emissão, com distribuição pública de até 15.609.757 novas Cotas nominativas e escriturais, sem considerar as Novas Cotas Adicionais.\n\n*\"A Administradora aprovou, nesta data, por meio de ato próprio (na forma do Anexo I), a realização da 16ª (décima sexta) emissão e oferta pública de distribuição primária de Novas Cotas.\"* (p. 1)\n\n*\"As Novas Cotas serão objeto de distribuição pública, sob o regime de melhores esforços de colocação...\"* (p. 2)"
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO/E",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### 07/05/2026 - FATO RELEVANTE\n\n**O que aconteceu:** Não haverá atualização do Preço de Emissão no âmbito da Décima Sexta Emissão.\n\n**Resumo:** A emissão de novas cotas (Décima Sexta Emissão) do BTG PACTUAL LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO manterá o preço de R$ 102,51 por cota, conforme previsto no Prospecto.\n\n**Trecho-chave:**\n\"Não haverá atualização do Preço de Emissão no âmbito da Décima Sexta Emissão, conforme possibilidade prevista e detalhada no “Prospecto”, de modo que o Preço de Emissão permanece no valor de R$ 102,51 (cento e dois reais e cinquenta e um centavos) por Nova Cota da Décima Sexta Emissão.\"\n\n---\n\n### 24/04/2026 - FATO RELEVANTE\n\n**O que aconteceu:** Aprovada a realização da 16ª emissão de novas cotas.\n\n**Resumo:** O BTG PACTUAL LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO aprovou a Décima Sexta Emissão, com distribuição pública sob o regime de melhores esforços de colocação e rito automático de registro na CVM.\n\n**Trecho-chave:**\n\"A Administradora aprovou, nesta data, por meio de ato próprio (na forma do Anexo I), a realização da 16ª (décima sexta) emissão e oferta pública de distribuição primária de Novas Cotas.\"\n\n---\n\n### 16/04/2026 - FATO RELEVANTE\n\n**O que aconteceu:** Pagamento final do preço referente à aquisição de um portfólio.\n\n**Resumo:** O fundo concluiu o pagamento total de R$ 661.090.002,86 pela aquisição de um portfólio composto por 13 ativos localizados principalmente em São Paulo.\n\n**Trecho-chave:**\n\"Em complemento ao Fato Relevante divulgado e m 16 de Outubro de 2024, a Classe informa que realizou nesta data, o pagamento da última parcela do preço referente à aquisição do portfólio composto por 13 (treze) ativos, preponderantemente localizados no Estado de São Paulo, no montante total de R$ 661.090.002,86.\"\n\n---\n\n### 14/07/2026 - COMUNICADO AO MERCADO\n\n**O que aconteceu:** Realização do segundo período de subscrição da oferta pública.\n\n**Resumo:** O BTG PACTUAL LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO comunicou a realização do 2º Período de Subscrição, com duração de dois dias (14 e 15 de julho).\n\n**Trecho-chave:**\n\"O 2º Período de Subscriçã o será realizado entre os dias 14 de julho de 2026 (inclusive) e 15 de julho de 2026 (inclusive).\"\n\n---\n\n### 19/05/2026 - COMUNICADO AO MERCADO\n\n**O que aconteceu:** Encerramento do período de exercício do direito de preferência.\n\n**Resumo:** O fundo encerrou o Período de Exercício do Direito de Preferência, com subscrição e integralização de 1.941.144 novas cotas no valor total de R$ 198.986.671,44.\n\n**Trecho-chave:**\n\"De acordo com as informações recebidas da B3 e do escriturador das Cotas, no âmbito do exercício do Direito de Preferência, foram subscritas e integralizadas 1.941.144 (um milhão, novecentos e quarenta e um mil, cento e quarenta e quatro) Novas Cotas.\"\n\n---\n\n### 31/12/2025 - ASSEMBLEIA AGO/E\n\n**O que aconteceu:** Aprovação das contas do exercício social de 2025.\n\n**Resumo:** Os cotistas aprovaram as contas e demonstrações contábeis auditadas do Fundo referentes ao exercício social findo em 30 de junho de 2025, por meio de consulta formal.\n\n**Trecho-chave:**\n\"Aprovação das contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\"\n\n---\n\n### 12/12/2025 - ASSEMBLEIA AGO/E\n\n**O que aconteceu:** Convocação para assembleia geral ordinária e extraordinária.\n\n**Resumo:** A administradora convocou os cotistas para participar da Assembleia Geral Ordinária e Extraordinária, por meio de consulta formal, com prazo até 26 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Convocamos, portanto, V.Sa., para participar da Assembleia Geral Ordinária e Extraordinária, a ser realizada de forma não presencial, por meio do procedimento de consulta Formal (“Consulta Formal”), a qual tem por objeto: 1. Aprovar as contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\"\n\n---\n\n**Conexão com indicadores:** O aumento no número de cotistas (28,58% nos últimos 12 meses) e a emissão de novas cotas podem estar relacionados à estratégia de expansão do fundo."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 102.53
   }
 }

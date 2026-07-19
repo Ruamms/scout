@@ -30,6 +30,10 @@ dist\scout.exe analisar HGLG11 --html
     O mesmo raio-x como pagina completa no navegador, com graficos,
     calculadoras e glossario. Salva em %USERPROFILE%\.scout\relatorios
 
+dist\scout.exe analisar BOVA11 --html
+    Ticker de ETF abre a pagina propria de ETF: carteirinha de regras do
+    tipo (distribuicao, tributacao), composicao da carteira, preco oficial.
+
 
 ------------------------------------------------------------
  3. RANKING  (pesquisa avancada)
