@@ -14,7 +14,7 @@ if not exist dist\scout.exe (
 )
 
 if exist leituras\_erros.txt (
-    echo Existem fundos com ERRO da rodada anterior (leituras\_erros.txt).
+    echo Existem fundos com ERRO da rodada anterior - veja leituras\_erros.txt
     choice /M "Rodar SOMENTE os que falharam"
     if not errorlevel 2 (
         dist\scout.exe ia-lote --apenas-erros
