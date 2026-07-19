@@ -51,12 +51,23 @@ def montar_zip_trimestral(
         "Rendimentos_Declarados;Lucro_Contabil;Resultado_Financeiro_Liquido_Acumulado\n"
         f"11.111.111/0001-11;{ano}-03-01;1;{resultado_financeiro};{rendimentos};80000;{acumulado}\n"
     )
+    inquilino = (
+        f"{cnpj_col};Data_Referencia;Versao;Nome_Imovel;Setor_Atuacao;"
+        "Percentual_Receita_Imovel;Percentual_Receitas_FII\n"
+        f"11.111.111/0001-11;{ano}-03-01;1;GALPAO A;Serviço;0.7;0.60\n"
+        f"11.111.111/0001-11;{ano}-03-01;1;GALPAO A;Comércio;0.3;0.25\n"
+        f"11.111.111/0001-11;{ano}-03-01;1;GALPAO A;-;0;0\n"
+    )
     buffer = io.BytesIO()
     with zipfile.ZipFile(buffer, "w") as zf:
         zf.writestr(f"inf_trimestral_fii_imovel_{ano}.csv", imovel.encode("latin-1"))
         zf.writestr(
             f"inf_trimestral_fii_resultado_contabil_financeiro_{ano}.csv",
             resultado.encode("latin-1"),
+        )
+        zf.writestr(
+            f"inf_trimestral_fii_imovel_renda_acabado_inquilino_{ano}.csv",
+            inquilino.encode("latin-1"),
         )
     return buffer.getvalue()
 

@@ -166,8 +166,13 @@ def carregar_zip_trimestral(
     with zipfile.ZipFile(io.BytesIO(conteudo)) as zf:
         imoveis = _ler_csv(zf, "fii_imovel_2")
         resultados = _ler_csv(zf, "resultado_contabil_financeiro")
+        try:
+            inquilinos = _ler_csv(zf, "renda_acabado_inquilino")
+        except ValueError:  # arquivo não existe nos anos mais antigos
+            inquilinos = []
     n_imoveis = _gravar_imoveis(con, imoveis)
     n_resultados = _gravar_resultados(con, resultados)
+    _gravar_setores(con, inquilinos)
     con.execute(
         "INSERT OR REPLACE INTO cargas (arquivo, carregado_em) VALUES (?, datetime('now'))",
         (arquivo,),
@@ -200,6 +205,34 @@ def _gravar_imoveis(con: sqlite3.Connection, linhas: list[dict]) -> int:
                 # Percentual_Receitas_FII vem como PERCENTUAL (0-100) — escala da CVM
                 _numero(linha.get("Percentual_Vacancia")),
                 _numero(linha.get("Percentual_Inadimplencia")),
+                _numero(linha.get("Percentual_Receitas_FII")),
+            ),
+        )
+        total += 1
+    return total
+
+
+def _gravar_setores(con: sqlite3.Connection, linhas: list[dict]) -> int:
+    """Setor de atuação dos inquilinos por imóvel (% da receita do FII, fração)."""
+    total = 0
+    for indice, linha in enumerate(linhas):
+        chave = _chave(linha)
+        if chave is None:
+            continue
+        setor = (linha.get("Setor_Atuacao") or "").strip()
+        if not setor or setor == "-":
+            continue
+        con.execute(
+            """
+            INSERT OR REPLACE INTO setores_inquilinos
+                (cnpj, competencia, item, imovel, setor, pct_receita_fii)
+            VALUES (?, ?, ?, ?, ?, ?)
+            """,
+            (
+                *chave,
+                indice,
+                (linha.get("Nome_Imovel") or "").strip() or None,
+                setor,
                 _numero(linha.get("Percentual_Receitas_FII")),
             ),
         )

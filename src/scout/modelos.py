@@ -97,6 +97,7 @@ class RaioX:
     imoveis: list[Imovel] = field(default_factory=list)
     imoveis_em: str = ""  # competência do informe trimestral dos imóveis
     imoveis_por_estado: list[tuple[str, float]] = field(default_factory=list)  # (UF, % da área)
+    setores_inquilinos: list[tuple[str, float]] = field(default_factory=list)  # (setor, % da receita)
     administrador: str = ""
     fundos_irmaos: list[FundoIrmao] = field(default_factory=list)
     gestora: str = ""  # do cadastro CVM (registro de fundos)

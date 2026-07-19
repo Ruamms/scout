@@ -384,6 +384,10 @@ def montar_raio_x(
         if imoveis_atuais
         else "",
         imoveis_por_estado=_imoveis_por_estado(imoveis_atuais),
+        setores_inquilinos=[
+            (linha["setor"], 100 * linha["pct"])
+            for linha in armazenamento.setores_atuais(con, fundo.cnpj)
+        ],
         administrador=admin["administrador"] if admin else "",
         fundos_irmaos=_fundos_irmaos(con, admin, fundo.cnpj) if admin else [],
         gestora=(cadastro["gestor"] or "") if cadastro else "",

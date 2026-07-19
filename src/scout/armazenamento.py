@@ -97,6 +97,15 @@ CREATE TABLE IF NOT EXISTS informes_complemento (
     cotistas               REAL,
     PRIMARY KEY (cnpj, competencia)
 );
+CREATE TABLE IF NOT EXISTS setores_inquilinos (
+    cnpj            TEXT NOT NULL,
+    competencia     TEXT NOT NULL,  -- AAAA-MM do trimestre
+    item            INTEGER NOT NULL,  -- posição no arquivo (imóvel+setor repetem)
+    imovel          TEXT,
+    setor           TEXT,
+    pct_receita_fii REAL,           -- fração (1.0 = 100%)
+    PRIMARY KEY (cnpj, competencia, item)
+);
 CREATE TABLE IF NOT EXISTS cotacoes_b3 (
     ticker      TEXT NOT NULL,
     competencia TEXT NOT NULL,  -- AAAA-MM
@@ -416,6 +425,22 @@ def imoveis_atuais(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:
          WHERE cnpj = ?
            AND competencia = (SELECT MAX(competencia) FROM imoveis WHERE cnpj = ?)
          ORDER BY pct_receita DESC, area DESC
+        """,
+        (cnpj, cnpj),
+    ).fetchall()
+
+
+def setores_atuais(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:
+    """% da receita do FII por setor de inquilino, no trimestre mais recente."""
+    return con.execute(
+        """
+        SELECT setor, SUM(pct_receita_fii) AS pct
+          FROM setores_inquilinos
+         WHERE cnpj = ?
+           AND competencia = (SELECT MAX(competencia) FROM setores_inquilinos WHERE cnpj = ?)
+           AND pct_receita_fii > 0
+         GROUP BY setor
+         ORDER BY pct DESC
         """,
         (cnpj, cnpj),
     ).fetchall()

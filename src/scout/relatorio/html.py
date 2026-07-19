@@ -570,9 +570,21 @@ def _secao_imoveis(raiox: RaioX, limite: int = 10) -> str:
   </table>
   {botao}
   {_linha_estados(raiox)}
+  {_linha_setores(raiox)}
   <div class="nota">informe trimestral de {_e(raiox.imoveis_em)} · ordenados por participação na receita</div>
   </div>
 """
+
+
+def _linha_setores(raiox: RaioX) -> str:
+    """Receita do fundo por setor de atuação dos inquilinos (informe trimestral)."""
+    setores = [(setor, pct) for setor, pct in raiox.setores_inquilinos if pct >= 0.5]
+    if not setores:
+        return ""
+    partes = " · ".join(f"<b>{_e(setor)}</b> {formato.percentual(pct)}" for setor, pct in setores[:8])
+    return (
+        f'<div class="nota" style="margin-top:6px">receita por setor de inquilino: {partes}</div>'
+    )
 
 
 def _linha_estados(raiox: RaioX) -> str:

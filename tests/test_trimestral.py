@@ -21,6 +21,23 @@ def test_carga_trimestral(con, zip_trimestral, novo_schema):
     assert resultado["rendimentos_declarados"] == 90000
 
 
+def test_setores_de_inquilinos(con, zip_cvm, zip_trimestral):
+    from scout.relatorio import html as relatorio_html
+
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
+    cvm.carregar_zip_trimestral(con, zip_trimestral(), "inf_trimestral_fii_2026.zip")
+    setores = armazenamento.setores_atuais(con, "11.111.111/0001-11")
+    assert [(linha["setor"], linha["pct"]) for linha in setores] == [
+        ("Serviço", 0.60),
+        ("Comércio", 0.25),
+    ]  # o setor "-" (vazio) fica fora
+    completo = analise.montar_completo(con, "tste11")
+    assert completo.raiox.setores_inquilinos[0] == ("Serviço", pytest.approx(60.0))
+    pagina = relatorio_html.gerar(completo)
+    assert "receita por setor de inquilino" in pagina
+    assert "<b>Serviço</b> 60,00%" in pagina
+
+
 def test_uf_do_endereco():
     assert analise._uf_do_endereco("Av. Paulista, 1000 - São Paulo - SP") == "SP"
     # "AL" de Alameda no início não engana: vale a ÚLTIMA sigla válida
