@@ -192,6 +192,20 @@ CREATE TABLE IF NOT EXISTS papeis (
     isin    TEXT,
     tipo    TEXT               -- ON | PN | PNA | PNB | UNT
 );
+CREATE TABLE IF NOT EXISTS acao_eventos (
+    ticker TEXT NOT NULL,
+    data   TEXT NOT NULL,  -- lastDatePrior (último dia "com"), AAAA-MM-DD
+    label  TEXT NOT NULL,  -- DESDOBRAMENTO | GRUPAMENTO | BONIFICACAO
+    fator  REAL NOT NULL,  -- multiplicador da QUANTIDADE de ações (2.0 = dobrou)
+    PRIMARY KEY (ticker, data, label)
+);
+CREATE TABLE IF NOT EXISTS acao_proventos (
+    ticker   TEXT NOT NULL,
+    data_com TEXT NOT NULL,  -- último dia "com" direito (lastDatePrior)
+    label    TEXT NOT NULL,  -- DIVIDENDO | JRS CAP PROPRIO...
+    valor    REAL NOT NULL,  -- R$ por ação, base NOMINAL da época
+    PRIMARY KEY (ticker, data_com, label, valor)
+);
 """
 
 
@@ -277,6 +291,19 @@ def _migrar(con: sqlite3.Connection) -> None:
             )
             con.execute(
                 "INSERT INTO cargas (arquivo, carregado_em) VALUES ('COTAHIST_V3_ETFS_VOLUME', datetime('now'))"
+            )
+            con.commit()
+        marcador_v4 = con.execute(
+            "SELECT 1 FROM cargas WHERE arquivo = 'COTAHIST_V4_ACOES'"
+        ).fetchone()
+        if marcador_v4 is None:
+            # COTAHIST v4: entra o codbdi 02 (ações do lote padrão); bases
+            # carregadas antes precisam rebaixar os arquivos (uma vez só)
+            con.execute(
+                "DELETE FROM cargas WHERE arquivo LIKE 'COTAHIST_A%' OR arquivo LIKE 'COTAHIST_M%'"
+            )
+            con.execute(
+                "INSERT INTO cargas (arquivo, carregado_em) VALUES ('COTAHIST_V4_ACOES', datetime('now'))"
             )
             con.commit()
 

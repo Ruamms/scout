@@ -463,10 +463,13 @@ def test_cotahist_codbdi_14_entra_como_etf(con):
             _linha_cotahist("20260630", "TSTE11", 10000, codbdi="12"),
             _linha_cotahist("20260630", "BOVA11", 16912, codbdi="14"),
             _linha_cotahist("20260630", "PETR4", 3000, codbdi="02"),
+            _linha_cotahist("20260630", "PETR1", 100, codbdi="02"),  # direito: fora
+            _linha_cotahist("20260630", "XYZW3", 500, codbdi="96"),  # fracionário: fora
         ]
     )
     from scout.coleta import b3
 
     pregoes = b3.extrair_pregoes(conteudo)
-    assert set(pregoes) == {"TSTE11", "BOVA11"}
+    # desde a fase de Ações, o codbdi 02 (PETR4) também entra
+    assert set(pregoes) == {"TSTE11", "BOVA11", "PETR4"}
     assert pregoes["BOVA11"] == [("2026-06-30", 169.12, 0.0)]

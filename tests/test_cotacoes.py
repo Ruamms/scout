@@ -60,19 +60,69 @@ def test_gravar_pregoes_agrega_por_mes_ultimo_pregao(con):
     ]
 
 
-def test_arquivos_pendentes_anuais_e_mes_corrente(con):
-    hoje = date(2026, 2, 10)
+def test_arquivos_pendentes_anuais_mensais_e_diarios(con):
+    hoje = date(2026, 2, 10)  # terça
     pendentes = b3.arquivos_pendentes(con, hoje)
     assert pendentes[0] == "COTAHIST_A2011.ZIP"
     assert "COTAHIST_A2025.ZIP" in pendentes
     assert "COTAHIST_A2026.ZIP" not in pendentes  # ano corrente vai por mensais
-    assert pendentes[-2:] == ["COTAHIST_M012026.ZIP", "COTAHIST_M022026.ZIP"]
+    # mês corrente NÃO vai por mensal (a B3 só o publica após o fechamento)…
+    assert "COTAHIST_M012026.ZIP" in pendentes
+    assert "COTAHIST_M022026.ZIP" not in pendentes
+    # …vai pelos DIÁRIOS dos dias úteis até hoje (2..6, 9, 10 — sem fins de semana)
+    assert pendentes[-3:] == [
+        "COTAHIST_D06022026.ZIP",
+        "COTAHIST_D09022026.ZIP",
+        "COTAHIST_D10022026.ZIP",
+    ]
+    assert "COTAHIST_D07022026.ZIP" not in pendentes  # sábado
+    assert pendentes[-7] == "COTAHIST_D02022026.ZIP"
 
-    # depois de carregado, só o mês corrente segue pendente
+    # depois de carregado, nada segue pendente
     for nome in pendentes:
         con.execute("INSERT OR REPLACE INTO cargas (arquivo, carregado_em) VALUES (?, 'x')", (nome,))
     con.commit()
-    assert b3.arquivos_pendentes(con, hoje) == ["COTAHIST_M022026.ZIP"]
+    assert b3.arquivos_pendentes(con, hoje) == []
+
+
+def test_gravar_pregoes_diario_mescla_no_acumulado_do_mes(con):
+    b3.gravar_pregoes(con, {"TSTE11": [("2026-02-16", 95.0, 1000.0)]}, mesclar=True)
+    b3.gravar_pregoes(con, {"TSTE11": [("2026-02-17", 100.0, 500.0)]}, mesclar=True)
+    # replay de um dia mais antigo não regride o fechamento (vale o pregão mais novo)
+    b3.gravar_pregoes(con, {"TSTE11": [("2026-02-13", 90.0, 200.0)]}, mesclar=True)
+    linha = con.execute(
+        "SELECT fechamento, dia, volume, pregoes FROM cotacoes_b3 WHERE ticker='TSTE11'"
+    ).fetchone()
+    assert (linha[0], linha[1]) == (100.0, "2026-02-17")
+    assert linha[2] == 1700.0  # volume soma
+    assert linha[3] == 3
+
+
+def test_atualizar_pula_feriado_404_e_nao_tenta_de_novo(con, monkeypatch):
+    import urllib.error
+
+    baixados = []
+
+    def _baixar_fake(nome, tentativas=3):
+        baixados.append(nome)
+        if nome == "COTAHIST_D09022026.ZIP":  # "feriado": não existe
+            raise urllib.error.HTTPError("url", 404, "Not Found", None, None)
+        return _zip_cotahist([_linha_cotahist("20260210", "TSTE11", 10100)])
+
+    monkeypatch.setattr(b3, "_baixar", _baixar_fake)
+    # isola só os diários: marca anuais e mensais como carregados
+    hoje = date(2026, 2, 10)
+    for nome in b3.arquivos_pendentes(con, hoje):
+        if not nome.startswith("COTAHIST_D"):
+            con.execute("INSERT OR REPLACE INTO cargas (arquivo, carregado_em) VALUES (?, 'x')", (nome,))
+    con.commit()
+
+    b3.atualizar(con, hoje=hoje)
+    assert "COTAHIST_D09022026.ZIP" in baixados
+    # segunda rodada: o feriado ficou marcado como indisponível e não volta
+    baixados.clear()
+    b3.atualizar(con, hoje=hoje)
+    assert baixados == []
 
 
 # --- derivadas (ajustes) -----------------------------------------------------------
@@ -128,11 +178,17 @@ def test_garantir_mes_corrente_uma_vez_por_dia(con, monkeypatch):
 
     monkeypatch.setattr(b3, "_baixar", _baixar_fake)
     agora = datetime(2026, 2, 18, 10, 0)
+    # isola o dia 17: o resto já está carregado
+    for nome in b3.arquivos_pendentes(con, agora.date()):
+        if nome != "COTAHIST_D17022026.ZIP":
+            con.execute("INSERT OR REPLACE INTO cargas (arquivo, carregado_em) VALUES (?, 'x')", (nome,))
+    con.commit()
+
     assert b3.garantir_mes_corrente(con, agora) is None
-    assert chamadas == ["COTAHIST_M022026.ZIP"]
+    assert chamadas == ["COTAHIST_D17022026.ZIP"]
     # segunda chamada no mesmo dia: nada a fazer
     assert b3.garantir_mes_corrente(con, agora) is None
-    assert chamadas == ["COTAHIST_M022026.ZIP"]
+    assert chamadas == ["COTAHIST_D17022026.ZIP"]
     meta = armazenamento.cotacao_meta(con, "TSTE11")
     assert meta["preco_atual"] == 101.0
 

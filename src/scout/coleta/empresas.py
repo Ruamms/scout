@@ -96,6 +96,111 @@ def papeis_do_detalhe(detalhe: dict, radical: str) -> list[tuple[str, str, str]]
     return papeis
 
 
+def _numero_ptbr(texto: str | None) -> float:
+    """'1.222.000,50' -> 1222000.5 (formato pt-BR das APIs da B3)."""
+    limpo = (texto or "").strip().replace(".", "").replace(",", ".")
+    try:
+        return float(limpo)
+    except ValueError:
+        return 0.0
+
+
+def _data_iso(texto: str | None) -> str:
+    """'25/04/2008' -> '2008-04-25'."""
+    partes = (texto or "").strip().split("/")
+    if len(partes) != 3 or len(partes[2]) != 4:
+        return ""
+    return f"{partes[2]}-{partes[1]}-{partes[0]}"
+
+
+def eventos_do_emissor(radical: str) -> tuple[list[dict], list[dict]]:
+    """(stockDividends, cashDividends) do bloco 'eventos corporativos' da B3.
+
+    Semântica do factor, validada com casos reais (PETR/VALE/IRBR/AMER):
+    DESDOBRAMENTO e BONIFICACAO = PERCENTUAL de ações novas (100 = dobrou);
+    GRUPAMENTO = razão direta da quantidade (<1; AMER 100:1 = 0,01).
+    """
+    dados = _chamar(
+        URL_EMPRESAS,
+        "GetListedSupplementCompany",
+        {"issuingCompany": radical, "language": "pt-br"},
+    )
+    item = dados[0] if isinstance(dados, list) and dados else {}
+    return (item.get("stockDividends") or [], item.get("cashDividends") or [])
+
+
+def proventos_do_emissor(nome_pregao: str) -> list[dict]:
+    """Histórico completo de dividendos/JCP do emissor (paginado)."""
+    proventos: list[dict] = []
+    pagina = 1
+    while True:
+        dados = _chamar(
+            URL_EMPRESAS,
+            "GetListedCashDividends",
+            {
+                "language": "pt-br",
+                "pageNumber": pagina,
+                "pageSize": 100,
+                "tradingName": nome_pregao.strip(),
+            },
+        )
+        proventos.extend(dados.get("results") or [])
+        total_paginas = (dados.get("page") or {}).get("totalPages") or 1
+        if pagina >= total_paginas:
+            return proventos
+        pagina += 1
+
+
+def _fator_quantidade(label: str, factor_bruto: str | None) -> float | None:
+    """Normaliza o factor da B3 para multiplicador de QUANTIDADE de ações."""
+    fator = _numero_ptbr(factor_bruto)
+    if fator <= 0:
+        return None
+    label = (label or "").strip().upper()
+    if label in ("DESDOBRAMENTO", "BONIFICACAO", "BONIFICAÇÃO"):
+        return 1 + fator / 100
+    if label == "GRUPAMENTO":
+        return fator
+    return None  # rótulo desconhecido: melhor não ajustar do que ajustar errado
+
+
+def _gravar_eventos_e_proventos(con: sqlite3.Connection, empresa: sqlite3.Row) -> None:
+    """Eventos societários (por ISIN) e proventos (por tipo de papel)."""
+    papeis = con.execute(
+        "SELECT ticker, isin, tipo FROM papeis WHERE cod_cvm = ?", (empresa["cod_cvm"],)
+    ).fetchall()
+    por_isin = {p["isin"]: p["ticker"] for p in papeis if p["isin"]}
+    por_tipo = {p["tipo"]: p["ticker"] for p in papeis}
+
+    eventos, _dividendos_recentes = eventos_do_emissor(empresa["radical"])
+    time.sleep(0.25)
+    for evento in eventos:
+        ticker = por_isin.get((evento.get("isinCode") or "").strip())
+        data = _data_iso(evento.get("lastDatePrior"))
+        fator = _fator_quantidade(evento.get("label"), evento.get("factor"))
+        if not ticker or not data or fator is None:
+            continue
+        con.execute(
+            "INSERT OR REPLACE INTO acao_eventos (ticker, data, label, fator) VALUES (?, ?, ?, ?)",
+            (ticker, data, (evento.get("label") or "").strip().upper(), fator),
+        )
+
+    for provento in proventos_do_emissor(empresa["nome_pregao"]):
+        ticker = por_tipo.get((provento.get("typeStock") or "").strip().upper())
+        # neste endpoint o último dia "com" chama lastDatePriorEx (≠ eventos)
+        data_com = _data_iso(provento.get("lastDatePriorEx"))
+        # cotações antigas eram por lote (quotedPerShares=1000): normaliza p/ 1 ação
+        base = _numero_ptbr(provento.get("quotedPerShares")) or 1.0
+        valor = _numero_ptbr(provento.get("valueCash")) / base
+        if not ticker or not data_com or valor <= 0:
+            continue
+        con.execute(
+            "INSERT OR REPLACE INTO acao_proventos (ticker, data_com, label, valor) VALUES (?, ?, ?, ?)",
+            (ticker, data_com, (provento.get("corporateAction") or "").strip().upper(), valor),
+        )
+    time.sleep(0.25)
+
+
 def carregar_cadastro_cvm() -> dict[str, dict]:
     """CAD da CVM por CNPJ (só dígitos): setor, situação e auditor."""
     requisicao = urllib.request.Request(URL_CAD, headers=_HEADERS)
@@ -194,6 +299,13 @@ def atualizar_empresas(
                 "UPDATE empresas SET setor_cvm = ?, situacao = ?, auditor = ? WHERE cod_cvm = ?",
                 (dados["setor"], dados["situacao"], dados["auditor"], linha["cod_cvm"]),
             )
+
+    # eventos societários + dividendos/JCP (base do ajuste e do retorno total)
+    for empresa in con.execute("SELECT * FROM empresas WHERE no_ibrx100 = 1"):
+        try:
+            _gravar_eventos_e_proventos(con, empresa)
+        except Exception:  # noqa: BLE001 — um emissor com erro não derruba a carga
+            sem_match.append(f"{empresa['radical']} (eventos)")
 
     con.execute(
         "INSERT OR REPLACE INTO cargas (arquivo, carregado_em) VALUES ('EMPRESAS_B3', ?)",
