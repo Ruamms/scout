@@ -20,3 +20,4 @@
 2026-07-19 04:40:46	--- lote encerrado · 2 lidos, 1 em dia/sem relatório, 0 erros
 2026-07-19 04:41:49	--- lote iniciado · modelo qwen2.5:14b · 1031 fundos na fila
 2026-07-19 04:52:54	KNCR11	lido	666s
+2026-07-19 05:06:49	PBLV11	sem-relatorio-fatos-lidos	834s

@@ -1,21 +1,30 @@
 {
   "ticker": "PBLV11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-19T04:29:56",
+  "verificado_em": "2026-07-19T05:06:49",
   "comunicados": {
     "ids": [
+      948669,
+      823019,
+      813435,
       1181000,
       1130381
     ],
     "datas": [
+      "16/07/2025",
+      "20/01/2025",
+      "06/01/2025",
       "06/05/2026",
       "06/03/2026"
     ],
     "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
       "Assembleia AGO",
       "Assembleia AGE"
     ],
-    "texto": "### 05/05/2026\n**A assembleia aprovou as demonstrações financeiras do Fundo referentes ao exercício social de 2025.**\n- A assembleia foi realizada em São Paulo, com presença total dos cotistas.\n- \"Os Cotistas deliberaram, por unanimidade, sem quaisquer ressalvas ou restrições, aprovar as Demonstrações Financeiras do Fundo, das Notas Explicativas e do parecer do auditor independente, todos relativos ao exercício social findo em 31 de dezembro de 2025.\" (p. 1)\n\n### 06/03/2026\n**A assembleia aprovou alterações no Regulamento e contratação de MAMG Advogados para representar PLD Dutra RJ II em um potencial litígio envolvendo Ribeiro Caram.**\n- A assembleia foi realizada em São Paulo, com presença total dos cotistas.\n- \"Os Cotistas deliberaram, por unanimidade, sem quaisquer ressalvas ou restrições: (i) Alteração do Regulamento, de forma a alterar o item 3.2, referente ao prazo de duração do Fundo; (ii) Em razão da alteração acima mencionada, consolidação da nova versão do Regulamento; (iii) Aprovada a contratação do MAMG Advogados a fim de representar o PLD Dutra RJ II em conexão com o potencial litígio envolvendo a Ribeiro Caram e para auxiliar na avaliação contínua de riscos.\" (p. 2)"
+    "texto": "### 16/07/2025\n**O que aconteceu:** Aprovada a realização de oferta pública de distribuição primária de cotas da 18ª emissão do Fundo.\n**Resumo:** A assembleia geral extraordinária do Prologis Brazil Logistics Venture FII, realizada em 16/07/2025, aprovou a oferta pública de distribuição primária de cotas da 18ª emissão. A Oferta será destinada exclusivamente aos atuais cotistas e não assegura direito de preferência na aquisição das Cotas.\n**Trecho-chave:**\n\"A assembleia geral extraordinária do Fundo realizada em 16 de julho de 2025 (“Assembleia Geral”), aprovou a realização de oferta pública de distribuição primária de cotas da 18ª (décima quinta) emissão do Fundo (“Cotas” e “18ª Emissão”, respectivamente), nos termos da Resolução CVM 160, de 13 de julho e 2022.\"\n\n### 20/01/2025\n**O que aconteceu:** Aprovada a realização de oferta pública de distribuição primária de cotas da 17ª emissão do Fundo.\n**Resumo:** A assembleia geral extraordinária do Prologis Brazil Logistics Venture FII, realizada em 17/01/2025, aprovou a oferta pública de distribuição primária de cotas da 17ª emissão. A Oferta será destinada exclusivamente aos atuais cotistas e não assegura direito de preferência na aquisição das Cotas.\n**Trecho-chave:**\n\"A assembleia geral extraordinária do Fundo realizada em 17 de janeiro de 2025 (“Assembleia Geral”), aprovou a realização de oferta pública de distribuição primária de cotas da 16ª (décima quinta) emissão do Fundo (“Cotas” e “16ª Emissão”, respectivamente), nos termos da Resolução CVM 160, de 13 de julho e 2022.\"\n\n### 06/01/2025\n**O que aconteceu:** Aprovada a realização de oferta pública de distribuição primária de cotas da 16ª emissão do Fundo.\n**Resumo:** A assembleia geral extraordinária do Prologis Brazil Logistics Venture FII, realizada em 02/01/2025, aprovou a oferta pública de distribuição primária de cotas da 16ª emissão. A Oferta será destinada exclusivamente aos atuais cotistas e não assegura direito de preferência na aquisição das Cotas.\n**Trecho-chave:**\n\"A assembleia geral extraordinária do Fundo realizada em 02 de janeiro de 2025 (“Assembleia Geral”), aprovou a realização de oferta pública de distribuição primária de cotas da 16ª (décima quinta) emissão do Fundo (“Cotas” e “16ª Emissão”, respectivamente), nos termos da Resolução CVM 160, de 13 de julho e 2022.\"\n\n### 05/05/2026\n**O que aconteceu:** Aprovadas as Demonstrações Financeiras do Fundo referentes ao exercício social findo em 31/12/2025.\n**Resumo:** A assembleia geral ordinária e extraordinária realizada em 05/05/2026 aprovou, por unanimidade, sem quaisquer ressalvas ou restrições, as Demonstrações Financeiras do Fundo referentes ao exercício social findo em 31 de dezembro de 2025.\n**Trecho-chave:**\n\"Os Cotistas deliberaram, por unanimidade, sem quaisquer ressalvas ou restrições aprovar as Demonstrações Financeiras do Fundo, das Notas Explicativas e do parecer do auditor independente, todos relativos ao exercício social findo em 31 de dezembro de 2025.\"\n\n### 06/03/2026\n**O que aconteceu:** Alterado o Regulamento do Fundo e aprovada contratação de MAMG Advogados.\n**Resumo:** A assembleia geral extraordinária realizada em 06/03/2026 deliberou por unanimidade alterar o item 3.2 do Regulamento, referente ao prazo de duração do Fundo, e aprovou a contratação da MAMG Advogados para representar PLD Dutra RJ II em conexão com um potencial litígio envolvendo Ribeiro Caram.\n**Trecho-chave:**\n\"Os Cotistas deliberaram, por unanimidade, sem quaisquer ressalvas ou restrições: (i) Alteração do Regulamento, de forma a alterar o item 3.2, referente ao prazo de duração do Fundo; (ii) Em razão da alteração acima mencionada, consolidação da nova versão do Regulamento; (iii) Aprovada a contratação do MAMG Advogados para representar o PLD Dutra RJ II em conexão com o potencial litígio envolvendo a Ribeiro Caram e para auxiliar na avaliação contínua de riscos.\""
   },
   "modelo": "qwen2.5:14b",
   "parecer": {
