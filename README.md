@@ -98,7 +98,7 @@ funciona em qualquer Windows sem Python instalado.
 
 ## Status
 
-Fase 1 (raio-x quantitativo + site) completa · Fase 2 (IA local sobre relatórios) em andamento — acompanhe o [ROADMAP](ROADMAP.md) e a [visão de produto](docs/VISAO.md).
+**v1 FIIs completa**: Fase 1 (raio-x quantitativo + site) e Fase 2 (IA local sobre relatórios gerenciais, fatos relevantes, comunicados e assembleias + parecer do auditor + gestora + oscilações com contexto + comparador) concluídas. Próximo: outras classes de ativos — acompanhe o [ROADMAP](ROADMAP.md) e a [visão de produto](docs/VISAO.md).
 
 ## Apoie
 
