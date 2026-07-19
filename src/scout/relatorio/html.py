@@ -677,13 +677,29 @@ def _secao_ia(leitura: dict | None, agora: datetime) -> str:
             )
     except ValueError:
         pass
+    from ..coleta.fnet import URL_DOWNLOAD
+
+    link_original = ""
+    if relatorio.get("id"):
+        link_original = (
+            f' · <a href="{URL_DOWNLOAD.format(id=relatorio["id"])}" target="_blank" '
+            'rel="noopener">📄 baixar o relatório original (FNET)</a>'
+        )
     fatos = leitura.get("fatos", {})
     bloco_fatos = ""
     if fatos.get("texto"):
-        datas = ", ".join(fatos.get("datas", []))
+        datas = fatos.get("datas", [])
+        ids = fatos.get("ids", [])
+        links_fatos = ""
+        if ids:
+            links_fatos = " · originais: " + ", ".join(
+                f'<a href="{URL_DOWNLOAD.format(id=id_doc)}" target="_blank" rel="noopener">'
+                f"{_e(data)}</a>"
+                for id_doc, data in zip(ids, datas if len(datas) == len(ids) else [f"doc {i}" for i in ids])
+            )
         bloco_fatos = (
             f'<h3 style="font-size:15px;color:#aeb9c7;margin:16px 0 8px">Fatos relevantes recentes'
-            f' <span style="color:#8b98a9;font-weight:400">({_e(datas)})</span></h3>'
+            f' <span style="color:#8b98a9;font-weight:400">({_e(", ".join(datas))}{links_fatos})</span></h3>'
             f'<div style="white-space:pre-wrap">{_texto_ia_para_html(fatos["texto"])}</div>'
         )
     gerada = leitura.get("gerada_em", "")[:10]
@@ -691,11 +707,12 @@ def _secao_ia(leitura: dict | None, agora: datetime) -> str:
   <h2>🤖 Leitura por IA{_ajuda("Leitura por IA")}</h2>
   <div class="grafico">
   <div class="nota" style="margin-bottom:10px">relatório gerencial de <b>{_e(data_documento)}</b>{aviso_idade}
-  · lida por IA local ({_e(leitura.get("modelo", "?"))}) em {_e(gerada)}</div>
+  · lida por IA local ({_e(leitura.get("modelo", "?"))}) em {_e(gerada)}{link_original}</div>
   <div style="white-space:pre-wrap">{_texto_ia_para_html(relatorio["texto"])}</div>
   {bloco_fatos}
   <div class="nota" style="margin-top:12px">Resumo gerado por IA a partir dos documentos oficiais —
-  pode conter erros de leitura; os trechos citados permitem conferir no original. Não é recomendação.</div>
+  pode conter erros de leitura; os trechos citados (com página, quando identificada) e o link para o
+  documento original permitem conferir tudo na fonte. Não é recomendação.</div>
   </div>
 """
 

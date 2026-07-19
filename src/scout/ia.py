@@ -25,7 +25,10 @@ PROMPT_SISTEMA = (
     "brasileiros. Regras invioláveis:\n"
     "1. Extraia APENAS fatos que estão escritos no relatório — nunca invente, "
     "nunca calcule números novos, nunca extrapole.\n"
-    "2. Para cada fato, cite o trecho do relatório que o sustenta, entre aspas.\n"
+    "2. Para cada fato, cite o trecho do relatório que o sustenta, entre aspas, "
+    "seguido da página de onde veio no formato (p. N) — o texto traz marcadores "
+    "[página N]; use o marcador mais próximo ACIMA do trecho citado. Se não der "
+    "para determinar a página com certeza, omita-a em vez de estimar.\n"
     "3. NUNCA dê opinião de investimento, recomendação de compra/venda ou "
     "previsão. Fatos, não dicas.\n"
     "4. Priorize: mudanças na carteira (compra/venda de ativos), obras e "
@@ -61,7 +64,11 @@ def extrair_texto_pdf(caminho: Path, max_paginas: int = 40) -> str:
 
     leitor = PdfReader(str(caminho))
     paginas = [pagina.extract_text() or "" for pagina in leitor.pages[:max_paginas]]
-    texto = "\n".join(paginas).strip()
+    # marcadores [página N]: permitem ao modelo citar a página de cada trecho,
+    # para o leitor conferir no PDF original
+    texto = "\n".join(
+        f"[página {numero}]\n{conteudo}" for numero, conteudo in enumerate(paginas, start=1)
+    ).strip()
     if len(texto) > _MAX_CARACTERES:
         texto = texto[:_MAX_CARACTERES] + "\n[... relatório truncado para a análise ...]"
     return texto
@@ -87,7 +94,8 @@ PROMPT_FATOS = (
     "imobiliários brasileiros. Regras invioláveis:\n"
     "1. Para CADA documento fornecido, produza um bloco com: a data, um título "
     "de uma linha dizendo O QUE aconteceu, um resumo de 1 a 3 linhas e a "
-    "citação do trecho-chave entre aspas.\n"
+    "citação do trecho-chave entre aspas — se o texto trouxer marcadores "
+    "[página N], indique a página do trecho no formato (p. N).\n"
     "2. Relate APENAS o que está escrito — nunca invente, nunca calcule "
     "números novos, nunca extrapole consequências.\n"
     "3. NUNCA dê opinião de investimento ou recomendação. Fatos, não dicas.\n"

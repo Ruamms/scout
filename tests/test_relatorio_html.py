@@ -153,6 +153,22 @@ def test_calculadora_retroativa_com_rentabilidade(con, zip_cvm):
     assert "Fundo" in retro["12 meses"]["sem"]
 
 
+def test_secao_ia_linka_documentos_originais(con, zip_cvm):
+    completo = _completo(con, zip_cvm)
+    leitura = {
+        "ticker": "TSTE11",
+        "modelo": "qwen2.5:14b",
+        "gerada_em": "2026-07-18T22:00:00",
+        "relatorio": {"id": 123, "data_entrega": "10/07/2026 18:00", "texto": "1. Fato citado. (p. 3)"},
+        "fatos": {"ids": [9], "datas": ["05/07/2026"], "texto": "bloco de fatos"},
+    }
+    pagina = relatorio_html.gerar(completo, leitura=leitura)
+    # quem lê pode baixar o documento oficial e conferir cada citação
+    assert "downloadDocumento?id=123" in pagina
+    assert "baixar o relatório original" in pagina
+    assert "downloadDocumento?id=9" in pagina
+
+
 def test_sem_cotacao_nao_mostra_calculadoras(con, zip_cvm):
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     completo = analise.montar_completo(con, "tste11")

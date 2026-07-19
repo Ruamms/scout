@@ -128,6 +128,8 @@ def test_extrair_texto_pdf(tmp_path):
     caminho.write_bytes(_pdf_minimo("Vacancia do imovel X caiu no trimestre"))
     texto = ia.extrair_texto_pdf(caminho)
     assert "Vacancia do imovel X caiu" in texto
+    # marcador de página: permite ao modelo citar a página de cada trecho
+    assert texto.startswith("[página 1]")
 
 
 def test_analisar_relatorio_monta_chamada_ao_ollama(monkeypatch):
