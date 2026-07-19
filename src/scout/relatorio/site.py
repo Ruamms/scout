@@ -159,6 +159,7 @@ h2 {{ font-size:18px; margin:28px 0 10px; }}
 .rodape {{ color:#8b98a9; font-size:12.5px; border-top:1px solid #232D31; margin-top:30px; padding-top:14px; }}
 #aviso-beta {{ position:fixed; inset:0; background:rgba(16,20,21,.75); z-index:50;
   display:flex; align-items:center; justify-content:center; padding:20px; }}
+#aviso-beta[hidden] {{ display:none; }}
 .beta-caixa {{ background:#182024; border:1px solid #314045; border-radius:12px; padding:22px 24px;
   max-width:440px; font-size:14px; box-shadow:0 12px 40px rgba(0,0,0,.5); }}
 .beta-caixa p {{ color:#aeb9c7; margin:10px 0 14px; }}

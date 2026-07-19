@@ -99,6 +99,9 @@ def test_indice_tem_aviso_de_beta_dispensavel(con, tmp_path):
     # dispensável e lembrado entre visitas
     assert "scout-beta-visto" in indice
     assert "function fecharBeta" in indice
+    # o CSS display:flex do modal precisa ceder ao atributo hidden,
+    # senão o "Entendi" não fecha nada (bug real de produção)
+    assert "#aviso-beta[hidden]" in indice
 
 
 def test_indice_recolhe_tabela_grande(con, tmp_path, monkeypatch):
