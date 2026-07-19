@@ -187,13 +187,14 @@ def _executar_atualizacao(con) -> None:
         + len(cvm.anos_pendentes(con, hoje, cvm.nome_arquivo_trimestral))
         + len(b3.arquivos_pendentes(con, hoje))
     )
-    from .coleta import b3fundos
+    from .coleta import b3fundos, cda
 
     if not console.is_terminal:
         progresso = lambda msg: console.print(f"  [dim]{msg}[/]")  # noqa: E731
         cvm.atualizar(con, ao_progredir=progresso)
         b3.atualizar(con, ao_progredir=progresso)
         b3fundos.atualizar_etfs(con, ao_progredir=progresso)
+        cda.atualizar_composicao(con, ao_progredir=progresso)
     else:
         with Progress(
             TextColumn("[progress.description]{task.description}"),
@@ -210,6 +211,7 @@ def _executar_atualizacao(con) -> None:
             cvm.atualizar(con, ao_progredir=_avanca)
             b3.atualizar(con, ao_progredir=_avanca)
             b3fundos.atualizar_etfs(con, ao_progredir=_avanca)
+            cda.atualizar_composicao(con, ao_progredir=_avanca)
     console.print("[green]Base atualizada.[/]")
 
 

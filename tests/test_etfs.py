@@ -61,6 +61,60 @@ def test_atualizar_etfs_grava_ticker_cnpj_e_tipo(con, monkeypatch):
     assert chamadas_detalhe == []
 
 
+def test_extrair_carteiras_e_verificador():
+    import io
+    import zipfile
+
+    from scout.coleta import cda
+
+    csv_cda = (
+        "TP_FUNDO_CLASSE;CNPJ_FUNDO_CLASSE;DENOM_SOCIAL;DT_COMPTC;VL_PATRIM_LIQ;TP_APLIC;TP_ATIVO;VL_MERC_POS_FINAL\n"
+        # BOVA-like: 90% ações, 10% RF
+        "FIIM;10.406.511/0001-61;ISHARES;2026-05-31;1000000;Ações;Ação ordinária;900000\n"
+        "FIIM;10.406.511/0001-61;ISHARES;2026-05-31;1000000;Títulos Públicos;;100000\n"
+        # 'renda fixa' que virou 60% ações: divergente
+        "FIIM;31.024.153/0001-00;IT NOW;2026-05-31;500000;Ações;Ação ordinária;300000\n"
+        "FIIM;31.024.153/0001-00;IT NOW;2026-05-31;500000;Títulos Públicos;;200000\n"
+        # valores a receber são ignorados no denominador
+        "FIIM;10.406.511/0001-61;ISHARES;2026-05-31;1000000;Valores a receber;;50000\n"
+    )
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, "w") as zf:
+        zf.writestr("cda_fie_202605.csv", csv_cda.encode("latin-1"))
+        zf.writestr("cda_fie_CONFID_202605.csv", b"")
+
+    cnpjs = {"10406511000161", "31024153000100"}
+    composicao, pls, competencia = cda.extrair_carteiras(buffer.getvalue(), cnpjs)
+    assert competencia == "2026-05"
+    assert composicao["10406511000161"]["Ações"] == 90.0
+    assert composicao["31024153000100"]["Renda Fixa"] == 40.0
+    assert pls["10406511000161"] == 1000000
+
+    classificacoes = {
+        "10406511000161": {"ticker": "BOVA11", "classificacao_scout": "Ações Brasil"},
+        "31024153000100": {"ticker": "IMAB11", "classificacao_scout": "Renda Fixa"},
+    }
+    divergencias = cda.verificar(composicao, classificacoes)
+    assert [d["ticker"] for d in divergencias] == ["IMAB11"]
+    assert divergencias[0]["tipo"] == "divergência"
+    assert "Renda Fixa em 40%" in divergencias[0]["motivo"]
+    assert "Ações 60%" in divergencias[0]["carteira"]
+
+    # fundo novo em captação (100% RF) e exposição via cotas: atenção, não erro
+    especiais = cda.verificar(
+        {
+            "1": {"Renda Fixa": 100.0},
+            "2": {"Cotas de Fundos": 100.0},
+        },
+        {
+            "1": {"ticker": "NOVO11", "classificacao_scout": "Cripto"},
+            "2": {"ticker": "FOFX11", "classificacao_scout": "Ações Internacionais"},
+        },
+    )
+    assert {d["ticker"]: d["tipo"] for d in especiais} == {"NOVO11": "atenção", "FOFX11": "atenção"}
+    assert "captação" in especiais[0]["motivo"] or "captação" in especiais[1]["motivo"]
+
+
 def test_cotahist_codbdi_14_entra_como_etf(con):
     from tests.test_cotacoes import _linha_cotahist, _zip_cotahist
 

@@ -107,6 +107,19 @@ CREATE TABLE IF NOT EXISTS etfs (
     nome_pregao   TEXT,
     atualizado_em TEXT
 );
+CREATE TABLE IF NOT EXISTS etf_carteira (
+    cnpj        TEXT NOT NULL,
+    competencia TEXT NOT NULL,  -- AAAA-MM do CDA
+    grupo       TEXT NOT NULL,  -- Renda Fixa | Ações | Exterior | Cotas de Fundos
+    pct         REAL,
+    PRIMARY KEY (cnpj, competencia, grupo)
+);
+CREATE TABLE IF NOT EXISTS etf_pl (
+    cnpj        TEXT NOT NULL,
+    competencia TEXT NOT NULL,
+    pl          REAL,
+    PRIMARY KEY (cnpj, competencia)
+);
 CREATE TABLE IF NOT EXISTS setores_inquilinos (
     cnpj            TEXT NOT NULL,
     competencia     TEXT NOT NULL,  -- AAAA-MM do trimestre
