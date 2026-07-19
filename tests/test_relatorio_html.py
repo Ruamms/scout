@@ -275,6 +275,8 @@ def test_sem_cotacao_nao_mostra_calculadoras(con, zip_cvm):
     completo = analise.montar_completo(con, "tste11")
     pagina = relatorio_html.gerar(completo)
     assert "Uma cota por mês" not in pagina
+    # sem a seção, o botão do topo também some (âncora quebrada era bug real: JCDR11)
+    assert 'href="#calculadoras"' not in pagina
 
 
 def test_salvar_html_escreve_arquivo(con, zip_cvm, tmp_path):

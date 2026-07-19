@@ -217,6 +217,15 @@ def gerar(
             )
         )
 
+    secao_calculadoras = _secao_calculadoras(completo)
+    # fundo sem cotação/rendimento não tem calculadoras — o botão do topo
+    # só existe quando a âncora existe
+    botao_calculadoras = (
+        '<a class="btn-topo" href="#calculadoras">🧮 Calculadoras</a>'
+        if secao_calculadoras
+        else ""
+    )
+
     return f"""<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -308,7 +317,7 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
   <div class="topo">
     <h1>{_e(raiox.ticker)} <small>{_e(raiox.nome)}</small></h1>
     {_selo_html(raiox)}
-    <a class="btn-topo" href="#calculadoras">🧮 Calculadoras</a>
+    {botao_calculadoras}
   </div>
   <div class="meta">
     {_e(raiox.cnpj)} · {_e(raiox.classificacao)} · Gestão {_e(raiox.gestao.lower())}<br>
@@ -335,7 +344,7 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
   <h2>Gráficos</h2>
   {"".join(secoes_graficos) or '<p class="na">sem séries suficientes para gráficos</p>'}
 
-  {_secao_calculadoras(completo)}
+  {secao_calculadoras}
 
   <div class="rodape">{_RODAPE}<br>
   Projeto open source: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a>
