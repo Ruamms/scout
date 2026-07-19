@@ -46,14 +46,17 @@ GRUPOS = {
     "Cotas de Fundos": "Cotas de Fundos",
 }
 
-# classificação nossa -> regra de coerência com a carteira (grupo, mínimo %)
+# classificação nossa -> regra de coerência com a carteira (grupo, mínimo %).
+# "Misto/Híbrido" fica de fora de propósito: a natureza dele é não ter grupo
+# dominante — a composição é exibida, não policiada.
 _REGRAS_COERENCIA = {
     "Renda Fixa": ("Renda Fixa", 80.0),
     "Ações Brasil": ("Ações", 70.0),
     "FIIs (índice)": ("Cotas de Fundos", 70.0),
-    # internacionais/cripto/commodities vivem em "Exterior" (BDR, offshore,
-    # investimento no exterior) — a regra é não ter muita coisa local
+    # internacionais/cripto/commodities/RF internacional vivem em "Exterior"
+    # (BDR, offshore, investimento no exterior) — a regra é não ter muita coisa local
     "Ações Internacionais": ("Exterior", 60.0),
+    "Renda Fixa Internacional": ("Exterior", 60.0),
     "Cripto": ("Exterior", 60.0),
     "Commodities": ("Exterior", 40.0),
 }

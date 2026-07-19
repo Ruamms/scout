@@ -120,11 +120,14 @@ produto que 30/70. Por isso a classificação dinâmica (abaixo).
    mistos, e `classificacao_final` (humana). Sites de mercado servem como
    CONFERÊNCIA visual durante a revisão (não copiamos os rótulos deles para o
    produto — taxonomia própria). Nomenclatura adotada (linguagem de leigo):
-   **Ações Brasil · Ações Internacionais · Renda Fixa · Cripto · Commodities ·
-   FIIs (índice) · Misto/Híbrido**. Para o Misto/Híbrido, a classificação é
-   DINÂMICA: exibir a composição real por classe ("Renda Fixa 70% · Cripto 30%")
-   no selo/hover, calculada da carteira oficial do fundo (CVM publica a
-   composição mensal — dataset CDA dos fundos 555; a validar volumetria no E1).
+   **Ações Brasil · Ações Internacionais · Renda Fixa · Renda Fixa
+   Internacional · Cripto · Commodities · FIIs (índice) · Misto/Híbrido**.
+   "Renda Fixa Internacional" nasceu na revisão de 19/07/2026 (T-Bills dos EUA:
+   renda fixa que oscila com o dólar — pegadinha própria). Para o Misto/Híbrido,
+   a classificação é DINÂMICA: exibir a composição real por classe ("Renda Fixa
+   70% · Cripto 30%") no selo/hover, calculada da carteira oficial (CDA/CVM,
+   arquivo `cda_fie` — validado: 182 ETFs cobertos). O VERIFICADOR mensal
+   (`coleta/cda.py`) compara carteira real vs curadoria e aponta divergências.
 4. **Renda fixa entra desde o início** mesmo sem preço de bolsa (ver E4): o
    informe diário da CVM publica o VALOR DA COTA de cada ETF todo dia útil; para
    ETF de renda fixa o preço de tela gruda nesse valor (o formador de mercado
