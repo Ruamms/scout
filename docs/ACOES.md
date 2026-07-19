@@ -30,7 +30,35 @@ documentos que ninguém lê e transformar em fato com fonte**.
    emissão, dividendos insustentáveis vs lucro/caixa, auditor trocado com
    frequência, atraso na entrega de DFs, republicação de balanço.
 
-## Fontes mapeadas (a validar com probes no A1)
+## Resultado dos probes do A1 (20/07/2026 — fontes VALIDADAS com dados reais)
+
+- **Modelo emissor→papéis implementado** (`coleta/empresas.py`, 1ª parte do A1):
+  95 emissores do IBrX-100, 129 papéis, 0 sem match; `codeCVM` é a chave que
+  liga a B3 aos datasets CIA_ABERTA da CVM; cadastro CVM casou 100% por CNPJ
+  (setor, situação e AUDITOR para todos).
+- **DFP/ITR são leves** (12,7/9,9 MB por ano zipado) e trazem MAIS que o
+  esperado: `dfp_cia_aberta_parecer_AAAA.csv` tem o PARECER DO AUDITOR em
+  texto estruturado (A3 sem PDF!) e `composicao_capital` tem o nº de ações.
+- **FRE em dados abertos** cobre: conselho/diretoria (`administrador_membro_
+  conselho_fiscal`), transações com partes relacionadas, posição acionária,
+  remuneração, auditor, relações familiares. NÃO cobre processos judiciais
+  (seção 4.3+ só no PDF/IA — nuance do A5).
+- **IPE 2026 ainda não publicado** (último zip é 2025) — fatos relevantes do
+  ano corrente precisarão de outra rota no A5 (investigar frente RAD/CVM).
+- **Eventos societários e proventos**: `listedCompaniesProxy/
+  GetListedSupplementCompany({issuingCompany})` → `stockDividends` (label
+  DESDOBRAMENTO/BONIFICACAO com factor = % de ações novas; GRUPAMENTO com
+  factor = razão direta <1, ex. AMER 100:1 = 0,01), `cashDividends` (rate +
+  lastDatePrior = data ex + paymentDate + label DIVIDENDO/JRS CAP PROPRIO) e
+  nº de ações ON/PN. `GetListedCashDividends({tradingName})` pagina o
+  histórico completo.
+- **COTAHIST codbdi 02**: 372 tickers/mês (units tipo TAEE11/SANB11 inclusas).
+  ATENÇÃO (decisão de desenho): NÃO usar a detecção de desdobramento por
+  salto de preço dos FIIs em ação — queda de 50% num mês viraria split falso.
+  Ajuste de ação = eventos REAIS do endpoint acima; até lá, ações ficam fora
+  do `recalcular_derivadas`.
+
+## Fontes mapeadas (probadas em 20/07/2026)
 
 | Dado | Fonte | Observação |
 |---|---|---|
