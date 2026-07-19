@@ -388,8 +388,10 @@ def test_proventos_de_etf_extrai_e_grava(con, monkeypatch):
     assert ultimos[0]["valor"] == 0.3895801
     assert ultimos[0]["isento"] == 0
 
-    # semana fresca: não vai à rede
-    assert etf_renda.atualizar_proventos(con, hoje=date(2026, 7, 20)) is None
+    # mesmo dia: não vai à rede de novo (1x/dia)
+    assert etf_renda.atualizar_proventos(con, hoje=date(2026, 7, 19)) is None
+    # dia seguinte: roda de novo, mas só baixa o que ainda não tem (incremental)
+    assert etf_renda.atualizar_proventos(con, hoje=date(2026, 7, 20)) is not None
 
 
 def test_proventos_repete_busca_do_fnet_que_oscilou(con, monkeypatch):

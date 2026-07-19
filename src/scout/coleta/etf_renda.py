@@ -18,7 +18,6 @@ from datetime import date
 from .. import armazenamento
 from . import fnet
 
-DIAS_FRESCOR = 7
 TIPO_DOCUMENTO = "proventos em dinheiro"
 
 
@@ -53,16 +52,16 @@ def extrair_proventos(conteudo_xml: bytes) -> list[dict]:
 def atualizar_proventos(
     con: sqlite3.Connection, hoje: date | None = None, ao_progredir=None
 ) -> str | None:
-    """1x/semana: varre o FNET de cada ETF atrás de avisos de proventos e
-    baixa só os documentos que ainda não temos."""
+    """1x/dia: varre o FNET de cada ETF atrás de avisos de proventos e baixa
+    só os documentos que ainda não temos. Diário (não semanal) por escolha do
+    dono: o download é incremental, então rodar todo dia mantém a base sempre
+    em dia — melhor do que ficar até uma semana atrasado."""
     hoje = hoje or date.today()
     carga = con.execute(
         "SELECT carregado_em FROM cargas WHERE arquivo = 'ETF_PROVENTOS'"
     ).fetchone()
-    if carga and carga[0]:
-        idade = (hoje - date.fromisoformat(str(carga[0])[:10])).days
-        if idade < DIAS_FRESCOR:
-            return None
+    if carga and str(carga[0])[:10] == hoje.isoformat():
+        return None  # já rodou hoje
     etfs = con.execute(
         "SELECT cnpj, ticker FROM etfs WHERE ticker IS NOT NULL AND ticker <> ''"
     ).fetchall()
