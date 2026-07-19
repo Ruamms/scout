@@ -70,11 +70,14 @@ def listar(
     ]
 
 
-def baixar(id_fnet: int) -> bytes:
+def baixar(id_fnet: int, timeout: int = 180, tentativas: int = 3) -> bytes:
+    """Download de um documento do FNET. Timeout frouxo por padrão (relatório
+    gerencial em PDF é grande e lento). Numa varredura em LOTE, passe valores
+    curtos: um download que pendura custa 180s×3 ≈ 9 min por documento."""
     requisicao = urllib.request.Request(
         URL_DOWNLOAD.format(id=id_fnet), headers=_HEADERS
     )
-    with _abrir_com_retry(requisicao, timeout=180) as resposta:
+    with _abrir_com_retry(requisicao, timeout=timeout, tentativas=tentativas) as resposta:
         return resposta.read()
 
 

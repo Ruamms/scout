@@ -87,7 +87,9 @@ def atualizar_proventos(
             if (etf["cnpj"], documento["id"]) in conhecidos:
                 continue
             try:
-                proventos = extrair_proventos(fnet.baixar(documento["id"]))
+                # timeout curto também no download (o aviso de proventos é um
+                # XML pequeno); um download pendurado não pode custar 9 min
+                proventos = extrair_proventos(fnet.baixar(documento["id"], timeout=30, tentativas=1))
             except Exception:
                 continue
             for provento in proventos:
