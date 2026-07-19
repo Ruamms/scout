@@ -1,5 +1,7 @@
 from datetime import datetime
 
+import pytest
+
 from scout import analise, armazenamento, redflags
 from scout.coleta import cvm
 from scout.modelos import RedFlag, Severidade
@@ -206,6 +208,45 @@ def test_secao_ia_explica_fundo_sem_relatorio_gerencial(con, zip_cvm):
     assert "foram lidos pela IA" in pagina2
     assert "resumo dos fatos" in pagina2
     assert "downloadDocumento?id=120" in pagina2
+
+
+def test_oscilacoes_com_contexto(con, zip_cvm):
+    completo = _completo(con, zip_cvm)  # cota 90 -> 100 = +11,1% em fev/26
+    assert [osc.mes for osc in completo.oscilacoes] == ["2026-02"]
+    assert completo.oscilacoes[0].variacao == pytest.approx(11.11, abs=0.01)
+
+    leitura = {
+        "ticker": "TSTE11",
+        "modelo": "teste:1b",
+        "gerada_em": "2026-07-18T22:00:00",
+        "relatorio": {"id": 1, "data_entrega": "10/07/2026 18:00", "texto": "leitura"},
+        "fatos": {"ids": [77], "datas": ["10/02/2026"], "texto": "bloco"},
+    }
+    pagina = relatorio_html.gerar(completo, leitura=leitura)
+    assert "Oscilações com contexto" in pagina
+    assert "fev/26" in pagina
+    # fato relevante do mesmo mês vira evento do período, com link para o original
+    assert "fato relevante publicado em 10/02/2026" in pagina
+    assert "downloadDocumento?id=77" in pagina
+    # a nota nega causalidade com todas as letras
+    assert "não</b> afirmação de causa" in pagina
+
+
+def test_oscilacoes_sem_sustos(con, zip_cvm):
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
+    armazenamento.gravar_cotacoes(
+        con,
+        "TSTE11",
+        [("2026-01", 100.0, 100.0), ("2026-02", 105.0, 105.0)],
+        105.0,
+        "2026-02-17",
+        "2026-02-18",
+    )
+    completo = analise.montar_completo(con, "tste11")
+    assert completo.oscilacoes == []
+    pagina = relatorio_html.gerar(completo)
+    assert "Oscilações com contexto" in pagina
+    assert "sem sustos" in pagina
 
 
 def test_sem_cotacao_nao_mostra_calculadoras(con, zip_cvm):

@@ -50,9 +50,22 @@ class DadosGraficos:
 
 
 @dataclasses.dataclass(frozen=True)
+class Oscilacao:
+    """Mês com variação forte da cota + eventos FACTUAIS do mesmo período.
+
+    Eventos são coincidência de período, nunca afirmação de causa — a página
+    deixa isso explícito."""
+
+    mes: str  # AAAA-MM
+    variacao: float  # % no mês, sobre a cota ajustada por desdobramento
+    eventos: list[str]
+
+
+@dataclasses.dataclass(frozen=True)
 class AnaliseCompleta:
     raiox: RaioX
     graficos: DadosGraficos
+    oscilacoes: list[Oscilacao] = dataclasses.field(default_factory=list)
 
 
 def montar_completo(
@@ -72,7 +85,67 @@ def montar_completo(
     graficos = dataclasses.replace(
         graficos, vacancia=_serie_vacancia(armazenamento.serie_imoveis(con, fundo.cnpj))
     )
-    return AnaliseCompleta(raiox=raiox, graficos=graficos)
+    return AnaliseCompleta(
+        raiox=raiox,
+        graficos=graficos,
+        oscilacoes=_oscilacoes(serie, cotacoes, vp_ajustada),
+    )
+
+
+LIMIAR_OSCILACAO = 10.0  # variação mensal (%) a partir da qual o mês é destacado
+
+
+def _oscilacoes(
+    serie: list[sqlite3.Row],
+    cotacoes: list[sqlite3.Row],
+    vp_ajustada: dict[str, float],
+) -> list[Oscilacao]:
+    """Meses com variação forte da cota, cruzados com eventos do período que
+    já conhecemos pelos informes da CVM (emissão de cotas, mudança brusca no
+    rendimento). Usa a cota AJUSTADA por desdobramento — split não vira
+    oscilação falsa. Fatos relevantes entram na camada de exibição."""
+    ajustado = [
+        (linha["competencia"], linha["fechamento_ajustado"])
+        for linha in cotacoes
+        if linha["fechamento_ajustado"]
+    ]
+    cotas = {
+        linha["competencia"]: linha["cotas_emitidas"]
+        for linha in serie
+        if linha["cotas_emitidas"]
+    }
+    rendimento = {
+        linha["competencia"]: linha["dy_mes"] * vp_ajustada[linha["competencia"]]
+        for linha in serie
+        if series.dy_valido(linha["dy_mes"]) and vp_ajustada.get(linha["competencia"])
+    }
+
+    oscilacoes = []
+    for (mes_anterior, preco_anterior), (mes, preco) in zip(ajustado, ajustado[1:]):
+        if not preco_anterior:
+            continue
+        variacao = 100 * (preco - preco_anterior) / preco_anterior
+        if abs(variacao) < LIMIAR_OSCILACAO:
+            continue
+        eventos = []
+        base_cotas, cotas_mes = cotas.get(mes_anterior), cotas.get(mes)
+        if base_cotas and cotas_mes and cotas_mes > base_cotas * 1.005:
+            eventos.append(
+                f"emissão de cotas no período (+{100 * (cotas_mes / base_cotas - 1):.1f}% na base de cotas)"
+            )
+        rend_anterior, rend_mes = rendimento.get(mes_anterior), rendimento.get(mes)
+        if rend_anterior and rend_mes and rend_anterior > 0:
+            delta = 100 * (rend_mes - rend_anterior) / rend_anterior
+            if delta <= -30:
+                eventos.append(
+                    f"rendimento por cota caiu de ≈R$ {rend_anterior:.2f} para ≈R$ {rend_mes:.2f}"
+                )
+            elif delta >= 30:
+                eventos.append(
+                    f"rendimento por cota subiu de ≈R$ {rend_anterior:.2f} para ≈R$ {rend_mes:.2f}"
+                )
+        oscilacoes.append(Oscilacao(mes=mes, variacao=variacao, eventos=eventos))
+    return oscilacoes
 
 
 def _serie_vacancia(imoveis: list[sqlite3.Row]) -> list[tuple[str, float]]:

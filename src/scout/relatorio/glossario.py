@@ -117,6 +117,12 @@ TERMOS = {
         "Juros compostos na prática: aporte inicial + aportes mensais rendendo à taxa "
         "definida. Reinvestir os rendimentos é o que faz a curva dobrar no longo prazo."
     ),
+    "Oscilações com contexto": (
+        "Os meses em que a cota subiu ou caiu mais de 10%, lado a lado com o que aconteceu "
+        "no mesmo período (emissão de cotas, mudança no rendimento, fato relevante). "
+        "Atenção: estar no mesmo mês não prova que uma coisa causou a outra — é um ponto "
+        "de partida para investigar, não uma explicação pronta."
+    ),
 }
 
 # Jargão de mercado que aparece nos relatórios gerenciais (e, portanto, nas

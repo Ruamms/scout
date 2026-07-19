@@ -326,6 +326,8 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
 
   {_secao_pares(raiox, publicados=publicados)}
 
+  {_secao_oscilacoes(completo, leitura)}
+
   {_secao_ia(leitura, agora)}
 
   <h2>Gráficos</h2>
@@ -683,6 +685,70 @@ def _texto_ia_para_html(texto: str) -> str:
         )
 
     return padrao.sub(_marca, resultado)
+
+
+def _secao_oscilacoes(completo: AnaliseCompleta, leitura: dict | None, visiveis: int = 8) -> str:
+    """Meses de variação forte da cota + eventos factuais do mesmo período.
+    Coincidência de período, não causa — e a nota diz isso com todas as letras."""
+    from ..coleta.fnet import URL_DOWNLOAD
+
+    if not completo.graficos.cotacao:
+        return ""
+
+    # fatos relevantes já lidos pela IA entram como evento do mês, com link
+    fatos_por_mes: dict[str, list[str]] = {}
+    if leitura:
+        fatos = leitura.get("fatos", {})
+        for id_doc, data in zip(fatos.get("ids", []), fatos.get("datas", [])):
+            try:
+                dia, mes, ano = data.split("/")
+                chave = f"{ano}-{mes}"
+            except ValueError:
+                continue
+            fatos_por_mes.setdefault(chave, []).append(
+                f'fato relevante publicado em {_e(data)} '
+                f'(<a href="{URL_DOWNLOAD.format(id=id_doc)}" target="_blank" rel="noopener">ver original</a>)'
+            )
+
+    oscilacoes = list(reversed(completo.oscilacoes))  # mais recentes primeiro
+    if not oscilacoes:
+        return f"""
+  <h2>Oscilações com contexto{_ajuda("Oscilações com contexto")}</h2>
+  <div class="grafico"><div class="nota" style="font-size:13px">Nenhum mês com variação da cota
+  acima de ±10% no histórico disponível — cota sem sustos até aqui.</div></div>
+"""
+
+    linhas = []
+    for indice, osc in enumerate(oscilacoes):
+        eventos = list(osc.eventos) + fatos_por_mes.get(osc.mes, [])
+        cor = "#8FCB9B" if osc.variacao >= 0 else "#D66A6A"
+        oculta = ' class="osc-extra" hidden' if indice >= visiveis else ""
+        linhas.append(
+            f"<tr{oculta}><td style='white-space:nowrap'>{_e(formato.competencia_curta(osc.mes))}</td>"
+            f"<td style='color:{cor};font-weight:700;white-space:nowrap'>"
+            f"{_e(formato.percentual(osc.variacao, sinal=True))}</td>"
+            f"<td style='text-align:left'>{' · '.join(eventos) if eventos else '—'}</td></tr>"
+        )
+    botao = ""
+    if len(oscilacoes) > visiveis:
+        botao = (
+            f'<button class="ver-mais" onclick="verMais(this, \'osc-extra\')" '
+            f'data-mais="ver todos os {len(oscilacoes)} meses" data-menos="mostrar menos">'
+            f"ver todos os {len(oscilacoes)} meses</button>"
+        )
+    return f"""
+  <h2>Oscilações com contexto{_ajuda("Oscilações com contexto")}</h2>
+  <div class="grafico">
+  <table class="imoveis">
+    <thead><tr><th>mês</th><th>variação da cota</th><th style="text-align:left">eventos do período</th></tr></thead>
+    <tbody>{"".join(linhas)}</tbody>
+  </table>
+  {botao}
+  <div class="nota" style="margin-top:8px">meses em que a cota (ajustada por desdobramento) variou
+  mais de ±10% · os eventos listados ocorreram no mesmo período — é coincidência de calendário
+  registrada como fato, <b>não</b> afirmação de causa · fatos relevantes: apenas os já lidos pela IA</div>
+  </div>
+"""
 
 
 def _bloco_fatos_ia(leitura: dict) -> str:
