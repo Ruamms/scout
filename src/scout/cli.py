@@ -215,7 +215,7 @@ def _executar_atualizacao(con) -> None:
         + len(cvm.anos_pendentes(con, hoje, cvm.nome_arquivo_trimestral))
         + len(b3.arquivos_pendentes(con, hoje))
     )
-    from .coleta import b3fundos, b3rf, cda, etf_renda
+    from .coleta import b3fundos, b3rf, cda, empresas, etf_renda
 
     if not console.is_terminal:
         progresso = lambda msg: console.print(f"  [dim]{msg}[/]")  # noqa: E731
@@ -225,6 +225,7 @@ def _executar_atualizacao(con) -> None:
         cda.atualizar_composicao(con, ao_progredir=progresso)
         b3rf.atualizar_diaria(con, ao_progredir=progresso)
         etf_renda.atualizar_proventos(con, ao_progredir=progresso)
+        empresas.atualizar_empresas(con, ao_progredir=progresso)
     else:
         with Progress(
             TextColumn("[progress.description]{task.description}"),
@@ -244,6 +245,7 @@ def _executar_atualizacao(con) -> None:
             cda.atualizar_composicao(con, ao_progredir=_avanca)
             b3rf.atualizar_diaria(con, ao_progredir=_avanca)
             etf_renda.atualizar_proventos(con, ao_progredir=_avanca)
+            empresas.atualizar_empresas(con, ao_progredir=_avanca)
     console.print("[green]Base atualizada.[/]")
 
 

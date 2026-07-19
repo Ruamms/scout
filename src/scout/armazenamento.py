@@ -172,6 +172,26 @@ CREATE TABLE IF NOT EXISTS cadastro_meta (
     id            INTEGER PRIMARY KEY CHECK (id = 1),
     atualizado_em TEXT
 );
+CREATE TABLE IF NOT EXISTS empresas (
+    cod_cvm           TEXT PRIMARY KEY,  -- chave que casa B3 <-> datasets CIA_ABERTA da CVM
+    cnpj              TEXT,              -- só dígitos
+    radical           TEXT,              -- issuingCompany na B3 (PETR)
+    nome              TEXT,              -- razão social
+    nome_pregao       TEXT,
+    setor_b3          TEXT,              -- classificação em 3 níveis da B3
+    setor_cvm         TEXT,              -- SETOR_ATIV do cadastro CVM
+    situacao          TEXT,              -- SIT no cadastro CVM (ATIVO/CANCELADA/SUSPENSO)
+    auditor           TEXT,              -- AUDITOR no cadastro CVM
+    segmento_listagem TEXT,              -- Novo Mercado, N2, N1...
+    no_ibrx100        INTEGER,           -- 1 = escopo v1
+    atualizado_em     TEXT
+);
+CREATE TABLE IF NOT EXISTS papeis (
+    ticker  TEXT PRIMARY KEY,  -- PETR4
+    cod_cvm TEXT NOT NULL,
+    isin    TEXT,
+    tipo    TEXT               -- ON | PN | PNA | PNB | UNT
+);
 """
 
 
@@ -516,6 +536,30 @@ def etfs_listados(con: sqlite3.Connection) -> list[sqlite3.Row]:
     """Todos os ETFs com código de negociação, para o site."""
     return con.execute(
         "SELECT * FROM etfs WHERE ticker IS NOT NULL AND ticker <> '' ORDER BY ticker"
+    ).fetchall()
+
+
+def empresa_por_ticker(con: sqlite3.Connection, ticker: str) -> sqlite3.Row | None:
+    """Empresa dona do papel (PETR4 -> Petrobras)."""
+    return con.execute(
+        """
+        SELECT e.*, p.ticker AS ticker_consultado, p.tipo AS tipo_papel
+          FROM papeis p JOIN empresas e ON e.cod_cvm = p.cod_cvm
+         WHERE p.ticker = ?
+        """,
+        (ticker.strip().upper(),),
+    ).fetchone()
+
+
+def empresas_listadas(con: sqlite3.Connection, so_ibrx: bool = True) -> list[sqlite3.Row]:
+    """Empresas do escopo (v1 = IBrX-100), para o site e o lote."""
+    filtro = "WHERE no_ibrx100 = 1" if so_ibrx else ""
+    return con.execute(f"SELECT * FROM empresas {filtro} ORDER BY radical").fetchall()
+
+
+def papeis_da_empresa(con: sqlite3.Connection, cod_cvm: str) -> list[sqlite3.Row]:
+    return con.execute(
+        "SELECT * FROM papeis WHERE cod_cvm = ? ORDER BY ticker", (cod_cvm,)
     ).fetchall()
 
 

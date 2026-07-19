@@ -46,9 +46,18 @@ A visão de produto completa (referências de mercado, backlog e decisões de de
 - [x] **E6 — ETFs distribuidores de renda** — FEITO (20/07/2026): descoberta-chave — os ETFs estão INTEGRALMENTE no FNET (a investigação via API da B3 revelou `urlFundosNet` nos documentos), e cada provento é um XML estruturado ("Aviso aos Cotistas - Estruturado / Proventos em dinheiro") com valor por cota, datas e o aviso `RendimentoIsentoIR: Não` (diferente de FII!). `coleta/etf_renda.py` varre semanalmente e grava em `etf_proventos`; a página ganha o card "Distribui renda" (R$ X/cota · pago em DATA · NÃO isento de IR) e a carteirinha ganha a linha da geração DISTRIBUIDORA dinamicamente
 - [x] **E7 — IA nos documentos de ETF** — FEITO (20/07/2026) e mais simples que o planejado: como os ETFs vivem no FNET, o `ia-lote` simplesmente passou a incluí-los no fim da fila — o fluxo `sem_relatorio` existente lê fatos relevantes/comunicados/ASSEMBLEIAS (onde vivem troca de índice, taxa e encerramento) e o parecer da DF; a página de ETF renderiza a leitura por IA e o parecer com as mesmas seções do FII
 
-## Fase 4 — Demais classes (depois dos ETFs)
+## Fase 4 — Ações (em andamento; dossiê em [docs/ACOES.md](docs/ACOES.md))
 
-- [ ] **Ações** — dossiê de planejamento pronto em [docs/ACOES.md](docs/ACOES.md) (tese: FRE lido por IA — diretoria/processos/partes relacionadas —, parecer do auditor reusado, red flags societárias benchmarkadas contra Americanas/IRB/Oi; fontes CVM CIA_ABERTA + COTAHIST codbdi 02 que já temos; roadmap A1–A6 proposto; decisões a validar: página por EMPRESA com N papéis, v1 = IBrX-100, setoriais depois)
+Tese: FRE lido por IA (diretoria/processos/partes relacionadas), parecer do auditor reusado, red flags societárias benchmarkadas contra casos reais (Americanas/IRB/Oi). Decisões aprovadas (20/07/2026): página por EMPRESA com N papéis · v1 = IBrX-100 · métricas universais primeiro (setoriais depois) · selo só após o benchmark.
+
+- [ ] **A1 — Fundação** — probes das fontes (CAD/DFP/ITR/FRE/IPE + composição do IBrX-100), modelo emissor→papéis (PETR → PETR3/PETR4), cotações COTAHIST codbdi 02 + proventos/ajustes, cadastro de cias com setor
+- [ ] **A2 — Indicadores fundamentais** — DFP/ITR estruturados → receita, lucro, margens, dívida líquida/EBITDA, ROE em série histórica; P/L, P/VP e DY com o preço oficial
+- [ ] **A3 — Red flags societárias + parecer do auditor** — 6 regras candidatas benchmarkadas contra os casos conhecidos; selo de ação SÓ depois do benchmark passar
+- [ ] **A4 — Página da empresa** — carteirinha de regras da classe (isenção R$ 20 mil/mês, JCP tributado, ON vs PN vs unit explicado para leigo), indicadores, papéis, red flags
+- [ ] **A5 — FRE + IPE por IA** — diretoria/conselho com histórico, processos, partes relacionadas; fatos relevantes de empresas no pipeline local
+- [ ] **A6 — Site** — classe nova no menu/home/busca; comparador de EMPRESAS do mesmo setor
+
+## Fase 5 — Demais classes
 - [ ] **Renda fixa/CDB** — alerta de concentração acima do teto do FGC (R$ 250 mil) e saúde do emissor (IF.data/BCB)
 - [x] **Comparação entre ativos** — FEITO para FIIs (19/07/2026): `comparar.html` no site com 2-3 fundos lado a lado (mesmos fatos: selo com motivos, cotação, DY, P/VP, PL, cotistas, idade, alertas), links cruzados e `?f1=X&f2=Y` na URL; sem destaque de "vencedor" — comparação de fatos, não recomendação. Estende às outras classes quando existirem
 - [ ] **API/site dinâmico** — expor o núcleo via FastAPI quando o site estático não bastar
