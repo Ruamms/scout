@@ -1,0 +1,47 @@
+{
+  "ticker": "FATN11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T13:12:28",
+  "relatorio": {
+    "id": 1233080,
+    "data_entrega": "29/06/2026 18:38",
+    "texto": "1. **Mudança de nome do fundo:** O FII Athena I foi renomeado como BRC Renda Corporativa (FATN11).\n   \n2. **Aquisições recentes:** Em maio/2026, foram adquiridos oito novos escritórios nas regiões da Vila Olímpia e Berrini, adicionando 1.817,76 m² de área locável ao portfólio do fundo.\n\n3. **Vacância física:** A vacância física total é de 21,67%, com destaque para o Edifício Arco do Triunfo em obras e prospecção de contratos.\n\n4. **Obras e reformas:** Obras de retrofit estão em andamento no Edifício Arco do Triunfo, com três contratos formalizados para ocupação posterior a partir de julho/agosto/2026.\n\n5. **Contratos locativos:** Novos contratos foram firmados nos seguintes edifícios: Atrium I (cj. 101), Brasílio Machado (cj. 21A) e Cons. Paranaguá (cjs. 52-56).\n\n6. **Amortização de CRI:** Em maio, foram pagos R$ 693.584 referentes à parcela de amortização do CRI1 e R$ 364.424 para o CRI2.\n\n7. **Emissão de cotas:** O fundo emitiu novas cotas com VP/cota ajustado -5,81% no período de 2 anos.\n\n8. **Risco vacância física alta:** A taxa de vacância ponderada por área é de 21,67%, acima do limiar de alerta de 15%.\n\n**O que observar em seguida:**\n- Progresso das obras e conclusão dos contratos no Edifício Arco do Triunfo.\n- Evolução da taxa de vacância física e negociação de novos contratos."
+  },
+  "comunicados": {
+    "ids": [
+      1202261,
+      1180481,
+      1152796
+    ],
+    "datas": [
+      "25/05/2026",
+      "05/05/2026",
+      "01/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 25/05/2026\n**O QUE ACONTECEU:** O Fundo FATN11 aprovou a realização da 7ª emissão de cotas.\n- **RESUMO:** A BR-CAPITAL, administradora do fundo, anunciou que foi aprovada uma nova emissão de até R$300 milhões em novas cotas, com preço unitário de R$100 cada. O montante total da oferta será distribuído sob o regime de melhores esforços de colocação e registrada na B3.\n- **TRECHO CHAVE:** \"foi aprovado, por meio do “Ata de Reunião entre Gestor e Administrador do BRC RENDA CORPORATIVA FUNDO DE INVESTIMENTO IMOBILIÁRIO – RESPONSABILIDADE LIMITADA”, formalizada em 22 de outubro de 2025 (“Ato do Administrador”), a realização da 7ª (setima) emissão de cotas do Fundo (“Novas Cotas” e “Emissão”)\"\n\n### 05/05/2026\n**O QUE ACONTECEU:** O Fundo FATN11 concluiu uma consulta formal aos cotistas sobre as Demonstrações Financeiras referentes ao exercício de 2025.\n- **RESUMO:** A consulta foi realizada por correspondência, e os votos foram apurados. Os resultados mostraram que a ordem do dia foi aprovada por 81,921% dos cotistas participantes.\n- **TRECHO CHAVE:** \"A ordem do dia foi aprovada por cotistas representando 199.122 cotas, ou seja 81,921% das cotas votantes\"\n\n### 01/04/2026\n**O QUE ACONTECEU:** O Fundo FATN11 convocou uma consulta formal aos cotistas para analisar e deliberar sobre as Demonstrações Financeiras referentes ao exercício de 2025.\n- **RESUMO:** Os cotistas foram convidados a votar por escrito até o dia 4 de maio, com instruções detalhadas sobre como proceder na plataforma Cuore. A consulta inclui análise e deliberação das demonstrações financeiras do exercício encerrado em 31 de dezembro de 2025.\n- **TRECHO CHAVE:** \"BR-CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., na qualidade de administradora do BRC RENDA CORPORATIVA FUNDO DE INVESTIMENTO IMOBILIÁRIO (O “FUNDO”), com base no artigo 27 do Regulamento do Fundo, vem pela presente consultar os cotistas, para que, no prazo de 30 dias, ou seja, até o dia 04 de maio, considerando o feriado nacional de 01 de maio de 2026, se manifestem por escrito sobre a seguinte matéria: Análise e deliberação acerca das Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda",
+      "Vacância física alta"
+    ],
+    "cota": 79.82
+  },
+  "parecer": {
+    "id": 1148954,
+    "data_entrega": "30/03/2026 19:50",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acim a referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BRC Renda Corporativa Fundo de Investimentos Imobiliário – Responsabilidade Limita da em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábe"
+  }
+}

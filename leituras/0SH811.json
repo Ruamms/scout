@@ -1,0 +1,21 @@
+{
+  "ticker": "0SH811",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T01:48:00",
+  "comunicados": {
+    "ids": [
+      1225041,
+      1244180
+    ],
+    "datas": [
+      "19/06/2026",
+      "10/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGE"
+    ],
+    "texto": "### Comunicado ao Mercado - XP CDI 94 CRI JUN/27 FUNDO DE INVESTIMENTO IMOBILIÁRIO (19/06/2026)\n**O QUE ACONTECEU:**  \nA oferta pública de distribuição da primeira emissão de cotas do fundo foi concluída com sucesso.\n\n**RESUMO:**\nA totalidade das cotas objeto da Oferta foram subscritas, conforme previsto no Prospecto Definitivo. As datas relativas ao Procedimento de Alocação e à Data de Liquidação da Oferta permanecem inalteradas.\n\n**TRECHO-CHAVE:**  \n\"tendo em vista que foi verificada a subscrição da totalidade das Cotas objeto da Oferta, sendo certo que as datas relativas ao Procedimento de Alocação e à Data de Liquidação da Oferta serão mantidas, conforme cronograma previsto no Prospecto Definitivo.\" (p. 1)\n\n---\n\n### Assembleia Geral Extraordinária - XP CDI 94 CRI JUN/27 FUNDO DE INVESTIMENTO IMOBILIÁRIO (10/07/2026)\n**O QUE ACONTECEU:**  \nOs cotistas autorizaram a classe do fundo a adquirir, negociar e/ou alienar certificados de recebíveis imobiliários (CRIs) e fundos de investimento imobiliários (FIIs), com limites específicos.\n\n**RESUMO:**\nA assembleia deliberou sobre a possibilidade da Classe do Fundo adquirir CRIs e FIIs, incluindo cotas do FII Master, desde que observados os Critérios de Elegibilidade estabelecidos no Regulamento.\n\n**TRECHO-CHAVE:**  \n\"Deliberar sobre a possibilidade de: 1) a autorização para que a Classe possa adquirir, negociar e/ou alienar Ativos Alvo (conforme definido no Regulamento), incluindo certificados de recebíveis imobiliários (“CRIs”) e fundos de investimento imobiliários (“FIIs”), e excluindo imóveis...\" (p. 1)"
+  },
+  "modelo": "qwen2.5:14b"
+}

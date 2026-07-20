@@ -1,0 +1,45 @@
+{
+  "ticker": "0PRQ11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T01:31:38",
+  "comunicados": {
+    "ids": [
+      1093158,
+      1066088,
+      1044767,
+      1206270,
+      1186988,
+      1226707,
+      1186987
+    ],
+    "datas": [
+      "26/01/2026",
+      "18/12/2025",
+      "19/11/2025",
+      "28/05/2026",
+      "12/05/2026",
+      "23/06/2026",
+      "12/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE (26/01/2026)\n**O que aconteceu:** O Fundo RIZA MALLS MASTER pagou distribuição de rendimentos extraordinária aos cotistas.\n\n**Resumo:** A gestora decidiu realizar o pagamento de distribuição de rendimentos em 27/01/2026, com a finalidade de atender à estrutura de masterização do fundo. Este procedimento poderá ocorrer novamente até que os ajustes necessários sejam implementados.\n\n**Trecho-chave:**\n\"Conforme Capítulo 8 do Regulamento, a gestora decidiu, de forma extraordinária, realizar o pagamento de distribuição de rendimentos em 27/01/2026, aos investidores que sejam cotistas do fundo no fechamento do mercado em 26/01/2026.\"\n\n### FATO RELEVANTE (18/12/2025)\n**O que aconteceu:** O Fundo RIZA MALLS MASTER pagou distribuição de rendimentos extraordinária aos cotistas.\n\n**Resumo:** A gestora decidiu realizar o pagamento de distribuição de rendimentos em 19/12/2025, com a finalidade de atender à estrutura de masterização do fundo. Este procedimento poderá ocorrer novamente até que os ajustes necessários sejam implementados.\n\n**Trecho-chave:**\n\"Conforme Capítulo 8 do Regulamento, a gestora decidiu, de forma extraordinária, realizar o pagamento de distribuição de rendimentos em 19/12/2025, aos investidores que sejam cotistas do fundo no fechamento do mercado em 18/12/2025.\"\n\n### FATO RELEVANTE (19/11/2025)\n**O que aconteceu:** O Fundo RIZA MALLS MASTER pagou distribuição de rendimentos extraordinária aos cotistas.\n\n**Resumo:** A gestora decidiu realizar o pagamento de distribuição de rendimentos em 21/11/2025, com a finalidade de atender à estrutura de masterização do fundo. Este procedimento poderá ocorrer novamente até que os ajustes necessários sejam implementados.\n\n**Trecho-chave:**\n\"A Gestora decidiu, de forma extraordinária, realizar o pagamento de distribuição de rendimentos em 21/11/2025, aos investidores que sejam cotistas do fundo no fechamento do mercado em 19/11/2025.\"\n\n### COMUNICADO AO MERCADO (28/05/2026)\n**O que aconteceu:** O Fundo RIZA MALLS MASTER atualizou a forma de divulgação da remuneração dos prestadores de serviços essenciais.\n\n**Resumo:** A administração do fundo decidiu adotar a Ferramenta ANBIMA (Plataforma de Transparência de Taxas) para substituir o \"Sumário de Remuneração\", sem alterações nos valores pagos pelos cotistas. Esta mudança visa adequação às diretrizes estabelecidas pelo Ofício-Circular CVM nº 1/2025.\n\n**Trecho-chave:**\n\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação.\"\n\n### COMUNICADO AO MERCADO (12/05/2026)\n**O que aconteceu:** A assembleia geral ordinária do Fundo RIZA MALLS MASTER aprovou as contas anuais referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** As contas anuais foram automaticamente consideradas aprovadas, uma vez que nenhuma deliberação foi realizada na assembleia por falta de presença dos cotistas.\n\n**Trecho-chave:**\n\"Dessa forma, e considerando que as demonstrações contábeis não contêm ressalvas, ficam as mesmas consideradas automaticamente aprovadas.\"\n\n### ASSEMBLEIA AGE (23/06/2026)\n**O que aconteceu:** A assembleia especial de cotistas do Fundo RIZA MALLS MASTER decidiu pela não distribuição e reinvestimento integral dos rendimentos gerados no segundo semestre de 2025.\n\n**Resumo:** Os cotistas deliberaram por unanimidade a retenção e/ou reinvestimento integral dos rendimentos, com o objetivo de manter liquidez e realizar possíveis investimentos em ativos alvo ou novos investimentos. As deliberações passam a ter efeito no fechamento do dia 26 de fevereiro de 2026.\n\n**Trecho-chave:**\n\"Os Cotistas deliberaram, por unanimidade, sem quaisquer reservas ou restrições, aprovar a não distribuição de rendimentos e a retenção e/ou reinvestimento integral dos rendimentos gerados pela Classe no segundo semestre de 2025.\"\n\n### ASSEMBLEIA AGO (12/05/2026)\n**O que aconteceu:** A assembleia geral ordinária do Fundo RIZA MALLS MASTER não foi instalada por falta de presença dos cotistas.\n\n**Resumo:** As contas anuais referentes ao exercício encerrado em 31 de dezembro de 2025 foram consideradas automaticamente aprovadas, uma vez que nenhuma deliberação foi realizada na assembleia por falta de presença dos cotistas.\n\n**Trecho-chave:**\n\"Dessa forma, e considerando que as demonstrações contábeis não contêm ressalvas, ficam as mesmas consideradas automaticamente aprovadas.\""
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1142134,
+    "data_entrega": "23/03/2026 11:39",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o período de 31 de outubro (data de início das atividades) a 31 de dezembro de 2025, de acordo com as práticas contábeis adotadas no Brasil, ap"
+  }
+}

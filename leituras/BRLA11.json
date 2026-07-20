@@ -1,0 +1,48 @@
+{
+  "ticker": "BRLA11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T04:12:06",
+  "relatorio": {
+    "id": 1236332,
+    "data_entrega": "30/06/2026 20:49",
+    "texto": "- **Vacância Física e Financeira:** A vacância física e financeira do fundo é de 0%, indicando que todos os imóveis estão ocupados e gerando renda. (p. 3)\n\n- **Distribuição de Rendimentos:** O pagamento de proventos para o mês de referência Maio/2026 será realizado em 19/06/2026, com um rendimento por cota de R$ 1,232. (p. 2)\n\n- **Indicadores do Fundo:** O fundo possui 11 imóveis prontos, totalizando uma ABL (Área Bruta Locável) de 188.527 m² e um WAULT (Média Ponderada do Prazo dos Contratos de Aluguéis pela Receita Contratada) de 8,4 anos. (p. 3)\n\n- **Locatários Principais:** Os principais locatários são ZF Log (25% da receita imobiliária mensal), Aurora (21%), EmergentcoldLatAm (20%) e Seara (15%). (p. 4)\n\n- **Geografia dos Ativos:** A maior parte dos ativos está localizada em Minas Gerais (25%), Mato Grosso (24%), Santa Catarina (21%), São Paulo (21%), e Paraná (8%). (p. 4)\n\n- **Tipologia dos Contratos:** O fundo possui contratos de locação tipicamente ajustados pelo IPCA, com uma pequena parcela ajustada por outros índices como IGPM ou INPC. (p. 5)\n\nO que observar em seguida:\n- Monitorar a distribuição de rendimentos futuros e se o valor continua acima do resultado financeiro.\n- Verificar as atualizações na vacância física e financeira nos próximos relatórios gerenciais."
+  },
+  "comunicados": {
+    "ids": [
+      1125009,
+      1116781,
+      1248071,
+      1248060
+    ],
+    "datas": [
+      "27/02/2026",
+      "13/02/2026",
+      "14/07/2026",
+      "14/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### 27/02/2026\n**A BTG PACTUAL SERVIÇOS FINANCEIROS S.A. DTVM informa sobre a disponibilização digital dos Informes de Rendimentos referentes ao ano de 2025**\n\nA Administradora reitera que os Informes de Rendimentos referentes ao ano de 2025 serão disponibilizados exclusivamente por meio digital, conforme previsto na Instrução Normativa RFB nº 2.060/2021.\n\n> \"Em complemento ao Comunicado ao Mercado de 2 de fevereiro de 2026 e ao Comunicado ao Mercado de 13 de fevereiro de 2026, a Administradora informa que, com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos (“Informes”) referentes ao ano de 2025, já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital, por meio do Portal do Investidor (“Portal”).\"\n\n### 13/02/2026\n**A BTG PACTUAL SERVIÇOS FINANCEIROS S.A. DTVM informa sobre a disponibilização digital dos Informes de Rendimentos referentes ao ano de 2025**\n\nA Administradora reitera que os Informes de Rendimentos referentes ao ano de 2025 serão disponibilizados exclusivamente por meio digital, conforme previsto na Instrução Normativa RFB nº 2.060/2021.\n\n> \"Em complemento ao Comunicado ao Mercado de 02 de fevereiro de 2026 , a Administradora reitera que, com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos (“Informes”) referentes ao ano de 2025 serão disponibilizados aos investidores até o dia 27 de fevereiro de 2026, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital , por meio do Portal do Investidor (“Portal”).\"\n\n### 14/07/2026\n**A Assembleia Geral Extraordinária aprova a décima sexta emissão de cotas pela Classe Única do RAIZZ RENDA LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO**\n\nA assembleia aprovou a emissão de até 265.252 novas cotas, com preço unitário de R$188,50 cada, destinadas ao desenvolvimento de um empreendimento logístico na cidade de Jales, estado de São Paulo.\n\n> \"a) Rito: a Décima Sexta Emissão seguirá o rito de registro automático de distribuição, nos termos do Art. 26, inciso VII, alínea “a)”, da Resolução CVM nº 160, de 13 de julho de 2022, conforme alterada (Resolução CVM 160 e Oferta Pública, respectivamente);\"\n>\n> \"c) Destinação dos Recursos: os recursos serão destinados ao (i) desenvolvimento de empreendimento imobiliário logístico com área bruta locável de aproximadamente 10.700 m2 na cidade de Jales, estado de São Paulo, locado a empresa multinacional do setor de e-commerce por meio de contrato de locação com prazo total de 10 anos;\"\n>\n> \"f) Quantidade de Cotas da Nova Emissão: serão emitidas até 265.252 (duzentas e sessenta e cinco mil e duzentas e cinquenta e duas) Novas Cotas;\"\n>\n> \"g) Preço de Emissão e Integralização por Cota da Nova Emissão: o preço inicial e unitário de emissão das Novas Cotas será correspondente a R$ 188,50 (cento e oitenta e oito reais e cinquenta centavos) por Nova Cota.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 148.0
+  },
+  "parecer": {
+    "id": 999647,
+    "data_entrega": "26/09/2025 17:43",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Raizz Renda Logística Fundo de Investimento Imobiliário Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotad"
+  }
+}

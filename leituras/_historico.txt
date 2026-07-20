@@ -100,3 +100,192 @@
 2026-07-19 23:05:13	RVBI11	lido	1820s
 2026-07-19 23:18:03	DEVA11	lido	770s
 2026-07-19 23:37:55	VRTA11	lido	1192s
+2026-07-20 00:05:56	RBRY11	lido	1681s
+2026-07-20 00:32:21	BROF11	lido	1585s
+2026-07-20 00:41:56	0B4Q11	lido	575s
+2026-07-20 00:43:39	0SMX11	sem-relatorio-fatos-lidos	103s
+2026-07-20 00:50:20	FNDA11	sem-relatorio-fatos-lidos	402s
+2026-07-20 01:11:37	GSFI11	lido	1277s
+2026-07-20 01:15:56	0PT411	sem-relatorio-fatos-lidos	258s
+2026-07-20 01:21:51	GTWR11	lido	355s
+2026-07-20 01:31:39	0PRQ11	sem-relatorio-fatos-lidos	588s
+2026-07-20 01:33:58	0R5L11	sem-relatorio-fatos-lidos	140s
+2026-07-20 01:44:46	MCHY11	lido	647s
+2026-07-20 01:48:00	0SH811	sem-relatorio-fatos-lidos	195s
+2026-07-20 02:13:37	JSCE11	lido	1537s
+2026-07-20 02:29:28	URPR11	lido	951s
+2026-07-20 02:47:10	0OC111	lido	1062s
+2026-07-20 03:05:12	VGIP11	lido	1082s
+2026-07-20 03:06:18	0CNP11	sem-relatorio-fatos-lidos	65s
+2026-07-20 03:09:45	0O9X11	sem-relatorio-fatos-lidos	207s
+2026-07-20 03:15:05	0PRP11	lido	320s
+2026-07-20 03:19:30	0S4611	sem-relatorio-fatos-lidos	265s
+2026-07-20 03:22:13	000011	sem-relatorio-fatos-lidos	163s
+2026-07-20 03:24:58	ALVS11	sem-relatorio-fatos-lidos	165s
+2026-07-20 03:50:14	JCCJ11	lido	1516s
+2026-07-20 03:59:07	KORE11	lido	533s
+2026-07-20 04:12:07	BRLA11	lido	780s
+2026-07-20 04:27:35	0D7011	lido	929s
+2026-07-20 04:39:13	FEXC11	lido	698s
+2026-07-20 05:00:39	IBBP11	lido	1286s
+2026-07-20 05:39:09	0BRY11	lido	2310s
+2026-07-20 05:59:40	BBIG11	lido	1231s
+2026-07-20 06:10:51	SHDP11	sem-relatorio-fatos-lidos	671s
+2026-07-20 06:15:15	0QTT11	sem-relatorio-fatos-lidos	264s
+2026-07-20 06:22:12	JKEF11	sem-relatorio-fatos-lidos	416s
+2026-07-20 06:38:39	RBRP11	lido	987s
+2026-07-20 06:42:27	PATB11	sem-relatorio-fatos-lidos	229s
+2026-07-20 06:49:32	0PFB11	lido	425s
+2026-07-20 06:49:32	0QCY11	erro	The read operation timed out
+2026-07-20 06:49:33	0QWP11	sem-relatorio
+2026-07-20 06:49:33	0ROZ11	sem-relatorio
+2026-07-20 07:14:20	BPML11	lido	1487s
+2026-07-20 07:37:27	SNEL11	lido	1387s
+2026-07-20 07:43:09	MCLG11	lido	342s
+2026-07-20 07:57:22	0NIQ11	lido	853s
+2026-07-20 07:59:21	0NDO11	lido	119s
+2026-07-20 08:13:25	VJFD11	lido	844s
+2026-07-20 08:13:25	SPTW11	erro	The read operation timed out
+2026-07-20 08:17:15	0EHW11	sem-relatorio-fatos-lidos	230s
+2026-07-20 08:36:18	VINO11	lido	1142s
+2026-07-20 08:36:18	0S4J11	sem-relatorio
+2026-07-20 08:47:57	0P9411	lido	700s
+2026-07-20 09:01:43	PQAG11	lido	826s
+2026-07-20 09:15:17	BTSI11	sem-relatorio-fatos-lidos	814s
+2026-07-20 09:15:18	RZAK11	erro	PDF sem texto extraível
+2026-07-20 09:33:54	PRGD11	lido	1116s
+2026-07-20 09:48:46	HABT11	lido	892s
+2026-07-20 10:07:51	RECT11	lido	1145s
+2026-07-20 10:13:15	0QTD11	lido	324s
+2026-07-20 10:17:05	0RJI11	sem-relatorio-fatos-lidos	230s
+2026-07-20 10:37:44	XPCI11	lido	1239s
+2026-07-20 10:40:17	0RFX11	sem-relatorio-fatos-lidos	153s
+2026-07-20 10:40:17	0OF011	erro	The read operation timed out
+2026-07-20 11:01:36	CCME11	lido	1279s
+2026-07-20 11:07:42	0OXG11	sem-relatorio-fatos-lidos	367s
+2026-07-20 11:17:33	JSAF11	lido	590s
+2026-07-20 11:17:34	0QCI11	sem-relatorio
+2026-07-20 11:17:34	RZDS11	erro	PDF sem texto extraível
+2026-07-20 11:39:12	RCRB11	lido	1298s
+2026-07-20 12:03:19	CPOF11	lido	1446s
+2026-07-20 12:05:16	NVHO11	sem-relatorio-fatos-lidos	117s
+2026-07-20 12:13:03	0JS311	sem-relatorio-fatos-lidos	467s
+2026-07-20 12:15:03	0S7Q11	sem-relatorio-fatos-lidos	120s
+2026-07-20 12:15:03	0QC211	erro	The read operation timed out
+2026-07-20 12:15:03	PQDP11	erro	The read operation timed out
+2026-07-20 12:16:29	GLDN11	erro	The read operation timed out
+2026-07-20 12:44:06	HPDP11	lido	1658s
+2026-07-20 12:59:25	MFII11	lido	918s
+2026-07-20 13:12:29	FATN11	lido	785s
+2026-07-20 13:37:00	CPUR11	lido	1470s
+2026-07-20 13:57:33	TRNT11	lido	1233s
+2026-07-20 14:19:45	FPNG11	lido	1332s
+2026-07-20 14:19:45	RBRL11	erro	The read operation timed out
+2026-07-20 14:34:42	PRHO11	lido	897s
+2026-07-20 14:34:58	--- lote interrompido pelo usuário em 0R5T11
+2026-07-20 14:34:58	--- lote encerrado · 99 lidos, 41 em dia/sem relatório, 11 erros
+2026-07-20 14:38:27	--- lote iniciado · modelo qwen2.5:14b · 751 fundos na fila
+2026-07-20 14:38:39	PBLV11	erro	The read operation timed out
+2026-07-20 14:38:39	KNRI11	erro	The read operation timed out
+2026-07-20 14:38:39	MXRF11	erro	The read operation timed out
+2026-07-20 14:38:40	CHLL11	erro	The read operation timed out
+2026-07-20 14:38:40	VISC11	erro	The read operation timed out
+2026-07-20 14:38:40	CPTS11	erro	The read operation timed out
+2026-07-20 14:38:40	KNHY11	erro	The read operation timed out
+2026-07-20 14:38:40	HGRU11	erro	The read operation timed out
+2026-07-20 14:38:51	GARE11	erro	The read operation timed out
+2026-07-20 14:38:52	HCTR11	erro	The read operation timed out
+2026-07-20 14:38:52	BRCO11	erro	The read operation timed out
+2026-07-20 14:39:41	CSMC11	erro	The read operation timed out
+2026-07-20 14:39:41	ISSH11	erro	Stream has ended unexpectedly
+2026-07-20 14:39:41	ALZR11	erro	HTTP Error 520: <none>
+2026-07-20 14:39:41	RBVA11	erro	The read operation timed out
+2026-07-20 14:39:41	MCLO11	erro	The read operation timed out
+2026-07-20 14:39:41	HFOF11	erro	The read operation timed out
+2026-07-20 14:39:41	VRTA11	erro	The read operation timed out
+2026-07-20 14:39:41	RBRY11	erro	The read operation timed out
+2026-07-20 14:39:41	FNDA11	erro	The read operation timed out
+2026-07-20 14:39:41	GSFI11	erro	The read operation timed out
+2026-07-20 14:39:41	GTWR11	erro	The read operation timed out
+2026-07-20 14:39:41	URPR11	erro	The read operation timed out
+2026-07-20 14:39:41	FEXC11	erro	The read operation timed out
+2026-07-20 14:39:41	BBIG11	erro	HTTP Error 520: <none>
+2026-07-20 14:39:41	SHDP11	erro	HTTP Error 520: <none>
+2026-07-20 14:39:41	JKEF11	erro	The read operation timed out
+2026-07-20 14:39:41	RBRP11	erro	The read operation timed out
+2026-07-20 14:39:41	SNEL11	erro	The read operation timed out
+2026-07-20 14:39:41	MCLG11	erro	The read operation timed out
+2026-07-20 14:40:22	SPTW11	erro	The read operation timed out
+2026-07-20 14:40:22	VINO11	erro	The read operation timed out
+2026-07-20 14:40:22	PQAG11	erro	The read operation timed out
+2026-07-20 14:40:22	RZAK11	erro	The read operation timed out
+2026-07-20 14:40:22	PRGD11	erro	The read operation timed out
+2026-07-20 14:40:22	HABT11	erro	The read operation timed out
+2026-07-20 14:40:22	RECT11	erro	HTTP Error 520: <none>
+2026-07-20 14:40:22	CCME11	erro	The read operation timed out
+2026-07-20 14:40:23	RZDS11	erro	PDF sem texto extraível
+2026-07-20 14:40:23	NVHO11	erro	The read operation timed out
+2026-07-20 14:40:23	PQDP11	erro	The read operation timed out
+2026-07-20 14:40:23	GLDN11	erro	The read operation timed out
+2026-07-20 14:40:23	HPDP11	erro	The read operation timed out
+2026-07-20 14:40:23	MFII11	erro	The read operation timed out
+2026-07-20 14:40:23	FATN11	erro	The read operation timed out
+2026-07-20 14:40:23	CPUR11	erro	The read operation timed out
+2026-07-20 14:40:23	TRNT11	erro	The read operation timed out
+2026-07-20 14:40:23	FPNG11	erro	The read operation timed out
+2026-07-20 14:40:23	RBRL11	erro	The read operation timed out
+2026-07-20 14:40:23	PRHO11	erro	The read operation timed out
+2026-07-20 14:40:23	SHPH11	erro	The read operation timed out
+2026-07-20 14:40:23	KFOF11	erro	The read operation timed out
+2026-07-20 14:40:23	JKDF11	erro	The read operation timed out
+2026-07-20 14:40:23	BTHI11	erro	The read operation timed out
+2026-07-20 14:40:23	TRBL11	erro	The read operation timed out
+2026-07-20 14:40:23	CPLG11	erro	The read operation timed out
+2026-07-20 14:41:04	TJKB11	erro	The read operation timed out
+2026-07-20 14:41:04	BTDI11	erro	The read operation timed out
+2026-07-20 14:41:04	XPIN11	erro	The read operation timed out
+2026-07-20 14:41:05	ITRI11	erro	The read operation timed out
+2026-07-20 14:41:05	BCRI11	erro	The read operation timed out
+2026-07-20 14:41:34	RINV11	erro	The read operation timed out
+2026-07-20 14:41:35	IRBL11	erro	The read operation timed out
+2026-07-20 14:41:35	ABCP11	erro	The read operation timed out
+2026-07-20 14:41:35	TMFI11	erro	HTTP Error 520: <none>
+2026-07-20 14:41:35	HLOG11	erro	The read operation timed out
+2026-07-20 14:41:35	AFHI11	erro	HTTP Error 520: <none>
+2026-07-20 14:41:35	SHPP11	erro	The read operation timed out
+2026-07-20 14:41:35	TOPP11	erro	HTTP Error 520: <none>
+2026-07-20 14:41:35	BPCA11	erro	HTTP Error 520: <none>
+2026-07-20 14:41:35	INLG11	erro	The read operation timed out
+2026-07-20 14:41:35	CACR11	erro	The read operation timed out
+2026-07-20 14:41:35	TEPP11	erro	The read operation timed out
+2026-07-20 14:42:07	FRLS11	erro	The read operation timed out
+2026-07-20 14:42:07	ADSH11	erro	The read operation timed out
+2026-07-20 14:42:07	PRPY11	erro	The read operation timed out
+2026-07-20 14:42:07	KDLG11	erro	HTTP Error 520: <none>
+2026-07-20 14:42:09	HREC11	erro	The read operation timed out
+2026-07-20 14:42:09	TRXB11	erro	The read operation timed out
+2026-07-20 14:42:09	FISP11	erro	The read operation timed out
+2026-07-20 14:42:09	VRTM11	erro	The read operation timed out
+2026-07-20 14:42:09	JCDA11	erro	The read operation timed out
+2026-07-20 14:42:09	JASC11	erro	The read operation timed out
+2026-07-20 14:42:09	FCFL11	erro	The read operation timed out
+2026-07-20 14:42:09	RZAT11	erro	HTTP Error 520: <none>
+2026-07-20 15:01:12	HTMX11	lido	1144s
+2026-07-20 15:17:06	BVAR11	sem-relatorio-fatos-lidos	954s
+2026-07-20 15:17:29	--- lote interrompido pelo usuário em FLFL11
+2026-07-20 15:17:29	--- lote encerrado · 2 lidos, 58 em dia/sem relatório, 85 erros
+2026-07-20 15:19:00	--- lote iniciado · modelo qwen2.5:14b · 751 fundos na fila
+2026-07-20 15:20:10	XPML11	erro	The read operation timed out
+2026-07-20 15:20:10	PMRV11	erro	The read operation timed out
+2026-07-20 15:21:03	BRCO11	erro	The read operation timed out
+2026-07-20 15:25:38	CSMC11	sem-relatorio-fatos-lidos	275s
+2026-07-20 15:25:38	ISSH11	erro	Stream has ended unexpectedly
+2026-07-20 15:25:38	KNHF11	erro	The read operation timed out
+2026-07-20 15:25:38	MCLO11	erro	The read operation timed out
+2026-07-20 15:28:40	SPTW11	sem-relatorio-fatos-lidos	182s
+2026-07-20 15:28:41	RZAK11	erro	PDF sem texto extraível
+2026-07-20 15:28:41	RZDS11	erro	PDF sem texto extraível
+2026-07-20 15:53:26	PQDP11	lido	1485s
+2026-07-20 16:01:42	GLDN11	sem-relatorio-fatos-lidos	495s
+2026-07-20 16:27:44	RBRL11	lido	1562s
+2026-07-20 16:38:28	SHPH11	lido	644s

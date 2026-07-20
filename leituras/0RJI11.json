@@ -1,0 +1,21 @@
+{
+  "ticker": "0RJI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T10:17:05",
+  "comunicados": {
+    "ids": [
+      1185069,
+      1166806
+    ],
+    "datas": [
+      "11/05/2026",
+      "20/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Assembleia AGE entregue em 11/05/2026\n\n**O QUE ACONTECEU:** Foi realizada a assembleia de cotistas do XP Habitat Renda Imobiliária II Feeder Fundo de Investimento Imobiliário.\n\n**RESUMO:** A assembleia, instalada no dia 8 de maio de 2026 na sede da XP INVESTIMENTOS em Botafogo, Rio de Janeiro, deliberou sobre a aquisição e/ou alienação de ativos imobiliários, certificados de recebíveis imobiliários e gestão de caixa e liquidez. A presença foi confirmada por 74,81% dos cotistas.\n\n**TRECHO-CHAVE:**\n\"Os votos da presente assembleia estão arquivados na sede social da Administradora, sendo todos realizados exclusivamente por meio de envio de manifestação de voto eletrônica pelos(as) Cotistas(as) do Fundo (“Cotistas”) à Administradora.\" (p. 1)\n\n### Assembleia AGE entregue em 20/04/2026\n\n**O QUE ACONTECEU:** Foi convocada a assembleia especial de cotistas da Classe Única do XP Habitat Renda Imobiliária II Feeder Fundo de Investimento Imobiliário.\n\n**RESUMO:** A assembleia, que será realizada por meio de consulta formal não presencial, deliberará sobre a aquisição e/ou alienação de ativos imobiliários, certificados de recebíveis imobiliários e gestão de caixa e liquidez. Estas operações podem configurar potenciais conflitos de interesse conforme a Resolução CVM 175.\n\n**TRECHO-CHAVE:**\n\"Por meio desta Consulta Formal, a Administradora convoca os Cotistas para deliberar sobre as seguintes matérias constantes da ordem do dia da assembleia especial de cotistas da Classe (“Ordem do Dia”):\" (p. 1)"
+  },
+  "modelo": "qwen2.5:14b"
+}

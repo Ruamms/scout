@@ -1,0 +1,31 @@
+{
+  "ticker": "0NDO11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T07:59:18",
+  "relatorio": {
+    "id": 1100965,
+    "data_entrega": "04/02/2026 10:28",
+    "texto": "- **Rendimento Distribuído**: O fundo distribuiu R$ 510,00 por cota em janeiro de 2026. [página 3]\n- **Patrimônio Líquido do Fundo**: O patrimônio líquido do FATOR INHAÚMA FI IMOB FII no dia 31/01/2026 foi R$ 837.409.663,14. [página 3]\n- **Ativo Principal na Carteira**: O fundo possui um complexo industrial localizado no bairro Caju, Rio de Janeiro, que está locado para a ICTSI Rio Brasil Terminal 1 desde novembro de 2024. [página 4]\n\nO que observar em seguida:\n- **Atualização da Carteira**: Verificar se houve alterações na carteira do fundo no mês seguinte.\n- **Informações sobre Locatários**: Monitorar a situação atual e futura dos contratos de locação com o principal locatário mencionado."
+  },
+  "comunicados": {
+    "ids": [
+      1213490
+    ],
+    "datas": [
+      "08/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO"
+    ],
+    "texto": "**08/06/2026**\n\n**Assembleia Geral Ordinária do Inhaúma FII aprova Demonstrações Contábeis de 2025**\nO administrador, Banco Fator S.A., realizou a Assembleia Geral Ordinária em que os cotistas aprovaram as Demonstrações Contábeis referentes ao exercício social finalizado em 31 de dezembro de 2025, sem restrições ou ressalvas. \"Os cotistas do Fundo aprovaram, sem quaisquer restrições ou ressalvas, a matéria da Ordem Dia.\" (p. 2)\n\n**Conexão com o contexto:** A rentabilidade percentual média das cotas do fundo no período de 01/01/2025 a 31/12/2025 foi de 123,54%, indicando um desempenho muito forte em comparação com os indicadores anteriores."
+  },
+  "parecer": {
+    "id": 1141147,
+    "data_entrega": "20/03/2026 09:33",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Inhaúma Fundo de Investimento Imobiliário – FII - Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Bras"
+  }
+}

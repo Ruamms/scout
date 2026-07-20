@@ -1,0 +1,42 @@
+{
+  "ticker": "BTSI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T09:15:15",
+  "comunicados": {
+    "ids": [
+      1074692,
+      986654,
+      1064398,
+      1064392,
+      1207949,
+      1207948
+    ],
+    "datas": [
+      "02/01/2026",
+      "08/09/2025",
+      "16/12/2025",
+      "16/12/2025",
+      "29/05/2026",
+      "29/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE — 02/01/2026\n\n**O que aconteceu:** Ativos imobiliários do BTSP II foram reavaliados, resultando em um impacto positivo de 7,35% no patrimônio líquido.\n\n**Resumo:** A reavaliação dos ativos imobiliários levou a um aumento de R$ 54.974.376,40 no valor justo dos ativos do fundo, contribuindo para o crescimento do patrimônio líquido.\n\n**Trecho-chave:**\n\"Os ativos imobiliários do FUNDO foram reavaliados, sendo verificado um impacto positivo de 7,35% (sete inteiros e trinta e cinco centésimos por cento) no patrimônio líquido do FUNDO, com aumento de R$ 54.974.376,40 (cinquenta e quatro milhões, novecentos e setenta e quatro mil, trezentos e setenta e seis reais e quarenta centavos) valor justo dos ativos.\"\n\n---\n\n### FATO RELEVANTE — 08/09/2025\n\n**O que aconteceu:** Aprovada a 7ª Emissão de Cotas do BTSP II, com oferta pública de distribuição.\n\n**Resumo:** O Fundo realizará uma nova emissão de até 277.137 cotas, com valor unitário de R$ 106,98 e taxa de distribuição primária de R$ 1,27 por cota.\n\n**Trecho-chave:**\n\"Serão emitidas, inicialmente, até 277.137 (duzentas e setenta e sete mil, cento e trinta e sete) novas cotas (“Novas Cotas”, e, em conjunto com as cotas já emitidas pelo Fundo, “Cotas”), pelo Valor da Nova Cota (conforme abaixo definido), perfazendo o montante de até R$ 29.648.116,26 (vinte e nove milhões, seiscentos e quarenta e oito mil, cento e dezesseis reais e vinte e seis centavos), sem considerar o valor da Taxa de Distribuição Primária.\"\n\n---\n\n### COMUNICADO AO MERCADO — 16/12/2025\n\n**O que aconteceu:** Realizada a 2ª chamada de capital no âmbito da 7ª emissão de Cotas do BTSP II.\n\n**Resumo:** A chamada resultou na integralização de 204.025 cotas, ao preço unitário de R$ 108,25 por cota, totalizando um montante de R$ 22.085.706,25.\n\n**Trecho-chave:**\n\"Por meio da 2ª chamada de capital, deverão ser integralizadas 204.025 (duzentas e quatro mil e vinte e cinco) Cotas, ao Preço de Subscrição de R$ 108,25 (cento e oito reais e vinte e cinco centavos) por Cota da 7ª Emissão, do qual R$ 106,98 (cento e seis reais e noventa e oito centavos) correspondem ao valor unitário de cada Cota e R$ 1,27 (um real e vinte e sete centavos) ao Custo Unitário de Distribuição por Cota, perfazendo o valor total de R$ 22.085.706,25.\"\n\n---\n\n### ASSEMBLEIA AGO — 29/05/2026\n\n**O que aconteceu:** Aprovadas as demonstrações contábeis do BTSP II relativas ao exercício social findo em 31 de Dezembro de 2025.\n\n**Resumo:** Os cotistas aprovaram as demonstrações contábeis, conforme parecer dos auditores independentes.\n\n**Trecho-chave:**\n\"Deliberar sobre a seguinte matéria: 1. (Aprovar/ Reprovar) as demonstrações contábeis do FUNDO relativas ao exercício social que se findou em 31 de Dezembro de 2025, em consonância com o parecer apresentado pelos auditores independentes.\"\n\n---\n\n### ASSEMBLEIA AGO — 29/05/2026\n\n**O que aconteceu:** Aprovada a consulta formal convocada para deliberação sobre as demonstrações contábeis do BTSP II.\n\n**Resumo:** A assembleia realizou uma consulta formal e aprovou as demonstrações contábeis, com 4,89% dos cotistas participando da votação.\n\n**Trecho-chave:**\n\"Findo o prazo e após a apuração dos votos recebidos, excluídas as participações das pessoas conflitadas, referidas nos incisos I a III do artigo 78 da Parte Geral da Resolução CVM 175/2022 (“Votos Computáveis”), foi verificada a APROVAÇÃO da matéria elencada na ordem do dia.\"\n\n---\n\n**Conexões com os indicadores:**\n- O aumento no patrimônio líquido (Fato Relevante de 02/01/2026) contribuiu para o crescimento do patrimônio líquido do fundo, que aumentou em 16,44% nos últimos 12 meses.\n- A emissão e integralização de novas cotas (Fato Relevante de 08/09/2025 e Comunicado ao Mercado de 16/12/2025) contribuiu para o aumento no número de cotas emitidas, que cresceu em 11,37% nos últimos 12 meses."
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1153861,
+    "data_entrega": "02/04/2026 19:34",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTSP II Fundo de Investimento Imobiliário FII Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no B"
+  }
+}

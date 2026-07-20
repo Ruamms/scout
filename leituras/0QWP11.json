@@ -1,0 +1,20 @@
+{
+  "ticker": "0QWP11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T06:49:32",
+  "comunicados": {
+    "ids": [],
+    "datas": [],
+    "rotulos": [],
+    "texto": null
+  },
+  "parecer": {
+    "id": 1152034,
+    "data_entrega": "31/03/2026 23:13",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

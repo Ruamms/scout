@@ -1,0 +1,36 @@
+{
+  "ticker": "0PT411",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T01:15:55",
+  "comunicados": {
+    "ids": [
+      982744,
+      958586,
+      1180410,
+      1180409
+    ],
+    "datas": [
+      "02/09/2025",
+      "01/08/2025",
+      "05/05/2026",
+      "05/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO (02/09/2025)\n**O que aconteceu:** O gestor do fundo concedeu desconto em sua remuneração mensal.\n\n**Resumo:** O Barzel Properties Gestora de Recursos LTDA, na qualidade de consultor imobiliário, reduziu sua remuneração no valor de R$ 284.227,83 a ser paga em setembro de 2025, revertendo o desconto para benefício do fundo.\n\n**Trecho-chave:**\n\"O Gestor imobiliário concederá desconto parcial no valor de R$ 284.227,83 (duzentos e oitenta e quatro mil, duzentos e vinte e sete reais e oitenta e três centavos) em sua remuneração mensal, a ser paga em setembro de 2025, descrita no item 6.1.2 do Regulamento, revertendo a provisão na carteira em benefício do Fundo.\"\n\n### COMUNICADO AO MERCADO (01/08/2025)\n**O que aconteceu:** O gestor do fundo concedeu desconto em sua remuneração mensal.\n\n**Resumo:** A Barzel Properties Gestora de Recursos LTDA, na qualidade de consultor imobiliário, reduziu sua remuneração no valor de R$ 322.882,15 a ser paga em agosto de 2025, revertendo o desconto para benefício do fundo.\n\n**Trecho-chave:**\n\"O Gestor imobiliário concederá desconto parcial no valor de R$322.882,15 (trezentos e vinte e dois mil, oitocentos e oitenta e dois reais e quinze centavos) em sua remuneração mensal, a ser paga em agosto de 2025, descrita no item 6.1.2 do Regulamento, revertendo a provisão na carteira em benefício do Fundo.\"\n\n### ASSEMBLEIA AGO (05/05/2026)\n**O que aconteceu:** A assembleia geral ordinária foi realizada e aprovou as demonstrações financeiras.\n\n**Resumo:** A assembleia, realizada de forma não presencial em 4 de maio de 2026, aprovou as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025.\n\n**Trecho-chave:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025, os quais estão disponíveis no website da CVM.\""
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1152202,
+    "data_entrega": "01/04/2026 00:08",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Mauá Capital Lajes Corporativas Fundo de Investimento Imobiliário – Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 19 de setembro de 2025 a 31 de dezembro de 2"
+  }
+}

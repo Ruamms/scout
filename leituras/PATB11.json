@@ -1,0 +1,33 @@
+{
+  "ticker": "PATB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T06:42:27",
+  "comunicados": {
+    "ids": [
+      1200626,
+      1071302,
+      1061296
+    ],
+    "datas": [
+      "21/05/2026",
+      "26/12/2025",
+      "12/12/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### 21/05/2026\n**Ajustes na divulgação de remuneração dos prestadores de serviços essenciais**\nA BTG Pactual Serviços Financeiros S.A. DTVM, administradora do fundo PATB11 - PATEO BANDEIRANTES FII, atualizou a forma de divulgar a remuneração dos prestadores de serviços essenciais conforme o Ofício-Circular CVM nº 1/2025, passando a utilizar exclusivamente a Ferramenta ANBIMA. Não houve alteração nos valores pagos pelos cotistas.\n\n*\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"* (p. 1)\n\n### 26/12/2025\n**Aprovação automática das contas e demonstrações contábeis**\nAs contas e demonstrações contábeis relativas ao exercício social findo em 30 de junho de 2025 foram automaticamente aprovadas, uma vez que não houve respostas à consulta formal dos cotistas.\n\n*\"Não foram recebidas respostas à Consulta Formal representando Cotas de emissão do PATEO BANDEIRANTES - FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA sendo que as matérias colocadas em deliberação, conforme descritas acima, restaram automaticamente aprovadas, conforme §3º do artigo 71 da Resolução CVM nº 175, de 23 de dezembro de 2022.\"*\n\n### 12/12/2025\n**Reapresentação da ata de assembleia geral**\nA BTG Pactual Serviços Financeiros S.A. DTVM reapresentou a ata de assembleia geral realizada em 12 de março de 2025, que havia sido formalizada mas não publicada no site fundos.net.\n\n*\"Em função do erro material descrito acima, serve o presente instrumento para ratificar e reapresentar a Ata de Assembleia, nos termos do Anexo I ao presente instrumento.\"* (p. 1)"
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 992700,
+    "data_entrega": "16/09/2025 10:11",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

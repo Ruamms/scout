@@ -1,0 +1,33 @@
+{
+  "ticker": "ALVS11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T03:24:57",
+  "comunicados": {
+    "ids": [
+      1189940,
+      1189937,
+      1158218
+    ],
+    "datas": [
+      "13/05/2026",
+      "13/05/2026",
+      "09/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 13/05/2026\n**O QUE ACONTECEU:** As contas anuais do Fundo foram aprovadas automaticamente.\n\n**RESUMO:** A assembleia geral de cotistas, realizada em 11 de maio de 2026 para aprovar as contas anuais referentes ao exercício encerrado em 31 de dezembro de 2025, não teve a presença de nenhum cotista. Portanto, conforme regulamentação vigente, as demonstrações contábeis foram consideradas automaticamente aprovadas.\n\n**TRECHO-CHAVE:** \"Dessa forma, e considerando que as demonstrações contábeis não contêm ressalvas, ficam as mesmas consideradas automaticamente aprovadas.\" (p. 1)\n\n### 09/04/2026\n**O QUE ACONTECEU:** O Fundo convocou os cotistas para aprovar as contas e demonstrações contábeis referentes ao exercício social de 2025.\n\n**RESUMO:** A BTG Pactual Serviços Financeiros S.A. DTVM, administradora do FUNDO DE INVESTIMENTO IMOBILIARIO SHOPPING CIDADE JARDIM, convocou os cotistas para a aprovação das contas e demonstrações contábeis referentes ao exercício social encerrado em 31 de dezembro de 2025. O prazo para votação foi até 11 de maio de 2026.\n\n**TRECHO-CHAVE:** \"A BTG Pactual Serviços Financeiros S.A. DTVM, instituição financeira inscrita no CNPJ/MF sob o número 59.281.253/0001 -23, com sede na cidade e Estado do Rio de Janeiro, vem pela presente, nos termos da regulamentação vigente, convocar os cotistas para a aprovação das contas e demonstrações contábeis referentes ao exercício social encerrado em 31 de dezembro de 2025.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1146976,
+    "data_entrega": "27/03/2026 16:32",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

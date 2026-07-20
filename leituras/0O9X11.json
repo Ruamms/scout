@@ -1,0 +1,30 @@
+{
+  "ticker": "0O9X11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T03:09:43",
+  "comunicados": {
+    "ids": [
+      1126478,
+      1126073
+    ],
+    "datas": [
+      "03/03/2026",
+      "02/03/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### 03/03/2026\n\n**O QUE ACONTECEU:** Cotistas do R8 FII realizaram assembleia geral não presencial para aprovar mudanças administrativas e gestoras.\n\n**RESUMO:** Os cotistas aprovaram a substituição da atual administração e gestão pelo QORE Distribuidora de Títulos e Valores Mobiliários LTDA e pela R Capital Asset Management Investimentos S.A, respectivamente. A transferência ocorrerá em 02/03/2026.\n\n**TRECHO-CHAVE:** \"Aprovaram a substituição da atual administradora, controladora, escrituradora, custodiante e distribuidora do Fundo pela Nova Administradora a partir da abertura do dia 02 de março de 2026 (“Data da Transferência”) utilizando por base a posição de fechamento do Fundo em 27 de fevereiro de 2026 (“Data-Base”). A Nova Administradora, por meio de seus representantes legais ao final assinados, declarou aceitar desempenhar as funções acima indicadas a partir da Data da Transferência.\" (p. 1)\n\n---\n\n### 02/03/2026\n\n**O QUE ACONTECEU:** Cotistas do R8 FIFM realizaram assembleia geral não presencial para aprovar mudanças administrativas e gestoras.\n\n**RESUMO:** Os cotistas aprovaram a substituição da atual administração e gestão pelo QORE Distribuidora de Títulos e Valores Mobiliários LTDA e pela R Capital Asset Management Investimentos S.A, respectivamente. A transferência ocorrerá em 02/03/2026.\n\n**TRECHO-CHAVE:** \"Aprovaram a substituição da atual administradora, controladora, escrituradora, custodiante e distribuidora do Fundo pela Nova Administradora a partir da abertura do dia 02 de março de 2026 (“Data da Transferência”) utilizando por base a posição de fechamento do Fundo em 27 de fevereiro de 2026 (“Data-Base”). A Nova Administradora, por meio de seus representantes legais ao final assinados, declarou aceitar desempenhar as funções acima indicadas a partir da Data da Transferência.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1009206,
+    "data_entrega": "08/10/2025 18:14",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Não expressamos uma opinião sobre as demonstrações contábeis do Fundo, pois, devido à relevância dos assuntos descritos na seção “Base para abstenção de opinião”, não nos foi possível obter evidência de auditoria apropriada e suficiente para fundamentar nossa opinião de auditoria sobre essas demonstrações contábeis."
+  }
+}

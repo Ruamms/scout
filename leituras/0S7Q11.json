@@ -1,0 +1,30 @@
+{
+  "ticker": "0S7Q11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T12:15:02",
+  "comunicados": {
+    "ids": [
+      1170598,
+      1052347
+    ],
+    "datas": [
+      "27/04/2026",
+      "02/12/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### 27/04/2026\n**Transferência de serviços administrativos do Fundo Antilhas para nova empresa**\nA Assembleia Geral Extraordinária (AGE) realizada em 23 de abril de 2026 deliberou a transferência dos serviços de Administração Fiduciária, Custódia, Controladoria, Distribuição e Escrituração do Fundo Antilhas para a MONETAR DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. como Nova Administradora e para a TERRA INVESTIMENTOS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. como Novo Custodiante, respectivamente (p. 2).\n\n### 02/12/2025\n**Assembleia Geral Ordinária não instalada devido à falta de quórum**\nA Assembleia Geral Ordinária (AGO) do Fundo Antilhas realizada em 02 de dezembro de 2025 não foi instalada por falta de presença dos cotistas, conforme previsto na Resolução CVM nº 175/22. As demonstrações contábeis foram consideradas automaticamente aprovadas (p. 2)."
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1151770,
+    "data_entrega": "31/03/2026 21:46",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas representam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do FUNDO DE INVESTIMENTO IMOBILIARIO ANTILHAS em 31 de dezembro de 2025, o desempenho de suas operações, as mutações do patrimônio líquido e os seus fluxos de caixa para o exercício findo naquela data, de acordo com as práticas contábeis adotad"
+  }
+}

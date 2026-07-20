@@ -1,0 +1,48 @@
+{
+  "ticker": "XPCI11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T10:37:43",
+  "relatorio": {
+    "id": 1223191,
+    "data_entrega": "17/06/2026 11:08",
+    "texto": "1. **Rendimentos Distribuídos**: O fundo distribuiu R$ 0,93 por cota em maio de 2026, representando um yield anualizado de 13,86% com base na cota de fechamento do mês ou ainda 16,48% considerando um gross-up de 15% de impostos. \"A distribuição de R$ 0,93 por cota está programada para 15/06/2026 para os detentores de cotas do Fundo em 29/05/26\", (página 4).\n\n2. **Carteira de Ativos**: A carteira encerrou o mês composta por 46 CRIs e 3 FIIs, totalizando R$ 737,42 milhões investidos na estratégia do fundo, além de R$ 37 milhões em ativos de liquidez. \"Em termos de alocação, não houve movimentações relevantes no período\", (página 3).\n\n3. **Resultado Financeiro**: Os rendimentos e ganhos de capital apurados sob regime de caixa totalizaram R$ 0,96 por cota no período, com o book de CRIs permanecendo como principal fonte de resultado, contribuindo com R$ 8,27 milhões. \"Os rendimentos e ganhos de capital apurados sob regime de caixa totalizaram R$ 0,96 por cota no período (R$ 8,30 milhões)\", (página 4).\n\n4. **Liquidez**: As cotas do Fundo foram negociadas em bolsa com um volume médio diário de R$ 2,11 milhões e a cotação encerrou o mês a R$ 85,53 por cota. \"No período, ocorreram 69.980 negociações, movimentando um volume de R$ 42,32 milhões\", (página 5).\n\n5. **Risco e Monitoramento**: O time de gestão realiza acompanhamento próximo das empresas do portfólio para monitorar suas condições financeiras e estar preparado para agir em situações que demandem maior atenção ou diante de eventual deterioração. \"Adicionalmente, o time de gestão segue realizando acompanhamento próximo de cada empresa do atual portfólio e de suas respectivas diretorias financeiras\", (página 8).\n\n6. **Concentração em CRIs**: O fundo mantém uma exposição significativa a CRIs com taxas médias de IPCA + 8,60% e CDI + 3,36% a.a., com liquidez confortável para futuras aquisições. \"O foco dos FIIs adquiridos continua sendo em fundos de papel que, na visão da gestão, apresentam maior resiliência\", (página 8).\n\n7. **Performance Relativa**: Os FIIs de CRI tiveram performance relativa superior aos demais segmentos do IFIX, apesar de também apresentarem desempenho negativo de -1,04%. \"Os FIIs de CRI, apesar de também apresentarem desempenho negativo de -1,04%, tiveram performance relativa superior\", (página 3).\n\n8. **Expectativas de Mercado**: As expectativas de mercado seguem sendo revisadas para cima, o que tende a limitar a continuidade do ciclo de cortes de juros por parte do Banco Central. \"As expectativas de mercado seguem sendo revisadas para cima, o que tende a limitar a continuidade do ciclo de cortes de juros\", (página 3).\n\n**O que observar em seguida:**\n1. **Desempenho futuro dos CRIs**: Monitorar como os rendimentos e ganhos de capital evoluem com as expectativas revisadas para cima.\n2. **Movimentações na carteira**: Verificar se haverá novas aquisições ou vendas no portfólio em próximos relatórios, dada a liquidez confortável mencionada pela gestão."
+  },
+  "comunicados": {
+    "ids": [
+      1170629,
+      1096319,
+      1179074,
+      1179073
+    ],
+    "datas": [
+      "27/04/2026",
+      "29/01/2026",
+      "04/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 27/04/2026\n**A XP Crédito Imobiliário FII informa sobre a apresentação trimestral de resultados do 1T26**\nA gestora convoca os cotistas para uma apresentação trimestral de resultados em 21 de maio de 2026, às 10h (horário de Brasília), com acesso via link fornecido.\n\n### 29/01/2026\n**A XP Crédito Imobiliário FII informa sobre a apresentação trimestral de resultados do 4T25**\nA gestora convoca os cotistas para uma apresentação trimestral de resultados em 25 de fevereiro de 2026, às 17h (horário de Brasília), com acesso via link fornecido.\n\n### 04/05/2026\n**A assembleia geral ordinária do XP Crédito Imobiliário FII aprova as demonstrações financeiras e demais documentos**\nOs cotistas aprovaram, sem restrições ou ressalvas, as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025.\n\n### 04/05/2026\n**A assembleia geral ordinária do XP Crédito Imobiliário FII aprova as demonstrações financeiras e demais documentos**\nOs cotistas aprovaram, sem restrições ou ressalvas, as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025.\n\n---\n\n**Conexão com os indicadores do contexto:**\nA aprovação das demonstrações financeiras e documentos contábeis no documento mais recente pode estar relacionada à manutenção dos rendimentos acima do resultado financeiro, apesar da queda no patrimônio líquido e valor de ativo nos últimos 12 meses."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 83.96
+  },
+  "parecer": {
+    "id": 1149242,
+    "data_entrega": "30/03/2026 22:48",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "ticker": "MCHY11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T01:44:44",
+  "relatorio": {
+    "id": 1227479,
+    "data_entrega": "24/06/2026 18:30",
+    "texto": "1. **Distribuição de dividendos**: No mês de maio/26, o MCRE11 distribuiu R$ 0,11 por cota, equivalente a um dividend yield anualizado de 15,3% a.a., quando considerado o preço de fechamento do mês de R$ 9,23. [página 2]\n\n2. **Carteira estável**: No mês não houve nenhuma nova alocação ou movimentação relevante na carteira. O MCRE11 segue alocado de maneira diversificada e em ativos resilientes que seguem performando da maneira esperada. [página 3]\n\n3. **Reservas**: Para realizar a distribuição de R$ 0,11/cota, o fundo utilizou R$ 0,04 em reservas. [página 4]\n\n4. **Renda dos ativos**: O MCRE11 gerou um resultado de R$ 7,8 milhões (ou R$ 0,07/cota) no mês. [página 5]\n\n5. **Alocação geográfica e segmento**: A alocação do fundo é majoritariamente em São Paulo (70%), com participação relevante no Sul (13%) e Centro-Oeste (9%). Segmentos residencial, comercial, logístico e shopping representam respectivamente 33%, 27%, 22% e 17%. [página 8]\n\n6. **Ativo principal**: O imóvel CD Santa Cruz é um galpão logístico com elevado padrão construtivo (classificação AAA), localizado na Estrada da Lama Preta, em Santa Cruz – RJ, sem taxa de vacância e vencimento da locação em setembro/28. [página 13]\n\n7. **Renda dos CRIs**: O MCRE11 possui uma carteira diversificada de CRIs com taxas médias acima do IPCA (entre 9,7% a.a. e 15,0% a.a.). [página 14]\n\n8. **FIIs estruturados**: Em dez/25, o MCRE11 vendeu um portfólio de quatro lojas de varejo em São Paulo para o TRXF11, gerido pela TRX Investimentos, com ganho de capital de aproximadamente R$ 25 milhões (ou R$ 0,23/cota). [página 10]\n\n**O que observar em seguida:**\n- A distribuição mensal de rendimentos no próximo mês.\n- O comportamento do imóvel CD Santa Cruz e das operações com CRIs."
+  },
+  "comunicados": {
+    "ids": [
+      1186097,
+      1194944,
+      1186096
+    ],
+    "datas": [
+      "11/05/2026",
+      "15/05/2026",
+      "11/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 11/05/2026\n**Aprovação das contas anuais do exercício de 2025**\nA assembleia geral de cotistas realizada em 4 de maio de 2026 aprovou as demonstrações financeiras auditadas relativas ao exercício social encerrado em 31 de dezembro de 2025.\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n### 15/05/2026\n**Convocação para consulta formal sobre aprovação das contas anuais**\nA administradora convocou os cotistas para uma consulta formal, com prazo até 4 de maio de 2026, para deliberarem sobre a aprovação das contas e demonstrações contábeis do exercício social findo em 31 de dezembro de 2025.\n\"convocar os cotistas do Fundo (“Cotistas”) para a Consulta Formal, com prazo de recebimento de votos até 04 de maio de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\"\n\n### 11/05/2026\n**Realização da assembleia geral via votação eletrônica**\nA assembleia geral dos cotistas foi realizada em 4 de maio de 2026, com a aprovação das demonstrações financeiras auditadas do exercício social encerrado em 31 de dezembro de 2025.\n\"Realizada via manifestação de voto enviada pelos Cotistas em 04 de maio de 2026.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 8.58
+  },
+  "parecer": {
+    "id": 1149841,
+    "data_entrega": "31/03/2026 13:49",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

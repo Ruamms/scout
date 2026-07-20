@@ -1,0 +1,45 @@
+{
+  "ticker": "HABT11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T09:48:43",
+  "relatorio": {
+    "id": 1223196,
+    "data_entrega": "17/06/2026 11:13",
+    "texto": "1. **Distribuição de rendimentos**: O fundo distribuiu R$ 0,95 por cota em maio, representando um yield anualizado de 16,74% com base na cota de fechamento do mês e 19,95% quando considerado o gross-up de 15% de imposto. [página 3]\n\n2. **Alocação de ativos**: O fundo encerrou o mês com 75,92% do patrimônio líquido alocado em CRIs, 12,08% em FIIs e 11,66% (~R$ 90,09 milhões) em caixa. [página 3]\n\n3. **Movimentação no portfólio**: O fundo realizou a alienação de R$ 19,85MM de CRIs diversos (IPCA + 12,55%). Este movimento foi tático e visa uma alocação core relevante que o fundo deve realizar nos próximos meses. [página 3]\n\n4. **Composição geográfica**: A carteira do fundo está distribuída por várias regiões brasileiras, com destaque para SP (28,14%), MT (19,85%) e RS (15,33%). [página 6]\n\n5. **Risco de inflação**: O fundo possui proteção contra deflação em 75,92% do patrimônio líquido, com a maioria dos ativos indexados ao IPCA. [página 6]\n\n6. **Estratégia de alocação**: A estratégia principal do fundo é investir em CRIs com risco pulverizado e diversificar o portfólio com operações de risco concentrado/corporativo ou FIIs negociados a mercado com desconto patrimonial. [página 4]\n\n7. **Cenário macroeconômico**: O cenário doméstico apresentou maior grau de dificuldade, marcado por volatilidade nos ativos e revisões altistas da inflação, o que tende a beneficiar a distribuição de rendimentos dos fundos de CRI. [página 3]\n\n8. **Relatório de monitoramento**: Está sendo confeccionado um novo Relatório de Monitoramento de Ativos referente ao segundo trimestre de 2026, contendo informações detalhadas sobre o desempenho de cada CRI investido e das movimentações realizadas no portfólio do fundo. [página 3]\n\n**O que observar em seguida:**\n1. **Novas movimentações**: Atente-se a futuras alienações ou novas aquisições de CRIs anunciadas pelo gestor.\n2. **Relatório de monitoramento**: Acompanhe o lançamento do novo Relatório de Monitoramento de Ativos para obter detalhes sobre o desempenho dos ativos e movimentações no portfólio."
+  },
+  "comunicados": {
+    "ids": [
+      1046864,
+      1186846,
+      1186843
+    ],
+    "datas": [
+      "26/11/2025",
+      "12/05/2026",
+      "12/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 26/11/2025\n**O que aconteceu:** Prorrogação do prazo para manifestação sobre a consulta formal.\n- A VÓRTX DISTRIBUIDORA de Títulos e Valores Mobiliários LTDA. anunciou a prorrogação por mais 30 dias do prazo para os cotistas se manifestarem sobre a Consulta Formal, que agora terminará em 26/12/2025.\n- \"A critério da Administradora e do gestor do Fundo, o prazo para manifestação sobre os temas tratados na Consulta Formal fica prorrogado por mais 30 (trinta) dias, contados a partir desta data.\"\n\n### 12/05/2026\n**O que aconteceu:** Aprovação das Demonstrações Financeiras e Notas Explicativas do exercício social de 2025.\n- Os cotistas do Fundo Habitat Recebíveis Pulverizados FII aprovaram as demonstrações financeiras, notas explicativas e parecer dos auditores independentes referentes ao exercício social encerrado em 31/12/2025.\n- \"Os cotistas aprovaram, sem quaisquer restrições ou ressalvas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 71.65
+  },
+  "parecer": {
+    "id": 1158511,
+    "data_entrega": "10/04/2026 09:58",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ticker": "0JS311",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T12:13:03",
+  "comunicados": {
+    "ids": [
+      822470,
+      575694,
+      1186598,
+      1093839
+    ],
+    "datas": [
+      "17/01/2025",
+      "26/12/2023",
+      "12/05/2026",
+      "27/01/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### 17/01/2025\n**O que aconteceu:** TAG OCEANUS - FUNDO DE INVESTIMENTO IMOBILIÁRIO reavaliou seus ativos a valor justo em dezembro de 2024.\n\n**Resumo:** A avaliação realizada pela empresa Eemovel Inteligência Imobiliária resultou em um valor 14,98% superior ao atual valor contábil dos imóveis do fundo, representando uma variação positiva de 12,76% no patrimônio líquido.\n\n**Trecho-chave:**\n> o ativo do fundo foi reavaliado a valor justo em dezembro/2024 pela empresa Eemovel Inteligência Imobiliária, resultando em valor 14,98% superior ao atual valor contábil dos imóveis, o que representa uma variação positiva de 12,76% no valor do patrimônio líquido do fundo.\n\n---\n\n### 26/12/2023\n**O que aconteceu:** TAG OCEANUS - FUNDO DE INVESTIMENTO IMOBILIÁRIO reavaliou seus ativos a valor justo em novembro de 2023.\n\n**Resumo:** A avaliação realizada pela empresa EEMOVEL Inteligência Imobiliária resultou em um valor 25,38% superior ao atual valor contábil dos imóveis do fundo, representando uma variação positiva de 20,09% no patrimônio líquido.\n\n**Trecho-chave:**\n> os ativos do Fundo foram reavaliados a valor justo em novembro/2023 pela empresa especializada independente EEMOVEL INTELIGÊNCIA IMOBILIÁRIA (“EEMOVEL”), resultando em valor 25,38% superior ao valor contábil atual dos referidos imóveis, o que representa uma variação positiva de 20,09% no valor do patrimônio líquido do fundo.\n\n---\n\n### 12/05/2026\n**O que aconteceu:** TAG OCEANUS - FUNDO DE INVESTIMENTO IMOBILIÁRIO realizou uma assembleia extraordinária para aprovar aquisição de imóvel rural.\n\n**Resumo:** Os cotistas aprovaram, sem quaisquer ressalvas, a dispensa da apresentação das certidões de distribuição cível, criminal, trabalhista, fiscal e de protesto pela vendedora no processo de diligência relacionado à aquisição de uma fração ideal correspondente a 33.000,00m² do imóvel rural denominado “Fazenda Florestal”.\n\n**Trecho-chave:**\n> Aprovar a dispensa da apresentação, pela Vendedora, das certidões de distribuição cível, criminal, trabalhista, fiscal e de protesto, no âmbito do processo de diligência relacionado à aquisição, pela Classe, de fração ideal correspondente a 33.000,00m² do imóvel rural denominado “Fazenda Florestal”, de propriedade da Vendedora.\n\n---\n\n### 27/01/2026\n**O que aconteceu:** TAG OCEANUS - FUNDO DE INVESTIMENTO IMOBILIÁRIO realizou uma assembleia geral extraordinária para aprovar a não distribuição semestral de rendimento do fundo.\n\n**Resumo:** Os cotistas deliberaram e aprovaram a não distribuição semestral de 95% dos rendimentos do Fundo, referente ao período de 30/06/2025 até 31/12/2025, para reinvestimento em ativos imobiliários.\n\n**Trecho-chave:**\n> a não distribuição semestral de 95% (noventa e cinco por cento) de rendimento do Fundo, conforme exigido pela Lei 8.668 de junho de 1993, referente ao período de 30/06/2025 até 31/12/2025 para fins de reinvestimento deste montante em ativos imobiliários."
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 870309,
+    "data_entrega": "31/03/2025 21:41",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do TAG Oceanus Fundo de Investimento Imobiliário em 31 de dezembro de 2024, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fund"
+  }
+}

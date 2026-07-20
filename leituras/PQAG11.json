@@ -1,0 +1,52 @@
+{
+  "ticker": "PQAG11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T09:01:42",
+  "relatorio": {
+    "id": 1224847,
+    "data_entrega": "19/06/2026 17:03",
+    "texto": "1. **Substituição da Rede de Incêndio:** A rede principal de combate a incêndio foi substituída entre abril e agosto de 2025, passando de uma rede enterrada para uma nova rede aérea em pleno funcionamento (página 4).\n   \n2. **Impacto Financeiro da Manutenção:** As adequações mencionadas consumiram aproximadamente R$ 3 milhões do resultado acumulado anteriormente, que totalizava cerca de R$ 5 milhões e no fechamento de maio de 2026 estava em R$ 5,8 milhões (página 4).\n\n3. **Pagamentos Anuais:** O locatário efetuou o pagamento anual do aluguel referente ao Centro de Distribuição em janeiro de 2026 e à Sede Administrativa e Edifício Anexo em janeiro de 2025 (página 5).\n\n4. **Investimentos em Renda Fixa:** O Fundo realizou investimento em LCIs no valor total de R$ 49,4 milhões, sendo que no mês de maio não houve novas compras de LCI (página 8).\n\n5. **Vacância Física Zero:** A vacância física do imóvel é zero percento (página 9).\n\n6. **Eventos Societários:** Houve uma Assembleia Geral Ordinária de Cotistas em outubro de 2025, com participação de cotistas representando 31,19% das cotas emitidas pelo Fundo (página 13).\n\n7. **Distribuição de Renda:** O rendimento distribuído por cota no mês de maio foi de R$ 0,49 e o resultado acumulado não distribuído do segundo semestre de 2025 foi aproximadamente R$ 0,38 por cota (página 5).\n\n8. **Diversificação da Carteira:** A carteira de investimentos está composta em 93% por imóveis e 7% por renda fixa, com a receita imobiliária distribuída entre Sede Administrativa (69%), Centro de Distribuição (26%) e Edifício Anexo (5%) (página 8).\n\n**O que observar em seguida:**\n1. **Progresso da investigação técnica:** Continuação dos estudos confirmatórios para esclarecer as responsabilidades sobre a ocorrência de vazamentos na rede principal de combate a incêndio.\n2. **Novos investimentos em LCIs:** Possíveis novas compras ou vendas de Letras de Crédito Imobiliária (LCI) no próximo relatório gerencial."
+  },
+  "comunicados": {
+    "ids": [
+      1209757,
+      1209749,
+      899677,
+      1020195,
+      1020188
+    ],
+    "datas": [
+      "01/06/2026",
+      "01/06/2026",
+      "13/05/2025",
+      "24/10/2025",
+      "24/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 01/06/2026\n**O que aconteceu:** Imóvel do fundo foi avaliado a mercado e apresentou valor superior ao valor contábil atual.\n\n- O imóvel foi avaliado pela CBRE Consultoria do Brasil Ltda., resultando em um aumento de 1,41% no valor patrimonial da cota do Fundo.\n  \n*\"O imóvel do Fundo foi avaliado a mercado (valor justo) pela empresa CBRE Consultoria do Brasil Ltda., resultando em valor 1,42% superior ao valor contábil atual de referido imóvel, o que representa uma variação positiva de aproximadamente 1,41% no valor patrimonial da cota do Fundo nesta data.\"* (p. 1)\n\n### 01/06/2026\n**O que aconteceu:** Imóvel do fundo foi avaliado a mercado e apresentou valor superior ao valor contábil atual.\n\n- O imóvel foi avaliado pela CBRE Consultoria do Brasil Ltda., resultando em um aumento de 1,41% no valor patrimonial da cota do Fundo.\n  \n*\"O imóvel do Fundo foi avaliado a mercado (valor justo) pela empresa CBRE Consultoria do Brasil Ltda., resultando em valor 1,42% superior ao valor contábil atual de referido imóvel, o que representa uma variação positiva de aproximadamente 1,41% no valor patrimonial da cota do Fundo nesta data.\"* (p. 1)\n\n### 13/05/2025\n**O que aconteceu:** Imóvel do fundo foi avaliado a mercado e apresentou valor inferior ao valor contábil atual.\n\n- O imóvel foi avaliado pela CBRE Consultoria do Brasil Ltda., resultando em uma diminuição de 3,83% no valor patrimonial da cota do Fundo.\n  \n*\"O imóvel do Fundo foi avaliado a mercado (valor justo) pela empresa CBRE Consultoria do Brasil Ltda., resultando em valor 3,81% inferior ao valor contábil atual de referido imóvel, o que representa uma variação negativa de aproximadamente 3,83% no valor patrimonial da cota do Fundo nesta data.\"* (p. 1)\n\n### 24/10/2025\n**O que aconteceu:** Assembleia Geral Ordinária aprovou as contas e demonstrações financeiras referentes ao exercício social de 30 de junho de 2025.\n\n- A assembleia foi realizada por meio de consulta formal, com participação de cotistas representando 31,19% das cotas emitidas.\n  \n*\"Os Cotistas deliberam pela aprovação das contas e das demonstrações financeiras do Fundo, referentes ao exercício social encerrado em 30 de junho de 2025.\"* (p. 1)\n\n### 24/10/2025\n**O que aconteceu:** Assembleia Geral Ordinária aprovou as contas e demonstrações financeiras referentes ao exercício social de 30 de junho de 2025.\n\n- A assembleia foi realizada por meio de consulta formal, com participação de cotistas representando 31,19% das cotas emitidas.\n  \n*\"Os Cotistas deliberam pela aprovação das contas e das demonstrações financeiras do Fundo, referentes ao exercício social encerrado em 30 de junho de 2025.\"* (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 56.12
+  },
+  "parecer": {
+    "id": 994237,
+    "data_entrega": "18/09/2025 18:07",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Parque Anhanguera Fundo de Investimento Imobiliário de Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotada"
+  }
+}

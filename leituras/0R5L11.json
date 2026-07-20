@@ -1,0 +1,21 @@
+{
+  "ticker": "0R5L11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T01:33:58",
+  "comunicados": {
+    "ids": [
+      1056610,
+      1093271
+    ],
+    "datas": [
+      "08/12/2025",
+      "26/01/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGE"
+    ],
+    "texto": "### Fato Relevante - 08/12/2025\n\n**O que aconteceu:** O Fundo de Investimento Imobiliário Atria celebrou um aditamento aos compromissos de compra e venda com o FII XP Malls e FII Neomall, para aquisição de participações em nove shopping centers.\n\n**Resumo:** O valor total da transação é de R$ 1.609.150.846,40, sendo que a primeira parcela foi liquidada no montante de R$ 270 milhões (composta pela Parcela Crédito e Parcela Inicial). As demais parcelas serão pagas conforme cronograma contratual.\n\n**Trecho-chave:**\n\"O valor total da transação é de R$ 1.609.150.846,40 (um bilhão, seiscentos e nove milhões, cento e cinquenta mil, oitocentos e quarenta e seis reais e quarenta centavos), com pagamento escalonado em parcelas.\" (p. 1)\n\n### Assembleia AGE - 26/01/2026\n\n**O que aconteceu:** A assembleia geral extraordinária do Fundo de Investimento Imobiliário Atria aprovou alterações no Anexo I ao Regulamento.\n\n**Resumo:** Os cotistas deliberaram por unanimidade para realizar ajustes na redação da seção Objetivo, Integralização e Amortização de Cotas, Política de Investimentos, Resgate, Amortização e Procedimento aplicável à Liquidação da Classe, Política de Distribuição de Rendimentos e Resultados, Prestadores de Serviços, Assembleia Especial de Cotistas e Demais Procedimentos Aplicáveis às Manifestações das Vontades dos Cotistas, e Conflitos de Interesse.\n\n**Trecho-chave:**\n\"Os Cotistas deliberaram, por unanimidade, sem quaisquer reservas ou restrições: (i) Aprovar a alteração do Anexo I ao Regulamento.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:14b"
+}

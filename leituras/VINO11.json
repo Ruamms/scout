@@ -1,0 +1,59 @@
+{
+  "ticker": "VINO11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T08:36:16",
+  "relatorio": {
+    "id": 1241559,
+    "data_entrega": "07/07/2026 19:18",
+    "texto": "- O fundo celebrou dois novos contratos de locação no Haddock Lobo 347, totalizando aproximadamente 788 m² de área BOMA, levando a ocupação do ativo a cerca de 45% da área própria. [página 3]\n- Foi realizado o pré-pagamento parcial de juros acumulados do CRI Haddock no montante de R$ 14 milhões, reduzindo despesas financeiras em aproximadamente 30%. [página 5]\n- O fundo celebrou promessa de venda e compra do Oscar Freire 585, com recebimento mensal adicional de R$ 250 mil durante o período de superação das condições precedentes. [página 3]\n- A taxa de ocupação média do portfólio aumentou em junho, principalmente por conta da retirada do Oscar Freire 585 da base de cálculo. [página 12]\n- O fundo não recebeu o aluguel devido pela BemFácil Digital, locatária do BBS, cuja locação representa aproximadamente 0,3% da receita imobiliária do Fundo; a gestão está finalizando a negociação de rescisão. [página 12]\n- O resultado recorrente do fundo foi de R$ 0,037/cota em junho, impactado pelo pré-pagamento parcial do CRI Haddock que gerou um efeito não recorrente negativo de R$ 0,169/cota. [página 5]\n- A vacância ponderada por área é de 18,82%, acima do limiar de alerta de 15%. [contexto]\n\nO que observar em seguida:\n- Progresso nas negociações comerciais restantes no Haddock Lobo 347.\n- Desenvolvimento da transação envolvendo o Oscar Freire 585."
+  },
+  "comunicados": {
+    "ids": [
+      1224501,
+      1129750,
+      1073734,
+      1250118,
+      1235311,
+      1207557,
+      1173301
+    ],
+    "datas": [
+      "19/06/2026",
+      "06/03/2026",
+      "30/12/2025",
+      "15/07/2026",
+      "30/06/2026",
+      "29/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 15/07/2026 - Comunicado ao Mercado\n\n**O que aconteceu:** O Fundo realizou a venda do ativo Cardeal Corporate por R$40 milhões.\n\n**Resumo:** A transação gerará um ganho de capital estimado em R$1,5 milhão e uma Taxa Interna de Retorno (TIR) de 9,9% ao ano. O imóvel foi adquirido pelo Fundo em setembro de 2020 por R$29,3 milhões.\n\n**Trecho-chave:** \"A Transação representa um cap rate de 8,75% sobre a receita de locação vigente do Ativo e deverá gerar ganho de capital estimado de aproximadamente R$ 1,5 milhão, equivalente a R$ 0,018/cota.\"\n\n---\n\n### 30/06/2026 - Comunicado ao Mercado\n\n**O que aconteceu:** O Fundo distribuiu rendimentos referentes a junho de 2026 no valor de R$0,042 por cota.\n\n**Resumo:** O pagamento será realizado em 14 de julho de 2026 aos detentores de cotas do Fundo no fechamento de 30 de junho. \n\n**Trecho-chave:** \"O valor dos rendimentos referentes a junho de 2026 corresponde a R$ 0,042 por cota.\"\n\n---\n\n### 19/06/2026 - Fato Relevante\n\n**O que aconteceu:** O Fundo celebrou um contrato potencial para alienação do imóvel Oscar Freire com contrapartida de aluguel.\n\n**Resumo:** Como contrapartida, o adquirente pagará R$ 250 mil mensalmente ao Fundo durante a superação das condições precedentes. O valor representa impacto estimado de aproximadamente R$ 0,003 por cota no resultado mensal do Fundo.\n\n**Trecho-chave:** \"Como contrapartida, durante o prazo para verificação e superação das Condições Precedentes, o potencial adquirente pagará ao Fundo, valor mensal adicional de R$ 250 mil a título de aluguel até (i) a superação das Condições Precedentes e lavratura da escritura definitiva de venda e compra do Imóvel ou (ii) a denúncia do contrato por impossibilidade de superação das Condições Precedentes.\"\n\n---\n\n### 06/03/2026 - Fato Relevante\n\n**O que aconteceu:** O Fundo concluiu negociações para desocupação do ativo Haddock Lobo 347.\n\n**Resumo:** A transação resultou em um saldo de R$ 48,5 mil a ser recebido pelo Fundo em três parcelas mensais iguais. \n\n**Trecho-chave:** \"Em continuidade ao Fato Relevante divulgado em 30/12/2025, o Fundo concluiu as negociações envolvendo os valores devidos pela Vitacon e formalizou, em definitivo, o término da locação e a respectiva devolução da área ocupada no ativo Haddock Lobo 347.\"\n\n---\n\n### 30/12/2025 - Fato Relevante\n\n**O que aconteceu:** O Fundo iniciou negociações para desocupação do imóvel Haddock Lobo 347.\n\n**Resumo:** A Gestora informará oportunamente o mercado sobre a conclusão da negociação e seus termos, por meio de novo comunicado. \n\n**Trecho-chave:** \"O Fundo encontra-se, na presente data, em processo de formalização de negociação com o locatário Vitacon Participações S.A., referente à desocupação do imóvel Haddock Lobo 347, por ele atualmente ocupado.\"\n\n---\n\n### 29/05/2026 - Assembleia AGO\n\n**O que aconteceu:** A assembleia formal aprovou as Demonstrações Financeiras do Fundo referentes ao exercício social de 2025.\n\n**Resumo:** Os votos foram apurados e as demonstrações financeiras foram aprovadas sem restrições. \n\n**Trecho-chave:** \"Diante do exposto, a Administradora declara que as Demonstrações Financeiras do Fundo foram aprovadas, sem quaisquer ressalvas e restrições.\"\n\n---\n\n### 29/04/2026 - Assembleia AGO\n\n**O que aconteceu:** O Fundo convocou assembleia geral ordinária para aprovar as Demonstrações Financeiras do exercício social de 2025.\n\n**Resumo:** A assembleia foi realizada por meio de consulta formal aos cotistas, com votos coletados até o dia 28 de maio de 2026. \n\n**Trecho-chave:** \"A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., na qualidade de instituição administradora do VINCI OFFICES FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA, fundo de investimento imobiliário, inscrito no CNPJ sob o nº 12.516.185/0001-70 (“Fundo”), convida os cotistas do Fundo (“Cotistas”) a participar da Assembleia Geral Ordinária de Cotistas do Fundo (\"AGO\").\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Vacância física alta",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 4.7
+  },
+  "parecer": {
+    "id": 1149235,
+    "data_entrega": "30/03/2026 22:38",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

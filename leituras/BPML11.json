@@ -1,0 +1,48 @@
+{
+  "ticker": "BPML11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T07:14:18",
+  "relatorio": {
+    "id": 1242468,
+    "data_entrega": "08/07/2026 20:05",
+    "texto": "1. **Distribuição de Dividendos**: O fundo distribuiu R$ 0,92 por cota em junho de 2026, resultando em um dividend yield anualizado de 12,74% com base no preço de fechamento do mês.\n   - \"Em junho de 2026, o Fundo distribuiu R$ 0,92 por cota, o que representa um dividend yield anualizado de 12,74% com base no preço de fechamento de junho.\" (p. 2)\n\n2. **Desempenho dos Shoppings**: Os shoppings Plaza Macaé, Contagem e Capim Dourado destacaram-se em vendas.\n   - \"Na frente comercial, há expectativa de assinatura de nove contratos, sendo o Shopping Londrina Norte o principal destaque, com previsão de assinatura de seis contratos.\" (p. 2)\n\n3. **Vacância**: A vacância do portfólio está em 8,23%.\n   - \"Oportfólio conta com ativos em 5 estados diferentes, demonstrando um bom nível de diversificação regional.\" (p. 2)\n\n4. **Fluxo de Veículos**: O fluxo de veículos no Capim Dourado teve uma projeção de crescimento de 7%.\n   - \"As transmissões dos jogos do Brasil durante a Copa têm contribuído para o aumento do fluxo, assim como eventos promovidos pelos empreendimentos.\" (p. 2)\n\n5. **Eventos Promocionais**: Eventos como a \"Arena dos Campeões\" e ações de Dia dos Namorados contribuíram positivamente para o desempenho dos ativos.\n   - \"As ações de Dia dos Namorados contribuíram positivamente para o desempenho dos ativos.\" (p. 2)\n\n6. **Aquisição Indireta**: Em 2026, foi realizada a aquisição de uma participação no ativo Pq. D. Pedro de forma indireta.\n   - \"Em 2026 foi realizada a aquisição de uma participação no ativo Pq. D. Pedro de forma indireta.\" (p. 7)\n\n7. **Diversificação Regional**: 61% do ABL está concentrado na região Sudeste, com presença em cinco estados diferentes.\n   - \"O portfólio conta com ativos em 5 estados diferentes, demonstrando um bom nível de diversificação regional.\" (p. 2)\n\n8. **Risco Macro**: O cenário econômico brasileiro apresenta riscos relacionados à inflação e ao câmbio.\n   - \"Com o dólar mais alto, parte da pressão pode aparecer em produtos importados, insumos e preços no atacado, dificultando uma queda mais rápida da inflação no Brasil.\" (p. 4)\n\n**O que observar em seguida:**\n1. **Desempenho futuro dos shoppings**: Acompanhar a assinatura de novos contratos nos principais destinos mencionados.\n2. **Impacto econômico**: Monitorar os efeitos da inflação e do câmbio sobre o desempenho das vendas e fluxo de veículos nos ativos."
+  },
+  "comunicados": {
+    "ids": [
+      921310,
+      1198414,
+      1241688,
+      1241687
+    ],
+    "datas": [
+      "11/06/2025",
+      "18/05/2026",
+      "07/07/2026",
+      "07/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Fato Relevante — 11/06/2025\n\n**O que aconteceu:** O Fundo BPML11 anunciou a distribuição extraordinária de R$ 23.683.853,58 referente à venda do Shopping Capim Dourado.\n\n**Resumo:** A distribuição será realizada em três parcelas: R$ 1,06 por cota nos dias 24/06/2025, 24/07/2025 e 22/08/2025. Os cotistas que detiverem as cotas no fechamento dos mercados em 16/06/2025, 17/07/2025 e 15/08/2025 receberão os valores respectivamente.\n\n**Trecho-chave:**\n\"O Fundo irá seguir com a distribuição do montante total de R$ 23.683.853,58 (vinte e três milhões, seiscentos e oitenta e três mil, oitocentos e cinquenta e três reais e cinquenta e oito centavos), ou o equivalente a R$ 3,18 por cota (“Valor Total”) referentes à parcela potencial adicional do preço (“Ajuste de Preço”) da venda do Shopping Capim Dourado com base na performance do Shopping nos 12 (doze) meses contados a partir de novembro de 2023.\"\n\n---\n\n### Comunicado ao Mercado — 18/05/2026\n\n**O que aconteceu:** O Fundo BPML11 atualizou sua forma de divulgação da remuneração dos Prestadores de Serviços Essenciais.\n\n**Resumo:** A divulgação passa a ser realizada exclusivamente por meio da Ferramenta ANBIMA, conforme orientações do Ofício-Circular CVM nº 1/2025. Não houve alteração nos valores pagos pelos cotistas.\n\n**Trecho-chave:**\n\"A versão do Regulamento consolidada e anexa ao presente passará a ter efeitos no fechamento de 18 de maio de 2026.\"\n\n---\n\n### Assembleia AGE — 07/07/2026\n\n**O que aconteceu:** O Fundo BPML11 convocou uma assembleia geral extraordinária para deliberar sobre alterações no regulamento e contratos.\n\n**Resumo:** Os cotistas foram convidados a participar de uma assembleia não presencial para discutir a inclusão do item 4.8., alteração do item 7.1., modificação do item 4.4., além da celebração de um contrato de locação com a ALLPARK EMPREENDIMENTOS.\n\n**Trecho-chave:**\n\"Aprovar a inclusão do item 4.8. no Anexo I, a fim de prever a possibilidade do Administrador, com os recursos da Classe, recomprar as Cotas, com a finalidade exclusiva de cancelamento, seja por meio de programa de recompra ou por meio de Oferta Pública Voluntária de Aquisição de suas próprias Cotas (“OPAC”), observados os procedimentos eventualmente previstos nos manuais ou regras da B3, bem como o disposto no Art. 56 e seguintes do Anexo Normativo I da Resolução CVM 175.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 85.54
+  },
+  "parecer": {
+    "id": 1152166,
+    "data_entrega": "31/03/2026 23:54",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Capitânia Shoppings Fundo de Investimento Imobiliário – Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis ado"
+  }
+}

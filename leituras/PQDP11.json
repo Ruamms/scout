@@ -1,0 +1,58 @@
+{
+  "ticker": "PQDP11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T15:53:25",
+  "relatorio": {
+    "id": 1237879,
+    "data_entrega": "02/07/2026 09:36",
+    "texto": "1. **Aquisição adicional de participação no Shopping Parque D. Pedro**: Em 26 de dezembro de 2025, o fundo exerceu parcialmente seu direito de preferência e adquiriu aproximadamente 53% da participação ofertada, correspondente a um investimento de R$ 332.954.293,32.\n   \n2. **Emissão de cotas para financiar aquisição**: A emissão de cotas foi realizada em seis etapas sem necessidade de aprovação em assembleia geral de cotistas, cada uma correspondendo à 15% do valor da operação corrigido pelo IPCA.\n\n3. **Conclusão de obras e melhorias**: Em 2024, a entrada \"Pedras\" foi concluída no shopping, restando apenas a conclusão da entrada \"Colinas\". Além disso, foram realizadas benfeitorias como comunicação visual, recapeamento do estacionamento e paisagismo.\n\n4. **Evolução das vendas**: As vendas totais em 2025 somaram R$ 2.287.490.335, com uma tendência de crescimento nas vendas/m² ao longo dos meses.\n\n5. **Inadimplência líquida de aluguel**: A inadimplência líquida de aluguel apresentou variações mensais entre -7,6% e 4,4%, mas não foram fornecidos detalhes específicos sobre o nível atual ou tendências recentes.\n\n6. **Alavancagem/dívidas**: Não há menção explícita a novos empréstimos ou dívidas no relatório, apenas referências à utilização de reservas para obras e melhorias.\n\n7. **Eventos societários**: Em 19/06/2024, houve uma cisão parcial do fundo que reduziu o patrimônio líquido e cancelou 151.242 cotas.\n\n8. **Riscos mencionados**: O relatório menciona discussões regulatórias relacionadas ao enquadramento tributário, mas informa que a decisão do CARF foi favorável ao fundo.\n\n**O que observar em seguida:**\n- Progresso das obras e melhorias na entrada \"Colinas\".\n- Resultado financeiro após o pagamento completo da aquisição adicional de participação."
+  },
+  "comunicados": {
+    "ids": [
+      1155938,
+      1073941,
+      1051075,
+      1198062,
+      1125068,
+      1198059,
+      1071201
+    ],
+    "datas": [
+      "08/04/2026",
+      "31/12/2025",
+      "01/12/2025",
+      "18/05/2026",
+      "28/02/2026",
+      "18/05/2026",
+      "26/12/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### Fato Relevante - 08/04/2026\n\n**O que aconteceu:** O Fundo Parque Dom Pedro Shopping Center obteve decisão favorável em processo administrativo tributário no CARF.\n\n**Resumo:** A Administração informou que a Câmara Superior de Recursos Fiscais (CSRF) do Conselho Administrativo de Recursos Fiscais (CARF) decidiu integralmente a favor do Fundo, reforçando sua postura diligente e adequação regulatória.\n\n**Trecho-chave:** \"A referida decisão foi proferida de forma integralmente favorável ao Fundo no âmbito da CSRF.\"\n\n---\n\n### Fato Relevante - 31/12/2025\n\n**O que aconteceu:** O Fundo pagou o sinal para aquisição de fração ideal do Shopping Parque Dom Pedro.\n\n**Resumo:** A Administração comunicou o pagamento do sinal no valor de R$ 33.295.429,33 referente à aquisição da fração ideal de 25,86% do empreendimento Shopping Parque Dom Pedro, com parcelamento restante conforme cronograma estabelecido.\n\n**Trecho-chave:** \"O sinal de 10% liquidado na presente data corresponde à primeira parcela, no montante de R$ 33.295.429,33.\"\n\n---\n\n### Fato Relevante - 01/12/2025\n\n**O que aconteceu:** O Fundo recebeu notificação formal para aquisição da fração ideal do Shopping Parque Dom Pedro.\n\n**Resumo:** A Administração informou à Classe sobre a notificação concedendo direito de preferência para aquisição da fração ideal de 25,86% do empreendimento Shopping Parque Dom Pedro por R$ 625 milhões, com prazo de 30 dias para decisão.\n\n**Trecho-chave:** \"O Fundo recebeu notificação formal concedendo-lhe direito de preferência para aquisição da fração ideal de 25,86% do empreendimento Shopping Parque Dom Pedro.\"\n\n---\n\n### Comunicado ao Mercado - 18/05/2026\n\n**O que aconteceu:** Assembleia Geral Ordinária (AGO) aprovou as contas anuais referentes ao exercício de 2025.\n\n**Resumo:** A Administração comunicou aos cotistas e mercado sobre a aprovação das contas anuais do Fundo no exercício encerrado em 31/12/2025, realizada via manifestação de voto enviada pelos Cotistas.\n\n**Trecho-chave:** \"Foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### Comunicado ao Mercado - 28/02/2026\n\n**O que aconteceu:** A Administração informou sobre a disponibilização digital dos Informes de Rendimentos referentes a 2025.\n\n**Resumo:** A Administração comunicou aos cotistas e mercado sobre a disponibilização exclusivamente por meio digital dos Informes de Rendimentos do ano de 2025, conforme previsto na Instrução Normativa RFB nº 2.060/2021.\n\n**Trecho-chave:** \"Os Informes referentes ao ano de 2025 serão disponibilizados exclusivamente por meio digital.\"\n\n---\n\n### Assembleia AGE - 26/12/2025\n\n**O que aconteceu:** A assembleia aprovou contratação de fiança bancária para viabilizar o exercício do direito de preferência.\n\n**Resumo:** A Administração informou sobre a aprovação da contratação de fiança bancária no valor de até R$ 625 milhões corrigidos pelo IPCA, para viabilizar o exercício do direito de preferência pela Classe.\n\n**Trecho-chave:** \"Foram recebidas respostas de cotistas representando, aproximadamente, 36.098% das Cotas de emissão do Fundo.\"\n\n---\n\n### Assembleia AGO - 18/05/2026\n\n**O que aconteceu:** A assembleia aprovou as demonstrações financeiras auditadas referentes ao exercício social encerrado em 31/12/2025.\n\n**Resumo:** A Administração informou sobre a aprovação das demonstrações financeiras auditadas do Fundo no exercício social encerrado em 31 de dezembro de 2025, realizada via manifestação de voto enviada pelos Cotistas.\n\n**Trecho-chave:** \"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n**Conexões com indicadores:**\n- A aprovação da contratação de fiança bancária e aquisição de fração ideal do Shopping Parque Dom Pedro (Fatos Relevantes de 01/12/2025, 31/12/2025) pode estar relacionada à emissão de cotas (+157,66% em 24 meses), embora não seja explicitamente mencionado no texto."
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Emissão de cotas com VP/cota em queda"
+    ],
+    "cota": 2459.99
+  },
+  "parecer": {
+    "id": 1151942,
+    "data_entrega": "31/03/2026 22:42",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira d a Classe Única de Cotas Fundo de Investimento Imobiliário - FII Parque Dom Pedro Shopping Center Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data"
+  }
+}

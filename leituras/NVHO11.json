@@ -1,0 +1,30 @@
+{
+  "ticker": "NVHO11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T12:05:15",
+  "comunicados": {
+    "ids": [
+      1178051,
+      1178049
+    ],
+    "datas": [
+      "30/04/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 30/04/2026\n**Convocação da Assembleia Geral Ordinária (AGO)**\nO Banco Genial S.A., administrador do FII NOVO HORIZONTE - RL, convoca os cotistas para a AGO em 2 de junho de 2026. A assembleia discutirá e aprovará as demonstrações financeiras referentes ao exercício social findo em 31 de dezembro de 2025.\n\n\"O Administrador propõe a aprovação das matérias da Ordem do Dia.\"\n\n### 30/04/2026\n**Consulta Formal para Votação na AGO**\nOs cotistas são convidados a votar eletronicamente sobre a aprovação das demonstrações financeiras e notas explicativas referentes ao exercício social de 2025. O voto deve ser realizado até às 12 horas do dia 2 de junho de 2026.\n\n\"O Cotista poderá declarar seu voto por meio de plataforma de voto eletrônico específica (“Cuore”).\"\n\n### Conexão com indicadores:\nA convocação da AGO e a consulta formal para votação ocorrem em um contexto onde o fundo apresenta rendimentos acima do resultado financeiro, uma vacância zero percentual e um P/VP muito abaixo da média histórica."
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1152014,
+    "data_entrega": "31/03/2026 23:07",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento imobiliário - FII Novo Horizonte em 31 de dezembro de 2025 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de Investimentos"
+  }
+}

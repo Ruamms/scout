@@ -1,0 +1,39 @@
+{
+  "ticker": "PRHO11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T14:34:42",
+  "relatorio": {
+    "id": 1237764,
+    "data_entrega": "01/07/2026 20:40",
+    "texto": "- **Aquisição de Ativos:** O BTG Pactual Prime Hotéis FII concluiu a aquisição de três hotéis: o Fairmont Copacabana, localizado em Copacabana; o Fasano Itaim, situado no Itaim Bibi; e o Pullman Guarulhos, próximo ao Aeroporto Internacional de São Paulo. Essa aquisição foi finalizada no mês de maio, e os ativos passaram a contribuir para a receita do fundo em junho (p. 2).\n\n- **Carteira de Ativos:** A carteira atualmente é composta por três hotéis: Fairmont Copacabana (6%), Pullman Guarulhos (69%) e Fasano Itaim (25%). Esses ativos são administrados pelas bandeiras Accor e Fasano (p. 6).\n\n- **Indicadores do Fundo:** O valor patrimonial do fundo é de R$ 514,4 milhões, com uma cota patrimonial de R$ 10,22 por cota e um número total de cotistas de 35.503 (p. 2).\n\n- **Comentário Macro:** O cenário econômico global continua desafiador, com inflação elevada nos Estados Unidos e Brasil, além da possibilidade de novas altas nas taxas de juros no segundo semestre devido à pressão inflacionária (p. 3).\n\n- **Riscos Citados:** A gestão menciona riscos como a alta dos preços do petróleo, a pressão inflacionária e o cenário econômico desafiador que pode afetar negativamente os ativos hoteleiros (p. 3).\n\nO que observar em seguida:\n- Monitorar as taxas de ocupação e receita dos hotéis adquiridos.\n- Acompanhar a evolução da inflação e das taxas de juros no Brasil e nos Estados Unidos, pois podem impactar diretamente o desempenho do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1206999,
+      1129705,
+      1171863,
+      1154533
+    ],
+    "datas": [
+      "29/05/2026",
+      "05/03/2026",
+      "28/04/2026",
+      "06/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Fato Relevante (29/05/2026)\n**O que aconteceu:** O fundo PRHO11 adquiriu participações em três hotéis de alto padrão.\n**Resumo:** A aquisição envolveu contratos para a compra de 61,8% do Pullman São Paulo International Airport e 79,4% do Fasano Itaim, ambos em São Paulo. Além disso, o fundo adquiriu 5,9% do Fairmont Rio de Janeiro Copacabana no Rio de Janeiro. O valor total da transação foi R$ 630 milhões.\n**Trecho-chave:** \"A Classe celebrou, nesta data, um conjunto de instrumentos envolvendo (i) Promessa de Cessão de Direito Real de Uso, (ii) Instrumento Particular de Compromisso de Venda e Compra de Bem Imóvel; (iii) Contrato de compra e venda de Quotas de Sociedade Propósito Específico Imobiliário; e (iv) Instrumento Particular de Promessa de Transferência de Direito Real de Superfície, visando à aquisição de participações em ativos hoteleiros de alto padrão localizados nos Estados de São Paulo e Rio de Janeiro\" (p. 1).\n\n### Comunicado ao Mercado (05/03/2026)\n**O que aconteceu:** O fundo PRHO11 modificou o cronograma da oferta pública de distribuição.\n**Resumo:** A data do encerramento do período de coleta de intenções de investimento foi alterada para 27/03/2026. Além disso, a oferta das cotas da subclasse B não será realizada neste momento e o endereço de e-mail de contato da Gestora foi corrigido.\n**Trecho-chave:** \"A modificação da Oferta, de forma a (a) alterar o cronograma indicativo da Oferta, previsto na seção “5.1 Cronograma” do “Prospecto Definitivo de Oferta Pública de Distribuição da 1ª (Primeira) Emissão de Cotas da Subclasse A da Classe Única do BTG Pactual Prime Hospitalidade Fundo de Investimento Imobiliário Responsabilidade Limitada”, divulgado originalmente em 27 de fevereiro de 2026 (“Prospecto”), inclusive o estudo de viabilidade para atualizar o cronograma da Oferta\" (p. 1).\n\n### Assembleia AGE (28/04/2026)\n**O que aconteceu:** A assembleia aprovou a autorização de aquisição e alienação de ativos conflitados.\n**Resumo:** Os cotistas do fundo PRHO11 aprovaram por maioria as propostas apresentadas pela administradora, incluindo a aquisição de participações em três hotéis (Fasano Itaim, Pullman Guarulhos e Fairmont Copacabana) e a autorização para alienação desses ativos no futuro. Além disso, foi permitido que o fundo adquirisse cotas de fundos de renda fixa administrados pela BTG PACTUAL.\n**Trecho-chave:** \"Foram recebidas respostas de cotistas representando, aproximadamente, 30,876% das Cotas de emissão da Classe, sendo que as matérias colocadas em deliberação, conforme descritas acima, restaram aprovadas pelos Cotistas\" (p. 2).\n\n### Assembleia AGE (06/04/2026)\n**O que aconteceu:** A assembleia convocou os cotistas para uma consulta formal sobre propostas de aquisição e alienação de ativos conflitados.\n**Resumo:** A administradora do fundo PRHO11 convocou os cotistas para participar da Assembleia Especial por meio de consulta formal, com o objetivo de deliberar sobre a autorização de aquisição e alienação de ativos em potencial situação de conflito de interesses.\n**Trecho-chave:** \"A BTG PACTUAL SERVIÇOS FINANCEIROS S.A. DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS, sociedade anônima com sede no Município e Estado do Rio de Janeiro, na Praia de Botafogo, nº 501, Torre Corcovado, 5º andar – parte, Botafogo, CEP 22250 -040, inscrita no Cadastro Nacional da Pessoa Jurídica (“CNPJ”) sob o nº 59.281.253/0001 -23\" (p. 1)."
+  },
+  "retrato": {
+    "selo": "Histórico insuficiente",
+    "nivel": "insuficiente",
+    "alertas": [
+      "Fundo novo — histórico curto"
+    ],
+    "cota": null
+  }
+}

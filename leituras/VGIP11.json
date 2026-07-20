@@ -1,0 +1,49 @@
+{
+  "ticker": "VGIP11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T03:05:12",
+  "relatorio": {
+    "id": 1226673,
+    "data_entrega": "23/06/2026 18:24",
+    "texto": "1. O Fundo VGIP11 adquiriu R$6,3 milhões em duas operações existentes na carteira durante maio de 2026: CRI VFDL e CRI Projetos Residenciais SP 1S.\n2. O Fundo recebeu amortizações (ordinárias e extraordinárias) no valor total de R$2,8 milhões em maio de 2026.\n3. Durante junho de 2026, o Fundo fez um investimento adicional no valor total de R$ 600 mil em um CRI já existente na carteira.\n4. O Fundo distribuiu R$1,05 por cota como rendimento referente ao mês de maio de 2026, com pagamento realizado no dia 18 de junho de 2026.\n5. A distribuição de rendimentos acumulada dos últimos 12 meses foi de R$10,09 por cota (equivalente a IPCA + 7,5% ao ano).\n6. Todos os CRIs da carteira do Fundo encontram-se adimplentes e a Gestão considera a carteira saudável.\n7. O patrimônio líquido do Fundo sofreu uma variação negativa de R$0,15 por cota em maio de 2026 devido à abertura das taxas de juros das NTN-B ao longo do mês.\n8. A quantidade de cotistas no fundo encerrou o período com 83.612 cotistas.\n\nO que observar em seguida:\n- Novos investimentos adicionais realizados pelo Fundo após junho de 2026.\n- Eventuais mudanças na adimplência dos CRIs da carteira do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1125070,
+      1116767,
+      1063725,
+      1026999
+    ],
+    "datas": [
+      "28/02/2026",
+      "13/02/2026",
+      "15/12/2025",
+      "03/11/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 28/02/2026\n**O que aconteceu:** A BTG PACTUAL SERVIÇOS FINANCEIROS S.A. DTVM informou aos cotistas a disponibilização digital dos Informes de Rendimentos referentes ao ano de 2025.\n\n**Resumo:** A administradora do fundo VGIP11 anunciou que os Informes de Rendimentos para o ano de 2025 serão fornecidos exclusivamente por meio digital, conforme a Instrução Normativa RFB nº 2.060/2021.\n\n**Trecho-chave:** \"Em complemento ao Comunicado ao Mercado de 2 de fevereiro de 2026 e ao Comunicado ao Mercado de 13 de fevereiro de 2026, a Administradora informa que, com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos (“Informes”) referentes ao ano de 2025, já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital, por meio do Portal do Investidor (“Portal”).\"\n\n---\n\n### 13/02/2026\n**O que aconteceu:** A BTG PACTUAL SERVIÇOS FINANCEIROS S.A. DTVM reiterou a disponibilização digital dos Informes de Rendimentos referentes ao ano de 2025.\n\n**Resumo:** A administradora do fundo VGIP11 confirmou que os Informes de Rendimentos para o ano de 2025 serão fornecidos exclusivamente por meio digital, conforme a Instrução Normativa RFB nº 2.060/2021.\n\n**Trecho-chave:** \"Em complemento ao Comunicado ao Mercado de 02 de fevereiro de 2026 , a Administradora reitera que, com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos (“Informes”) referentes ao ano de 2025 serão disponibilizados aos investidores até o dia 27 de fevereiro de 2026, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital , por meio do Portal do Investidor (“Portal”).\"\n\n---\n\n### 15/12/2025\n**O que aconteceu:** A assembleia geral ordinária (AGO) aprovou as contas e demonstrações contábeis do Fundo VGIP11 relativas ao exercício social findo em 30 de junho de 2025.\n\n**Resumo:** O quórum da AGO foi atingido, com aproximadamente 63.555% dos cotistas votando a favor da aprovação das contas e demonstrações contábeis do Fundo VGIP11.\n\n**Trecho-chave:** \"Aprovar as contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\"\n\n---\n\n### 03/11/2025\n**O que aconteceu:** A BTG PACTUAL SERVIÇOS FINANCEIROS S.A. DTVM convocou os cotistas para a Assembleia Geral Ordinária (AGO) não presencial, por meio de consulta formal.\n\n**Resumo:** Os cotistas foram convidados a deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo VGIP11 relativas ao exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:** \"Aos Cotistas do VALORA CRI INDICE DE PRECO FUNDO DE INVESTIMENTO IMOBILIARIO - FII, inscrito no CNPJ sob o nº 34197811000146, vem, por meio da presente, convocar os titulares das cotas de emissão do Fundo (“Cotistas”) para participar da Assembleia Geral Ordinária do Fundo, a ser realizada de forma não presencial, por meio do procedimento de consulta formal, a qual tem por objeto deliberar sobre: 1. Aprovação das contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 79.6
+  },
+  "parecer": {
+    "id": 986852,
+    "data_entrega": "09/09/2025 10:40",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Valora CRI Índice de Preço Fundo de Investimento Imobiliário - FII Responsabilidade Limitada em 30 de junho de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas cont"
+  }
+}

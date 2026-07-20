@@ -1,0 +1,48 @@
+{
+  "ticker": "PRGD11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T09:33:52",
+  "relatorio": {
+    "id": 1214912,
+    "data_entrega": "09/06/2026 15:42",
+    "texto": "1. **Transferência de Serviços**: A assembleia geral extraordinária aprovou, em 13/05/2026, a transferência integral dos serviços de administração fiduciária, gestão e custódia para o grupo BTG Pactual, com data de transição em 01/06/2026. [página 4]\n\n2. **Distribuição de Dividendos**: Em maio, o fundo distribuiu R$ 0,85 por cota em dividendos e espera um ganho adicional de capital de R$ 20.272.523,92 (R$ 2,28 por cota) decorrente do recebimento de parcelas futuras de vendas. [página 3]\n\n3. **Resultado Financeiro**: O fundo registrou um resultado financeiro líquido de R$ 6.040.707 em maio, com uma rentabilidade de 0,68 por cota e um rendimento distribuído de R$ 0,85 por cota. [página 4]\n\n4. **Vacância**: O fundo não apresenta vacância (vacância = 0%). [página 5]\n\n5. **Inadimplência**: Não há inadimplência registrada no relatório. [página 5]\n\n6. **Cenário Macro e Projeções**: A gestão espera que a Selic encerre o ano de 2026 em 13,25% ao ano e projeta uma inflação IPCA de 5,40%. O crescimento do PIB para 2026 é estimado em 2,20%. [página 4]\n\n7. **Diversificação da Carteira**: A carteira do fundo está diversificada por tipo de ativo (shopping center e rua), região geográfica e locatários. [página 5]\n\n8. **Vencimento dos Contratos**: O relatório apresenta a distribuição percentual dos contratos vencendo em 2026 e após 2027+. [página 6]\n\n**O que observar em seguida:**\n1. A evolução do resultado financeiro líquido nos próximos meses.\n2. O progresso na receita de vendas prevista para o ano, conforme mencionado no relatório."
+  },
+  "comunicados": {
+    "ids": [
+      938334,
+      921100,
+      1206666,
+      1192667
+    ],
+    "datas": [
+      "02/07/2025",
+      "10/06/2025",
+      "28/05/2026",
+      "14/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### 02/07/2025\n**O Fundo vendeu uma loja em São Luís - MA.**\nO fundo concluiu a venda de um imóvel desocupado localizado nas ruas Oswaldo Cruz e Sete de Setembro, com área bruta locável (ABL) de 4.875 m², representando 4,2% da ABL total do Fundo. O valor da transação foi de R$12 milhões, sendo R$2,4 milhões pagos à vista e o saldo remanescente em 24 parcelas mensais de R$400 mil cada. Após a conclusão da venda, a vacância do fundo foi zerada.\n\n*\"O valor da transação foi de R$ 12.000.000,00 (doze milhões de reais), sendo R$ 2.400.000,00 (dois milhões e quatrocentos mil reais) pagos à vista nesta data, e o saldo remanescente de R$ 9.600.000,00 (nove milhões e seiscentos mil reais) será pago em 24 (vinte e quatro) parcelas mensais, fixas e sucessivas de R$ 400.000,00 (quatrocentos mil reais) cada, sem incidência de atualização monetária.\"* (p. 1)\n\n### 10/06/2025\n**O Fundo assinou contrato para vender uma loja no Rio de Janeiro.**\nO fundo firmou um compromisso de venda de uma loja localizada na Rua Conde de Bonfim, com ABL de 5.649 m² e representando 8,1% da receita atual total do Fundo. O valor da transação é de R$55 milhões, sendo pago em um sinal de R$11 milhões e quatro parcelas semestrais de R$11 milhões cada.\n\n*\"O valor da transação foi de R$ 55.000.000,00 (cinquenta e cinco milhões de reais), o que corresponde a uma taxa de capitalização (cap rate) de 9,7%¹ (nove inteiros sete décimos por cento) ao ano com base na receita de locação atual do Imóvel.\"* (p. 1)\n\n### 28/05/2026\n**A assembleia aprovou mudanças administrativas e nomeações para o Fundo.**\nOs cotistas do fundo deliberaram por meio da Assembleia Geral Extraordinária sobre a transferência dos serviços de administração fiduciária, custódia, tesouraria, controladoria e gestão de recursos para novas instituições pertencentes ao BTG PACTUAL. A denominação do fundo também foi alterada para \"BTG PACTUAL RENDA URBANA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA\" e o ticker das cotas na B3 será alterado para “BTRU11”.\n\n*\"Os Cotistas deliberarão por meio da AGE sobre as seguintes matérias: (i) a transferência dos serviços de administração fiduciária, a partir da Data de Transferência, atualmente exercida pelo Administrador, para o BTG PACTUAL SERVIÇOS FINANCEIROS S.A. DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS... (ii) a contratação do BANCO BTG PACTUAL S.A.... (iii) a transferência dos serviços de gestão de recursos, a partir da Data de Transferência...\"* (p. 1)\n\n### 14/05/2026\n**O Administrador propôs mudanças administrativas e nomeações para o Fundo.**\nA BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., como administradora do fundo, apresentou uma proposta à Assembleia Geral Extraordinária de Cotistas sobre a transferência dos serviços de administração fiduciária, custódia, tesouraria, controladoria e gestão de recursos para novas instituições pertencentes ao BTG PACTUAL. A denominação do fundo também será alterada.\n\n*\"Os Cotistas deliberarão por meio da AGE sobre as seguintes matérias: (i) a transferência dos serviços de administração fiduciária, a partir da Data de Transferência, atualmente exercida pelo Administrador, para o BTG PACTUAL SERVIÇOS FINANCEIROS S.A. DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS... (ii) a contratação do BANCO BTG PACTUAL S.A.... (iii) a transferência dos serviços de gestão de recursos, a partir da Data de Transferência...\"* (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 999644,
+    "data_entrega": "26/09/2025 17:41",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos fundos de investimento imobiliário."
+  }
+}

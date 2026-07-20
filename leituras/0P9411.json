@@ -1,0 +1,43 @@
+{
+  "ticker": "0P9411",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T08:47:57",
+  "relatorio": {
+    "id": 1206385,
+    "data_entrega": "28/05/2026 17:15",
+    "texto": "- **Recuperação do fluxo de visitantes**: Em março, o portfólio apresentou recuperação do fluxo de visitantes com a normalização do calendário após o período de Carnaval, refletindo maior número de dias e retomada gradual do consumo. (p. 4)\n\n- **Resultado positivo**: O Fundo apurou um resultado de R$ 0,10 por cota e distribuiu R$ 0,10 por cota com liquidação em 22-mai-26, correspondendo a um Dividend Yield anualizado de 12,0% sobre a cota da 1ª Emissão. (p. 4)\n\n- **Vacância e inadimplência**: Os dados indicam que a vacância e a inadimplência apresentaram variações ao longo do período, com valores específicos não detalhados no relatório. (p. 8)\n\n- **Inauguração de novas lojas**: Em março, foram inauguradas novas lojas como Le Creuset no Shopping Cidade Jardim e Swarovski no Catarina Fashion Outlet. (pp. 10, 12)\n\n- **Evolução do desempenho dos ativos**: O mês de março apresentou evolução relevante na captura de receitas complementares e crescimento das vendas nos ativos, refletindo uma dinâmica de consumo mais aquecida. (pp. 14, 12)\n\n- **Taxa Global do Fundo**: A Taxa Global do Fundo é de 0,06% a.a. nos primeiros 12 meses; 0,08% a.a. entre o início do 13º mês e o término do 24º mês; e 0,10% a partir do 25º mês. (p. 3)\n\n- **Prazo do Fundo**: O prazo do fundo é de 5 anos, com possibilidade de prorrogação por até um ano adicional, a critério da Gestora. (p. 3)\n\nO que observar em seguida:\n1. Continuação das tendências positivas no fluxo de visitantes e vendas.\n2. Novos anúncios de inaugurações ou renegociações de contratos com lojistas."
+  },
+  "comunicados": {
+    "ids": [
+      1103007,
+      1209092,
+      1057331,
+      1179451,
+      1179449
+    ],
+    "datas": [
+      "05/02/2026",
+      "01/06/2026",
+      "09/12/2025",
+      "04/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE - 05/02/2026\n\n**O que aconteceu:** A XP Investimentos Corretora de Câmbio, Títulos e Valores Mobiliários S.A. anunciou a realização da segunda emissão de cotas do Fundo de Investimento Imobiliário JHSF Capital Malls Feeder - Responsabilidade Limitada.\n\n**Resumo:** A oferta será realizada sob o regime de melhores esforços, com um montante inicial de R$ 40.780.038,90 e preço de emissão de R$ 11,30 por cota. O processo inclui a possibilidade de distribuição parcial ou aumento do montante mediante o Lote Adicional.\n\n**Trecho-chave:**\n\"A Oferta será destinada a investidores profissionais, nos termos da Resolução da CVM nº 30, de 11 de maio de 2021.\"\n\n---\n\n### COMUNICADO AO MERCADO - 01/06/2026\n\n**O que aconteceu:** O Fundo de Investimento Imobiliário JHSF Capital Malls Feeder – Responsabilidade Limitada anunciou alterações no cronograma da oferta secundária.\n\n**Resumo:** A data do encerramento do primeiro período de coleta de intenções de investimento foi adiada para 02/06/2026, e a realização do procedimento de alocação será em 03/06/2026. \n\n**Trecho-chave:**\n\"Em virtude do disposto acima, o cronograma foi modificado, de forma que o novo Cronograma da Oferta Secundária encontra-se abaixo reproduzido.\"\n\n---\n\n### COMUNICADO AO MERCADO - 09/12/2025\n\n**O que aconteceu:** A XP Investimentos Corretora de Câmbio, Títulos e Valores Mobiliários S.A. informou sobre a unificação das cotas da primeira emissão do Fundo JHSF Capital Malls Feeder – Responsabilidade Limitada.\n\n**Resumo:** As 65.537.085 cotas emitidas durante a oferta pública serão unificadas em uma única cota principal, que será negociável a partir de 19/12/2025.\n\n**Trecho-chave:**\n\"A Unificação das Cotas será realizada no dia 18 de dezembro de 2025, sendo que a partir da abertura do mercado do dia 19 de dezembro de 2025 a cota principal estará disponível aos investidores para negociação.\"\n\n---\n\n### ASSEMBLEIA AGO - 04/05/2026\n\n**O que aconteceu:** A assembleia geral ordinária dos cotistas do Fundo JHSF Capital Malls Feeder – Responsabilidade Limitada foi realizada de forma não presencial.\n\n**Resumo:** Os participantes aprovaram as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025.\n\n**Trecho-chave:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025.\""
+  },
+  "parecer": {
+    "id": 1151857,
+    "data_entrega": "31/03/2026 22:13",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 2 de outubro a 31 de dezembro de 2025, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investiment"
+  }
+}

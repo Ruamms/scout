@@ -1,0 +1,25 @@
+{
+  "ticker": "0PRP11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T03:15:04",
+  "relatorio": {
+    "id": 1230884,
+    "data_entrega": "26/06/2026 18:04",
+    "texto": "1. **Distribuição de Dividendos**: No dia 17 de junho, foi distribuído um total de R$ 7,94 milhões em rendimentos, resultando em R$ 0,794 por cota (p. 2).\n   \n2. **Desempenho Operacional**: O fundo manteve desempenho sólido com valorização da cota patrimonial pelo IPCA (m-2), equivalentes a um Total Return de IPCA + 10% ao ano, em linha com o rendimento preferencial estabelecido na estrutura do Fundo (p. 3).\n\n3. **Vendas Totais**: Em maio, as vendas totais do portfólio de shoppings totalizaram R$ 485,6 milhões, um aumento de 23,8% em relação a abril (p. 6).\n\n4. **Taxa de Ocupação**: A taxa de ocupação dos shoppings da carteira se manteve em patamares elevados, refletindo a resiliência e atratividade dos ativos (p. 5).\n\n5. **Inadimplência Líquida**: Os shoppings encerraram o mês com inadimplência líquida controlada, reforçando a política de cobrança dos ativos do Fundo (p. 6).\n\n6. **NOI**: No mês de maio, houve um aumento do NOI dos shoppings, refletindo uma sazonalidade mais favorável para a geração de receita (p. 7).\n\n7. **SSS e SSR Crescimento**: O Campinas Shopping apresentou crescimento anual de SSS de 13,0%, enquanto o Metropolitano Barra teve um crescimento de SSR de 4,2% (p. 5).\n\n8. **Resultado Financeiro**: No mês de maio, o Fundo obteve resultado financeiro de R$ 489 mil, com receitas totais de R$ 9,817 milhões e despesas de R$ 1,227 milhão (p. 4).\n\n**O que observar em seguida:**\n- Monitorar as próximas distribuições de dividendos.\n- Acompanhar a evolução das taxas de ocupação e inadimplência nos shoppings."
+  },
+  "comunicados": {
+    "ids": [],
+    "datas": [],
+    "rotulos": [],
+    "texto": null
+  },
+  "parecer": {
+    "id": 1152123,
+    "data_entrega": "31/03/2026 23:42",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ticker": "FNDA11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T00:50:19",
+  "comunicados": {
+    "ids": [
+      1206996,
+      777335,
+      1023336,
+      975805
+    ],
+    "datas": [
+      "29/05/2026",
+      "12/11/2024",
+      "29/10/2025",
+      "21/08/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### 29/05/2026\n**O que aconteceu:** Reavaliação do ativo do fundo resultou em variação positiva de patrimônio líquido.\n\n**Resumo:** A empresa Ipê Avaliações realizou a reavaliação do ativo do SONDA FII, remarcando-o a valor justo no dia 31/12/2025. Isso resultou em um aumento de 15,79% no patrimônio líquido do fundo na data-base.\n\n**Trecho-chave:**\n\"o ativo do Fundo foi reavaliado pela empresa especializada Ipê Avaliações, e remarcado a valor justo em 31 de dezembro de 2025, resultando em uma variação positiva de 15,79% no valor do patrimônio líquido do Fundo na Data-Base.\"\n\n### 12/11/2024\n**O que aconteceu:** Substituição da administradora do fundo.\n\n**Resumo:** A assembleia geral extraordinária aprovou a substituição da administradora do SONDA FII, com a SINGULARE CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. sendo substituída pela VÓRTX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., que assumirá as funções a partir do dia 26/11/2024.\n\n**Trecho-chave:**\n\"Aprovada, conforme Assembleia Geral Extraordinária de Cotistas realizada em 12 de novembro de 2024, a substituição da atual Administradora do Fundo, SINGULARE CORRETORA DE TITULOS E VALORES MOBILIÁRIOS S.A., pela VÓRTX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.\"\n\n### 29/10/2025\n**O que aconteceu:** Aprovação da aplicação em cotas de outro fundo gerido pela mesma gestora.\n\n**Resumo:** Os cotistas aprovaram a aplicação do SONDA FII em cotas do Fundo G5 FUNDO DE INVESTIMENTO RENDA FIXA REFERENCIADO DI, gerido pela mesma gestora (G5 ADMINISTRADORA DE RECURSOS LTDA.), o que caracteriza potencial conflito de interesses.\n\n**Trecho-chave:**\n\"Foi deliberado pelos Cotistas representantes da totalidade das cotas em circulação da Classe, sem quaisquer ressalvas: Aprovar a aplicação, pela Classe, em cotas do Fundo G5 FUNDO DE INVESTIMENTO RENDA FIXA REFERENCIADO DI.\"\n\n### 21/08/2025\n**O que aconteceu:** Não distribuição de lucros.\n\n**Resumo:** A assembleia geral extraordinária aprovou a não distribuição dos lucros auferidos pelo fundo no período de janeiro a junho de 2025, com o objetivo de reforçar caixa e honrar obrigações financeiras.\n\n**Trecho-chave:**\n\"Foi deliberada e aprovada pelos Cotistas representantes da totalidade das cotas em circulação da Classe, sem quaisquer ressalvas, a não distribuição dos lucros auferidos pela Classe no período de 01 de janeiro de 2025 a 30 de junho de 2025.\""
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 871481,
+    "data_entrega": "01/04/2025 21:19",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Sonda - Fundo de Investimento Imobiliário - FII em 31 de dezembro de 2024 e o desempenho de suas operações para o período de 27 de novembro de 2024 (transferência de administração) a 31 de dezembro de 2024, de acordo com as práticas contábe"
+  }
+}

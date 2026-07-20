@@ -1,0 +1,45 @@
+{
+  "ticker": "JSAF11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T11:17:30",
+  "relatorio": {
+    "id": 1252642,
+    "data_entrega": "17/07/2026 18:10",
+    "texto": "- **Desempenho do Fundo**: O JSAF11 registrou uma desvalorização consolidada de -0,74% em junho, superior ao IFIX que recuou -1,21%. No acumulado do ano, o retorno do fundo supera o índice IFIX em 2,39 p.p. (p. 2).\n\n- **Distribuição de Rendimentos**: Em junho, foi anunciada a distribuição de rendimentos no valor de R$ 0,080 por cota, com yield mensal de 1,08% e anualizado de 13,01%. (p. 2)\n\n- **Rebalanceamento da Carteira**: O fundo realizou a venda de algumas posições como parte do rebalanceamento estratégico, impactando negativamente o desempenho no mês. (p. 2)\n\n- **Posição em Ativos Líquidos e CRI**: A gestão mantém aproximadamente 22% da carteira alinhada com ativos de liquidez (~R$ 156M) e uma posição em CRI de ~R$ 28M (4% da carteira). (p. 2)\n\n- **Resultado Financeiro**: O resultado financeiro líquido do fundo no 4T foi R$ 79,3M, com distribuição de rendimentos de R$ 120,4M, resultando em um excesso não coberto pela reserva de R$ 19,9M. (página não identificada)\n\n- **Monitoramento do Ambiente Macroeconômico**: A gestão continua monitorando o ambiente macroeconômico e o comportamento dos ativos subjacentes para garantir a consistência na geração de resultado recorrente. (p. 2)\n\nO que observar em seguida:\n1. Como evolui a posição líquida do fundo nos próximos relatórios.\n2. Se haverá novas vendas ou compras significativas para ajustar a carteira conforme o cenário macroeconômico."
+  },
+  "comunicados": {
+    "ids": [
+      1003039,
+      1208198,
+      1170679
+    ],
+    "datas": [
+      "30/09/2025",
+      "29/05/2026",
+      "27/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 29/05/2026\n**Aprovação das Demonstrações Financeiras e Notas Explicativas do exercício de 2025**\nO Fundo realizou uma assembleia geral ordinária não presencial para aprovar as demonstrações financeiras, notas explicativas e parecer dos auditores independentes referentes ao exercício social findo em 31 de dezembro de 2025. A aprovação foi confirmada com base nas manifestações de votos válidas recebidas até o dia 28/05/2026, representando 0,77% do total das cotas emitidas pelo Fundo.\n\n\"De acordo com as manifestações de votos válidas dos cotistas representando 0,77% do total das Cotas emitidas pelo Fundo, foram aprovadas as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes, relativos ao exercício social findo em 31 de dezembro de 2025.\"\n\n### 27/04/2026\n**Consulta Formal para Deliberação da Assembleia Geral Ordinária**\nA Administração do Fundo convocou os cotistas por meio de uma consulta formal para aprovar as demonstrações financeiras, notas explicativas e parecer dos auditores independentes referentes ao exercício social findo em 31 de dezembro de 2025. Os votos deveriam ser enviados até o dia 28/05/2026.\n\n\"Ref.: Consulta Formal 01/2026 do JSAF FII\"\n\n### 30/09/2025\n**Prorrogação da Data de Realização da Assembleia Geral Extraordinária**\nA data de realização da assembleia geral extraordinária, que seria em 30 de junho de 2025, foi postergada para 30 de setembro de 2025. A nova data limite para recebimento das consultas formais é até o dia 29 de setembro de 2025.\n\n\"O prazo da Consulta Formal deverá ser respondida e/ou encaminhada à Administradora até o final do dia 29 de setembro de 2025 (“Nova Data Limite de Recebimento”).\"\n\n---\n\n**Conexão com os indicadores:**\nA aprovação das demonstrações financeiras em maio de 2026 pode estar relacionada ao desempenho patrimonial do fundo, que apresentou um aumento no patrimônio líquido de 1,29% nos últimos 12 meses."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 7.26
+  },
+  "parecer": {
+    "id": 1151442,
+    "data_entrega": "31/03/2026 19:55",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

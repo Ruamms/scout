@@ -1,0 +1,22 @@
+{
+  "ticker": "0PFB11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T06:49:32",
+  "relatorio": {
+    "id": 1226748,
+    "data_entrega": "23/06/2026 19:27",
+    "texto": "1. **Rentabilidade do Mês**: A rentabilidade do Fundo em maio/26 foi de 1,51%, referente ao IPCA de março/26 (M-2) que foi de 0,88% acrescido do cupom de 8,75% a.a. (p. 3).\n   \n2. **Dividend Yield Anualizado**: O dividend yield anualizado é de 8,75% a.a., com distribuição realizada em junho/26 no valor de R$ 0,6822/cota (p. 2).\n\n3. **Vacância Física do Portfólio**: A vacância física dos imóveis fechou o mês em 8,5% da área total (p. 2).\n\n4. **Índice de Cobertura**: O índice de cobertura da cota sênior foi de 1,09x no mês de maio/26 (p. 4).\n\n5. **Cash Collateral**: O fundo encerrou o mês com um caixa (cash collateral) de aproximadamente R$ 65,8 milhões e não possui dívidas ou alavancagem relevante (p. 4).\n\n6. **Razão de Subordinação**: A razão de subordinação do MCLC é de 20,4% (p. 4).\n\n7. **Ocupação dos Imóveis**: A ocupação física dos imóveis fechou o mês em 91,5%, e a gestão está negociando para locar os espaços remanescentes com a consultora Barzel Properties (p. 3).\n\n8. **Distribuição de Dividendos**: As distribuições realizadas foram R$ 6,490.271 em março/26, R$ 5,930.052 em abril/26 e R$ 5,976.648 em maio/26 (p. 4).\n\n**O que observar em seguida:**\n- Atualizações nas negociações de locação dos espaços remanescentes.\n- Eventuais alterações na razão de subordinação e índice de cobertura nos próximos relatórios."
+  },
+  "comunicados": {
+    "ids": [
+      1008852
+    ],
+    "datas": [
+      "08/10/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGE"
+    ],
+    "texto": "=== ASSEMBLEIA AGE entregue em 08/10/2025 ===\n\n**O que aconteceu:** Consulta formal de voto para assembleia geral extraordinária de cotistas do Mauá Capital Lajes Corporativas Feeder FII.\n\n**Resumo:** A XP Investimentos Corretora convocou os cotistas para votar sobre a orientação de voto na assembleia de conflito de interesses do Fundo Conflitado, que deliberará sobre a possibilidade de adquirir o empreendimento imobiliário \"Thera Corporate\". O quórum e a manifestação de voto são detalhados no documento.\n\n**Trecho-chave:** \n\"DELIBERAR sobre a orientação de voto na assembleia de conflito de interesses do MAUÁ CAPITAL LAJES CORPORATIVAS FUNDO DE INVESTIMENTO IMOBILIÁRIO – RESPONSABILIDADE LIMITADA que deliberará sobre a possibilidade de adquirir o empreendimento imobiliário “Thera Corporate”, objeto da matrícula de nº 234.685 à 234.694 e 234.697 à 234.703, todas do 15º Cartório de Registro de Imóveis de São Paulo/SP (“Ativo Conflitado” e “Matéria de Conflito do FII Master”), cujo vendedor/alienante é considerado Pessoa Ligada (conforme abaixo definida) à BARZEL PROPERTIES GESTORA DE RECURSOS LTDA.\" (p. 1)\n\n**Conexão com o contexto:** Este evento está diretamente relacionado a possíveis conflitos de interesse regulamentados pela Resolução CVM 175, que visa proteger os interesses dos cotistas em transações potencialmente prejudiciais."
+  }
+}

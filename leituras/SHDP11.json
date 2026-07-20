@@ -1,0 +1,45 @@
+{
+  "ticker": "SHDP11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T06:10:51",
+  "comunicados": {
+    "ids": [
+      1244306,
+      1235624,
+      1208594,
+      1190456,
+      1071494,
+      1212182,
+      1190454
+    ],
+    "datas": [
+      "10/07/2026",
+      "30/06/2026",
+      "30/05/2026",
+      "14/05/2026",
+      "29/12/2025",
+      "03/06/2026",
+      "14/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### Fato Relevante entregue em 10/07/2026\n\n**O que aconteceu:** A BTG Pactual anunciou uma nova data para a amortização parcial de capital dos cotistas da subclasse A do SHDP11.\n\n**Resumo:** O cronograma foi alterado, com a divulgação do fato relevante e procedimentos sendo feita em 10/07/2026. Os cotistas devem informar o custo médio de suas cotas até essa data para fins tributários.\n\n**Trecho-chave:**\n\"Divulgação do fato relevante sobre a amortização extraordinária e dos procedimentos para envio do custo médio de aquisição das cotas 10/07/2026\"\n\n---\n\n### Fato Relevante entregue em 30/06/2026\n\n**O que aconteceu:** A BTG Pactual anunciou uma nova data para a amortização parcial de capital dos cotistas da subclasse A do SHDP11.\n\n**Resumo:** O cronograma foi alterado, com a divulgação do fato relevante e procedimentos sendo feita em 30/06/2026. Os cotistas devem informar o custo médio de suas cotas até essa data para fins tributários.\n\n**Trecho-chave:**\n\"Divulgação do fato relevante sobre a amortização extraordinária e dos procedimentos para envio do custo médio de aquisição das cotas 30/06/2026\"\n\n---\n\n### Fato Relevante entregue em 30/05/2026\n\n**O que aconteceu:** A BTG Pactual anunciou uma nova data para a amortização parcial de capital dos cotistas da subclasse A do SHDP11.\n\n**Resumo:** O cronograma foi alterado, com a divulgação do fato relevante e procedimentos sendo feita em 29/05/2026. Os cotistas devem informar o custo médio de suas cotas até essa data para fins tributários.\n\n**Trecho-chave:**\n\"Divulgação do fato relevante sobre a amortização extraordinária e dos procedimentos para envio do custo médio de aquisição das cotas 29/05/2026\"\n\n---\n\n### Comunicado ao Mercado entregue em 14/05/2026\n\n**O que aconteceu:** A assembleia geral ordinária (AGO) realizada no dia 8 de maio aprovou as contas anuais do SHDP11 referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** As demonstrações contábeis foram consideradas automaticamente aprovadas, uma vez que nenhuma ressalva foi feita e nenhum cotista compareceu à assembleia.\n\n**Trecho-chave:**\n\"não sendo, portanto, possível sua instalação. Dessa forma, e considerando que as demonstrações contábeis não contêm ressalvas, ficam as mesmas consideradas automaticamente aprovadas.\"\n\n---\n\n### Comunicado ao Mercado entregue em 29/12/2025\n\n**O que aconteceu:** O regulamento do SHDP11 foi alterado para criar duas subclasses de cotas: Subclasse A e Subclasse B.\n\n**Resumo:** As novas regras entram em vigor a partir de 29/12/2025, com as cotas existentes sendo convertidas automaticamente em cotas da Subclasse A ou B conforme determinado pelo regulamento.\n\n**Trecho-chave:**\n\"Entrada em vigor do novo Regulamento 29/12/2025\"\n\n---\n\n### Assembleia AGE entregue em 03/06/2026\n\n**O que aconteceu:** A assembleia geral extraordinária (AGE) realizada no dia 15 de maio aprovou a não distribuição e reinvestimento parcial dos rendimentos gerados pela Classe no segundo semestre de 2025.\n\n**Resumo:** Os rendimentos serão retidos para possíveis investimentos em CAPEX, melhorias imobiliárias e regularizações. As deliberações passam a ter efeito no fechamento do dia 18/05/2026.\n\n**Trecho-chave:**\n\"Os Cotistas deliberaram, por unanimidade, sem quaisquer reservas ou restrições, aprovar a não distribuição de rendimentos e a retenção e/ou reinvestimento parcial dos rendimentos gerados pela Classe no segundo semestre de 2025.\"\n\n---\n\n### Assembleia AGO entregue em 14/05/2026\n\n**O que aconteceu:** A assembleia geral ordinária (AGO) realizada no dia 8 de maio não foi instalada, mas as demonstrações contábeis foram consideradas automaticamente aprovadas.\n\n**Resumo:** Como nenhuma ressalva foi feita e nenhum cotista compareceu à AGO, as demonstrações contábeis do exercício encerrado em 31/12/2025 são consideradas aprovadas.\n\n**Trecho-chave:**\n\"não sendo, portanto, possível sua instalação. Dessa forma, e considerando que as demonstrações contábeis não contêm ressalvas, ficam as mesmas consideradas automaticamente aprovadas.\""
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1151916,
+    "data_entrega": "31/03/2026 22:37",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe Única de Cotas do Fundo de Investimento Imobiliário - FII Shopping Parque D."
+  }
+}

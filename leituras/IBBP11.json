@@ -1,0 +1,57 @@
+{
+  "ticker": "IBBP11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T05:00:38",
+  "relatorio": {
+    "id": 1246006,
+    "data_entrega": "13/07/2026 18:07",
+    "texto": "- **Distribuição de Rendimentos:** Em junho/2026, o IBBP11 anunciou distribuições de rendimentos de R$ 0,090/cota para a Cota Sênior e R$ 0,082 para a Ordinária, com pagamentos previstos para os dias 15/07 e 16/07 respectivamente (p. 3).\n\n- **Ocupação Física:** O IBBP11 encerrou o mês operando com 95,7% de ocupação física dos imóveis (p. 3).\n\n- **Adimplência:** A adimplência do fundo foi de 96,5%, mantendo patamares elevados para um fundo de perfil industrial (p. 3).\n\n- **Distrato e Reposição:** Houve o distrato de 1.031 m² de Área Bruta Locável (ABL) em um dos galpões do Condomínio Barão de Mauá, mas a Gestão espera uma rápida reposição sem impacto relevante nos resultados (p. 3).\n\n- **Obras e Construções:** As obras dos Edifícios Jequitibá e Jacarandá estão avançando com ritmo acima do planejado, atingindo 36,74% de execução física contra o cronograma previsto de 31,94%, com conclusão prevista para meados do 4T26 (p. 3).\n\n- **Vacância:** O IBBP11 apresentou uma vacância física de 1,48% em junho/2026 (p. 2).\n\n- **Ativos Adquiridos:** A gestão menciona aquisições de imóveis do XPIN11 que contribuíram para o aumento da vacância física desde abril/2026 (p. 5, p. 3).\n\n- **Negociações Avançadas:** As negociações com potenciais inquilinos para as áreas vagas estão em estágio avançado e a gestão busca as melhores condições de preço e prazo para maximizar a geração de renda (p. 3).\n\n**O que observar em seguida:**\n- Progresso das obras dos Edifícios Jequitibá e Jacarandá.\n- Resultados das negociações para ocupação das áreas vagas no Condomínio Barão de Mauá e Centro Empresarial Atibaia."
+  },
+  "comunicados": {
+    "ids": [
+      1165725,
+      1119211,
+      982934,
+      1168448,
+      989079,
+      1242127,
+      1241627
+    ],
+    "datas": [
+      "16/04/2026",
+      "23/02/2026",
+      "02/09/2025",
+      "23/04/2026",
+      "12/09/2025",
+      "08/07/2026",
+      "07/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### 16/04/2026 - FATO RELEVANTE\n\n**O que aconteceu:** O Fundo IBBP11 alienou ativos imobiliários para o fundo XPLG11.\n\n**Resumo:** A operação foi concluída pelo valor total de R$ 32.277.397,30, correspondendo a um ganho de capital de 30,16%, considerando o preço de aquisição dos imóveis ocorrido em agosto de 2024.\n\n**Trecho-chave:**\n\"O preço foi integralmente quitado, nos termos pactuados entre as partes.\" (p. 1)\n\n---\n\n### 23/02/2026 - FATO RELEVANTE\n\n**O que aconteceu:** O Fundo IBBP11 reavaliou seus ativos a valor justo em dezembro de 2025.\n\n**Resumo:** A avaliação resultou em uma variação positiva de 17,17% no patrimônio líquido do fundo em sua Data-Base.\n\n**Trecho-chave:**\n\"resultando em uma variação positiva de 17,17% no valor do patrimônio líquido do Fundo em sua Data-Base.\" (p. 1)\n\n---\n\n### 02/09/2025 - FATO RELEVANTE\n\n**O que aconteceu:** O Fundo IBBP11 autorizou a distribuição pública primária de novas cotas ordinárias.\n\n**Resumo:** A assembleia extraordinária realizada em julho de 2025 autorizou a emissão de até 16.212.711 novas cotas, com valor unitário de R$ 7,71 e preço de subscrição de R$ 8,06.\n\n**Trecho-chave:**\n\"foi autorizada a realização da distribuição pública primária da 4ª (quarta) emissão de novas cotas da subclasse “ordinária” da CLASSE ÚNICA RESPONSABILIDADE LIMITADA DO INVISTA BRAZILIAN BUSINESS PARK FUNDO DE INVESTIMENTO IMOBILIÁRIO (“Novas Cotas Ordinárias”, “Subclasse Ordinária”, “Classe” e “Emissão”, respectivamente)\" (p. 1)\n\n---\n\n### 23/04/2026 - COMUNICADO AO MERCADO\n\n**O que aconteceu:** O cronograma da oferta pública de distribuição primária foi modificado.\n\n**Resumo:** A data máxima para encerramento da oferta foi postergada até 180 dias contados desde a divulgação do anúncio de início, em virtude do não cumprimento das condições precedentes necessárias.\n\n**Trecho-chave:**\n\"Caso ocorram alterações das circunstâncias, revogação, modificação, suspensão ou cancelamento da Oferta, tal cronograma poderá ser alterado.\" (p. 2)\n\n---\n\n### 12/09/2025 - COMUNICADO AO MERCADO\n\n**O que aconteceu:** O cronograma da oferta pública de distribuição primária foi modificado.\n\n**Resumo:** A data máxima para encerramento da oferta foi postergada até 6 de março de 2026, incluindo datas adicionais como alocação e liquidação no escriturador.\n\n**Trecho-chave:**\n\"O Cronograma Indicativo da Oferta passa a vigorar da seguinte forma.\" (p. 1)\n\n---\n\n### 08/07/2026 - ASSEMBLEIA AGO\n\n**O que aconteceu:** A assembleia geral ordinária do Fundo IBBP11 foi convocada para aprovar as contas e demonstrações contábeis de 2025.\n\n**Resumo:** Os cotistas foram convidados a participar da consulta formal até o dia 6 de agosto de 2026, com os documentos disponíveis no site da administradora.\n\n**Trecho-chave:**\n\"A eventual aprovação das matérias acima incluirá a autorização ao Administrador para a prática de todo e qualquer ato e a assinatura de todo e qualquer documento necessário à efetivação dos termos da Ordem do Dia acima.\" (p. 1)\n\n---\n\n### 07/07/2026 - ASSEMBLEIA AGE\n\n**O que aconteceu:** A assembleia geral extraordinária do Fundo IBBP11 foi convocada para aprovar as contas e demonstrações contábeis de 2025.\n\n**Resumo:** Os cotistas foram convidados a participar da consulta formal até o dia 6 de agosto de 2026, com os documentos disponíveis no site da administradora.\n\n**Trecho-chave:**\n\"A eventual aprovação das matérias acima incluirá a autorização ao Administrador para a prática de todo e qualquer ato e a assinatura de todo e qualquer documento necessário à efetivação dos termos da Ordem do Dia acima.\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 8.0
+  },
+  "parecer": {
+    "id": 1162511,
+    "data_entrega": "15/04/2026 11:17",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Invista Brazilian Business Park Fundo de Investimento Imobiliário em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil "
+  }
+}

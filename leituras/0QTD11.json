@@ -1,0 +1,16 @@
+{
+  "ticker": "0QTD11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T10:13:15",
+  "relatorio": {
+    "id": 1131845,
+    "data_entrega": "10/03/2026 09:54",
+    "texto": "1. **Alocação do Portfólio**: O fundo realizou aportes em cinco operações até 30/01, resultando em uma alocação superior a 32% do portfólio (p. 4).\n   \n2. **Primeira Distribuição de Renda**: A distribuição mensal foi de R$ 0,50 por cota, referente à competência de janeiro de 2026 (p. 2).\n\n3. **Rentabilidade Mensal**: O fundo apresentou uma rentabilidade mensal de 1,19%, superior ao CDI líquido de 0,99% no mesmo período (p. 2).\n\n4. **Razão de Subordinação**: A razão atual da subordinação é de 24%, com a classe sênior representando 76% do patrimônio total (p. 4).\n\n5. **Projetos Incluídos na Carteira**: Os projetos incluem loteamentos em diversos municípios brasileiros, como Concórdia, Campo Mourão, Passo Fundo, Boa Vista, Garuva, Chapecó, Araquari, Itaiópolis, Estrela do Oeste e Formosa (p. 5-9).\n\n6. **Estrutura Feeder e Master**: A estrutura do fundo é composta por uma Subclasse Sênior protegida pela Subclasse Subordinada, com a razão de subordinação variando entre 20% e 30% (p. 10).\n\n7. **Taxa de Contratos**: Os contratos vendidos aos investidores são a IPCA + 12% a.a., com frequência de pagamento mensal (p. 5-9).\n\n8. **Captação Total**: A oferta foi liquidada em 30/12/2025, resultando em uma captação total de R$ 1 bilhão para as estruturas Feeder e Master (p. 2).\n\n**O que observar em seguida:**\n- **Alocação Adicional**: Novas alocações adicionais no portfólio.\n- **Rentabilidade Futura**: Desempenho futuro comparado ao CDI líquido e outros indicadores relevantes."
+  },
+  "comunicados": {
+    "ids": [],
+    "datas": [],
+    "rotulos": [],
+    "texto": null
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "ticker": "0OXG11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T11:07:42",
+  "comunicados": {
+    "ids": [
+      1250522,
+      1227651,
+      1211600
+    ],
+    "datas": [
+      "15/07/2026",
+      "25/06/2026",
+      "03/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### 15/07/2026\n**O que aconteceu:** A LCP GESTORA DE RECURSOS LTDA. prorrogou o Período de Investimento do fundo por mais um ano.\n\n**Resumo:** A gestora optou pela prorrogação conforme previsto no Regulamento do Fundo, comunicado pela XP INVESTIMENTOS CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A., administradora do fundo.\n\n**Trecho-chave:**\n> \"a LCP GESTORA DE RECURSOS LTDA., instituição devidamente autorizada pela CVM para o exercício da atividade de administração de carteiras de valores mobiliários, na qualidade de Gestora, optou por prorrogar o Período de Investimento por período adicional de 1 (um) ano, conforme previsto no Regulamento do Fundo.\"\n\n### 25/06/2026\n**O que aconteceu:** A assembleia geral extraordinária aprovou alterações no regulamento do fundo.\n\n**Resumo:** Os cotistas aprovaram alterações nas regras de amortização, taxas de performance e encargos do Fundo. As mudanças foram propostas pela administradora XP INVESTIMENTOS CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A.\n\n**Trecho-chave:**\n> \"Os cotistas, mediante o envio prévio das manifestações de voto, aprovaram, sem quaisquer restrições ou ressalvas , as matérisa constantes na Ordem do Dia com 29,8666% das cotas de emissão votantes e favoráveis;\"\n\n### 03/06/2026\n**O que aconteceu:** A administradora convocou os cotistas para uma assembleia geral extraordinária.\n\n**Resumo:** Os cotistas foram convidados a deliberar sobre alterações no regulamento do fundo, incluindo regras de amortização, taxas de performance e encargos. A consulta foi realizada por meio eletrônico.\n\n**Trecho-chave:**\n> \"A XP INVESTIMENTOS CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A., na qualidade de administradora fiduciária (“Administradora”) do Fundo, vem, por meio da presente, consultar V.Sa. (“Cotista”) para que manifeste eletronicamente seu voto na Assembleia Geral Extraordinária de Cotistas do Fundo (\"AGC\"), cujas deliberações serão tomadas de forma não presencial, por meio da presente Consulta Formal,\""
+  },
+  "modelo": "qwen2.5:14b"
+}

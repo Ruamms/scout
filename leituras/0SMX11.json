@@ -1,0 +1,18 @@
+{
+  "ticker": "0SMX11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T00:43:39",
+  "comunicados": {
+    "ids": [
+      1250980
+    ],
+    "datas": [
+      "16/07/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE"
+    ],
+    "texto": "=== ASSEMBLEIA AGE entregue em 16/07/2026 ===\n\n**Data:** 10 de julho de 2026  \n**O que aconteceu:** A assembleia geral extraordinária do XP CDI CRI FII aprovou a autorização para adquirir, negociar e alienar certificados de recebíveis imobiliários (CRIs) e fundos de investimento imobiliário (FIIs), com critérios específicos.  \n**Resumo:** Os cotistas decidiram permitir que o Fundo possa realizar transações em CRIs e FIIs, desde que atendam a determinados requisitos como regime fiduciário, prazo mínimo de vencimento, remuneração adequada e limites de concentração.  \n**Trecho-chave:** \"Os Cotistas aprovaram, as matérias constantes da Ordem do Dia, acima descrita s, tendo os votos favoráveis dos Cotistas representando 100% (cem por cento) das cotas emitidas pelo Fundo.\" (p. 2)\n\n---\n\n**Conexão com o contexto:** A decisão permite que o fundo expanda suas possibilidades de investimento em ativos imobiliários, potencialmente aumentando a diversificação e flexibilidade da carteira do fundo conforme os indicadores do mercado permitirem."
+  },
+  "modelo": "qwen2.5:14b"
+}

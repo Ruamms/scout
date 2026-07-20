@@ -1,0 +1,53 @@
+{
+  "ticker": "VJFD11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T08:13:23",
+  "relatorio": {
+    "id": 1206861,
+    "data_entrega": "28/05/2026 21:26",
+    "texto": "- **Desempenho Consistente no Segmento de Varejo**: O desempenho do segmento de varejo permanece consistente, com alocação em ativos bem localizados e inquilinos de alta qualidade de crédito. Isso sustenta a geração de caixa previsível e recorrente, conforme mencionado no relatório (p. 3).\n\n- **Vacância Zero**: O fundo mantém uma taxa de vacância de zero porcento, indicando que todos os imóveis estão ocupados (baseado nos dados fornecidos, sem citação específica em texto).\n\n- **Distribuição de Rendimentos aos Cotistas**: A distribuição de rendimentos aos cotistas foi realizada com um pagamento de R$ 0,85 por cota referente ao mês de abril/26 (p. 4).\n\n- **Alocação em Terrenos para Desenvolvimento**: O fundo possui terrenos para desenvolvimento, incluindo o \"Terreno 1 - Bonfim I\" e o \"Terreno 2 - Gleba A\", ambos localizados em Minas Gerais (p. 5).\n\n- **Concentração de Ativos na Região**: A carteira do fundo está concentrada principalmente nas cidades de Juiz de Fora, Uberlândia, Uberaba e Barbacena, com destaque para a cidade de Juiz de Fora que representa 40% dos ativos (p. 6).\n\n- **Contratos Atípicos**: O fundo possui diversos contratos atípicos com o grupo Bahamas MIX em várias localidades, incluindo supermercados e centros de distribuição (p. 7-13).\n\nO que observar em seguida:\n- Monitorar a evolução da vacância e inadimplência dos imóveis.\n- Acompanhar as atualizações sobre os terrenos para desenvolvimento mencionados no relatório."
+  },
+  "comunicados": {
+    "ids": [
+      1076854,
+      887478,
+      1007421,
+      1179321,
+      1152678
+    ],
+    "datas": [
+      "07/01/2026",
+      "29/04/2025",
+      "06/10/2025",
+      "04/05/2026",
+      "01/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 07/01/2026\n**O que aconteceu:** Remarcação a valor justo do ativo imobiliário resultou em variação positiva no PL/Cota do Fundo.\n- A remarcação foi realizada com base em avaliação elaborada por avaliador independente, conforme normas contábeis aplicáveis aos fundos de investimento imobiliário.\n- \"Em decorrência da referida remarcação, apurou-se uma variação positiva equivalente a 3,53% no PL/Cota do Fundo.\"\n\n### 29/04/2025\n**O que aconteceu:** Aprovada a substituição do gestor atual pelo EXA CAPITAL ASSET LTDA.\n- O novo gestor assumirá a função em 7 de maio de 2025.\n- \"a EXA CAPITAL ASSET LTDA., sociedade limitada, com sede na cidade de São Paulo, estado de São Paulo, na Rua Jerônimo da Veiga, 384, 12º andar, Jardim Europa, CEP 04536-001, inscrita no CNPJ sob o nº 52.213.100/0001-08, habilitada para a administração de carteiras de valores mobiliários na categoria “gestão de recursos”, conforme Ato Declaratório expedido pela CVM nº 21.505, de 14 de dezembro de 2023, que a troca de gestora será efetivada em 07 de maio de 2025\"\n\n### 06/10/2025\n**O que aconteceu:** Alteração do endereço eletrônico institucional da administradora.\n- Novos e-mails para contato: fii.adm@qitech.com.br.\n- \"A partir de agora, nossos novos e-mails para contato institucional são: \n• fii.adm@qitech.com.br\"\n\n### 04/05/2026\n**O que aconteceu:** Aprovação das Demonstrações Financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n- \"A aprovação das Demonstrações Financeiras do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025, as quais os Cotistas declaram ter tido acesso, lido, estar ciente e de acordo com o seu inteiro teor.\"\n\n### 01/04/2026\n**O que aconteceu:** Convocação para Assembleia Geral Ordinária (AGO) por meio de consulta formal.\n- A assembleia será realizada não presencialmente, por meio de votos à distância até às 23:59 horas do dia 30 de abril de 2026.\n- \"A QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., sociedade anônima, com sede na Cidade de São Paulo, estado de São Paulo, na Avenida Rebouças, nº 2.942, 7º ao 12º andar, Parte I, CEP 05402-500, na qualidade de administradora do Fundo, inscrita no CNPJ/MF sob o nº 62.285.390/0001 -40\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 126.96
+  },
+  "parecer": {
+    "id": 1152115,
+    "data_entrega": "31/03/2026 23:41",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do JFDCAM - Fundo de Investimento Imobiliário – FII – Responsabilidade Limitada (“Fundo”) em 31 de dezembro de 2025, e o desempenho de suas operações no exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicá"
+  }
+}

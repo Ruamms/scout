@@ -1,0 +1,45 @@
+{
+  "ticker": "BVAR11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T15:17:05",
+  "comunicados": {
+    "ids": [
+      1143447,
+      1053395,
+      1037352,
+      1124409,
+      1084049,
+      1173070,
+      1173067
+    ],
+    "datas": [
+      "24/03/2026",
+      "03/12/2025",
+      "13/11/2025",
+      "27/02/2026",
+      "15/01/2026",
+      "29/04/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO/E",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### Fato Relevante - 24/03/2026\n\n**O que aconteceu:** O Fundo Brasil Varejo anunciou a distribuição extraordinária de rendimentos.\n\n**Resumo:** A Rio Bravo, administradora do fundo, informa que o Fundo receberá R$44.767.393,86 em 27/03/2026 da venda de imóveis e distribuirá rendimentos extraordinários aos cotistas a partir de 08/04/2026.\n\n**Trecho-chave:**\n\"O montante previsto é de R$44.767.393,86 (quarenta e quatro milhões, setecentos e sessenta e sete mil, trezentos e noventa e três reais e oitenta e seis centavos), perfazendo o valor bruto de R$71,56/cota.\"\n\n---\n\n### Fato Relevante - 03/12/2025\n\n**O que aconteceu:** O Fundo Brasil Varejo vendeu um imóvel em Rio Branco/AC.\n\n**Resumo:** A Rio Bravo informa a venda do imóvel localizado na Av. Getúlio Vargas, 258 – Centro - Rio Branco/AC por R$11.452.082,00, com pagamento parcelado em três vezes.\n\n**Trecho-chave:**\n\"O Imóvel foi vendido pelo valor total de R$ 11.452.082,00 (onze milhões, quatrocentos e cinquenta e dois mil e oitenta e dois reais.), sendo:\na. Primeira Parcela : R$ 4.068.552,35 (quatro milhões, sessenta e oito mil, quinhentos e cinquenta e dois reais e trinta e cinco centavos) pagos na data das escrituras mediante compensação de créditos detidos pelo Comprador contra o Fundo;\"\n---\n\n### Fato Relevante - 13/11/2025\n\n**O que aconteceu:** O Fundo Brasil Varejo vendeu um imóvel em São Paulo.\n\n**Resumo:** A Rio Bravo informa a venda do imóvel localizado na Rua dos Americanos, 465 - Barra Funda – São Paulo por R$10.518.000,00, com pagamento parcelado em nove vezes.\n\n**Trecho-chave:**\n\"O Imóvel foi vendido pelo valor de R$ 10.518.000,00 (dez milhões e quinhentos e dezoito mil reais), a ser pago em moeda corrente nacional, da seguinte forma:\na. Primeira Parcela: R$ 1.681.800,00 (um milhão, seiscentos e oitenta e um mil e oitocentos reais.), na data da assinatura da escritura;\"\n---\n\n### Comunicado ao Mercado - 27/02/2026\n\n**O que aconteceu:** A Rio Bravo disponibilizou os informes de rendimentos do ano-calendário 2025.\n\n**Resumo:** Os cotistas podem acessar o Informe de Rendimentos no Portal do Investidor da Rio Bravo ou pelo Atendimento Digital.\n\n**Trecho-chave:**\n\"Os informes de rendimentos (IR) dos fundos listados no Anexo I estão disponíveis aos investidores a partir desta data no Portal do Investidor da Rio Bravo.\"\n\n---\n\n### Comunicado ao Mercado - 15/01/2026\n\n**O que aconteceu:** O Fundo Brasil Varejo anunciou distribuição de rendimentos extraordinários.\n\n**Resumo:** A distribuição de rendimentos para janeiro de 2026 será superior a 100% do resultado do primeiro semestre de 2026, devido ao excesso de resultados dos exercícios anteriores.\n\n**Trecho-chave:**\n\"A distribuição de rendimentos para o mês corrente, janeiro de 2026, será feita de modo que o valor distribuído será superior aos 100% do resultado do primeiro semestre de 2026 para o Fundo.\"\n\n---\n\n### Assembleia AGO/E - 29/04/2026\n\n**O que aconteceu:** A assembleia geral ordinária e extraordinária aprovou as Demonstrações Financeiras do exercício encerrado em 31 de dezembro de 2025, rejeitou alteração no Regulamento do Fundo e aprovou amortização parcial de cotas.\n\n**Resumo:** A assembleia deliberou sobre os resultados financeiros, rejeitou uma proposta de alteração regulamentar e aprovou a utilização dos recursos da venda de imóveis para amortização de cotas.\n\n**Trecho-chave:**\n\"Os cotistas que representam 84,40% (oitenta e quatro vírgula quarenta por cento) do total de cotas emitidas pelo Fundo e aptos ao exercício do direito de voto, deliberaram por aprovar a amortização parcial de cotas do Fundo (“Amortização”) mediante a utilização dos recursos provenientes da venda dos imóveis localizados em Belo Horizonte/MG (2 imóveis), Florianópolis/SC, Diadema/SP, São Paulo/SP e Rio Branco/AC.\""
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1148341,
+    "data_entrega": "30/03/2026 17:15",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Brasil Varejo Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o para o exercício findo nessa data, de acordo com as práticas contábeis adotad"
+  }
+}

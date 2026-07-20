@@ -1,21 +1,21 @@
 {
   "ticker": "CSMC11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-19T15:17:32",
+  "verificado_em": "2026-07-20T15:25:38",
   "comunicados": {
     "ids": [
-      1167513,
-      1086635
+      1259818,
+      1167513
     ],
     "datas": [
-      "22/04/2026",
-      "16/01/2026"
+      "20/07/2026",
+      "22/04/2026"
     ],
     "rotulos": [
-      "Assembleia AGO",
-      "Assembleia AGE"
+      "Assembleia AGE",
+      "Assembleia AGO"
     ],
-    "texto": "### Assembleia Geral Ordinária - 22/04/2026\n\n**O que aconteceu:** A assembleia aprovou por unanimidade as demonstrações financeiras do fundo referentes ao exercício social de 2025.\n\n**Resumo:** Os cotistas reuniram-se para aprovar os documentos financeiros e o parecer do auditor independente sem nenhuma restrição ou ressalva. \n\n**Trecho-chave:**\n\"Os Cotistas deliberaram, por unanimidade, sem quaisquer ressalvas ou restrições aprovar as Demonstrações Financeiras do Fundo, das Notas Explicativas e do parecer do auditor independente, todos relativos ao exercício social findo em 31 de dezembro de 2025.\" (p. 1)\n\n---\n\n### Assembleia Geral Extraordinária - 16/01/2026\n\n**O que aconteceu:** A assembleia aprovou por unanimidade a emissão de novas cotas pelo fundo.\n\n**Resumo:** Os cotistas deliberaram sobre a emissão de 13.050,12668 novas cotas com valor unitário de R$1.000,00 cada, totalizando R$13.050.126,68. A subscrição dessas novas cotas foi feita pelo único cotista do fundo.\n\n**Trecho-chave:**\n\"Os Cotistas deliberaram, por unanimidade, sem quaisquer ressalvas ou restrições: (i.a) aprovar a emissão, em série e classe única, de 13.050,12668 novas cotas pelo Fundo, no valor unitário de R$1.000,00 (mil reais), totalizando o montante de R$13.050.126,68.\" (p. 1)\n\n---\n\n**Conexão com indicadores:** A emissão de novas cotas em janeiro de 2026 pode explicar a alta no número de cotas e valor patrimonial do fundo ao longo dos últimos 12 meses, apesar de o aumento ser atribuído a apenas um cotista."
+    "texto": "### Assembleia AGE - 20 de julho de 2026\n\n**O QUE ACONTECEU:** O fundo aprovou a emissão de novas cotas.\n\n**RESUMO:** Os cotistas do COSMIC FUNDO DE INVESTIMENTO IMOBILIÁRIO (CSMC11) deliberaram, por unanimidade, aprovar a emissão de 13.751,27 novas cotas com valor unitário de R$1.000,00 cada, totalizando R$13.751.278,78.\n\n**TRECHO-CHAVE:**\n\"Os Cotistas deliberaram, por unanimidade, sem quaisquer ressalvas ou restrições: (i.a) aprovar a emissão, em série e classe única, de 13.751,27 novas cotas pelo Fundo, no valor unitário de R$1.000,00 (mil reais), totalizando o montante de R$13.751.278,78\" (p. 2).\n\n---\n\n### Assembleia AGO - 22 de abril de 2026\n\n**O QUE ACONTECEU:** O fundo aprovou as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025.\n\n**RESUMO:** Os cotistas deliberaram, por unanimidade, aprovar as Demonstrações Financeiras do Fundo, Explanatory Notes e o parecer do auditor independente referentes ao ano fiscal encerrado em 31 de dezembro de 2025.\n\n**TRECHO-CHAVE:**\n\"Os Cotistas deliberaram, por unanimidade, sem quaisquer ressalvas ou restrições aprovar as Demonstrações Financeiras do Fundo, das Notas Explicativas e do parecer do auditor independente, todos relativos ao exercício social findo em 31 de dezembro de 2025.\" (p. 2).\n\n---\n\n**CONEXÃO COM OS INDICADORES:** A aprovação da emissão de novas cotas pode ser relacionada à intenção do fundo de aumentar seu patrimônio líquido, que cresceu significativamente nos últimos 12 meses (de R$1,7B para R$2,1B)."
   },
   "modelo": "qwen2.5:14b",
   "parecer": {

@@ -1,0 +1,50 @@
+{
+  "ticker": "MFII11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T12:59:24",
+  "relatorio": {
+    "id": 1249631,
+    "data_entrega": "15/07/2026 17:53",
+    "texto": "- **Lançamento do Projeto Livus Essencial Patriarca**: O projeto, localizado na Av. Cachoeira Paulista, bairro Cidade Patriarca em São Paulo/SP, conta com 184 apartamentos e um Valor Geral de Vendas (VGV) superior a R$54 milhões. As vendas superaram as expectativas neste primeiro mês (p. 2).\n\n- **Adiamento das Receitas da SPE Consórcio Cortel SP**: A SPE depende do aceite das obras de melhorias pela Prefeitura de São Paulo, inicialmente previstas para 2026 mas agora projetadas para 2027 (p. 8).\n\n- **Aumento dos Custos de Construção Civil**: Materiais como linhas de PVC, concreto e argamassa estrutural estão sofrendo reajustes superiores a 30%, impactando diretamente o lucro líquido projetado do fundo (p. 8).\n\n- **Desconto na Cotação no Mercado Secundário**: A cota do MFII11 é negociada em cerca de R$60, um desconto de 37% em relação ao valor patrimonial (p. 9).\n\n- **Riscos Macroambientais e Eleitorais**: O nível crescente de endividamento das famílias pode afetar a concessão de crédito e reduzir a demanda por compra, além da possibilidade do fim da escala 6x1 que pode encarecer os custos de obras em cerca de 20% (p. 9).\n\n- **Fluxo de Caixa Negativo na SPE Consórcio Cortel SP**: O fluxo de caixa previsto para a SPE no ano de 2026 está negativo, pois os cemitérios deverão demandar novos aportes ao longo do ano (p. 8).\n\n- **Emissão de Cotas com VP/Cota em Queda**: O número de cotas aumentou +30,46% nos últimos 24 meses, enquanto o valor patrimonial por cota ajustado diminuiu -10,40% no mesmo período (alerta disparado).\n\n- **Desconto na Precificação do Mercado Secundário**: A metodologia contábil utilizada não considera o lucro a ser gerado pelos empreendimentos após lançamento e venda, resultando em um valuation dos ativos imobiliários de aproximadamente R$850 milhões (p. 9).\n\n**O que observar em seguida:**\n1. Evolução das obras e aprovações da SPE Consórcio Cortel SP.\n2. Impacto do aumento nos custos de construção nas vendas futuras dos projetos residenciais."
+  },
+  "comunicados": {
+    "ids": [
+      1223010,
+      1200827,
+      1179203,
+      1151322
+    ],
+    "datas": [
+      "16/06/2026",
+      "21/05/2026",
+      "04/05/2026",
+      "31/03/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 16/06/2026 - Comunicação sobre oscilações atípicas nas cotas\n\nA administradora Mérito DTVM informou ao mercado que não possui conhecimento de informações que possam justificar as recentes oscilações atípicas nas cotas do fundo, conforme solicitado pela B3 em 15/06/2026.\n\n\"Em resposta, cumprimento e esclarecimento ao mercado e ao referido Ofício, a Mérito DTVM informa que não possui conhecimento de qualquer informação que possa justificar as citadas oscilações atípicas apontadas nas Cotas do Fundo nos termos do Ofício.\"\n\n### 21/05/2026 - Aquisição de terreno para projeto residencial\n\nO fundo adquiriu um terreno de 1.000,0 m² na Rua Redução Taven, bairro Sapopemba, com previsão de implantação de um projeto multifamiliar vertical com 184 unidades e Valor Geral de Vendas estimado em R$ 45 milhões.\n\n\"O Fundo adquiriu, através de suas investidas, um terreno de 1.000,0 m² localizado na Rua Redução Taven, bairro Sapopemba, cidade de São Paulo - SP.\"\n\n### 04/05/2026 - Aprovação das contas e demonstrações financeiras do exercício social encerrado em 31/12/2025\n\nA assembleia geral ordinária realizada por meio de consulta formal aprovou as contas e demonstrações financeiras do fundo referentes ao exercício social encerrado em 31/12/2025, sem quórum qualificado.\n\n\"A Favor Contra Abstenção Resultado \n100,00% 0,00% 0,00% Aprovado\"\n\n### 31/03/2026 - Edital de convocação para assembleia geral ordinária\n\nO edital convoca os cotistas a participar da Assembleia Geral Ordinária por meio de consulta formal em 30/04/2026, com o objetivo de deliberar sobre a aprovação das contas e demonstrações financeiras do exercício social encerrado em 31/12/2025.\n\n\"A MÉRITO DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. vem, por meio desta, convocar os cotistas do Fundo (“Cotistas”) a participar da Assembleia Geral Ordinária do Fundo, cujas deliberações serão tomadas de forma não presencial, por meio de consulta formal.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 52.71
+  },
+  "parecer": {
+    "id": 1151330,
+    "data_entrega": "31/03/2026 19:39",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Mérito Desenvolvimento Imobiliário I FII – Fundo de Investimento Imobiliário em 31 de dezembro de 2025, o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos fu"
+  }
+}

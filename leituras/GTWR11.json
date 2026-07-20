@@ -1,0 +1,46 @@
+{
+  "ticker": "GTWR11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T01:21:50",
+  "relatorio": {
+    "id": 1241333,
+    "data_entrega": "07/07/2026 18:15",
+    "texto": "1. O resultado gerado pelo fundo em junho foi de R$ 0,89/cota e a distribuição foi de R$ 0,90/cota, resultando em um saldo acumulado de rendimentos não distribuídos de R$ 0,13/cota (p. 5).\n2. O fundo apresentou uma rentabilidade negativa de 1,2% no mês e uma rentabilidade acumulada de 18,2% nos últimos 12 meses (p. 5).\n3. A vacância física do fundo é de 0,00%, mantendo-se inalterada (p. 4).\n4. O patrimônio líquido do fundo encerrou o mês em R$ 1,2 bilhão e não possui alavancagem ou obrigações futuras por compra de ativos (p. 12).\n5. A média diária de liquidez do fundo foi de R$ 0,798 milhão por dia, uma redução de 36,1% em relação ao mês anterior (p. 10).\n\nO que observar em seguida:\n- Monitorar a distribuição de rendimentos e o saldo acumulado não distribuído nos próximos meses.\n- Observar as variações na liquidez média diária do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1050656,
+      1178561,
+      1178558
+    ],
+    "datas": [
+      "28/11/2025",
+      "30/04/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO/E",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### 28/11/2025\n**Transferência da administração fiduciária do Fundo para a BEM Distribuidora de Títulos e Valores Mobiliários LTDA.**\n\nA administração fiduciária do FUNDO DE INVESTIMENTO IMOBILIÁRIO GREEN TOWERS RESPONSABILIDADE LIMITADA será transferida para a BEM DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., e os serviços de custódia dos ativos integrantes da carteira serão transferidos ao BANCO BRADESCO S.A. A transferência entra em vigor no dia 01/12/2025.\n\n*\"A administração fiduciária do Fundo será transferida para a BEM DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., instituição financeira com sede no Núcleo Cidade de Deus – S/N, Ed. Prata – 4º andar, Vila Yara, Osasco/SP, CEP 06029 -900, inscrita no CNPJ sob nº 00.066.670/0001 -00, também autorizada pela CVM a administrar fundos e carteiras de valores mobiliários.\" (p. 1)*\n\n### 30/04/2026\n**Assembleia Geral de Cotistas**\n\nA Assembleia Geral de Cotistas do FUNDO DE INVESTIMENTO IMOBILIÁRIO GREEN TOWERS aprovou a Demonstração contábil relativa ao exercício social findo em 31 de dezembro de 2025. Matérias relacionadas à autorização para consulta formal e aquisição de ativos financeiros não foram aprovadas por falta de quórum.\n\n*\"A Assembleia Geral de Cotistas convocada no dia 31 de março de 2026 foi encerrada nesta data e que, após a apuração dos votos recebidos, foi obtido o seguinte resultado: APROVAÇÃO da Matéria 1, a qual obteve 12,66% (doze vírgula sessenta e seis por cento) de votos favoráveis, calculados sobre o total das cotas emitidas pelo Fundo.\"*"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 80.09
+  },
+  "parecer": {
+    "id": 1151397,
+    "data_entrega": "31/03/2026 19:51",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

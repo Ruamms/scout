@@ -1,0 +1,48 @@
+{
+  "ticker": "SHPH11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T16:38:25",
+  "relatorio": {
+    "id": 1239617,
+    "data_entrega": "03/07/2026 18:56",
+    "texto": "- **Resultado Positivo:** O fundo apresentou resultado de R$ 7,10/cota e distribuiu R$ 12,00/cota no mês (p. 3).\n- **Distribuição Extraordinária:** A gestão realizou uma distribuição extraordinária do resultado acumulado para atender à diretriz de distribuição aos cotistas (p. 4).\n- **Inadimplência Elevada:** Inadimplência de 5,4% no mês, acima do orçado de 2,0%, com renegociações e ações em andamento para redução (p. 4).\n- **Vacância Baixa:** Vacância continua em patamar saudável de 1,8% (p. 4).\n- **Investimentos Postergados:** Investimentos líquidos de R$ 223 mil realizados em maio, com execução orçamentária reduzida até o momento (p. 6).\n- **Projeções para Segundo Semestre:** Expectativa de estabilização dos dividendos em torno de R$4,50/cota ao mês a partir do segundo semestre (p. 4).\n- **Alavancagem e Liquidez:** O fundo distribui aos cotistas semestralmente no mínimo 95% dos lucros auferidos, com até 5% retido para liquidez e investimentos (p. 7).\n\n**O que observar em seguida:**\n- **Progresso nas Renegociações de Inadimplência:** Monitorar a evolução da inadimplência ao longo do segundo semestre.\n- **Execução dos Investimentos Planejados:** Verificar o avanço na execução dos investimentos planejados para os próximos meses."
+  },
+  "comunicados": {
+    "ids": [
+      1139035,
+      1124947,
+      1212549,
+      1186101
+    ],
+    "datas": [
+      "16/03/2026",
+      "27/02/2026",
+      "05/06/2026",
+      "12/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO/E",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### COMUNICADO AO MERCADO — 16/03/2026\n\n**A Rio Bravo convida cotistas para integrar o Comitê Consultivo do Fundo SHPH11.**\n\nA administradora do SHOPPING PÁTIO HIGIENÓPOLIS FII, a Rio Bravo, convoca os cotistas interessados em participar do Comitê Consultivo até 30 de março de 2026 para enviar seus dados completos pelo e-mail ri@riobravo.com.br. A Administração considerará apenas as candidaturas dos cotistas registrados na data da assembleia geral.\n\n---\n\n### COMUNICADO AO MERCADO — 27/02/2026\n\n**Informes de rendimentos do ano-calendário 2025 estão disponíveis no Portal do Investidor.**\n\nOs informes de rendimento dos fundos listados, incluindo o SHPH11, podem ser acessados pelo portal do investidor da Rio Bravo a partir desta data. Os cotistas receberão um e-mail com orientações para acesso.\n\n---\n\n### ASSEMBLEIA AGO/E — 05/06/2026\n\n**Assembleia geral ordinária e extraordinária aprova demonstrações financeiras de 2025 e elege membros do Comitê Consultivo.**\n\nA assembleia realizada em 30 de abril de 2026, por meio de consulta formal, aprovou as demonstrações financeiras referentes ao exercício encerrado em 31 de dezembro de 2025 e elegeram os membros do Comitê Consultivo: Newton Simões (Titular), Douglas Jose Delgado (Titular) e Fernando Kasinski Lottenberg (Titular). A Administração indicou Anita Scal (Titular) e Alexandre Rodrigues de Oliveira (Titular).\n\n\"O Comitê será composto, sempre em número ímpar, por até 5 (cinco) membros titulares, sendo que até 2 (dois) membros titulares serão indicados diretamente pela Administradora do Fundo e até 3 (três) membros titulares e seus suplentes serão indicados pelos cotistas do Fundo.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 945.53
+  },
+  "parecer": {
+    "id": 1144399,
+    "data_entrega": "25/03/2026 20:04",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Shopping Pátio Higienópolis Fundo de Investimento Imobiliário de Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas cont"
+  }
+}

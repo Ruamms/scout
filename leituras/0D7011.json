@@ -1,0 +1,40 @@
+{
+  "ticker": "0D7011",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T04:27:34",
+  "relatorio": {
+    "id": 1236359,
+    "data_entrega": "30/06/2026 21:14",
+    "texto": "1. **Compra de Ativo**: O Fundo realizou a compra do CRI BTLC em mercado primário à taxa de CDI + 1,15%, conforme mencionado no relatório (página 3).\n2. **Distribuição Mensal**: A distribuição mensal referente ao mês de maio foi realizada em 10/06/2026, no valor de R$ 0,098 por cota (página 4).\n3. **Alocação do Patrimônio Líquido**: O Fundo encerrou junho com um patrimônio líquido de R$ 1 bilhão e uma cota patrimonial em R$ 10,35 (página 4).\n4. **Comentários sobre o Segmento Residencial**: A gestão destaca fundamentos positivos de longo prazo no segmento residencial, que representa 78% do patrimônio líquido do Fundo (página 3).\n5. **Alocação em Ativos Táticos**: O Fundo realizou alocações táticas pontuais contribuindo para a rentabilidade da posição de caixa enquanto avança na seleção de novos ativos estratégicos (página 3).\n\n**O que observar em seguida:**\n1. Evolução das taxas de juros e inflação no Brasil.\n2. Novas aquisições ou alienações de ativos mencionadas nos próximos relatórios mensais."
+  },
+  "comunicados": {
+    "ids": [
+      1235827,
+      1200570,
+      1072436,
+      1044727
+    ],
+    "datas": [
+      "30/06/2026",
+      "21/05/2026",
+      "29/12/2025",
+      "19/11/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Fato Relevante - 30/06/2026\n\n**O QUE ACONTECEU:** A Gestora decidiu renunciar ao recebimento da Taxa de Performance referente ao segundo semestre de 2025.\n\n**RESUMO:** A medida visa melhor alinhamento com os interesses dos cotistas, mas a cobrança normal será retomada no futuro conforme o regulamento. \n\n**TRECHO-CHAVE:**\n\"A Gestora, visando um melhor alinhamento com os interesses dos cotistas da Classe, decidiu renunciar ao recebimento da Taxa de Performance, referente exclusivamente à competência do 2º semestre de 2025, de modo que, não serão repassados os valores da referente remuneração à Gestora.\"\n\n---\n\n### Comunicado ao Mercado - 21/05/2026\n\n**O QUE ACONTECEU:** O administrador do fundo aprovou a atualização na forma de divulgação da remuneração dos prestadores de serviços essenciais, conforme as diretrizes estabelecidas no Ofício-Circular CVM nº 1/2025.\n\n**RESUMO:** A substituição do \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) foi aprovada, sem alterações nos valores pagos pelos cotistas. \n\n**TRECHO-CHAVE:**\n\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, fica aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n---\n\n### Assembleia AGO - 29/12/2025\n\n**O QUE ACONTECEU:** A assembleia geral ordinária realizada por meio de consulta formal aprovou as contas e demonstrações contábeis do Fundo relativas ao exercício social findo em 30 de junho de 2025.\n\n**RESUMO:** O quórum foi alcançado com aproximadamente 60,007% dos cotistas votando a favor da aprovação das demonstrações contábeis auditadas do Fundo. \n\n**TRECHO-CHAVE:**\n\"Foram recebidas respostas de Cotistas representando, aproximadamente, 60,007% das Cotas de emissão do Fundo, sendo que a matéria colocada em deliberação, conforme descrita acima, teve o quórum abaixo:\nAprovação: 60,007%\nAbstenção: 37,661%\nVoto Não Aprovação: 2,332%\"\n\n---\n\n### Assembleia AGO - 19/11/2025\n\n**O QUE ACONTECEU:** O administrador do fundo convocou os cotistas para participar de uma assembleia geral ordinária não presencial por meio de consulta formal.\n\n**RESUMO:** Os cotistas foram convidados a deliberar sobre a aprovação das contas e demonstrações contábeis auditadas do Fundo relativas ao exercício social findo em 30 de junho de 2025. O prazo para votação foi até o dia 22 de dezembro de 2025.\n\n**TRECHO-CHAVE:**\n\"A BTG PACTUAL SERVIÇOS FINANCEIROS S.A. DTVM, instituição financeira com sede na Cidade do Rio de Janeiro, Estado do Rio de Janeiro, na Praia de Botafogo, nº 501, 5º andar, parte, Torre Corcovado, Botafogo, CEP 22250-040, inscrita no Cadastro Nacional de Pessoa Jurídica (“CNPJ”) sob o nº 59.281.253/ 0001-23, devidamente autorizada pela Comissão de Valores Mobiliários (\"CVM\") para a atividade de administração de carteiras de valores mobiliários, de acordo com o Ato Declaratório nº 8.695, de 20 de março de 2006, neste ato representada na forma do seu Estatuto Social (\"Administradora\"), na qualidade de instituição administradora do BTG PACTUAL CREDITO PARA INCORPORACAO FII FUNDO DE INVESTIMENTO IMOBILIARIO, inscrito no CNPJ sob o nº 43.008.233/0001-43 (“Fundo”) vem, por meio da presente, convocar os titulares das cotas de emissão do Fundo (“Cotistas”) para participar da Assembleia Geral Ordinária do Fundo, a ser realizada de forma não presencial, por meio do procedimento de consulta formal (\"Consulta Formal\", respectivamente), a qual tem por objeto deliberar sobre: 1. Aprovação das contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\""
+  },
+  "parecer": {
+    "id": 997488,
+    "data_entrega": "24/09/2025 11:42",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "ticker": "RBRL11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T16:27:42",
+  "relatorio": {
+    "id": 1246171,
+    "data_entrega": "13/07/2026 19:31",
+    "texto": "1. **Venda do Portfólio Imobiliário ao XPLG11**: O Fundo realizou a venda de seus ativos performados ao XPLG11 no valor total de R$ 699,2 milhões em fevereiro de 2026. \"Conforme divulgado em Fato Relevante de 30/06/2025, o Fundo realizou a venda de seus ativos performados ao XPLG11, no valor total de R$ 699,2 milhões.\" (p. 4)\n\n2. **Lucro da Venda**: O lucro bruto pré-obrigações foi de R$ 45,0 milhões e após as despesas obrigatórias, o lucro líquido foi de R$ 23,9 milhões. \"O lucro da venda bruto pré-obrigações foi de R$ 45,0 milhões. Após o fechamento da transação, as despesas obrigatórias totalizaram R$ 21,1 milhões, distribuídas entre custo da oferta, prêmio de locação e prêmio da curva J.\" (p. 4)\n\n3. **Manutenção das Cotas do XPLG11**: O Fundo decidiu manter as cotas em carteira até condições mais favoráveis de mercado devido ao recuo no preço das cotas do XPLG11, que encerrou em R$ 92,65/cota em 30/06. \"Nesse cenário, a venda das cotas aos preços atuais de mercado resultaria em prejuízo para o RBRL.\" (p. 4)\n\n4. **Impacto na Receita Recorrente**: A fonte de receita recorrente do Fundo passou a ser os rendimentos distribuídos somados ao rebate da taxa de gestão do XPLG11, com patamar esperado próximo a R$ 0,60/cota. \"Com a alienação da totalidade dos ativos imobiliários e a decisão de manter as cotas em carteira até condições mais favoráveis de mercado, a fonte de receita recorrente do Fundo passou a ser os rendimentos distribuídos somados ao rebate da taxa de gestão do XPLG11.\" (p. 4)\n\n5. **Alavancagem**: O Fundo não possui alavancagem ou obrigações por aquisição de ativos em 30/06. \"Em 30/06, o Fundo não possuía qualquer alavancagem ou obrigação por aquisição de ativos.\" (p. 5)\n\n6. **Resultado e Distribuições**: Em junho, o resultado do Fundo foi R$ 0,63/cota com distribuição de R$ 0,60/cota. \"Em junho, o Fundo apresentou uma receita total de R$ 0,89/cota, o que levou a um resultado de R$ 0,63/cota.\" (p. 5)\n\n7. **Vacância**: A vacância do fundo é de 0%, conforme indicado nos dados oficiais fornecidos no contexto.\n\n**O que observar em seguida:**\n1. Movimentação do preço das cotas do XPLG11.\n2. Resultados financeiros futuros e distribuições mensais."
+  },
+  "comunicados": {
+    "ids": [
+      1108862,
+      1099499,
+      1067330,
+      955344,
+      1208153,
+      1206830
+    ],
+    "datas": [
+      "11/02/2026",
+      "02/02/2026",
+      "22/12/2025",
+      "29/07/2025",
+      "29/05/2026",
+      "28/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Fato Relevante (11/02/2026)\n**O que aconteceu:** O fundo RBRL11 alienou o último ativo do seu portfólio para o XP LOG FUNDO DE INVESTIMENTO IMOBILIÁRIO.\n**Resumo:** A SPE SBC, proprietária de um imóvel logístico em São Bernardo do Campo/SP, foi vendida ao XPLG11 por R$ 8.791.834,58, com pagamento parcelado e condições específicas para o recebimento da RMG.\n**Trecho-chave:** \"O Fundo, representado por sua Administradora, na qualidade de legítimo proprietário indireto da Sociedade de Propósito Específico (“SPE SBC”), celebraram com o XP LOG FUNDO DE INVESTIMENTO IMOBILIÁRIO, inscrito no CNPJ sob o nº 26.502.794/0001-85 (“Comprador” ou “XPLG11”), os documentos definitivos de alienação indireta do Imóvel SBC por meio do Contrato de Venda e Compra de Quotas e Outras Avenças da totalidade das suas respectivas quotas detidas da SPE SBC, que representam uma fração dos direitos relativos ao Imóvel SBC correspondente a 1.760,46 m² (mil setecentos e sessenta vírgula quarenta e seis metros quadrados) de área bruta locável(“QPA” e “Transação”).\"\n\n### Fato Relevante (02/02/2026)\n**O que aconteceu:** O fundo RBRL11 concluiu a transição da gestão para o Patria Investimentos Ltda. e alterou sua denominação.\n**Resumo:** A RBR Gestão de Recursos Ltda., controlada pelo Patria Investimentos, passará a gerir o fundo com nova denominação \"Patria Logística II\" e código de negociação permanece como RBRL11. Os cotistas devem se familiarizar com os novos canais de comunicação.\n**Trecho-chave:** \"A RBR Gestão de Recursos Ltda., que passa a ser controlada pelo Patria Investimentos Ltda., terá sua denominação social alterada para Patria Gestão de Recursos Ltda.\"\n\n### Fato Relevante (22/12/2025)\n**O que aconteceu:** O fundo RBRL11 concluiu a venda do seu portfólio ao XP LOG FUNDO DE INVESTIMENTO IMOBILIÁRIO.\n**Resumo:** A transação foi finalizada em 19 de dezembro, com o preço total de R$ 690.401.738,65 e prêmio de locação no valor de R$ 48 milhões a ser pago ao longo de 36 meses.\n**Trecho-chave:** \"O Fundo, representado por sua Administradora, na qualidade de legítimo proprietário dos imóveis que integram que compõem o portfólio do Fundo (“Imóveis”), celebraram, em 19 de dezembro de 2025, com o XP LOG FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII, inscrito no CNPJ sob o nº 26.502.794/0001-85 (“Comprador” ou “XPLG11”), os documentos definitivos de alienação dos Imóveis (“Documentos Definitivos” e “Transação”, respectivamente).\"\n\n### Comunicado ao Mercado (29/07/2025)\n**O que aconteceu:** A RBR GESTÃO DE RECURSOS LTDA. convocou um webcast para discutir os fundos sob sua gestão.\n**Resumo:** O evento será realizado em 7 de agosto às 10h e transmitido ao vivo no YouTube e LinkedIn.\n**Trecho-chave:** \"A RBR GESTÃO DE RECURSOS LTDA. com sede na Cidade de São Paulo, Estado de São Paulo, na Presidente Juscelino Kubitschek, 1400, 12º andar, conjunto 122, Itaim Bibi, CEP 04543-000, inscrita no CNPJ sob o nº 18.259.351/0001-87 (“Gestora”), na qualidade de gestora dos fundos supracitados, cotistas e o mercado em geral para o webcast com a Gestora que ocorrerá quinta-feira, dia 07/08/2025, às 10:00 horas.\"\n\n### Assembleia AGO (29/05/2026)\n**O que aconteceu:** A assembleia geral ordinária do PATRIA LOG II - FUNDO DE INVESTIMENTO IMOBILIÁRIO realizou uma ratificação ao termo de apuração da assembleia.\n**Resumo:** O CNPJ foi rerratificado corrigindo um erro formal. As demonstrações financeiras foram aprovadas sem ressalvas pelos cotistas desimpedidos e aptos a deliberar.\n**Trecho-chave:** \"A Administradora informa que as Demonstrações Financeiras objeto desta Consulta Formal foi aprovada, sem quaisquer ressalvas, pelos cotistas desimpedidos e aptos a deliberar.\"\n\n### Assembleia AGO (28/05/2026)\n**O que aconteceu:** A assembleia geral ordinária do PATRIA LOG II - FUNDO DE INVESTIMENTO IMOBILIÁRIO realizou uma consulta formal aos cotistas.\n**Resumo:** Os cotistas aprovaram as demonstrações financeiras sem ressalvas, representando aproximadamente 1,15% das cotas emitidas do Fundo.\n**Trecho-chave:** \"A Administradora informa que as Demonstrações Financeiras objeto desta Consulta Formal foi aprovada, sem quaisquer ressalvas, pelos cotistas desimpedidos e aptos a deliberar.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 72.05
+  },
+  "parecer": {
+    "id": 1145933,
+    "data_entrega": "26/03/2026 21:05",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira d a Classe Única de Cotas do RBR LOG - Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data , de acordo com as prátic"
+  }
+}

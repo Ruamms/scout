@@ -1,0 +1,30 @@
+{
+  "ticker": "0CNP11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T03:06:17",
+  "comunicados": {
+    "ids": [
+      1017809,
+      1017509
+    ],
+    "datas": [
+      "21/10/2025",
+      "20/10/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral Ordinária do Biotic FII (21/10/2025)\n**O QUE ACONTECEU:** A assembleia ordinária foi realizada não presencialmente, com votos apurados em 20 de outubro.\n\n- Os cotistas aprovaram as contas e demonstrações financeiras do exercício findo em 30 de junho de 2025.\n  \n*\"Após a contabilização dos votos recebidos, o cotista aprovou a pauta em sua integralidade.\"* (p. 1)\n\n### Sumário das Decisões da Assembleia Geral de Cotistas do Biotic FII (20/10/2025)\n**O QUE ACONTECEU:** A assembleia foi realizada por videoconferência, com a aprovação integral dos dados apresentados.\n\n- Os cotistas avaliaram e aprovaram as contas e demonstrações financeiras auditadas pelo Grant Thornton Auditores referentes ao exercício social de 2025.\n  \n*\"Dado início à Assembleia, após análise, o cotista aprovou integralmente os dados apresentados.\"* (p. 1)"
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 999629,
+    "data_entrega": "26/09/2025 17:30",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Biotic Fundo de Investimento Imobiliário de Responsabilidade Limitada (anteriormente denominado Fundo de Investimento Imobiliário – FII Biotic) em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercíci"
+  }
+}

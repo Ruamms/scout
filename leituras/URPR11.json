@@ -1,0 +1,52 @@
+{
+  "ticker": "URPR11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T02:29:26",
+  "relatorio": {
+    "id": 1106336,
+    "data_entrega": "09/02/2026 22:11",
+    "texto": "- **Negociação com Empreendedor Maravista**: A gestão está em negociação com o empreendedor para continuar os aportes e cobrir garantias da operação, que atualmente encontra-se desenquadrada. [página 2]\n\n- **Aportes nas Obras do Barbosa**: As obras do empreendimento Barbosa seguem conforme cronograma planejado após a retomada dos aportes. [página 2]\n\n- **Análise de Empreendimentos da D’Paula Santos**: A gestão analisa a conduta mais adequada em relação aos empreendimentos da empresa D’Paula Santos, que é devedora do CRI D’Paula, com o objetivo de maximizar os resultados financeiros possíveis. [página 2]\n\n- **Reserva de Caixa para Aportes**: O fundo mantém aproximadamente R$5 milhões em reserva de caixa para aportes nas obras em andamento. [página 2]\n\n- **Entrega da Fase 2 do Terras Altas**: Espera-se a entrega da obra civil da fase 2 de Terras Altas no mês de junho, com o TVO/habite-se previsto para agosto, dependendo da liberação das concessionárias e prefeitura. [página 2]\n\n- **Substituição da Bandeira do Ilha do Sol**: O Residence Club S.A. formalizou a substituição da bandeira do projeto Ilha do Sol de Hard Rock para Wyndham, mas isso não resolve as questões estruturais existentes. [página 2]\n\n- **Dividendos Distribuídos**: No mês de dezembro, o fundo distribuiu R$0,35 por cota, com um dividend yield mensal de 0,34% e anual de 4,07%. [página 5]\n\n- **Cenário Macroeconômico**: O cenário macroeconômico em dezembro foi caracterizado por um PIB moderado (1,8%-2,3%) e IPCA controlado (~4,4%), com expectativa de cortes na taxa Selic em 2026. [página 3]\n\n**O que observar em seguida:**\n- Desenvolvimento das negociações sobre a continuidade dos aportes no Maravista.\n- Progresso nas obras do Terras Altas e liberação de TVO/habite-se."
+  },
+  "comunicados": {
+    "ids": [
+      1231044,
+      1232031,
+      1224753,
+      1232593,
+      1232585
+    ],
+    "datas": [
+      "26/06/2026",
+      "29/06/2026",
+      "19/06/2026",
+      "29/06/2026",
+      "29/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Comunicado ao Mercado (29/06/2026)\n**O que aconteceu:** A Vórtx Distribuidora de Títulos e Valores Mobiliários LTDA respondeu a um ofício da B3 sobre medidas tomadas para endereçar uma ressalva nas demonstrações financeiras do URCA Prime Renda FII.\n\n**Resumo:** As demonstrações financeiras foram inicialmente emitidas com ressalvas em 12 de junho, mas após sanar os pontos questionados pela auditoria, as demonstrações foram reemitidas sem quaisquer qualificações em 19 de junho.\n\n**Trecho-chave:**\n\"As demonstrações financeiras de 31 de dezembro de 2025 foram emitidas em 12 de junho de 2026 com ressalvas, no entanto, os trabalhos da Administradora continuaram com o auditor com o objetivo de sanar os pontos presentes nas demonstrações financeiras, onde, após sanados, foram reemitidas em 19 de junho de 2026 sem quaisquer qualificações.\"\n\n### Comunicado ao Mercado (19/06/2026)\n**O que aconteceu:** O URCA Prime Renda FII comunicou a reapresentação das demonstrações financeiras referentes ao exercício encerrado em 31 de dezembro de 2025, sem ressalvas.\n\n**Resumo:** Após adoção de medidas adicionais de governança e conclusão dos procedimentos pendentes de auditoria, as demonstrações foram reemitidas sem quaisquer qualificações por parte dos auditores independentes.\n\n**Trecho-chave:**\n\"Após a adoção das medidas de governança então informadas, todos os pontos que ensejaram a qualificação foram integralmente saneados, possibilitando a reemissão do relatório dos auditores independentes sem ressalvas.\"\n\n### Assembleia AGO (29/06/2026)\n**O que aconteceu:** A Vórtx Distribuidora de Títulos e Valores Mobiliários LTDA convocou uma assembleia geral ordinária não presencial para aprovar as contas e demonstrações financeiras do exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia será realizada por meio de consulta formal, com prazo final para resposta dos cotistas até 28/07/2026. As contas e demonstrações financeiras serão consideradas automaticamente aprovadas se não houver manifestação contrária ou ressalvas dos auditores.\n\n**Trecho-chave:**\n\"A deliberação constante acima visa aprovar as Demonstrações Financeiras do Fundo, elaborada por auditor independente.\"\n\n### Fato Relevante (26/06/2026)\n**O que aconteceu:** A Vórtx Distribuidora de Títulos e Valores Mobiliários LTDA e a URCA Gestão de Recursos Ltda anunciaram uma nova emissão primária de cotas da 9ª série do URCA Prime Renda FII.\n\n**Resumo:** O coordenador líder da oferta será a MAX Capital Markets, com distribuição sob o regime de melhores esforços de colocação e registro automático de distribuição. A oferta será destinada exclusivamente a investidores profissionais no Brasil.\n\n**Trecho-chave:**\n\"A Oferta será feita no Brasil e destinada exclusivamente a investidores profissionais, nos termos do artigo 11 da Resolução CVM n.º\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 19.28
+  },
+  "parecer": {
+    "id": 1224564,
+    "data_entrega": "19/06/2026 11:38",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Urca Prime Renda Fundo de Investimento Imobiliário – FII em 31 de dezembro de 2025 e o desempenho de suas operações para o exercício findo na mesma data , de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de Inves"
+  }
+}

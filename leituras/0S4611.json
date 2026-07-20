@@ -1,0 +1,21 @@
+{
+  "ticker": "0S4611",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T03:19:30",
+  "comunicados": {
+    "ids": [
+      1224928,
+      1212122
+    ],
+    "datas": [
+      "19/06/2026",
+      "03/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### 19/06/2026\n**Apuração do resultado da Assembleia Geral Extraordinária**\nO Administrador apurou os votos proferidos e as procurações encaminhadas pelos cotistas do Fundo Itaú Log CP, referentes à Assembleia Geral Extraordinária realizada em 19 de junho de 2026. A assembleia tratou da aprovação de várias matérias relacionadas a transações imobiliárias e contratações com o Consultor e suas Pessoas Ligadas.\n\n**Resumo:**\nA assembleia deliberou sobre a possibilidade de aquisição e alienação de ativos imobiliários, além de autorizar a contratação do consultor para serviços condominiais. O processo seguirá os critérios de diligência estabelecidos no regulamento.\n\n*\"O Administrador apurou o resultado dos votos proferidos e das procurações encaminhadas pelos Cotistas, no âmbito da Assembleia.\"* (p. 1)\n\n### 03/06/2026\n**Edital de convocação para a Assembleia Geral Extraordinária**\nO Administrador convoca os cotistas do Fundo Itaú Log CP para participarem da assembleia geral extraordinária, que será realizada por meio de procedimento de consulta formal. A assembleia discutirá e votará sobre várias matérias relacionadas a transações imobiliárias e contratações com o Consultor.\n\n**Resumo:**\nO edital convoca os cotistas para deliberar sobre a possibilidade de aquisição e alienação de ativos imobiliários, bem como autorizar a contratação do consultor para serviços condominiais. O processo seguirá os critérios estabelecidos no regulamento.\n\n*\"INTRAG DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., com sede na Avenida Brigadeiro Faria Lima, n.º 3.500, Itaim Bibi, CEP 04538-132, na cidade de São Paulo, Estado de São Paulo, inscrita no CNPJ sob o n .º 62.418.140/0001 -31, habilitada para a administração de fundos de investimento conforme ato declaratório n.º 2.528, de 29 de julho de 1993, expedido pela Comissão de Valores Mobiliários (\"CVM\"), na qualidade de instituição administradora do ITAÚ LOG CP FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o n.º 66.362.379/0001-98 (\"Administrador\" e \"Fundo\"), em conformidade com o item 7 e respectivos subitens do regulamento do Fundo (\"Regulamento\"), convida os Srs. cotistas do Fundo (\"Cotistas\") para participarem da assembleia geral extraordinária (\"Assembleia\"), a qual será realizada por meio de procedimento de consulta formal (“Consulta Formal”),  a fim de deliberarem sobre as matéria constante da ordem do dia abaixo.\"* (p. 1)"
+  },
+  "modelo": "qwen2.5:14b"
+}

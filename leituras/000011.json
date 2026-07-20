@@ -1,0 +1,30 @@
+{
+  "ticker": "000011",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T03:22:05",
+  "comunicados": {
+    "ids": [
+      1203643,
+      1200502
+    ],
+    "datas": [
+      "26/05/2026",
+      "21/05/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Assembleia AGE - 25/05/2026\n\n**O QUE ACONTECEU:** O Fundo LWTC aprovou a realização da 3ª Emissão de Cotas.\n\n**RESUMO:** A assembleia, realizada remotamente no dia 25 de maio de 2026, deliberou sobre a emissão de até 450.000 novas cotas com valor total de R$450 milhões, sob o rito de registro automático de distribuição.\n\n**TRECHO-CHAVE:** \"Deliberar sobre: (I) A realização da 3ª (terceira) Emissão de Cotas da classe única do Fundo, composta por até 450.000 (quatrocentos e cinquenta mil) novas cotas (“Novas Cotas”), totalizando o montante de até R$450.000.000,00 (quatrocentos e cinquenta milhões de reais), a serem ofertadas sob o rito de registro automático de distribuição\" (p. 1).\n\n---\n\n### Assembleia AGE - 01/04/2026\n\n**O QUE ACONTECEU:** O Fundo LWTC ratificou a retenção de rendimentos no montante de R$3.945.802,75.\n\n**RESUMO:** Em assembleia realizada em 1º de abril de 2026, os cotistas do Fundo LWTC aprovaram sem ressalvas a retenção de rendimentos para custear despesas de manutenção e operação.\n\n**TRECHO-CHAVE:** \"Deliberar sobre: (I) A ratificação da retenção de rendimentos do Fundo, no montante de R$ 3.945.802,75 (três milhões, novecentos e quarenta e cinco mil, oitocentos e dois reais e setenta e cinco centavos), o que corresponde a 44,27% (quarenta e quatro inteiros e vinte e sete por cento) do resultado caixa do Fundo foi realizada pelo Administrador, com o intuito exclusivo de fazer frente à gastos de manutenção de custos do Fundo\" (p. 1)."
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1155033,
+    "data_entrega": "06/04/2026 21:45",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 202 5 e o desempenho de suas operações e seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos Fundos de Investimento Imobiliário, regulamen"
+  }
+}

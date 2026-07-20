@@ -1,0 +1,43 @@
+{
+  "ticker": "MCLG11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T07:43:08",
+  "relatorio": {
+    "id": 1226746,
+    "data_entrega": "23/06/2026 19:26",
+    "texto": "1. **Vacância:** Os ativos imobiliários do fundo possuem 100% de ocupação, sem vacância física ou financeira (p. 3).\n2. **Distribuição de Dividendos:** A distribuição referente ao mês de maio/26 foi de R$ 0,0735 por cota, com um dividend yield anualizado de 9% a.a., equivalente ao cupom pré-definido (p. 3).\n3. **Índice de Cobertura:** O índice de cobertura do MCLG11 no mês de maio/26 foi de 1,66x (p. 4).\n4. **Patrimônio Líquido:** O patrimônio líquido consolidado encerrou o mês de maio/26 em R$ 863,5 milhões (p. 4).\n5. **Subordinação:** A razão de subordinação corrente do MCLG11 é de 49,9% (p. 4).\n6. **Alavancagem:** O fundo não possui exposição a dívidas, sellers finance ou qualquer forma de alavancagem ao final do mês (p. 5).\n7. **Locatários Principais:** Os principais locatários são Casas Bahia e Ford, com contratos que vencem entre junho/30 e dezembro/33 (págs. 9-12).\n\n**O que observar em seguida:**\n1. Monitorar a evolução da distribuição de dividendos nos próximos meses.\n2. Verificar se há alterações na estrutura de subordinação ou alavancagem no próximo relatório mensal."
+  },
+  "comunicados": {
+    "ids": [
+      1179752,
+      1179751
+    ],
+    "datas": [
+      "05/05/2026",
+      "05/05/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral Ordinária (AGO) do MCLG11 realizada em 04/05/2026\n\n**O QUE ACONTECEU:** O Fundo Mauá Capital Logística Feeder FII aprovou as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31 de dezembro de 2025.\n\n**RESUMO:** A assembleia foi realizada de forma não presencial, com encerramento às 23:59h do dia 03/05/2026. Não houve comparecimento de cotistas, e as deliberações foram aprovadas conforme o artigo 71 da Instrução CVM 175/2022.\n\n**TRECHO-CHAVE:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025\" (p. 1).\n\n---\n\n**CONEXÃO COM O CONTEXTO:** A aprovação das demonstrações financeiras do exercício de 2025 é um indicador importante para a continuidade e transparência operacional do fundo, considerando seu patrimônio líquido atual de R$ 869,6M."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1151928,
+    "data_entrega": "31/03/2026 22:39",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe Única de Cotas do Mauá Capital Logística Feeder Fundo de Investimento Imobiliário – Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o período de 03 de janeiro a 31 d"
+  }
+}

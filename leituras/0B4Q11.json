@@ -1,0 +1,37 @@
+{
+  "ticker": "0B4Q11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T00:41:54",
+  "relatorio": {
+    "id": 1247397,
+    "data_entrega": "14/07/2026 16:26",
+    "texto": "1. **Mudança na carteira**: O Fundo adquiriu o CRI Vereda por R$ 1,89 milhão e vendeu cinco operações de crédito no total de R$ 14,85 milhões (p. 3).\n2. **Rendimento do mês**: O rendimento mensal foi de R$ 0,08 por cota, com um dividend yield (DY) de 0,89% e DY anualizado de 11,23% (p. 3).\n3. **Desempenho dos ativos**: As obras do Golden Dolphin estão 85% concluídas e as vendas alcançaram 88% das unidades (p. 6).\n4. **Cenário econômico**: A inflação medida pelo IPCA subiu para 0,58% em maio de 2026, acima do nível de maio de 2025 e ultrapassando a meta estabelecida (p. 4).\n5. **Política monetária**: O Copom decidiu por um corte de 0,25 ponto percentual na taxa Selic para 14,25% ao ano em junho de 2026 (p. 4).\n6. **Dívida do governo**: A Dívida Bruta do Governo Geral como percentual do PIB aumentou para 80,19% no mês de abril de 2026 (p. 4).\n7. **Vendas consolidadas**: No mês, foram comercializadas 217 frações resultando em R$ 7,39 milhões de VGV vendido, com destaque para o Golden Dolphin e Pipa Privilege Ocean (p. 7).\n\n**O que observar em seguida:**\n- Desenvolvimento das obras do loteamento Ararinha Azul.\n- Resultados futuros da venda dos ativos adquiridos recentemente."
+  },
+  "comunicados": {
+    "ids": [
+      955618,
+      1179186,
+      1179184
+    ],
+    "datas": [
+      "29/07/2025",
+      "04/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral Ordinária do FII TG REAL ESTATE (04/05/2026)\n**O que aconteceu:** A assembleia aprovou as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao exercício social de 2025.\n\n**Resumo:** A assembleia foi realizada não presencialmente até às 23:59h do dia 03/05/2026. Como nenhum cotista compareceu, o quórum seguiu a Instrução CVM 175/2022.\n\n**Trecho-chave:** \"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025\" (p. 1).\n\n---\n\n### Comunicado ao Mercado do FII TG REAL ESTATE (29/07/2025)\n**O que aconteceu:** O regulamento do fundo foi adaptado à Resolução CVM nº 175, sem alterações que dependam de deliberação dos cotistas.\n\n**Resumo:** A XP Corretora informou a adequação do regulamento ao documento legal da CVM. Os cotistas podem consultar o regulamento vigente no site da CVM.\n\n**Trecho-chave:** \"A adaptação do regulamento do Fundo a Resolução da CVM nº 175, de 23 de dezembro de 2022\" (p. 1)."
+  },
+  "parecer": {
+    "id": 1152266,
+    "data_entrega": "01/04/2026 00:49",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião , as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário TG Real Estate em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data , de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos"
+  }
+}

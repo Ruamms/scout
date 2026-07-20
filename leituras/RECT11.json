@@ -1,0 +1,58 @@
+{
+  "ticker": "RECT11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T10:07:49",
+  "relatorio": {
+    "id": 1241629,
+    "data_entrega": "07/07/2026 19:29",
+    "texto": "- **Venda de ativos**: O fundo vendeu quatro imóveis recentemente, sendo eles o Parque Ana Costa, Canopus Corporate, Torre Rio Claro e Av. Europa, 884 (p. 2).\n- **Dividendos distribuídos**: Em junho de 2026, foram distribuídos dividendos no valor de R$ 3.844.572, correspondendo a um rendimento por cota de R$ 0,4500 (p. 2).\n- **Taxa de ocupação**: A taxa de ocupação do portfólio é de 92,79%, com áreas vagas representando 7,2% da ABL total (p. 6).\n- **Passivos e CRIs**: O fundo possui obrigações por aquisições de imóveis no valor de R$ 143.826.918, incluindo CRI Barra 1, CRI Barra 2 e CRI Evolution (p. 9).\n- **Locação temporária**: O fundo celebrou o 15º aditivo ao contrato de locação com a Elo Participações Ltda., resultando em um acréscimo de 1,037% na taxa de ocupação (p. 3).\n\nO que observar em seguida:\n- Movimentações futuras relacionadas às vendas dos ativos mencionados.\n- Desenvolvimento da negociação das áreas vagas e impacto nas taxas de vacância e ocupação."
+  },
+  "comunicados": {
+    "ids": [
+      1200286,
+      1177622,
+      1071161,
+      1085140,
+      1052887,
+      1212104,
+      1173388
+    ],
+    "datas": [
+      "20/05/2026",
+      "30/04/2026",
+      "26/12/2025",
+      "15/01/2026",
+      "03/12/2025",
+      "03/06/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 20/05/2026\n**O que aconteceu:** Locatária do Canopus Corporate Alphaville comunicou interesse em descontinuar locação.\n- A taxa de vacância do portfólio passará a ser de 9,59% após a devolução. Não haverá impacto imediato na distribuição de rendimentos.\n\n*\"Com a referida devolução, a taxa de vacância do portfólio do Fundo passará a ser de 9,59% (nove inteiros e cinquenta e nove centésimos por cento).\"*\n\n### 30/04/2026\n**O que aconteceu:** Novo contrato de locação foi celebrado com Pacific International Lines.\n- A taxa de vacância do portfólio permanece em 8,25%.\n\n*\"Essa locação não implica alteração na taxa de vacância do portfólio do Fundo, atualmente em 8,25% (oito inteiros e vinte e cinco centésimos por cento), assim como não implica em impacto imediato na distribuição de rendimento do Fundo.\"*\n\n### 15/01/2026\n**O que aconteceu:** Contratou formador de mercado para as cotas do fundo.\n- A contratação visa fomentar a liquidez e contribuir para a formação eficiente de preços.\n\n*\"A contratação do formador de mercado não representa, em qualquer hipótese, garantia de liquidez, de valorização ou de rentabilidade das cotas do Fundo.\"*\n\n### 03/12/2025\n**O que aconteceu:** Consultora de investimento decidiu estender retenção da remuneração.\n- A estimativa é distribuir rendimentos mensais de aproximadamente R$ 0,45 por cota.\n\n*\"Em razão dessa retenção, o Fundo estima distribuir rendimentos mensais de aproximadamente R$ 0,45 (quarenta e cinco centavos) por cota.\"*\n\n### 26/12/2025\n**O que aconteceu:** Venda de imóvel não residencial em São Paulo.\n- A taxa de vacância do portfólio passará a ser de 8,25%.\n\n*\"Com essa venda, a taxa de vacância do portfólio do Fundo será de 8,25% (oito inteiros e vinte e cinco centésimos por cento).\"*\n\n### 03/06/2026\n**O que aconteceu:** Assembleia Geral Ordinária realizada por meio de consulta formal.\n- A assembleia aprovou as Demonstrações Financeiras do exercício social findo em 31 de dezembro de 2025.\n\n*\"Após análises das repostas dos Cotistas do Fundo à Consulta Formal, foram apurados os seguintes resultados: APROVADO REPROVADO ABSTENÇÃO ABSTENÇÃO POR CONFLITO 1,22% 0,18% 0,89% 0,98%\"*\n\n### 29/04/2026\n**O que aconteceu:** Edital de convocação da Assembleia Geral Ordinária.\n- Convocou os cotistas para aprovar as Demonstrações Financeiras do exercício social findo em 31 de dezembro de 2025.\n\n*\"A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., na qualidade de instituição administradora do FUNDO DE INVESTIMENTO IMOBILIÁRIO – FII REC RENDA IMOBILIÁRIA - RESPONSABILIDADE LIMITADA, convida os cotistas do Fundo (“Cotistas”), por meio desta, a participar da Assembleia Geral Ordinária de Cotistas do Fundo (\"AGO\"), a ser realizada de forma não presencial, por meio de coleta de voto a distância.\"*"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 35.86
+  },
+  "parecer": {
+    "id": 1145946,
+    "data_entrega": "26/03/2026 21:21",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário – FII Rec Renda imobiliária - responsabilidade limitada em 31 de dezembro de 2025, o desempenho de suas operações e seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábei"
+  }
+}

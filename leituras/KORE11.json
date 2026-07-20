@@ -1,0 +1,45 @@
+{
+  "ticker": "KORE11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T03:59:05",
+  "relatorio": {
+    "id": 1238339,
+    "data_entrega": "02/07/2026 18:02",
+    "texto": "1. **Reavaliação anual do portfólio**: O fundo realizou uma reavaliação anual que resultou em um aumento de aproximadamente 1% no valor dos imóveis frente ao valor contábil registrado ao final de maio de 2026 (p. 1).\n   \n2. **Vacância do portfólio**: A vacância física do fundo é de 4,52%, a vacância financeira é de 4,08% e a vacância financeira ajustada pelas carências previstas nos contratos de locação é de 4,65%. Não houve movimentações na carteira de inquilinos (p. 1).\n\n3. **Distribuição mensal**: O valor da distribuição mensal referente ao mês de junho/2026 será de R$ 0,60 por cota, com pagamento em 14/07/2026 (p. 1).\n   \n4. **Valor do mercado e patrimônio líquido**: O valor total de mercado do fundo é de R$ 612.631.250,00 e o patrimônio líquido é de R$ 1.031.424.202,66 (p. 1).\n\n5. **Taxa de administração**: A taxa de administração do fundo é equivalente a 1,06% ao ano sobre o valor de mercado das cotas e engloba não somente a remuneração do administrador mas também do gestor, banco escriturador e custodiante (p. 1).\n\n6. **Volume transacionado**: Os volumes transacionados representaram um total de 734.635 cotas negociadas, equivalentes a aproximadamente 7,63% do total de cotas do fundo com um volume médio diário de R$ 2.227.861 e um volume médio por negócio de R$ 615,12 (p. 2).\n\n7. **Prazo médio dos contratos**: O prazo médio dos contratos firmados pelo fundo é de 8,50 anos, com o prazo médio remanescente em 3,03 anos (p. 2).\n\n8. **Evolução patrimonial**: Em junho/2026, o valor patrimonial das cotas apresentou uma variação líquida de 0,94%, passando de R$ 106,17 para R$ 107,16 (p. 5).\n\n**O que observar em seguida:**\n- A evolução da vacância nos próximos meses.\n- O desempenho do valor de mercado das cotas em relação ao patrimônio líquido no próximo relatório."
+  },
+  "comunicados": {
+    "ids": [
+      1073735,
+      1048971,
+      1013273
+    ],
+    "datas": [
+      "30/12/2025",
+      "27/11/2025",
+      "14/10/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 30/12/2025\n**Redução temporária da Taxa Global do Fundo**\nA taxa global do fundo será reduzida para 0,98% ao ano durante o período de 31/12/2025 (inclusive), com a renúncia temporária pelo Gestor de parte de sua parcela. Após essa data, a taxa voltará a ser cobrada integralmente em 1,20% ao ano.\n\n*\"Durante o período de 31/12/2025, (inclusive), o Gestor renunciará, temporariamente, a parte de sua parcela da Taxa Global. Exclusivamente nesse intervalo, a Taxa Global será equivalente a 0,98% (zero vírgula noventa e oito por cento) ao ano.\"* (p. 1)\n\n### 27/11/2025\n**Aprovação das Demonstrações Contábeis do Fundo**\nOs cotistas aprovaram as demonstrações contábeis do fundo referentes ao exercício social findo em 30 de junho de 2025.\n\n*\"MATÉRIA DELIBERADA: aprovadas as Demonstrações Contábeis do Fundo, devidamente acompanhadas do relatório dos auditores independentes, documentos disponibilizados aos cotistas nos termos da regulamentação em vigor, relativos ao exercício social findo em 30.06.2025.\"* (p. 1)\n\n### 14/10/2025\n**Consulta Formal Eletrônica para Aprovação das Demonstrações Financeiras**\nA administradora do fundo submeteu à consulta formal eletrônica dos cotistas a aprovação das demonstrações financeiras, notas explicativas e parecer dos auditores independentes referentes ao exercício social findo em 30 de junho de 2025.\n\n*\"i) Aprovar as demonstrações financeiras, notas explicativas e parecer dos auditores independentes, relativas ao exercício social findo em 30 de junho de 2025.\"* (p. 1)\n\n**Conexão com o contexto:** As assembleias e consultas realizadas estão relacionadas à aprovação das demonstrações financeiras do fundo para o período até junho de 2025, conforme indicado nos dados recentes sobre a performance do fundo."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 66.7
+  },
+  "parecer": {
+    "id": 994952,
+    "data_entrega": "22/09/2025 09:52",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

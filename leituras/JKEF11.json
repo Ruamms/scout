@@ -1,0 +1,36 @@
+{
+  "ticker": "JKEF11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T06:22:10",
+  "comunicados": {
+    "ids": [
+      1118254,
+      835227,
+      1226798,
+      1110504
+    ],
+    "datas": [
+      "19/02/2026",
+      "10/02/2025",
+      "23/06/2026",
+      "12/02/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Assembleia AGE (23/06/2026)\n**O que aconteceu:** A assembleia aprovou a não distribuição semestral de rendimentos para reforço de caixa.\n\n**Resumo:** Os cotistas da Classe Única do JKEF11 decidiram, em 19 de junho de 2026, aprovar a não distribuição de 95% dos rendimentos referentes ao período de janeiro a junho de 2026 para reforçar o caixa e honrar dívidas.\n\n**Trecho-chave:**\n\"Foi deliberado e aprovado pelos Cotistas representantes da totalidade das cotas em circulação da Classe, sem quaisquer ressalvas, a não distribuição semestral de 95% (noventa e cinco por cento) de rendimento da Classe, conforme exigido pela Lei 8.668 de junho de 1993, referente ao período de 01/01/2026 até 30/06/2026 para fins de reforço de caixa da Classe.\"\n\n### Assembleia AGE (12/02/2026)\n**O que aconteceu:** A assembleia aprovou a não distribuição semestral de rendimentos para reforço de caixa.\n\n**Resumo:** Os cotistas decidiram, em 17 de dezembro de 2025, aprovar a não distribuição de 95% dos rendimentos referentes ao período de julho a dezembro de 2025 para reforçar o caixa e honrar dívidas.\n\n**Trecho-chave:**\n\"Foi deliberado e aprovado pelos Cotistas representantes da totalidade das cotas em circulação da Classe, sem quaisquer ressalvas, a não distribuição semestral de 95% (noventa e cinco por cento) de rendimento da Classe, conforme exigido pela Lei 8.668 de junho de 1993, referente ao período de 01/07/2025 até 31/12/2025 para fins de reforço de caixa da Classe.\"\n\n### Fato Relevante (19/02/2026)\n**O que aconteceu:** A empresa Cushman & Wakefield realizou a reavaliação dos ativos do fundo em dezembro de 2025, resultando em uma variação positiva de 27,45% no valor do patrimônio líquido.\n\n**Resumo:** O Fundo JKEF11 comunicou que os ativos foram reavaliados a valor justo por Cushman & Wakefield, com um aumento de 27,45% em seu patrimônio líquido na Data-Base.\n\n**Trecho-chave:**\n\"os ativos do fundo foram reavaliados a valor justo em dezembro de 2025 pela empresa especializada Cushman & Wakefield, resultando em uma variação positiva de 27,45% no valor do patrimônio líquido do Fundo em sua Data-Base.\"\n\n### Fato Relevante (10/02/2025)\n**O que aconteceu:** A empresa Cushman & Wakefield realizou a reavaliação dos ativos do fundo em dezembro de 2024, resultando em uma variação positiva de 34,05% no valor do patrimônio líquido.\n\n**Resumo:** O Fundo JKEF11 comunicou que os ativos foram reavaliados a valor justo por Cushman & Wakefield, com um aumento de 22,49% em relação ao valor contábil dos ativos e uma variação positiva de 34,05% no patrimônio líquido.\n\n**Trecho-chave:**\n\"os ativos do fundo foram reavaliados a valor justo em dezembro de 2024, resultando em valor 22,49% superior ao atual valor contábil dos ativos, o que representa uma variação positiva de 34,05% no valor do patrimônio líquido do fundo.\"\n\n**Conexão com indicadores:** A reavaliação positiva em dezembro de 2024 contribuiu para a alta do patrimônio líquido e do valor dos ativos ao longo do ano, refletindo na variação anual de +43,22% no valor do ativo e +43,40% no patrimônio líquido."
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1153953,
+    "data_entrega": "02/04/2026 21:58",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário JK E - FII em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos Fundos "
+  }
+}

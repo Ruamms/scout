@@ -1,0 +1,33 @@
+{
+  "ticker": "0EHW11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T08:17:15",
+  "comunicados": {
+    "ids": [
+      778702,
+      1129727,
+      1100677
+    ],
+    "datas": [
+      "13/11/2024",
+      "05/03/2026",
+      "03/02/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### Fato Relevante - Substituição da Administradora (13/11/2024)\n**O que aconteceu:** A substituição da atual administradora do Fundo Torino por uma nova instituição.\n**Resumo:** A Assembleia Geral Extraordinária de Cotistas, realizada em 8 de novembro de 2024, aprovou a troca da Singulare Corretora pela Vórtex Distribuidora como administradora do fundo. A mudança entra em vigor no dia 26 de novembro de 2024.\n**Trecho-chave:** \"foi aprovada, conforme Assembleia Geral Extraordinária de Cotistas realizada em 08 de novembro de 2024, a substituição da atual Administradora do Fundo, SINGULARE CORRETORA DE TITULOS E VALORES MOBILIÁRIOS S.A., qualificada acima, pela VÓRTX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.\" (p. 1)\n\n### Assembleia Geral Extraordinária - Aprovação de Alteração no Regulamento (03/02/2026)\n**O que aconteceu:** A assembleia aprovou uma alteração no regulamento do fundo, aumentando o valor da Taxa de Consultoria Imobiliária.\n**Resumo:** Os cotistas presentes na Assembleia Especial Extraordinária realizada em 20 de janeiro de 2026 decidiram por unanimidade aprovar a modificação do artigo 47 do regulamento, estabelecendo uma remuneração mensal fixa de R$15.000,00 ao Consultor Imobiliário.\n**Trecho-chave:** \"Aprovar a alteração do artigo 47 do Regulamento, para aumentar o valor da Taxa de Consultoria Imobiliária, passando a redação a vigorar nos seguintes termos, bem como, na forma do Anexo I a esta ata;\" (p. 1)\n\n### Assembleia Geral Ordinária - Aprovação das Contas e Demonstrações Contábeis (05/03/2026)\n**O que aconteceu:** Os cotistas aprovaram as contas e demonstrações contábeis do Fundo referentes ao exercício social findo em 31 de dezembro de 2025.\n**Resumo:** A consulta formal realizada entre os cotistas resultou na aprovação das contas e demonstrações financeiras auditadas do Torino FII, conforme disponível nos sites da administradora. \n**Trecho-chave:** \"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31 de dezembro de 2025, devidamente auditadas.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1018097,
+    "data_entrega": "21/10/2025 18:00",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente,emtodososaspectosrelevantes,aposiçãopatrimonialefinanceira do Torino Fundo de Investimento Imobiliário Responsabilidade Limitada em 30 de junhode2025eodesempenhodesuasoperaçõesparaoperíodode26denovembro de 2024 (transferência de administração) a 30 de junho de 2025, de acordo com as práticas contábeis adotadas "
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "ticker": "0RFX11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T10:40:17",
+  "comunicados": {
+    "ids": [
+      1200306,
+      1200301
+    ],
+    "datas": [
+      "20/05/2026",
+      "20/05/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "=== ASSEMBLEIA AGE ENTREGUE EM 20/05/2026 ===\n\n**O QUE ACONTECEU:** Foi realizada uma assembleia geral extraordinária não presencial para deliberar sobre a aprovação de operações e alterações no regulamento do fundo.\n\n**RESUMO:** Os cotistas da Classe Única do JS Crédito Estruturado II Fundo de Investimento Imobiliário votaram pela aprovação de várias decisões, incluindo a realização de operações potencialmente conflitantes com a administradora e a alteração no regulamento para permitir a entrega de ativos-alvo em caso de liquidação da classe.\n\n**TRECHOS-CHAVE:**\n\"Deliberar:  \n(i) pela aprovação da realização de operações pela Classe na aquisição, venda, subscrição, negociação, alienação, cessão e/ou permuta, em relação a operações compromissadas, cotas de fundos de investimento (inclusive cotas de classes/fundos de investimento imobiliário), certificados de recebíveis imobiliários ou em operações em geral de Ativos e/ou direitos de subscrição, em situação de potencial conflito de interesse.\" (p. 1)\n\n\"5.3.1. CONFORME APROVADO NA ASSEMBLEIA ORIGINÁRIA DA CLASSE, SERÁ PERMITIDA A ENTREGA DE ATIVOS -ALVO QUANDO DA LIQUIDAÇÃO DA CLASSE, OBSERVADOS OS PROCEDIMENTOS PREVISTOS NO ITEM 8.3. E SEGUINTES ABAIXO.\" (p. 2)\n\n**CONEXÃO COM O CONTEXTO:** As decisões tomadas na assembleia permitem maior flexibilidade nas operações do fundo e alteram o regulamento para incluir novas disposições sobre a liquidação da classe, refletindo as necessidades atuais de gestão e investimento."
+  },
+  "modelo": "qwen2.5:14b"
+}

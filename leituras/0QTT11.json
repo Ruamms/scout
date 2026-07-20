@@ -1,0 +1,21 @@
+{
+  "ticker": "0QTT11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T06:15:15",
+  "comunicados": {
+    "ids": [
+      1227652,
+      1211611
+    ],
+    "datas": [
+      "25/06/2026",
+      "03/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Assembleia Geral Extraordinária (AGE) realizada em 24/06/2026\n\n**O QUE ACONTECEU:** O Fundo LCP PREFIXADO II MASTER aprovou uma alteração no Regulamento para prever o pagamento da taxa de performance à gestora.\n\n**RESUMO:** Os cotistas do fundo, por meio de votos eletrônicos, aprovaram sem restrições ou ressalvas a inclusão de um novo item na seção \"Taxas e Outros Encargos Específicos das Cotas Subclasse B\", estabelecendo uma taxa de performance de 20% sobre a rentabilidade das cotas B.\n\n**TRECHO-CHAVE:** \n\"I. Além da remuneração que lhe é devida nos termos do Anexo I do Regulamento, a Gestora fará jus a uma taxa de performance equivalente a 20% (vinte por cento) da rentabilidade das Cotas B, incidente sobre os valores pagos aos Cotistas de Cotas B uma sobretaxa de 15,50% (quinze inteiros e cinquenta centésimos por cento) ao ano, apurada no primeiro Dia Útil subsequente aos meses de junho e dezembro, considerando a base de 252 (duzentos e cinquenta e dois) Dias Úteis, incidente sobre o valor de integralização das Cotas B, desde a data da respectiva integralização, a ser paga semestralmente, até o último dia útil do semestre subsequente, pelo método ativo (“Taxa de Performance”).” (p. 1)\n\n---\n\n### Consulta Formal para Assembleia Geral Extraordinária realizada em 03/06/2026\n\n**O QUE ACONTECEU:** Os cotistas receberam uma consulta formal para deliberar sobre a alteração no Regulamento do Fundo LCP PREFIXADO II MASTER.\n\n**RESUMO:** A XP INVESTIMENTOS CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A. convocou os cotistas para votar sobre a inclusão de uma taxa de performance à gestora no Regulamento do Fundo.\n\n**TRECHO-CHAVE:** \n\"A XP INVESTIMENTOS CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A., com sede na cidade do Rio de Janeiro, Estado do Rio de Janeiro, na Praia de Botafogo, nº 501, Bloco I, Botafogo, CEP 22290-210, inscrita no CNPJ sob o nº 02.332.886/0001 -04, devidamente autorizada a administrar recursos de terceiros conforme Ato Declaratório CVM nº 10.460, de 29 de junho de 2009, na qualidade de administradora fiduciária (“Administradora”) do Fundo, vem, por meio da presente, consultar V.Sa. (“Cotista”) para que manifeste eletronicamente seu voto na Assembleia Geral Extraordinária de Cotistas do Fundo (\"AGC\"), cujas deliberações serão tomadas de forma não presencial, por meio da presente Consulta Formal, nos termos do Regulamento do Fundo.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:14b"
+}

@@ -1,0 +1,49 @@
+{
+  "ticker": "FEXC11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T04:39:13",
+  "relatorio": {
+    "id": 1236360,
+    "data_entrega": "30/06/2026 21:15",
+    "texto": "1. **Compra de ativo**: O fundo realizou a aquisição do CRI BTLC no mercado primário à taxa de CDI + 1,15%, com um saldo MTM de R$ 5,9 bilhões (página 4).\n2. **Distribuição mensal**: A distribuição de rendimentos referente ao mês de maio foi realizada em 08/06/2026 no valor de R$ 0,105 por cota (página 5).\n3. **Vacância e inadimplência comentadas**: Não foram mencionados detalhes específicos sobre vacância ou inadimplência nos ativos da carteira (não há citação direta em relatório).\n4. **Riscos citados pela gestão**: O cenário macroeconômico desafiador, com inflação elevada e incertezas fiscais domésticas, foi mencionado como um risco potencial para o fundo (página 2).\n5. **Alavancagem/dívidas**: Não foram mencionados detalhes específicos sobre alavancagem ou dívidas da carteira de ativos do fundo (não há citação direta em relatório).\n6. **Eventos societários**: Não houve menções a eventos societários significativos no período relatado (não há citação direta em relatório).\n\n**O que observar em seguida:**\n1. Desenvolvimento futuro das taxas de juros e inflação.\n2. Resultados da alocação adicional em ativos táticos e estratégicos."
+  },
+  "comunicados": {
+    "ids": [
+      1189817,
+      1189760,
+      1189757,
+      1186628
+    ],
+    "datas": [
+      "13/05/2026",
+      "13/05/2026",
+      "13/05/2026",
+      "12/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO (13/05/2026)\n**O que aconteceu:** A BTG Pactual Serviços Financeiros S.A. DTVM atualizou a forma de divulgação da remuneração dos Prestadores de Serviços Essenciais do Fundo.\n\n**Resumo:** A administração do fundo FEXC11 (BTG PACTUAL CRÉDITO IMOBILIÁRIO - FUNDO DE CRI) atualizou o Anexo I e o Regulamento para adequar-se à nova forma de divulgação estabelecida pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE, que substituiu o \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas). Não houve alteração nos valores pagos pelos cotistas.\n\n**Trecho-chave:**\n*\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"* (p. 1)\n\n### ASSEMBLEIA AGO (13/05/2026)\n**O que aconteceu:** A assembleia geral dos cotistas do fundo FEXC11 aprovou as alterações na forma de divulgação da remuneração e o novo Anexo I e Regulamento.\n\n**Resumo:** Os cotistas do BTG PACTUAL CRÉDITO IMOBILIÁRIO - FUNDO DE CRI aprovaram por meio de votação, a atualização no formato de divulgação da remuneração dos Prestadores de Serviços Essenciais e o novo Anexo I e Regulamento.\n\n**Trecho-chave:**\n*\"Aprovar o novo Anexo I e Regulamento consolidados, tendo em vista as modificações havidas, na forma do documento anexo, e que se encontra arquivado e à disposição dos cotistas na sede e dependências da BTG Pactual Serviços Financeiros S.A. DTVM.\"* (p. 1)\n\n### ASSEMBLEIA AGO (12/05/2026)\n**O que aconteceu:** A assembleia geral de cotistas do fundo FEXC11 aprovou as demonstrações financeiras auditadas referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas do BTG PACTUAL CRÉDITO IMOBILIÁRIO - FUNDO DE CRI realizaram uma assembleia geral via manifestação de voto, aprovando as demonstrações financeiras auditadas referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n*\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"* (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 83.5
+  },
+  "parecer": {
+    "id": 1151724,
+    "data_entrega": "31/03/2026 21:34",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual Crédito Imobiliário - Fundo de CRI - FI Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa o exercício findo nessa data, de acordo com as práticas contábeis "
+  }
+}
