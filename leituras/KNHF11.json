@@ -1,0 +1,45 @@
+{
+  "ticker": "KNHF11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T15:51:01",
+  "relatorio": {
+    "id": 1246010,
+    "data_entrega": "13/07/2026 18:08",
+    "texto": "1. **Novas Aquisições de CRI**: O fundo realizou novas aquisições de CRI da Creditas e Galleria em junho, conforme indicado na tabela detalhada do relatório (página 2).\n   \n2. **Alocação Atualizada**: Ao final de junho, o fundo tinha alocações de 56% em CRI, 10,5% em cotas de FII, 30,5% em Imóveis, 1,2% em Ações e 4,7% em LCI (página 1).\n\n3. **Desempenho das Posições em FIIs**: As posições em FIIs do fundo apresentaram um retorno ponderado de -0,72% em junho, superior ao desempenho do IFIX que foi de -1,21%. O fundo realizou compras e vendas em diversos segmentos (página 3).\n\n4. **Operações Compromissadas Reversas**: O fundo possui operações compromissadas reversas lastreadas em CRI com exposição atual de aproximadamente 9% do PL, considerada adequada pela gestão (página 5).\n\n5. **Dividendos Distribuídos**: Em junho, o fundo distribuiu R$1,00 por cota, representando uma rentabilidade isenta de IR de 0,99%, com base na cota média de ingresso de R$101,18 (página 7).\n\n6. **Inflação e Juros**: A inflação medida pelo IPCA permanece pressionada, com a projeção mais recente indicando uma taxa de 5,33% para 2026, enquanto o BCB reduziu a Selic para 14,25%, mas sinalizou manutenção de juros restritivos (página 4).\n\n7. **Cotação e Deságio**: A cota do fundo encerrou junho negociando em R$95,66 por cota, representando um deságio de 3,23% em relação à cota patrimonial (página 6).\n\n8. **Provisões de Valores a Pagar**: O fundo tem valores a pagar referentes às aquisições do Edifício São Luiz e Shoppings Uberaba no montante de R$230,2 milhões, equivalentes a 7,6% do PL (página 8).\n\n**O que observar em seguida:**\n1. **Desempenho futuro das posições em FIIs**: Acompanhar o desempenho dos segmentos residencial e híbrido devido ao impacto da inflação.\n2. **Monitoramento de operações compromissadas reversas**: Observar a evolução dessas operações dada a exposição atual de 9% do PL."
+  },
+  "comunicados": {
+    "ids": [
+      958603,
+      1048956,
+      1013233
+    ],
+    "datas": [
+      "01/08/2025",
+      "27/11/2025",
+      "14/10/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 01/08/2025\n**O Gestor do KNHF11 renuncia temporariamente a parte da taxa de administração**\nO gestor, KINEA INVESTIMENTOS LTDA., decidiu reduzir temporariamente sua parcela da Taxa de Administração do Fundo para mitigar os efeitos do cenário macroeconômico atual. A taxa será equivalente a 1,152% ao ano sobre o patrimônio líquido do fundo entre 04/08/2025 e 31/01/2026.\n*\"Durante este período, a Taxa de Administração prevista no regulamento do Fundo (“Regulamento”) será equivalente a 1,152% (um inteiro e cento e cinquenta e dois milésimos por cento) ao ano sobre o patrimônio líquido do Fundo, calculada na forma do Regulamento.\"* (p. 1)\n\n### 27/11/2025\n**Assembleia Geral Ordinária aprova as demonstrações contábeis de 30/06/2025**\nA assembleia aprovou as Demonstrações Contábeis do Fundo, acompanhadas pelo relatório dos auditores independentes.\n*\"MATÉRIA DELIBERADA: aprovadas as Demonstrações Contábeis do Fundo, devidamente acompanhadas do relatório dos auditores independentes, documentos disponibilizados aos cotistas nos termos da regulamentação em vigor, relativos ao exercício social findo em 30.06.2025.\"* (p. 1)\n\n### 14/10/2025\n**Consulta formal eletrônica para aprovar demonstrações financeiras de 30/06/2025**\nA administradora INTRAG DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. convocou consulta formal eletrônica aos cotistas para aprovar as demonstrações financeiras do exercício findo em 30 de junho de 2025.\n*\"A INTRAG DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., inscrita no CNPJ sob o nº 62.418.140/0001-31, com sede na Avenida Brigadeiro Faria Lima, 3500, 4º Andar – Itaim Bibi, São Paulo – SP, na qualidade de Administradora do KINEA HEDGE FUND FUNDO DE INVESTIMENTO IMOBILIÁRIO – RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 42.754.342/0001-47, vem submeter à consulta formal eletrônica a seguinte matéria:\"* (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 96.5
+  },
+  "parecer": {
+    "id": 994948,
+    "data_entrega": "22/09/2025 09:47",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

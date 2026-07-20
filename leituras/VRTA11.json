@@ -1,0 +1,48 @@
+{
+  "ticker": "VRTA11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T23:37:54",
+  "relatorio": {
+    "id": 1224128,
+    "data_entrega": "18/06/2026 16:42",
+    "texto": "1. **Aquisições e Desinvestimentos**: O fundo realizou compras de R$ 3,6 milhões em CRIs (CRI Summus e CRI Evoke) e vendeu aproximadamente R$ 160 mil em cotas do FII SNME11 para gerar caixa e reduzir a exposição a fundos imobiliários. [página 4]\n2. **Caixa e Reservas**: O VRTA11 possui R$ 50,4 milhões em caixa (3,8% do patrimônio líquido) para dividendos e novas alocações de CRIs. A reserva por cota é de R$ 1,04, com objetivo de complementar os dividendos mensais. [página 4]\n3. **Rendimentos Distribuídos**: O fundo distribuiu R$ 0,85 por cota em maio e estima manter rendimentos entre R$ 0,85 e R$ 0,95 por cota no segundo semestre de 2026. [página 4]\n4. **Cenário Macroeconômico**: O conflito no Oriente Médio impactou o preço do petróleo, levando a um cenário adverso para ativos emergentes e penalizando mercados com exposição a \"valor\", como o brasileiro. [página 5]\n5. **Inflação e CRIs**: A inflação continua positiva (IPCA de abril foi de 0,67%), impactando os CRIs indexados ao IPCA que têm defasagem entre 2 e 3 meses. [página 4]\n6. **Compromissadas Reversa**: O saldo total contratado de compromissada reversa é de R$ 85,70 milhões com vencimento em junho e julho de 2026 e remuneração de CDI + 0,70% a.a.. [página 4]\n7. **Desempenho do Fundo**: O preço da cota no mercado é R$ 76,85, com dividend yield de 1,11%, indicando que a cota está sendo negociada com desconto em relação ao valor dos ativos (P/VP de 0,92x). [página 4]\n8. **Alocação em CRIs**: A maior parte da carteira do fundo é composta por CRIs indexados ao IPCA e CDI, com prazos médios de quatro anos e taxas médias ponderadas de 10,21% (IPCA + 5,57%) e 13,32% (IPCA + 8,55%). [página 9]\n\n**O que observar em seguida:**\n- A evolução do preço das cotações no mercado secundário.\n- O progresso da desalocação do FII SNME11 e a alocação de novos CRIs."
+  },
+  "comunicados": {
+    "ids": [
+      1247523,
+      910154,
+      1181172,
+      1154128
+    ],
+    "datas": [
+      "14/07/2026",
+      "22/05/2025",
+      "06/05/2026",
+      "06/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Fato relevante de 14/07/2026\n\n**O que aconteceu:** Contratação de formador de mercado.\n\n**Resumo:** O Fundo Veritá contratou a Suno Desenvolvimento Ltda. para prestar serviços de formador de mercado por um período de 12 meses.\n\n**Trecho-chave:**\n\"contratou a SUNO DESENVOLVIMENTO LTDA., com sede na cidade e estado de São Paulo, para prestação de serviços de Formador de Mercado com vigência de 12 (doze) meses.\"\n\n### Fato relevante de 22/05/2025\n\n**O que aconteceu:** Propositura de pedido de recuperação judicial por empresa devedora.\n\n**Resumo:** A Fragnani Empreendimentos e Participações S.A. propôs um pedido de recuperação judicial, afetando os Certificados de Recebíveis Imobiliários (CRI) da Habitasec Securitizadora S.A., nos quais o Fundo Veritá possui 4,17% do seu Patrimônio Líquido alocado. O Fundo informa que está acompanhando a situação e adotará medidas para proteger os interesses dos cotistas.\n\n**Trecho-chave:**\n\"Tomamos conhecimento acerca da propositura de Pedido de Recuperação Judicial, com pedido de tutela de urgência formulado pela Fragnani Empreendimentos e Participações S.A., inscrita sob o CNPJ nº 03.803.039/0001-35 e outras 7 (sete) empresas do grupo, incluindo a Indústria Cerâmica Fragnani Ltda.\"\n\n### Assembleia AGO de 06/04/2026\n\n**O que aconteceu:** Convocação para assembleia geral ordinária.\n\n**Resumo:** Os cotistas foram convocados para participar da assembleia geral ordinária, realizada por meio de consulta formal não presencial, para deliberar sobre as demonstrações financeiras do Fundo referentes ao exercício social encerrado em dezembro/2025. A apuração dos votos ocorrerá no dia 6 de maio de 2026 às 16h.\n\n**Trecho-chave:**\n\"Pela presente vimos convocá-lo para participar da Assembleia Geral de Cotistas do Fator Verità Fundo de Investimento Imobiliário – FII, a ser realizada de forma não presencial, por meio de Consulta Formal, cuja apuração ocorrerá no dia 06 de maio de 2026 às 16h00.\"\n\n### Assembleia AGO de 06/05/2026\n\n**O que aconteceu:** Aprovação automática das demonstrações financeiras.\n\n**Resumo:** Não houve a presença de cotistas na assembleia, e conforme o §3º do artigo 71 da Resolução CVM nº 175/22, as demonstrações contábeis sem ressalvas nas quais não há opinião modificada podem ser consideradas automaticamente aprovadas. Portanto, foram aprovadas as demonstrações financeiras referentes ao exercício social encerrado em dezembro de 2025.\n\n**Trecho-chave:**\n\"em virtude da ausência de ressalvas nas demonstrações contábeis do Fundo em seu último exercício, ficam aprovadas as demonstrações financeiras do Fundo relativas ao exercício social encerrado em 31/12/2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 74.0
+  },
+  "parecer": {
+    "id": 1148233,
+    "data_entrega": "30/03/2026 16:36",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fator Veritá Fundo de Investimento Imobiliário em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fund"
+  }
+}

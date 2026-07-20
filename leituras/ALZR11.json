@@ -1,0 +1,48 @@
+{
+  "ticker": "ALZR11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T16:53:39",
+  "relatorio": {
+    "id": 1226664,
+    "data_entrega": "23/06/2026 18:17",
+    "texto": "1. **Reajuste de Aluguel**: Em maio, ocorreu reajuste de aluguel referente ao ativo Scala do Fundo, corrigido pelo IPCA acumulado dos últimos 12 meses (p. 3).\n2. **Assembleia Geral Extraordinária**: No dia 29/05/2026, foi realizada uma AGE para deliberar sobre matérias importantes que visam a modernização do regulamento do Fundo e ampliar a flexibilidade operacional (p. 3).\n3. **Venda de Ativos**: O ativo Santillana foi alienado por R$ 53 milhões, gerando um incremento médio de aproximadamente R$ 0,003/cota ao mês nos próximos 39 meses (p. 6).\n4. **Aquisição de Ativos**: O Fundo já desembolsou R$ 29,5 milhões para a aquisição do ativo Fleury e ainda há um Earn-Out condicional no valor de até R$ 7,5 milhões que poderá ser pago em até 12 meses após o fechamento da transação (p. 5).\n5. **Fluxo de Caixa**: A posição de caixa e valores mobiliários era de R$ 412 milhões ao término do mês, representando 18% do Patrimônio Líquido (p. 7).\n6. **Renovação Contratual**: Em março, o Fundo concluiu a renovação do contrato de locação com a Atento, que passou para modalidade típica com vencimento em 2031 e novo aluguel mensal de R$ 350 mil (p. 13).\n7. **Distribuição de Resultados**: No mês de maio, o Resultado Distribuído foi de R$ 0,0836/cota, que foram pagos no dia 25/06 para a base de investidores posicionada em 18/06 (p. 3).\n8. **Liquidez e Base de Cotistas**: A base de cotistas do Fundo alcançou 201 mil cotistas ao final de maio, com mais de 1,3 mil novos investidores ingressando apenas neste mês (p. 12).\n\n**O que observar em seguida:**\n- Progresso nas aquisições pendentes e pagamentos relacionados.\n- Desempenho financeiro dos próximos meses conforme projeção do Guidance."
+  },
+  "comunicados": {
+    "ids": [
+      1226658,
+      1161951,
+      1153261,
+      1214348,
+      1199663,
+      1208104,
+      1189700
+    ],
+    "datas": [
+      "23/06/2026",
+      "14/04/2026",
+      "02/04/2026",
+      "08/06/2026",
+      "19/05/2026",
+      "29/05/2026",
+      "13/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### 23/06/2026 - Contrato de Formador de Mercado\n\n**O que aconteceu:** O Fundo ALZR11 firmou contratos de formador de mercado com a XP e Suno para aumentar a liquidez das cotas negociadas na B3.\n\n**Resumo:** A XP e a Suno foram contratadas como formadores de mercado, objetivando fomentar a negociação de 164.512.251 cotas do Fundo no mercado organizado da B3 a partir de 24/06/2026.\n\n**Trecho-chave:** \"A XP e a Suno denominadas individualmente “Formador de Mercado” exercerão a partir do dia 24 de junho de 2026 a negociação de Cotas da classe do Fundo.\"\n\n---\n\n### 14/04/2026 - Aquisição Definitiva de Imóvel\n\n**O que aconteceu:** O Fundo concluiu a aquisição definitiva de um imóvel por meio da SPE, com o pagamento final de R$ 29,5 milhões.\n\n**Resumo:** O ALZR11 adquiriu integralmente as cotas da SPE detentora do Imóvel Built-to-Suit (BTS) locado para o Grupo Fleury S.A., totalizando um desembolso de aproximadamente R$ 29,5 milhões.\n\n**Trecho-chave:** \"Desta forma, o Fundo concluiu, nesta data, a aquisição definitiva da totalidade das cotas da Sociedade de Propósito Específico (“ SPE”) detentora dos direitos reais sobre o Imóvel e, assim, se tornará proprietário, de forma indireta, do Imóvel pelo montante total de aproximadamente R$ 29,5 milhões desembolsados.\"\n\n---\n\n### 08/06/2026 - Programa de Recompra de Cotas\n\n**O que aconteceu:** O Fundo anunciou o início de um programa de recompra de cotas no mercado da B3.\n\n**Resumo:** A BTG Pactual e a Alianza Gestão de Recursos LTDA informaram aos cotistas sobre a intenção do ALZR11 em realizar a recompra de até 10% das cotas emitidas pelo Fundo entre 22/06/2026 e 21/06/2027.\n\n**Trecho-chave:** \"O volume de recompras não poderá ultrapassar, em um período de 12 (doze) meses, 10% (dez por cento) do total das Cotas do Fundo nesta data, de forma que poderão ser recompradas 16.451.225 cotas durante o Período de Recompra.\"\n\n---\n\n### 19/05/2026 - Retratação de Cotistas\n\n**O que aconteceu:** O Fundo divulgou a retratação das cotas subscritas na 8ª emissão, com um total de 117.009 cotas sendo canceladas.\n\n**Resumo:** A operacionalização e o pagamento da retratação foram realizados no dia 22/05/2026, resultando em uma colocação parcial das Novas Cotas.\n\n**Trecho-chave:** \"Em razão da colocação parcial das Novas Cotas, a operacionalização e o pagamento da retratação de 117.009 (cento e dezessete mil e nove) Novas Cotas condicionadas durante o Período de Exercício do Direito de Preferência ocorrerá no dia 22 de maio de 2026.\"\n\n---\n\n### 29/05/2026 - Assembleia Geral Extraordinária\n\n**O que aconteceu:** A assembleia aprovou várias matérias relacionadas à modernização do regulamento e ampliação da flexibilidade operacional.\n\n**Resumo:** Os cotistas deliberaram sobre atualizações na Política de Investimentos, aumento do capital autorizado, recompra de cotas, constituição de ônus pelo Fundo e regras para ativos com potencial conflito de interesse. Todas as matérias foram aprovadas.\n\n**Trecho-chave:** \"A inclusão da Taxa Global em substituição às taxas segregadas devidas aos prestadores de serviços do Fundo, de modo que a seção 10.1 do Anexo I do Regulamento.\"\n\n---\n\n### 13/05/2026 - Assembleia Geral Extraordinária\n\n**O que aconteceu:** A assembleia discutiu e votou sobre a modernização geral do regulamento, simplificação da Política de Investimentos e ampliação da capacidade de captura de oportunidades.\n\n**Resumo:** O Fundo propôs atualizações na Política de Investimento para refletir as melhores práticas de mercado e permitir que o ALZR continue seu crescimento sustentável. As matérias incluíram a simplificação dos critérios de investimento, aumento do capital autorizado e regras para ativos com potencial conflito de interesse.\n\n**Trecho-chave:** \"A proposta de modernização consiste em 3 frentes principais: Política de Investimentos, Crescimento do Fundo e Ativos com Potencial Conflito de Interesses.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 9.97
+  }
+}

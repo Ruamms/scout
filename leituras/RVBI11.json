@@ -1,0 +1,58 @@
+{
+  "ticker": "RVBI11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T23:05:12",
+  "relatorio": {
+    "id": 1224976,
+    "data_entrega": "19/06/2026 18:39",
+    "texto": "- **Mudança na Carteira**: O fundo reduziu gradualmente sua exposição aos FIIs listados e aumentou a alocação em CRIs diretos. Em maio, não houve novas alocações significativas de ativos, mas o foco foi na estruturação de operações de crédito que serão incorporadas nos próximos meses (página 4).\n\n- **Exposição aos CRIs**: A carteira atualmente possui uma exposição de 21,5% em CRIs diretos, com a expectativa de alcançar entre 40% e 50% até o final do ano (página 4).\n\n- **Distribuição de Dividendos**: O dividendo mantém-se em R$ 0,55/cota, conforme comunicado anteriormente. A reserva acumulada foi reforçada para R$ 0,20/cota, permitindo que o fundo sustente esse patamar com tranquilidade (página 4).\n\n- **Resultado Distribuível**: O resultado distribuível atingiu R$ 0,57/cota em maio, sustentado pela carteira de CRIs, que contribuiu novamente com R$ 0,23/cota de juros e correção monetária (página 4).\n\n- **Risco Associado**: A gestão menciona a possibilidade de prejuízos pontuais adicionais na venda de FIIs ao longo dos próximos meses como um custo tático de curto prazo, justificável para fortalecer a capacidade de geração de caixa do fundo (página 5).\n\n- **Alocação em CRIs**: A gestão mantém a projeção de alcançar uma alocação total entre 40% e 50% em crédito até o final do ano, visando aumentar a recorrência dos resultados e estabilidade dos rendimentos ao cotista (página 5).\n\n- **Reestruturação de CRIs**: O CRI Cortel II está passando por reestruturação para prever termos que incluem carência no pagamento de amortização, reforço de garantias e limitações em distribuição de dividendos enquanto a relação Dívida/EBITDA não for saudável (página 15).\n\n- **Operação Adimplente**: A operação do CRI Medabil está adimplente atualmente, com os valores do seguro sendo utilizados para pagamento do CRI conforme previsto nos documentos da operação (página 16).\n\n**O que observar em seguida:**\n- Progresso na alocação de CRIs e impactos no resultado distribuível.\n- Desenvolvimento das reestruturações de CRIs mencionadas."
+  },
+  "comunicados": {
+    "ids": [
+      1025001,
+      1024744,
+      1022808,
+      968478,
+      960186,
+      1045701,
+      1018603
+    ],
+    "datas": [
+      "31/10/2025",
+      "30/10/2025",
+      "28/10/2025",
+      "13/08/2025",
+      "05/08/2025",
+      "24/11/2025",
+      "22/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Fato Relevante - 31/10/2025\n\n**O que aconteceu:** O leilão das frações de cotas resultantes da liquidação dos Fundos Liquidados foi concluído.\n\n**Resumo:** Após o encerramento do leilão em 28 de outubro, os cotistas receberão reembolsos proporcionalmente às suas frações negociadas no dia 6 de novembro. O valor por cota foi estabelecido em R$59,43.\n\n**Trecho-chave:**\n\"O Leilão apurou o valor aproximado de R$ 59,43 (cinquenta e nove reais e quarenta e três centavos) por cota, totalizando R$ 1.117.082,53 (um milhão, cento e dezessete mil, oitenta e dois reais e cinquenta e três centavos).\"\n\n---\n\n### Fato Relevante - 30/10/2025\n\n**O que aconteceu:** O leilão das frações de cotas resultantes da liquidação dos Fundos Liquidados foi concluído.\n\n**Resumo:** Após o encerramento do leilão em 28 de outubro, os cotistas receberão reembolsos proporcionalmente às suas frações negociadas no dia 4 de novembro. O valor por cota foi estabelecido em R$59,43.\n\n**Trecho-chave:**\n\"O Leilão apurou o valor aproximado de R$ 59,43 (cinquenta e nove reais e quarenta e três centavos) por cota, totalizando R$ 1.117.082,53 (um milhão, cento e dezessete mil, oitenta e dois reais e cinquenta e três centavos).\"\n\n---\n\n### Fato Relevante - 28/10/2025\n\n**O que aconteceu:** O Administrador iniciou os procedimentos de liquidação dos Fundos Liquidados.\n\n**Resumo:** Os cotistas receberam recibos de cota do Fundo entre 7 e 14 de outubro, convertidos em cotas no dia 15. Frações decorrentes da relação de troca foram agrupadas para leilão na B3 em 28 de outubro.\n\n**Trecho-chave:**\n\"O Administrador informa que os trâmites para a realização do Leilão foram iniciados e que esse será realizado em 28 de outubro de 2025.\"\n\n---\n\n### Comunicado ao Mercado - 13/08/2025\n\n**O que aconteceu:** O cronograma da oferta pública de distribuição foi alterado.\n\n**Resumo:** Não houve formalização de documentação por investidores para adesão à Oferta, não sendo aberto prazo para desistência. As etapas do cronograma foram ajustadas conforme descrito no documento.\n\n**Trecho-chave:**\n\"Considerando que, até a presente data, não houve a formalização de qualquer documentação por investidores para adesão à Oferta, não será aberto prazo para manifestação da desistência dos investidores na Oferta.\"\n\n---\n\n### Comunicado ao Mercado - 05/08/2025\n\n**O que aconteceu:** O cronograma da oferta pública de distribuição foi alterado.\n\n**Resumo:** Não houve formalização de documentação por investidores para adesão à Oferta, não sendo aberto prazo para desistência. As etapas do cronograma foram ajustadas conforme descrito no documento.\n\n**Trecho-chave:**\n\"Considerando que, até a presente data, não houve a formalização de qualquer documentação por investidores para adesão à Oferta, não será aberto prazo para manifestação da desistência dos investidores na Oferta.\"\n\n---\n\n### Assembleia AGO - 24/11/2025\n\n**O que aconteceu:** A Consulta Formal aos Cotistas foi realizada e as demonstrações financeiras do Fundo foram aprovadas.\n\n**Resumo:** Os cotistas votaram sobre as demonstrações financeiras do exercício social findo em 30 de junho de 2025. As demonstrações foram aprovadas por aproximadamente 2,69% das cotas emitidas.\n\n**Trecho-chave:**\n\"Diante do exposto, a Administradora declara que as demonstrações financeiras do Fundo, relativas ao exercício social findo em 30 de junho de 2025, foram APROVADAS, sem quaisquer ressalvas, por cotistas desimpedidos e aptos a deliberar.\"\n\n---\n\n### Assembleia AGO - 22/10/2025\n\n**O que aconteceu:** O edital de convocação para a Assembleia Geral Ordinária foi publicado.\n\n**Resumo:** A assembleia será realizada por meio de coleta de voto à distância, com votos sendo apurados no dia 24 de novembro. Os cotistas poderão votar sobre as demonstrações financeiras do exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., com sede na cidade de São Paulo, Estado de São Paulo, na Rua Alves Guimarães, n.º 1.212, bairro Pinheiros, CEP 05410-002, inscrita no Cadastro Nacional de Pessoas Jurídicas do Ministério da Economia (\"CNPJ\") sob o nº 13.486.793/0001-42, habilitada para administração de fundos de investimento conforme ato declaratório expedido pela Comissão de Valores Mobiliários (\"CVM\") nº 11.784, de 30 de junho de 2011 na qualidade de instituição administradora (\"Administradora\") do PATRIA SECURITIES FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 35.507.457/0001-71 (\"Fundo\").\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda"
+    ],
+    "cota": 59.9
+  },
+  "parecer": {
+    "id": 1000283,
+    "data_entrega": "29/09/2025 10:38",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do VBI Reits Multiestratégia Fundo de Investimento Imobiliário - Responsabilidade Limitada em 30 de junho de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis"
+  }
+}

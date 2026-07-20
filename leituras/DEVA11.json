@@ -1,0 +1,40 @@
+{
+  "ticker": "DEVA11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T23:18:02",
+  "relatorio": {
+    "id": 1242359,
+    "data_entrega": "08/07/2026 18:31",
+    "texto": "- **Dividendos Distribuídos**: O DEVA11 distribuiu R$ 4,21 milhões em rendimentos referentes ao mês de abril, com pagamento de R$ 0,30 por cota. Isso resultou em um dividend yield de 1,30%, equivalente a 119,61% do CDI (sem considerar o Imposto de Renda) e 140,72% do CDI com ajuste para IR. [página 2]\n\n- **Desmembramento de Matrículas**: No mês de abril, foi protocolado o pedido de desmembramento das matrículas do Edifício Milano, localizado em Franca-SP, referente ao CRI Chemin. Em maio, houve a efetivação do desmembramento, permitindo individualização das matrículas e início do repasse por financiamento bancário. [página 2]\n\n- **Monitoramento de Ativos**: A gestão monitora mensalmente a evolução operacional e financeira das empresas no portfólio, buscando acompanhar a performance dos ativos e antecipar riscos. Além disso, mantém-se próxima às securitizadoras para esforços de recuperação e regularização de ativos inadimplentes. [página 2]\n\n- **Indicadores de Risco**: A carteira de CRIs do DEVA11 tem uma taxa média ponderada de IPCA + 10,66% ao ano. O percentual da carteira em dia é de 25,1%, enquanto 65,2% está em carência de juros e 9,7% está inadimplente. [página 4]\n\n- **Diversificação Geográfica**: A diversificação geográfica do portfólio inclui Sudeste (38,5%), Sul (21,5%) e Centro-Oeste (16,3%). Os estados com maior presença são São Paulo (16,3%), Rio Grande do Sul (21,5%) e Minas Gerais (9,4%). [página 6]\n\n- **Progresso de Obras e Vendas**: A média geral da carteira é de 77% em vendas e 91% de obras concluídas. Alguns exemplos específicos incluem o CRI RR Solaris com 100% das obras concluídas e 97% das vendas realizadas, e o CRI Loteamento Goiás com 100% de obras concluídas e 96% de vendas. [página 7]\n\nO que observar em seguida:\n- A evolução do percentual de ativos em dia versus aqueles em carência ou inadimplentes.\n- O progresso das vendas e conclusão de obras nos projetos imobiliários da carteira."
+  },
+  "comunicados": {
+    "ids": [
+      1012238
+    ],
+    "datas": [
+      "13/10/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado"
+    ],
+    "texto": "**13/10/2025**\n\n**Identificação de inconsistência na distribuição de resultados**\n\nA administradora do fundo DEVANT RECEBÍVEIS IMOBILIÁRIOS FII identificou uma discrepância no valor divulgado da distribuição de rendimentos, com um saldo a maior de R$ 6.131 mil reais em relação ao efetivamente pago, devido à consideração adicional do mês de janeiro/2024 na apresentação das demonstrações financeiras (p. 1).\n\n\"Na elaboração das demonstrações financeiras de 31 de dezembro de 2024, foi identificado a seguinte inconsistência na apresentação: I. Divulgação de um saldo a maior de R$ 6.131 mil reais quando comparado ao efetivamente distribuído, motivado pela consideração adicional do mês de janeiro/2024 na apresentação (sendo de competência dezembro/2023).\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 18.2
+  },
+  "parecer": {
+    "id": 875009,
+    "data_entrega": "07/04/2025 18:14",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, exceto pelos possíveis efeitos que possam decorrer do assunto descrito na seção intitulada “Base para opinião com ressalva”, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Devant Recebíveis Imobiliários Fundo de Investimento Imobiliário em 31 de dezembro de 2024, o desempenho de suas oper"
+  }
+}

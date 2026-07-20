@@ -1,0 +1,36 @@
+{
+  "ticker": "MCLO11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-19T17:46:43",
+  "comunicados": {
+    "ids": [
+      938390,
+      836099,
+      1178964,
+      1178963
+    ],
+    "datas": [
+      "02/07/2025",
+      "11/02/2025",
+      "04/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 02/07/2025\n**Reavaliação positiva dos ativos do Fundo**\nA reavaliação realizada pela empresa Colliers resultou em um impacto positivo de 38,13% no valor da cota de fechamento do dia 30/05/2025. Esse evento afetou exclusivamente a subclasse Cotas B, com uma valorização de 109,98%, enquanto as Cotas A não sofreram impacto.\n\n*\"Esta Reavaliação ocasionou um impacto positivo de 38,13% (trinta e oito vírgula treze por cento) no valor da cota de fechamento do dia 30/05/2025 em relação a cota do dia 29/05/2025.\"* (p. 1)\n\n### 11/02/2025\n**Finalização da aquisição de quatro galpões logísticos**\nO Fundo concluiu a aquisição de quatro galpões logísticos por um valor total de R$ 1,07 bilhão. O preço médio por m² foi de R$ 1.785,56 e o cap rate da transação é de aproximadamente 11% ao ano.\n\n*\"O Fundo finalizou o processo de aquisição de quatro galpões logísticos com o pagamento do preço dequisição e transferência da escritura em 30 de janeiro de 2024.\"* (p. 1)\n\n### 04/05/2026\n**Aprovação das Demonstrações Financeiras**\nOs cotistas aprovaram, sem restrições ou ressalvas, as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31/12/2025.\n\n*\"Os cotistas aprovaram, sem quaisquer restrições ou ressalvas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025,\"* (p. 1)\n\n### 04/05/2026\n**Aprovação das Demonstrações Financeiras**\nOs cotistas aprovaram, sem restrições ou ressalvas, as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31/12/2025.\n\n*\"Os cotistas aprovaram, sem quaisquer restrições ou ressalvas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025,\"* (p. 1)"
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1149171,
+    "data_entrega": "30/03/2026 21:24",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe Única de Cotas do Mauá Capital Logística Fundo de Investimento Imobiliário - Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o período de 06 de janeiro a 31 de dezem"
+  }
+}

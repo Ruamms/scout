@@ -1,0 +1,45 @@
+{
+  "ticker": "HGCR11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T19:51:52",
+  "relatorio": {
+    "id": 1246185,
+    "data_entrega": "13/07/2026 19:36",
+    "texto": "1. **Mudanças na carteira**: O fundo aumentou sua exposição em dois ativos já detidos: CRI Union (R$ 16 milhões) e CRI JFL Lorena (R$ 3 milhões). Além disso, realizou vendas de R$ 5,6 milhões do CRI Globo, R$ 2 milhões no CRI GPA RBVA e R$ 21,9 milhões do CRI Almeida Júnior. Houve também o resgate antecipado do CRI WTC (R$ 8 milhões). [página 5]\n\n2. **Resultado distribuído**: O fundo apresentou um resultado distribuível de R$ 1,10/cota em junho e manteve a distribuição dos rendimentos no valor de R$ 0,95/cota, a ser pago aos cotistas no dia 14 de julho. [página 5]\n\n3. **Alocação estratégica**: O fundo mantém uma alocação estratégica em fundos imobiliários (FIIs), representando 8,4% do patrimônio líquido e composta por 9 FIIs. [página 10]\n\n4. **Rendimentos acima do resultado financeiro**: Os rendimentos declarados no trimestre foram R$ 284,5 milhões contra um resultado financeiro líquido de R$ 188,4 milhões, com uma reserva acumulada de R$ 40,4 milhões não cobrindo o excesso. [sem página específica]\n\n5. **Taxa de administração e performance**: A taxa de administração total é de 0,8% ao ano sobre o valor de mercado do fundo e a taxa de performance é de 20% sobre o excedente de 110% da média do CDI. [página 2]\n\n6. **Compromissos**: O Fundo terminou o mês sem operações compromissadas. [página 5]\n\n7. **Movimentação de ativos**: Houve a recompra do papel Almeida Júnior após a venda, visando destravar saldo de inflação acumulada no papel em montante equivalente a R$ 0,13/cota. [página 6]\n\n8. **Distribuição geográfica e segmentos**: A carteira é diversificada com exposição principal nos segmentos de varejo (24%), logística (18%) e shopping centers (12%). Geograficamente, há maior exposição a São Paulo (mais de 41% da carteira). [página 9]\n\n**O que observar em seguida:**\n- Movimentações futuras na carteira de ativos.\n- Atualização dos resultados distribuíveis e reservas acumuladas."
+  },
+  "comunicados": {
+    "ids": [
+      1204289,
+      1168455,
+      1168454
+    ],
+    "datas": [
+      "26/05/2026",
+      "23/04/2026",
+      "23/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 26/05/2026\n**O que aconteceu:** Alteração do regulamento para transparência das taxas de prestadores de serviços.\n- O administrador aprovou uma alteração no regulamento do fundo, conforme as diretrizes do Ofício-Circular-Conjunto nº 1/2025/CVM/SIN/SSE, para disponibilizar a segregação das taxas devidas aos prestadores de serviço na Plataforma de Transparência de Taxas da ANBIMA.\n- \"Em atenção às diretrizes do Ofício-Circular-Conjunto nº 1/2025/CVM/SIN/SSE, o Administrador aprovou, por Instrumento Particular do Administrador, a alteração do regulamento do Fundo para incluir que a segregação das taxas devidas aos prestadores de serviços do Fundo passa a ser disponibilizada na Plataforma de Transparência de Taxas no endereço: https://data.anbima.com.br/busca/transparencia-de-taxas-de-fundos.\"\n\n### 23/04/2026\n**O que aconteceu:** Convocação para assembleia geral ordinária.\n- O Banco Genial S.A. convocou os cotistas para a Assembleia Geral Ordinária (AGO) em 25 de maio de 2026, onde será discutida e votada a aprovação das demonstrações financeiras do exercício social findo em 31 de dezembro de 2025.\n- \"O Administrador propõe a aprovação das matérias da Ordem do Dia. Ademais, o Administrador informa que está à disposição para sanar eventuais dúvidas por meio dos canais de atendimento disponibilizados no Edital de Convocação da Consulta Formal.\"\n\n### 23/04/2026\n**O que aconteceu:** Consulta formal de voto para AGO.\n- Os cotistas foram convidados a votar eletronicamente na Assembleia Geral Ordinária (AGO) até às 12 horas do dia 25 de maio de 2026, referente à aprovação das demonstrações financeiras e notas explicativas do exercício social findo em 31 de dezembro de 2025.\n- \"O Cotista poderá declarar seu voto por meio de plataforma de voto eletrônico específica (“Cuore”). Na data de 25 de maio de 2026 será encaminhado um e-mail para cada Cotista, conforme e-mail previamente cadastrado, com o link de acesso à plataforma.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 93.94
+  },
+  "parecer": {
+    "id": 1151566,
+    "data_entrega": "31/03/2026 20:35",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Pátria Recebíveis Imobiliários – Fundo de Investimento Imobiliário – Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas"
+  }
+}

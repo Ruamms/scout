@@ -1,0 +1,52 @@
+{
+  "ticker": "VCJR11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T22:16:01",
+  "relatorio": {
+    "id": 1246530,
+    "data_entrega": "14/07/2026 09:44",
+    "texto": "- **Mudanças na carteira**: O fundo realizou aquisições e vendas de ativos. Compraram R$ 27 milhões do CRI Moreias II, com prazo atualizado até dezembro de 2028, e venderam o CRI UNACORP e CRI UNACORP SUB., no valor total de R$ 15,2 milhões (p. [4]).\n\n- **Resultado distribuível**: O fundo apresentou um resultado distribuível de R$ 1,18/cota em junho, que foi utilizado para distribuir rendimentos aos cotistas no valor de R$ 1,25/cota, com redução da reserva acumulada (p. [4]).\n\n- **Reservas acumuladas**: A reserva acumulada do fundo foi reduzida de R$ 0,86/cota em maio para R$ 0,80/cota ao final de junho (p. [4]).\n\n- **Operações compromissadas**: O Fundo não contava com operações compromissadas no mês de junho (p. [5]).\n\n- **Eventos societários**: Não foram mencionados eventos significativos relacionados a assembleias ou mudanças na estrutura societária do fundo além das aprovações normais de CRIs (p. [16]).\n\n- **Riscos citados pela gestão**: A gestão destacou que o processo de reestruturação dos fundos de crédito imobiliário high grade sob gestão está em andamento, com a realização de ajustes adicionais nas provisões para perdas pontuais (p. [6]).\n\n- **Consolidação estratégica**: A gestão menciona a estratégia de consolidação entre os fundos PCIP, VCJR, RBRR e RPRI, que compartilham características semelhantes como alocação em CRIs high grade indexados ao IPCA (p. [6]).\n\n- **Alavancagem/dívidas**: O relatório não menciona especificamente a alavancagem ou dívidas do fundo, focando mais nas operações de CRI e FII (p. [5]).\n\nO que observar em seguida:\n1. Progresso na consolidação estratégica entre os fundos mencionados.\n2. Novas atualizações sobre a reestruturação dos CRIs e impactos nos resultados futuros."
+  },
+  "comunicados": {
+    "ids": [
+      943786,
+      922179,
+      1101926,
+      1049020,
+      1013086
+    ],
+    "datas": [
+      "10/07/2025",
+      "11/06/2025",
+      "04/02/2026",
+      "27/11/2025",
+      "14/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Fato Relevante - 10/07/2025\n\n**O que aconteceu:** O Gestor do VECTIS JUROS REAL FUNDO DE INVESTIMENTO IMOBILIÁRIO foi adquirido pelo Patria VBI Securities.\n\n**Resumo:** A aquisição da totalidade das quotas do Gestor, anunciada em 10 de junho de 2025, foi concluída após superar todas as condições suspensivas estabelecidas no Contrato de Venda e Compra. O Patria Real Estate assumirá o gerenciamento do fundo com mais de 50 profissionais.\n\n**Trecho-chave:**\n\"Em continuidade ao Fato Relevante divulgado em 11 de junho de 2025, no dia 01 de julho, foram superadas todas as condições suspensivas dispostas no Contrato de Venda e Compra de Quotas e Outras Avenças, celebrado em 10 de junho de 2025, referente à aquisição da totalidade das quotas do Gestor. Assim o Gestor passa a ser controlado, diretamente pelo Patria VBI Securities e gerido pelo time de real estate do grupo Patria, liderado por Rodrigo Abbud, sócio e CEO da estratégia no Brasil.\" (p. 1)\n\n---\n\n### Fato Relevante - 11/06/2025\n\n**O que aconteceu:** O Gestor do VECTIS JUROS REAL FUNDO DE INVESTIMENTO IMOBILIÁRIO foi adquirido pelo Patria VBI Securities.\n\n**Resumo:** A transação de aquisição da totalidade das quotas do Gestor, celebrada em 10 de junho de 2025, está sujeita a condições suspensivas. Após o fechamento, o Patria Real Estate assumirá o gerenciamento com mais de R$ 25 bilhões sob gestão.\n\n**Trecho-chave:**\n\"Em 10 de junho de 2025, a sociedade PATRIA VBI SECURITIES LTDA., inscrita no CNPJ sob o nº 17.054.901/0001-69, celebrou o Contrato de Venda e Compra de Quotas e Outras Avenças referente à aquisição da totalidade das quotas do Gestor (“Transação”); A conclusão desta Transação depende do cumprimento de determinadas condições suspensivas comuns a este tipo de operação.\" (p. 1)\n\n---\n\n### Comunicado ao Mercado - 04/02/2026\n\n**O que aconteceu:** O Fundo passará a divulgar informações sobre remuneração na Plataforma ANBIMA de Transparência de Taxas.\n\n**Resumo:** A partir de 31 de março de 2026, as informações de remuneração do Fundo serão divulgadas exclusivamente através da Plataforma ANBIMA. \n\n**Trecho-chave:**\n\"A partir de 31 de março de 2026, as informações de remuneração do Fundo, incluindo a abertura de taxas e as condições aplicáveis, estarão disponíveis exclusivamente disponíveis na Ferramenta ANBIMA.\" (p. 1)\n\n---\n\n### Assembleia AGO - 27/11/2025\n\n**O que aconteceu:** A assembleia geral ordinária do Fundo aprovou as demonstrações contábeis e o relatório dos auditores independentes referentes ao exercício social findo em 30 de junho de 2025.\n\n**Resumo:** Não houve necessidade de enviar resumo das decisões tomadas na assembleia, pois todos os cotistas estavam presentes.\n\n---\n\n### Assembleia AGO - 14/10/2025\n\n**O que aconteceu:** A Administração do Fundo submeteu à consulta formal eletrônica dos cotistas a aprovação das demonstrações financeiras e notas explicativas referentes ao exercício social findo em 30 de junho de 2025.\n\n**Resumo:** Os documentos estão disponíveis para consulta no site da administradora. A manifestação sobre esta consulta pode ser realizada até o dia 27 de novembro de 2025."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 72.9
+  },
+  "parecer": {
+    "id": 1002209,
+    "data_entrega": "30/09/2025 12:30",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Vectis Juros Real Fundo de Investimento Imobiliário Responsabilidade Limitada em 30 de junho de 202 5 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "ticker": "BBPO11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T18:32:03",
+  "relatorio": {
+    "id": 1241380,
+    "data_entrega": "07/07/2026 18:34",
+    "texto": "1. **Venda da Agência Toledo:** O fundo vendeu a agência de Toledo em janeiro com um cap rate de 8,4%, gerando um lucro não recorrente de R$0,20 por cota (p. 19).\n   \n2. **Aquisição do Day Hospital Santo André e Hortifruti:** O fundo adquiriu o Day Hospital Santo André em dezembro/25 através da aquisição das cotas do FII Bluerock One, com um cap rate de 10,44%. Também adquiriu o imóvel do Hortifruti Botafogo com um cap rate de 10,6% (p. 19).\n\n3. **Vacância:** A vacância física e financeira dos ativos variou entre 2,7% a 16,8%, com destaque para os ativos AG. Carijos, AG. Ipiranga-SP, CSL Curitiba, AG. Cinelândia, AG. São José Rio Preto SP, AG. PC. XV Novembro/BESC e AG. Praça Rui Barbosa-Bauru (p. 15).\n\n4. **Obras e Manutenção:** O fundo realizou investimentos de aproximadamente R$64 milhões para modernização e manutenção do portfólio, com foco em climatização, elevadores, impermeabilização e adequações gerais (p. 25).\n\n5. **Regularização Imobiliária:** Em 2025, o fundo concluiu a regularização de mais três matrículas, totalizando 50 imóveis com matrícula regularizada, representando cerca de 89% do portfólio (p. 26).\n\n6. **Contratos de Locação:** O fundo adquiriu ativos com contratos típicos e atípicos que prolongam o prazo dos contratos até 2037, diversificando os meses de reajuste por inflação (p. 16).\n\n7. **Resultado Financeiro vs Distribuição de Rendimentos:** O fundo distribuiu um rendimento de R$1,05/cota em maio, gerando um saldo de resultado não distribuído de R$0,49/cota (p. 8).\n\n8. **Alavancagem e Dívidas:** A dívida do fundo é de R$24,9 MM referente ao CRI adquirido indiretamente através da aquisição do FII Bluerock (p. 12).\n\n**O que observar em seguida:**\n- Monitorar o progresso das vendas pendentes e os impactos nas taxas de ocupação.\n- Acompanhar as atualizações sobre a regularização dos imóveis restantes."
+  },
+  "comunicados": {
+    "ids": [
+      1223548,
+      1100885,
+      1084701,
+      1195825,
+      1195820
+    ],
+    "datas": [
+      "17/06/2026",
+      "04/02/2026",
+      "15/01/2026",
+      "15/05/2026",
+      "15/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### 17/06/2026\n**O que aconteceu:** Venda da Agência Florianópolis.\n- A Bem Distribuidora comunicou a venda do imóvel localizado na Praça XV de Novembro, 321 – Centro, Florianópolis/SC por R$ 37.822.220,00, com pagamento em cinco parcelas (p. 1).\n  \n### 04/02/2026\n**O que aconteceu:** Notificação do Banco do Brasil sobre rescisão antecipada de contratos de locação.\n- O Fundo recebeu notificações do Banco do Brasil para rescindir três contratos de locação, totalizando aproximadamente 4,7% da receita atual (p. 1).\n\n### 15/01/2026\n**O que aconteceu:** Venda da Agência Toledo.\n- A Bem Distribuidora comunicou a venda do imóvel localizado na Rua 7 de Setembro, 1209 - Centro, em Toledo/PR por R$ 13.000.000,00 (p. 1).\n\n### 15/05/2026\n**O que aconteceu:** Assembleia Geral Extraordinária aprovou nova emissão de cotas.\n- A assembleia aprovou a realização de uma nova emissão de cotas no montante de até R$ 500.000.000,00, com um lote adicional equivalente a até 100% das Novas Cotas inicialmente ofertadas (p. 2)."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 96.75
+  },
+  "parecer": {
+    "id": 1001187,
+    "data_entrega": "29/09/2025 18:18",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos fundos de investimento imobiliários."
+  }
+}

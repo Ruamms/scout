@@ -1,0 +1,51 @@
+{
+  "ticker": "VILG11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T18:20:10",
+  "relatorio": {
+    "id": 1241557,
+    "data_entrega": "07/07/2026 19:17",
+    "texto": "- **Distribuição de Rendimentos**: O Fundo anunciou rendimento de R$ 0,82/cota referente ao mês de junho de 2026, dentro do guidance de rendimentos para o primeiro semestre de 2026. [página 3]\n\n- **Venda de HGLG11**: Em junho de 2026, o Fundo continuou a vender as cotas de HGLG11 no mercado secundário, gerando caixa no montante de R$ 17,2 milhões. [página 5]\n\n- **Resultado do Fundo**: O resultado do Fundo em junho foi de R$ 11.498 mil, equivalente a R$ 0,77/cota. [página 6]\n\n- **Patrimônio Líquido e Aplicações Financeiras**: O patrimônio líquido do Fundo ao final de junho era de R$ 1,64 bilhão e as participações em ativos imobiliários totalizavam R$ 1,30 bilhão. As aplicações financeiras somaram R$ 492,9 milhões, incluindo a posição do Fundo em HGLG11 de R$ 365,9 milhões. [página 10]\n\n- **Taxa de Ocupação**: A taxa de ocupação média dos imóveis era de 99,5% no mês de junho. [página 11]\n\n- **Inadimplência Líquida**: A inadimplência líquida média do Fundo foi de 2,0%. [página 11]\n\n**O que observar em seguida:**\n1. Continuação da venda das cotas de HGLG11 e alocação do caixa gerado.\n2. Desempenho futuro dos rendimentos distribuídos conforme guidance atualizado."
+  },
+  "comunicados": {
+    "ids": [
+      1047348,
+      1235331,
+      1214511,
+      1207526,
+      1173320
+    ],
+    "datas": [
+      "26/11/2025",
+      "30/06/2026",
+      "09/06/2026",
+      "29/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Fato Relevante - 26/11/2025\n\n**O QUE ACONTECEU:** Vinci Logística FII concluiu a venda de quatro ativos pelo valor de R$709,6 milhões.\n\n**RESUMO:** O Fundo vendeu participação em quatro ativos logísticos localizados no Brasil por um preço total de R$709,6 milhões. A transação gerará ganho de capital bruto para o Fundo e representa aproximadamente 40% do Patrimônio Líquido.\n\n**TRECHO-CHAVE:**\n\"Na presente data, o Fundo celebrou escritura de compra e venda , em caráter irrevogável e irretratável, referente a venda de sua participação em quatro ativos (“Portfólio”), totalizando uma ABL de 199.001 m² pelo preço de R$709,6 milhões (“Preço”).\"\n\n### Comunicado ao Mercado - 30/06/2026\n\n**O QUE ACONTECEU:** Vinci Logística FII distribuiu rendimentos referentes a junho de 2026.\n\n**RESUMO:** O Fundo anunciou o pagamento de R$ 0,82 por cota aos detentores de cotas no fechamento de 30 de junho de 2026. O pagamento será realizado em 14 de julho de 2026.\n\n**TRECHO-CHAVE:**\n\"O valor dos rendimentos referentes a junho de 2026 corresponde a R$ 0,82 por cota.\"\n\n### Comunicado ao Mercado - 09/06/2026\n\n**O QUE ACONTECEU:** Vinci Logística FII concluiu a aquisição da participação remanescente no ativo \"Parque Logístico Pernambuco\".\n\n**RESUMO:** O Fundo adquiriu a participação restante de 50% no Parque Logístico Pernambuco por R$ 56,2 milhões. A transação foi realizada com um cap rate estimado em 12,1%.\n\n**TRECHO-CHAVE:**\n\"Em continuidade ao Comunicado ao Mercado divulgado em 25/03/2026, o Fundo concluiu a aquisição da participação remanescente de 50% no ativo denominado Parque Logístico Pernambuco (“Ativo”), localizado no município de Ipojuca, Estado de Pernambuco.\"\n\n### Assembleia AGO - 29/05/2026\n\n**O QUE ACONTECEU:** As demonstrações financeiras do Fundo referentes ao exercício social findo em 31 de dezembro de 2025 foram aprovadas.\n\n**RESUMO:** Os cotistas do Fundo aprovaram as Demonstrações Financeiras sem quaisquer ressalvas e restrições. O quórum foi atingido com aproximadamente 1,84% das cotas emitidas do Fundo.\n\n**TRECHO-CHAVE:**\n\"Após análises das repostas dos Cotistas do Fundo à Consulta Formal, foram apurados os seguintes resultados para o único item da ordem do dia:\"\nAPROVO NÃO APROVO ABSTENCÃO \n1,33% 0,01% 0,5 % \n\n### Assembleia AGO - 29/04/2026\n\n**O QUE ACONTECEU:** Convocação para a assembleia geral ordinária (AGO) em formato de consulta formal.\n\n**RESUMO:** Os cotistas do Fundo foram convocados a participar da Assembleia Geral Ordinária por meio de coleta de voto à distância, com o objetivo de aprovar as Demonstrações Financeiras referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**TRECHO-CHAVE:**\n\"A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., com sede na cidade de São Paulo, Estado de São Paulo, convida os cotistas do Fundo (“ Cotistas”), por meio desta, a participar da Assembleia Geral Ordinária de Cotistas do Fundo (“AGO”), a ser realizada de forma não presencial, por meio de coleta de voto a distância.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 94.24
+  },
+  "parecer": {
+    "id": 1149233,
+    "data_entrega": "30/03/2026 22:36",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

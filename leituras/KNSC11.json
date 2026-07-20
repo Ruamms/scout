@@ -1,0 +1,42 @@
+{
+  "ticker": "KNSC11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T17:22:03",
+  "relatorio": {
+    "id": 1242374,
+    "data_entrega": "08/07/2026 18:40",
+    "texto": "1. **Compra de novos ativos**: O fundo realizou investimentos em novas operações de CRI no valor total de R$ 52,6 milhões, incluindo transações com Creditas – Sênior B e Sênior A (página 2).\n   \n2. **Alocação do patrimônio**: O portfólio é composto por 102,6% em ativos alvo, 1,9% em LCI e 5,7% em instrumentos de caixa (página 1).\n\n3. **Rendimento mensal**: Os dividendos referentes a junho foram distribuídos no dia 13/07/2026, sendo R$ 0,10 por cota, representando uma rentabilidade isenta do imposto de renda para pessoas físicas de 1,09% (página 1).\n\n4. **Resultado financeiro**: O resultado líquido no mês foi de R$ 22,3 milhões e a distribuição mensal foi de R$ 20,2 milhões por cota (página 4).\n\n5. **Operações compromissadas reversas**: O fundo possui operações compromissadas reversas lastreadas em CRI no valor equivalente a aproximadamente 10,2% do Patrimônio Líquido do Fundo (página 8).\n\n6. **Riscos mencionados**: A equipe de gestão ressalta incertezas sobre os movimentos futuros da taxa Selic e impactos dos conflitos no Oriente Médio na inflação brasileira, afetando a política monetária (página 4).\n\nO que observar em seguida:\n- Movimentações adicionais na carteira de CRI.\n- Desenvolvimento das projeções futuras da taxa Selic e impactos sobre os rendimentos do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1048995,
+      1013161
+    ],
+    "datas": [
+      "27/11/2025",
+      "14/10/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral Ordinária (AGO) em 27/11/2025\n\n**O QUE ACONTECEU:** Foi aprovada a ata da assembleia geral ordinária.\n\n**RESUMO:** Os participantes, incluindo representantes do Administrador e cotistas, aprovaram as Demonstrações Contábeis do Fundo acompanhadas pelo relatório dos auditores independentes. A participação de todos os cotistas dispensou o envio de um resumo das decisões tomadas.\n\n**TRECHO-CHAVE:** \"aprovadas as Demonstrações Contábeis do Fundo, devidamente acompanhadas do relatório dos auditores independentes, documentos disponibilizados aos cotistas nos termos da regulamentação em vigor, relativos ao exercício social findo em 30.06.2025\" (p. 1).\n\n### Consulta Formal Eletrônica para Assembleia Geral Ordinária (AGO) em 14/10/2025\n\n**O QUE ACONTECEU:** Foi convocada a consulta formal eletrônica aos cotistas para aprovar as demonstrações financeiras e o parecer dos auditores independentes do exercício social de 30 de junho de 2025.\n\n**RESUMO:** A INTRAG Distribuidora de Títulos e Valores Mobiliários LTDA. solicitou a aprovação das demonstrações financeiras, notas explicativas e parecer dos auditores independentes do exercício social findo em 30 de junho de 2025.\n\n**TRECHO-CHAVE:** \"Aprovar as demonstrações financeiras, notas explicativas e parecer dos auditores independentes, relativas ao exercício social findo em 30 de junho de 2025\" (p. 1)."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 9.16
+  },
+  "parecer": {
+    "id": 994940,
+    "data_entrega": "22/09/2025 09:37",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

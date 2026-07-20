@@ -1,0 +1,43 @@
+{
+  "ticker": "VGIR11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T20:27:25",
+  "relatorio": {
+    "id": 1252763,
+    "data_entrega": "17/07/2026 19:12",
+    "texto": "- **Compra de ativo**: O Fundo adquiriu R$16,1 milhões em uma nova operação, o CRI Artem (p. 2).\n- **Venda de ativos**: O Fundo vendeu um total de R$48,2 milhões, incluindo a totalidade de sua participação nos CRIs Oscar Freire 59S, Ditolvo Choice 3S e Choice 2S; além de uma parcela do CRI Oscar Freire 50S (p. 2).\n- **Amortizações**: O Fundo recebeu amortizações no valor total de R$139,1 milhões, com destaque para a amortização total de R$58,1 milhões do CRI Tecnisa 397S e a amortização parcial de R$75,1 milhões do CRI Tecnisa 11E 1S (p. 2).\n- **Distribuição de rendimentos**: O Fundo distribuiu R$0,11 por cota como rendimento referente ao mês de junho de 2026 (p. 2).\n- **Qualidade dos CRIs**: Os CRIs da carteira do Fundo continuam saudáveis na opinião da Gestão (p. 2).\n- **Reservas de caixa**: O Fundo encerrou o mês com uma reserva de caixa aproximada de R$0,01 por cota para eventuais despesas (p. 3).\n\nO que observar em seguida:\n- Movimentações futuras na carteira de CRIs.\n- Resultados da alocação do caixa excedente mencionado pela gestão."
+  },
+  "comunicados": {
+    "ids": [
+      1063734,
+      1027002
+    ],
+    "datas": [
+      "15/12/2025",
+      "03/11/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 15/12/2025\n**O QUE ACONTECEU:** O resultado da Assembleia Geral Ordinária (AGO) foi apurado.\n\n**RESUMO:** A assembleia aprovou as contas e demonstrações contábeis do Fundo referentes ao exercício social de 30/6/2025. Foram recebidas respostas de cotistas representando aproximadamente 179,6% das cotas emitidas, com quórum de 73,925%.\n\n**TRECHO-CHAVE:** \"Aprovar as contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30/6/2025.\" (p. 1)\n\n---\n\n### 03/11/2025\n**O QUE ACONTECEU:** Os cotistas foram convocados para a Assembleia Geral Ordinária por meio de consulta formal.\n\n**RESUMO:** A assembleia teve como objetivo deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo referentes ao exercício social findo em 30/6/2025. Os cotistas receberam as informações via email para votação até 3 de dezembro.\n\n**TRECHO-CHAVE:** \"Aprovação das contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30/6/2025.\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 9.68
+  },
+  "parecer": {
+    "id": 986849,
+    "data_entrega": "09/09/2025 10:34",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Valora CRI CDI Fundo de investimento Imobiliário - FII Responsabilidade Limitada em 30 de junho de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotad"
+  }
+}

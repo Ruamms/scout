@@ -1,0 +1,54 @@
+{
+  "ticker": "HGRE11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T17:41:36",
+  "relatorio": {
+    "id": 1246183,
+    "data_entrega": "13/07/2026 19:36",
+    "texto": "1. **Resultado e Rendimentos Distribuídos**: Em junho, o fundo registrou receita total de R$ 0,95/cota e resultado distribuível de R$ 0,71/cota. O rendimento anunciado foi de R$ 1,50/cota, utilizando R$ 0,79/cota de reserva (p. 4).\n2. **Vacância do Fundo**: A vacância física do fundo se manteve em 5,8% e a financeira em 7,6%. Não houve movimentações de locatários no mês (p. 4).\n3. **Alavancagem**: O fundo tem atualmente 2,2% de alavancagem no portfólio, com aproximadamente 66% dos vencimentos no longo prazo (+12 meses) (p. 5).\n4. **Distrato do Imóvel Alegria**: Em 7 de julho, o fundo anunciou o distrato do compromisso de venda e compra do imóvel Alegria, devolvendo R$ 2,2 milhões à contraparte (p. 5).\n5. **Carteira de Ativos**: O portfólio é composto por 13 ativos, com os ativos de escritório localizados na grande São Paulo representando 86% do valor patrimonial do fundo (p. 10).\n6. **Negociações Futuras**: A gestão está avançando nas negociações para ampliar a presença de um locatário no Edifício Guaíba e conduzindo o processo de comercialização das unidades no Edifício Transatlântico (p. 15).\n7. **Carteira FII**: O fundo possui uma carteira composta por três FIIs que representam 0,3% do seu patrimônio líquido, com a gestão promovendo a racionalização da carteira de FIIs ao longo dos últimos meses (p. 16).\n8. **Liquidez e Passivo**: O fundo tem um volume médio diário negociado acima de R$ 350 milhões e uma alavancagem atual de 2,2% no portfólio (p. 17).\n\n**O que observar em seguida:**\n- Movimentações futuras do imóvel Alegria.\n- Progresso nas negociações para ampliar a presença de locatários nos ativos mencionados."
+  },
+  "comunicados": {
+    "ids": [
+      1249746,
+      1249731,
+      1241516,
+      1204233,
+      1249757,
+      1249755
+    ],
+    "datas": [
+      "15/07/2026",
+      "15/07/2026",
+      "07/07/2026",
+      "26/05/2026",
+      "15/07/2026",
+      "15/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Fato Relevante - 15/07/2026\n\n**O que aconteceu:** O Fundo HGRE11 vendeu conjuntos de um imóvel em São Paulo.\n\n**Resumo:** A venda dos conjuntos 111 e 112 do Subcondomínio One Berrini Corporate, situado na Avenida Engenheiro Luiz Carlos Berrini, foi concluída. O valor da transação foi R$ 21.840.784,00 (vinte e um milhões, oitocentos e quarenta mil, setecentos e oitenta e quatro reais), representando um lucro de R$ 5.293.495,89 (cinco milhões, duzentos e noventa e três mil, quatrocentos e noventa e cinco reais e oitenta e nove centavos).\n\n**Trecho-chave:**\n\"Em contrapartida à venda do Imóvel, o Fundo recebeu, nesta data, o valor de R$ 21.840.784,00 (vinte e um milhões, oitocentos e quarenta mil, setecentos e oitenta e quatro reais) (“Preço”), equivalente a R$ 23.800/m² (vinte e três mil e oitocentos reais por metro quadrado).\"\n\n### Fato Relevante - 07/07/2026\n\n**O que aconteceu:** O Fundo HGRE11 rescindiu um compromisso de venda e compra de imóvel em São Paulo.\n\n**Resumo:** O Fundo cancelou o contrato de venda do imóvel localizado na Rua da Alegria e Rua Visconde de Parnaíba, devolvendo R$ 2.212.257,24 (dois milhões, duzentos e doze mil reais, duzentos e cinquenta e sete reais e vinte e quatro centavos) à contraparte. O Fundo mantém valores de indenização e remuneração no montante total de R$ 2.250.000,00 (dois milhões e duzentos e cinquenta mil reais).\n\n**Trecho-chave:**\n\"Nos termos do Distrato, o Fundo realizará a devolução líquida de R$ 2.212.257,24 (dois milhões, duzentos e doze mil reais, duzentos e cinquenta e sete reais e vinte e quatro centavos) à contraparte, correspondente à restituição dos valores pagos a título de sinal, já deduzidos os valores contratualmente retidos pelo Fundo.\"\n\n### Comunicado ao Mercado - 26/05/2026\n\n**O que aconteceu:** O Administrador do HGRE11 alterou o regulamento para incluir a segregação das taxas de prestadores de serviços na Plataforma de Transparência de Taxas da ANBIMA.\n\n**Resumo:** A alteração visa atender às diretrizes do Ofício-Circular-Conjunto nº 1/2025/CVM/SIN/SSE, disponibilizando as informações sobre taxas no site https://data.anbima.com.br/busca/transparencia-de-taxas-de-fundos.\n\n**Trecho-chave:**\n\"Em atenção às diretrizes do Ofício-Circular-Conjunto nº 1/2025/CVM/SIN/SSE, o Administrador aprovou, por Instrumento Particular do Administrador, a alteração do regulamento do Fundo para incluir que a segregação das taxas devidas aos prestadores de serviços do Fundo passa a ser disponibilizada na Plataforma de Transparência de Taxas no endereço: https://data.anbima.com.br/busca/transparencia-de-taxas-de-fundos.\"\n\n### Assembleia AGE - 15/07/2026\n\n**O que aconteceu:** O Administrador do HGRE11 convocou assembleia para deliberar sobre a realização da 10ª emissão de cotas.\n\n**Resumo:** A proposta é realizar uma oferta pública de distribuição exclusiva para investidores profissionais, com valor inicialmente até R$ 700 milhões. Os recursos captados serão aplicados conforme a política de investimentos do Fundo.\n\n**Trecho-chave:**\n\"Com relação à ordem do dia, e visando dar continuidade ao crescimento e à consolidação do Fundo, o Administrador propõe a aprovação da Oferta nas condições acima, que entende adequadas ao atual cenário de mercado.\"\n\n### Conexões com indicadores:\n- A venda dos imóveis pode impactar positivamente os resultados financeiros do fundo, contribuindo para reduzir o patrimônio líquido e a vacância.\n- A proposta de emissão de cotas visa captar recursos adicionais para investimentos, potencialmente aumentando o valor do ativo e o número de cotas em circulação."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 123.6
+  },
+  "parecer": {
+    "id": 1238671,
+    "data_entrega": "03/07/2026 11:54",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

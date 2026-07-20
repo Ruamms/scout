@@ -1,0 +1,55 @@
+{
+  "ticker": "HFOF11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T18:04:35",
+  "relatorio": {
+    "id": 1240705,
+    "data_entrega": "06/07/2026 19:32",
+    "texto": "1. **Recompra de Cotas**: O HFOF concluiu a recompra de 11,523 milhões de cotas com desconto médio de -16,8%, investindo R$74,4 milhões e cancelando R$89,4 milhões em valor patrimonial. Isso resultou em um ganho de R$15 milhões para o fundo (0,9% na cota patrimonial) desde o início do programa. [página 4]\n\n2. **Desempenho da Cota Patrimonial**: Desde a implementação do programa de recompra, a TIR da cota patrimonial foi de 13,5%, superior ao IFIX (10,7%) no mesmo período. [página 4]\n\n3. **Movimentações na Carteira**: No mês de junho, o HFOF movimentou R$13,6 milhões, com R$5,8 milhões em compras e R$7,8 milhões em vendas. As compras incluíram a finalização do programa de recompra, enquanto as vendas reduziram exposição a FOFs e fundos de renda urbana menos descontados. [página 5]\n\n4. **Programa de Recompra II**: O HFOF anunciou o segundo programa de recompra de cotas até julho de 2027, podendo adquirir até 10,946 milhões de cotas com desconto do valor patrimonial e cancelamento imediato. [página 5]\n\n5. **Hedge Strategy**: O fundo iniciou a implementação da Hedge Strategy para capturar oportunidades no cenário atual de restrição de crédito no mercado imobiliário, focando em operações lastreadas em ativos de qualidade e com retornos esperados na faixa entre CDI + 4% e CDI + 7%. [página 6]\n\n6. **Rendimento Distribuído**: O HFOF anunciou a distribuição de R$0,060 por cota referente ao mês de junho, com pagamento em julho aos detentores de cotas no dia 30 de junho. [página 7]\n\n7. **Desconto sobre Valor Patrimonial**: O HFOF está negociando a um desconto médio de -15,3% em relação ao seu valor patrimonial, com potencial upside de até 40%. [página 8]\n\n8. **Indústria dos Fundos Imobiliários**: No mercado secundário, o volume médio diário de negociação dos fundos imobiliários foi de R$458 milhões em junho de 2026. [página 10]\n\n**O que observar em seguida:**\n- Progresso e resultados do segundo programa de recompra.\n- Desempenho da Hedge Strategy nas operações estruturadas."
+  },
+  "comunicados": {
+    "ids": [
+      899474,
+      897957,
+      1238293,
+      1224877,
+      1182218,
+      1182217
+    ],
+    "datas": [
+      "12/05/2025",
+      "09/05/2025",
+      "02/07/2026",
+      "19/06/2026",
+      "07/05/2026",
+      "07/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 02/07/2026 - Comunicação ao Mercado: Implementação do Programa de Recompra\n\nO HEDGE TOP FOFII 3 FUNDO DE INVESTIMENTO IMOBILIÁRIO anunciou a implementação do segundo programa de recompra de cotas. O objetivo é maximizar a geração de valor para os cotistas, com até 10.946.850 cotas sendo adquiridas no prazo de um ano.\n\n\"O Programa de Recompra destina-se à alocação de recursos disponíveis do Fundo na maximização de geração de valor para os cotistas.\"\n\n### 19/06/2026 - Comunicação ao Mercado: Encerramento do Primeiro Programa de Recompra\n\nO primeiro programa de recompra foi encerrado, tendo adquirido e cancelado 11.523.000 cotas (5% do total) a preço de mercado.\n\n\"No âmbito do Programa de Recompra, foram adquiridas 11.523.000 (onze milhões, quinhentas e vinte e três mil) cotas de classe única de emissão do Fundo.\"\n\n### 07/05/2026 - Assembleia Geral Ordinária: Aprovação das Contas\n\nA assembleia geral ordinária aprovou as contas e demonstrações financeiras referentes ao exercício social encerrado em 31 de dezembro de 2025, com participação de cotistas representando 7,08% das cotas.\n\n\"Em relação à Ordem do Dia, a maioria dos Cotistas deliberou pela aprovação das contas e das demonstrações financeiras do Fundo, referentes ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n### 12/05/2025 - Fato Relevante: Pedido de AGE para Consulta Formal\n\nO HEDGE TOP FOFII 3 FUNDO DE INVESTIMENTO IMOBILIÁRIO solicitou à COINVALORES CORRETORA a convocação de uma Assembleia Geral Extraordinária na forma de consulta formal para deliberar sobre a alienação do imóvel detido pelo FMOF11, transferência da administração e dissolução do Fundo.\n\n\"HEDGE TOP FOFII 3 FUNDO DE INVESTIMENTO IMOBILIÁRIO , inscrito no CNPJ/MF sob o n° 18.307.582/0001-19, representado por sua gestora HEDGE INVESTMENTS REAL ESTATE GESTÃO DE RECURSOS LTDA., sociedade devidamente autorizada pela CVM para o exercício profissional de gestão de carteira de títulos e valores mobiliários...\"\n\n### 09/05/2025 - Fato Relevante: Desdobramento de Cotas\n\nO Fundo anunciou um desdobramento de cotas em proporção de 10 para cada cota existente, com o novo valor unitário equivalente ao valor da cota dividido por 10.\n\n\"O presente Pedido de Convocação deve ser disponibilizado integralmente, em conjunto com a convocação da AGE acima referida e seu\"\n\n### Conexões aos Indicadores\n\n- O desdobramento de cotas (9/5/2025) pode ter impactado o número total de cotas emitidas, que diminuiu 5% no último ano.\n- A implementação do programa de recompra (2/7/2026) visa maximizar a geração de valor para os cotistas, potencialmente influenciando positivamente o valor patrimonial por cota."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda"
+    ],
+    "cota": 6.36
+  },
+  "parecer": {
+    "id": 1151558,
+    "data_entrega": "31/03/2026 20:29",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

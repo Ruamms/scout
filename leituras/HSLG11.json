@@ -1,0 +1,54 @@
+{
+  "ticker": "HSLG11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T21:11:29",
+  "relatorio": {
+    "id": 1241525,
+    "data_entrega": "07/07/2026 19:08",
+    "texto": "1. **Vacância Zero**: O fundo encerrou o mês com 100% de ocupação, sem vacâncias registradas (página 4).\n2. **Inadimplência Controlada**: Todos os locatários estão adimplentes e os valores de locação são considerados competitivos pela gestão (página 4).\n3. **Alavancagem Baixa**: O índice de alavancagem líquida do fundo é de 20,2% (página 8).\n4. **Cenário Econômico Desafiador**: A Selic foi reduzida em 0,25 p.p., mas o Comitê elevou suas projeções de inflação para 5,5% em 2026 (página 3).\n5. **Distribuição de Dividendos**: O fundo anunciou uma distribuição de R$ 0,74 por cota e atualizou o guidance para um intervalo entre R$ 0,74 e R$ 0,76 por cota (página 4).\n6. **Revisão Contratual em Andamento**: Uma parcela relevante dos contratos está passível de revisão (10,5%) e negociações estão em andamento para captura de ganhos reais acima da inflação (página 8).\n7. **Eventos Societários Futuros**: O fundo menciona a possibilidade de ajustes no guidance ao longo do semestre, dependendo de movimentos na carteira ou mudanças no cenário macroeconômico (página 4).\n\n**O que observar em seguida:**\n1. **Progresso das Negociações**: Acompanhar o progresso das negociações para revisão contratual mencionada.\n2. **Mudanças na Carteira**: Monitorar possíveis aquisições ou vendas de ativos que afetem a distribuição e alavancagem do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1051766,
+      1051756,
+      955509,
+      982015,
+      1031299,
+      1008319
+    ],
+    "datas": [
+      "01/12/2025",
+      "01/12/2025",
+      "29/07/2025",
+      "01/09/2025",
+      "07/11/2025",
+      "07/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Fato Relevante (01/12/2025)\n**O que aconteceu:** HSI Logística concluiu a emissão de Certificados de Recebíveis Imobiliários (CRI) no valor total de R$ 75 milhões.\n\n**Resumo:** O Fundo emitiu CRIs para financiar a expansão do galpão \"HSI Log. BTS Meli\" localizado na região metropolitana de Curitiba, além de proporcionar maior flexibilidade financeira e liquidez futura. A operação envolve duas parcelas: R$ 50 milhões (1ª Série) e R$ 25 milhões (2ª Série), com remuneração variando entre CDI + 1,90% ao ano para a 1ª série e CDI + 1,85% ao ano para a 2ª série.\n\n**Trecho-chave:** \"A emissão dos CRIs foi contratada com os seguintes termos e condições financeiras: Valor total emitido: R$ 75.000.000,00 (setenta e cinco milhões de reais); Integralização: em duas parcelas, sendo R$ 50.000.000,00 (cinquenta milhões de reais) referentes à 1ª Série e R$ 25.000.000,00 (vinte e cinco milhões de reais) referentes à 2ª Série.\"\n\n### Fato Relevante (29/07/2025)\n**O que aconteceu:** HSI Logística concluiu a obra do galpão logístico \"HSI Log. BTS Meli\" em Araucária, região metropolitana de Curitiba.\n\n**Resumo:** A obra foi entregue conforme o contrato Built-to-Suit com a locatária Mercado Livre (EBAZAR.COM.BR LTDA.), que incluiu carência total de aluguel por 2 meses e mais 2 meses com desconto de 50%. O galpão tem uma Área Bruta Locável (ABL) total de 92.630 m², eficiência de 83%, e outras especificações técnicas detalhadas.\n\n**Trecho-chave:** \"Em 25/07/2025 foi concluído o Termo de Aceitação da Obra referente ao imóvel logístico BTS Mercado Livre Araucária (“HSI Log. BTS Meli”), localizado em Araucária, região metropolitana de Curitiba, PR.\"\n\n### Comunicado ao Mercado (01/09/2025)\n**O que aconteceu:** HSI Logística recebeu notificação formal da locatária Mercado Livre sobre o exercício do Direito de Expansão previsto no Contrato de Locação Built-To-Suit para o galpão logístico \"HSI Log. BTS Meli\".\n\n**Resumo:** A Administradora e a Gestora informam que detalhes adicionais, incluindo perspectivas financeiras e prazos relacionados à expansão, serão divulgados ao mercado em breve.\n\n**Trecho-chave:** \"Em 29/08/2025, o Fundo recebeu a notificação formal da locatária EBAZAR.COM.BR LTDA. (Mercado Livre) sobre o exercício do Direito de Expansão previsto no Contrato de Locação Built-To-Suit (BTS), celebrado em 5 de julho de 2024, referente ao galpão logístico “HSI Log. BTS Meli”, recentemente entregue.\"\n\n### Assembleia AGO (07/11/2025)\n**O que aconteceu:** A assembleia geral ordinária do HSI Logística aprovou as demonstrações financeiras referentes ao exercício social findo em 30 de junho de 2025.\n\n**Resumo:** Os cotistas participaram da consulta formal e votaram para aprovar as demonstrações financeiras. O quórum foi atingido com aproximadamente 61,54% das cotas emitidas do Fundo.\n\n**Trecho-chave:** \"Após análise das repostas dos Cotistas à Consulta Formal, foram apurados os seguintes resultados para o único item da ordem do dia: APROVO NÃO APROVO ABSTENCÃO CONFLITADO 61,4% 0,01% 0,35% 0,00%. Diante do exposto, a matéria foi APROVADA.\"\n\n### Assembleia AGO (07/10/2025)\n**O que aconteceu:** O administrador convocou os cotistas para participar da assembleia geral ordinária por meio de consulta formal.\n\n**Resumo:** Os cotistas foram convidados a votar sobre a aprovação das demonstrações financeiras do Fundo referentes ao exercício social findo em 30 de junho de 2025. A votação ocorreu via plataforma Cuore para Voto à Distância, com prazo final no dia 6 de novembro de 2025.\n\n**Trecho-chave:** \"A Consulta Formal se dará com a manifestação de pelo menos 01 (um) Cotista, em conformidade com o disposto na legislação vigente e no Regulamento do Fundo, sendo que a matéria da ordem do dia será aprovada por maioria dos presentes.\"\n\n---\n\n**Conexão com indicadores:** A emissão de CRIs para financiar a expansão do galpão \"HSI Log. BTS Meli\" (01/12/2025) e a conclusão da obra deste mesmo galpão (29/07/2025) estão alinhadas com o aumento no valor do ativo do Fundo, que foi de 3,97% nos últimos 12 meses."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 91.79
+  },
+  "parecer": {
+    "id": 999650,
+    "data_entrega": "26/09/2025 17:44",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos fundos de investimento imobiliário."
+  }
+}

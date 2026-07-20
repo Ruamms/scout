@@ -1,0 +1,30 @@
+{
+  "ticker": "CSMC11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-19T15:17:32",
+  "comunicados": {
+    "ids": [
+      1167513,
+      1086635
+    ],
+    "datas": [
+      "22/04/2026",
+      "16/01/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### Assembleia Geral Ordinária - 22/04/2026\n\n**O que aconteceu:** A assembleia aprovou por unanimidade as demonstrações financeiras do fundo referentes ao exercício social de 2025.\n\n**Resumo:** Os cotistas reuniram-se para aprovar os documentos financeiros e o parecer do auditor independente sem nenhuma restrição ou ressalva. \n\n**Trecho-chave:**\n\"Os Cotistas deliberaram, por unanimidade, sem quaisquer ressalvas ou restrições aprovar as Demonstrações Financeiras do Fundo, das Notas Explicativas e do parecer do auditor independente, todos relativos ao exercício social findo em 31 de dezembro de 2025.\" (p. 1)\n\n---\n\n### Assembleia Geral Extraordinária - 16/01/2026\n\n**O que aconteceu:** A assembleia aprovou por unanimidade a emissão de novas cotas pelo fundo.\n\n**Resumo:** Os cotistas deliberaram sobre a emissão de 13.050,12668 novas cotas com valor unitário de R$1.000,00 cada, totalizando R$13.050.126,68. A subscrição dessas novas cotas foi feita pelo único cotista do fundo.\n\n**Trecho-chave:**\n\"Os Cotistas deliberaram, por unanimidade, sem quaisquer ressalvas ou restrições: (i.a) aprovar a emissão, em série e classe única, de 13.050,12668 novas cotas pelo Fundo, no valor unitário de R$1.000,00 (mil reais), totalizando o montante de R$13.050.126,68.\" (p. 1)\n\n---\n\n**Conexão com indicadores:** A emissão de novas cotas em janeiro de 2026 pode explicar a alta no número de cotas e valor patrimonial do fundo ao longo dos últimos 12 meses, apesar de o aumento ser atribuído a apenas um cotista."
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1130459,
+    "data_entrega": "06/03/2026 17:50",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Cosmic Fundo de Investimento Imobiliário de Responsabilidade Limitada em 31 de dezembro de 2025, e o desempenho de suas operações e os seus respectivos fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis a"
+  }
+}

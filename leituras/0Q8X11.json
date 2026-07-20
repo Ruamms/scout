@@ -1,0 +1,30 @@
+{
+  "ticker": "0Q8X11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-19T16:05:25",
+  "comunicados": {
+    "ids": [
+      1246003,
+      1111165
+    ],
+    "datas": [
+      "13/07/2026",
+      "12/02/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante"
+    ],
+    "texto": "### Fato Relevante - 13/07/2026\n\n**O que aconteceu:** O JS Renda Imobiliária Fundo de Investimento Imobiliário adquiriu o Edifício WTorre Nações Unidas.\n\n**Resumo:** O fundo consolidou a compra do empreendimento imobiliário, localizado na Av. Dr. Ruth Cardoso, nº 7815 (antiga Av. das Nações Unidas), Pinheiros - São Paulo – SP, mediante pagamento parcial à vista e parcelamento restante em seis meses.\n\n**Trecho-chave:**\n\"na presente data, o Fundo consolidou o investimento no empreendimento imobiliário denominado Edifício WTorre Nações Unidas, composto por duas Torres (A e B) e 966 vagas, localizadas à Av. Dra. Ruth Cardoso, nº 7815 (antiga Av. das Nações Unidas), Pinheiros - São Paulo – SP, mediante pagamento de parte do preço à vista e parte com vencimento em 6 (seis) meses contados desta data.\" (p. 1)\n\n### Fato Relevante - 12/02/2026\n\n**O que aconteceu:** O JS Renda Imobiliária Fundo de Investimento Imobiliário protocolou um requerimento junto ao CADE para análise de uma potencial transação envolvendo a aquisição do Edifício Pinheiros One.\n\n**Resumo:** A transação está sujeita a aprovação do CADE e outras condições precedentes típicas. Detalhes adicionais serão divulgados posteriormente.\n\n**Trecho-chave:**\n\"foi protocolado, junto ao Conselho Administrativo de Defesa Econômica – CADE, requerimento para análise de ato de concentração, em procedimento sumário, sobre uma potencial transação envolvendo a aquisição pelo Fundo, direta e/ou indiretamente, do imóvel denominado “Edifício Pinheiros One”, localizado na cidade de São Paulo.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:14b",
+  "parecer": {
+    "id": 1153487,
+    "data_entrega": "02/04/2026 15:20",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

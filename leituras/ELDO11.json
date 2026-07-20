@@ -1,0 +1,49 @@
+{
+  "ticker": "ELDO11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T22:20:48",
+  "relatorio": {
+    "id": 1233540,
+    "data_entrega": "30/06/2026 09:20",
+    "texto": "- **Resultado Financeiro:** O resultado financeiro líquido no trimestre foi de R$ 96,6M, com rendimentos declarados de R$ 144,6M, indicando um déficit não coberto pela reserva de R$ 27,0M (p. 3).\n\n- **Vacância:** A vacância do fundo está em 0,97%, mantendo-se praticamente inalterada nos últimos meses (p. 5).\n\n- **Inadimplência:** Não há detalhes específicos sobre a inadimplência no relatório fornecido (p. 5).\n\n- **Número de Cotistas:** O número de cotistas é muito pequeno, com apenas 112 cotistas registrados (p. 2).\n\n- **Distribuição de Lucros:** O fundo distribui aos seus cotistas semestralmente no mínimo 95% dos lucros auferidos, conforme a legislação vigente (p. 3).\n\n**O que observar em seguida:**\n1. Monitorar o fluxo de receitas e despesas futuras para entender como será coberto o déficit atual.\n2. Atentar às mudanças no número de cotistas nos próximos relatórios."
+  },
+  "comunicados": {
+    "ids": [
+      1192494,
+      1190445,
+      1181131,
+      1178976
+    ],
+    "datas": [
+      "14/05/2026",
+      "14/05/2026",
+      "06/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### 14/05/2026 — Rescisão de Acordo de Cotistas\n\nA Rio Bravo Investimentos DTVM LTDA. comunicou aos cotistas e ao mercado que tomou conhecimento da manifestação formal de cotistas quanto à não prorrogação do Acordo de Cotistas, o qual permanecerá em vigor até 22 de novembro de 2026.\n\n\"Nos termos da referida notificação, o Acordo de Cotistas permanecerá em pleno vigor e efeito até o término de seu prazo de vigência, encerrando-se em 22 de novembro de 2026.\"\n\n### 13/05/2026 — Reunião de Resultados\n\nA Rio Bravo Investimentos DTVM LTDA. informou que a reunião de resultados do FII ELDORADO será realizada no dia 22 de maio às 16h30 na sede da administradora.\n\n\"A RIO BRAVO INVESTIMENTOS DTVM LTDA., com sede na Cidade de São Paulo, Estado de São Paulo, na Avenida Chedid Jafet, nº 222, Bloco B, 3º andar, conjunto 32, inscrita no CNPJ sob o nº 72.600.026/0001 -81 (“Administradora”), na qualidade de instituição administradora do FII ELDORADO FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob nº. 13.022.994/0001-99 (“Fundo”), vem comunicar aos cotistas do Fundo que no dia 22/05/2026 às 16h30, acontecerá a reunião de resultados do fundo na sede da administradora.\"\n\n### 04/05/2026 — Aprovação das Demonstrações Financeiras\n\nA assembleia geral ordinária realizada em 28 de abril de 2026 aprovou as demonstrações financeiras referentes ao exercício encerrado em 31 de dezembro de 2025, com 71,32% dos cotistas presentes.\n\n\"Em pauta ordinária: (i) Por maioria de votos dos cotistas considerados presentes, os cotistas que representam 71,32% do total de cotas emitidas pelo Fundo e aptos ao exercício do direito de voto, deliberaram por aprovar as Demonstrações Financeiras do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1145920,
+    "data_entrega": "26/03/2026 20:22",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do FII Eldorado Fundo de Investimento Imobiliário - Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no "
+  }
+}

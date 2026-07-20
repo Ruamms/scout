@@ -1,0 +1,51 @@
+{
+  "ticker": "LVBI11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-19T16:03:36",
+  "relatorio": {
+    "id": 1224983,
+    "data_entrega": "19/06/2026 18:46",
+    "texto": "1. **Resultado e Rendimentos Distribuídos:** Em maio, o Fundo apresentou um resultado de R$ 0,72/cota com uma receita total de R$ 0,92/cota. Como parte da prática de linearização dos rendimentos, foram pagos dividendos no valor de R$ 0,75/cota em 8 de junho e este patamar será mantido pelo menos até o fim do semestre (p. 4).\n   \n2. **Vacância:** A vacância física permaneceu em 0% para a competência abril, com projeção de subir para 1,1% a partir de setembro/26 devido à saída da Elfa Medicamentos no ativo Aratu (p. 4).\n\n3. **Alavancagem:** O Fundo mantém apenas uma dívida do Ativo Aratu, que é um instrumento de dívida na SPE com saldo devedor de R$ 9 milhões (0,5% PL) e vencimento em maio/2032 a uma taxa de IPCA + 1,4% ao ano (p. 9).\n\n4. **Movimentações de Locatários:** Não houve movimentações de locatários na competência abril; no entanto, há tratativas avançadas para o espaço ocupado pela Elfa Medicamentos em Salvador com um novo inquilino (p. 15).\n\n5. **Estratégia Comercial:** A gestão está atuando nas negociações de desinvestimento e buscando otimizar a alocação de capital, capturando valor adicional para os cotistas (p. 15).\n\n6. **Reajustes e Revisões:** Durante o mês, foram realizados reajustes em 14.753 m² de ABL do portfólio do Fundo (p. 5).\n\n7. **Eventos Societários:** O Fundo está aguardando um parecer da CVM sobre a não concessão do direito de reembolso para iniciar o processo de incorporação pelo HGLG, com expectativa de que isso ocorra ainda no primeiro semestre de 2026 (p. 6).\n\n8. **Risco:** A gestão menciona que o principal fator de risco é a volatilidade externa e as tensões geopolíticas globais, que impactam a precificação dos ativos no Brasil (p. 3).\n\n**O que observar em seguida:**\n- Progresso do parecer da CVM sobre a não concessão do direito de reembolso.\n- Movimentações futuras de locatários e impactos na vacância física."
+  },
+  "comunicados": {
+    "ids": [
+      1073870,
+      1200562,
+      1071368,
+      1073871,
+      1073869
+    ],
+    "datas": [
+      "30/12/2025",
+      "21/05/2026",
+      "26/12/2025",
+      "30/12/2025",
+      "30/12/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### 30/12/2025 - Aprovação da incorporação do fundo no PATRIA LOG\n\n**Resumo:** Foi aprovada, sem ressalvas, a incorporação do Fundo VBI Logístico no PATRIA LOG e também a alteração no regulamento para dispensar o reembolso de cotas a dissidentes. A incorporação está sujeita à manifestação favorável da CVM sobre a dispensa de reembolso.\n\n**Trecho-chave:**\n\"Foram APROVADAS, sem ressalvas, as matérias submetidas à deliberação da Assembleia Geral Extraordinária do Fundo, realizada de forma não presencial, por meio de consulta formal aos Cotistas, conforme Edital de Convocação divulgado em 03 de dezembro de 2025 (“Assembleia”), de acordo termo de apuração divulgado nesta data.\"\n\n---\n\n### 26/12/2025 - Prorrogação do prazo para manifestação na assembleia geral extraordinária\n\n**Resumo:** A assembleia geral extraordinária, originalmente convocada em 3 de dezembro de 2025, teve seu prazo de manifestação dos cotistas prorrogado até 13 de janeiro de 2026.\n\n**Trecho-chave:**\n\"A Administradora destaca que as matérias de deliberação constantes do Edital de Convocação permanecem sem alterações.\"\n\n---\n\n### 21/05/2026 - Atualização na forma de divulgação da remuneração dos prestadores de serviços essenciais\n\n**Resumo:** A forma de divulgar a remuneração dos prestadores de serviços essenciais foi atualizada para uso exclusivo da Ferramenta ANBIMA, sem alterar os valores pagos pelos cotistas.\n\n**Trecho-chave:**\n\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 104.67
+  },
+  "parecer": {
+    "id": 994961,
+    "data_entrega": "22/09/2025 10:05",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário VBI Logístico - Responsabilidade Limitada em 30 de junho de 202 5 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas n"
+  }
+}
