@@ -99,6 +99,26 @@ def ultimo_regulamento(documentos: list[dict]) -> dict | None:
     return None
 
 
+def documentos_de_regulamento(documentos: list[dict]) -> list[dict]:
+    """Docs que podem trazer a taxa do fundo, do mais provável ao menos. No
+    regime 175 a taxa (a "Taxa Global") é fixada por CLASSE no Instrumento de
+    Alteração do Regulamento — não no Regulamento em si — então ele vem primeiro;
+    depois o Regulamento e a Constituição. Já vêm ordenados por data (mais novo
+    primeiro), preservada dentro de cada nível."""
+
+    def _rank(documento_: dict) -> int:
+        rotulo = f"{documento_['tipo']} {documento_['categoria']}".lower()
+        if "altera" in rotulo and "regulamento" in rotulo:
+            return 0
+        if "regulamento" in rotulo:
+            return 1
+        if "constitui" in rotulo:
+            return 2
+        return 9
+
+    return sorted((d for d in documentos if _rank(d) < 9), key=_rank)
+
+
 def fatos_relevantes(documentos: list[dict], quantidade: int = 3) -> list[dict]:
     return [
         documento_

@@ -115,6 +115,33 @@ def test_extrai_com_ponto_decimal_e_sem_ano():
     assert r["confianca"] == "media"
 
 
+def test_extrai_taxa_global_do_regime_175():
+    # Res-175: a taxa vira "Taxa Global" (não "taxa de administração")
+    r = taxas_etf.extrair_taxa_regulamento(
+        "passe a viger conforme a redação: Taxa Global 0,39% (trinta e nove centésimos por cento) ao ano."
+    )
+    assert r["taxa_adm_aa"] == 0.39 and r["confianca"] == "alta"
+    # duas taxas: pega a Taxa Global, não a do consultor de estruturação
+    r2 = taxas_etf.extrair_taxa_regulamento(
+        "os percentuais: (i) Taxa Global e Taxa Máxima Global: 0,12% (ii) Taxa destinada ao Consultor: 0,03%"
+    )
+    assert r2["taxa_adm_aa"] == 0.12
+
+
+def test_documentos_de_regulamento_prioriza_alteracao():
+    from scout.coleta import fnet
+
+    docs = [
+        {"id": 1, "tipo": "Regulamento", "categoria": "Regulamento", "data_entrega": ""},
+        {"id": 2, "tipo": "Instrumento Particular de Alteração do Regulamento",
+         "categoria": "Atos de Deliberação do Administrador", "data_entrega": ""},
+        {"id": 3, "tipo": "Informe Diário", "categoria": "Informes Periódicos", "data_entrega": ""},
+    ]
+    ordenados = fnet.documentos_de_regulamento(docs)
+    # alteração primeiro (é onde mora a Taxa Global), informe diário fora
+    assert [d["id"] for d in ordenados] == [2, 1]
+
+
 def test_acha_regulamento_entre_os_documentos():
     from scout.coleta import fnet
 

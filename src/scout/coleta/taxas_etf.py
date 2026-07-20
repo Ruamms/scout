@@ -19,11 +19,14 @@ import re
 import sys
 from pathlib import Path
 
-# "taxa de administração ... 0,30% ..." — captura o 1º percentual plausível
-# depois da expressão. DETERMINÍSTICO (regex), nunca IA: o número sai do texto
-# oficial do regulamento, e ainda assim entra como PROPOSTA para revisão humana.
+# A taxa aparece como "taxa de administração ... X%" (regime antigo) OU como
+# "Taxa Global / Taxa Máxima Global ... X%" (Resolução CVM 175, que fundiu
+# administração+gestão+custódia numa taxa única). Captura o 1º percentual
+# plausível depois da expressão. DETERMINÍSTICO (regex), nunca IA — o número sai
+# do texto oficial do regulamento, e ainda assim entra como PROPOSTA para revisão.
 _RE_TAXA_ADM = re.compile(
-    r"taxa\s+de\s+administra[çc][ãa]o[^%]{0,180}?(\d{1,2}(?:[.,]\d{1,4})?)\s*%",
+    r"taxa\s+(?:de\s+administra[çc][ãa]o|(?:m[áa]xima\s+)?global)"
+    r"[^%]{0,180}?(\d{1,2}(?:[.,]\d{1,4})?)\s*%",
     re.IGNORECASE,
 )
 
@@ -160,34 +163,43 @@ def atualizar(con, ao_progredir=None) -> str | None:
             documentos = fnet.listar(etf["cnpj"], quantidade=120, timeout=12, tentativas=2)
         except Exception:  # noqa: BLE001 — falha de rede não queima o ETF (retenta)
             continue
-        regulamento = fnet.ultimo_regulamento(documentos)
-        if regulamento is None:
+        candidatos = fnet.documentos_de_regulamento(documentos)
+        if not candidatos:
             base = dict(linha) if linha else {
                 "ticker": ticker, "taxa_adm_aa": "", "fonte": "", "confianca": "sem_regulamento"
             }
             base["verificado_em"] = hoje  # sem regulamento agora: mantém o que havia, renova a data
             linhas[ticker] = base
             continue
-        id_atual = str(regulamento["id"])
+        id_atual = str(candidatos[0]["id"])  # âncora de versão = doc primário (a alteração, se houver)
         resolvido = linha and (linha.get("confianca") or "").strip().lower() not in (
             "", "nao_achou", "sem_regulamento"
         )
-        # MESMO regulamento de antes e já resolvido -> não re-baixa, só renova a data
+        # MESMO documento de antes e já resolvido -> não re-baixa, só renova a data
         if resolvido and _id_regulamento(linha.get("fonte")) == id_atual:
             linha["verificado_em"] = hoje
             linhas[ticker] = linha
             continue
-        # regulamento novo (ou 1ª leitura, ou antes não achado): lê e extrai
-        try:
-            pdf = fnet._garantir_documento(
-                con, etf["cnpj"], regulamento,
-                armazenamento.diretorio_dados() / "documentos",
-                timeout=45, tentativas=2,
-            )
-            achado = extrair_taxa_regulamento(ia.extrair_texto_pdf(pdf, max_paginas=60))
-        except Exception:  # noqa: BLE001 — download/parse falhou: não marca (retenta)
-            continue
-        fonte = fnet.URL_DOWNLOAD.format(id=regulamento["id"])
+        # documento novo (ou 1ª leitura, ou antes não achado): tenta os candidatos
+        # (alteração -> regulamento -> constituição) até um trazer a taxa
+        achado = usado = None
+        for candidato in candidatos[:3]:
+            try:
+                pdf = fnet._garantir_documento(
+                    con, etf["cnpj"], candidato,
+                    armazenamento.diretorio_dados() / "documentos",
+                    timeout=45, tentativas=2,
+                )
+                extraido = extrair_taxa_regulamento(ia.extrair_texto_pdf(pdf, max_paginas=60))
+            except Exception:  # noqa: BLE001 — falhou nesse doc: tenta o próximo candidato
+                continue
+            usado = candidato
+            if extraido:
+                achado = extraido
+                break
+        if usado is None:
+            continue  # todos os downloads falharam -> não marca (retenta depois)
+        fonte = fnet.URL_DOWNLOAD.format(id=(usado if achado else candidatos[0])["id"])
         if achado:
             achados += 1
             if not linha or _numero(linha.get("taxa_adm_aa")) != achado["taxa_adm_aa"]:
