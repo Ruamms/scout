@@ -686,7 +686,12 @@ def ia_lote(
         # consumidor pareia `fundos[i]` com o i-ésimo item da fila. Timeout
         # curto: um fundo que pendura vira erro e é retomado na próxima rodada.
         _PREFETCH_WORKERS = 8  # benchmark real: 5,1x vs serial quando o FNET oscila
-        _TIMEOUT_LISTA, _TIMEOUT_DOC = 12, 60
+        # O FNET oscila de forma intermitente: a mesma requisição ora responde
+        # em 0,2s ora pendura (medido: o listar do MXRF11 deu timeout na 1ª e
+        # voltou em 1,8s na 2ª). O que resolve é o RETRY — sem ele, um stall
+        # solitário derrubava os maiores FIIs (MXRF11, KNRI11…). Timeout do
+        # download é maior (PDF grande; HGRU11 levou 60s pra 2,9 MB).
+        _TIMEOUT_LISTA, _TIMEOUT_DOC = 15, 90
         fila: _queue.Queue = _queue.Queue(maxsize=_PREFETCH_WORKERS * 2)
         _local = _threading.local()
 
@@ -710,7 +715,7 @@ def ia_lote(
                 # 80 documentos: fundo movimentado publica dezenas de informes
                 # por ano e a DF anual cairia fora dos 30
                 docs_p = fnet.listar(
-                    resumo_p.cnpj, quantidade=80, timeout=_TIMEOUT_LISTA, tentativas=1
+                    resumo_p.cnpj, quantidade=80, timeout=_TIMEOUT_LISTA, tentativas=3
                 )
                 relatorio_p, docs_meta_p = _selecao(docs_p)
                 df_p = fnet.ultima_demonstracao_financeira(docs_p)
@@ -736,7 +741,7 @@ def ia_lote(
                     and parecer_atual_p
                 )
                 if not pulavel:
-                    baixa = dict(timeout=_TIMEOUT_DOC, tentativas=1)
+                    baixa = dict(timeout=_TIMEOUT_DOC, tentativas=3)  # retry o stall do FNET
                     if relatorio_p and not relatorio_reaproveitavel:
                         fnet._garantir_documento(con_p, resumo_p.cnpj, relatorio_p, destino_docs, **baixa)
                     for meta_p in docs_meta_p:
@@ -775,7 +780,7 @@ def ia_lote(
                 for meta in docs_meta:
                     caminho_doc = fnet._garantir_documento(
                         con, resumo.cnpj, meta, armazenamento.diretorio_dados() / "documentos",
-                        timeout=60, tentativas=1,
+                        timeout=90, tentativas=3,
                     )
                     texto_doc = modulo_ia.extrair_texto_pdf(caminho_doc, max_paginas=6)
                     if len(texto_doc) >= 200:
@@ -809,7 +814,7 @@ def ia_lote(
                 try:
                     caminho_df = fnet._garantir_documento(
                         con, resumo.cnpj, df, armazenamento.diretorio_dados() / "documentos",
-                        timeout=60, tentativas=1,
+                        timeout=90, tentativas=3,
                     )
                     texto_df = modulo_ia.extrair_texto_pdf(caminho_df)
                     resultado = modulo_parecer.classificar(texto_df) if len(texto_df) >= 500 else ilegivel
@@ -903,7 +908,7 @@ def ia_lote(
                 if leitura_relatorio is None:
                     caminho = fnet._garantir_documento(
                         con, resumo.cnpj, relatorio, armazenamento.diretorio_dados() / "documentos",
-                        timeout=60, tentativas=1,
+                        timeout=90, tentativas=3,
                     )
                     texto = modulo_ia.extrair_texto_pdf(caminho)
                     if len(texto) < 500:
