@@ -93,6 +93,55 @@ def test_posicoes_do_etf_com_cross_link(con, zip_cvm):
     assert "PETR4" in pagina
 
 
+def test_extrair_carteira_completa_com_quantidade():
+    import io
+    import zipfile
+
+    from scout.coleta import cda
+
+    cab = ("TP_FUNDO_CLASSE;CNPJ_FUNDO_CLASSE;DENOM_SOCIAL;DT_COMPTC;VL_PATRIM_LIQ;"
+           "TP_APLIC;TP_ATIVO;VL_MERC_POS_FINAL;CD_ATIVO;QT_POS_FINAL\n")
+    # 12 ações -> a carteira completa deve trazer TODAS (não só o top 10)
+    linhas = "".join(
+        f"FIIM;10.406.511/0001-61;ISHARES;2026-06-30;120000;Ações;Ação;{12000 - i * 100};ACAO{i:02d};{1000 + i}\n"
+        for i in range(12)
+    )
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, "w") as zf:
+        zf.writestr("cda_fie_202606.csv", (cab + linhas).encode("latin-1"))
+
+    _comp, _pls, competencia, posicoes = cda.extrair_carteiras(buffer.getvalue(), {"10406511000161"})
+    carteira = posicoes["10406511000161"]
+    assert competencia == "2026-06"
+    assert len(carteira) == 12  # TODAS, sem o corte antigo de 10
+    assert carteira[0]["codigo"] == "ACAO00"  # maior valor primeiro
+    assert carteira[0]["quantidade"] == 1000.0  # QT_POS_FINAL capturado
+    assert all("pct" in p for p in carteira)
+
+
+def test_pagina_etf_mostra_carteira_completa_e_nota_datada(con):
+    from datetime import datetime
+
+    from scout.relatorio import etf_html
+
+    _semear_etf(con)
+    con.executemany(
+        "INSERT INTO etf_posicoes (cnpj, competencia, item, codigo, nome, cnpj_emissor, pct, quantidade) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+        [
+            ("10406511000161", "2026-06", i, f"ACAO{i:02d}", f"EMPRESA {i}", "", 20.0 - i, 1000 + i)
+            for i in range(12)
+        ],
+    )
+    con.commit()
+    dados = etf_html.montar_dados_etf(con, "BOVA11", {"10406511000161": {"classificacao_scout": "Ações Brasil"}})
+    assert len(dados["posicoes"]) == 12
+    pagina = etf_html.gerar(dados, agora=datetime(2026, 7, 20, 11, 0))
+    assert "Ver carteira completa (12 ativos)" in pagina  # expansível com todas
+    assert "posição informada à CVM" in pagina and "pode estar diferente" in pagina  # nota datada
+    assert "06/2026" in pagina  # a competência da carteira
+
+
 def test_extrair_carteiras_e_verificador():
     import io
     import zipfile

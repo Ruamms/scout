@@ -108,12 +108,17 @@ def extrair_carteiras(conteudo: bytes, cnpjs: set[str]) -> tuple[dict, dict, str
                         or codigo
                     )
                     if codigo or nome:
+                        try:
+                            quantidade = float(linha.get("QT_POS_FINAL") or 0)
+                        except ValueError:
+                            quantidade = 0.0
                         itens[cnpj].append(
                             {
                                 "codigo": codigo,
                                 "nome": nome,
                                 "cnpj_emissor": armazenamento.so_digitos(linha.get("CPF_CNPJ_EMISSOR")),
                                 "valor": valor,
+                                "quantidade": quantidade,
                             }
                         )
     composicao = {}
@@ -129,11 +134,14 @@ def extrair_carteiras(conteudo: bytes, cnpjs: set[str]) -> tuple[dict, dict, str
             chave = (item["codigo"], item["nome"])
             if chave in agregadas:
                 agregadas[chave]["valor"] += item["valor"]
+                agregadas[chave]["quantidade"] += item.get("quantidade", 0.0)
             else:
                 agregadas[chave] = dict(item)
-        maiores = sorted(agregadas.values(), key=lambda i: -i["valor"])[:10]
+        # carteira COMPLETA (todas as posições), maior peso primeiro. A página
+        # destaca o top 10 e deixa o restante numa tabela expansível.
+        completa = sorted(agregadas.values(), key=lambda i: -i["valor"])
         top_posicoes[cnpj] = [
-            {**item, "pct": 100 * item["valor"] / total} for item in maiores
+            {**item, "pct": 100 * item["valor"] / total} for item in completa
         ]
     return composicao, pls, competencia, top_posicoes
 
@@ -470,11 +478,14 @@ def atualizar_composicao(
         con.execute("DELETE FROM etf_posicoes WHERE cnpj = ?", (cnpj,))
         con.executemany(
             """
-            INSERT INTO etf_posicoes (cnpj, competencia, item, codigo, nome, cnpj_emissor, pct)
-            VALUES (?, ?, ?, ?, ?, ?, ?)
+            INSERT INTO etf_posicoes (cnpj, competencia, item, codigo, nome, cnpj_emissor, pct, quantidade)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
             """,
             [
-                (cnpj, competencia, indice, item["codigo"], item["nome"], item["cnpj_emissor"], item["pct"])
+                (
+                    cnpj, competencia, indice, item["codigo"], item["nome"],
+                    item["cnpj_emissor"], item["pct"], item.get("quantidade"),
+                )
                 for indice, item in enumerate(top_posicoes.get(cnpj, []))
             ],
         )

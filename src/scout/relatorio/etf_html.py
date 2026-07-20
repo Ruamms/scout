@@ -167,6 +167,8 @@ def _posicoes_com_links(con: sqlite3.Connection, cnpj: str) -> list[dict]:
                 "nome": linha["nome"] or linha["codigo"],
                 "codigo": linha["codigo"],
                 "pct": linha["pct"],
+                "quantidade": linha["quantidade"] if "quantidade" in linha.keys() else None,
+                "competencia": linha["competencia"],
                 "ticker_alvo": ticker_alvo,
                 "classe_alvo": classe_alvo,
             }
@@ -284,8 +286,9 @@ def gerar(
 
     secao_posicoes = ""
     if dados.get("posicoes"):
-        linhas_posicoes = []
-        for posicao in dados["posicoes"]:
+        posicoes = dados["posicoes"]
+
+        def _linha_posicao(posicao) -> str:
             rotulo = _e(posicao["codigo"] or _trunca(posicao["nome"], 44))
             if posicao["ticker_alvo"] and publicados and posicao["ticker_alvo"] in publicados:
                 rotulo = f'<a href="{_e(posicao["ticker_alvo"])}.html">{_e(posicao["ticker_alvo"])}</a>'
@@ -296,20 +299,42 @@ def gerar(
                 if posicao["classe_alvo"]
                 else ""
             )
-            nome_completo = _e(_trunca(posicao["nome"], 46)) if posicao["codigo"] or posicao["ticker_alvo"] else ""
-            linhas_posicoes.append(
-                f"<tr><td>{rotulo}{badge}</td><td>{nome_completo}</td>"
-                f"<td>{formato.percentual(posicao['pct'])}</td></tr>"
+            nome_completo = (
+                _e(_trunca(posicao["nome"], 46)) if posicao["codigo"] or posicao["ticker_alvo"] else ""
             )
+            qtd = posicao.get("quantidade")
+            qtd_txt = formato.compacto(qtd) if qtd else "—"
+            return (
+                f"<tr><td>{rotulo}{badge}</td><td>{nome_completo}</td>"
+                f"<td>{qtd_txt}</td><td>{formato.percentual(posicao['pct'])}</td></tr>"
+            )
+
+        competencia_pos = formato.competencia_br(posicoes[0]["competencia"]) if posicoes[0].get("competencia") else "—"
+        cabecalho = "<thead><tr><th>ativo</th><th>nome</th><th>quantidade</th><th>% da carteira</th></tr></thead>"
+        topo = "".join(_linha_posicao(p) for p in posicoes[:10])
+        nota_datada = (
+            f"posição informada à CVM na carteira de <b>{competencia_pos}</b> (CDA) — a carteira de hoje "
+            "pode estar diferente · quando o ativo é um fundo que o Scout também analisa, o link leva ao raio-x dele"
+        )
+        completa = ""
+        if len(posicoes) > 10:
+            linhas_completa = "".join(_linha_posicao(p) for p in posicoes)
+            completa = f"""
+  <details class="carteira-completa">
+    <summary>Ver carteira completa ({len(posicoes)} ativos)</summary>
+    <table class="imoveis">
+      {cabecalho}
+      <tbody>{linhas_completa}</tbody>
+    </table>
+  </details>"""
         secao_posicoes = f"""
   <h2>Principais posições</h2>
   <div class="grafico">
   <table class="imoveis">
-    <thead><tr><th>ativo</th><th>nome</th><th>% da carteira</th></tr></thead>
-    <tbody>{"".join(linhas_posicoes)}</tbody>
-  </table>
-  <div class="nota">as 10 maiores posições da carteira oficial (CDA/CVM) · quando o ativo é um fundo
-  que o Scout também analisa, o link leva ao raio-x dele</div>
+    {cabecalho}
+    <tbody>{topo}</tbody>
+  </table>{completa}
+  <div class="nota">{nota_datada}</div>
   </div>
 """
 

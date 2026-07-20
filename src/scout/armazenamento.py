@@ -127,6 +127,7 @@ CREATE TABLE IF NOT EXISTS etf_posicoes (
     nome         TEXT,
     cnpj_emissor TEXT,              -- para casar cotas de fundos com a nossa base
     pct          REAL,
+    quantidade   REAL,              -- QT_POS_FINAL do CDA (para futuro cálculo a preço de hoje)
     PRIMARY KEY (cnpj, competencia, item)
 );
 CREATE TABLE IF NOT EXISTS etf_carteira (
@@ -295,6 +296,14 @@ def _migrar(con: sqlite3.Connection) -> None:
             con.execute("ALTER TABLE informes_complemento ADD COLUMN taxa_adm_mes REAL")
             # recarrega os mensais para preencher a taxa de administração histórica
             con.execute("DELETE FROM cargas WHERE arquivo LIKE 'inf_mensal%'")
+            con.commit()
+    if "etf_posicoes" in tabelas:
+        colunas_pos = {linha[1] for linha in con.execute("PRAGMA table_info(etf_posicoes)")}
+        if "quantidade" not in colunas_pos:
+            con.execute("ALTER TABLE etf_posicoes ADD COLUMN quantidade REAL")
+            # CDA v3: passamos a guardar a carteira COMPLETA (todas as posições)
+            # e a quantidade; reprocessa o CDA para preencher
+            con.execute("DELETE FROM cargas WHERE arquivo LIKE 'cda_fi_%'")
             con.commit()
     if "cargas" in tabelas:
         marcador_cda = con.execute(
