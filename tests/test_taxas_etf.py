@@ -225,6 +225,50 @@ def test_atualizar_so_rele_quando_o_regulamento_muda(con, tmp_path, monkeypatch)
     assert baixados == ["111"]  # só o que mudou foi baixado
 
 
+def test_manual_vale_so_ate_o_regulamento_mudar(con, tmp_path, monkeypatch):
+    import csv
+
+    from scout import ia
+    from scout.coleta import fnet
+
+    monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
+    monkeypatch.delenv("CI", raising=False)
+    con.execute("INSERT INTO etfs (cnpj, ticker, radical, tipo_b3) VALUES ('111','MMM11','MMM','ETF')")
+    con.execute("INSERT INTO etfs (cnpj, ticker, radical, tipo_b3) VALUES ('222','NNN11','NNN','ETF')")
+    con.commit()
+
+    caminho = tmp_path / "dados" / "taxas_etfs.csv"
+    caminho.parent.mkdir()
+    caminho.write_text(
+        "ticker;taxa_adm_aa;fonte;verificado_em;confianca\n"
+        "MMM11;0,10;https://f/downloadDocumento?id=100;2020-01-01;manual\n"  # doc NÃO muda
+        "NNN11;0,20;https://f/downloadDocumento?id=200;2020-01-01;manual\n",  # doc MUDA
+        encoding="utf-8-sig",
+    )
+    monkeypatch.setattr(taxas_etf, "_caminho_gravavel", lambda: caminho)
+    regs = {
+        "111": {"id": 100, "tipo": "Regulamento", "categoria": "Doc", "data_entrega": ""},  # MESMO
+        "222": {"id": 201, "tipo": "Regulamento", "categoria": "Doc", "data_entrega": ""},  # NOVO
+    }
+    monkeypatch.setattr(fnet, "listar", lambda cnpj, **k: [regs[cnpj]])
+    baixados = []
+
+    def _baixar(con, cnpj, doc, destino, **k):
+        baixados.append(cnpj)
+        return tmp_path / f"{cnpj}.pdf"
+
+    monkeypatch.setattr(fnet, "_garantir_documento", _baixar)
+    monkeypatch.setattr(ia, "extrair_texto_pdf", lambda c, **k: "taxa de administração de 0,55% ao ano")
+
+    taxas_etf.atualizar(con)
+    linhas = {l["ticker"]: l for l in csv.DictReader(caminho.open(encoding="utf-8-sig"), delimiter=";")}
+    # MMM11: mesmo regulamento -> manual preservado, nem baixou o PDF
+    assert linhas["MMM11"]["taxa_adm_aa"] == "0,10" and linhas["MMM11"]["confianca"] == "manual"
+    # NNN11: regulamento mudou (200 -> 201) -> ATÉ a manual foi reavaliada
+    assert linhas["NNN11"]["taxa_adm_aa"] == "0,55"
+    assert baixados == ["222"]  # só o que mudou baixou
+
+
 def test_indice_etfs_tem_coluna_taxa(con):
     _semear_etf(con)
     dados = etf_html.montar_dados_etf(con, "BOVA11", {"10406511000161": {"classificacao_scout": "Ações Brasil"}})

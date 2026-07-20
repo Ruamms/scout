@@ -111,7 +111,8 @@ def atualizar(con, ao_progredir=None) -> str | None:
       regulamento mais recente no FNET tem id DIFERENTE do gravado, o documento
       mudou -> re-lê e atualiza a taxa. Mesmo id -> só renova a data.
 
-    `confianca=manual` NUNCA é sobrescrita (humano vence). Se o novo regulamento
+    NADA é eterno — nem `manual`: quando o regulamento MUDA (id novo) até a taxa
+    manual é reavaliada (ela só vale enquanto o documento não muda). Se o novo regulamento
     não declarar a taxa mas já tínhamos uma, mantém a última conhecida (o regex
     pode ter falhado no PDF novo). Processa até `_CAP_POR_RODADA` por rodada;
     falha de rede não “queima” o ETF (retenta). Retorna None quando não há nada a
@@ -136,8 +137,9 @@ def atualizar(con, ao_progredir=None) -> str | None:
         linha = linhas.get(ticker)
         if linha is None:
             return True  # ETF novo, nunca lido
-        if (linha.get("confianca") or "").strip().lower() == "manual":
-            return False  # humano vence — nunca re-lê
+        # NADA é eterno — nem o manual. Ele também é reconferido pelo frescor; o
+        # que o protege é o MESMO regulamento (tratado no loop: id igual -> mantém
+        # o valor). Quando o documento muda, até a manual pode estar velha -> re-lê.
         return _dias_desde(linha.get("verificado_em")) >= _FRESCOR_DIAS
 
     tickers_etf = [
