@@ -557,6 +557,20 @@ function calcAportes() {{
   põe('pa-renda', brl((reinvestir ? saldo : aportado) * taxa));
 }}
 
+function calcGordon() {{
+  const el = document.getElementById('gd-justo');
+  if (!el) return;
+  const d = num('gd-div'), r = num('gd-r') / 100, g = num('gd-g') / 100;
+  if (d <= 0 || r <= g) {{ el.textContent = (r <= g ? 'r precisa ser > g' : '—'); return; }}
+  el.textContent = (d * (1 + g) / (r - g)).toLocaleString('pt-BR', {{style: 'currency', currency: 'BRL', minimumFractionDigits: 2}});
+}}
+
+function abrirGordon(botao) {{
+  botao.hidden = true;
+  botao.nextElementSibling.hidden = false;
+  calcGordon();
+}}
+
 function janelaRent(botao, janela) {{
   const card = document.getElementById('card-rent');
   card.dataset.janela = janela;
@@ -1267,7 +1281,47 @@ def _secao_calculadoras(completo: AnaliseCompleta) -> str:
     meses — o futuro pode ser diferente. Não considera variação do preço da cota, impostos
     ou emissões. Simulação matemática, não promessa de rentabilidade.</p>
   </div>
+
+  {_calculadora_gordon(preco, rendimento)}
 """
+
+
+def _calculadora_gordon(preco: float, rendimento_mensal: float) -> str:
+    """Preço justo pelo Modelo de Gordon — EXTRA opt-in: só abre se o usuário
+    clicar, e o aviso de "não é recomendação" fica sempre visível ANTES do botão.
+    r (desconto) e g (crescimento) são premissas DO USUÁRIO — o Scout nunca
+    afirma um preço justo; oferece a ferramenta e mostra os fatos ao lado."""
+    if not preco or not rendimento_mensal:
+        return ""
+    div_anual = rendimento_mensal * 12
+    return f"""
+  <div class="calc">
+    <h3>🧮 Preço justo (Modelo de Gordon){_ajuda("Preço justo (Gordon)")}</h3>
+    <div style="background:#2a2320;border:1px solid #6b5a2a;color:#e8d9a8;padding:10px 12px;border-radius:8px;font-size:13px;margin:6px 0">
+      Esta calculadora está aqui para <b>facilitar sua análise</b> — <b>não é recomendação</b> de
+      compra ou venda. O “preço justo” depende inteiramente das premissas que <b>VOCÊ</b> define
+      (taxa de desconto e crescimento). É uma simulação sua, não um veredito do Scout.
+    </div>
+    <button class="btn-topo" onclick="abrirGordon(this)">Abrir a calculadora</button>
+    <div hidden>
+      <p class="desc">Modelo de Gordon: <b>preço justo = dividendo × (1 + g) / (r − g)</b>. Tudo editável.</p>
+      <div class="campos">
+        <div><label for="gd-div">Dividendo anual por cota (R$)</label>
+        <input type="number" id="gd-div" value="{div_anual:.2f}" step="0.01" min="0" oninput="calcGordon()"></div>
+        <div><label for="gd-r">Taxa de desconto r (% a.a.)</label>
+        <input type="number" id="gd-r" value="10" step="0.5" min="0.1" oninput="calcGordon()"></div>
+        <div><label for="gd-g">Crescimento g (% a.a.)</label>
+        <input type="number" id="gd-g" value="0" step="0.5" oninput="calcGordon()"></div>
+      </div>
+      <div class="resultado">
+        <div class="res"><div class="rotulo">Preço justo (com suas premissas)</div><div class="num" id="gd-justo">—</div></div>
+        <div class="res"><div class="rotulo">Cotação atual (D-1)</div><div class="num">R$ {preco:.2f}</div></div>
+      </div>
+      <p class="aviso">Dividendo pré-preenchido com o rendimento real dos últimos 12 meses; r e g são
+      SUAS premissas. Modelo teórico (crescimento perpétuo constante), sensível às premissas — não é
+      recomendação nem promessa de retorno.</p>
+    </div>
+  </div>"""
 
 
 def _card_rentabilidade(dados) -> str:

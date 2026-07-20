@@ -118,6 +118,12 @@ TERMOS = {
         "Juros compostos na prática: aporte inicial + aportes mensais rendendo à taxa "
         "definida. Reinvestir os rendimentos é o que faz a curva dobrar no longo prazo."
     ),
+    "Preço justo (Gordon)": (
+        "Estimativa de quanto a cota \"valeria\" pelo Modelo de Gordon: o dividendo dividido "
+        "pela SUA taxa de desconto menos o crescimento que VOCÊ espera (preço = D × (1+g) / "
+        "(r − g)). NÃO é recomendação — o número muda inteiramente conforme suas premissas. "
+        "Ferramenta para a sua análise, nunca um veredito do Scout."
+    ),
     "Cotação (fechamento oficial)": (
         "O preço da cota no FIM do último pregão, direto dos arquivos oficiais da B3 (D-1). "
         "Preço em tempo real é serviço pago da bolsa — nenhuma fonte gratuita tem."

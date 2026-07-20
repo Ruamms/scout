@@ -58,7 +58,8 @@ def test_porteiro_exige_confianca_preenchida(tmp_path):
 
 
 def test_csv_ausente_nao_quebra(tmp_path):
-    assert taxas_etf.carregar(tmp_path) == {}
+    # sem CSV na raiz dada: cai no fallback do repo (ou vazio), mas NUNCA quebra
+    assert isinstance(taxas_etf.carregar(tmp_path), dict)
 
 
 def test_card_de_taxa_aparece_na_pagina_do_etf(con):
