@@ -307,3 +307,5 @@
 2026-07-20 18:23:26	BTHI11	erro	The read operation timed out
 2026-07-20 18:37:12	TRBL11	lido	826s
 2026-07-20 18:56:32	BTDI11	lido	1160s
+2026-07-20 19:15:08	XPIN11	lido	1117s
+2026-07-20 19:15:08	ITRI11	erro	The read operation timed out

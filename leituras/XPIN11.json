@@ -1,0 +1,52 @@
+{
+  "ticker": "XPIN11",
+  "modelo": "qwen2.5:14b",
+  "gerada_em": "2026-07-20T19:15:07",
+  "relatorio": {
+    "id": 1233062,
+    "data_entrega": "29/06/2026 18:31",
+    "texto": "- **Conclusão da venda de ativos**: O XPIN11 concluiu a etapa de venda dos imóveis que compunham sua carteira para os fundos IBBP11 e XPLG11. [página 2]\n  \n- **Novas posições na carteira**: A partir de maio, o fundo passou a carregar posições nas cotas do IBBP11 e XPLG11 em sua carteira. [página 3]\n\n- **Diferença entre cota patrimonial e valor de liquidação**: A cota patrimonial (R$ 74,78) reflete a volatilidade das cotas investidas, enquanto o valor de liquidação estimado é aproximadamente R$ 83,00. [página 3]\n\n- **Divulgação do processo de liquidação**: O fundo anunciou as etapas para a liquidação, incluindo amortização parcial e liquidação final, com datas específicas (29/06 - 03/07). [página 3]\n\n- **Distribuição de dividendos**: No mês de maio, o fundo anunciou a distribuição de R$ 0,85 por cota. [página 3]\n\n- **Renda do mês (maio)**: O resultado líquido foi negativo em R$ 1.205.800, enquanto as receitas totais somaram R$ 1.748.800 e as despesas operacionais totalizaram R$ 2.954.600. [página 6]\n\n- **Reserva de lucros retidos**: O fundo tem uma reserva de lucros retidos de aproximadamente R$ 778,4 mil que será distribuída aos cotistas em etapas futuras. [página 6]\n\nO que observar em seguida:\n- A divulgação das proporções e cronogramas para a entrega de caixa, cotas do XPLG11 e IVBP11.\n- O anúncio da distribuição final da reserva de lucros retidos prevista para o dia 17/07."
+  },
+  "comunicados": {
+    "ids": [
+      1236212,
+      1165727,
+      1117180,
+      1147234,
+      1133939
+    ],
+    "datas": [
+      "30/06/2026",
+      "16/04/2026",
+      "17/02/2026",
+      "27/03/2026",
+      "12/03/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### 30/06/2026\n**O que aconteceu:** XPIN11 concluiu a alienação de seu portfólio imobiliário e iniciou procedimentos para liquidação e encerramento.\n**Resumo:** O fundo anunciou uma estrutura de entrega aos cotistas em duas tranches: uma amortização parcial com distribuição de cotas do XPLG11 e pagamento em dinheiro, seguida por uma liquidação final que incluirá a entrega de cotas do IVBP11 e caixa remanescente.\n**Trecho-chave:** \"A entrega aos cotistas ocorrerá em duas tranches: (i) uma amortização parcial, mediante a entrega de 2.306.732 cotas do XPLG11 aos cotistas do XPIN11, correspondendo a 0,32260081 cotas de XPLG11 para cada cota de XPIN11 , e o pagamento de parcela em caixa no valor de R$ 18.000.000,00\" (p. 1).\n\n### 16/04/2026\n**O que aconteceu:** O fundo concluiu a alienação dos imóveis para o XPLG11.\n**Resumo:** A operação foi formalizada com uma escritura pública de venda e compra, pelo valor total de R$ 287.632.802,31, que foi integralmente quitada pelas partes. O fundo adquirente passou a ser titular dos direitos e obrigações dos imóveis.\n**Trecho-chave:** \"A operação foi concluída pelo valor total de R$ 287.632.802,31 (duzentos e oitenta e sete milhões, seiscentos e trinta e dois mil, oitocentos e dois reais e trinta e um centavos), tendo o preço sido integralmente quitado, nos termos pactuados entre as partes.\" (p. 1).\n\n### 17/02/2026\n**O que aconteceu:** XPIN11 comunicou esclarecimentos sobre a proposta de alienação dos imóveis para o IBBP11.\n**Resumo:** O fundo detalhou a operação proposta pelo IBBP11, incluindo o valor da aquisição dos imóveis e a quitação das obrigações do fundo. Foi apresentado um comparativo entre o patrimônio líquido contábil, o valor de mercado e o valor da operação almejada.\n**Trecho-chave:** \"A tabela abaixo apresenta comparativo entre o Patrimônio Líquido Contábil, o Valor de Mercado e o Valor da Operação (almejado).\" (p. 2).\n\n### 27/03/2026\n**O que aconteceu:** A assembleia geral extraordinária aprovou a alienação dos imóveis para o XP Log.\n**Resumo:** Os cotistas do fundo votaram e aprovaram, por 78,22%, a alienação dos imóveis pelo valor de R$ 287.632.802,31 ao XP Log até 17 de abril de 2026.\n**Trecho-chave:** \"Voto Única Matéria Aprovado: 78,22%\" (p. 2).\n\n### 12/03/2026\n**O que aconteceu:** O fundo convocou assembleia geral extraordinária para deliberar sobre a alienação dos imóveis remanescentes.\n**Resumo:** A assembleia foi convocada para deliberar sobre a autorização da alienação de três empreendimentos logísticos pelo valor total de R$ 287.632.802,31 ao XP Log até 17 de abril de 2026.\n**Trecho-chave:** \"A autorização para que o Fundo, até 17 de abril de 2026, aliene os Imóveis (conforme definido na Consulta Formal), pelo valor total de R$ 287.632.802,31\" (p. 1)."
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 62.04
+  },
+  "parecer": {
+    "id": 1010251,
+    "data_entrega": "10/10/2025 10:27",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo em 30 de junho de 2025, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos fundos de investimento imobiliário."
+  }
+}
