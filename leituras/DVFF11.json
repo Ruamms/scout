@@ -1,11 +1,11 @@
 {
   "ticker": "DVFF11",
   "modelo": "qwen2.5:7b",
-  "gerada_em": "2026-07-21T02:39:02",
+  "gerada_em": "2026-07-21T20:42:48",
   "relatorio": {
-    "id": 1238488,
-    "data_entrega": "02/07/2026 18:46",
-    "texto": "### Fatos Extraídos:\n\n1. **Distribuição de Rendimentos:** O fundo distribuiu R$ 715,6 mil em rendimentos no mês de março, resultando em um dividend yield de 1,15% sobre a cota de mercado.\n2. **Composição da Carteira:** A carteira do fundo está composta por 86,1% em FIIs, 9,3% em CRIs e 4,6% em caixa.\n3. **Dividend Yield Histórico:** O dividend yield médio do DVFF11 nos últimos 12 meses foi de 13,87%, com um DY mensal variando entre 0,74% a 1,15%.\n4. **Cota Patrimonial e Mercado:** A cota patrimonial é de R$ 8,56, enquanto o valor de mercado da cota é de R$ 5,66, com um desconto de 33,86% sobre o patrimônio líquido.\n5. **Rendimentos Acima do Resultado Financeiro:** O fundo distribuiu rendimentos declarados de R$ 12,2 milhões no 4º trimestre, mas o resultado financeiro líquido foi de apenas R$ 8,2 milhões, resultando em um excesso não coberto pelo resultado acumulado (reserva) de R$ 1,5 milhão.\n6. **Cotas e Cotistas:** O fundo possui 11,009,500 cotas e 2,177 cotistas, com o número de cotistas aumentando em 17,26% nos últimos 12 meses.\n\n### O que observar em seguida:\n- Monitorar a distribuição de rendimentos e como ela se comporta no futuro.\n- Observar as mudanças na alocação da carteira e os impactos nas distribuições."
+    "id": 1261509,
+    "data_entrega": "21/07/2026 18:43",
+    "texto": "### Fatos Extraídos:\n\n1. **Dividend Yield**: O dividend yield do DVFF11 foi de 14,20% no último ano, com uma remuneração equivalente a 129,24% do CDI após o desconto do IR.\n   > \"O dividend yield 12 meses fechou em 14,20%\" (p. 3)\n\n2. **Alocação da Carteira**: A carteira permaneceu 85% alocada em FIIs, 9% em CRI e 6% em caixa.\n   > \"A alocação atual do portfólio é composta por 85,0% em FIIs, 9,5% em CRIs e 5,5% em caixa\" (p. 4)\n\n3. **Rendimentos Distribuídos**: O fundo distribuiu R$ 715,6 mil em rendimentos no mês de março.\n   > \"Registrou-se um total de R$ 715,6 mil em rendimentos distribuídos\" (p. 2)\n\n4. **Cotas Distribuídas**: Cada cota do DVFF11 recebeu R$ 0,065 em rendimentos no mês de março.\n   > \"Aos cotistas do DVFF11, foram distribuídos R$ 0,065 por cota\" (p. 2)\n\n5. **Cotas Retidas**: Após a distribuição dos rendimentos, o fundo manteve R$ 0,056 por cota retido para futuras distribuições.\n   > \"Após a distribuição dos rendimentos, o fundo manteve R$ 0,056 por cota retido para futuras distribuições\" (p. 2)\n\n6. **Vacância e Inadimplência**: Não há menção de mudanças significativas na vacância ou inadimplência.\n   > \"Não há informações específicas sobre alterações na vacância ou inadimplência\" (p. 4-7)\n\n7. **Obras e Reformas**: Não há menções a obras ou reformas em andamento.\n   > \"Não há referências a obras ou reformas em andamento no relatório\" (p. 4-7)\n\n8. **Riscos Cientificados pela Gestão**: O fundo destaca riscos relacionados à volatilidade do mercado e ao desconto sobre o valor patrimonial dos ativos.\n   > \"O setor de fundo de fundos (FOFs) continua apresentando uma porta de entrada oportuna aos investidores. No caso do DVFF11, além do duplo upside que chega a 82,4% em relação ao valor patrimonial dos ativos investidos\" (p. 3)\n\n### O que observar em seguida:\n- Monitorar as distribuições de rendimentos e como elas variam no futuro.\n- Observar se há mudanças na alocação da carteira ou nos ativos específicos, especialmente FIIs e CRIs."
   },
   "comunicados": {
     "ids": [
@@ -26,6 +26,17 @@
     "texto": "### Documento entregue em 19/08/2025\n\n**O QUE aconteceu:** Resposta ao Ofício B3 sobre oscilações atípicas das cotas do fundo.\n\n**Resumo:** O administrador do fundo, Banco Daycoval S.A., informou desconhecer a existência de um fato específico que justificasse as recentes oscilações nas cotações e aumento no volume negociado.\n\n**Trecho-chave:**\n\"O Administrador informa que desconhece a existência de um fato específico, no período mencionado, que tenha originado as referidas oscilações das cotas de emissão do Fundo, bem como o aumento do número de negócios e da quantidade negociada, em decorrência de suas atividades regulares.\"\n\n---\n\n### Documento entregue em 10/06/2026\n\n**O QUE aconteceu:** Realização de Assembleia Geral Ordinária (AGO) para aprovar as Demonstrações Financeiras do exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A AGO foi realizada por meio de consulta formal e aprovou as Demonstrações Financeiras do Fundo. Dos cotistas que votaram, 95,31% (4,7%) votaram a favor da aprovação das demonstrações financeiras.\n\n**Trecho-chave:**\n\"Os Cotistas do Fundo foram chamados a se manifestar a respeito do seguinte tema, presente na Ordem do Dia:\n(i) Apresentação, para aprovação, das demonstrações financeiras do Fundo relativa ao exercício social findo em 31 de dezembro de 2025.\nDiante do exposto, as Demonstrações Financeiras do Fundo relativa ao exercício social findo em 31 de dezembro de 2025, foram aprovadas.\"\n\n---\n\n### Documento entregue em 11/05/2026\n\n**O QUE aconteceu:** Convocação da Assembleia Geral Ordinária (AGO) para aprovar as Demonstrações Financeiras do exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A AGO será realizada por meio de consulta formal e os cotistas terão até o dia 9 de maio de 2026 para votar. A aprovação das demonstrações financeiras dependerá do quórum mínimo estabelecido.\n\n**Trecho-chave:**\n\"A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., convida os cotistas do Fundo (“Cotistas”), por meio desta, a participar da Assembleia Geral Ordinária de Cotistas do Fundo (“AGO”), a ser realizada de forma não presencial, por meio de consulta formal , nos termos do Art. 7.3 do regulamento do Fundo (“Regulamento”).\"\n\n---\n\n**Conexão com o contexto:** A aprovação das Demonstrações Financeiras no documento mais recente (10/06/2026) confirma a situação financeira apresentada nos indicadores, incluindo o valor do ativo e o patrimônio líquido."
   },
   "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 5.26
+  },
+  "anterior": {
+    "gerada_em": "2026-07-21T02:39:02",
+    "relatorio_data": "02/07/2026 18:46",
     "selo": "Atenção",
     "nivel": "atencao",
     "alertas": [

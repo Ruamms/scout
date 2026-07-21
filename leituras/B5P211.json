@@ -1,7 +1,7 @@
 {
   "ticker": "B5P211",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-21T06:11:05",
+  "verificado_em": "2026-07-21T20:51:15",
   "comunicados": {
     "ids": [
       1228478,
@@ -17,10 +17,9 @@
     ],
     "texto": "### ASSEMBLEIA AGO entregue em 25/06/2026\n\n**O que aconteceu:** Rerratificação e alteração da data de manifestação para a consulta formal.\n\n**Resumo:** O Itaú Unibanco S.A., como administrador do IT NOW IMA-B5 P2, retificou o Edital de Convocação da Assembleia Geral de Cotistas, corrigindo a ordem do dia e alterando a data para manifestação à consulta formal eletrônica.\n\n**Trecho-chave:** \"submete à consulta formal eletrônica de cotistas a seguinte matéria: (i) Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes referentes ao Fundo, relativos ao exercício social encerrado em 31 de março de 2026.\" (p. 1)\n\n**Conexão com contexto:** Esta assembleia se refere às demonstrações financeiras do exercício social encerrado em 31 de março de 2026.\n\n### ASSEMBLEIA AGO entregue em 15/06/2026\n\n**O que aconteceu:** Convocação para consulta formal eletrônica sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes.\n\n**Resumo:** O Itaú Unibanco S.A., como administrador do IT NOW IMA-B5 P2, convocou os cotistas para uma consulta formal eletrônica sobre as demonstrações financeiras relativas ao exercício social encerrado em 28/02/2026.\n\n**Trecho-chave:** \"submete à consulta formal eletrônica de quotistas a seguinte matéria: (i) Deliberar sobre as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes, relativos ao exercício social encerrado em 28/02/2026.\" (p. 1)\n\n**Conexão com contexto:** Esta assembleia se refere às demonstrações financeiras do exercício social encerrado em 28 de fevereiro de 2026."
   },
-  "modelo": "qwen2.5:7b",
   "parecer": {
-    "id": 1209716,
-    "data_entrega": "01/06/2026 17:38",
+    "id": 1261603,
+    "data_entrega": "21/07/2026 20:13",
     "tipo": "sem_ressalva",
     "rotulo": "opinião sem ressalvas",
     "grave": false,

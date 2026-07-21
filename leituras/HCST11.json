@@ -1,11 +1,11 @@
 {
   "ticker": "HCST11",
   "modelo": "qwen2.5:7b",
-  "gerada_em": "2026-07-21T03:48:05",
+  "gerada_em": "2026-07-21T20:45:10",
   "relatorio": {
-    "id": 1228436,
-    "data_entrega": "25/06/2026 18:04",
-    "texto": "### Fatos Extraídos:\n\n1. **Carteira do Fundo:**\n   \"O Fundo conta com uma carteira composta por um empreendimento em operação, dois em desenvolvimento e um em fase de projeto.\" (p. 3)\n\n2. **Status dos Ativos:**\n   - **Piragibe:** Em operação, com 80% de ocupação e baixo índice de inadimplência.\n   - **HI Pinheiros:** Em desenvolvimento, serviços na fase final de montagem da marcenaria.\n   - **Monte Caseros:** Em fase de projeto, com 73,2% de evolução acumulada.\n   - **Pedro de Toledo:** Em projeto, em processo de revisão do orçamento. (p. 6-8)\n\n3. **Obras e Reformas:**\n   - O HI Pinheiros está na fase final da montagem da marcenaria das unidades no 1° pavimento.\n   - O Monte Caseros avança conforme cronograma estabelecido pela Incorporadora MetroCasa, com 73,2% de evolução acumulada. (p. 4-5)\n\n### O que observar em seguida:\n- Monitorar o progresso das obras do HI Pinheiros e Monte Caseros.\n- Observar as estratégias da operadora para a ocupação do Piragibe."
+    "id": 1261480,
+    "data_entrega": "21/07/2026 18:15",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Ocupação e Inadimplência:**\n   - \"Piragibe: no mês de junho, o empreendimento registrou um nível de ocupação de 77% e manteve um baixo índice de inadimplência.\" (p. 3)\n\n2. **Desenvolvimento dos Empréstimos:**\n   - \"HI Pinheiros: os serviços avançaram para etapa de conclusão das unidades localizadas no 1º e 2º pavimentos, que entraram em fase de revisões, ajustes finais e preparação para a vistoria de recebimento da mobília.\" (p. 4)\n   - \"Monte Caseros: a obra avança conforme cronograma estabelecido pela Incorporadora MetroCasa, que indicou 84,2% de evolução acumulada.\" (p. 5)\n\n3. **Composição da Carteira:**\n   - \"Piragibe: em operação Moradia Estudantil\" \n   - \"HI Pinheiros: em desenvolvimento Residencial Padrão\"\n   - \"Monte Caseros: Em Projeto Moradia Estudantil\"\n   - \"Pedro de Toledo: Em Projeto Moradia Estudantil\" (p. 6)\n\n4. **Localização dos Ativos:**\n   - Piragibe: a menos de 1km da USP e 2km da estação Butantã do Metrô.\n   - HI Pinheiros: a menos de 1km das estações Oscar Freire e Fradique Coutinho do Metrô, e próximo das principais vias da região.\n   - Monte Caseros: a 1km da USP e a 3km da estação Butantã do Metrô. (p. 7)\n\n5. **Descrição dos Ativos:**\n   - Piragibe: possui 150 quartos e potencial de acolher até 300 residentes, localizado próximo ao Campus Butantã da USP.\n   - HI Pinheiros: contará com 91 Apartamentos de 151m² e 178m², 104 Studios de 20,5m² a 43m² e 02 Lajes Corporativas de 880m².\n   - Monte Caseros: projeto de 187 studios com áreas variando entre 18m² e 28m². (p. 7)\n\n### O que Observar em Seguida:\n- Monitorar a conclusão das obras do HI Pinheiros e Monte Caseros, pois esses projetos estão próximos de sua entrega.\n- Acompanhar as estratégias de atrair residentes para o empreendimento Piragibe, especialmente com a modalidade de curta locação."
   },
   "comunicados": {
     "ids": [
@@ -35,6 +35,18 @@
     "texto": "### FATO RELEVANTE entregue em 23/02/2026\n\n**O que aconteceu:** Reavaliação do investimento no HCST11.\n\n**Resumo:** A reavaliação realizada pela empresa especializada Ipê Avaliações resultou em uma variação positiva de 8,73% no valor do patrimônio líquido do Fundo em sua Data Base (31 de dezembro de 2025).\n\n**Trecho-chave:** \"Os ativos do fundo foram reavaliados a valor justo pela empresa especializada Ipê Avaliações, em 31 de dezembro de 2025 ('Data Base'), resultando em uma variação positiva de 8,73% no valor do patrimônio líquido do Fundo em sua Data Base.\"\n\n### FATO RELEVANTE entregue em 20/01/2026\n\n**O que aconteceu:** Emissão de novas cotas.\n\n**Resumo:** A administradora aprovou a 5ª emissão de cotas, no valor total de até R$7.999.979,04, sem a necessidade de aprovação em Assembleia Geral de Cotistas e/ou alteração no Regulamento.\n\n**Trecho-chave:** \"Aprovou a 5ª emissão ('5ª Emissão') de cotas do Fundo ('Novas Cotas' e, quando referidas em conjunto com as cotas já emitidas pelo Fundo, 'Cotas'), nos termos do artigo 43 do Regulamento do Fundo, conforme alterado ('Regulamento') que autorizou a emissão das Novas Cotas pelo Administrador, sem a necessidade de aprovação em Assembleia Geral de Cotistas e/ou alteração no Regulamento.\"\n\n### COMUNICADO AO MERCADO entregue em 29/06/2026\n\n**O que aconteceu:** Resposta ao Ofício da B3 sobre a qualificação das demonstrações financeiras.\n\n**Resumo:** A administradora informa as medidas tomadas para endereçar a ressalva apresentada pela Grant Thornton, bem como o cronograma de implantação dessas medidas.\n\n**Trecho-chave:** \"Informamos que os procedimentos da investida permanecem em processo e, assim que finalizados, seguiremos com a reemissão.\"\n\n### COMUNICADO AO MERCADO entregue em 12/06/2026\n\n**O que aconteceu:** Divulgação das demonstrações financeiras qualificadas.\n\n**Resumo:** As demonstrações financeiras do exercício encerrado em 31 de dezembro de 2025 foram emitidas com ressalvas, devido à não obtenção de acesso às demonstrações financeiras auditadas das SPEs.\n\n**Trecho-chave:** \"Em decorrência disso, a auditoria não obteve evidência de auditoria apropriada e suficiente acerca dos saldos, caracterizando limitação de escopo nos trabalhos de auditoria das demonstrações financeiras referentes à data-base de 31 de dezembro de 2025.\"\n\n### ASSEMBLEIA AGO entregue em 29/06/2026\n\n**O que aconteceu:** Proposta para a aprovação das contas e demonstrações contábeis do Fundo.\n\n**Resumo:** A administradora propôs a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31 de dezembro de 2025, devidamente auditadas.\n\n**Trecho-chave:** \"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31 de dezembro de 2025, devidamente auditadas, conforme disponíveis para consulta nos sites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\""
   },
   "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Emissão de cotas com VP/cota em queda",
+      "Rendimentos irregulares"
+    ],
+    "cota": 35.1
+  },
+  "anterior": {
+    "gerada_em": "2026-07-21T03:48:05",
+    "relatorio_data": "25/06/2026 18:04",
     "selo": "Alerta grave",
     "nivel": "grave",
     "alertas": [

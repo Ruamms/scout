@@ -1052,3 +1052,51 @@
 2026-07-21 11:51:26	SLVR11	sem-relatorio-fatos-lidos	22s
 2026-07-21 11:52:02	XETH11	sem-relatorio-fatos-lidos	36s
 2026-07-21 11:52:02	--- lote encerrado · 44 lidos, 666 em dia/sem relatório, 41 erros
+2026-07-21 20:23:50	--- lote iniciado · modelo qwen2.5:7b · 751 fundos na fila
+2026-07-21 20:25:00	XPML11	erro	The read operation timed out
+2026-07-21 20:26:34	GGRC11	lido	93s
+2026-07-21 20:26:34	ISSH11	erro	Stream has ended unexpectedly
+2026-07-21 20:27:26	LVBI11	lido	52s
+2026-07-21 20:28:42	CVBI11	lido	76s
+2026-07-21 20:29:53	RBRX11	lido	71s
+2026-07-21 20:31:10	RVBI11	lido	77s
+2026-07-21 20:31:10	FNDA11	erro	The read operation timed out
+2026-07-21 20:32:21	URPR11	lido	71s
+2026-07-21 20:33:42	VGIP11	lido	81s
+2026-07-21 20:34:42	RBRP11	lido	59s
+2026-07-21 20:34:42	PATB11	erro	The read operation timed out
+2026-07-21 20:34:42	RZAK11	erro	The read operation timed out
+2026-07-21 20:34:42	RZDS11	erro	PDF sem texto extraível
+2026-07-21 20:34:42	CPOF11	erro	The read operation timed out
+2026-07-21 20:34:42	BTHI11	erro	The read operation timed out
+2026-07-21 20:34:42	XPIN11	erro	The read operation timed out
+2026-07-21 20:34:42	ITRI11	erro	The read operation timed out
+2026-07-21 20:36:14	VGPR11	lido	92s
+2026-07-21 20:36:14	OBAL11	erro	The read operation timed out
+2026-07-21 20:36:53	NSLU11	lido	40s
+2026-07-21 20:38:39	EDGA11	lido	106s
+2026-07-21 20:38:40	RZLC11	erro	PDF sem texto extraível
+2026-07-21 20:38:40	RZZI11	erro	Stream has ended unexpectedly
+2026-07-21 20:39:40	CXRI11	lido	60s
+2026-07-21 20:40:10	CEOC11	lido	30s
+2026-07-21 20:40:10	HERM11	erro	The read operation timed out
+2026-07-21 20:40:51	CENU11	lido	41s
+2026-07-21 20:40:51	CXCE11	erro	The read operation timed out
+2026-07-21 20:41:53	BTWR11	lido	62s
+2026-07-21 20:42:48	DVFF11	lido	55s
+2026-07-21 20:43:24	HCRI11	lido	36s
+2026-07-21 20:44:33	CRFF11	lido	69s
+2026-07-21 20:45:10	HCST11	lido	37s
+2026-07-21 20:45:49	RCFF11	lido	39s
+2026-07-21 20:46:35	PEMA11	lido	46s
+2026-07-21 20:47:41	TELM11	lido	66s
+2026-07-21 20:49:23	RBTS11	lido	102s
+2026-07-21 20:51:15	HDEL11	lido	113s
+2026-07-21 20:51:16	B5P211	sem-relatorio
+2026-07-21 20:51:29	ETHE11	sem-relatorio-fatos-lidos	13s
+2026-07-21 20:51:29	MATB11	erro	The read operation timed out
+2026-07-21 20:51:29	NTNF11	erro	The read operation timed out
+2026-07-21 20:51:29	NTNS11	erro	The read operation timed out
+2026-07-21 20:51:29	QDFI11	erro	The read operation timed out
+2026-07-21 20:51:29	QQQQ11	erro	The read operation timed out
+2026-07-21 20:51:29	--- lote encerrado · 25 lidos, 706 em dia/sem relatório, 20 erros

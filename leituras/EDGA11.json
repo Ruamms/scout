@@ -1,14 +1,15 @@
 {
   "ticker": "EDGA11",
   "modelo": "qwen2.5:7b",
-  "gerada_em": "2026-07-21T00:44:54",
+  "gerada_em": "2026-07-21T20:38:39",
   "relatorio": {
-    "id": 1218050,
-    "data_entrega": "11/06/2026 18:06",
-    "texto": "### Fatos Extraídos:\n\n1. **Vacância:** A vacância do imóvel é de 18,72%, com o mesmo valor no trimestre mais recente (p. 3).\n2. **Locações Recentes:**\n   - Nova locação da loja 107 para a Bramex após rescisão antecipada da Tramonto (p. 4).\n   - Ações judiciais contra o Grupo Mauá Bank por inadimplência das unidades Loja 103 e Sala 901 (p. 4).\n3. **Distribuição de Rendimentos:**\n   - O Fundo retomou a distribuição de rendimentos, anunciando R$ 0,02 por cota para outubro/2025 (p. 4).\n   - Prejuízo de R$ 885.247,45 em novembro/2025, equivalente a um impacto negativo de R$ 0,23 por cota (p. 4).\n4. **Locação Devolução:**\n   - Devolução da locatária Transatlantic e nova locação com a WN Facilities para garantir ocupação contínua (p. 5).\n\n### O que observar em seguida:\n1. Monitorar as ações judiciais contra o Grupo Mauá Bank.\n2. Observar a evolução do prejuízo causado pela inadimplência e a recuperação dos valores devidos."
+    "id": 1261605,
+    "data_entrega": "21/07/2026 20:17",
+    "texto": "### Fatos Extraídos:\n\n1. **Vacância**: A vacância do imóvel é de 18,72%, com a perspectiva de melhoras para 2026.\n   > \"Atualmente, o imóvel apresenta uma queda na ocupação devido ações de cobrança e entrega da locação do Grupo Mauá e I-System.\" (p. 4)\n\n2. **Locações recentes**: A loja 107 foi locada para a Bramex, e a locatária Transatlantic comunicou que desocupará o espaço ao término do contrato vigente.\n   > \"Devolução Transatlantic – Nova Locação WN Facilities: A locatária Transatlantic comunicou que desocupará o espaço ao término do contrato vigente, previsto para dezembro de 2025.\" (p. 5)\n\n3. **Ações judiciais**: O fundo segue com ações de execução e despejo contra os locatários inadimplentes das unidades Loja 103 e Sala 901.\n   > \"Ações contra o Grupo Mauá Bank (Loja 103 e Sala 901): O fundo segue com ações de execução e despejo contra os locatários inadimplentes das unidades Loja 103 e Sala 901.\" (p. 4)\n\n4. **Distribuição de rendimentos**: A distribuição de rendimentos foi retomada em outubro/2025, com a expectativa de normalização gradual.\n   > \"Distribuição de Rendimentos: O Fundo retomou a distribuição de rendimentos, anunciando R$ 0,02 por cota referente à competência de outubro/2025.\" (p. 6)\n\n5. **Taxa de ocupação**: A taxa de ocupação do fundo é de 65,88%.\n   > \"Por fim, a Administradora mantém uma visão positiva, acompanhando as iniciativas voltadas para a revitalização do centro do Rio de Janeiro.\" (p. 7)\n\n### O que observar em seguida:\n1. A evolução das ações judiciais contra os locatários inadimplentes.\n2. As medidas adotadas pela administradora para melhorar a ocupação e a geração de receita do ativo."
   },
   "comunicados": {
     "ids": [
+      1261599,
       1068023,
       951425,
       1198773,
@@ -17,6 +18,7 @@
       1169243
     ],
     "datas": [
+      "21/07/2026",
       "22/12/2025",
       "24/07/2025",
       "18/05/2026",
@@ -27,14 +29,26 @@
     "rotulos": [
       "Fato Relevante",
       "Fato Relevante",
+      "Fato Relevante",
       "Comunicado ao Mercado",
       "Comunicado ao Mercado",
       "Assembleia AGO",
       "Assembleia AGO"
     ],
-    "texto": "### FATO RELEVANTE entregue em 24/12/2025\n\n**O QUE aconteceu:** A inadimplência de locatários resultou em um impacto negativo na distribuição de rendimentos.\n\n**Resumo:** A Classe deixou de receber aluguéis e encargos, o que gerou um prejuízo de R$ 885.247,45, refletindo um impacto negativo de R$ 0,23 por cota.\n\n**Trecho-chave:**\n\"Em razão da inadimplência de determinados locatários, a Classe deixou de receber os aluguéis devidos, e arcou com encargos compusórios, tais como condomínio, IPTU e custas judiciais. Como consequência, não haverá resultado caixa disponível para a distribuição de rendimentos até que o prejuízo gerado pela inadimplência seja integralmente compensado.\"\n\n---\n\n### FATO RELEVANTE entregue em 24/07/2025\n\n**O QUE aconteceu:** A inadimplência de locatários resultou em um impacto negativo na distribuição de rendimentos.\n\n**Resumo:** A Classe deixou de receber aluguéis, o que gerou um prejuízo de R$ 885.247,45, refletindo um impacto negativo de R$ 0,23 por cota.\n\n**Trecho-chave:**\n\"Em razão da inadimplência de determinados locatários, a Classe deixou de receber os aluguéis devidos, o que resultou em um impacto negativo de , aproximandamente, R$ 0 ,066117 por cota na distribuição de rendimentos.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 18/05/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025 foram aprovadas na assembleia geral.\n\n**Resumo:** A assembleia geral de cotistas realizada em 06 de maio de 2026 aprovou as contas anuais do Fundo.\n\n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 13/11/2025\n\n**O QUE aconteceu:** A administradora esclareceu que não há ato ou fato relevante que justifique a variação do valor da cota do Fundo.\n\n**Resumo:** A administradora informou à B3 que não tem conhecimento de ato ou fato relevante que possa justificar as oscilações recentes no mercado secundário.\n\n**Trecho-chave:**\n\"A Administradora esclarece que não tem conhecimento de ato ou fato relevante que possa justificar a variação do valor da cota do Fundo no mercado secundário de bolsa da B3 – Brasil, Bolsa e Balcão e que não tenha sido tempestivamente divulgado aos cotistas e ao mercado.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 18/05/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025 foram aprovadas.\n\n**Resumo:** A assembleia geral de cotistas realizada via manifestação de voto aprovou as contas e demonstrações contábeis do Fundo para o exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 24/04/2026\n\n**O QUE aconteceu:** A assembleia geral convocada para aprovar as contas e demonstrações contábeis do Fundo referente ao exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia geral foi convocada para deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do relatório do auditor independente, referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aos Cotistas do FUNDO DE INVESTIMENTO IMOBILIARIO FII EDIFICIO GALERIA / Convocação para a Consulta Formal, com prazo de recebimento de votos até 06 de maio de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
+    "texto": "### FATO RELEVANTE entregue em 21/07/2026\n\n**O que aconteceu:** O Fundo celebrou contratos de locação com duas novas empresas.\n\n**Resumo:** A Galeria FII firmou contratos de locação com a FUNDAÇÃO DE APOIO AO DESENVOLVIMENTO DA COMPUTAÇÃO CIENTÍFICA e MONTO INDUSTRIAL LTDA, trazendo impacto positivo na receita do fundo.\n\n**Trecho-chave:** \"A locação refere-se à sala nº 801, com área locável de 1.640 m² , localizada no Edifício Galeria, Rua da Quitanda, 86, Centro, Rio de Janeiro/RJ. O contrato foi firmado pelo prazo de 120 (cento e vinte) meses, com início em 01 de agosto de 2026, e com a expectativa de um impacto positivo na receita do fundo de aproximadamente 9% (nove por cento).\"\n\n### FATO RELEVANTE entregue em 22/12/2025\n\n**O que aconteceu:** Atrasos no pagamento de aluguéis resultaram em prejuízo para o fundo.\n\n**Resumo:** Devido à inadimplência de locatários, a Galeria FII teve um impacto negativo na distribuição de rendimentos e já tomou medidas legais para cobrar os valores em aberto.\n\n**Trecho-chave:** \"Em razão da inadimplência de determinados locatários, a Classe deixou de receber os aluguéis devidos, o que resultou em um impacto negativo de , aproximandamente, R$ 0 ,066117 por cota na distribuição de rendimentos.\"\n\n### FATO RELEVANTE entregue em 24/07/2025\n\n**O que aconteceu:** Inadimplência de locatários causou prejuízo significativo ao fundo.\n\n**Resumo:** A inadimplência de locatários resultou em um prejuízo de R$ 885.247,45 para o fundo, impactando negativamente a distribuição de rendimentos.\n\n**Trecho-chave:** \"Em razão da inadimplência de determinados locatários, a Classe deixou de receber os aluguéis devidos, e arcou com encargos compusórios, tais como condomínio, IPTU e custas judiciais. Como consequência, não haverá resultado caixa disponível para a distribuição de rendimentos até que o prejuízo gerado pela inadimplência seja integralmente compensado.\"\n\n### COMUNICADO AO MERCADO entregue em 18/05/2026\n\n**O que aconteceu:** As contas anuais do Fundo foram aprovadas na assembleia geral de cotistas.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do FII Edifício Galeria referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n### COMUNICADO AO MERCADO entregue em 13/11/2025\n\n**O que aconteceu:** B3 solicitou esclarecimentos sobre as oscilações atípicas das cotas do fundo.\n\n**Resumo:** A B3 solicitou esclarecimentos à administradora sobre as oscilações atípicas registradas nas cotas do FII Edifício Galeria, mas a administradora não identificou nenhum fato relevante que justificasse tais variações.\n\n### ASSEMBLEIA AGO entregue em 18/05/2026\n\n**O que aconteceu:** A assembleia geral de cotistas aprovou as contas anuais do fundo.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas e demonstrações contábeis do FII Edifício Galeria referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n### ASSEMBLEIA AGO entregue em 24/04/2026\n\n**O que aconteceu:** A assembleia geral de cotistas foi convocada para aprovar as contas anuais do fundo.\n\n**Resumo:** A assembleia geral de cotistas foi convocada para deliberar sobre a aprovação das contas e demonstrações contábeis do FII Edifício Galeria referentes ao exercício social encerrado em 31 de dezembro de 2025."
   },
   "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Vacância física alta",
+      "Rendimentos irregulares"
+    ],
+    "cota": 13.25
+  },
+  "anterior": {
+    "gerada_em": "2026-07-21T00:44:54",
+    "relatorio_data": "11/06/2026 18:06",
     "selo": "Atenção",
     "nivel": "atencao",
     "alertas": [

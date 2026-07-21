@@ -1,11 +1,11 @@
 {
   "ticker": "BTWR11",
   "modelo": "qwen2.5:7b",
-  "gerada_em": "2026-07-21T02:10:40",
+  "gerada_em": "2026-07-21T20:41:53",
   "relatorio": {
-    "id": 1251409,
-    "data_entrega": "16/07/2026 18:15",
-    "texto": "### Fatos do Relatório Gerencial\n\n1. **Resultado Financeiro**: O FII BTOWERS atingiu um Dividend Yield (DY) anualizado de 9,17% no mês de maio/2026, distribuindo R$ 0,70 aos cotistas.\n   > \"Fechamos o mês de Maio de 2026 com um resultado dentro das expectativas projetadas, atingindo um DY de 0,76%.\" (p. 2)\n\n2. **Vacância e Inadimplência**: Houve uma recuperação parcial da inadimplência da sala 1801, mas permanecem vencimentos em atraso.\n   > \"No mês de maio/26, foi registrada a recuperação de valores em aberto referentes à sala 1801, no valor de R$ 18.225,51, sobre os meses de Março e Abril/26. Permanecem em aberto os vencimentos de ago/25, set/25 , além do mês corrente (maio/26), totalizando R$ 24.573,72, ingressada a ação de despejo visando a recuperação dos valores.\" (p. 9)\n\n3. **Composição da Carteira**: O número de cotas permaneceu estável no mês.\n   > \"Cotas: jul/25 ago/25 Set/25 Out/25 Nov/25 Dez/25 Jan/26 Fev/26 Mar/26 Abr/26 Mai/26\" (p. 4)\n\n4. **Reajustes Contratuais**: Houve reajuste no contrato de locação da sala 2702.\n   > \"No mês de Maio/26 foi realizado o reajuste de aluguel no contrato de locação da sala 2702, com novo aluguel fixado em R$ 11.533,91.\" (p. 12)\n\n5. **Consultoria Imobiliária**: Houve gastos com consultoria imobiliária.\n   > \"❑ Consultoria Imobiliária (Tera Imobiliária): Valores referentes às unidades 1504 (R$ 450,80) e 1602 e 1603 (R$ 723,40).\" (p. 12)\n\n### O que observar em seguida:\n- **Inadimplência Sala 1801**: Verificar o andamento da ação de despejo para a sala 1801.\n- **Reajustes Contratuais**: Monitorar os efeitos dos reajustes nos contratos de locação."
+    "id": 1261470,
+    "data_entrega": "21/07/2026 18:07",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Resultado Financeiro e Dividend Yield:**\n   - O FII BTOWERS atingiu um DY de 1,07% no mês de junho/26.\n   - A distribuição de rendimentos foi retificada em 13/07/26, adicionando R$ 0,0259 aos proventos iniciais de R$ 0,94.\n\n2. **Vacância e Inadimplência:**\n   - A vacância do fundo permaneceu em 8,00%.\n   - Houve recuperação parcial de valores em aberto referentes à sala 1801 no valor de R$ 19.467,85.\n   - As salas 1201 a 1204 e 1301 a 1304 ficaram inadimplentes parcialmente, totalizando R$ 22.670,18.\n\n3. **Reavaliação do Imóvel:**\n   - O imóvel Brookfield Towers foi reavalorado com uma variação positiva de 7,02%.\n\n4. **Fluxo de Caixa e Receitas:**\n   - As receitas de aluguéis no mês de junho/26 totalizaram R$ 809.382,45.\n   - Houve um resultado líquido de caixa positivo de R$ 555.931,43.\n\n5. **Composição da Carteira:**\n   - A carteira do fundo é composta majoritariamente pelo imóvel Brookfield Towers, com disponibilidade de R$ 101.200.000,00.\n   - As receitas por consumo de água e reembolso IPTU/condomínio totalizaram R$ 7.766,06 e R$ 12.679,33 respectivamente.\n\n### O que Observar em Seguida:\n- Monitorar a recuperação dos valores inadimplentes.\n- Atentar para as renovações de contratos e possíveis ajustes nos valores de aluguel."
   },
   "comunicados": {
     "ids": [
@@ -23,6 +23,17 @@
     "texto": "### ASSEMBLEIA AGO entregue em 15/10/2025\n\n**O QUE aconteceu:** A administradora do BTWR11 convocou uma Assembleia Geral Extraordinária para deliberar sobre a aprovação das contas e demonstrações contábeis do exercício social findo em 30/06/2025.\n\n**Resumo:** A assembleia foi realizada por meio de consulta formal, com os cotistas sendo convidados a votar sobre as contas do fundo. O voto de 100% dos cotistas presentes resultou na aprovação das contas e demonstrações contábeis.\n\n**Trecho-chave:**\n\"A deliberação constante acima visa aprovar as Demonstrações Financeiras do Fundo, elaborada por auditor independente.\" (p. 2)\n\n---\n\n### ASSEMBLEIA AGO entregue em 17/11/2025\n\n**O QUE aconteceu:** A administradora do BTWR11 realizou uma Consulta Formal para aprovar as contas e demonstrações contábeis do exercício social findo em 30/06/2025, devidamente auditadas.\n\n**Resumo:** Todos os cotistas presentes votaram a favor da aprovação das contas e demonstrações contábeis do fundo, resultando na aprovação unânime.\n\n**Trecho-chave:**\n\"APROVADA\" (p. 1)\n\n---\n\n**Conexão com o contexto:** A aprovação das contas e demonstrações contábeis é um passo importante para a transparência financeira do fundo, que está atualmente com uma cotação R$ 91,64 e um P/VP de 0,72."
   },
   "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 91.64
+  },
+  "anterior": {
+    "gerada_em": "2026-07-21T02:10:40",
+    "relatorio_data": "16/07/2026 18:15",
     "selo": "Atenção",
     "nivel": "atencao",
     "alertas": [

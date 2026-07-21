@@ -1,7 +1,7 @@
 {
   "ticker": "URPR11",
-  "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-20T02:29:26",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T20:32:21",
   "relatorio": {
     "id": 1106336,
     "data_entrega": "09/02/2026 22:11",
@@ -10,15 +10,15 @@
   "comunicados": {
     "ids": [
       1231044,
+      1261457,
       1232031,
-      1224753,
       1232593,
       1232585
     ],
     "datas": [
       "26/06/2026",
+      "21/07/2026",
       "29/06/2026",
-      "19/06/2026",
       "29/06/2026",
       "29/06/2026"
     ],
@@ -29,7 +29,7 @@
       "Assembleia AGO",
       "Assembleia AGO"
     ],
-    "texto": "### Comunicado ao Mercado (29/06/2026)\n**O que aconteceu:** A Vórtx Distribuidora de Títulos e Valores Mobiliários LTDA respondeu a um ofício da B3 sobre medidas tomadas para endereçar uma ressalva nas demonstrações financeiras do URCA Prime Renda FII.\n\n**Resumo:** As demonstrações financeiras foram inicialmente emitidas com ressalvas em 12 de junho, mas após sanar os pontos questionados pela auditoria, as demonstrações foram reemitidas sem quaisquer qualificações em 19 de junho.\n\n**Trecho-chave:**\n\"As demonstrações financeiras de 31 de dezembro de 2025 foram emitidas em 12 de junho de 2026 com ressalvas, no entanto, os trabalhos da Administradora continuaram com o auditor com o objetivo de sanar os pontos presentes nas demonstrações financeiras, onde, após sanados, foram reemitidas em 19 de junho de 2026 sem quaisquer qualificações.\"\n\n### Comunicado ao Mercado (19/06/2026)\n**O que aconteceu:** O URCA Prime Renda FII comunicou a reapresentação das demonstrações financeiras referentes ao exercício encerrado em 31 de dezembro de 2025, sem ressalvas.\n\n**Resumo:** Após adoção de medidas adicionais de governança e conclusão dos procedimentos pendentes de auditoria, as demonstrações foram reemitidas sem quaisquer qualificações por parte dos auditores independentes.\n\n**Trecho-chave:**\n\"Após a adoção das medidas de governança então informadas, todos os pontos que ensejaram a qualificação foram integralmente saneados, possibilitando a reemissão do relatório dos auditores independentes sem ressalvas.\"\n\n### Assembleia AGO (29/06/2026)\n**O que aconteceu:** A Vórtx Distribuidora de Títulos e Valores Mobiliários LTDA convocou uma assembleia geral ordinária não presencial para aprovar as contas e demonstrações financeiras do exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia será realizada por meio de consulta formal, com prazo final para resposta dos cotistas até 28/07/2026. As contas e demonstrações financeiras serão consideradas automaticamente aprovadas se não houver manifestação contrária ou ressalvas dos auditores.\n\n**Trecho-chave:**\n\"A deliberação constante acima visa aprovar as Demonstrações Financeiras do Fundo, elaborada por auditor independente.\"\n\n### Fato Relevante (26/06/2026)\n**O que aconteceu:** A Vórtx Distribuidora de Títulos e Valores Mobiliários LTDA e a URCA Gestão de Recursos Ltda anunciaram uma nova emissão primária de cotas da 9ª série do URCA Prime Renda FII.\n\n**Resumo:** O coordenador líder da oferta será a MAX Capital Markets, com distribuição sob o regime de melhores esforços de colocação e registro automático de distribuição. A oferta será destinada exclusivamente a investidores profissionais no Brasil.\n\n**Trecho-chave:**\n\"A Oferta será feita no Brasil e destinada exclusivamente a investidores profissionais, nos termos do artigo 11 da Resolução CVM n.º\""
+    "texto": "### FATO RELEVANTE entregue em 26/06/2026\n\n**O QUE aconteceu:** URCA Prime Renda Fundo de Investimento Imobiliário realizou a 9ª emissão primária de cotas.\n\n**Resumo:** A administradora e gestora do fundo decidiram emitir novas cotas, com preços e condições detalhadas estabelecidas no documento.\n\n**Trecho-chave:**\n\"Nos termos da faculdade prevista no Artigo 3º do Anexo I do Regulamento do Fundo, a Administradora e a Gestora deliberaram por meio de Ato da Administradora e da Gestora datado de 26 de junho de 2026, e publicado na mesma data (‘Ato da Administradora e da Gestora’), a 9ª emissão de cotas do Fundo, dentro do limite de capital autorizado previsto no Regulamento.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 21/07/2026\n\n**O QUE aconteceu:** Encerramento do período de exercício do direito de preferência da oferta pública de distribuição primária de cotas.\n\n**Resumo:** O período para a preferência na compra de novas cotas foi encerrado, com 3.933 cotas subscritas e integralizadas, e o cronograma para a distribuição das restantes cotas foi divulgado.\n\n**Trecho-chave:**\n\"Durante o Período de Exercício do Direito de Preferência, foram subscritas e integralizadas 3.933 (três mil, novecentas e trinta e três) Cotas de Emissão da Classe Única do Fundo, correspondentes ao total de R$ 86.919,30 (oitenta e seis mil, novecentos e dezenove reais e trinta centavos), considerando o Preço de Subscrição.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 29/06/2026\n\n**O QUE aconteceu:** Resposta à B3 sobre ressalvas nas demonstrações financeiras do fundo.\n\n**Resumo:** A administradora informou que as demonstrações financeiras foram reemitidas sem qualificações após sanar os pontos apontados por Next Auditores, e solicitou a B3 informações sobre medidas para endereçar a ressalva.\n\n**Trecho-chave:**\n\"As demonstrações financeiras de 31 de dezembro de 2025 foram emitidas em 12 de junho de 2026 com ressalvas, no entanto, os trabalhos da Administradora continuaram com o auditor com o objetivo de sanar os pontos presentes nas demonstrações financeiras, onde, após sanados, foram reemitidas em 19 de junho de 2026 sem quaisquer qualificações.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 29/06/2026\n\n**O QUE aconteceu:** Proposta para a Assembleia Geral Extraordinária do fundo.\n\n**Resumo:** A administradora propôs aprovar as contas e demonstrações contábeis do exercício social findo em 31 de dezembro de 2025, que foram auditadas.\n\n**Trecho-chave:**\n\"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 29/06/2026\n\n**O QUE aconteceu:** Consulta formal para a Assembleia Geral Extraordinária do fundo.\n\n**Resumo:** A administradora consultou os cotistas sobre a aprovação das contas e demonstrações contábeis do exercício social findo em 31 de dezembro de 2025, que foram auditadas.\n\n**Trecho-chave:**\n\"i. Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas.\""
   },
   "retrato": {
     "selo": "Atenção",
@@ -38,7 +38,7 @@
       "Rendimentos acima do resultado financeiro",
       "P/VP muito abaixo da média histórica"
     ],
-    "cota": 19.28
+    "cota": 19.29
   },
   "parecer": {
     "id": 1224564,

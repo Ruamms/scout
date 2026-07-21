@@ -1,0 +1,27 @@
+{
+  "ticker": "ETHE11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-21T20:51:28",
+  "comunicados": {
+    "ids": [
+      1201695
+    ],
+    "datas": [
+      "22/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado"
+    ],
+    "texto": "**Data: 22/05/2026**\n\n**Título:** Alteração no Regulamento do Fundo para Segregação das Taxas\n\n**Resumo:** O Administrador do Fundo decidiu incluir a segregação das taxas devidas aos prestadores de serviço na Plataforma de Transparência de Taxas.\n\n**Trecho-chave:**\n\"O Administrador aprovou, por Instrumento Particular do Administrador, a alteração do regulamento do Fundo para incluir que a segregação das taxas devidas aos prestadores de serviço do Fundo passa a ser disponibilizada na Plataforma de Transparência de Taxas no endereço: https://data.anbima.com.br/busca/transparencia-de-taxas-de-fundos.\" (p. 1)\n\n**Conexão com o Contexto:** Esta alteração no regulamento do fundo visa aumentar a transparência, atendendo às diretrizes do Ofício-Circular-Conjunto nº 1/2025/CVM/SIN/SSE."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1208598,
+    "data_entrega": "30/05/2026 12:05",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Hashdex Nasdaq Ethereum Reference Price Fundo de Índice - Responsabilidade Limitada em 31 de março de 2026 e o desempenho de suas operações para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicávei"
+  }
+}

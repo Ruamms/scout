@@ -1,11 +1,11 @@
 {
   "ticker": "CEOC11",
   "modelo": "qwen2.5:7b",
-  "gerada_em": "2026-07-21T01:35:37",
+  "gerada_em": "2026-07-21T20:40:10",
   "relatorio": {
-    "id": 1214319,
-    "data_entrega": "08/06/2026 18:55",
-    "texto": "### Fatos Extraídos:\n\n1. **Ocupação:**\n   \"Até a presente data, a taxa de ocupação do Fundo é de 100%.\" (p. 4)\n\n2. **Locação e Aditamento:**\n   \"Em outubro, assinamos o 4º aditamento ao Contrato de Locação, que revisou o aluguel para R$ 84,18/m² a partir de agosto/25, com desconto temporário condicionado à pontualidade e estabeleceu a impossibilidade de revisão do valor por três anos.\" (p. 4)\n\n3. **Rendimentos Irregulares:**\n   \"rendimentos declarados 4T R$ 15,4M vs resultado financeiro líquido 4T R$ 10,2M; resultado acumulado (reserva) R$ 2,3M não cobre o excesso.\" (p. 6)\n\n4. **Histórico de Rendimentos:**\n   \"Cotistas 3,6mil (12m: -12,46%); Taxa de administração 0,63% a.a. (12m: —).\" (p. 6)\n\n5. **Vacância e Inadimplência:**\n   \"Vacância 0,00% (12m: —)\" (p. 6)\n\n6. **Patrimônio Líquido:**\n   \"Patrimônio líquido R$ 124,3M (12m: -5,96%)\" (p. 6)\n\n7. **Cotas e Cotação:**\n   \"Nº de cotas 1,8M (12m: 0,00%); Cotação R$ 41,27 (12m: -3,17%)\" (p. 6)\n\n### O que observar em seguida:\n- Monitorar a ocupação do fundo e o impacto da revisão do aluguel.\n- Observar as distribuições de rendimentos e se elas estão consistentes com os resultados financeiros."
+    "id": 1261608,
+    "data_entrega": "21/07/2026 20:25",
+    "texto": "### Fatos Extraídos:\n\n1. **Ocupação:** A ocupação do fundo é de 100%, com todas as unidades locadas para a TIM Celular S.A., conforme informado no relatório (p. 4).\n2. **Aditamento ao Contrato de Locação:** Em outubro, foi assinado o 4º aditamento ao contrato de locação que revisou o aluguel para R$84,18/m² a partir de agosto/25, com desconto temporário condicionado à pontualidade e estabeleceu a impossibilidade de revisão do valor por três anos (p. 4).\n3. **Reajuste do Aluguel:** O reajuste do aluguel está previsto para julho/2025, com base no IPCA - Índice Nacional de Preços ao Consumidor Amplo, tendo data-base em agosto/2024 (p. 4).\n4. **Histórico de Ajustes Comerciais:** Entre agosto/2023 e julho/2025, houve ajustes no aluguel com descontos escalonados, impactando diretamente a receita do fundo (p. 9).\n5. **Vacância:** Não há vacância mencionada no relatório (p. 4).\n\n### O que observar em seguida:\n1. **Reajuste do Aluguel:** Observar o efeito do reajuste previsto para julho/2025.\n2. **Descontos Temporários:** Monitorar a pontualidade da TIM no pagamento dos descontos temporários concedidos até janeiro/2027."
   },
   "comunicados": {
     "ids": [
@@ -26,6 +26,17 @@
     "texto": "### O QUE aconteceu em 12/05/2026\n\n**O Fundo CEOC11 (FII CEO CYRELA COMMERCIAL PROPERTIES) aprovou as contas anuais referentes ao exercício encerrado em 31 de dezembro de 2025.**\n\n*Resumo:* A assembleia geral de cotistas realizada via manifestação de voto aprovou as demonstrações financeiras do Fundo.\n\n**Trecho-chave:** \"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\" (p. 1)\n\n---\n\n### O QUE aconteceu em 29/04/2026\n\n**O Fundo CEOC11 (FII CEO CYRELA COMMERCIAL PROPERTIES) convocou os cotistas para a assembleia geral com o objetivo de aprovar as contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025.**\n\n*Resumo:* A administradora BTG Pactual Serviços Financeiros S.A. convocou os cotistas para deliberarem sobre a aprovação das contas anuais.\n\n**Trecho-chave:** \"Aprovacao das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\" (p. 1)\n\n---\n\n### Conexão com o contexto:\n- A aprovação das contas anuais mencionada nos documentos recentes se alinha com a situação atual do fundo, onde os indicadores mostram uma queda no patrimônio líquido e valor do ativo, bem como um aumento na vacância."
   },
   "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 40.89
+  },
+  "anterior": {
+    "gerada_em": "2026-07-21T01:35:37",
+    "relatorio_data": "08/06/2026 18:55",
     "selo": "Atenção",
     "nivel": "atencao",
     "alertas": [

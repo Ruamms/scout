@@ -1,0 +1,55 @@
+{
+  "ticker": "HDEL11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-21T20:51:14",
+  "relatorio": {
+    "id": 1252474,
+    "data_entrega": "17/07/2026 17:01",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Venda de Ativo e Amortização Parcial de Cotas**:\n   \"Conforme Fato Relevante publicado no dia 15 de dezembro de 2025, o Fundo concluiu a venda da fração ideal de 85% do imóvel Citlog Sul de Minas 3... O valor da venda corresponde a R$ 242.250.000,00, dos quais: (i) R$ 167.249.909,34 foram recebidos mediante a compensação de créditos detidos pelo Fundo na subscrição de 1.666.998 cotas do TRX REAL ESTATE FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 28.548.288/0001-52 (“TRXF11”) na 12ª emissão de cotas do TRXF11 , no valor de R$ 100,33/cota, e R$ 90,66 em moeda corrente nacional, totalizando R$ 167.250.000,00 já pagos; e (ii) o montante remanescente, equivalente a R$ 75.000.000,00, o qual será recebido em até 180 dias contados de 12 de dezembro de 2025, mediante a securitização dos recebíveis imobiliários oriundos da compra e venda do Imóvel, sendo que referidos créditos imobiliários deverão ser cedidos pelo Fundo, em caráter definitivo, à securitizadora, sem qualquer coobrigação de pagamento por parte do Fundo – \"true sale\" (\"Parcela Final\"), ocasião na qual será celebrada a escritura de compra e venda do imóvel.\" (p. 4)\n\n2. **Amortização Parcial de Cotas**:\n   \"Conforme publicado em Fato Relevante de 07 de abril de 2026, o Fundo comunicou a amortização parcial de cotas no montante total de R$ 64.260.000,00, equivalente ao valor bruto de R$ 76,50 por cota.\" (p. 5)\n\n3. **Atualização dos Resultados do Investimento**:\n   \"Com a conclusão das vendas das cotas de TRXF11 e a consequente realização da amortização parcial das cotas do Fundo, procedemos à atualização dos resultados do investimento, bem como ao recálculo ajustado do valor efetivo de venda do imóvel.\" (p. 5)\n\n4. **Cronograma das Amortizações**:\n   \"Em abril de 2026, foi concluída a amortização integral dos certificados de recebíveis imobiliários das 1ª, 2ª e 3ª séries da 12ª Emissão, bem como das 1ª e 2ª séries da 13ª Emissão da Habitasec Securitizadora S.A., mediante pagamento realizado em 09 de abril de 2026.\" (p. 5)\n\n### O que observar em seguida:\n- Monitorar o recebimento do saldo remanescente da venda do imóvel, previsto para ocorrer em até 180 dias.\n- Observar a evolução das cotas no mercado devido à amortização parcial e ao ajuste dos resultados."
+  },
+  "comunicados": {
+    "ids": [
+      1155787,
+      1155741,
+      1063813,
+      1183345,
+      1183329
+    ],
+    "datas": [
+      "07/04/2026",
+      "07/04/2026",
+      "15/12/2025",
+      "08/05/2026",
+      "08/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 15/12/2025\n\n**O QUE aconteceu:** A venda da fração ideal de 85% do imóvel Citlog Sul de Minas 3 foi concluída, gerando um valor total de R$ 285.000.000,00.\n\n**Resumo:** O fundo vendeu uma parte significativa de seu imóvel, trazendo recursos financeiros para o patrimônio do fundo.\n\n**Trecho-chave:**\n\"O valor total da transação é de R$ 285.000.000,00 (duzentos e oitenta e cinco milhões de reais). Considerando que o Fundo é titular da fração ideal de 85% (oitenta e cinco por cento) do Imóvel, a sua cota- parte no preço de venda corresponde a R$ 242.250.000,00 (duzentos e quarenta e dois milhões, duzentos e cinquenta mil reais), dos quais:\"\n\n### FATO RELEVANTE entregue em 07/04/2026\n\n**O QUE aconteceu:** A administradora do fundo planeja realizar uma amortização parcial de cotas no valor total de R$ 64.260.000,00.\n\n**Resumo:** O fundo está programado para realizar a amortização de parte das cotas, liberando recursos aos cotistas em abril de 2026.\n\n**Trecho-chave:**\n\"O pagamento da referida amortização será realizado em uma única parcela no dia 15 de abril de 2026, tendo como base os detentores de cotas no fechamento do mercado do dia 7 de abril de 2026.\"\n\n### ASSEMBLEIA AGO entregue em 08/05/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária dos cotistas não foi instalada, pois não houve manifestação de voto.\n\n**Resumo:** A assembleia não ocorreu devido à falta de participação dos cotistas e as demonstrações financeiras do exercício social foram automaticamente aprovadas.\n\n**Trecho-chave:**\n\"Em virtude da ausência de manifestação de voto de cotistas, a instalação da presente assembleia restou prejudicada. Nos termos do parágrafo 3º do artigo 71 da parte geral Resolução CVM nº 175, de 23 de dezembro de 2022, e tendo em vista a ausência de opinião modificada no relatório dos auditores independentes, as demonstrações financeiras do Fundo relativas ao exercício social findo em 31 de dezembro de 2025 foram consideradas automaticamente aprovadas.\"\n\n### ASSEMBLEIA AGO entregue em 08/05/2026\n\n**O QUE aconteceu:** Termo de não instalação da assembleia geral ordinária dos cotistas.\n\n**Resumo:** A assembleia foi realizada por meio de consulta formal, mas não houve participação dos cotistas, resultando na não instalação da assembleia.\n\n**Trecho-chave:**\n\"Em virtude da ausência de manifestação de voto de cotistas, a instalação da presente assembleia restou prejudicada.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "VP/cota em queda relevante",
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 3.3
+  },
+  "parecer": {
+    "id": 1147278,
+    "data_entrega": "27/03/2026 22:15",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Hedge Desenvolvimento Logístico Fundo de Investimento Imobiliário de Responsabilidade Limitada (anteriormente denominado por Hedge Logística Fundo de Investimento Imobiliário) em 31 de dezembro de 2025, o desempenho de suas operações e os s"
+  }
+}
