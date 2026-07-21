@@ -1367,7 +1367,10 @@ def _calculadora_gordon(
     </div>
     <button class="btn-topo" onclick="abrirGordon(this)">Abrir a calculadora</button>
     <div hidden>
-      <p class="desc">Modelo de Gordon: <b>preço justo = dividendo × (1 + g) / (r − g)</b>. Tudo editável.</p>
+      <p class="desc">Modelo de Gordon: <b>preço justo = dividendo × (1 + g) / (r − g)</b>. As letras:
+      <b>dividendo</b> = quanto o fundo paga por cota no ano; <b>r</b> = retorno anual que <b>VOCÊ</b>
+      exige do fundo (a “taxa de desconto” — <b>não</b> é a taxa de administração); <b>g</b> = crescimento
+      anual esperado dos dividendos. Tudo editável.</p>
       <div class="campos">
         <div><label for="gd-div">Dividendo por cota (R$)</label>
         <input type="number" id="gd-div" value="{val_padrao:.2f}" data-modo="{modo_padrao}" data-v12m="{div_12m:.2f}" data-vult="{ultimo_rend:.2f}" data-periodo="{periodo}" step="0.01" min="0" oninput="calcGordon()">
@@ -1376,10 +1379,12 @@ def _calculadora_gordon(
           <label style="all:unset;cursor:pointer;display:block"><input type="radio" name="gd-base" onchange="gordonBase('12m')" {c12}> {label_12m} — R$ {div_12m:.2f}{janela}</label>
           <label style="all:unset;cursor:pointer;display:block"><input type="radio" name="gd-base" onchange="gordonBase('ult')" {cult}> Só o último dividendo mensal (R$ {ultimo_rend:.2f}) — anualiza × 12</label>
         </div></div>
-        <div><label for="gd-r">Taxa de desconto r (% a.a.)</label>
-        <input type="number" id="gd-r" value="{r_seed}" step="0.5" min="0.1" oninput="calcGordon()"></div>
-        <div><label for="gd-g">Crescimento g (% a.a.)</label>
-        <input type="number" id="gd-g" value="0" step="0.5" oninput="calcGordon()"></div>
+        <div><label for="gd-r">Taxa de desconto — r (% a.a.)</label>
+        <input type="number" id="gd-r" value="{r_seed}" step="0.5" min="0.1" oninput="calcGordon()">
+        <div style="margin-top:4px;font-size:11px;color:#8b98a9">retorno que você exige ao ano — <b>não</b> é a taxa de administração; padrão = DY atual do fundo</div></div>
+        <div><label for="gd-g">Crescimento — g (% a.a.)</label>
+        <input type="number" id="gd-g" value="0" step="0.5" oninput="calcGordon()">
+        <div style="margin-top:4px;font-size:11px;color:#8b98a9">quanto os dividendos crescem por ano (0 = sem crescimento)</div></div>
       </div>
       <div class="resultado">
         <div class="res"><div class="rotulo">Preço justo (com suas premissas)</div><div class="num" id="gd-justo">—</div></div>

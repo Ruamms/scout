@@ -32,6 +32,11 @@ def test_gordon_opt_in_com_aviso_e_sem_veredito():
     # com 12 meses, a base padrão é a soma real (rádio dela marcado)
     assert 'onchange="gordonBase(\'12m\')" checked' in html
     assert 'id="gd-r"' in html and 'id="gd-g"' in html
+    # legenda das letras + desfaz a confusão r × taxa de administração
+    assert "não</b> é a taxa de administração" in html
+    assert "retorno anual que <b>VOCÊ</b>" in html
+    assert "Taxa de desconto — r (% a.a.)" in html
+    assert "Crescimento — g (% a.a.)" in html
     assert "R$ 100.00" in html  # cotação atual ao lado (fato), sem julgamento
     # nenhuma palavra de veredito de compra/venda ("recomendação" é permitida só no aviso "não é")
     for veredito in ("compre", "comprar", "barato", "subvalor", "sobrevalor", "vale a pena"):
