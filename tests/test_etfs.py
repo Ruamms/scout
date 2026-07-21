@@ -137,7 +137,10 @@ def test_pagina_etf_mostra_carteira_completa_e_nota_datada(con):
     dados = etf_html.montar_dados_etf(con, "BOVA11", {"10406511000161": {"classificacao_scout": "Ações Brasil"}})
     assert len(dados["posicoes"]) == 12
     pagina = etf_html.gerar(dados, agora=datetime(2026, 7, 20, 11, 0))
-    assert "Ver carteira completa (12 ativos)" in pagina  # expansível com todas
+    # o expansível traz só os que faltam (11º em diante), sem repetir o top 10
+    assert "Ver os outros 2 ativos (12 no total)" in pagina
+    assert pagina.count("ACAO00") == 1  # 1ª posição só aparece no top, não é repetida
+    assert "ACAO11" in pagina  # os ativos restantes aparecem no expansível
     assert "posição informada à CVM" in pagina and "pode estar diferente" in pagina  # nota datada
     assert "06/2026" in pagina  # a competência da carteira
 

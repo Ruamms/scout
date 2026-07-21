@@ -337,10 +337,11 @@ def gerar(
         )
         completa = ""
         if len(posicoes) > 10:
-            linhas_completa = "".join(_linha_posicao(p) for p in posicoes)
+            restantes = posicoes[10:]  # o top 10 já está na tabela acima — aqui só o que falta
+            linhas_completa = "".join(_linha_posicao(p) for p in restantes)
             completa = f"""
   <details class="carteira-completa">
-    <summary>Ver carteira completa ({len(posicoes)} ativos)</summary>
+    <summary>Ver os outros {len(restantes)} ativos ({len(posicoes)} no total)</summary>
     <table class="imoveis">
       {cabecalho}
       <tbody>{linhas_completa}</tbody>
