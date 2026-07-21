@@ -89,6 +89,8 @@ class RaioX:
     classificacao: str
     gestao: str
     dados_ate: str
+    tipo: str | None = None  # papel/tijolo/híbrido/FoF, estimado pela carteira CVM
+    tipo_fonte: str = ""  # composição + competência (tooltip/fonte do tipo)
     cotacao_em: str = ""
     cotado_em_iso: str = ""  # bruto ('AAAA-MM-DD HH:MM') para cálculo de idade no render
     indicadores: list[IndicadorLinha] = field(default_factory=list)

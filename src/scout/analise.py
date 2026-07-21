@@ -367,6 +367,7 @@ def montar_raio_x(
     indicadores = _marcar_alertas(indicadores, resultado.flags)
 
     atual = serie[-1]
+    tipo, tipo_fonte = _tipo_do_fundo(con, fundo.cnpj)
     return RaioX(
         ticker=ticker,
         nome=fundo.nome,
@@ -374,6 +375,8 @@ def montar_raio_x(
         classificacao=fundo.segmento,
         gestao=fundo.tipo_gestao,
         dados_ate=formato.competencia_br(atual["competencia"]),
+        tipo=tipo,
+        tipo_fonte=tipo_fonte,
         cotacao_em=_cotacao_com_hora(meta_cotacao["cotado_em"]) if meta_cotacao else "",
         cotado_em_iso=(meta_cotacao["cotado_em"] or "") if meta_cotacao else "",
         indicadores=indicadores,
@@ -526,6 +529,31 @@ def _cotacao_com_hora(cotado_em: str | None) -> str:
     data = formato.dia_br(cotado_em)
     hora = cotado_em[11:16] if len(cotado_em) >= 16 else ""
     return f"{data} {hora}".strip()
+
+
+def _tipo_do_fundo(con: sqlite3.Connection, cnpj: str) -> tuple[str | None, str]:
+    """Tipo do FII (papel/tijolo/híbrido/FoF) pela composição oficial da carteira
+    + a fonte legível (composição % e competência). Vazio quando não há base."""
+    from . import tipo_fii
+
+    linha = armazenamento.composicao_ativo(con, cnpj)
+    if linha is None:
+        return None, ""
+    tijolo, papel, fof = linha["tijolo"] or 0, linha["papel"] or 0, linha["fof"] or 0
+    tipo = tipo_fii.classificar(tijolo, papel, fof)
+    if tipo is None:
+        return None, ""
+    base = tijolo + papel + fof
+    partes = [
+        f"{100 * valor / base:.0f}% {rotulo}"
+        for valor, rotulo in ((tijolo, "imóveis"), (papel, "recebíveis (CRI/LCI)"), (fof, "cotas de FII"))
+        if valor > 0
+    ]
+    fonte = (
+        f"tipo estimado pela carteira oficial (CVM, {formato.competencia_br(linha['competencia'])}): "
+        + ", ".join(partes)
+    )
+    return tipo, fonte
 
 
 def _pares_do_segmento(

@@ -566,7 +566,7 @@ table.imoveis td.col-selo, table.imoveis th.col-selo {{ text-align:left; }}
     {botao_calculadoras}
   </div>
   <div class="meta">
-    {_e(raiox.cnpj)} · {_e(raiox.classificacao)} · Gestão {_e(raiox.gestao.lower())}<br>
+    {_e(raiox.cnpj)} · {_e(raiox.classificacao)}{_tipo_selo(raiox)} · Gestão {_e(raiox.gestao.lower())}<br>
     informes CVM até <b>{_e(raiox.dados_ate)}</b>{_cotacao_em(raiox, agora)} · relatório gerado em {agora.strftime("%d/%m/%Y %H:%M")}
   </div>
 
@@ -739,6 +739,18 @@ def _selo_html(raiox: RaioX) -> str:
     return (
         f'<span class="selo" style="background:{cor}" title="{_e(raiox.selo.descricao)}">'
         f"{_e(raiox.selo.rotulo)}</span>"
+    )
+
+
+def _tipo_selo(raiox: RaioX) -> str:
+    """Badge do tipo do FII (papel/tijolo/híbrido/FoF) no cabeçalho, com a
+    composição da carteira CVM no tooltip. Vazio quando não há classificação."""
+    if not raiox.tipo:
+        return ""
+    return (
+        ' · <span style="display:inline-block;background:#182420;border:1px solid #2E4A38;'
+        'color:#8FCB9B;border-radius:99px;padding:1px 9px;font-size:11.5px;font-weight:700;'
+        f'vertical-align:middle" title="{_e(raiox.tipo_fonte)}">{_e(raiox.tipo)}</span>'
     )
 
 

@@ -134,9 +134,13 @@ def gerar(
         _json.dumps(_ativos_busca(publicados, etfs_publicados), ensure_ascii=False),
         encoding="utf-8",
     )
-    (destino / "fiis.html").write_text(_indice(publicados, base, momento), encoding="utf-8")
+    # tipo do FII (papel/tijolo/híbrido/FoF) derivado da carteira oficial (CVM)
+    tipos_fii = armazenamento.tipos_fii(con)
+    (destino / "fiis.html").write_text(
+        _indice(publicados, base, momento, tipos_fii), encoding="utf-8"
+    )
     (destino / "index.html").write_text(
-        _home(publicados, etfs_publicados, momento), encoding="utf-8"
+        _home(publicados, etfs_publicados, momento, tipos_fii), encoding="utf-8"
     )
     (destino / "comparar.html").write_text(
         _pagina_comparar(publicados), encoding="utf-8"
@@ -190,10 +194,13 @@ def _ativos_busca(fundos: list, etfs: list[dict]) -> list[dict]:
     return ativos
 
 
-def _home(fundos: list, etfs: list[dict], agora: datetime) -> str:
+def _home(fundos: list, etfs: list[dict], agora: datetime, tipos_fii: dict | None = None) -> str:
     """Home multi-classe: busca ao vivo em TUDO que temos + resumo por classe."""
     import json as _json
 
+    from .. import tipo_fii as _tipo
+
+    tipos_fii = tipos_fii or {}
     ativos = _ativos_busca(fundos, etfs)
     json_ativos = _json.dumps(ativos, ensure_ascii=False).replace("</", "<\\/")
     cores_selo = _json.dumps(_COR_SELO)
@@ -205,6 +212,17 @@ def _home(fundos: list, etfs: list[dict], agora: datetime) -> str:
     pills = " ".join(
         f'<a class="pill" href="etfs.html?classe={_e(classe)}">{_e(classe)} <b>{total}</b></a>'
         for classe, total in sorted(classes_etf.items(), key=lambda kv: -kv[1])
+    )
+    # chips de tipo do FII (papel/tijolo/híbrido/FoF), na ordem de relevância
+    tipos_fii_contagem: dict[str, int] = {}
+    for resumo in fundos:
+        tipo = tipos_fii.get(resumo.cnpj)
+        if tipo:
+            tipos_fii_contagem[tipo] = tipos_fii_contagem.get(tipo, 0) + 1
+    pills_fii = " ".join(
+        f'<a class="pill" href="fiis.html?tipo={_e(tipo)}">{_e(tipo)} <b>{tipos_fii_contagem[tipo]}</b></a>'
+        for tipo in _tipo.ORDEM
+        if tipos_fii_contagem.get(tipo)
     )
 
     return f"""<!doctype html>
@@ -297,6 +315,7 @@ input#busca:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color
       <a class="btn" href="fiis.html">ver todos os FIIs</a>
       <a class="pill" href="fiis.html#rankings" style="margin-left:8px">rankings do dia</a>
       <a class="pill" href="comparar.html">comparar</a>
+      <div style="margin-top:10px">{pills_fii}</div>
     </div>
     <div class="bloco">
       <h2>ETFs</h2>
@@ -655,10 +674,24 @@ renderiza();
 _VISIVEIS_DE_INICIO = 50  # tabela abre com os maiores por PL; o resto sob demanda
 
 
-def _indice(fundos: list, base: list, agora: datetime) -> str:
+def _indice(fundos: list, base: list, agora: datetime, tipos_fii: dict | None = None) -> str:
+    from .. import tipo_fii as _tipo
+
+    tipos_fii = tipos_fii or {}
     linhas = "".join(
-        _linha_fundo(resumo, extra=posicao >= _VISIVEIS_DE_INICIO)
+        _linha_fundo(resumo, extra=posicao >= _VISIVEIS_DE_INICIO, tipo=tipos_fii.get(resumo.cnpj))
         for posicao, resumo in enumerate(fundos)
+    )
+    tipos_contagem: dict[str, int] = {}
+    for resumo in fundos:
+        tipo = tipos_fii.get(resumo.cnpj)
+        if tipo:
+            tipos_contagem[tipo] = tipos_contagem.get(tipo, 0) + 1
+    filtros_tipo = "".join(
+        f'<button class="filtro-tipo" data-tipo="{_e(tipo)}" onclick="filtraTipo(this, \'{_e(tipo)}\')">'
+        f"{_e(tipo)} <b>{tipos_contagem[tipo]}</b></button>"
+        for tipo in _tipo.ORDEM
+        if tipos_contagem.get(tipo)
     )
     rankings = "".join(
         _bloco_ranking(titulo, ranking.montar(None, por=por, top=10, sem_alertas=sem_alertas, fundos=base))
@@ -703,6 +736,13 @@ tbody tr:hover td {{ background:#161D20; }}
 .btn-todos {{ display:block; margin:12px auto 0; background:#1B2225; border:1px solid #263034;
   color:#8FCB9B; padding:8px 22px; border-radius:8px; font-size:13.5px; font-weight:600; cursor:pointer; }}
 .btn-todos:hover {{ border-color:#8FCB9B; }}
+.filtros {{ display:flex; flex-wrap:wrap; align-items:center; gap:7px; margin:0 0 10px; }}
+.filtros .rot {{ color:#9AA7B2; font-size:12px; }}
+.filtro-tipo {{ background:#161D20; color:#9AA7B2; border:1px solid #263034; border-radius:99px;
+  padding:5px 13px; font-size:12.5px; cursor:pointer; }}
+.filtro-tipo:hover {{ border-color:#8FCB9B; color:#8FCB9B; }}
+.filtro-tipo.ativo {{ background:#8FCB9B; color:#0F1416; border-color:#8FCB9B; font-weight:700; }}
+.filtro-tipo b {{ color:inherit; }}
 td:not(:first-child):not(:nth-child(2)):not(:nth-child(3)), th:not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {{ text-align:right; }}
 .selo {{ display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700;
   font-size:11px; color:#0F1416; white-space:nowrap; }}
@@ -757,8 +797,10 @@ h2 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:22px; font-wei
     🔄 Atualizar agora</a>
   </div>
 
-  <input id="busca" type="search" placeholder="Busque por ticker, nome ou segmento… (ex.: HGLG, shopping, logística)"
+  <input id="busca" type="search" placeholder="Busque por ticker, nome, segmento ou tipo… (ex.: HGLG, shopping, papel)"
    oninput="filtrar(this.value)">
+
+  {f'<div class="filtros"><span class="rot">tipo (pela carteira CVM):</span> {filtros_tipo}</div>' if filtros_tipo else ""}
 
   <table id="fundos">
     <thead><tr><th>ticker</th><th>fundo</th><th>segmento</th><th>DY 12m</th><th>P/VP</th><th>PL</th><th class="col-selo">selo</th></tr></thead>
@@ -789,22 +831,43 @@ function fecharBeta() {{
 }}
 
 let todosVisiveis = false;
+let termoAtivo = '';
+let tipoAtivo = '';
 
-function filtrar(texto) {{
-  const termo = texto.trim().toLowerCase();
+function aplicar() {{
+  const filtrando = termoAtivo !== '' || tipoAtivo !== '';
   document.querySelectorAll('#fundos tbody tr').forEach(tr => {{
-    const casa = termo === '' || tr.dataset.busca.includes(termo);
-    const recolhida = termo === '' && !todosVisiveis && tr.classList.contains('fundo-extra');
-    tr.hidden = !casa || recolhida;
+    const casaTexto = termoAtivo === '' || tr.dataset.busca.includes(termoAtivo);
+    const casaTipo = tipoAtivo === '' || tr.dataset.tipo === tipoAtivo;
+    const recolhida = !filtrando && !todosVisiveis && tr.classList.contains('fundo-extra');
+    tr.hidden = !(casaTexto && casaTipo) || recolhida;
   }});
   const botao = document.getElementById('ver-todos');
-  if (botao) botao.hidden = todosVisiveis || termo !== '' || !document.querySelector('.fundo-extra');
+  if (botao) botao.hidden = todosVisiveis || filtrando || !document.querySelector('.fundo-extra');
+}}
+
+function filtrar(texto) {{
+  termoAtivo = texto.trim().toLowerCase();
+  aplicar();
+}}
+
+function filtraTipo(botao, tipo) {{
+  tipoAtivo = tipoAtivo === tipo ? '' : tipo;  // clicar no ativo desmarca
+  document.querySelectorAll('.filtro-tipo').forEach(b =>
+    b.classList.toggle('ativo', b === botao && tipoAtivo !== ''));
+  aplicar();
 }}
 
 function mostrarTodos() {{
   todosVisiveis = true;
-  document.querySelectorAll('.fundo-extra').forEach(tr => tr.hidden = false);
-  document.getElementById('ver-todos').hidden = true;
+  aplicar();
+}}
+
+// ?tipo=X na URL (vindo dos chips da home) pré-seleciona o filtro
+const tipoUrl = new URLSearchParams(location.search).get('tipo');
+if (tipoUrl) {{
+  const botao = Array.from(document.querySelectorAll('.filtro-tipo')).find(b => b.dataset.tipo === tipoUrl);
+  if (botao) filtraTipo(botao, tipoUrl);
 }}
 
 // status da atualização via API pública do GitHub (repo público: sem token)
@@ -843,16 +906,18 @@ statusAtualizacao();
 """
 
 
-def _linha_fundo(resumo, extra: bool = False) -> str:
+def _linha_fundo(resumo, extra: bool = False, tipo: str | None = None) -> str:
     def _ou_traco(valor, formatador):
         return formatador(valor) if valor is not None else "—"
 
     cor = _COR_SELO.get(resumo.selo.nivel, "#7C8894")
     dica = "Alertas: " + "; ".join(resumo.motivos) if resumo.motivos else resumo.selo.descricao
-    busca = f"{resumo.ticker} {resumo.nome} {resumo.segmento}".lower().replace('"', "")
+    # o tipo também entra na busca livre (ex.: digitar "papel" filtra os de papel)
+    partes = [resumo.ticker, resumo.nome, resumo.segmento, *([tipo] if tipo else [])]
+    busca = " ".join(partes).lower().replace('"', "")
     oculta = ' class="fundo-extra" hidden' if extra else ""
     return (
-        f'<tr data-busca="{busca}"{oculta}>'
+        f'<tr data-busca="{busca}" data-tipo="{_e(tipo or "")}"{oculta}>'
         f'<td><a href="{resumo.ticker}.html">{resumo.ticker}</a></td>'
         f"<td>{resumo.nome[:42]}</td><td>{resumo.segmento}</td>"
         f"<td>{_ou_traco(resumo.dy_12m, formato.percentual)}</td>"

@@ -32,6 +32,32 @@ _RENOMEIA = {
 }
 
 
+# Composição do ATIVO (informe mensal, CSV ativo_passivo) agrupada em 3 baldes
+# que decidem o TIPO do FII. Só colunas do lado ATIVO — as de passivo
+# (obrigações, taxas a pagar, rendimentos a distribuir) ficam de fora.
+_ATIVO_TIJOLO = (
+    "Direitos_Bens_Imoveis", "Terrenos", "Imoveis_Renda_Acabados",
+    "Imoveis_Renda_Construcao", "Imoveis_Venda_Acabados",
+    "Imoveis_Venda_Construcao", "Outros_Direitos_Reais",
+)
+_ATIVO_PAPEL = (
+    "CRI", "CRI_CRA", "LCI", "LCI_LCA", "LIG", "Letras_Hipotecarias",
+    "FDIC", "Cedulas_Debentures", "Debentures", "Notas_Promissorias",
+)
+# fundo de fundos = cotas de OUTROS fundos imobiliários/participações. Fundos de
+# renda fixa e de ações são CAIXA/liquidez, não estratégia FoF — ficam em outros.
+_ATIVO_FOF = ("FII", "FIP", "Outras_Cotas_FI")
+# demais aplicações (caixa, títulos públicos/privados, ações, derivativos, fundos
+# de liquidez...): entram no total mas NÃO decidem o tipo do fundo
+_ATIVO_OUTROS = (
+    "Disponibilidades", "Titulos_Publicos", "Titulos_Privados", "Acoes",
+    "Fundos_Renda_Fixa", "Fundo_Acoes", "Bonus_Subscricao", "CEPAC",
+    "Acoes_Sociedades_Atividades_FII", "Cotas_Sociedades_Atividades_FII",
+    "Certificados_Deposito_Valores_Mobiliarios",
+    "Instrumentos_Financeiros_Derivativos", "Outros_Valores_Mobliarios",
+)
+
+
 def nome_arquivo(ano: int) -> str:
     return f"inf_mensal_fii_{ano}.zip"
 
@@ -149,8 +175,13 @@ def carregar_zip(con: sqlite3.Connection, conteudo: bytes, arquivo: str) -> tupl
     with zipfile.ZipFile(io.BytesIO(conteudo)) as zf:
         gerais = _ler_csv(zf, "geral")
         complementos = _ler_csv(zf, "complemento")
+        try:
+            ativos = _ler_csv(zf, "ativo_passivo")
+        except ValueError:  # anos antigos / fixtures sem o CSV
+            ativos = []
     n_gerais = _gravar_gerais(con, gerais)
     n_complementos = _gravar_complementos(con, complementos)
+    _gravar_ativos(con, ativos)
     con.execute(
         "INSERT OR REPLACE INTO cargas (arquivo, carregado_em) VALUES (?, datetime('now'))",
         (arquivo,),
@@ -336,6 +367,33 @@ def _gravar_complementos(con: sqlite3.Connection, linhas: list[dict]) -> int:
                 _numero(linha.get("Total_Numero_Cotistas")),
                 _numero(linha.get("Percentual_Despesas_Taxa_Administracao")),
             ),
+        )
+        total += 1
+    return total
+
+
+def _gravar_ativos(con: sqlite3.Connection, linhas: list[dict]) -> int:
+    """Grava a composição do ativo somada nos 3 baldes que decidem o tipo do
+    FII (tijolo/papel/fof) + outros. Colunas ausentes contam como 0."""
+    def soma(linha: dict, colunas: tuple[str, ...]) -> float:
+        return sum(_numero(linha.get(c)) or 0.0 for c in colunas)
+
+    total = 0
+    for linha in linhas:
+        chave = _chave(linha)
+        if chave is None:
+            continue
+        tijolo = soma(linha, _ATIVO_TIJOLO)
+        papel = soma(linha, _ATIVO_PAPEL)
+        fof = soma(linha, _ATIVO_FOF)
+        outros = soma(linha, _ATIVO_OUTROS)
+        con.execute(
+            """
+            INSERT OR REPLACE INTO informes_ativo
+                (cnpj, competencia, tijolo, papel, fof, outros, total)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+            """,
+            (*chave, tijolo, papel, fof, outros, tijolo + papel + fof + outros),
         )
         total += 1
     return total

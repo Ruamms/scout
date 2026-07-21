@@ -32,6 +32,16 @@ CREATE TABLE IF NOT EXISTS informes_gerais (
 );
 CREATE INDEX IF NOT EXISTS idx_gerais_admin ON informes_gerais (cnpj_administrador);
 CREATE INDEX IF NOT EXISTS idx_gerais_isin ON informes_gerais (isin);
+CREATE TABLE IF NOT EXISTS informes_ativo (
+    cnpj        TEXT NOT NULL,
+    competencia TEXT NOT NULL,  -- AAAA-MM
+    tijolo      REAL,           -- R$ em imóveis/direitos reais (tijolo)
+    papel       REAL,           -- R$ em CRI/LCI/recebíveis imobiliários (papel)
+    fof         REAL,           -- R$ em cotas de outros fundos: FII/FIP/FI (fundo de fundos)
+    outros      REAL,           -- caixa, títulos públicos, ações etc. (não decidem o tipo)
+    total       REAL,           -- soma tijolo+papel+fof+outros
+    PRIMARY KEY (cnpj, competencia)
+);
 CREATE TABLE IF NOT EXISTS cotacoes (
     ticker               TEXT NOT NULL,
     competencia          TEXT NOT NULL,  -- AAAA-MM
@@ -612,6 +622,47 @@ def imoveis_atuais(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:
         """,
         (cnpj, cnpj),
     ).fetchall()
+
+
+def _ativos_ultimos(con: sqlite3.Connection) -> list[sqlite3.Row]:
+    """Composição (tijolo/papel/fof) da competência mais recente de cada FII."""
+    return con.execute(
+        """
+        WITH ultimo AS (
+            SELECT cnpj, MAX(competencia) AS competencia
+              FROM informes_ativo GROUP BY cnpj
+        )
+        SELECT a.cnpj, a.tijolo, a.papel, a.fof, a.total, a.competencia
+          FROM informes_ativo a
+          JOIN ultimo u ON u.cnpj = a.cnpj AND u.competencia = a.competencia
+        """
+    ).fetchall()
+
+
+def tipos_fii(con: sqlite3.Connection) -> dict[str, str]:
+    """{cnpj: tipo} derivado da composição mais recente. Fundos sem ativo_passivo
+    (ou sem base imobiliária) ficam de fora."""
+    from . import tipo_fii as _tipo
+
+    saida: dict[str, str] = {}
+    for linha in _ativos_ultimos(con):
+        tipo = _tipo.classificar(linha["tijolo"] or 0, linha["papel"] or 0, linha["fof"] or 0)
+        if tipo:
+            saida[linha["cnpj"]] = tipo
+    return saida
+
+
+def composicao_ativo(con: sqlite3.Connection, cnpj: str) -> sqlite3.Row | None:
+    """Composição do ativo (última competência) de um FII, para o selo/tipo."""
+    return con.execute(
+        """
+        SELECT * FROM informes_ativo
+         WHERE cnpj = ?
+         ORDER BY competencia DESC
+         LIMIT 1
+        """,
+        (cnpj,),
+    ).fetchone()
 
 
 def etf_por_ticker(con: sqlite3.Connection, ticker: str) -> sqlite3.Row | None:
