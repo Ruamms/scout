@@ -20,17 +20,16 @@ def test_gordon_opt_in_com_aviso_e_sem_veredito():
     assert "<div hidden>" in html  # corpo só aparece ao abrir
     assert 'value="8.00"' in html  # dividendo padrão (12m completos) = soma anual dos 12 meses
     assert 'value="8.0"' in html   # r pré-preenchido com o DY do próprio fundo
-    # duas bases via rádio; no modo último o campo é MENSAL (0.70), não 0.70×12
+    # duas bases via botão (segmented); no modo último o campo é MENSAL (0.70), não 0.70×12
     assert 'data-v12m="8.00"' in html and 'data-vult="0.70"' in html
     assert 'data-modo="12m"' in html  # 12m completos → começa no modo soma real
-    assert "gordonBase('12m')" in html and "gordonBase('ult')" in html
-    assert "Soma real dos últimos 12 meses" in html
-    assert "Só o último dividendo mensal (R$ 0.70)" in html and "anualiza × 12" in html
+    assert "gordonBase('12m', this)" in html and "gordonBase('ult', this)" in html
+    assert "Soma dos últimos 12 meses" in html
+    assert "Só o último dividendo mensal (× 12)" in html
     assert 'id="gd-cap"' in html  # caption mostra o anual calculado internamente
-    # janela exata da soma de 12m
-    assert "07/2025 e 06/2026" in html
-    # com 12 meses, a base padrão é a soma real (rádio dela marcado)
-    assert 'onchange="gordonBase(\'12m\')" checked' in html
+    assert "data-periodo=\"07/2025 e 06/2026\"" in html  # janela da soma de 12m (via caption)
+    # com 12 meses, a base padrão é a soma real (botão dela ativo)
+    assert 'class="ativo" onclick="gordonBase(\'12m\', this)"' in html
     assert 'id="gd-r"' in html and 'id="gd-g"' in html
     # legenda das letras + desfaz a confusão r × taxa de administração
     assert "não</b> é a taxa de administração" in html
@@ -56,8 +55,8 @@ def test_gordon_menos_de_12m_padrao_ultimo_x12():
     )
     assert 'value="0.70"' in html  # campo começa no valor MENSAL (o × 12 é interno)
     assert 'data-modo="ult"' in html  # padrão cai para o modo "último" com < 12 meses
-    assert "Soma dos 5 meses com dados" in html  # rótulo reflete o histórico parcial
-    assert 'onchange="gordonBase(\'ult\')" checked' in html  # base padrão = último × 12
+    assert "Soma dos 5 meses" in html  # rótulo do botão reflete o histórico parcial
+    assert 'class="ativo" onclick="gordonBase(\'ult\', this)"' in html  # base padrão = último × 12
 
 
 def test_gordon_ausente_sem_dados():

@@ -463,6 +463,12 @@ ul.ok li::before {{ content:'✓  '; color:#4ade80; font-weight:700; }}
 .calc .res .rotulo {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; }}
 .calc .res .num {{ font-size:19px; font-weight:700; margin-top:2px; color:#8FCB9B; }}
 .calc .aviso {{ color:#66707d; font-size:11.5px; margin-top:10px; }}
+.calc .gd-base {{ display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:0 0 12px; color:#8b98a9; font-size:12px; }}
+.calc .gd-base button {{ background:#232D31; color:#8b98a9; border:1px solid #314045; border-radius:7px; padding:4px 12px; font-size:12px; cursor:pointer; }}
+.calc .gd-base button:hover {{ border-color:#8FCB9B; }}
+.calc .gd-base button.ativo {{ background:#8FCB9B; color:#101415; border-color:#8FCB9B; font-weight:700; }}
+.calc .campos.gordon {{ align-items:flex-start; }}
+.calc .gd-cap {{ margin-top:5px; max-width:150px; font-size:11px; color:#8b98a9; line-height:1.5; }}
 table.imoveis {{ width:100%; border-collapse:collapse; font-size:13.5px; }}
 table.imoveis th {{ color:#8b98a9; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; text-align:left; padding:6px 10px; border-bottom:1px solid #314045; }}
 table.imoveis td {{ padding:7px 10px; border-bottom:1px solid #232D31; }}
@@ -576,11 +582,12 @@ function calcGordon() {{
   el.textContent = (d * (1 + g) / (r - g)).toLocaleString('pt-BR', {{style: 'currency', currency: 'BRL', minimumFractionDigits: 2}});
 }}
 
-function gordonBase(modo) {{
+function gordonBase(modo, botao) {{
   const inp = document.getElementById('gd-div');
   if (!inp) return;
   inp.dataset.modo = modo;
   inp.value = modo === 'ult' ? inp.dataset.vult : inp.dataset.v12m;
+  if (botao) botao.parentElement.querySelectorAll('button').forEach(b => b.classList.toggle('ativo', b === botao));
   calcGordon();
 }}
 
@@ -1350,12 +1357,9 @@ def _calculadora_gordon(
     # o valor MENSAL — o × 12 é feito no calcGordon e exibido no caption gd-cap
     modo_padrao = "12m" if tem_12m else "ult"
     val_padrao = div_12m if tem_12m else ultimo_rend
-    c12 = "checked" if tem_12m else ""
-    cult = "" if tem_12m else "checked"
-    janela = f" · {periodo}" if periodo else ""
-    label_12m = (
-        "Soma real dos últimos 12 meses" if tem_12m else f"Soma dos {n_meses} meses com dados"
-    )
+    ativo12 = "ativo" if tem_12m else ""
+    ativo_ult = "" if tem_12m else "ativo"
+    btn_12m = "Soma dos últimos 12 meses" if tem_12m else f"Soma dos {n_meses} meses"
     base_padrao = "soma real dos últimos 12 meses" if tem_12m else "último dividendo × 12"
     return f"""
   <div class="calc">
@@ -1371,26 +1375,26 @@ def _calculadora_gordon(
       <b>dividendo</b> = quanto o fundo paga por cota no ano; <b>r</b> = retorno anual que <b>VOCÊ</b>
       exige do fundo (a “taxa de desconto” — <b>não</b> é a taxa de administração); <b>g</b> = crescimento
       anual esperado dos dividendos. Tudo editável.</p>
-      <div class="campos">
+      <div class="gd-base">Base do dividendo:
+        <button type="button" class="{ativo12}" onclick="gordonBase('12m', this)">{btn_12m}</button>
+        <button type="button" class="{ativo_ult}" onclick="gordonBase('ult', this)">Só o último dividendo mensal (× 12)</button>
+      </div>
+      <div class="campos gordon">
         <div><label for="gd-div">Dividendo por cota (R$)</label>
         <input type="number" id="gd-div" value="{val_padrao:.2f}" data-modo="{modo_padrao}" data-v12m="{div_12m:.2f}" data-vult="{ultimo_rend:.2f}" data-periodo="{periodo}" step="0.01" min="0" oninput="calcGordon()">
-        <div id="gd-cap" style="margin-top:4px;font-size:11px;color:#8b98a9"></div>
-        <div style="margin-top:6px;font-size:12px;color:#8b98a9;line-height:1.8">
-          <label style="all:unset;cursor:pointer;display:block"><input type="radio" name="gd-base" onchange="gordonBase('12m')" {c12}> {label_12m} — R$ {div_12m:.2f}{janela}</label>
-          <label style="all:unset;cursor:pointer;display:block"><input type="radio" name="gd-base" onchange="gordonBase('ult')" {cult}> Só o último dividendo mensal (R$ {ultimo_rend:.2f}) — anualiza × 12</label>
-        </div></div>
+        <div id="gd-cap" class="gd-cap"></div></div>
         <div><label for="gd-r">Taxa de desconto — r (% a.a.)</label>
         <input type="number" id="gd-r" value="{r_seed}" step="0.5" min="0.1" oninput="calcGordon()">
-        <div style="margin-top:4px;font-size:11px;color:#8b98a9">retorno que você exige ao ano — <b>não</b> é a taxa de administração; padrão = DY atual do fundo</div></div>
+        <div class="gd-cap">retorno que você exige ao ano — <b>não</b> é a taxa de administração; padrão = DY atual do fundo</div></div>
         <div><label for="gd-g">Crescimento — g (% a.a.)</label>
         <input type="number" id="gd-g" value="0" step="0.5" oninput="calcGordon()">
-        <div style="margin-top:4px;font-size:11px;color:#8b98a9">quanto os dividendos crescem por ano (0 = sem crescimento)</div></div>
+        <div class="gd-cap">quanto os dividendos crescem por ano (0 = sem crescimento)</div></div>
       </div>
       <div class="resultado">
         <div class="res"><div class="rotulo">Preço justo (com suas premissas)</div><div class="num" id="gd-justo">—</div></div>
         <div class="res"><div class="rotulo">Cotação atual (D-1)</div><div class="num">R$ {preco:.2f}</div></div>
       </div>
-      <p class="aviso">Base padrão do dividendo: <b>{base_padrao}</b> — troque no rádio acima (o
+      <p class="aviso">Base padrão do dividendo: <b>{base_padrao}</b> — troque no botão acima (o
       último × 12 anualiza o mês corrente, útil quando o fundo tem menos de 12 meses). r começa no
       <b>DY atual do fundo</b> e g em 0 (por isso o preço justo parte da cotação) — ajuste r e g com as
       SUAS premissas. Modelo teórico (crescimento perpétuo constante), sensível às premissas: não é
