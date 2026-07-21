@@ -1,0 +1,49 @@
+{
+  "ticker": "VSLH11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:07:43",
+  "relatorio": {
+    "id": 1247728,
+    "data_entrega": "14/07/2026 18:22",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Dividend Yield e Cota Patrimonial:**\n   - O fundo distribuiu R$ 0,035 por cota no mês de maio, resultando em um Dividend Yield de 2,34% (ou 1,99% com Gross-Up) sobre a cota média de ingresso.\n   - A cota patrimonial em 29/05/2026 era de R$ 1,68.\n\n2. **Patrimônio Líquido e Cotas Emitidas:**\n   - O patrimônio líquido do fundo foi de R$ 334,7M no mês de maio.\n   - O número total de cotas emitidas era de 29,864.091.\n\n3. **Alocação da Carteira:**\n   - A alocação por setor na carteira do fundo foi de 68,9% em hotelaria, 7,5% em residencial, 3,4% em loteamento e 2,1% em comércio.\n   - A concentração geográfica dos ativos era composta por 7,9% do Brasil Central (GO), 5,6% de Santa Catarina (SC), 3,0% de Minas Gerais (MG), 18,6% de São Paulo (SP) e outros.\n\n4. **Portfólio de CRIs:**\n   - O fundo possui um portfólio diversificado com diferentes segmentos como shopping centers, loteamentos, resorts, etc.\n   - Exemplos específicos incluem o CRI STX 37, WAM Holding, GPK II, entre outros.\n\n5. **Reestruturações e Carências:**\n   - Houve reestruturação no CRI Pride, onde foi aprovada a substituição de cessão fiduciária por fiança dos sócios da incorporadora.\n   - As operações do CRI Pride tiveram carência concedida até agosto/2026.\n\n6. **Inadimplência e Vendas:**\n   - A inadimplência acumulada encerrou o mês em 2,9% para o CRI União do Lago.\n   - Houve 172 vendas líquidas negativas no mês de maio para o CRI Gran Viver.\n\n### O que observar em seguida:\n- Monitorar a inadimplência e as vendas líquidas, especialmente nos CRIs com maior exposição à inadimplência.\n- Observar os avanços nas reestruturações dos CRIs, como no caso do Pride."
+  },
+  "comunicados": {
+    "ids": [
+      1042791,
+      982395,
+      1057415,
+      1025021
+    ],
+    "datas": [
+      "17/11/2025",
+      "02/09/2025",
+      "09/12/2025",
+      "31/10/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO ENTREGUE EM 02/09/2025\n\n**Data:** 02 de setembro de 2025  \n**Título:** Ocorrência: Variação atípica nas cotas do VERSALHES RECEBÍVEIS IMOBILIÁRIOS FII  \n**Resumo:** A administradora informou que não tem conhecimento de fatores específicos para justificar a variação das cotas.  \n**Trecho-chave:**\n\"A Vórtx esclarece que não tem conhecimento de nenhum ato ou fato relevante específico que possa justificar e/ou motivar a variação do valor da cota do Fundo no mercado secundário.\"\n\n### COMUNICADO AO MERCADO ENTREGUE EM 17/11/2025\n\n**Data:** 17 de novembro de 2025  \n**Título:** Ocorrência: Ressalva nas Demonstrações Financeiras do VERSALHES RECEBÍVEIS IMOBILIÁRIOS FII  \n**Resumo:** A administradora informou que as demonstrações financeiras foram ressalvadas devido à abstenção de opinião dos auditores independentes.  \n**Trecho-chave:**\n\"A Vórtx notificou a administradora fiduciária do Fundo Investido sobre o plano de ação em relação a regularização das demonstrações financeiras, porém neste momento não há possibilidade de termos informações diferentes das que geraram a ressalva ocasionada pela abstenção de opinião.\"\n\n### ASSEMBLEIA AGO ENTREGUE EM 31/10/2025\n\n**Data:** 31 de outubro de 2025  \n**Título:** Ocorrência: Deliberação sobre as contas e demonstrações contábeis do VERSALHES RECEBÍVEIS IMOBILIÁRIOS FII  \n**Resumo:** A assembleia deliberou aprovar as contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 30 de junho de 2025.  \n**Trecho-chave:**\n\"A eventual aprovação das matérias acima incluirá a autorização ao Administrador para a prática de todo e qualquer ato e a assinatura de todo e qualquer documento necessário à efetivação dos termos da Ordem do Dia acima.\"\n\n### ASSEMBLEIA AGO ENTREGUE EM 09/12/2025\n\n**Data:** 09 de dezembro de 2025  \n**Título:** Ocorrência: Aprovação das contas e demonstrações contábeis do VERSALHES RECEBÍVEIS IMOBILIÁRIOS FII  \n**Resumo:** A assembleia deliberou aprovar as contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 30 de junho de 2025.  \n**Trecho-chave:**\n\"APROVADA a deliberação constante acima visa aprovar as Demonstrações Financeiras do Fundo, elaborada por auditor independente.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 1.79
+  },
+  "parecer": {
+    "id": 1021707,
+    "data_entrega": "27/10/2025 19:49",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, exceto pelos efeitos do assunto descrito na seção a seguir in�tulada “Base para Opinião com ressalvas” as demonstrações ﬁnanceiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e ﬁnanceira do Fundo, para a posição de 30 de junho de 2025 e o desempenho de suas operações para o exercício ﬁndo naquela data, de acordo com as prá�cas "
+  }
+}

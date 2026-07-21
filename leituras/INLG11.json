@@ -1,0 +1,57 @@
+{
+  "ticker": "INLG11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T20:35:00",
+  "relatorio": {
+    "id": 1251292,
+    "data_entrega": "16/07/2026 17:26",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Vacância Física**: A vacância física média no portfólio do fundo foi de 0,2% nos últimos 12 meses, com zero vacância pelo quinto mês consecutivo.\n   - \"Vacância física média de 0,2% nos últimos 12 meses\" (p. 9)\n\n2. **Inadimplência**: Houve inadimplência de um locatário representando 1,1% da receita do portfólio no mês, mas o histórico de recuperação é de curtíssimo prazo.\n   - \"No mês houve a inadimplência de um locatário, representando 1,1% da receita do portfólio. No entanto, o histórico de recuperação dos valores de locação é de curtíssimo prazo, sendo que na grande maioria das vezes ocorre no mês seguinte ao inadimplemento\" (p. 4)\n\n3. **Resultados Financeiros**: O fundo distribuiu R$ 0,60 por cota no mês, correspondendo a um dividend yield anualizado de 10,00% sobre a cota de fechamento mensal.\n   - \"O Fundo distribuiu R$ 0,60 por cota no mês, correspondendo a um dividend yield anualizado de 10,00 % a.a. sobre a cota de fechamento mensal\" (p. 4)\n\n4. **Cotistas**: O número de cotistas do fundo diminuiu em 17,16% nos últimos 12 meses.\n   - \"Cotistas 14,6mil (12m: -17,16%)\" (p. 1)\n\n5. **Vacância Física**: A vacância física do portfólio foi mantida em zero pelo quinto mês consecutivo.\n   - \"A ocupação contagem I x Mercado de Ativos A e A+ na Região Metropolitana de Belo Horizonte/MG\" (p. 5)\n\n6. **Obras e Reformas**: O fundo segue realizando seu plano de investimentos para garantir a manutenção da qualidade dos ativos.\n   - \"Além disso, o Fundo segue realizando o seu plano de investimentos, para garantir a manutenção da qualidade dos ativos, visando mantê-los competitivos e em conformidade com as novas regras exigidas pelos órgãos regulatórios\" (p. 4)\n\n7. **Distribuição de Cotas**: Houve vendas de ativos no valor de R$ 116.177.793,46, com participação do fundo variando entre 80% e 100%, dependendo da localização.\n   - \"Venda Goiânia R$ 116.177.793,46 VIANA / ES 80,0% de Participação do Fundo CONTAGEM I / MG 46,3% de Participação do Fundo GOIÂNIA / GO 46,3% de Participação do Fundo GAIOLLI / SP 80,0% de Participação do Fundo RIO CAMPO GRANDE / RJ 22,1% de Participação do Fundo\" (p. 13)\n\n### O que observar em seguida:\n- Monitorar a evolução da vacância física e inadimplência.\n- Observar as mudanças no número de cotistas e suas implicações na liquidez do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1259683,
+      1071244,
+      1051683,
+      1140296,
+      1120557,
+      1208017,
+      1208016
+    ],
+    "datas": [
+      "20/07/2026",
+      "26/12/2025",
+      "01/12/2025",
+      "18/03/2026",
+      "24/02/2026",
+      "29/05/2026",
+      "29/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 20/07/2026\n\n**O que aconteceu:** A administradora do fundo INLG11 exerceu o direito de preferência para aquisição de uma fração ideal de um imóvel localizado em Guarulhos, São Paulo.\n\n**Resumo:** O Fundo adquiriu 20% do Parque Logístico Gaiolli por R$ 26.113.251,35, com a finalidade de ampliar sua flexibilidade na gestão do ativo e potencializar valor para os cotistas.\n\n**Trecho-chave:** \"Nesse sentido, informa que celebrou, em 17 de julho de 2026, o Instrumento Particular de Compromisso de Venda e Compra de Bem Imóvel e Outras Avenças, relativo à aquisição da Fração Ideal do Empreendimento Gaiolli (“Aquisição da Fração Ideal”), sendo acordado com o vendedor a quantia de R$ 26.113.251,35 (vinte e seis milhões, cento e treze mil, duzentos e cinquenta e um reais e trinta e cinco centavos) (“Preço”), cujo pagamento está previsto para 24 de julho de 2026.\"\n\n### FATO RELEVANTE entregue em 18/03/2026\n\n**O que aconteceu:** A AGE aprovou três pautas: opção de exercício do direito de preferência, recompra de cotas e possibilidade de alavancagem.\n\n**Resumo:** As decisões visam fortalecer o fundo, permitindo aquisições estratégicas e otimização financeira.\n\n**Trecho-chave:** \"1. Opção de exercício do Direito de Preferência dos ativos Gaiolli, Contagem e Viana: o Fundo foi informado pela LOG CP (“Vendedora”) sobre a intenção de venda da participação dela em 3 (três) ativos dos quais o INLG11 é coproprietário. Esta transação está sendo conduzida pela LOG CP com uma terceira parte, sem participação do Fundo nas negociações.\"\n\n### COMUNICADO AO MERCADO entregue em 24/02/2026\n\n**O que aconteceu:** O fundo assinou um novo contrato de locação para o ativo \"LOG Rio Campo Grande Business Park\", localizado no Rio de Janeiro.\n\n**Resumo:** A ação resultou na ocupação total do portfólio, zerando a vacância.\n\n**Trecho-chave:** \"Com esta locação, o Fundo atingiu a ocupação de 100% da sua ABL, ou seja, zerou a vacância do portfólio.\"\n\n### COMUNICADO AO MERCADO entregue em 26/12/2025\n\n**O que aconteceu:** O fundo assinou aditivos contratuais para antecipar pagamentos da quinta parcela de duas emissões de cotas.\n\n**Resumo:** A medida visa aumentar a previsibilidade financeira e reforçar a solidez do portfólio imobiliário.\n\n**Trecho-chave:** \"Assinou, nesta data, 2 (dois) aditivos contratuais, referente ao “Segundo Aditamento ao Instrumento Particular de Compromisso de Venda e Compra de Bem Imóvel Sob Condições Precedentes e Outras Avenças”, relacionados aos ativos dos empreendimentos denominados “Condomínio Log Gaiolli”, localizado no Estado de São Paulo, e “Condomínio Log Viana Business Park”, localizado no Estado do Espirito Santo.\"\n\n### FATO RELEVANTE entregue em 01/12/2025\n\n**O que aconteceu:** O patrimônio líquido do fundo foi reavaliado, resultando em um aumento de R$ 26.339.009,48.\n\n**Resumo:** A reavaliação positiva reflete no valor justo dos ativos do fundo.\n\n**Trecho-chave:** \"os ativos imobiliários do FUNDO foram reavaliados, sendo verificado um impacto positivo de 5,49% (cinco inteiros e quarenta e nove centésimos por cento) no patrimônio líquido do FUNDO, com aumento de R$ 26.339.009,48 (vinte e seis milhões, trezentos e trinta e nove mil e noventa reais e quarenta e oito centavos) no valor justo dos ativos.\"\n\n### ASSEMBLEIA AGO entregue em 29/05/2026\n\n**O que aconteceu:** A assembleia aprovou as demonstrações contábeis do exercício social de 2025.\n\n**Resumo:** A aprovação reflete o desempenho financeiro do fundo no ano passado.\n\n**Trecho-chave:** \"Findo o prazo e após a apuração dos votos recebidos, excluídas as participações das pessoas conflitadas, referidas nos incisos I a III do artigo 78 da Parte Geral da Resolução CVM 175/2022 (“Votos Computáveis”), foi verificada a APROVAÇÃO da matéria elencada na ordem do dia.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 66.8
+  },
+  "parecer": {
+    "id": 1151637,
+    "data_entrega": "31/03/2026 20:59",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Inter Logístico Fundo de Investimento Imobiliário FII Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adota"
+  }
+}

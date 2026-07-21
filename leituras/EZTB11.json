@@ -1,0 +1,36 @@
+{
+  "ticker": "EZTB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T21:25:12",
+  "comunicados": {
+    "ids": [
+      1200629,
+      1188099,
+      1188098,
+      1173546
+    ],
+    "datas": [
+      "21/05/2026",
+      "13/05/2026",
+      "13/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Comunicado ao Mercado entregue em 13/05/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo BTG PACTUAL PRIME OFFICES I foram aprovadas na assembleia geral realizada em 4 de maio de 2026.\n\n**Resumo:** A assembleia foi realizada para aprovar as contas do exercício encerrado em 31 de dezembro de 2025, mas não houve presença de cotistas, resultando na aprovação automática das contas.\n\n**Trecho-chave:**\n\"foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### Assembleia Geral Agendada para 29/04/2026\n\n**O QUE aconteceu:** A assembleia geral foi convocada para aprovar as contas anuais do Fundo BTG PACTUAL PRIME OFFICES I referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi convocada com prazo até 4 de maio de 2026 para votação, sendo que os cotistas poderiam exercer o direito de voto via plataforma eletrônica.\n\n**Trecho-chave:**\n\"Convocar os cotistas do Fundo (“Cotistas”) para a Consulta Formal, com prazo de recebimento de votos até 04 de maio de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo.\"\n\n---\n\n### Assembleia Geral Agendada para 13/05/2026\n\n**O QUE aconteceu:** Não houve instalação da assembleia geral de cotistas, pois nenhum cotista compareceu.\n\n**Resumo:** A assembleia foi realizada em 4 de maio de 2026, mas não ocorreu a instalação devido à falta de presença de cotistas. As contas foram consideradas automaticamente aprovadas.\n\n**Trecho-chave:**\n\"não sendo, portanto, possível sua instalação. Dessa forma, e considerando que as demonstrações contábeis não contêm ressalvas, ficam as mesmas consideradas automaticamente aprovadas.\"\n\n---\n\n### Comunicado ao Mercado entregue em 21/05/2026\n\n**O QUE aconteceu:** A atualização da forma de divulgação da remuneração dos Prestadores de Serviços Essenciais foi aprovada.\n\n**Resumo:** A atualização passa a ser realizada exclusivamente por meio da Ferramenta ANBIMA, sem alteração nos valores pagos pelos cotistas.\n\n**Trecho-chave:**\n\"restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n---\n\n### Conexões aos indicadores:\n- **VP/cota 1,40 (12m: -22,37%)**: O comunicado não menciona diretamente o VP/cota, mas a situação financeira do fundo é refletida nos indicadores.\n- **Cotistas 5 (12m: +66,67%)**: A redução no número de cotistas pode estar relacionada ao alerta de cotistas abaixo do mínimo legal."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151563,
+    "data_entrega": "31/03/2026 20:33",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações finance iras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do BTG Pactual Prime Offices I - Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa o exercício findo nessa data , de acordo com as práticas contábei"
+  }
+}

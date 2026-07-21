@@ -1,0 +1,48 @@
+{
+  "ticker": "XPSF11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:10:56",
+  "relatorio": {
+    "id": 1227247,
+    "data_entrega": "24/06/2026 15:36",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Compras de Ativos**: No mês, o fundo realizou compras pontuais em CRIs (KNIP e KNSC) com um total de R$0,9 mm.\n2. **Distribuição de Rendimentos**: A distribuição de rendimentos foi de R$ 0,07 por cota, a ser realizada em 15/06/26.\n3. **Comentário do Gestor sobre o Cenário Econômico**: O cenário econômico doméstico foi desafiador, com volatilidade nos preços dos ativos e preocupações macroeconômicas relacionadas à inflação e política fiscal.\n4. **Desempenho dos FIIs no Mês**: As cotas de FIIs passaram por uma correção, especialmente as de lajes corporativas e shoppings, que tiveram desempenhos negativos.\n5. **Alocação do Fundo**: A exposição na parcela do fundo alocada diretamente em CRIs atingiu cerca de 10,4% do patrimônio do XPSF no fim de maio.\n6. **Cota Patrimonial e Dividend Yield**: A cota patrimonial atingiu R$ 7,95 antes da distribuição de proventos, resultando em um dividend yield de 13,17% ao ano.\n\n### O que Observar Em Seguida:\n- Monitorar as próximas distribuições de rendimentos.\n- Atentar para os desempenhos dos segmentos de FIIs no mercado secundário."
+  },
+  "comunicados": {
+    "ids": [
+      1170637,
+      1096295,
+      1178930,
+      1178929
+    ],
+    "datas": [
+      "27/04/2026",
+      "29/01/2026",
+      "04/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 29/01/2026\n\n**O QUE aconteceu:** A XP VISTA ASSET MANAGEMENT LTDA informou os dados para participação na apresentação trimestral de resultados do 4T25.\n\n**Resumo:** A Gestora informou detalhes sobre a próxima apresentação de resultados, incluindo data e horário.\n\n**Trecho-chave:**\n\"Quinta-feira, 26 de fevereiro de 2026\nÀs 10h00 (horário de Brasília)\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 04/05/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária dos cotistas do XP SELECTION FUNDO FII aprovou as demonstrações financeiras e notas explicativas relativas ao exercício social findo em 31.12.2025.\n\n**Resumo:** Os cotistas aprovaram sem restrições ou ressalvas as demonstrações financeiras, notícias explicativas e parecer dos auditores independentes do exercício social de 2025.\n\n**Trecho-chave:**\n\"Os cotistas aprovaram, sem quaisquer restrições ou ressalvas:  \n(i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 27/04/2026\n\n**O QUE aconteceu:** A XP VISTA ASSET MANAGEMENT LTDA informou os dados para participação na apresentação trimestral de resultados do 1T26.\n\n**Resumo:** A Gestora informou detalhes sobre a próxima apresentação de resultados, incluindo data e horário.\n\n**Trecho-chave:**\n\"Quinta-feira, 21 de maio de 2026\nÀs 17h00 (horário de Brasília)\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 04/05/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária dos cotistas do XP SELECTION FUNDO FII aprovou as demonstrações financeiras e notas explicativas relativas ao exercício social findo em 31.12.2025.\n\n**Resumo:** Os cotistas aprovaram sem restrições ou ressalvas as demonstrações financeiras, notícias explicativas e parecer dos auditores independentes do exercício social de 2025.\n\n**Trecho-chave:**\n\"Os cotistas aprovaram, sem quaisquer restrições ou ressalvas:  \n(i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025\"\n\n---\n\n**Conexão com o contexto:** A aprovação das demonstrações financeiras na assembleia geral ordinária de 4 de maio de 2026 pode estar relacionada à publicação dos resultados do primeiro trimestre (1T26) que serão apresentados em 21 de maio de 2026."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 6.2
+  },
+  "parecer": {
+    "id": 1147549,
+    "data_entrega": "30/03/2026 11:34",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

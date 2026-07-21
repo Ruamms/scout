@@ -1,0 +1,55 @@
+{
+  "ticker": "KISU11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T21:40:07",
+  "relatorio": {
+    "id": 1177797,
+    "data_entrega": "30/04/2026 18:58",
+    "texto": "### Fatos Extraídos:\n\n1. **Objetivo e Política de Investimento:**\n   - O fundo tem como objetivo seguir a carteira teórica do índice de referência SUNO 30 FII, que busca refletir a combinação de variação de cotas dos fundos componentes com as distribuições de proventos.\n   (p. 2)\n\n2. **Cotistas e Base de Cotistas:**\n   - A base de cotistas do KISU11 é de apenas 105, o que é considerado muito pequeno.\n   (p. 3)\n\n3. **Desconto em relação ao Valor Patrimonial:**\n   - O fundo negociava com um desconto significativo em relação à sua carteira de FIIs, com uma média de 0,89x do valor patrimonial e um dividend yield anualizado de 11,86%.\n   (p. 7)\n\n4. **Composição da Carteira:**\n   - Atualmente, o KISU11 detém 95,40% de seu PL alocado em fundos imobiliários (FIIs).\n   (p. 6)\n\n5. **Distribuição de Dividendos:**\n   - Para março/2026, a distribuição foi de R$ 0,070/cota.\n   (p. 3)\n\n6. **Desempenho do Fundo:**\n   - Desde sua criação, o fundo tem apresentado desempenho inferior ao IFIX e ao SUNO30 FII.\n   (p. 8)\n\n7. **Risco de Estagflação:**\n   - O ambiente econômico global foi alterado por um conflito no Oriente Médio, levando a uma probabilidade maior de um ambiente próximo de estagflação.\n   (p. 3)\n\n8. **Cotação e Mercado Secundário:**\n   - A cota do KISU11 segue com desconto para seu valor patrimonial.\n   (p. 4)\n\n### O que observar em seguida:\n- Monitorar a evolução da base de cotistas, já muito pequena.\n- Observar as mudanças na composição da carteira e o impacto no desempenho do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1205551,
+      1107364,
+      1214346,
+      1161852,
+      1198121,
+      1198098
+    ],
+    "datas": [
+      "27/05/2026",
+      "10/02/2026",
+      "08/06/2026",
+      "14/04/2026",
+      "18/05/2026",
+      "18/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### O que aconteceu em 27/05/2026\n\n**Título:** Mudança de Administradora do Fundo KISU11\n\n**Resumo:** A partir do dia 28/05/2026, a administradora do fundo passará a ser a BTG Pactual Serviços Financeiros S.A., substituindo a BRL Trust Distribuidora de Títulos e Valores Mobiliários S.A.\n\n**Trecho-chave:**\n\"A partir do dia 28 /maio/2026, o serviço de escrituração das cotas do Fundo passará a ser prestado pela Nova Administradora, em substituição à Antiga Administradora.\"\n\n---\n\n### O que aconteceu em 14/04/2026\n\n**Título:** Retratamento Parcial da Oferta Pública de Cotas\n\n**Resumo:** A quantidade total de cota subscritas e integralizadas no âmbito da oferta foi de 15.348.114, perfazendo o montante de R$123.552.317,70.\n\n**Trecho-chave:**\n\"A quantidade total de Cotas subscritas e integralizadas no âmbito da Oferta foi de 15.348.114 (quinze milhões e trezentos e quarenta e oito mil e cento e quatorze) Cotas, perfazendo o montante de R$°123.552.317,70 (cento e vinte e três milhões, quinhentos e cinquenta e dois mil e trezentos e dezessete reais e setenta centavos).\"\n\n---\n\n### O que aconteceu em 18/05/2026\n\n**Título:** Aprovação da Substituição de Prestadores de Serviços Essenciais do Fundo KISU11\n\n**Resumo:** A assembleia geral ordinária aprovou, por quórum de aproximadamente 35,93% das cotas emitidas, a substituição dos prestadores de serviços essenciais do fundo.\n\n**Trecho-chave:**\n\"O Administrador do Fundo realizou o procedimento de Consulta Formal convocando os Cotistas a manifestarem-se a respeito da s seguintes matérias da Ordem do Dia:\"\n1. Aprovar, como deliberação única, conjunta e indissociável, a substituição dos Prestadores de Serviços Essenciais do Fundo.\"\n\n---\n\n### O que aconteceu em 08/06/2026\n\n**Título:** Divulgação do Rendimento Mensal e Cronograma de Liquidação\n\n**Resumo:** O rendimento referente ao resultado caixa do mês de maio de 2026 será divulgado no dia 15/06/2026. Informações adicionais sobre o evento de liquidação do KISU11 serão divulgadas oportunamente.\n\n**Trecho-chave:**\n\"Portanto, o rendimento referente ao resultado caixa do mês de maio de 2026 será divulgado no dia 15/06/2026.\""
+  },
+  "retrato": {
+    "selo": "Histórico insuficiente",
+    "nivel": "insuficiente",
+    "alertas": [
+      "Base de cotistas muito pequena",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": 6.45
+  },
+  "parecer": {
+    "id": 1151021,
+    "data_entrega": "31/03/2026 18:46",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "ticker": "SNFF11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:00:58",
+  "relatorio": {
+    "id": 1233201,
+    "data_entrega": "29/06/2026 19:18",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Distribuição de Rendimentos:** O SNFF11 distribuiu R$ 0,92 por cota em maio, com um Dividend Yield anualizado de 12,35%.\n   > \"O SNFF11 encerrou o mês de maio com resultado distribuível de R$ 0,92 por cota, e provisionamento de R$ 0,72 por cota distribuídos em 25/06/2026, restando R$ 0,20 em reserva acumulada distribuível total. O DY anualizado ficou em 12,35%.\" (p. 4)\n\n2. **Operações de Mercado:** Realizou a venda de R$ 1,5 mi de PATL11 e compras/vendas de GGRC11 no montante de R$ 7,7 mi.\n   > \"o SNFF11 realizou a venda de R$ 1,5 mi de PATL11, resultando em um lucro de R$ 90 mil, além realizar compras e vendas de GGRC11 no montante de R$ 7,7 mi que resultaram no lucro de R$ 298 mil, somando todas as movimentações no mês foram contabilizados o resultado de R$ 0,10 por cota a título de ganho de capital\" (p. 4)\n\n3. **Aquisição de Cotas:** Adquiriu cerca de R$ 764 mil em cotas de RELG11.\n   > \"o SNFF11 adquiriu cerca de R$ 764 mil em cotas de RELG11, em vista da cisão e amortização do fundo aprovada em assembleia geral extraordinária\" (p. 4)\n\n4. **Carteira Diversificada:** A carteira está composta por 73 FIIs, com aproximadamente 85% em FIIs, 19,9% em caixa e 0,4% em ações.\n   > \"O fundo possui uma carteira diversificada em 73 FIIs, além de uma ponta em Ações e uma posição relevante em Caixa. Atualmente a maior exposição está em FIIs, com aproximadamente 85,5% da carteira\" (p. 8)\n\n5. **Alfa vs IFIX:** O fundo tem um Alfa acumulado de +10,67% desde o início.\n   > \"A carteira finalizou o mês com FIIs (85%) e caixa (14%). Na visão da gestão, a parcela em caixa será importante para os próximos meses, tendo em vista a volatilidade observada do mercado de renda variável neste 1S26. Com um volume robusto em liquidez, espera-se que o SNFF11 consiga aproveitar este cenário para boas novas alocações, além de diminuir a volatilidade do valor patrimonial no curto prazo.\" (p. 4)\n\n6. **Fusão com SNME11:** Aprovada em AGE, a fusão está prevista para o 1S26.\n   > \"Clique aqui para acessar o Edital. RESUMO EXECUTIVO: A distribuição referente a abril foi de R$ 0,72/cota, representando um Dividend Yield anualizado de 12,35%.\" (p. 3)\n\n### O que Observar em Seguida:\n- **Distribuição de Rendimentos:** Verificar se o DY anualizado mantém-se estável.\n- **Operações de Mercado:** Monitorar as movimentações futuras e seus impactos no valor patrimonial do fundo."
+  },
+  "comunicados": {
+    "ids": [
+      1189717,
+      1125035,
+      1196031,
+      1173360
+    ],
+    "datas": [
+      "13/05/2026",
+      "27/02/2026",
+      "15/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### COMUNICADO AO MERCADO ENTREGUE EM 13/05/2026\n\n**O QUE ACONTECEU:** Atualização na forma de divulgação dos rendimentos dos fundos administrados.\n\n**RESUMO:** A BTG Pactual Serviços Financeiros S.A. informou que a atualização da forma de divulgação dos rendimentos dos fundos foi aprovada, passando a ser realizada exclusivamente por meio da Ferramenta ANBIMA (Plataforma de Transparência de Taxas).\n\n**CITAÇÃO CHAVE:** \"restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 27/02/2026\n\n**O QUE ACONTECEU:** Mudança na distribuição dos Informes de Rendimentos.\n\n**RESUMO:** Os Informes de Rendimentos referentes ao ano de 2025 estão disponíveis exclusivamente por meio digital, através do Portal do Investidor. A administradora informou os passos para acesso e reforçou a importância de manter dados cadastrais atualizados.\n\n**CITAÇÃO CHAVE:** \"os Informes referentes ao ano de 2025 serão disponibilizados exclusivamente por meio digital.\"\n\n---\n\n### ASSEMBLEIA AGE ENTREGUE EM 15/05/2026\n\n**O QUE ACONTECEU:** Aprovação da substituição dos prestadores de serviços essenciais do fundo.\n\n**RESUMO:** A assembleia aprovou a substituição da atual administradora (BRL TRUST) pelo BTG Pactual, com a transferência da administração e prestação de serviços essenciais no dia 28 de maio de 2026. O balancete será auditado pelos auditores independentes do fundo.\n\n**CITAÇÃO CHAVE:** \"A substituição da atual administradora pelo Novo Administrador implicará na substituição dos seguintes prestadores de serviços do Fundo, também sem qualquer alteração nas taxas devidas pelo Fundo.\"\n\n---\n\n### ASSEMBLEIA AGE ENTREGUE EM 29/04/2026\n\n**O QUE ACONTECEU:** Convocação para a Assembleia Geral Extraordinária.\n\n**RESUMO:** A administradora convocou os cotistas para uma assembleia extraordinária para aprovar a substituição dos prestadores de serviços essenciais do fundo, com a transferência da administração no dia 28 de maio de 2026. O balancete será auditado pelos auditores independentes.\n\n**CITAÇÃO CHAVE:** \"A Administradora convocou os titulares das cotas de emissão do Fundo para participar da Assembleia Geral Extraordinária do Fundo, a fim de examinar e votar a seguinte matéria constante da ordem do dia.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda",
+      "Rendimentos irregulares"
+    ],
+    "cota": 72.4
+  },
+  "parecer": {
+    "id": 1001748,
+    "data_entrega": "29/09/2025 23:32",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Suno Fundo de Fundos de Investimento Imobiliário Fundo de Investimento Imobiliário Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com a"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ticker": "HREC11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T20:48:13",
+  "relatorio": {
+    "id": 1247640,
+    "data_entrega": "14/07/2026 17:45",
+    "texto": "### Fatos Extraídos do Relatório Gerencial:\n\n1. **Aquisições e Vendas de Ativos:**\n   - O fundo realizou novas aquisições em CRIs indexados ao CDI, com taxas de aquisição entre CDI + 3,40% a.a. e CDI + 3,5% a.a., mantendo a estratégia de alocação em ativos com garantias reais e spreads superiores à média da carteira.\n   - Vendeu R$ 668,4 mil do CRI Jardim Sul e R$ 192,9 mil do CRI IZP Cônego II 118E 1S, fazendo parte de uma reciclagem da carteira.\n\n2. **Composição da Carteira:**\n   - A carteira totaliza R$ 509.205.836,66, composta por 110,2% em CRI e 1,5% em renda fixa.\n   - Investimentos diretos totalizados em R$ 502.152.646.\n\n3. **Desempenho Financeiro:**\n   - O fundo anunciou a distribuição de R$ 0,095 por cota como rendimento referente ao mês de junho de 2026.\n   - O resultado operacional do primeiro semestre foi positivo, com receitas totais de R$ 30.583.181 e despesas de R$ 4.356.736.\n\n4. **Liquidez:**\n   - No fechamento deste mês, o valor de mercado da cota foi de R$ 8,70.\n   - Nos últimos 12 meses, foram negociadas 14,5% das cotas do Fundo.\n\n5. **Rendimento e Retorno:**\n   - A TIR líquida calculada considera os rendimentos distribuídos pelo Fundo, reinvestidos no próprio fluxo, e a variação do valor da cota.\n   - O retorno total bruto é de 46,25% desde o início das atividades.\n\n### Observações a Acompanhar:\n\n- **Aumento na Cota Patrimonial:** A cota patrimonial encerrou o mês precificada a R$ 8,82.\n- **Rendimentos Acima do Resultado Financeiro:** O fundo declarou rendimentos de R$ 79,1M no 4T, superando o resultado financeiro líquido de R$ 50,3M."
+  },
+  "comunicados": {
+    "ids": [
+      1020201,
+      1020200
+    ],
+    "datas": [
+      "24/10/2025",
+      "24/10/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "**24/10/2025 - Assembleia Geral Ordinária de Cotistas**\n\nO Fundo HREC11 realizou uma assembleia geral ordinária por meio de consulta formal, com a participação de 67,35% das cotas emitidas. Os cotistas deliberaram pela aprovação das contas e das demonstrações financeiras do exercício social encerrado em 30 de junho de 2025, com 0,25% dos votos favoráveis e 0,16% de abstenções.\n\n*\"Os Cotistas vinculados e/ou em posição de potencial conflito de interesses com o Fundo não foram considerados para fins de apuração do quórum de deliberação em razão de sua condição e, portanto, tais Cotistas vinculados e/ou conflitados não exerceram direito de voto, nos termos do artigo 78, Parte Geral e do artigo 31, Anexo III da Resolução CVM nº 175, de 23 de dezembro de 2022 (\"Resolução CVM 175\").\" (p. 1)*\n\n**Conexão com o contexto:** Esta assembleia se refere ao exercício social encerrado em 30 de junho de 2025, que está alinhado com os indicadores do contexto fornecidos."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 8.28
+  },
+  "parecer": {
+    "id": 995383,
+    "data_entrega": "22/09/2025 18:27",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Hedge Recebíveis Imobiliários Fundo de Investimento Imobiliário de Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contá"
+  }
+}

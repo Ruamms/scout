@@ -1,0 +1,58 @@
+{
+  "ticker": "UMED11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:13:22",
+  "relatorio": {
+    "id": 1236535,
+    "data_entrega": "30/06/2026 22:11",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Compra de Ativos e Obras:**\n   - Em 27/09/2022, foram formalizados os contratos de Construção e Gerenciamento da Obra para o Hospital Unimed Maceió, com previsão inicial de entrega em outubro de 2024. Posteriormente, prazos foram prorrogados várias vezes, com a última prorrogação estabelecendo uma nova data de conclusão das obras em 29/03/2027.\n   - (p. 6)\n\n2. **Cotas Emittedas e Integralizadas:**\n   - O Fundo já realizou seis emissões de cotas, totalizando 3.079.431 cotas emitidas e integralizadas até julho de 2025.\n   - (p. 4)\n\n3. **Aluguel Estipulado:**\n   - O valor do aluguel estabelecido para o Hospital Unimed Maceió é R$ 2.131.632,19 por mês, equivalente a 1/12 do resultado da multiplicação de 10% ao ano pelo valor do investimento.\n   - (p. 8)\n\n4. **Vacância e Inadimplência:**\n   - Não há menção específica sobre vacância ou inadimplência no relatório, mas as obras em andamento indicam que o imóvel ainda não está em operação.\n   - (p. 1-27)\n\n5. **Alavancagem/Dívidas:**\n   - O patrimônio líquido do fundo é de R$ 326.009 mil, com ativos avaliados em R$ 340.706 mil e passivos de R$ 14.697 mil.\n   - (p. 9)\n\n### O que Observar Em Seguida:\n- **Prazos das Obras:** Verificar o cumprimento dos novos prazos estabelecidos para a conclusão da obra do Hospital Unimed Maceió, especialmente após as várias prorrogações.\n- **Fluxo de Caixa:** Monitorar o fluxo de caixa e os gastos com obras para garantir que o fundo esteja gerenciando adequadamente suas finanças durante a fase de construção."
+  },
+  "comunicados": {
+    "ids": [
+      1055529,
+      1004631,
+      957808,
+      1251756,
+      1087990,
+      1179888,
+      1148166
+    ],
+    "datas": [
+      "05/12/2025",
+      "01/10/2025",
+      "31/07/2025",
+      "17/07/2026",
+      "20/01/2026",
+      "05/05/2026",
+      "30/03/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 05/12/2025\n\n**O que aconteceu:** Postergação da Primeira Integralização da 6ª Emissão de Cotas.\n\n**Resumo:** A data para a primeira integralização das cotas foi postergada de 15/12/2025 para 15/01/2026, mantendo-se as demais datas inalteradas.\n\n**Trecho-chave:**\n\"Após a análise do fluxo de caixa projetado, elaborado pela Administradora com base na programação de desembolso informada pela Construtora, a Investcoop, manifestou seu entendimento de que a postergação não acarretará prejuízo ao andamento das obras, tampouco comprometerá a capacidade do Fundo de honrar suas obrigações no período, recomendando ao Fundo que a data da Primeira Integralização seja postergada para 15/01/2026.\"\n\n### FATO RELEVANTE entregue em 01/10/2025\n\n**O que aconteceu:** Aprovação da 6ª Emissão de Cotas.\n\n**Resumo:** O Fundo aprovou a realização da 6ª emissão de cotas, destinada exclusivamente a investidores profissionais, com um montante total estimado de R$ 51.921.276,12.\n\n**Trecho-chave:**\n\"O valor total da Oferta, incluindo a subscrição por meio do exercício do Direito de Preferência, e a subscrição no âmbito da Oferta, é de R$ 51.921.276,12 (cinquenta e um milhões, novecentos e vinte e um mil, duzentos e setenta e seis reais e doze centavos) (''Montante Total da Oferta''), correspondente a até 495.243 (quatrocentas e noventa e cinco mil, duzentas e quarenta e três) Novas Cotas.\"\n\n### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O que aconteceu:** Distribuição de rendimentos aos cotistas.\n\n**Resumo:** O Fundo distribuirá R$ 0,6500 por cota a título de rendimento, a ser pago em 28/07/2026.\n\n**Trecho-chave:**\n\"A distribuição se faz necessária pois o Fundo deverá, de acordo com as disposições contidas na Lei 8668/93, Anexo Normativo III da Resolução CVM 175 de 23 de dezembro de 2022 e Artigo 3.1.3 do Anexo I do Regulamento do Fundo, distribuir aos seus quotistas, no mínimo, noventa e cinco por cento dos lucros auferidos, apurados segundo o regime de caixa, com base em balanço ou balancete semestral encerrado em 30 de junho e 31 de dezembro de cada ano.\"\n\n### COMUNICADO AO MERCADO entregue em 20/01/2026\n\n**O que aconteceu:** Distribuição de rendimentos aos cotistas.\n\n**Resumo:** O Fundo distribuirá R$ 0,3251 por cota a título de rendimento, a ser pago em 29/01/2026.\n\n**Trecho-chave:**\n\"A distribuição se faz necessária pois o Fundo deverá, de acordo com as disposições contidas na Lei 8668/93, Anexo Normativo III da Resolução CVM 175 de 23 de dezembro de 2022 e Artigo 3.1.3 do Anexo I do Regulamento do Fundo, distribuir aos seus quotistas, no mínimo, noventa e cinco por cento dos lucros auferidos, apurados segundo o regime de caixa, com base em balanço ou balancete semestral encerrado em 30 de junho e 31 de dezembro de cada ano.\"\n\n### ASSEMBLEIA AGO entregue em 05/05/2026\n\n**O que aconteceu:** Apuração dos votos na Assembleia Geral Ordinária.\n\n**Resumo:** A Assembleia Geral Ordinária foi realizada por meio de consulta formal, com a apuração e certificação dos resultados dos votos proferidos pelos cotistas sobre as contas relativas ao Fundo e das demonstrações contábeis referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A apuração dos votos foi realizada pelo representante da Administradora Sr. Fernando Ferreira.\"\n\n### ASSEMBLEIA AGO entregue em 30/03/2026\n\n**O que aconteceu:** Convocação para a Assembleia Geral Ordinária.\n\n**Resumo:** A administradora convocou os cotistas para participar da Assembleia Geral Ordinária, onde serão apreciadas e votadas as contas relativas ao Fundo e das demonstrações contábeis referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Os cotistas ou seus representantes deverão apresentar ou enviar, em conjunto com sua resposta os documentos de identificação1 e/ou prova de representação2.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Menos cotistas que o mínimo para isenção de IR",
+      "Rendimentos irregulares"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1148162,
+    "data_entrega": "30/03/2026 16:01",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Unimed Investcoop Nacional Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho das suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábe"
+  }
+}

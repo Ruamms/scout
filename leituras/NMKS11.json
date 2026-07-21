@@ -1,0 +1,33 @@
+{
+  "ticker": "NMKS11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T22:28:11",
+  "comunicados": {
+    "ids": [
+      1185789,
+      1185787,
+      1179398
+    ],
+    "datas": [
+      "11/05/2026",
+      "11/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### Assembleia Geral de Cotistas realizada em 4 de maio de 2026\n\n**O que aconteceu:** A assembleia geral de cotistas do NM KSM Log FII aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi realizada via manifestação de voto enviada pelos cotistas e aprovou as demonstrações financeiras auditadas do ano passado.\n\n**Trecho-chave:**\n\"Realizada via manifestação de voto enviada pelos Cotistas em 04 de maio de 2026.  \nAprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### Termo de Apuração do Procedimento de Consulta Formal iniciado em 13 de abril de 2026\n\n**O que aconteceu:** A administradora aprovou a alteração da qualificação do consultor KSM e o Regulamento consolidado.\n\n**Resumo:** A assembleia especial de cotistas aprovou a mudança na qualificação do consultor KSM e a atualização do Regulamento do Fundo.\n\n**Trecho-chave:**\n\"1. Aprovar a alteração da qualificação do Consultor KSM (conforme definido no Regulamento), o qual presta serviços de consultoria especializada à Classe, tendo em vista a reestruturação societária do referido consultor, de forma que sua qualificação no quadro preambular do Anexo I ao Regulamento passará a vigorar com a seguinte redação:  \n“MATRIZ INVESTIMENTOS E PARTICIPAÇÕES LTDA., sociedade limitada, com sede no município e estado de São Paulo, na Rua Pedrosode Alvarenga, nº 753, conjunto 41, parte, Itaim Bibi, CEP 04531-011, inscrita no CNPJ sob nº 63.419.289/0001-06 (“CONSULTOR – Matriz” ou “Matriz”).”  \n2. Tendo em vista a deliberação acima, bem como os ajustes redacionais necessários à sua implementação, aprovar o Regulamento consolidado, que passará a vigorar na forma do Complemento I à presente Consulta Formal.\"\n\n---\n\n**Conexão com indicadores:** A aprovação das contas anuais e a atualização do Regulamento não têm diretamente impacto nos indicadores financeiros apresentados no contexto."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151297,
+    "data_entrega": "31/03/2026 19:32",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do NM KSM LOG Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, estão de acordo com as práticas contábeis adotadas"
+  }
+}

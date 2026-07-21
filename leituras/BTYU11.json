@@ -1,0 +1,57 @@
+{
+  "ticker": "BTYU11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:27:37",
+  "relatorio": {
+    "id": 1236348,
+    "data_entrega": "30/06/2026 21:02",
+    "texto": "### Fatos Extraídos:\n\n1. **Cotação e Valor Patrimonial:** A cotação do BTYU11 está em R$ 7,65 (p. 2), com um valor patrimônial de R$ 10,24 por cota (p. 2). O P/VP é de 0,76 (p. 2).\n\n2. **Dividend Yield:** O dividendo mensal é de R$ 0,090 por cota (p. 2), correspondendo a um dividend yield patrimônial de 11,07% ao ano (p. 2).\n\n3. **Carteira e Ativos:** A carteira do BTYU11 está 100% indexada ao IPCA (p. 6). As principais localizações são SP com projetos em diversas fases de desenvolvimento, incluindo Quartier Capote, Barô, Vista Madalena, Casa Jardins, Park Mariana e outros (p. 7-8).\n\n4. **Rendimentos:** O resultado financeiro líquido do 4T foi R$ 34,6M, enquanto os rendimentos declarados foram de R$ 58,4M, gerando um excesso de R$ 23,8M (p. 10).\n\n5. **Cotistas:** O número de cotistas aumentou para 1.881 no mês em análise (p. 2).\n\n6. **Alavancagem e Dívidas:** Não há informações específicas sobre alavancagem ou dívidas no relatório.\n\n7. **Riscos:** A gestão destaca riscos de inflação, juros, câmbio e desempenho do setor imobiliário (p. 2-3).\n\n8. **Cenário Macroeconômico:** O cenário macroeconômico é desafiador com expectativas de alta da inflação e juros no Brasil e incertezas internacionais (p. 2-3).\n\n### O que observar em seguida:\n1. Monitorar o desempenho das obras e a evolução comercial dos empreendimentos.\n2. Observar as variações na cotação e valor patrimonial, especialmente no contexto de um P/VP abaixo do nível normal."
+  },
+  "comunicados": {
+    "ids": [
+      1235819,
+      1073909,
+      936276,
+      1185401,
+      1125058,
+      1185398,
+      1173615
+    ],
+    "datas": [
+      "30/06/2026",
+      "31/12/2025",
+      "30/06/2025",
+      "11/05/2026",
+      "28/02/2026",
+      "11/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O QUE ACONTECEU: FATO RELEVANTE ENTREGUE EM 30/06/2026\n\n**Título:** Gestora renuncia à Taxa de Performance referente ao 2º semestre de 2025.\n\n**Resumo:** A BTG Pactual decidiu que a Gestora não receberá a Taxa de Performance referente ao segundo semestre de 2025, mas continuará a cobrar normalmente em futuros períodos.\n\n**Trecho-chave:**\n\"A Gestora, visando um melhor alinhamento com os interesses dos cotistas da Classe, decidiu renunciar ao recebimento Taxa de Performance, referente exclusivamente à competência do 2º semestre de 2025, de modo que, não serão repassados os valores da referida remuneração à Gestora.\"\n\n---\n\n### O QUE ACONTECEU: FATO RELEVANTE ENTREGUE EM 31/12/2025\n\n**Título:** Gestora renuncia à Taxa de Performance referente ao 1º semestre de 2025.\n\n**Resumo:** A Gestora decidiu renunciar à performance da Classe, referente exclusivamente ao primeiro semestre de 2025.\n\n**Trecho-chave:**\n\"A Gestora resolveu renunciar à performance da Classe, referente exclusivamente à competência do primeiro semestre de 2025.\"\n\n---\n\n### O QUE ACONTECEU: FATO RELEVANTE ENTREGUE EM 30/06/2025\n\n**Título:** Gestora renuncia à Taxa de Performance referente ao 2º semestre de 2024.\n\n**Resumo:** A Gestora decidiu renunciar à performance da Classe, referente exclusivamente ao segundo semestre do ano de 2024.\n\n**Trecho-chave:**\n\"A Gestora resolveu renunciar à performance da Classe, referente exclusivamente à competência do segundo semestre do ano de 2024.\"\n\n---\n\n### O QUE ACONTECEU: COMUNICADO AO MERCADO ENTREGUE EM 11/05/2026\n\n**Título:** Assembleia Geral aprovou contas anuais referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia geral de cotistas do BTG Pactual You Inc. Desenvolvimento Imobiliário aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 04 de maio de 2026, foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### O QUE ACONTECEU: COMUNICADO AO MERCADO ENTREGUE EM 28/02/2026\n\n**Título:** Informes de Rendimentos referentes ao ano de 2025 serão disponibilizados exclusivamente por meio digital.\n\n**Resumo:** A Administradora informou que os Informes de Rendimentos referentes ao ano de 2025 dos Fundos indicados no Anexo I serão disponibilizados exclusivamente por meio digital, através do Portal do Investidor.\n\n**Trecho-chave:**\n\"Em complemento ao Comunicado ao Mercado de 2 de fevereiro de 2026 e ao Comunicado ao Mercado de 13 de fevereiro de 2026, a Administradora informa que, com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos referentes ao ano de 2025 já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital, por meio do Portal do Investidor.\"\n\n---\n\n### O QUE ACONTECEU: ASSEMBLEIA AGO ENTREGUE EM 11/05/2026\n\n**Título:** Assembleia Geral aprovou contas anuais referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia geral de cotistas do BTG Pactual You Inc. Desenvolvimento Imobiliário aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### O QUE ACONTECEU: ASSEMBLEIA AGO ENTREGUE EM 29/04/2026\n\n**Título:** Convocação para assembleia geral com prazo de votos até 04 de maio de 2026.\n\n**Resumo:** A administradora convocou os cotistas do BTG Pactual You Inc. Desenvolvimento Imobiliário para uma assembleia geral com prazo de votos até 04 de maio de 2026, para deliberarem sobre a aprovação das contas e demonstrações contábeis do Fundo referente ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A administradora convocou os cotistas do BTG Pactual You Inc. Desenvolvimento Imobiliário para uma assembleia geral com prazo de votos até 04 de maio de 2026, para deliberarem sobre a aprovação das contas e demonstrações contábeis do Fundo referente ao exercício social encerrado em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 7.65
+  },
+  "parecer": {
+    "id": 1142143,
+    "data_entrega": "23/03/2026 11:52",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

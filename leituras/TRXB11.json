@@ -1,0 +1,58 @@
+{
+  "ticker": "TRXB11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T20:51:42",
+  "relatorio": {
+    "id": 1028874,
+    "data_entrega": "05/11/2025 18:17",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Distribuição de Dividendos:** A TRX Real Estate II distribuiu R$ 0,93 por cota em outubro/25, representando um yield anualizado de 11,03%.\n   > \"O número de investidores do Fundo terminou o mês de setembro superando 204.000 cotistas pela primeira vez na história do TRXF11.\" (p. 8)\n\n2. **Operações de Financiamento:** O fundo realizou operações de antecipação de recebíveis com custo em CDI, incluindo uma CCI com BTG Pactual.\n   > \"Além disso, para fazer frente aos desembolsos previstos para o desenvolvimento e aquisição do terreno do Hospital Albert Einstein – São Paulo/SP, estimados em aproximadamente R$ 300 milhões até outubro/26, e para preservar o caixa do Fundo para os demais compromissos dos próximos meses, inclusive com os desembolsos para aquisição do pipeline adicional de novos ativos da 12ª Emissão de Cotas do TRXF11, estão sendo negociadas e estruturadas algumas operações de antecipação de recebíveis com Instituições Financeiras e/ou Investidores Institucionais tendo como lastro contratos de locação do TRXF11 que estão livres de qualquer ônus.\" (p. 8)\n\n3. **Desinvestimentos:** O fundo realizou desinvestimentos em imóveis Assaí e Pão de Açúcar, gerando um lucro por cota de aproximadamente R$ 1,69.\n   > \"Já os desinvestimentos dos imóveis Assaí e Pão de Açúcar, que somados representam um valor de venda de aproximadamente R$ 208 milhões e a geração de um lucro por cota de aproximadamente R$ 1,69, demonstram a capacidade de executar a gestão ativa não apenas por meio de novas emissões e aquisições, mas também através da venda de imóveis com lucros.\" (p. 12)\n\n4. **Aquisições e Desenvolvimentos:** O fundo realizou várias aquisições e desenvolvimentos de imóveis, incluindo lojas locadas para o Grupo Mateus Supermercados.\n   > \"Aquisição e/ou desenvolvimento de 4 lojas locadas para o Grupo Mateus Supermercados localizadas nas cidades de Ananindeua/PA, Marituba/PA, ambas fazem parte da região metropolitana de Belém/PA, Russas/CE e São Mateus do Maranhã/MA com contratos atípicos de 20 anos.\" (p. 12)\n\n5. **Composição do Resultado:** O fundo distribuiu R$ 93 milhões em dividendos no mês, representando um yield mensal de 0,92%.\n   > \"R$ 0,93 por cota, que representa um Dividend Yield mensal de 0,92% ou anualizado de 11,03% sobre a cota de mercado de R$ 101,22.\" (p. 6)\n\n### O que observar em seguida:\n- A evolução do fluxo de caixa previsto para o Fundo até dezembro/26.\n- As novas operações de financiamento e aquisições programadas."
+  },
+  "comunicados": {
+    "ids": [
+      1209075,
+      1046334,
+      1044728,
+      1200285,
+      976848,
+      1202392,
+      1168279
+    ],
+    "datas": [
+      "01/06/2026",
+      "25/11/2025",
+      "19/11/2025",
+      "20/05/2026",
+      "22/08/2025",
+      "25/05/2026",
+      "23/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O que aconteceu em 25/05/2026\n\n**Título:** Encerramento da Consulta Formal para Assembleia Geral Ordinária\n\n**Resumo:**\nA BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. encerrou a consulta formal realizada para a aprovação das demonstrações contábeis do Fundo, referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Ante a ausência de manifestação dos Cotistas do Fundo, não foi instalada a presente AGO, razão pela qual resta aprovada as Demonstrações Financeiras do Fundo nos termos da §3º do art. 71 do RCVM 175.\"\n\n### O que aconteceu em 20/05/2026\n\n**Título:** Memorando de Entendimentos para Venda de Imóveis\n\n**Resumo:**\nOs Fundos celebraram um Memorando de Entendimentos com um interessado para a venda do domínio pleno dos imóveis localizados em Goiânia, Goiás. A expectativa é que o lucro estimado seja de aproximadamente R$ 24.500.000,00.\n\n**Trecho-chave:**\n\"O valor de venda acordado é de aproximadamente R$ 74.000.000,00 (setenta e quatro milhões de reais), a ser pago da seguinte maneira: (a) sinal no valor de R$ 37.000.000,00 (trinta e sete milhões de reais), a serem pagos à vista, em até 8 (oito) dias contados da data de superação das condições precedentes definidas nos instrumentos jurídicos pertinentes; (ii) R$ 14.800.000,00 (quatorze milhões e oitocentos mil reais) a serem pagos em 2 (parcelas) parcelas semestrais de R$ 7.400.000,00 (sete milhões e quatrocentos mil reais) cada, reajustados pelo IPCA/IBGE, com o primeiro vencimento após 06 (seis) meses contados do pagamento do Sinal (\"Transação\").\"\n\n### O que aconteceu em 19/11/2025\n\n**Título:** Emissão de Novas Cotas\n\n**Resumo:**\nO TRXB11 realizou a 7ª emissão de cotas, emitindo inicialmente R$ 40.000.250,00 (quarenta milhões e duzentos e cinquenta reais) em novas cotações.\n\n**Trecho-chave:**\n\"O Preço de Emissão foi fixado, nos termos do item 4.5.2 “a”, do Anexo I do Regulamento, com base no valor patrimonial da cota em 31 de outubro de 2025, acrescido de um prêmio de R$ 23,98 (vinte e três reais e noventa e oito centavos).\"\n\n### O que aconteceu em 25/11/2025\n\n**Título:** Escritura de Venda e Compra de Imóvel\n\n**Resumo:**\nO TRXB11 vendeu um imóvel localizado em Goiânia, Goiás, ao preço de R$ 89.000.000,00 (oitenta e nove milhões de reais), sendo que o sinal foi pago à vista.\n\n**Trecho-chave:**\n\"O valor total da Transação é de R$ 672.000.000,15 (seiscentos e setenta e dois milhões de reais e quinze centavos), sujeito aos ajustes usuais para operações dessa natureza.\"\n\n### O que aconteceu em 20/05/2026\n\n**Título:** Comunicado ao Mercado sobre Venda de Imóveis\n\n**Resumo:**\nOs Fundos celebraram um Memorando de Entendimentos com um interessado para a venda do domínio pleno dos imóveis localizados em Goiânia, Goiás. A expectativa é que o lucro estimado seja de aproximadamente R$ 24.500.000,00.\n\n**Trecho-chave:**\n\"O valor de venda acordado é de aproximadamente R$ 74.000.000,00 (setenta e quatro milhões de reais), a ser pago da seguinte maneira: (a) sinal no valor de R$ 37.000.000,00 (trinta e sete milhões de reais), a serem pagos à vista, em até 8 (oito) dias contados da data de superação das condições precedentes definidas nos instrumentos jurídicos pertinentes; (ii) R$ 14.800.000,00 (quatorze milhões e oitocentos mil reais) a serem pagos em 2 (parcelas) parcelas semestrais de R$ 7.400.000,00 (sete milhões e quatrocentos mil reais) cada, reajustados pelo IPCA/IBGE, com o primeiro vencimento após 06 (seis) meses contados do pagamento do Sinal (\"Transação\").\"\n\n### O que aconteceu em 22/08/2025\n\n**Título:** Comunicado ao Mercado sobre Venda de Imóvel\n\n**Resumo:**\nO TRXB11 vendeu um imóvel localizado em Goiânia, Goiás, ao preço de R$ 89.000.000,00 (oitenta e nove milhões de reais), sendo que o sinal foi pago à vista.\n\n**Trecho-chave:**\n\"O valor total da Transação é de aproximadamente R$ 672.000.000,15 (seiscentos e setenta e dois milhões de reais e quinze centavos), sujeito aos ajustes usuais para operações dessa natureza.\"\n\n### O que aconteceu em 18/12/2025\n\n**Título:** Comunicado ao Mercado sobre Transação\n\n**Resumo:**\nO TRXB11 vendeu imóveis performados e com locações vigentes, alugados para Carrefour, Grupo Mateus e Sendas.\n\n**Trecho-chave:**\n\"Os Fundos celebraram, nesta data, os instrumentos definitivos relacionados à conclusão da operação anteriormente divulgada ao mercado por meio do Comunicado ao Mercado de 18 de dezembro de 2025 (\"Transação\"), envolvendo a venda do domínio pleno de 9 (nove) imóveis, todos performados e com locações vigentes, alugados para Carrefour, Grupo Mateus e Sendas.\"\n\n### O que aconteceu em 21/08/2025\n\n**Título:** Escritura de Venda e Compra de Imóvel\n\n**Resumo:**\nO TRXB11 vendeu um imóvel localizado em Goiânia, Goiás, ao preço de R$ 89.000.000,00 (oitenta e nove milhões de reais), sendo que o sinal foi pago à vista.\n\n**Trecho-chave:**\n\"O valor total da Transação é de aproximadamente R$ 672.000.000,15 (seiscentos e setenta e dois milhões de reais e quinze centavos), sujeito aos ajustes usuais para operações dessa natureza.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "P/VP muito acima da média histórica"
+    ],
+    "cota": 188.0
+  },
+  "parecer": {
+    "id": 1151811,
+    "data_entrega": "31/03/2026 21:56",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do TRX Real Estate II Fundo de Investimento Imobiliário - Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adot"
+  }
+}

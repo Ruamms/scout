@@ -1,0 +1,58 @@
+{
+  "ticker": "TEPP11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T20:40:33",
+  "relatorio": {
+    "id": 1252769,
+    "data_entrega": "17/07/2026 19:21",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Vacância e Inadimplência:**\n   \"No Ed. Fujitsu, foi formalizado o encerramento da locação de quatro andares ocupados pela Fujitsu. Com isso, estima-se que a vacância física do Fundo passe de 5,7% para 11,3%.\" (p. 6)\n\n2. **Operações Imobiliárias:**\n   \"A TELLUS Properties FII anunciou a aquisição de 5.033,58 m² de área BOMA no Ed. Parque Cultural Paulista.\" (p. 4)\n   \n3. **Dividendos e Distribuição:**\n   \"O Fundo encerrou o mês de junho com a cota avaliada em R$ 8,08 e distribuiu R$ 0,131 por cota, o que representa um Dividend Yield de 1,62% no mês (equivalente a 21,29% anualizado).\" (p. 4)\n\n4. **Alavancagem:**\n   \"As projeções indicam que o Fundo possui capacidade financeira para honrar integralmente seus compromissos até Agosto de 2027, sem a necessidade de novas emissões de cotas ou desinvestimento de ativos.\" (p. 10)\n\n5. **Obras e Reformas:**\n   \"No Ed. Brigadeiro Faria Lima, foi aprovada, em Assembleia de Condôminos, a destinação de recursos para a elaboração do projeto legal do retrofit, incluindo o desenvolvimento da concepção arquitetônica e a estimativa dos custos envolvidos.\" (p. 7)\n\n6. **Cotações e Liquidez:**\n   \"O número de cotistas aumentou para 45.240, com uma presença diária em pregões de 100%.\" (p. 15)\n   \n### O que observar em seguida:\n- Monitorar a evolução da vacância física do Ed. Fujitsu e seu impacto no guidance atual.\n- Observar as negociações relacionadas à venda do imóvel Top Center, com expectativa de conclusão até setembro.\n- Verificar o andamento das obras e reformas no Ed. Brigadeiro Faria Lima."
+  },
+  "comunicados": {
+    "ids": [
+      1240825,
+      1240718,
+      1236305,
+      1223581,
+      1205729,
+      1185416,
+      1169246
+    ],
+    "datas": [
+      "07/07/2026",
+      "06/07/2026",
+      "30/06/2026",
+      "17/06/2026",
+      "27/05/2026",
+      "11/05/2026",
+      "24/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 07/07/2026\n\n**O QUE aconteceu:** A Classe Único do TELLUS PROPERTIES adquiriu conjuntos comerciais no Edifício Torre Sul, localizado na Rua James Joule, São Paulo.\n\n**Resumo:** A aquisição foi realizada por R$ 10.767.131,82 e os imóveis estão atualmente locados, gerando uma receita mensal de aproximadamente R$ 86.024,33.\n\n**Trecho-chave:**\n\"Em 03 de julho de 2026, a Classe celebrou Instrumento Particular de Compromisso de Venda e Compra de Bens Imóveis e Outras Avenças visando à aquisição dos conjuntos comerciais nº 171 e nº 172 do Edifício Torre Sul, localizado na Rua James Joule, nº 65, Cidade de São Paulo/SP, totalizando 1.084,04m² de área BOMA, pelo valor total de R$ 10.767.131,82 (dez milhões, setecentos e sessenta e sete mil, cento e trinta e um reais e oitenta e dois centavos).\"\n\n### FATO RELEVANTE entregue em 06/07/2026\n\n**O QUE aconteceu:** A Classe Único do TELLUS PROPERTIES adquiriu conjuntos comerciais no Edifício Torre Sul, localizado na Rua James Joule, São Paulo.\n\n**Resumo:** A aquisição foi realizada por R$ 10.767.131,82 e os imóveis estão atualmente locados para IFC e Nexmuv, gerando uma receita mensal de aproximadamente R$ 86.024,33.\n\n**Trecho-chave:**\n\"Em 01 de julho de 2026, a Classe celebrou Instrumento Particular de Compromisso de Venda e Compra de Bens Imóveis e Outras Avenças visando à aquisição dos conjuntos comerciais nº 171 e nº 172 do Edifício Torre Sul, localizado na Rua James Joule, nº 65, Cidade de São Paulo/SP, pelo valor total de R$ 10.767.131,82 (dez milhões, setecentos e sessenta e sete mil, cento e trinta e um reais e oitenta e dois centavos).\"\n\n### FATO RELEVANTE entregue em 30/06/2026\n\n**O QUE aconteceu:** A Classe Único do TELLUS PROPERTIES não conseguiu adquirir imóveis devido ao exercício do direito de preferência por um dos atuais inquilinos.\n\n**Resumo:** O contrato foi resolvido sem aplicação de multa ou penalidade, e a Classe não será imitida na posse dos conjuntos objeto da operação.\n\n**Trecho-chave:**\n\"Em complemento ao Fato Relevante divulgado em 27 de maio de 2026 , a Classe informa que, em razão do exercício do direito de preferência por um dos atuais inquilinos do imóvel, não foi superada a condição precedente prevista no item “i” da Cláusula 5.1 do Compromisso de compra e venda dos conjuntos nº 82, 111, 112, 121, 122, 141, 142, 151 e 152.\"\n\n### COMUNICADO AO MERCADO entregue em 17/06/2026\n\n**O QUE aconteceu:** Encerramento do prazo para o exercício do direito de preferência.\n\n**Resumo:** Foram subscritas e integralizadas 12.090 novas cotas, restando 12.384.605 que podem ser subscritas por investidores profissionais.\n\n**Trecho-chave:**\n\"O prazo para o exercício do Direito de Preferência foi encerrado e durante esse período foram subscritas e integralizadas 12.090 (doze mil e noventa) Novas Cotas, restando, portanto, 12.384.605 (doze milhões, trezentas e oitenta e quatro mil, seiscentas e cinco) Novas Cotas que poderão ser subscritas e integralizadas pelos Investidores Profissionais.\"\n\n### COMUNICADO AO MERCADO entregue em 27/05/2026\n\n**O QUE aconteceu:** Memorando de entendimentos para a potencial alienação de um imóvel.\n\n**Resumo:** A operação, caso concluída, deverá gerar lucro estimado de aproximadamente R$ 27 milhões e TIR estimada de 12% a.a., mas está sujeita a condições precedentes usuais.\n\n**Trecho-chave:**\n\"A Classe celebrou Memorando de Entendimentos (“MoU”) não vinculante para a potencial alienação de um dos ativos integrantes de seu portfólio localizado no município e estado de São Paulo possuindo uma área de 7.130,46 m².\"\n\n### ASSEMBLEIA AGO entregue em 11/05/2026\n\n**O QUE aconteceu:** Aprovou as demonstrações financeiras auditadas relativas ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** As contas e demonstrações contábeis do Fundo foram aprovadas pelos cotistas.\n\n### ASSEMBLEIA AGO entregue em 24/04/2026\n\n**O QUE aconteceu:** Convocação para a assembleia geral de cotistas para aprovar as contas e demonstrações contábeis relativas ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi convocada para deliberar sobre a aprovação das contas do Fundo."
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Vacância física alta",
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 7.87
+  },
+  "parecer": {
+    "id": 1151632,
+    "data_entrega": "31/03/2026 20:58",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o período de 18 de junho a 31 de dezembro de 2025, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investiment"
+  }
+}

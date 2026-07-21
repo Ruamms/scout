@@ -1,0 +1,24 @@
+{
+  "ticker": "BTHR11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T21:19:13",
+  "comunicados": {
+    "ids": [
+      1021715,
+      1196593,
+      1005346
+    ],
+    "datas": [
+      "27/10/2025",
+      "15/05/2026",
+      "02/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE ENTREGUE EM 27/10/2025\n\n**O QUE aconteceu:** A Classe BTG Hospitalidade Retorno Total Fundo de Investimento Imobiliário (BTHR11) adquiriu 14 imóveis hoteleiros.\n\n**Resumo:** A administradora e gestora informaram a aquisição de 14 imóveis hoteleiros localizados em São Paulo e Rio de Janeiro, com um valor total de R$ 297.959.863,77, incluindo bandeiras como Ibis, Novotel, Pullman, MGallery e Mama Shelter.\n\n**Trecho-chave:**\n\"O preço total da transação pago nesta data pelo Fundo é de R$ 297.959.863,77 (duzentos e noventa e sete milhões, novecentos e cinquenta e nove mil, oitocentos e sessenta e três reais e setenta e sete centavos), com pagamento a vista realizado à vendedora, ademais,  todos imóveis estão com situação fiscal regular e documentação registrada.\" (p. 1)\n\n### COMUNICADO AO MERCADO ENTREGUE EM 02/10/2025\n\n**O QUE aconteceu:** Modificação da oferta pública primária de distribuição da primeira emissão de cotas.\n\n**Resumo:** A Classe BTG Hospitalidade Retorno Total Fundo de Investimento Imobiliário (BTHR11) modificou o cronograma da oferta, incluindo a data de deferimento do registro e a divulgação do Prospecto Definitivo.\n\n**Trecho-chave:**\n\"MODIFICAÇÃO DO CRONOGRAMA DA OFERTA\nEm atendimento ao disposto no artigo 69 da Resolução CVM 160, será disponibilizado aos Investidores da Oferta, nesta data, o Prospecto Definitivo e Anúncio de Início, contemplando a modificação do cronograma da Oferta constante da seção “5.1 Cronograma” , de forma a prever a divulgação deste Comunicado ao Mercado de Modificação da Oferta de 02/10/2025 e a divulgação do Prospecto Definitivo.\" (p. 3)\n\n### COMUNICADO AO MERCADO ENTREGUE EM 15/05/2026\n\n**O QUE aconteceu:** Atualização da forma de divulgação da remuneração dos prestadores de serviços essenciais.\n\n**Resumo:** A administradora do BTHR11 informou que a forma de divulgação da remuneração foi atualizada, passando a ser realizada exclusivamente por meio da Ferramenta ANBIMA, conforme determinado pelo Ofício-Circular CVM nº 1/2025.\n\n**Trecho-chave:**\n\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

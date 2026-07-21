@@ -1,0 +1,42 @@
+{
+  "ticker": "KCRE11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:09:24",
+  "relatorio": {
+    "id": 1242363,
+    "data_entrega": "08/07/2026 18:34",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Alocação do Patrimônio:**\n   - O KCRE11 possui 106,6% de seus ativos em CRI e 7,2% em CDI.\n   - A maioria dos ativos (99,4%) está em CRI com um indexador IPCA + 10,46% a.a. e prazo médio de 13,9 anos.\n\n2. **Cota Patrimonial:**\n   - No final de junho, o valor da cota patrimonial era R$ 9,11.\n   - O deságio em relação à cota de mercado foi de cerca de 1,39%.\n\n3. **Dividendos e Rentabilidade:**\n   - Os dividendos referentes a junho são de R$ 0,13 por cota, representando uma rentabilidade isenta do imposto de renda para pessoas físicas.\n   - A taxa média do fundo (MTM) é de 8,72% ao ano.\n\n4. **Inadimplência:**\n   - A inadimplência geral das carteiras de Home Equity teve uma leve redução em maio, atingindo 4,8%.\n   - O aumento da inadimplência dos créditos acima de R$ 1 milhão não é preocupante, pois eles são garantidos por imóveis de alta qualidade.\n\n5. **Operações Compromissadas Reversas:**\n   - As operações compromissadas reversas permitem maior flexibilidade e velocidade na alocação de recursos.\n   - A exposição atual do fundo a esses instrumentos é de aproximadamente 8,0% do Patrimônio Líquido.\n\n6. **Fluxo dos Recebíveis:**\n   - Houve um recebimento de principal 1,34x acima do esperado em maio.\n   - A equipe de gestão monitora as operações compromissadas reversas cuidadosamente.\n\n7. **Vacância e Cobertura da Carteira:**\n   - O índice de cobertura da carteira foi de 1,34x no final de junho.\n   - As carteiras de créditos apresentam uma pulverização regional e por renda, com proteção adequada contra eventuais perdas de crédito.\n\n8. **Distribuição de Rendimentos:**\n   - O resultado financeiro líquido do 4T foi R$ 46,6M, enquanto os rendimentos declarados foram R$ 63,4M.\n   - A reserva acumulada não distribuída é de R$ 9,3M.\n\n### Observações a Acompanhar\n- O deságio na cota patrimonial e o resultado financeiro líquido abaixo dos rendimentos declarados devem ser monitorados.\n- A inadimplência geral das carteiras de Home Equity deve ser observada, especialmente os créditos acima de R$ 1 milhão."
+  },
+  "comunicados": {
+    "ids": [
+      1048992,
+      1013187
+    ],
+    "datas": [
+      "27/11/2025",
+      "14/10/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 14/10/2025\n\n**O QUE aconteceu:** A Intrag Distribuidora de Títulos e Valores Mobiliários Ltda., administradora do Kinea Creditas Fundo de Investimento Imobiliário - FII, convocou a consulta formal eletrônica dos cotistas para aprovar as demonstrações financeiras, notas explicativas e parecer dos auditores independentes relativas ao exercício social findo em 30 de junho de 2025.\n\n**Resumo:** A assembleia virtual foi convocada para aprovar as demonstrações contábeis do fundo referentes ao segundo semestre de 2025, com prazo até 27 de novembro de 2025 para manifestação dos cotistas.\n\n**Trecho-chave:**\n\"i) Aprovar as demonstrações financeiras, notas explicativas e parecer dos auditores independentes, relativas ao exercício social findo em 30 de junho de 2025. Os respectivos documentos encontram-se disponíveis para consulta no site: https://www.intrag.com.br/pt-br/fundos/KINEACREDITASI/CLASSE\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGO entregue em 27/11/2025\n\n**O QUE aconteceu:** A assembleia geral extraordinária do Kinea Creditas Fundo de Investimento Imobiliário - FII aprovou as demonstrações contábeis do fundo, acompanhadas pelo relatório dos auditores independentes, referentes ao exercício social findo em 30 de junho de 2025.\n\n**Resumo:** A assembleia foi realizada sem convocação formal e deliberou aprovar as demonstrações contábeis do fundo, com a participação dos representantes legais do administrador e cotistas.\n\n**Trecho-chave:**\n\"MATÉRIA DELIBERADA:  aprovadas as Demonstrações Contábeis do Fundo, devidamente acompanhadas do relatório dos auditores independentes, documentos disponibilizados aos cotistas nos termos da regulamentação em vigor, relativos ao exercício social findo em 30.06.2025\" (p. 1)\n\n**Conexão com o contexto:** A aprovação das demonstrações contábeis confirma a situação financeira do fundo no segundo semestre de 2025, que pode ser analisada junto aos indicadores fornecidos para entender melhor o desempenho do fundo."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 8.99
+  },
+  "parecer": {
+    "id": 994943,
+    "data_entrega": "22/09/2025 09:43",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

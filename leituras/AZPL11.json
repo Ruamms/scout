@@ -1,0 +1,53 @@
+{
+  "ticker": "AZPL11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T21:38:05",
+  "relatorio": {
+    "id": 1246140,
+    "data_entrega": "13/07/2026 19:04",
+    "texto": "### Fatos Extraídos:\n\n1. **Portfólio de Galpões:**\n   - O portfólio de galpões está 100% ocupado.\n   - As revisionais pactuadas com os locatários devem ser capturadas ao longo dos próximos meses, e o time de gestão continua buscando outras revisionais remanescentes.\n\n2. **Portfólio de Crédito:**\n   - O portfólio de crédito representa 65% do patrimônio total do Fundo.\n   - A rentabilidade média dos ativos de crédito é de CDI+3,00% a.a. e IPCA+10,90% a.a.\n   - Novas movimentações na carteira de crédito estão programadas para os próximos meses com o objetivo de incrementar a rentabilidade.\n\n3. **Dividendos:**\n   - Os dividendos distribuídos seguem estáveis e dentro das perspectivas para o Fundo.\n\n4. **Cotas do Fundo:**\n   - O valor da cota na B3 ajustada pelo dividendo é R$ 7,65.\n   - A ocupação dos galpões que compõem o portfólio é de 100%.\n\n5. **Patrimônio Líquido e Resultado:**\n   - O patrimônio líquido do Fundo AZPL11 é de R$ 359,6 milhões.\n   - O resultado financeiro líquido do mês foi positivo em R$ 3,721 milhão.\n\n6. **Alocação dos Ativos:**\n   - A alocação do patrimônio está distribuída entre ativos diretos (27,6%), FII Jandira (13,8%), FII AZPE (34,7%), CRIs (22,3%), Fundo DI (2,0%), A Receber (0,8%) e A Pagar (-1,1%).\n\n7. **DRE do Mês:**\n   - As receitas totais foram de R$ 4.000.353.\n   - As despesas totais foram de R$ 279.071.\n   - O resultado líquido foi positivo em R$ 3.721.281.\n\n8. **Evoluções do Portfólio de Crédito:**\n   - Empreendimentos como Helbor – B.Liv, Alfa Realty – Blues Perdizes, Helbor – Patteo Vila Mariana e outros estão em diferentes estágios de desenvolvimento.\n   - O CRI Jandira (devedor) tem um valor de R$ 19,9 milhões.\n\n### O que observar em seguida:\n- Monitorar as revisionais pactuadas com os locatários dos galpões e a execução das novas movimentações na carteira de crédito.\n- Observar o comportamento do valor da cota (VP/cota) e a ocupação dos galpões."
+  },
+  "comunicados": {
+    "ids": [
+      1250377,
+      1246351,
+      1109005,
+      1221745,
+      1175676
+    ],
+    "datas": [
+      "15/07/2026",
+      "13/07/2026",
+      "11/02/2026",
+      "15/06/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 15/07/2026\n\n**O QUE aconteceu:** Aditivo ao contrato de locação do imóvel localizado em Franco da Rocha/SP foi assinado, com aumento de 21,8% na locação.\n\n**Resumo:** A renegociação reflete a valorização do ativo e reforça a geração de receita recorrente do Fundo, contribuindo positivamente para a distribuição de rendimentos aos cotistas.\n\n**Trecho-chave:**\n\"Em 08 de julho de 2026, foi assinado aditivo ao contrato de locação do imóvel localizado em Franco da Rocha/SP, integrante do patrimônio do Fundo, com a locatária CAOA (\"Locatária\"), atualmente responsável por aproximadamente 4,3% da receita imobiliária do Fundo, por meio do qual foi renegociado o valor locatício, com aumento de 21,8% (vinte e um vírgula oito por cento) sobre o valor da locação anteriormente vigente.\"\n\n### FATO RELEVANTE entregue em 13/07/2026\n\n**O QUE aconteceu:** Aditivo ao contrato de locação do imóvel localizado em Franco da Rocha/SP foi assinado, com aumento de 21,8% na locação.\n\n**Resumo:** A renegociação reflete a valorização do ativo e reforça a geração de receita recorrente do Fundo, contribuindo positivamente para a distribuição de rendimentos aos cotistas.\n\n**Trecho-chave:**\n\"Em 08 de julho de 2026, foi assinado aditivo ao contrato de locação do imóvel localizado em Franco da Rocha/SP, integrante do patrimônio do Fundo, com a locatária CAOA (\"Locatária\") no galpão Franco da Rocha, atualmente responsável por aproximadamente 4,3% da receita imobiliária do Fundo, por meio do qual foi renegociado o valor locatício, com aumento de 21,8% (vinte e um vírgula oito por cento) sobre o valor da locação anteriormente vigente.\"\n\n### FATO RELEVANTE entregue em 11/02/2026\n\n**O QUE aconteceu:** Remarcação do ativo do Fundo foi realizada, refletindo o valor justo.\n\n**Resumo:** A remarcagem é fundamentada no monitoramento dos ativos e na necessidade de refletir o valor justo conforme a Instrução CVM nº 516.\n\n**Trecho-chave:**\n\"O Administrador, na qualidade de representante legal do Fundo, contratou a empresa de Cbre Consultoria do Brasil Ltda. (“CBRE”), para que, de acordo com os seus critérios, metodologias e premissas, realizasse a avaliação do valor justo do ativo integrante da carteira do Fundo.\"\n\n### ASSEMBLEIA AGO entregue em 15/06/2026\n\n**O QUE aconteceu:** Assembleia Geral Ordinária do Fundo foi realizada e as contas referentes ao exercício social encerrado em 31 de dezembro de 2025 foram aprovadas.\n\n**Resumo:** A maioria dos cotistas presentes aprovou as contas e demonstrações contábeis do Fundo.\n\n**Trecho-chave:**\n\"A maioria dos Cotista(s) presente(s) aprovaram as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n### ASSEMBLEIA AGO entregue em 30/04/2026\n\n**O QUE aconteceu:** Edital de convocação para a Assembleia Geral Ordinária do Fundo foi emitido, com data marcada para 29 de maio de 2026.\n\n**Resumo:** A assembleia será realizada para deliberar sobre a aprovação das contas e demonstrações contábeis referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"O BANCO DAYCOVAL S.A. , sociedade com sede na Cidade de São Paulo, Estado de São Paulo, na Avenida Paulista, 1.793, 9º andar, Bela Vista, São Paulo - SP, inscrita no CNPJ/ME sob o nº 62.232.889/0001-90, na qualidade de instituição administradora do AZ Quest Panorama Logística Fundo de Investimento Imobiliário - Responsabilidade Limitada, inscrito no CNPJ/ME sob o nº 51.890.054/0001-00 (‘Administradora’ e ‘Fundo’, respectivamente), nos termos do regulamento do Fundo, vem por meio desta, convocar V. Sas. (“Cotistas”) para a Assembleia Geral Ordinária (“Assembleia”), a ser realizada no dia 29 de maio de 2026, às 11:30, para que seja deliberada a seguinte matéria, conforme ordem do dia:\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda",
+      "VP/cota em queda relevante"
+    ],
+    "cota": 7.39
+  },
+  "parecer": {
+    "id": 1237567,
+    "data_entrega": "01/07/2026 18:48",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do AZ Quest Panorama Logística Fundo de Investimento Imobiliário - Responsabilidade Limitada em 31 de dezembro de 2025 , o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contáb"
+  }
+}

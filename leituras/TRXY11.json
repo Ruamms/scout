@@ -1,0 +1,58 @@
+{
+  "ticker": "TRXY11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:24:26",
+  "relatorio": {
+    "id": 1241636,
+    "data_entrega": "07/07/2026 19:32",
+    "texto": "### Fatos Importantes:\n\n1. **Movimentações Estratégicas:**\n   - A alocação atual na carteira de CRI foi ajustada para 17,23%, com um alvo de 20% a 70%. Movimentações incluíram o pré-pagamento e consequente venda do CRI Mateus e Assaí.\n   - Na carteira de FIIs, houve vendas de IBBP11, CYCR11, HIRE11 e compras de SNEL11, CPSH11 e TRXB11. O retorno esperado dessas operações é de 13% a 17% ao ano.\n   - A alocação atual na carteira de permuta foi de 8,46%, com um alvo de 0% a 25%. Nenhuma movimentação relevante ocorreu.\n\n2. **Distribuição Extraordinária:**\n   - O TRXY11 distribuiu R$ 0,13 por cota em junho, equivalente a um yield mensal de 1,52% (18,35% ao ano). A próxima distribuição será realizada em 14 de julho.\n\n3. **Composição do Resultado:**\n   - As receitas provenientes dos FIIs foram de R$ 1,9 milhão e o resultado extraordinário da carteira de CRIs foi de R$ 3,9 milhões.\n   - O lucro caixa totalizou R$ 4,6 milhões, equivalente a R$ 0,1312 por cota.\n\n### Fatos Menos Importantes:\n\n1. **Desempenho do Mercado:**\n   - O Ibovespa recuou 1,01% em junho e acumulou uma alta de 6,76% no ano.\n   - O IFIX encerrou o mês com uma queda de 1,21%, acumulando um ganho de 1,46% no ano.\n\n2. **Evolução do Patrimônio Líquido:**\n   - O número total de cotistas aumentou para 3.241.\n   - A cota de mercado foi de R$ 8,50 e a cota patrimonial de R$ 8,80.\n\n### Observações a Acompanhar:\n\n- **Alocação Estratégica:** A gestão está ajustando a alocação entre CRI, FIIs, ações e permuta para maximizar o retorno.\n- **Distribuição Regular:** O fundo mantém um guidance de distribuição mensal entre R$ 0,10 e R$ 0,13 por cota."
+  },
+  "comunicados": {
+    "ids": [
+      1140969,
+      1087873,
+      1082925,
+      1105897,
+      1093109,
+      1202346,
+      1168299
+    ],
+    "datas": [
+      "19/03/2026",
+      "19/01/2026",
+      "14/01/2026",
+      "09/02/2026",
+      "26/01/2026",
+      "25/05/2026",
+      "23/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 19/03/2026\n\n**O QUE aconteceu:** TRXY11 concluiu aquisição de cotas do FII BRIO TPG.\n\n**Resumo:** O fundo adquiriu novas cotas do FII Brio TPG, visando formar seu portfólio com oportunidades imobiliárias. A operação envolve a aquisição de um terreno para desenvolvimento residencial em São Paulo.\n\n**Trecho-chave:**\n\"O Fundo concluiu, em 19 de março de 2026, a subscrição de 12.000 novas cotas do BRIO TPG COINVESTIMENTO – FUNDO DE INVESTIMENTO IMOBILIÁRIO – RESPONSABILIDADE LIMITADA...\"\n\n### FATO RELEVANTE entregue em 19/01/2026\n\n**O QUE aconteceu:** Retificação e ratificação da oferta pública primária da 3ª emissão de cotas do TRXY11.\n\n**Resumo:** Houve uma correção na informação sobre o preço de emissão das novas cotas, que foi reduzido em R$ 0,11. Além disso, a data para exercício do direito de preferência foi alterada.\n\n**Trecho-chave:**\n\"foi publicado nesta data um ato de Retificação e Ratificação ao Ato dos Prestadores de Serviço para corrigir a informação que constou erroneamente...\"\n\n### COMUNICADO AO MERCADO entregue em 09/02/2026\n\n**O QUE aconteceu:** Encerramento do período de exercício do direito de preferência.\n\n**Resumo:** O encerramento ocorreu com 37.019 novas cotas subscritas, e as restantes poderão ser subscritas pelos investidores da oferta.\n\n**Trecho-chave:**\n\"De acordo com as informações recebidas da Administradora, na qualidade de escriturador das Cotas do Fundo, até o momento, foram subscritas 37.019 (trinta e sete mil e dezenove cotas) Novas Cotas...\"\n\n### COMUNICADO AO MERCADO entregue em 26/01/2026\n\n**O QUE aconteceu:** Início do período para exercício do direito de preferência.\n\n**Resumo:** Os cotistas podem exercer o direito de preferência a partir de 26 de janeiro até 5 de fevereiro, tanto via B3 quanto diretamente com o escriturador.\n\n**Trecho-chave:**\n\"Será assegurado aos Cotistas detentores de cotas do Fundo no fechamento do mercado do dia 20 de janeiro de 2026 e que estejam em dia com suas obrigações para com o Fundo o exercício do Direito de Preferência...\"\n\n### ASSEMBLEIA AGO entregue em 25/05/2026\n\n**O QUE aconteceu:** Apuração da assembleia geral ordinária.\n\n**Resumo:** A assembleia foi realizada por meio de consulta formal, aprovando as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Ante a ausência de manifestação dos Cotistas do Fundo, não foi instalada a presente AGO, razão pela qual resta aprovada as Demonstrações Financeiras do Fundo...\"\n\n### ASSEMBLEIA AGO entregue em 23/04/2026\n\n**O QUE aconteceu:** Convocação da assembleia geral ordinária.\n\n**Resumo:** A assembleia será realizada por meio de consulta formal, para aprovar as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., com sede na cidade de São Paulo, Estado de São Paulo, na Rua Alves Guimarães, 1212, Pinheiros, CEP: 05410-002, inscrita no Cadastro Nacional de Pessoas Jurídicas do Ministério da Fazenda sob o nº 13.486.793/0001-42, habilitada para administração de fundos de investimento conforme ato declaratório expedido pela Comissão de Valores Mobiliários...\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Emissão de cotas com VP/cota em queda",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": 7.77
+  },
+  "parecer": {
+    "id": 1149137,
+    "data_entrega": "30/03/2026 20:42",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do TRX Hedge Fund Fundo de Investimento Imobiliário – Responsabilidade Limitada em 31 de dezembro de 202 5, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo naquela data, de acordo com as práticas contábeis adota"
+  }
+}

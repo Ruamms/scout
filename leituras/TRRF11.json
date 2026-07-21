@@ -1,0 +1,33 @@
+{
+  "ticker": "TRRF11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T22:18:06",
+  "comunicados": {
+    "ids": [
+      1188500,
+      1188498,
+      1151774
+    ],
+    "datas": [
+      "13/05/2026",
+      "13/05/2026",
+      "31/03/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral de Cotistas Realizada em 30 de abril de 2026\n\n**O que aconteceu:** A assembleia geral de cotistas para aprovação das contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025 foi realizada, mas nenhum cotista compareceu.\n\n**Resumo:** A assembleia não pôde ser instalada por falta de presença de cotistas e as contas foram consideradas automaticamente aprovadas.\n\n**Trecho-chave:**\n\"considerando que as demonstrações contábeis não contêm ressalvas, ficam as mesmas consideradas automaticamente aprovadas.\"\n\n---\n\n### Convocação para Assembleia Geral de Cotistas\n\n**O que aconteceu:** A administradora convocou os cotistas do TERRA - FUNDO DE INVESTIMENTO IMOBILIARIO para uma assembleia geral com o objetivo de aprovar as contas e demonstrações contábeis referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi convocada, mas não ocorreu devido à falta de presença de cotistas. As contas foram consideradas automaticamente aprovadas.\n\n**Trecho-chave:**\n\"não sendo, portanto, possível sua instalação. Dessa forma, e considerando que as demonstrações contábeis não contêm ressalvas, ficam as mesmas consideradas automaticamente aprovadas.\"\n\n---\n\n### Comunicado ao Mercado\n\n**O que aconteceu:** A administradora comunicou que na assembleia geral de cotistas realizada em 30 de abril de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** As contas anuais do Fundo foram aprovadas na assembleia geral realizada, mas sem presença de cotistas.\n\n**Trecho-chave:**\n\"na qualidade de administradora do TERRA - FUNDO DE INVESTIMENTO IMOBILIARIO, serve-se da presente, na qualidade de administradora, para comunicar que na assembleia geral de cotistas realizada em 30 de abril de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1146140,
+    "data_entrega": "27/03/2026 10:32",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe Única d o Terra Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis a"
+  }
+}

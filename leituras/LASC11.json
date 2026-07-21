@@ -1,0 +1,57 @@
+{
+  "ticker": "LASC11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T21:21:14",
+  "relatorio": {
+    "id": 1215274,
+    "data_entrega": "09/06/2026 18:16",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Distribuição de Renda**: O Fundo distribuiu R$ 0,61 por cota no mês de maio/2026, representando um yield mensal de aproximadamente 6,48% anualizado.\n   > \"O resultado apurado no mês de maio de 2026 resultou na distribuição de R$ 0,61 por cota, o que representa um yield mensal de 0,54% (ou aproximadamente 6,48% anualizado) sobre a cota de mercado.\" (p. 3)\n\n2. **Taxa de Ocupação**: A taxa média de ocupação do portfólio manteve-se em patamares elevados, atingindo 96,4%. Os principais shoppings são o Parque Shopping Belém e o Boulevard Shopping Campos (recentemente renomeado como Partage Campos Shopping).\n   > \"A taxa de ocupação média do portfólio manteve-se em patamares elevados, atingindo 96,4%.\" (p. 3)\n\n3. **Inadimplência**: A inadimplência líquida recuou significativamente para 5,1% no mês de maio/2026.\n   > \"Estas reduções refletem a eficácia das estratégias de cobrança e recuperação de recebíveis, além de um melhora no fluxo de pagamentos dos lojistas.\" (p. 3)\n\n4. **Composição da Carteira**: A carteira do Fundo está composta principalmente por ativos imobiliários (98,56%) com pequena alocação em aplicações financeiras (1,44%).\n   > \"Abaixo os principais indicadores dos empreendimentos que o Fundo detém participações.\" (p. 6)\n\n5. **Vendas Totais**: As vendas totais no mês de abril/2026 atingiram aproximadamente R$ 30,9 milhões, elevando o acumulado do ano para R$ 115,2 milhões.\n   > \"As vendas totais no mês de abril atingiram aproximadamente R$ 30,9 milhões, elevando o acumulado de 2026 (jan-abr) para R$ 115,2 milhões.\" (p. 3)\n\n### O que observar em seguida:\n- **Evolução da Inadimplência**: Monitorar a tendência da inadimplência e as estratégias de recuperação.\n- **Desempenho das Vendas**: Observar o desempenho contínuo das vendas totais, especialmente no contexto macroeconômico atual."
+  },
+  "comunicados": {
+    "ids": [
+      952439,
+      940528,
+      910082,
+      1201008,
+      1183394,
+      1183328,
+      1169248
+    ],
+    "datas": [
+      "24/07/2025",
+      "04/07/2025",
+      "22/05/2025",
+      "21/05/2026",
+      "08/05/2026",
+      "08/05/2026",
+      "24/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 24/07/2025\n\n**O QUE aconteceu:** A administradora decidiu realizar a amortização extraordinária de cotas aos cotistas.\n\n**Resumo:** A administradora do LEGATUS FII RL informou que será realizada uma amortização extraordinária de cotas, correspondente a aproximadamente R$ 5.73093624524 por cota, com prazos específicos para envio e apuração dos custos médios.\n\n**Trecho-chave:**\n\"Em complemento ao Fato Relevante de 04/07/2025, a Gestora, nos termos do Regulamento do Fundo, em razão dos resultados da Classe, decidiu realizar a amortização extraordinária de cotas aos cotistas amortização de cotas do Fundo, no valor bruto total de R $ 16.850.660,38 (dezesseis milhões, oitocentos e cinquenta mil, seiscentos e sessenta reais e trinta e oito centavos ) (\"Amortização Extraordinária \").\"\n\n### FATO RELEVANTE entregue em 04/07/2025\n\n**O QUE aconteceu:** A Classe recebeu o pagamento referente à venda de 25% do Shopping Boulevard Vila Velha.\n\n**Resumo:** O Fundo recebeu R$ 30.592.170,94 pela venda de 25% do Shopping Boulevard Vila Velha e a estimativa do impacto financeiro é de aproximadamente R$ 3,77 por cota.\n\n**Trecho-chave:**\n\"O resultado distribuível dos últimos valores recebidos é de R$ 11.093.570,15 (onze milhões noventa e três mil quinhentos e setenta reais e quinze centavos ), e, como consequência, a Administradora informa que a estimativa do impacto financeiro pela venda do Imóvel é de aproximadamente R$ 3,77 por cota.\"\n\n### FATO RELEVANTE entregue em 22/05/2025\n\n**O QUE aconteceu:** O Fundo celebrou aditivos às Escrituras para a alienação de 25% do Shopping Boulevard Vila Velha.\n\n**Resumo:** O Fundo celebrou aditivos às escrituras, ajustando o prazo para pagamento da parcela final referente à venda de 25% do Shopping Boulevard Vila Velha, localizado no município de Vila Velha - ES. O valor total da parcela, corrigido pelo CDI, é de R$ 30.282.328,00 e será quitado em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"Em complemento ao Fato Relevante divulgado no dia 22/12/2023, o Fundo celebrou aditivos às Escrituras, ajustando o prazo para pagamento da parcela final referente à alienação de 25% do Shopping Boulevard Vila Velha, localizado no município de Vila Velha - ES.\"\n\n### COMUNICADO AO MERCADO entregue em 21/05/2026\n\n**O QUE aconteceu:** A administradora atualizou a forma de divulgação da remuneração dos Prestadores de Serviços Essenciais.\n\n**Resumo:** A administradora informou que, por meio do Ofício-Circular CVM nº 1/2025, foi aprovada a atualização da forma de divulgação da remuneração dos prestadores de serviços essenciais, passando a ser realizada exclusivamente pela Ferramenta ANBIMA.\n\n**Trecho-chave:**\n\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n### COMUNICADO AO MERCADO entregue em 08/05/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo foram aprovadas na assembleia geral.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do LEGATUS FII RL referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A assembleia geral de cotistas realizada em 04 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n### ASSEMBLEIA AGO entregue em 08/05/2026\n\n**O QUE aconteceu:** A assembleia geral aprovou as contas anuais do Fundo.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas e demonstrações contábeis do LEGATUS FII RL referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n### ASSEMBLEIA AGO entregue em 24/04/2026\n\n**O QUE aconteceu:** A administradora convocou os cotistas para a assembleia geral.\n\n**Resumo:** A administradora convocou os cotistas do LEGATUS FII RL para deliberarem sobre a aprovação das contas e demonstrações contábeis referentes ao exercício encerrado em 31 de dezembro de 2025, por meio de manifestação de voto via plataforma eletrônica.\n\n**Trecho-chave:**\n\"A administradora convocou os cotistas do LEGATUS FII RL para deliberarem sobre a aprovação das contas e demonstrações contábeis referentes ao exercício encerrado em 31 de dezembro de 2025, por meio de manifestação de voto via plataforma eletrônica.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 111.23
+  },
+  "parecer": {
+    "id": 1146915,
+    "data_entrega": "27/03/2026 15:26",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Legatus Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasi"
+  }
+}

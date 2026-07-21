@@ -1,0 +1,36 @@
+{
+  "ticker": "ATRN11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T22:25:15",
+  "comunicados": {
+    "ids": [
+      637606,
+      1187026,
+      1187019,
+      1159238
+    ],
+    "datas": [
+      "10/04/2024",
+      "12/05/2026",
+      "12/05/2026",
+      "10/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### Fato Relevante entregue em 10/04/2024\n\n**O que aconteceu:** Desdobramento das cotas do Fundo ATRIUM NAÇÕES UNIDAS.\n\n**Resumo:** O Fundo realizou um desdobramento de cotas, emitindo 262.599 novas cota para cada uma existente, totalizando 2.626.000 cotas após o processo.\n\n**Trecho-chave:**\n\"Para cada cota de emissão do Fundo efetivamente detida, conforme respectiva posição de custódia, no fechamento dos mercados da Data Base será atribuída ao respectivo titular, 262.599 (duzentos e sessenta e dois mil, quinhentos e noventa e nove) novas cotas, totalizando 262.600 (um para duzentos e sessenta e dois mil e seiscentos ) cotas.\"\n\n---\n\n### Comunicado ao Mercado entregue em 12/05/2026\n\n**O que aconteceu:** Aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Na assembleia geral realizada em 30 de abril de 2026, foram aprovadas as contas anuais do Fundo para o ano de 2025.\n\n**Trecho-chave:**\n\"A assembleia de cotistas para aprovação de contas, referente ao exercício social encerrado em 31 de dezembro de 2025, foi devidamente convocada em 31 de março de 2026, e ocorrida em 30 de abril de 2026 sendo certo que nenhum cotista compareceu.\"\n\n---\n\n### Assembleia AGE entregue em 12/05/2026\n\n**O que aconteceu:** A assembleia geral de cotistas não foi instalada, mas as contas anuais do Fundo foram consideradas automaticamente aprovadas.\n\n**Resumo:** Como nenhum cotista compareceu à assembleia, as contas anuais do Fundo para o exercício encerrado em 31 de dezembro de 2025 foram consideradas automaticamente aprovadas.\n\n**Trecho-chave:**\n\"Dessa forma, e considerando que as demonstrações contábeis não contêm ressalvas, ficam as mesmas consideradas automaticamente aprovadas.\"\n\n---\n\n### Assembleia AGO entregue em 10/04/2026\n\n**O que aconteceu:** Autorização para negociação e celebração de acordo relativo ao Procedimento Arbitral nº 6/2023.\n\n**Resumo:** Os cotistas autorizaram a administradora a negociar e celebrar um acordo relacionado ao Procedimento Arbitral nº 6/2023 da Câmara da Fundação Getúlio Vargas de Mediação e Arbitragem.\n\n**Trecho-chave:**\n\"Os Cotistas deliberaram, por unanimidade, sem quaisquer reservas ou restrições: Autorizar que o Administrador negocie e celebre, em nome do Fundo, acordo relativo ao Procedimentos arbitral nº 6/2023 da Câmara da Fundação Getúlio Vargas de Mediação e Arbitragem (“Procedimento Arbitral”), conforme Instrumentos de transação anexos à Ata.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1149603,
+    "data_entrega": "31/03/2026 11:33",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

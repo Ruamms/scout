@@ -1,0 +1,33 @@
+{
+  "ticker": "FAVM11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T22:01:38",
+  "comunicados": {
+    "ids": [
+      1073778,
+      1207690,
+      1207686
+    ],
+    "datas": [
+      "30/12/2025",
+      "29/05/2026",
+      "29/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 30/12/2025\n\n**O que aconteceu:** O ativo do FUNDO DE INVESTIMENTO IMOBILIÁRIO AVM FII RESPONSABILIDADE LIMITADA foi reavaliado, resultando em um impacto positivo de 47,03% no patrimônio líquido.\n\n**Resumo:** Houve uma reavaliação do ativo do fundo que levou a um aumento significativo no patrimônio líquido, refletindo um crescimento de R$ 109.503.251,34.\n\n**Trecho-chave:**\n\"o ativo do FUNDO foi reavaliado, sendo veriﬁcado um impacto positivo de 47,03% (quarenta e sete inteiros e três centésimos por cento) no patrimônio líquido do FUNDO, com aumento de R$ 109.503.251,34 (cento e nove milhões, quinhentos e três mil, duzentos e cinquenta e um reais e trinta e quatro centavos) no valor justo dos ativos.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS entregue em 29/05/2026\n\n**O que aconteceu:** A assembleia geral ordinária de cotistas não foi instalada por falta de votos.\n\n**Resumo:** Houve uma convocação para a assembleia, mas ela não foi instalada devido à ausência de votos dos cotistas. As demonstrações contábeis foram automaticamente aprovadas em razão da ausência de ressalvas.\n\n**Trecho-chave:**\n\"findo o prazo para recebimento dos votos, foi verificada a ausência de votos e, considerando que as demonstrações contábeis foram disponibilizadas e não contém ressalvas, ficam automaticamente APROVADAS, conforme previsto no Artigo 71, §3º da Resolução CVM 175/22 e disposto na Convocação.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS entregue em 29/05/2026\n\n**O que aconteceu:** A assembleia geral ordinária de cotistas não foi instalada por falta de votos.\n\n**Resumo:** Houve uma convocação para a assembleia, mas ela não foi instalada devido à ausência de votos dos cotistas. As demonstrações contábeis foram automaticamente aprovadas em razão da ausência de ressalvas.\n\n**Trecho-chave:**\n\"findo o prazo para recebimento dos votos, foi verificada a ausência de votos e, considerando que as demonstrações contábeis foram disponibilizadas e não contém ressalvas, ficam automaticamente APROVADAS, conforme previsto no Artigo 71, §3º da Resolução CVM 175/22 e disposto na Convocação.\"\n\n---\n\n**Conexão com o contexto:** O aumento significativo no patrimônio líquido do fundo (46,99% em 12 meses) reflete diretamente nas informações contidas nos documentos recentes."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151948,
+    "data_entrega": "31/03/2026 22:45",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário AVM FII Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasi"
+  }
+}

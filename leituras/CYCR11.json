@@ -1,0 +1,45 @@
+{
+  "ticker": "CYCR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T21:58:27",
+  "relatorio": {
+    "id": 1247889,
+    "data_entrega": "14/07/2026 19:07",
+    "texto": "### Fatos Extraídos:\n\n1. **Distribuição de Renda:**\n   - O fundo realizou uma distribuição de R$ 0,11 por cota em junho/26, resultando em um yield anualizado de 15,21%.\n   - Desde o início da negociação na B3 (nov/21), a distribuição média foi de R$ 1,08/cota, representando um yield anualizado de 15,50%.\n\n2. **Movimentações no Portfólio:**\n   - Realizou aportes totais de R$ 0,9 MM em SPEs da incorporadora Somos (empreendimentos Veneza e Alt-65).\n   - Integralização do CRI Daxo no valor de R$ 2,0 MM.\n   - Amortizações extraordinárias nos CRIs Aquisição SP (R$ 0,5 MM), Klabin (R$ 1,9 MM), Somos Liv (R$ 1,6 MM) e MRV Flex II (R$ 0,5 MM).\n\n3. **Portfólio Atual:**\n   - O portfólio está composto por 29 CRIs, todos adimplentes.\n   - Participação em três empreendimentos residenciais (Co-incorporação).\n   - A gestão prevê distribuições similares ou acima da realizada no mês, devido à reserva legal e aumento da taxa média de alocação do fundo.\n\n4. **Alavancagem:**\n   - O portfólio está 98% alocaçado.\n   - A maior parte das operações são de originação própria e localizadas na região Sudeste.\n\n5. **Renda Fixa vs Renda Variável:**\n   - A alocação segue principalmente em CRIs IPCA+, balanceada com investimentos DI.\n   - Por segmento, os CRIs possuem a maior parte das garantias relacionadas a empreendimentos residenciais e pulverizados.\n\n6. **Região de Investimento:**\n   - A alocação está concentrada na região Sudeste, onde há mais experiência e conhecimento.\n\n7. **Riscos Macroeconômicos:**\n   - O ambiente macroeconômico permanece desafiador com pressões inflacionárias.\n   - As tensões geopolíticas adicionam incerteza ao cenário econômico.\n\n8. **Indicadores do Fundo:**\n   - Valor de mercado: R$ 326,386.543,85\n   - Patrimônio líquido: R$ 344,553.962,55\n\n### O que observar em seguida:\n1. **Distribuição Futura:** A gestão prevê distribuições similares ou acima da realizada no mês devido à reserva legal e aumento da taxa média de alocação.\n2. **Movimentações no Portfólio:** Monitorar as próximas aportes e amortizações, especialmente nos CRIs de maior valor investido."
+  },
+  "comunicados": {
+    "ids": [
+      1205568,
+      1093891,
+      1067188
+    ],
+    "datas": [
+      "27/05/2026",
+      "27/01/2026",
+      "19/12/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 27/05/2026\n\n**O QUE aconteceu:** Alteração no regulamento do fundo para a segregação das taxas devidas aos prestadores de serviço.\n\n**Resumo:** O Administrador (Banco Genial S.A.) aprovou e publicou uma alteração no regulamento do CYRELA CRÉDITO - FUNDO DE INVESTIMENTO IMOBILIÁRIO para incluir a segregação das taxas devidas aos prestadores de serviço na Plataforma de Transparência de Taxas.\n\n**Trecho-chave:**\n\"o Administrador aprovou, por Instrumento Particular do Administrador, a alteração do regulamento do Fundo para incluir que a segregação das taxas devidas aos prestadores de serviço s do Fundo passa a ser disponibilizada na Plataforma de Transparência de Taxas no endereço: https://data.anbima.com.br/busca/transparencia-de-taxas-de-fundos.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS entregue em 19/12/2025\n\n**O QUE aconteceu:** Não instalação da assembleia geral ordinária de cotistas.\n\n**Resumo:** A assembleia geral ordinária de cotistas do CYRELA CRÉDITO - FUNDO DE INVESTIMENTO IMOBILIÁRIO não foi instalada em 19 de janeiro de 2026, devido à insuficiência de manifestações de voto.\n\n**Trecho-chave:**\n\"Considerando a insuficiência de manifestações de voto recebidas pelo Administrador, a presente consulta formal de voto para a assembleia geral ordinária de cotistas não foi instalada e, por consequência, não houve deliberação sobre as ordens do dia.\"\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS entregue em 27/01/2026\n\n**O QUE aconteceu:** Não instalação da assembleia geral ordinária de cotistas.\n\n**Resumo:** A assembleia geral ordinária de cotistas do CYRELA CRÉDITO - FUNDO DE INVESTIMENTO IMOBILIÁRIO não foi instalada em 19 de janeiro de 2026, devido à insuficiência de manifestações de voto.\n\n**Trecho-chave:**\n\"Considerando a insuficiência de manifestações de voto recebidas pelo Administrador, a presente consulta formal de voto para a assembleia geral ordinária de cotistas não foi instalada e, por consequência, não houve deliberação sobre as ordens do dia.\"\n\n---\n\n**Conexão com o contexto:** A não instalação da assembleia em 2025 pode estar relacionada à baixa adesão dos cotistas, que é um fator que influencia a cotação e outros indicadores do fundo."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 8.67
+  },
+  "parecer": {
+    "id": 1001798,
+    "data_entrega": "30/09/2025 00:12",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Cyrela Crédito - Fundo de Investimento Imobiliário - Responsabilidade Limitada em 30 de junho de 2025 e o desempenho de suas operações e os fluxos de caixa para o exercício findo nessa data, de acordo com as práticas financeiras adotadas no"
+  }
+}

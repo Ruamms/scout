@@ -1,0 +1,36 @@
+{
+  "ticker": "FLFL11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T21:05:33",
+  "comunicados": {
+    "ids": [
+      1237777,
+      795393,
+      686665,
+      1075449
+    ],
+    "datas": [
+      "01/07/2026",
+      "05/12/2024",
+      "25/06/2024",
+      "05/01/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 01/07/2026\n\n**O que aconteceu:** A empresa especializada Cushman & Wakefield realizou a reavaliação do ativo do VBI TR FARIA LIMA 4440, resultando numa variação negativa de 10,49% no valor do patrimônio líquido do Fundo na data-base.\n\n**Resumo:** A Cushman & Wakefield realizou a reavaliação do ativo do fundo, levando à diminuição de 10,49% no valor do patrimônio líquido.\n\n**Trecho-chave:**\n\"o ativo do Fundo foi reavaliado pela empresa especializada Cushman & Wakefield e remarcado a valor justo em 30 de junho de 2026, resultando em uma variação negativa de 10,49% no valor do patrimônio líquido do Fundo na Data-Base.\"\n\n### FATO RELEVANTE entregue em 05/12/2024\n\n**O que aconteceu:** A VBI RE foi cislada parcialmente com a incorporação de parte do seu patrimônio pela PÁTRIA - VBI ASSET MANAGEMENT, tornando esta última a nova gestora do Fundo.\n\n**Resumo:** A VBI RE foi cislada parcialmente e a PÁTRIA - VBI Asset sucedeu a VBI RE como gestora do Fundo.\n\n**Trecho-chave:**\n\"foi realizada a cisão parcial da VBI RE com a incorporação de parcela do patrimônio da VBI RE por sua subsidiária, PÁTRIA - VBI ASSET MANAGEMENT LTDA., incluindo a posição contratual no contrato de gestão do Fundo. Desse modo, a partir desta data, o PÁTRIA - VBI Asset sucedeu a VBI RE como gestora do Fundo.\"\n\n### FATO RELEVANTE entregue em 25/06/2024\n\n**O que aconteceu:** O FLFL11 e o VBI Prime Properties celebraram um aditivo ao contrato de locação, prorrogando a vigência do contrato por mais três anos e reajustando o valor da locação em aproximadamente 56%.\n\n**Resumo:** O FLFL11 e o VBI Prime Properties prorrogaram o contrato de locação e aumentaram o valor da locação.\n\n**Trecho-chave:**\n\"O Fundo e o FUNDO DE INVESTIMENTO IMOBILIÁRIO - VBI PRIME PROPERTIES celebraram na presente data, aditivo ao contrato de locação referente à locação de pavimentos com área bruta locável (ABL) de 6.240 m² do Ativo denominado “FL 4.440” com a empresa CHINA CONSTRUCTION BANK (BRASIL) BANCO MULTIPLO S/A., alterando as seguintes condições contratuais: • Prorrogação da vigência do contrato em 3 anos, com o vencimento passando de 2024 para 2027; • Reajuste do valor de locação atual pago pela Locatária em aproximadamente 56%.\"\n\n### ASSEMBLEIA AGO entregue em 05/01/2026\n\n**O que aconteceu:** A assembleia geral ordinária dos cotistas do VBI TR FARIA LIMA 4440 aprovou as contas e demonstrações contábeis do exercício social findo em 30 de junho de 2025.\n\n**Resumo:** A assembleia aprovou as contas e demonstrações contábeis do Fundo para o exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"Foi deliberado pelos Cotistas representantes da totalidade das cotas em circulação do Fundo, sem quaisquer ressalvas: A) Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 30 de junho de 2025, devidamente auditadas.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1003393,
+    "data_entrega": "30/09/2025 20:04",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do VBI TR Faria Lima 4440 Fundo de Investimento Imobiliário em 30 de junho de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis "
+  }
+}

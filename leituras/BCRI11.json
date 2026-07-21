@@ -1,0 +1,42 @@
+{
+  "ticker": "BCRI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T20:14:05",
+  "relatorio": {
+    "id": 1244349,
+    "data_entrega": "10/07/2026 18:35",
+    "texto": "### Fatos Extraídos do Relatório Gerencial:\n\n1. **Aumento na Carteira**: O BCRI11 aumentou sua exposição ao CRI HBR Multiativos (19G0228153) adquirindo R$ 10,88 milhões à taxa de IPCA + 8,65% a.a., após uma oportunidade no mercado secundário.\n   - \"Neste mês, aproveitando uma oportunidade no mercado secundário, aumentamos nossa exposição ao CRI HBR Multiativos (19G0228153) adquirindo R$ 10,88 milhões, à taxa de IPCA + 8,65% a.a. Já tínhamos R$ 2,6 milhões desse CRI na carteira, com remuneração de IPCA + 6% a.a. (taxa da emissão). Este CRI vence em 07/2034 e é lastreado em contrato de aluguel atípico de data center entre a HBR (Devedora) e a TIM Celular S.A. Conta com as garantias de alienação fiduciária do imóvel e fiança da holding controladora da proprietária do imóvel.\" (p. 9)\n\n2. **Rendimentos Distribuídos**: O fundo distribuiu R$ 0,79 por cota em junho, perfazendo um dividend yield de 1,31%.\n   - \"No mês de junho, o Fundo Banestes Recebíveis Imobiliários (BCRI11) distribuiu o valor de R$ 0,79/cota, perfazendo um dividend yield* de 1,31%, líquido de imposto de renda.\" (p. 4)\n\n3. **Vacância e Inadimplência**: Vários ativos apresentam inadimplência ou estão em processo judicial para recuperação do crédito.\n   - \"CRI Casa & Vídeo Em Processo Judicial para a Recuperação do Crédito 0,86%\" (p. 10)\n   - \"CRI Eco Resort Inadimplente 3,15%\" (p. 10)\n   - \"CRI GVI Inadimplente 1,89%\" (p. 10)\n   - \"CRI Kroton (Anhanguera) Inadimplente 1,38%\" (p. 10)\n   - \"CRI Pesa Inadimplente 3,83%\" (p. 10)\n\n4. **Alavancagem**: A carteira tem uma duração média de 3,28 anos e um LTV médio de 58,93%.\n   - \"Duration da Carteira: 3,28 anos\" (p. 9)\n   - \"LTV Médio da Carteira (%): 58,93\" (p. 9)\n\n### O que observar em seguida:\n1. Monitorar as atualizações sobre os processos judiciais e renegociações dos ativos inadimplentes.\n2. Observar a evolução da carteira com novas aquisições, como o CRI HBR Multiativos."
+  },
+  "comunicados": {
+    "ids": [
+      1240568,
+      1212168
+    ],
+    "datas": [
+      "06/07/2026",
+      "03/06/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### ASSEMBLEIA AGO entregue em 06/07/2026\n\n**O QUE aconteceu:** Aprovaram as Demonstrações Financeiras e o Relatório dos Auditores Independentes do Fundo referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia geral ordinária realizada por meio de consulta formal aprovou as demonstrações financeiras sem restrições.\n\n**Trecho-chave:**\n\"APROVADO REPROVADO ABSTENÇÃO ABSTENÇÃO \nPOR CONFLITO \n1,65% 0,25% 0,62% 0%\" (p. 2)\n\n---\n\n### ASSEMBLEIA AGO entregue em 03/06/2026\n\n**O QUE aconteceu:** Convocação da assembleia geral ordinária de cotistas para aprovar as Demonstrações Financeiras e o Relatório dos Auditores Independentes do Fundo referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A convocação foi feita para a realização da assembleia geral ordinária, que será realizada por meio de coleta de voto a distância.\n\n**Trecho-chave:**\n\"A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., com sede na cidade de São Paulo, Estado de São Paulo, na Rua Alves Guimarães, 1212, Pinheiros, inscrita no Cadastro Nacional de Pessoas Jurídicas do Ministério da Economia (“CNPJ/MF”) sob o nº 13.486.793/0001-42, habilitada para administração de fundos de investimento conforme ato declaratório expedido pela Comissão de Valores Mobiliários (\"CVM\") nº 11.784, de 30 de junho de 2011 (“Administradora”), na qualidade de instituição administradora do BANESTES RECEBÍVEIS IMOBILIÁRIOS FUNDO DE INVESTIMENTO IMOBILIÁRIO – FII – RESPONSABILIDADE LIMITADA, inscrito no CNPJ/ME nº 22.219.335/0001-38 (“Fundo”), convocar os cotistas do Fundo (\"Cotistas\"), por meio desta, a participar da Assembleia Geral Ordinária de Cotistas do Fundo (\"\"AGO\"\")...\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 59.9
+  },
+  "parecer": {
+    "id": 1210824,
+    "data_entrega": "02/06/2026 16:28",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Banestes Recebíveis Imobiliários Fundo de Investimento Imobiliário - FII - Responsabilidade Limitada (anteriormente denominado Banestes Recebíveis Imobiliários Fundo de Investimento Imobiliário) em 31 de dezembro de 2025, o desempenho de su"
+  }
+}

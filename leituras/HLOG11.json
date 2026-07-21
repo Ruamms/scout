@@ -1,0 +1,48 @@
+{
+  "ticker": "HLOG11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T20:21:03",
+  "relatorio": {
+    "id": 1260519,
+    "data_entrega": "20/07/2026 19:28",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Vacância e Ocupação:**\n   - O fundo encerrou o mês com 100% de ocupação.\n   - Não há vacância física nos imóveis.\n\n2. **Desempenho Financeiro:**\n   - A cota de mercado do fundo foi de R$ 9,13 no fechamento do mês.\n   - O rendimento distribuído em junho de 2026 foi de R$ 0,11 por cota.\n\n3. **Carteira de Investimentos:**\n   - A carteira totaliza aproximadamente 205,2 mil m² de área locável entre dois imóveis: Citlog Sul de Minas e Citlog Viracopos.\n   - O fundo está presente em 100% dos pregões nos últimos 12 meses.\n\n4. **Eventos e Operações Imobiliárias:**\n   - Iniciativas no Citlog Sul de Minas incluem a instalação de câmeras LPR, cancelas e conexão com o sistema do empreendimento.\n   - No Citlog Viracopos, estão sendo realizadas intervenções para evitar manutenções corretivas, como execução de canaletas e bases para suporte da nova tubulação.\n\n5. **Despesas Operacionais:**\n   - Despesas operacionais incluem taxa de administração (0,80% ao ano), taxas CVM, B3, Cetip, auditoria, entre outras.\n   - Não há despesas com áreas vagas, uma vez que os imóveis estão locados.\n\n6. **Rendimentos e Distribuição:**\n   - O rendimento superior no mês de junho foi resultado do recebimento antecipado de aluguel por um dos locatários.\n   - Para o segundo semestre de 2026, a expectativa é manter a distribuição de R$ 0,070 por cota.\n\n### O que observar em seguida:\n1. **Monitoramento da Vacância:** Embora atualmente não haja vacância, qualquer mudança nesse indicador deve ser acompanhada.\n2. **Desenvolvimentos Imobiliários:** Observar as progressões das obras e intervenções nos imóveis para garantir a continuidade do bom desempenho operacional."
+  },
+  "comunicados": {
+    "ids": [
+      1052558,
+      897961,
+      1183559,
+      1183557
+    ],
+    "datas": [
+      "02/12/2025",
+      "09/05/2025",
+      "08/05/2026",
+      "08/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 02/12/2025\n\n**O que aconteceu:** A HEDGE LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO teve seus imóveis avaliados a mercado, resultando em um valor 7,36% superior ao valor contábil atual.\n\n**Resumo:** O patrimônio líquido do fundo aumentou devido à reavaliação dos imóveis.\n\n**Trecho-chave:**\n\"resultando em valor 7,36% (sete inteiros e trinta e seis centésimos por cento) superior ao valor contábil atual dos referidos imóveis, o que representa uma variação positiva de aproximadamente 8 ,40% (oito inteiros e quarenta centésimos por cento) no valor patrimonial da cota do Fundo nesta data.\" (p. 1)\n\n### FATO RELEVANTE entregue em 09/05/2025\n\n**O que aconteceu:** A HEDGE LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO aprovou o desdobramento de cotas, resultando em uma nova quantidade total de cotas.\n\n**Resumo:** O número de cotas do fundo aumentou para 42.500.000, mantendo o mesmo valor unitário e patrimônio líquido.\n\n**Trecho-chave:**\n\"As cot as advindas do desdobramento passarão a ser negociadas a partir de 12 de maio de 2025 e serão da mesma espécie e classe, conferindo aos seus titulares os mesmos direitos das cotas previamente existentes.\" (p. 1)\n\n### COMUNICADO ASSEMBLEIA AGO entregue em 08/05/2026\n\n**O que aconteceu:** A Assembleia Geral Ordinária dos Cotistas aprovou as contas e demonstrações financeiras do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os votos favoráveis representaram 0,301% da base votante, com 0,539% de abstenções.\n\n**Trecho-chave:**\n\"Os votos proferidos representaram os seguintes percentuais em relação ao total da base votante do Fundo: 0,301% (trezentos e um milésimos por cento) de votos favoráveis; e 0,539% (quinhentos e trinta e nove milésimos por cento) de abstenções.\" (p. 1)\n\n### ATA DE ASSEMBLEIA AGO entregue em 08/05/2026\n\n**O que aconteceu:** A Assembleia Geral Ordinária dos Cotistas aprovou as contas e demonstrações financeiras do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os votos favoráveis representaram 0,301% da base votante, com 0,539% de abstenções.\n\n**Trecho-chave:**\n\"Os votos proferidos representaram os seguintes percentuais em relação ao total da base votante do Fundo: 0,301% (trezentos e um milésimos por cento) de votos favoráveis; e 0,539% (quinhentos e trinta e nove milésimos por cento) de abstenções.\" (p. 7)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 8.89
+  },
+  "parecer": {
+    "id": 1144218,
+    "data_entrega": "25/03/2026 17:19",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Hedge Logística Fundo de Investimento Imobiliário de Responsabilidade Limitada (anteriormente denominado por Hedge Logística Fundo de Investimento Imobiliário) em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de ca"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "ticker": "RZAT11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T21:04:38",
+  "relatorio": {
+    "id": 1235629,
+    "data_entrega": "30/06/2026 18:10",
+    "texto": "### Fatos Extraídos do Relatório Gerencial:\n\n1. **Vacância e Inadimplência:**\n   - \"A carteira do fundo é composta por 8 imóveis, todos locados para 8 inquilinos.\" (p.5)\n   - A vacância ponderada por área é de 42,96% no trimestre mais recente. (p.1)\n\n2. **Composição da Carteira:**\n   - O portfólio do fundo inclui imóveis industriais, logísticos e comerciais em diversas regiões do Brasil.\n   - Os imóveis foram adquiridos por R$ 355 milhões, enquanto a última avaliação de mercado os avaliou em R$ 948 milhões. (p.5)\n\n3. **Operação Sale Leaseback com Opção de Recompra:**\n   - A estratégia envolve a aquisição de imóveis de empresas seguidas pela locação imediata desses imóveis de volta à mesma empresa.\n   - O desconto médio na compra dos imóveis é de 62%. (p.3, p.5)\n\n4. **Distribuição de Rendimentos:**\n   - No mês de junho, a distribuição foi de R$ 1,70 por cota.\n   - A estratégia de retenção adotada visa mitigar eventuais reduções nos resultados distribuíveis. (p.4)\n\n5. **Risco de Inadimplência:**\n   - Em caso de inadimplência do locatário, o direito de recompra é perdido e o imóvel pode ser vendido a terceiros pelo valor de mercado.\n   - Três recompras antecipadas foram realizadas desde o início da gestão. (p.7-14)\n\n6. **Rendimentos Futuros:**\n   - Estimativas para rendimentos mensais entre R$ 1,65 e R$ 1,75 por cota no mês de junho.\n   - Para julho, a estimativa é entre R$ 1,05 e R$ 1,15 por cota. (p.4)\n\n### O que observar em seguida:\n- Monitorar as mudanças na vacância dos imóveis, especialmente considerando o alto nível atual.\n- Observar quais inquilinos podem ter risco de inadimplência e como isso pode impactar a distribuição de rendimentos."
+  },
+  "comunicados": {
+    "ids": [
+      1260243,
+      1212233,
+      1184212,
+      1198460,
+      1073902,
+      1045844
+    ],
+    "datas": [
+      "20/07/2026",
+      "03/06/2026",
+      "08/05/2026",
+      "18/05/2026",
+      "31/12/2025",
+      "25/11/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O QUE aconteceu em 20/07/2026\n\n**Título:** Aditamento ao Compromisso de Compra e Venda de Bens Imóveis\n\n**Resumo:** O fundo RZAT11 celebrou um aditamento ao compromisso de compra e venda do imóvel matrícula nº 1.385 em Maringá/PR, ajustando a forma de pagamento.\n\n**Trecho-chave:**\n> \"I. Em complemento ao Fato Relevante divulgado em 02 de junho de 2026, o Fundo celebrou , em 20 de julho de 2026, o aditamento ao Instrumento Particular de Compromisso de Compra e Venda de Bens Imóveis e Outras Avenças, referente à aquisição do imóvel matrícula nº 1.385 do 4º CRI de Maringá/PR, no valor total de R$ 20.000.000,00 (vinte milhões de reais).\"\n\n### O QUE aconteceu em 03/06/2026\n\n**Título:** Compromisso de Compra e Venda de Bem Imóvel\n\n**Resumo:** O fundo RZAT11 firmou um compromisso de compra e venda com a Assumpção Administradora de Bens para adquirir um imóvel em Maringá/PR, com valor total de R$ 20.000.000,00.\n\n**Trecho-chave:**\n> \"I. Em 02 de junho de 2026, foi celebrado o Instrumento Particular de Compromisso de Compra e Venda de Bem Imóvel e Outras Avenças (“Compromisso de Compra e Venda”) pelo Fundo junto à ASSUMPÇÃO ADMINISTRADORA DE BENS LTDA. (“Vendedora”), tendo por objeto a aquisição pelo Fundo de 01 (um) imóvel, objeto da matrícula nº 1.385 do 4º Cartório de Registro de Imóveis de Maringá, Estado do Paraná (“Imóvel”), pelo valor total de R$ 20.000.000,00 (vinte milhões de reais), a ser desembolsado da seguinte forma...\"\n\n### O QUE aconteceu em 08/05/2026\n\n**Título:** Venda do Imóvel em Porto dos Gaúchos/MT\n\n**Resumo:** O fundo RZAT11 vendeu o imóvel matrícula nº 15.091 localizado em Porto dos Gaúchos, Mato Grosso, por R$ 53.000.000,00.\n\n**Trecho-chave:**\n> \"I. Em 06 de maio de 2026, o Fundo celebrou a escritura pública de compra e venda totalidade do imóvel matriculado sob o nº 15.091 perante o 1º Ofício de Registro de Imóveis localizado em Porto dos Gaúchos, Estado de Mato Grosso, tendo como compradora a C. Vale - Cooperativa Agroindustrial.\"\n\n### O QUE aconteceu em 18/05/2026\n\n**Título:** Atualização da Forma de Divulgação da Remuneração\n\n**Resumo:** A administradora do fundo atualizou a forma de divulgação da remuneração dos prestadores de serviços essenciais, passando a utilizar a Ferramenta ANBIMA.\n\n**Trecho-chave:**\n> \"1. Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do 'Sumário de Remuneração' pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n### O QUE aconteceu em 31/12/2025\n\n**Título:** Apuração das Contas e Deliberação na Assembleia Geral Ordinária\n\n**Resumo:** A assembleia geral ordinária do fundo aprovou as contas e demonstrações contábeis relativas ao exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n> \"Aprovar as contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\"\n\n### O QUE aconteceu em 25/11/2025\n\n**Título:** Convocação para Assembleia Geral Ordinária\n\n**Resumo:** A administradora convocou os cotistas para a assembleia geral ordinária, que será realizada por meio de consulta formal.\n\n**Trecho-chave:**\n> \"A [Administradora] vem, por meio da presente, convocar os titulares das cotas de emissão do Fundo (“Cotistas”) para participar da Assembleia Geral Ordinária do Fundo, a ser realizada de forma não presencial, por meio do procedimento de consulta formal (‘Consulta Formal’, respectivamente), a qual tem por objeto deliberar sobre: 1. Aprovação das contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\""
+  },
+  "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "Vacância física alta",
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 92.65
+  },
+  "parecer": {
+    "id": 1001495,
+    "data_entrega": "29/09/2025 20:23",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Riza Arctium Real Estate Fundo de Investimento Imobiliário Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis ado"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "ticker": "RINV11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T20:16:08",
+  "relatorio": {
+    "id": 1223631,
+    "data_entrega": "17/06/2026 19:10",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Oferta de Cotas:**\n   - Concluída a 6ª oferta de cotas, com captação de aproximadamente R$118 milhões.\n   - Patrimônio líquido do Fundo passou para acima de R$535 milhões.\n\n2. **Carteira de FIIs:**\n   - Representava cerca de 72% do patrimônio líquido do RINV11 no final de maio.\n   - Contribuiu negativamente em -0,6% para o desempenho consolidado do Fundo no mês.\n   - Posição destacada foi o IRIM11, que valorizou cerca de 6,0% e foi o maior contribuidor de performance.\n\n3. **Carteira de Recebíveis:**\n   - Representava 11% do patrimônio líquido do RINV11.\n   - Composto por 16 operações com remuneração média de IPCA + 11,5% a.a. e CDI + 2,1% a.a.\n\n4. **Ações do Setor Imobiliário:**\n   - Representavam aproximadamente 9,5% do patrimônio líquido.\n   - A única empresa com desempenho positivo no mês foi a Log Commercial Properties (LOGG3), que avançou 3,6%.\n\n5. **CRI e Outros Ativos:**\n   - Iniciadas posições em CRIs do Grupo Mateus e Trisul.\n   - Operações de CRI representavam cerca de 4,6% do patrimônio líquido.\n\n### O que observar em seguida:\n1. **Evolução da Carteira de FIIs:** Verificar se as posições em FIIs continuam a ser bem-sucedidas e se novas oportunidades são aproveitadas.\n2. **Desempenho das Ações do Setor Imobiliário:** Monitorar o comportamento dessas ações, especialmente a Log Commercial Properties (LOGG3)."
+  },
+  "comunicados": {
+    "ids": [
+      1164610,
+      1016537,
+      1205744,
+      1185868,
+      1182233,
+      1169267
+    ],
+    "datas": [
+      "15/04/2026",
+      "17/10/2025",
+      "27/05/2026",
+      "11/05/2026",
+      "07/05/2026",
+      "24/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O que aconteceu em 15/04/2026\n\n**Título:** Aprovada a sexta emissão de cotas.\n\n**Resumo:** A administradora aprovou a oferta pública de distribuição primária de até 1.124.500 novas cotas, com preço unitário de R$ 106,71.\n\n**Trecho-chave:**\n\"serão emitidas, inicialmente, até 1.124.500 (um milhão cento e vinte e quatro mil e quinhentos) novas cotas (“Cotas”), em série única...\"\n\n### O que aconteceu em 17/10/2025\n\n**Título:** Aprovada a quinta emissão de cotas.\n\n**Resumo:** A administradora aprovou a oferta pública de distribuição primária de até 980.200 novas cotas, com preço unitário de R$ 102,02.\n\n**Trecho-chave:**\n\"serão emitidas, inicialmente, até 980.200 (novecentas e oitenta mil e duzentas) novas cotas (“Cotas”), em série única...\"\n\n### O que aconteceu em 27/05/2026\n\n**Título:** Encerramento do período de exercício do direito de subscrição de sobras e montante adicional.\n\n**Resumo:** Foi encerrado o prazo para exercício do direito de preferência, com 392.967 Cotas subscritas. Restam 301.009 Cotas disponíveis para exercício do direito de subscrição de sobras e montante adicional.\n\n**Trecho-chave:**\n\"restam 301.009 (trezentas e uma mil e nove) Cotas que poderão ser subscritas e integralizadas por Investidores Profissionais durante o Período de Subscrição da Oferta...\"\n\n### O que aconteceu em 11/05/2026\n\n**Título:** Encerramento do período de exercício do direito de preferência e início do período de exercício do direito de subscrição de sobras e montante adicional.\n\n**Resumo:** Foi encerrado o prazo para exercício do direito de preferência, com 392.967 Cotas subscritas. Iniciou-se um novo período para a subscrição de sobras e montante adicional.\n\n**Trecho-chave:**\n\"Encerrou-se o prazo para exercício, pelos Cotistas, do Direito de Preferência para subscrição de Cotas na B3 em 07 de maio de 2026 (inclusive), e junto ao Escriturador do Fundo, em 08 de maio de 2026 (inclusive).\"\n\n### O que aconteceu em 07/05/2026\n\n**Título:** Assembleia Geral de Cotistas aprovou as demonstrações financeiras auditadas.\n\n**Resumo:** A assembleia geral de cotistas aprovou as demonstrações financeiras auditadas relativas ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda",
+      "Rendimentos irregulares"
+    ],
+    "cota": 104.03
+  },
+  "parecer": {
+    "id": 1152170,
+    "data_entrega": "31/03/2026 23:56",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Real Investor Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no"
+  }
+}

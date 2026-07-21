@@ -1,0 +1,39 @@
+{
+  "ticker": "BPLC11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T22:14:36",
+  "comunicados": {
+    "ids": [
+      917571,
+      915681,
+      824299,
+      1217248,
+      1168496
+    ],
+    "datas": [
+      "04/06/2025",
+      "30/05/2025",
+      "23/01/2025",
+      "11/06/2026",
+      "23/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 04/06/2025\n\n**O QUE aconteceu:** Aprovação de uma oferta pública primária com esforços restritos para a colocação de novas cotas.\n\n**Resumo:** O Fundo Basilica Partners LED Corporate FII está realizando a segunda emissão de cotas, com um volume total estimado em R$ 7.645.000,00 e um mínimo de R$ 3.895.000,00.\n\n**Trecho-chave:** \"serão emitidas até 1.529 (mil quinhentas e vinte e nove) Novas Cotas, correspondente ao quociente entre o Volume Total da Oferta e o Preço de Emissão\". (p. 2)\n\n### FATO RELEVANTE entregue em 30/05/2025\n\n**O QUE aconteceu:** Aprovação de uma oferta pública primária com esforços restritos para a colocação de novas cotas.\n\n**Resumo:** O Fundo Basilica Partners LED Corporate FII está realizando a segunda emissão de cotas, com um volume total estimado em R$ 7.645.000,00 e um mínimo de R$ 3.895.000,00.\n\n**Trecho-chave:** \"serão emitidas até 1.529 (mil quinhentas e vinte e nove) Novas Cotas, correspondente ao quociente entre o Volume Total da Oferta e o Preço de Emissão\". (p. 2)\n\n### FATO RELEVANTE entregue em 23/01/2025\n\n**O QUE aconteceu:** Remarcação dos ativos do Fundo.\n\n**Resumo:** Os ativos do Fundo Basilica Partners LED Corporate FII foram remarcados com base no valor justo, conforme a Instrução CVM nº 516.\n\n**Trecho-chave:** \"O Administrador, na qualidade de representante legal do Fundo, contratou a empresa de avaliação Apsis Consultoria Empresarial Ltda para que, de acordo com seus critérios, metodologias e premissas, realizasse a avaliação do valor justo dos ativos integrantes da carteira do Fundo.\" (p. 1)\n\n### ASSEMBLEIA AGO entregue em 23/04/2026\n\n**O QUE aconteceu:** Convocação de Assembleia Geral Ordinária.\n\n**Resumo:** A Assembleia Geral Ordinária do Fundo Basilica Partners LED Corporate FII foi convocada para o dia 22 de maio de 2026, com a finalidade de aprovar as contas e demonstrações contábeis referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:** \"O BANCO DAYCOVAL S.A., sociedade com sede na Cidade de São Paulo, Estado de São Paulo, na Avenida Paulista, 1.793, 9º andar, Bela Vista, São Paulo - SP, CEP: 01311 -200, inscrita no CNPJ/ME sob o nº 62.232.889/0001-90, na qualidade de instituição administradora do Basílica Partners LED Coporate Fundo de Investimento Imobiliário FII\". (p. 1)\n\n### ASSEMBLEIA AGO entregue em 11/06/2026\n\n**O QUE aconteceu:** Aprovação das contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A Assembleia Geral Ordinária do Fundo Basilica Partners LED Corporate FII aprovou as contas e demonstrações contábeis referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:** \"O(s) Cotista(s) presente(s) aprovou(aram), sem quaisquer ressalvas ou restrições, as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\" (p. 6)\n\n---\n\n**Conexão com o contexto:** A aprovação das contas e demonstrações contábeis na Assembleia Geral Ordinária (11/06/2026) confirma a situação financeira do Fundo Basilica Partners LED Corporate FII, que está em linha com os indicadores calculados."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1142871,
+    "data_entrega": "24/03/2026 10:50",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Basílica Partners Led Corporate Fundo de Investimento Imobiliário FII em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasi"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "ticker": "CACR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T20:37:51",
+  "relatorio": {
+    "id": 1223840,
+    "data_entrega": "18/06/2026 10:45",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Operação Execução Extra-Judicial:**\n   - \"Considerando o descumprimento de cláusulas da operação, a assembleia de 14/5/2026 deliberou pelo vencimento antecipado do CRI. Expirado o período legal de cura, o processo de execução extra-judicial foi iniciado pelo escritório Galdino, Takemi, Ayoub, Salgueiro, Rezende de [...]\" (p. 12)\n\n2. **Evolução da Correção Monetária:**\n   - \"Em maio houve (i) adição de R$ 6.547.547 referente ao IPCA de 0,88% de março de 2026 (“n-2”) e parcelas de juros incorporados e (ii) amortização de IPCA acruado no valor de R$ 196.627, ocasionando aumento do saldo acumulado para R$ 11.959.943, equivalente a R$ 2,47 / cota.\" (p. 6)\n\n3. **Distribuição Mensal:**\n   - \"O resultado distribuído reflete o recebimento mensal de juros e da correção monetária das operações de CRI e, ocasionalmente, taxa de distribuição em operações estruturadas pela CARTESIA.\" (p. 4)\n\n4. **Estratégia Ativa da Gestão:**\n   - \"A Cartesia Capital tem como princípio uma forte gestão ativa da carteia do CACR11, que compreende a participação em cada etapa dos empreendimentos financiados.\" (p. 3)\n\n5. **Rejeição das Demonstrações Financeiras:**\n   - \"Em 15/6/2026 foi encerrada a Consulta Formal aos Cotistas para aprovação das DF2025 do CACR11, as quais foram reprovadas por 2,27% dos cotistas (contra 1,77% de votos favoráveis à aprovação).\" (p. 3)\n\n6. **Comentários sobre a Tese de Investimento:**\n   - \"A gestão do fundo opera ativamente no mercado secundário para destravar a correção monetária acruada (não caixa), visando dar ao cotista relativa previsibilidade de rendimentos.\" (p. 4)\n\n7. **Segmentação e Distribuição Geográfica:**\n   - \"DISTRIBUIÇÃO GEOGRÁFICA REMUNERAÇÃO DA CARTEIRA DE CRI\n     100%\n     IPCA\n     Taxa média de juros \n     (IPCA)\n     12,7453% a.a.\n     Empreendimento UF Padrão Vendas\n     Helvetia SP Alto 23%\n     Viva BA Médio Lançam. 2T26\n     Station SP Médio 73%\n     Savoie BA Médio-Alto 10%\n     Monte Cristo SP Médio 75%\n     Real Park SP Alto Lançam. 2T26\n     Santo André BA Super Luxo Lançam. 2T26\n     Alto Lindóia - fase 1 / fase 2 RS Médio 74% / 18%\n     Mallorca BA Médio 32%\" (p. 9)\n\n### O que observar em seguida:\n- Monitorar o andamento do processo de execução extra-judicial do CRI Helvetia.\n- Observar a evolução da correção monetária e seu impacto no valor das cotas."
+  },
+  "comunicados": {
+    "ids": [
+      1244355,
+      1158506,
+      1100674,
+      1247838,
+      1236345,
+      1252765,
+      1237561
+    ],
+    "datas": [
+      "10/07/2026",
+      "10/04/2026",
+      "03/02/2026",
+      "14/07/2026",
+      "30/06/2026",
+      "17/07/2026",
+      "01/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### O que aconteceu: 17/07/2026 - Assembleia Geral Extraordinária de Cotistas (AGE)\n\n**Resumo:** A AGE deliberou sobre a não distribuição de, no mínimo, 95% dos resultados do primeiro semestre de 2026. O resultado foi reprovado por aproximadamente 9,44% das cotas emitidas.\n\n**Trecho-chave:**\n\"Após análises das repostas dos Cotistas do Fundo à Consulta Formal, foram apurados os seguintes resultados:\nAPROVADO REPROVADO ABSTENÇÃO ABSTENHO POR \nCONFLITO\n5,51% 9,44% 1,17% 0,04%\"\n(p. 2)\n\n### O que aconteceu: 30/06/2026 - Comunicado ao Mercado\n\n**Resumo:** Não haverá distribuição de resultados para o mês de junho/2026.\n\n**Trecho-chave:**\n\"A Cartesia permanecerá atuando de forma diligente, empenhando seus melhores esforços para restabelecer, no menor prazo possível, a adequada posição de liquidez do Fundo, mantendo seu compromisso com a transparência perante seus cotistas.\"\n(p. 2)\n\n### O que aconteceu: 10/07/2026 - Fato Relevante\n\n**Resumo:** A administradora notificou a gestora de sua renúncia às funções de administração do fundo, e convocará uma Assembleia Geral Extraordinária (AGE) para deliberar sobre a eleição de um novo prestador de serviço.\n\n**Trecho-chave:**\n\"A Administradora no dia 07 de julho de 2026 notificou a CARTESIA INVESTIMENTOS E GESTÃO DE RECURSOS LTDA, com o objetivo de formalizar sua renúncia às funções de administração do Fundo. Em razão desta Notificação de Renúncia, nos termos do artigo 108 da Resolução CVM nº 175/22, a Administradora informa que convocará Assembleia Geral de Cotistas (AGC) específica para deliberar sobre a eleição de novo prestador de serviço, a se realizar no prazo de até 15 dias, a contar da data de publicação do edital de convocação.\"\n(p. 1)\n\n### O que aconteceu: 03/02/2026 - Fato Relevante\n\n**Resumo:** A administradora decidiu remarcar o valor de mercado dos certificados de recebíveis imobiliários (CRIs) atrelados aos empreendimentos Itaparica, Real Park, Savoie e Santo André.\n\n**Trecho-chave:**\n\"Destaca-se que a referida remarcação gerou um impacto positivo no patrimônio líquido do Fundo no percentual aproximado de 25,68%.\"\n(p. 1)\n\n### O que aconteceu: 10/04/2026 - Fato Relevante\n\n**Resumo:** A administradora publicou as demonstrações financeiras do exercício de 2025 com abstenção de opinião, devido à falta de documentação para o período até 1º de dezembro de 2025.\n\n**Trecho-chave:**\n\"Base para abstenção de opinião  \nFomos contratados para auditar as demonstrações financeiras do Fundo referentes ao período findo em 31 de dezembro de 2025. Até a data de emissão deste relatório, não tivemos acesso às demonstrações financeiras de transferência do Fundo em 01 de dezembro de 2025. Adicionalmente, não foi possível efetuar a revisão dos papéis de trabalho preparados pelo auditor independente contratado para realizar a auditoria de transferência do Fundo. Dessa forma, não nos foi possível obter evidência de auditoria apropriada e suficiente que nos permitisse concluir sobre a adequação dos saldos iniciais do exercício, bem como sobre a necessidade de eventuais ajustes, se houver.\"\n(p. 2)"
+  },
+  "retrato": {
+    "selo": "Alertas leves",
+    "nivel": "leves",
+    "alertas": [
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 19.07
+  },
+  "parecer": {
+    "id": 1161049,
+    "data_entrega": "14/04/2026 12:13",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, o balanço patrimonial do Cartesia Recebíveis Imobiliários - Fundo de Investimento Imobiliário de Responsabilidade Limitada em 1º de dezembro de 2025 (data da transferência de administração do Fundo) e as respectivas demonstrações do resultado, das mutações do patrimônio líquido e "
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "ticker": "ITRI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T20:12:09",
+  "relatorio": {
+    "id": 1248070,
+    "data_entrega": "14/07/2026 20:45",
+    "texto": "### Fatos Extraídos:\n\n1. **Dividendos**: O fundo ITRI11 distribuiu R$ 0,85 por cota em junho de 2026, equivalente a um dividend yield anualizado de 11,44% sobre a cota patrimonial e de 13,28% sobre a cota de mercado ao final do mês.\n   > \"Em junho, o ITRI anunciou a distribuição de R$ 0,85 por cota, equivalente a um dividend yield anualizado de 11,44% sobre a cota patrimonial e de 13,28% sobre a cota de mercado ao final do mês.\" (p. 5)\n\n2. **Alocação em FIIs**: O fundo ITRI11 possui uma alocação significativa em FIIs, com 77,91% do patrimônio líquido investido nesse segmento.\n   > \"Portfólio de FIIs (% do PL) Papel/CRI 77,91%\" (p. 10)\n\n3. **Alocação em CRI**: A alocação em Crédito Imobiliário (CRI) é de aproximadamente 13% do patrimônio líquido.\n   > \"Portfólio de FIIs de Desenvolvimento (% do PL) Logístico desenv. Residencial desenv. Multiuso desenv. 2,02% 0,91% 0,05%\" (p. 10)\n\n4. **Aquisição de CRI**: Em junho, o fundo adquiriu um CRI da MRV, estruturado com base em uma carteira de recebíveis pró-soluto originada da venda de imóveis financiados diretamente pela incorporadora.\n   > \"Durante o mês, adquirimos um CRI da MRV, estruturado com base em uma carteira de recebíveis pró-soluto originada da venda de imóveis financiados diretamente pela incorporadora, com taxa de CDI + 2,50% ao ano.\" (p. 5)\n\n5. **Reserva Patrimonial**: O fundo encerrou o primeiro semestre com uma reserva acumulada de R$ 0,69 por cota.\n   > \"Encerramos o primeiro semestre com uma reserva acumulada de R$ 0,69 por cota.\" (p. 5)\n\n### Observações a Acompanhar:\n\n- **Aumento da Alocação em CRI**: O fundo está gradualmente aumentando sua exposição direta ao crédito imobiliário.\n- **Desempenho do Fundo**: O desempenho do ITRI11 foi impactado pela volatilidade das curvas de juros, mas os fundamentos dos ativos imobiliários e das operações de crédito permanecem sólidos."
+  },
+  "comunicados": {
+    "ids": [
+      1089546,
+      1063159,
+      1048975
+    ],
+    "datas": [
+      "21/01/2026",
+      "15/12/2025",
+      "27/11/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 21/01/2026\n\n**O QUE aconteceu:** A partir de 31 de março de 2026, as informações de remuneração do ITAÚ TOTAL RETURN FUNDO DE INVESTIMENTO IMOBILIÁRIO passarão a ser divulgadas de forma segregada por meio da Plataforma ANBIMA de Transparência de Taxas.\n\n**Resumo:** O fundo passará a divulgar as informações de remuneração separadamente, conforme regras estabelecidas pela CVM e ANBIMA.\n\n**Trecho-chave:**\n\"para fundos que adotam taxa global, a partir de 31 de março de 2026, as informações de remuneração passarão a ser divulgadas de forma segregada por meio da Plataforma ANBIMA de Transparência de Taxas.\" (p. 1)\n\n---\n\n### ASSEMBLEIA GERAL EXTRAORDINÁRIA (AGE) entregue em 15/12/2025\n\n**O QUE aconteceu:** A assembleia deliberou sobre a possibilidade de recompra de cotas pelo fundo, mas o quórum necessário não foi atingido.\n\n**Resumo:** Os cotistas votaram para permitir que o fundo compre suas próprias cotas, mas a reunião foi prejudicada por falta de quórum.\n\n**Trecho-chave:**\n\"Prejudicada a matéria por falta de quórum para deliberação da Ordem do Dia.\" (p. 2)\n\n---\n\n### ASSEMBLEIA GERAL ORDINÁRIA (AGO) entregue em 27/11/2025\n\n**O QUE aconteceu:** A assembleia aprovou as demonstrações contábeis do fundo referentes ao exercício social findo em 30.06.2025.\n\n**Resumo:** Os cotistas aprovaram os relatórios financeiros e auditoriais do fundo para o período de junho de 2025.\n\n**Trecho-chave:**\n\"aprovadas as Demonstrações Contábeis do Fundo, devidamente acompanhadas do relatório dos auditores independentes.\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Sem alertas",
+    "nivel": "sem_alertas",
+    "alertas": [],
+    "cota": 79.94
+  },
+  "parecer": {
+    "id": 1001604,
+    "data_entrega": "29/09/2025 21:24",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

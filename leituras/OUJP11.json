@@ -1,0 +1,54 @@
+{
+  "ticker": "OUJP11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:17:33",
+  "relatorio": {
+    "id": 1224558,
+    "data_entrega": "19/06/2026 11:06",
+    "texto": "### Fatos Extraídos:\n\n1. **Reorganização do Fundo:**\n   - O fundo divulgou uma proposta de reorganização com o objetivo de vender seus ativos para os fundos JPPA11 e FTRR11.\n   - A transação está condicionada à aprovação dos cotistas dos envolvidos.\n\n2. **Cotas do Fundo:**\n   - Os cotistas do OUJP11 receberiam cotas do JPPA11 ou do FTRR11, dependendo da aprovação das operações.\n   - A reorganização visa a reestruturação e ampliação de diversificação e liquidez dos fundos.\n\n3. **Dividendos:**\n   - O resultado do mês foi de R$ 1,75/cota, com distribuição de R$ 1,50/cota.\n   - A reserva do mês era de R$ 1,80/cota.\n\n4. **Alocação da Carteira:**\n   - 92% da carteira está alocada em CRIs (65% indexados ao IPCA, 34% ao CDI e 1% ao IGPM).\n   - O restante (8%) está em instrumentos de caixa.\n\n5. **Volume Negociado:**\n   - Ao final do mês, o volume negociado foi de R$ 9,0 milhões com média diária de aproximadamente R$ 0,4 milhões.\n   - O número de cotistas no final do mês era de 26,4 mil.\n\n### Observações a Acompanhar:\n\n1. **Aprovação da AGE:**\n   - A convocação da Assembleia Geral de Cotistas (AGE) para deliberar sobre a venda dos ativos é crucial.\n   \n2. **Desempenho do Fundo:**\n   - O desempenho do fundo no mês foi positivo, com retorno total de 0,98% vs. +1,07% do CDI e 0,97% do IMA-B 5.\n\nO que observar em seguida:\n- A aprovação ou não da AGE para a reorganização dos fundos.\n- O desempenho futuro do fundo após a reestruturação."
+  },
+  "comunicados": {
+    "ids": [
+      1210050,
+      1021567,
+      995507,
+      1139606,
+      1223616,
+      1223610
+    ],
+    "datas": [
+      "01/06/2026",
+      "27/10/2025",
+      "22/09/2025",
+      "17/03/2026",
+      "17/06/2026",
+      "17/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 01/06/2026\n\n**O QUE aconteceu:** A reorganização do Fundo passou por ajustes e agora dependerá de aprovações para avançar.\n\n**Resumo:** O Fundo recebeu propostas de aquisição parcial dos ativos, que agora dependem de aprovação dos cotistas e das partes envolvidas. \n\n**Trecho-chave:**\n\"Desde então, houve novas interações e entendimentos entre as partes envolvidas na potencial reorganização, em decorrência dos quais a estrutura foi novamente ajustada, de modo que a liquidação do Fundo somente ocorrerá caso as aquisições sejam aprovadas e implementadas por ambos os fundos adquirentes, conforme aplicável.\"\n\n---\n\n### FATO RELEVANTE entregue em 27/10/2025\n\n**O QUE aconteceu:** As propostas de reorganização do Fundo foram revisadas.\n\n**Resumo:** O VRTM decidiu não avançar com a operação, enquanto o JPPA manteve sua proposta sob análise. A reorganização seguirá apenas com a implementação da proposta do JPPA.\n\n**Trecho-chave:**\n\"Após a divulgação acima mencionada, houve interações com  o mercado  e entendimentos entre as partes, com base nos quais: (i) o VRTM optou por revogar a Proposta VRTM; e (ii) o JPPA optou por dar continuidade à Aquisição JPPA mediante estrutura que está sob reconfiguração, observado que as  condições indicativas, conforme previstas na Proposta JPPA, permanecerão inalteradas.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 17/03/2026\n\n**O QUE aconteceu:** A assembleia decidiu pelo vencimento antecipado do CRI.\n\n**Resumo:** A assembleia dos credores aprovou o vencimento antecipado da dívida, com expectativa de liquidação total. O CRI representa 1,4% do patrimônio líquido do Fundo e não impacta significativamente os cotistas.\n\n**Trecho-chave:**\n\"Conforme divulgado via Fato Relevante pela ORE Securitizadora S.A., foi aprovado, em assembleia, por 94,59% dos titulares do Certificados de Recebíveis Imobiliários da 30ª (Trigésima) Série da 1ª Emissão da Ore Securitizadora S.A. as seguintes deliberações: i. Vencimento antecipado da CCB e, consequentemente, do Resgate Extraordinário do CRI;\"\n\n---\n\n### ASSEMBLEIA AGE entregue em 17/06/2026\n\n**O QUE aconteceu:** A assembleia aprovou mudanças significativas na administração e regulamento do Fundo.\n\n**Resumo:** O Fundo transferiu sua administração para uma nova instituição, alterou a taxa de administração, substituiu prestadores de serviços e extinguiu o Comitê de Investimentos.\n\n**Trecho-chave:**\n\"Trata-se de Consulta Formal realizada nos termos do artigo 76, parágrafo 5º, da parte geral da Resolução CVM nº 175, de 23 de dezembro de 2022, conforme alterada (‘Resolução CVM 175’), e do artigo 39, parágrafo único, do regulamento do Fundo (‘Regulamento’), que tem por objetivo obter a aprovação dos Cotistas em relação às seguintes matérias:\"\n\n---\n\n### ASSEMBLEIA AGE entregue em 17/06/2026\n\n**O QUE aconteceu:** A assembleia aprovou mudanças na estrutura administrativa do Fundo.\n\n**Resumo:** O Fundo decidiu transferir sua administração para uma nova instituição, alterar a forma de remuneração dos prestadores de serviços e reformar seu regulamento.\n\n**Trecho-chave:**\n\"Em 19 de setembro de 2025, o Administrador Atual, a JPP CAPITAL GESTÃO DE RECURSOS LTDA., sociedade empresária limitada, com sede na cidade de São Paulo, estado de São Paulo, na Avenida Presidente Juscelino Kubitschek, nº 28, 3º andar, cj. 31, Vila Nova Conceição, inscrita no CNPJ sob o nº 13.516.035/0001-20 (“JPP”), e a FAR – FATOR ADMINISTRAÇÃO DE RECURSOS LTDA., com sede na cidade de São Paulo, estado de São Paulo, na Rua Dr. Renato Paes de Barros, nº 1.017, 12º andar, inscrita no CNPJ sob o nº 01.861.016/0001-51 (“FAR” e, em conjunto com a JPP, “Gestores”) receberam proposta apresentada pelo JPP CAPITAL RECEBÍVEIS IMOBILIÁRIOS FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 30.982.880/0001-00, gerido pela JPP (“JPPA”), sujeita ao atendimento de determinadas condições precedentes (“Proposta de Aquisição Inicial JPPA”).\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 71.95
+  },
+  "parecer": {
+    "id": 1001362,
+    "data_entrega": "29/09/2025 19:05",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Ourinvest JPP Fundo de Investimento Imobiliário- FII em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos "
+  }
+}

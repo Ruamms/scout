@@ -1,0 +1,48 @@
+{
+  "ticker": "VGPR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T21:17:44",
+  "relatorio": {
+    "id": 1223716,
+    "data_entrega": "17/06/2026 19:38",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Alocação de Ativos**: O fundo encerrou o mês de maio com 103,3% de seu patrimônio líquido alocações em ativos-alvo, distribuídas entre CRIs (32,33%), FIIs (46,92%) e outros ativos como ações e imóveis (20,75%).\n\n2. **Operações de Venda e Recompra**: Houve vendas líquidas de R$14,6 milhões em CRIs e cotas de FIIs, com destaque à venda de R$20,0 milhões do CRI VGRI Mez.\n\n3. **Compras de Ativos**: Compras de R$1,9 milhões em cotas de SPE foram realizadas na carteira VALOR.\n\n4. **Carteira de CRIs**: A carteira de CRIs incluiu títulos como CRI VGRI Mez (5,48%), CRI Scala Datacenter 2S (4,97%) e CRI Sanema 22G0701494 (4,81%).\n\n5. **Carteira de FIIs**: A carteira de FIIs incluiu ativos como FII Aquisição de Unidades FII - Residencial (7,30%), FII Valora FOF - FOF (13,49%) e FII Valora CRI Pré Subordinada - Recebíveis (23,22%).\n\n6. **Operação Antecipada**: Em meados de junho, a gestão decidiu antecipar o vencimento do CRI Manhattan 161S, que representa 1,97% do patrimônio líquido do fundo.\n\n7. **Vacância e Inadimplência**: O relatório não menciona nenhuma informação sobre vacância ou inadimplência dos ativos.\n\n8. **Distribuição de Rendimentos**: A distribuição de rendimentos referente ao mês de maio foi de R$0,08 por cota, resultando em uma rentabilidade líquida de 11,8% ao ano sobre o valor da cota patrimonial no final de abril.\n\n9. **Risco e Qualidade de Ativos**: Todos os CRIs da carteira do fundo encontram-se adimplentes, e a gestão considera que a carteira continua saudável.\n\n### O que observar em seguida:\n1. A evolução das operações de venda e recompra futura de CRIs.\n2. As próximas movimentações na carteira de FIIs e outros ativos."
+  },
+  "comunicados": {
+    "ids": [
+      1236013,
+      1214034,
+      1068534,
+      1029934
+    ],
+    "datas": [
+      "30/06/2026",
+      "08/06/2026",
+      "23/12/2025",
+      "06/11/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O QUE aconteceu:** A Gestora e o Administrador do VGPR11 anunciaram a distribuição de resultados mensais aos cotistas.\n\n**Resumo:** O Fundo VGPR11 pagará R$ 0,06 por cota, totalizando R$ 2.761.322,82, no dia 07/07/2026, a todos os investidores que detenham cotas no fechamento dos mercados do dia 06/07/2026.\n\n**Trecho-chave:**\n\"Nos termos da política de distribuição prevista nos documentos da oferta do Fundo, será pago o valor de R$ 0,06 (seis centavos) por cota, perfazendo o montante total de R$ 2.761.322,82 (dois milhões, setecentos e sessenta e um mil, trezentos e vinte e dois reais e oitenta e dois centavos ) no dia 07/07/2026, aos investidores que detenham cotas do VG PR11 no fechamento dos mercados do dia 06/07/2026.\"\n\n### COMUNICADO AO MERCADO entregue em 08/06/2026\n\n**O QUE aconteceu:** A Gestora e o Administrador do VGPR11 anunciaram a distribuição de resultados mensais aos cotistas.\n\n**Resumo:** O Fundo VGPR11 pagará R$ 0,08 por cota, totalizando R$ 3.681.763,76, no dia 08/06/2026, a todos os investidores que detenham cotas no fechamento dos mercados do dia 05/06/2026.\n\n**Trecho-chave:**\n\"Nos termos da política de distribuição prevista nos documentos da oferta do Fundo, será pago o valor de R$ 0,08 (oito centavos) por cota, perfazendo o montante total de R$ 3.681.763,76 (três milhões, seiscentos e oitenta e um mil, setecentos e sessenta e três reais e setenta e seis centavo ) no dia 08/06/2026, aos investidores que detenham cotas do VG PR11 no fechamento dos mercados do dia 05/06/2026.\"\n\n### ASSEMBLEIA AGO entregue em 23/12/2025\n\n**O QUE aconteceu:** A Assembleia Geral Ordinária do Fundo não foi instalada devido à falta de quórum.\n\n**Resumo:** Não houve quórum para a Assembleia Geral Ordinária programada para o dia 8 de dezembro de 2025. As Demonstrações Contábeis foram automaticamente aprovadas, conforme previsto na Resolução CVM n.º 175.\n\n**Trecho-chave:**\n\"Em virtude do não comparecimento de quaisquer cotistas e, diante da ausência de opinião modificada nas Demonstrações Contábeis devidamente auditadas do exercício social findo em 30 de junho de 2025, consideram-se automaticamente aprovadas as referidas Demonstrações Contábeis, nos termos do artigo 71 da Resolução CVM n.º 175, de 23 de dezembro de 2022.\"\n\n### ASSEMBLEIA AGO entregue em 06/11/2025\n\n**O QUE aconteceu:** Foi emitido um edital para a Assembleia Geral Ordinária.\n\n**Resumo:** O Fundo convocou os cotistas para uma Assembleia Geral Ordinária no dia 8 de dezembro de 2025, às 11:00, com o objetivo de deliberar sobre a aprovação das contas e demonstrações contábeis do exercício social encerrado em 30 de junho de 2025.\n\n**Trecho-chave:** \n\"O BANCO DAYCOVAL S.A. , sociedade com sede na Cidade de São Paulo, Estado de São Paulo, na Avenida Paulista, 1.793, 9º andar, Bela Vista, São Paulo - SP, CEP: 01311-200, inscrita no CNPJ/ME sob o nº 62.232.889/0001-90, na qualidade de instituição administradora do Valora Imobiliário Multiestratégia Premium Fundo de Investimento Imobiliário de Responsabilidade Limitada, inscrito no CNPJ/ME sob o nº 50.180.894/0001-17 (“Administradora” e “Fundo”, respectivamente), nos termos do regulamento do Fundo, vem por meio desta, convocar V. Sas. (‘Cotistas’) para a Assembleia Geral Ordinária ('Assembleia'), a ser realizada no dia 8 de dezembro de 2025, às 11:00, para que seja deliberada a seguinte matéria, conforme ordem do dia:\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1018771,
+    "data_entrega": "22/10/2025 21:57",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos fundos de investimento imobiliário."
+  }
+}

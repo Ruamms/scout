@@ -1,0 +1,42 @@
+{
+  "ticker": "TVOI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:20:26",
+  "relatorio": {
+    "id": 1228507,
+    "data_entrega": "25/06/2026 18:26",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Composição da Carteira:**\n   - O portfólio do Fundo está composto por 19 Fundos Imobiliários, representando 98,8% do patrimônio líquido.\n   - A carteira tem maior concentração em fundos de tijolo (shoppings e corporativo) e exposição relevante a fundos de fundos.\n\n2. **Operações na Carteira:**\n   - Reduziu integralmente a exposição em 4 FIIs, considerando risco específico ou patamares de negociação pouco atrativos.\n   - Realocou recursos após vendas para manter estratégia aplicada até então.\n\n3. **Distribuição e Rentabilidade:**\n   - Distribuiu R$ 0,698602 por cota no mês de abril/2026, equivalente a 0,69% do valor da cota atualizada por IPCA.\n   - O Fundo já distribuiu 3,80% do valor da cota atualizada por IPCA desde o início.\n\n4. **Indicadores Financeiros:**\n   - Patrimônio Líquido do Fundo Feeder: R$ 306.941.067,94.\n   - Índice de subordinação do Fundo Master: 19%.\n   - Índice de cobertura (2,33x) para a cota sênior.\n\n5. **Risco e Estrutura:**\n   - O fundo apresenta riscos relacionados ao crédito, liquidez, mercado e derivativos.\n   - A estrutura do Fundo inclui uma cota sênior que fará jus a dividendos mensais de 9,00% ao ano.\n\n### O que Observar em Seguida:\n1. **Monitoramento da Carteira:** Verificar se as vendas realizadas têm impacto positivo na rentabilidade do fundo.\n2. **Riscos Associados:** Atentar para os riscos de crédito e mercado, especialmente com a volatilidade atual."
+  },
+  "comunicados": {
+    "ids": [
+      1178842,
+      1178838
+    ],
+    "datas": [
+      "04/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "**O QUE aconteceu:** A assembleia realizada não obteve votos suficientes para deliberar sobre a matéria submetida.\n\n**Resumo:** A BEM Distribuidora de Títulos e Valores Mobiliários realizou uma consulta formal, mas não recebeu os votos necessários dos cotistas. Como resultado, a Demonstração contábil do Fundo foi aprovada automaticamente, enquanto a orientação de voto para o Fundo Investido não foi deliberada.\n\n**Citação:** \"Em razão da ausência de recebimento do(s) voto(s) do(s) cotista(s) detentor(es) da totalidade das cotas emitidas, a Consulta Formal convocada em 31 de março de 2026, foi concluída.\" (p. 1)\n\n**Conexão com o contexto:** A ausência de votos pode indicar uma baixa participação dos cotistas na assembleia, que é um sinal importante para a liquidez e governança do fundo."
+  },
+  "retrato": {
+    "selo": "Histórico insuficiente",
+    "nivel": "insuficiente",
+    "alertas": [
+      "Fundo novo — histórico curto"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1152042,
+    "data_entrega": "31/03/2026 23:19",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 19 de novembro de 2025 a 31 de dezembro de 2025, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de inv"
+  }
+}

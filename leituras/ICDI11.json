@@ -1,0 +1,27 @@
+{
+  "ticker": "ICDI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T21:28:49",
+  "comunicados": {
+    "ids": [
+      1246532,
+      1243479,
+      1158189,
+      1141688
+    ],
+    "datas": [
+      "14/07/2026",
+      "10/07/2026",
+      "09/04/2026",
+      "20/03/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 14/07/2026\n\n**O que aconteceu:** A Intrag Distribuidora de Títulos e Valores Mobiliários Ltda. aprovou a oferta pública primária de novas cotas da 2ª emissão do ITAÚ CRÉDITO IMOBILIÁRIO CDI Fundo de Investimento Imobiliário Responsabilidade Limitada.\n\n**Resumo:** O fundo está autorizado a emitir novas cotas, com a coordenação do Itaú BBA Assessoria Financeira S.A., sob o regime de melhores esforços de colocação.\n\n**Trecho-chave:**\n\"Por meio desse ato, o Administrador aprovou a realização da oferta pública de distribuição das novas cotas da 2ª Emissão do Fundo (‘Novas Cotas’ e, em conjunto com as cotas já emitidas pelo Fundo, ‘Cotas’), a serem colocadas em série única...\"\n\n### COMUNICADO AO MERCADO entregue em 10/07/2026\n\n**O que aconteceu:** A Intrag Distribuidora de Títulos e Valores Mobiliários Ltda. alterou o regulamento do ITAÚ CRÉDITO IMOBILIÁRIO CDI Fundo de Investimento Imobiliário Responsabilidade Limitada.\n\n**Resumo:** O fundo modificou o cronograma da Taxa Global, ampliando o período de aplicação das alíquotas reduzidas sem aumento de encargos aos cotistas.\n\n**Trecho-chave:**\n\"Nesta data, foi celebrado o ‘Instrumento Particular De Alteração Do Regulamento Do Itaú Crédito Imobiliário CDI Fundo De Investimento Imobiliário Responsabilidade Limitada’, por meio do qual o Administrador e o Gestor, alteraram o Regulamento do Fundo...\"\n\n### ASSEMBLEIA AGE entregue em 09/04/2026\n\n**O que aconteceu:** A assembleia geral extraordinária aprovou a possibilidade de aquisição de Ativos Conflitados pelo fundo.\n\n**Resumo:** Os cotistas aprovaram a aquisição, pelo Fundo, de certificados de recebíveis imobiliários (CRI), cotas de fundos de investimento imobiliário (FII) e outras ações até o limite do patrimônio líquido do Fundo.\n\n**Trecho-chave:**\n\"Diante do exposto, foram APROVADOS, sem qualquer ressalva ou restrição, pelos Cotistas representando 68,17% (sessenta e oito vírgula dezessete por cento) das cotas emitidas do Fundo, os itens postos...\"\n\n### ASSEMBLEIA AGE entregue em 20/03/2026\n\n**O que aconteceu:** A assembleia geral extraordinária convocada para discutir a possibilidade de aquisição de Ativos Conflitados foi realizada.\n\n**Resumo:** A assembleia foi convocada para deliberar sobre a aquisição, pelo Fundo, de certificados de recebíveis imobiliários (CRI), cotas de fundos de investimento imobiliário (FII) e outras ações até o limite do patrimônio líquido do Fundo.\n\n**Trecho-chave:**\n\"Prezados Senhores, \nINTRAG DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. , sociedade empresária limitada, inscrita no Cadastro Nacional da Pessoa Jurídica (“CNPJ”) sob o nº 62.418.140/0001 -31, com sede na Avenida Brigadeiro Faria Lima, nº 3.500, 4º Andar, Itaim Bibi, CEP 04.538-132, Cidade de São Paulo, Estado de São Paulo, na qualidade de instituição administradora (“Administrador”) do ITAÚ CRÉDITO IMOBILIÁRIO CDI FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA...\"\n\n**Conexão com indicadores:** A aprovação da aquisição de Ativos Conflitados pode impactar o patrimônio líquido do fundo, conforme descrito nos indicadores."
+  },
+  "modelo": "qwen2.5:7b"
+}

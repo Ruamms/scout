@@ -1,0 +1,49 @@
+{
+  "ticker": "FCFL11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T21:02:17",
+  "relatorio": {
+    "id": 1214311,
+    "data_entrega": "08/06/2026 18:52",
+    "texto": "### Fatos do Relatório:\n\n1. **Obra de Manutenção e Melhoria:**\n   \"O Insper realizou uma obra de manutenção e melhoria no ativo com o objetivo de solucionar um entupimento recorrente na rede hidráulica, correlacionada ao ralo exposto da área externa do andar recreativo do imóvel. Em benefício do ativo, dado que a manutenção e melhoria demandaria um reparo e troca de quase que 100% do piso da área externa, o locatário aproveitou para investir no referido andar, com o aval do Fundo, para a adequação de uma nova quadra poliesportiva e arquibancada mais modernas.\" (p. 4)\n\n2. **Taxa de Ocupação:**\n   \"Até a presente data, a taxa de ocupação do Fundo é de 100%.\" (p. 5)\n\n3. **Contratos de Locação:**\n   \"86% dos contratos de locação firmados com os inquilinos do imóvel não possuem direito a uma eventual revisão de valores de locação, pois devem seguir majoritariamente as regras aplicáveis a contratos de Built to Suit – BTS (atípicos).\" (p. 6)\n\n4. **Distribuição de Resultados:**\n   \"O FUNDO deverá distribuir aos seus cotistas, no mínimo, 95% do resultado auferido, apurado segundo o regime de caixa.\" (p. 12)\n\n5. **Cotação e Volume no Mercado Secundário:**\n   \"Cotas negociadas: 25.429; Cotação de fechamento: R$1 25,78; Volume: R$ 3.165.618,90.\" (p. 13)\n\n### O que observar em seguida:\n- Monitorar a conclusão do projeto de expansão e melhoria no imóvel.\n- Verificar se haverá impacto financeiro significativo com o reembolso ao locatário."
+  },
+  "comunicados": {
+    "ids": [
+      1185781,
+      1124895,
+      1185779,
+      1173611
+    ],
+    "datas": [
+      "11/05/2026",
+      "27/02/2026",
+      "11/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Comunicado ao Mercado entregue em 11/05/2026\n\n**O QUE aconteceu:** As contas anuais do FII Campus Faria Lima foram aprovadas na assembleia geral de cotistas realizada em 4 de maio de 2026.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 04 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\" (p. 1)\n\n---\n\n### Comunicado ao Mercado entregue em 27/02/2026\n\n**O QUE aconteceu:** A administradora informou que os Informes de Rendimentos referentes ao ano de 2025 estão disponíveis exclusivamente por meio digital, no Portal do Investidor.\n\n**Resumo:** A administradora notificou aos cotistas e ao mercado sobre a disponibilização dos Informes de Rendimentos de 2025 por meio digital, conforme previsto na Instrução Normativa RFB nº 2.060/2021.\n\n**Trecho-chave:**\n\"Com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos referentes ao ano de 2025, já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital.\" (p. 1)\n\n---\n\n### Assembleia AGO entregue em 11/05/2026\n\n**O QUE aconteceu:** A assembleia geral de cotistas aprovou as contas anuais do FII Campus Faria Lima referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia geral de cotistas realizada via manifestação de voto aprovou as contas e demonstrações contábeis do Fundo, acompanhadas do relatório do auditor independente, referentes ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\" (p. 4)\n\n---\n\n### Assembleia AGO entregue em 29/04/2026\n\n**O QUE aconteceu:** A administradora convocou os cotistas para a assembleia geral com prazo até 4 de maio de 2026 para aprovar as contas e demonstrações contábeis do FII Campus Faria Lima referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A administradora convocou os cotistas para a assembleia geral com prazo até 4 de maio de 2026, para deliberarem sobre a aprovação das contas e demonstrações contábeis do Fundo referente ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aos Cotistas do FUNDO DE INVESTIMENTO IMOBILIARIO - FII CAMPUS FARIA LIMA, a administradora convocou para a Consulta Formal, com prazo de recebimento de votos até 04 de maio de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\" (p. 1)"
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 123.5
+  },
+  "parecer": {
+    "id": 1132240,
+    "data_entrega": "10/03/2026 15:28",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira d a Classe Única de Cotas do Fundo de Investimento Imobiliário - FII Campus Faria Lima Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo "
+  }
+}

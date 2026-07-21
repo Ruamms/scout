@@ -1,0 +1,39 @@
+{
+  "ticker": "VERE11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T22:05:39",
+  "comunicados": {
+    "ids": [
+      1196508,
+      1026996,
+      1026941,
+      1226899,
+      1199687
+    ],
+    "datas": [
+      "15/05/2026",
+      "03/11/2025",
+      "03/11/2025",
+      "24/06/2026",
+      "19/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O que aconteceu em 19/05/2026\n\n**Título:** Deliberação sobre a aprovação das contas e demonstrações contábeis do Fundo.\n\n**Resumo:** A Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. convocou os cotistas para deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025.\n\n**Trecho-chave:**\n\"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas, conforme disponíveis para consulta nos sites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\"\n\n---\n\n### O que aconteceu em 19/06/2026\n\n**Título:** Aprovação das contas e demonstrações contábeis do Fundo.\n\n**Resumo:** A Assembleia Geral Extraordinária do Fundo aprovou as contas e demonstrações contábeis relativas ao exercício social findo em 31/12/2025, devidamente auditadas.\n\n**Trecho-chave:**\n\"APROVADA\nAPROVADA\"\n\n---\n\n### O que aconteceu em 03/11/2025\n\n**Título:** Destituição e substituição da atual Gestora do Fundo.\n\n**Resumo:** A Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. destituíu a Atual Gestora, REAG Hieron Investimentos Ltda., e substituiu-a pela Nova Gestora, Vortx Capital Gestão de Recursos Ltda., para exercer a gestão do Fundo a partir de 03/11/2025.\n\n**Trecho-chave:**\n\"Considerando a aprovação do item acima, alterar o quadro “Das Taxas – Taxa Máxima Global” presente no Anexo Descritivo do Regulamento do Fundo, para realizar a redução da Taxa de Gestão, passando o artigo a vigorar conforme indicado no quadro abaixo:\n\nTAXA MÁXIMA GLOBAL\nO Administrador e o Gestor receberão, pelos respectivos serviços de administração fiduciária e de gestão de recursos prestados em favor da Classe, remuneração conjunta, Taxa Máxima Global, composta de valor equivalente ao percentual de 0,275% ao ano, apura do sobre o valor do patrimônio líquido da Classe, sendo 0,175% correspondente à remuneração do Administrador, observado um mínimo mensal de R$ 12.500,00 (doze mil e quinhentos reais) e 0,10% correspondente à remuneração do Gestor, observado um mínimo mensa l de R$ 25.000,00 (vinte e cinco mil reais), atualizado, anualmente, pela variação positiva do índice Nacional de Preços ao Consumidor Amplo, conforme calculado e divulgado pelo Instituto Brasileiro de Geografia e Estatística – IBGE (“IPCA”), ou outro índice que venha a substituí-lo, a partir de setembro de 2025. O mínimo total da Taxa Máxima Global será de R$ 37.500,00 (trinta e sete mil e quinhentos reais).\"\n\n---\n\n### O que aconteceu em 15/05/2026\n\n**Título:** Contratação de Nova Gestora.\n\n**Resumo:** A Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. informou a contratação da Kineia Investimentos Ltda., para substituir a Atual Gestora, Vortx Capital Gestão de Recursos Ltda., a partir do fechamento dos mercados em 15/05/2026.\n\n**Trecho-chave:**\n\"Em Assembleia Extraordinária de Cotista, realizada em 02 de março de 2026, foi deliberada, entre outros assuntos, a contratação da KINEA INVESTIMENTOS LTDA., sociedade limitada, com sede Cidade de São Paulo, Estado de São Paulo, na Rua Minas de Prata, nº 30, 4º andar, inscrita no CNPJ sob o nº 08.604.187/0001-44 (“Nova Gestora”), para exercício da prestação de serviços de gestão da carteira do Fundo, em substituição à Vortx Capital Gestão de Recursos Ltda., sociedade inscrita no CNPJ sob o n° 09.645.906/0001-38, a partir do fechamento dos mercados do dia 15 de maio de 2026.\"\n\n---\n\n**Conexão com o contexto:**\n- A substituição da Gestora e a redução da Taxa Máxima Global (documentos de 03/11/2025) estão alinhadas com as mudanças gerenciais informadas em 15/05/2026."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1152259,
+    "data_entrega": "01/04/2026 00:39",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Vereda - FII Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Br"
+  }
+}

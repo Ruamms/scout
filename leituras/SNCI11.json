@@ -1,0 +1,49 @@
+{
+  "ticker": "SNCI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T21:13:03",
+  "relatorio": {
+    "id": 1228591,
+    "data_entrega": "25/06/2026 18:53",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Distribuição de Rendimentos:** Em maio, o Fundo distribuiu R$ 1,00 por cota, em linha com o guidance publicado.\n   > \"Em linha com nossa previsibilidade, o Fundo distribuiu R$ 1,00 por cota em maio e anunciou uma nova distribuição de R$ 1,00 por cota para junho, seguindo o guidance publicado.\" (p. 3)\n\n2. **Movimentações na Carteira:** Compras e vendas foram realizadas no mês.\n   > \"Compras: R$ 0,10 milhões do CRI LocPay Sênior; R$ 4,23 milhões do CRI Ceratti Magna; R$ 0,87 milhões do CRI Bit Barueri; R$ 0,62 milhões do CRI Copagril; R$ 5,00 milhões do CRI Mahalo.\" (p. 6)\n   > \"Vendas: R$ 5,02 milhões do CRI MZM Série 3; R$ 19,05 milhões do CRI GS Souto.\" (p. 6)\n\n3. **Ativos em Tratamento Especial:** Quatro ativos estão em tratamento especial devido a inadimplências/repactuações.\n   > \"Encerramos o mês de maio com quatro ativos em tratamento especial devido a inadimplências/repactuações: CRI AIZ, CRI Vanguarda, CRI RDR e CRI Solar Junior.\" (p. 7)\n\n4. **CRI Vanguarda:** O CRI está oficialmente em processo de recuperação após serem verificados desvios de vendas realizados pela construtora.\n   > \"Com isso, o CRI está oficialmente em processo de recuperação.\" (p. 7)\n\n5. **CRI AIZ:** A repactuação final da operação foi aprovada na Assembleia no dia 24 de dezembro de 2025, com carências em curso.\n   > \"Com isso, os ativos estão novamente adimplentes (embora com carências em curso) e aplicados os haircuts nas séries 301 e 302 a partir da negociação de venda do principal imóvel em garantia.\" (p. 8)\n\n6. **CRI RDR:** A operação foi encerrada sem prorrogação, com medidas conservadoras para recuperação dos créditos.\n   > \"Com isso, privilegiando a transparência ao investidor, o ativo encontra-se atualmente em recuperação e devidamente marcado a preço de custo na cota patrimonial do Fundo.\" (p. 10)\n\n7. **CRI Solar:** O evento de crédito foi constatado em 21 de novembro de 2025, com a securitizadora determinando o início dos trabalhos operacionais e jurídicos para recuperação.\n   > \"Ainda estamos colhendo mais informações junto à securitizadora, o agente fiduciário e os investidores majoritários, sendo que, no momento, ainda não é possível estimar uma recuperabilidade precisa.\" (p. 10)\n\n8. **Alavancagem:** A alavancagem líquida do Fundo segue negativa.\n   > \"A alavancagem líquida segue negativa(-9,60% do PL), com volume de R$ -39,10 MM em compromissadas e o SNCI como credor líquido.\" (p. 3)\n\n### O que Observar Em Seguida:\n- Monitorar a recuperação dos ativos em tratamento especial, especialmente CRI Vanguarda, AIZ, RDR e Solar.\n- Atentar para as distribuições de rendimentos futuras conforme o guidance publicado."
+  },
+  "comunicados": {
+    "ids": [
+      1189702,
+      1182241,
+      1182240,
+      1173634
+    ],
+    "datas": [
+      "13/05/2026",
+      "07/05/2026",
+      "07/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 13/05/2026\n\n**O QUE aconteceu:** A BTG Pactual Serviços Financeiros S.A. DTVM informou sobre a aprovação de atualizações na forma de divulgação da remuneração dos Prestadores de Serviços Essenciais.\n\n**Resumo:** A administradora do fundo SUNO RECEBÍVEIS IMOBILIÁRIOS FII atualizou a forma de divulgação da remuneração, passando a utilizar a Ferramenta ANBIMA para essa informação.\n\n**Trecho-chave:**\n\"1. Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 07/05/2026\n\n**O QUE aconteceu:** A assembleia geral de cotistas aprovou as contas anuais do fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Durante uma assembleia realizada via manifestação de voto, os cotistas aprovaram as demonstrações financeiras auditadas do exercício social de 2025.\n\n**Trecho-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 07/05/2026\n\n**O QUE aconteceu:** Realizada uma assembleia geral de cotistas para aprovar as contas anuais do exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi realizada via manifestação de voto e aprovou as contas e demonstrações contábeis do Fundo referente ao exercício social findo em 31 de dezembro de 2025.\n\n---\n\n### ASSEMBLEIA AGO entregue em 29/04/2026\n\n**O QUE aconteceu:** A administradora convocou os cotistas para uma assembleia geral com o objetivo de aprovar as contas e demonstrações contábeis do exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A administradora convocou a assembleia para que os cotistas pudessem votar sobre a aprovação das contas e demonstrações contábeis do Fundo referente ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Rendimentos irregulares"
+    ],
+    "cota": 85.81
+  },
+  "parecer": {
+    "id": 1152244,
+    "data_entrega": "01/04/2026 00:28",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações finance iras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Suno Recebíveis Imobiliários Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa o exercício findo nessa data , de acordo com as práticas contábeis"
+  }
+}

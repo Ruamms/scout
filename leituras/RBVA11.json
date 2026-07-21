@@ -1,11 +1,11 @@
 {
   "ticker": "RBVA11",
-  "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-19T17:11:48",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T20:04:01",
   "relatorio": {
-    "id": 1228855,
-    "data_entrega": "25/06/2026 22:06",
-    "texto": "1. **Aquisições de Ativos**: O fundo adquiriu o imóvel Flagship Portobello Gabriel por R$ 81 milhões e três propriedades (Pátio Maria Antônia, Estácio e PBKIDS) por R$ 111,6 milhões. [página 3]\n2. **Novos Contratos de Aluguel**: O fundo firmou dois contratos de longo prazo com a Ultra para ocupar os imóveis localizados na Avenida Paulista e Duque de Caxias em São Paulo, expandindo sua exposição ao setor wellness para 5,1% do portfólio. [página 4]\n3. **Resultado Mensal**: O resultado mensal foi R$0,11 por ação e a distribuição foi R$0,09 por ação, seguindo as diretrizes semestrais de distribuição linearizada. [página 5]\n4. **Conclusão da 6ª Oferta de Ações**: O fundo concluiu sua 6ª oferta de ações, arrecadando aproximadamente R$ 96,5 milhões, que foram usados para apoiar as recentes aquisições e fortalecer a estrutura de capital. [página 6]\n5. **Recebimentos por Acordos de Vacância**: O fundo recebeu cerca de R$ 6,25 milhões relacionados a acordos de vacância, penalidades contratuais e indenizações, incluindo um valor adicional de R$ 2,75 milhões previsto para julho de 2026. [página 6]\n6. **Vacância**: A taxa de vacância física do portfólio é de 6,5%. [página 3]\n7. **Alavancagem e Dívidas**: O fundo possui um total de ativos de R$ 2 bilhões e passivos totais de R$ 341,76 milhões, resultando em uma alavancagem líquida de aproximadamente 0,86 (P/VP). [página 9]\n8. **Eventos Societários**: O fundo realizou a distribuição linearizada de R$ 0,09 por ação para o mês e anunciou que permanece inalterada. [página 7]\n\n**O que observar em seguida:**\n1. Progresso nas negociações de aluguel para os espaços vazios mencionados.\n2. Desenvolvimento das novas propriedades adquiridas, especialmente o Portobello Gabriel e as três propriedades adicionais (Pátio Maria Antônia, Estácio e PBKIDS)."
+    "id": 1260483,
+    "data_entrega": "20/07/2026 19:22",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Locação de Novos Espaços:** O Fundo celebrou dois contratos com a M3 Storage, uma empresa de self storage, ocupando imóveis em Santos/SP e no Bom Retiro, São Paulo/SP. Estes imóveis somam aproximadamente 5.026 m².\n\n2. **Vacância:** A vacância física do Fundo passou a ser de 6,9% no fechamento de junho, com a saída do Santander do imóvel localizado na Av. Senador Flaquer, 305, em Santo André.\n\n3. **Inadimplência:** A locatária Goodbe, do imóvel Monções, encontra-se inadimplente e uma ação de despejo foi ajuizada para retomada do imóvel.\n\n4. **Distribuição de Rendimentos:** A distribuição mensal foi de R$ 0,09/cota, seguindo o guidance para o semestre, com resultados extraordinários.\n\n5. **Novas Locações:** Cinco novas locações foram realizadas no primeiro semestre, algumas ainda sujeitas a períodos de carência ou fases iniciais de maturação.\n\n6. **Alavancagem:** O Fundo possui uma alavancagem de 12,66% do patrimônio líquido, com CRI (Certificado de Recebíveis Imobiliários) a vencer em diferentes períodos até 2035.\n\n7. **Vacância e Inadimplência:** O Fundo está trabalhando na redução gradual da vacância, focando na qualidade de ocupação e diversificação do portfólio.\n\n8. **Cota Patrimonial:** A cota patrimonial do fundo é de R$ 10,68, com um valor de mercado de R$ 9,15 (12m: +8,28%).\n\n### O que Observar em Seguida:\n- Monitorar a evolução das novas locações e sua contribuição para o resultado recorrente.\n- Atentar-se à resolução da inadimplência Goodbe e seu impacto nos rendimentos."
   },
   "comunicados": {
     "ids": [
@@ -38,6 +38,16 @@
     "texto": "### 29/06/2026 - Novas locações para M3 Storage em Santos e Bom Retiro\n\n**Resumo:** O fundo assinou contratos de locação com a empresa M3 Storage, que já é inquilina de um imóvel do Fundo, para dois novos imóveis localizados em Santos e no Bom Retiro. A área total dos imóveis é de 521m² (Bom Retiro) e 4.505 m² (Santos). O prazo da locação é de cinco anos.\n\n*\"As locações foram firmadas com a M3 STORAGE BRASIL SELF STORAGE LOCAÇÕES DE ESPAÇOS INDIVIDUAIS LTDA, multinacional presente em mais de 7 países que atua com disponibilização de espaços com segurança, monitoramento, disponibilidade integral de horário e acesso ideal para operação de self storage e de varejo last mile.\"* (p.1)\n\n### 14/07/2026 - Nova locação do térreo do imóvel Centro Jundiaí\n\n**Resumo:** O fundo assinou contrato de locação com a empresa Geo Cosméticos para dois pavimentos do imóvel localizado na Rua Barão de Jundiaí, 884. A área total dos dois andares é de aproximadamente 2.987,81 m². O prazo da locação é de dez anos.\n\n*\"A locação foi firmada com a Geo Cosméticos, uma empresa brasileira com 32 anos de atuação que atua com produtos de beleza e cuidados pessoais.\"* (p.1)\n\n### 28/05/2026 - Novas locações nos imóveis Paulista e Duque de Caxias\n\n**Resumo:** O fundo assinou contratos de locação com a rede de academias Ultra para dois imóveis localizados na Avenida Paulista e na Avenida Duque de Caxias, ambos em São Paulo. Os contratos têm vigência de 20 anos.\n\n*\"Os contratos foram firmados com ULTRAINVEST INVESTIMENTOS E PARTICIPAÇÕES LTDA , holding de uma rede de academias em expansão no Brasil, com foco em operações de grande porte, equipamentos de última geração e aulas diversas focadas em saúde física e mental.\"* (p.1)\n\n### 30/04/2026 - Assembleia Geral Ordinária e Extraordinária\n\n**Resumo:** A assembleia geral ordinária e extraordinária do fundo aprovou as demonstrações financeiras referentes ao exercício encerrado em 31 de dezembro de 2025. Além disso, foram eleitos três novos membros para o Comitê.\n\n*\"Os cotistas que representam 0,91% ( zero vírgula noventa e um por cento) do total de cotas emitidas pelo Fundo  e aptos ao exercício do direito de voto, deliberaram por aprovar as Demonstrações Financeiras do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\"* (p.1)\n\n---\n\n**Conexão com indicadores:** As novas locações e aquisições contribuem para reduzir a vacância física, aumentando a diversificação setorial da carteira do fundo e fortalecendo a qualidade média de crédito dos inquilinos."
   },
   "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 9.15
+  },
+  "anterior": {
+    "gerada_em": "2026-07-19T17:11:48",
+    "relatorio_data": "25/06/2026 22:06",
     "selo": "Atenção",
     "nivel": "atencao",
     "alertas": [

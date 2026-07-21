@@ -1,0 +1,30 @@
+{
+  "ticker": "TIOM11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T21:33:24",
+  "comunicados": {
+    "ids": [
+      1175593,
+      1175581
+    ],
+    "datas": [
+      "30/04/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "**30/04/2026 - Aprovada a Demonstração Contábil do exercício social findo em 31 de dezembro de 2025**\n\nA aprovação automática da Demonstração Contábil do Fundo relativamente ao exercício social findo em 31 de dezembro de 2025 foi deliberada durante a Assembleia realizada de forma não presencial, conforme previsto no Parágrafo 3°, do Artigo 71 da Resolução CVM nº 175/2022. \n\n*\"Em razão do recebimento do (s) voto(s) formalizado(s) pelo(s) cotista(s) do Fundo, a presente consulta foi concluída, conforme previsto na convocação e, após apuração da (s) resposta(s) recebida(s), verificou-se a APROVAÇÃO AUTOMÁTICA da Demonstração Contábil relativamente ao exercício social findo em 31 de dezembro de 2025, conforme previsto no Parágrafo 3°, do Artigo 71 da RCVM 175/22.\"* (p. 1)\n\nEsta aprovação ocorre após a convocação realizada aos cotistas para manifestarem suas posições até o dia 30 de abril de 2026."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1152047,
+    "data_entrega": "31/03/2026 23:21",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o período de 4 de dezembro de 2025 a 31 de dezembro de 2025, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de inve"
+  }
+}

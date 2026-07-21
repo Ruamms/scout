@@ -1,0 +1,36 @@
+{
+  "ticker": "RDLS11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T21:18:27",
+  "comunicados": {
+    "ids": [
+      911387,
+      1198759,
+      1198757,
+      1179446
+    ],
+    "datas": [
+      "26/05/2025",
+      "18/05/2026",
+      "18/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 26/05/2025\n\n**O QUE aconteceu:** A administradora BTG Pactual Serviços Financeiros S.A. DTVM informou sobre a migração do segmento de negociação das cotas da Classe para o mercado de balcão organizado.\n\n**Resumo:** A migração visa alinhar a dinâmica operacional e de liquidez com o perfil da Classe, sem impactar financeiramente os cotistas.\n\n**Trecho-chave:**\n\"Com base nessa prerrogativa, a Administradora, conforme orientação da Gestora, protocolou junto à B3 S.A. – Brasil, Bolsa, Balcão (“B3”) uma solicitação de migração do segmento de negociação das cotas da Classe, atualmente admitidas à negociação no mercado de bolsa (ambiente de negociação tradicional da B3), para o mercado de balcão organizado, também administrado pela B3. Essa mudança tem como objetivo alinhar a negociação das cotas à dinâmica operacional e de liquidez mais compatível com o perfil da Classe.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 18/05/2026\n\n**O QUE aconteceu:** A assembleia geral de cotistas aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi realizada via manifestação de voto e aprovou as demonstrações financeiras auditadas do exercício social.\n\n**Trecho-chave:**\n\"Realizada via manifestação de voto enviada pelos Cotistas em 06 de maio de 2026. 4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 18/05/2026\n\n**O QUE aconteceu:** A assembleia geral de cotistas aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi realizada via manifestação de voto e aprovou as demonstrações financeiras auditadas do exercício social.\n\n**Trecho-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 04/05/2026\n\n**O QUE aconteceu:** A administradora BTG Pactual Serviços Financeiros S.A. DTVM convocou os cotistas para a assembleia geral com o objetivo de aprovar as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi convocada via plataforma eletrônica e os cotistas foram solicitados a manifestar seu voto até 06 de maio de 2026.\n\n**Trecho-chave:**\n\"i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151970,
+    "data_entrega": "31/03/2026 22:53",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira d a Classe Única de Cotas do JGP Desenvolvimento I Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo co"
+  }
+}

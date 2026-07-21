@@ -1,0 +1,48 @@
+{
+  "ticker": "XPHF11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:03:30",
+  "relatorio": {
+    "id": 1223193,
+    "data_entrega": "17/06/2026 11:11",
+    "texto": "### Fatos do Relatório Gerencial:\n\n1. **Patrimônio Líquido e Valor Patrimonial da Cota:** O patrimônio líquido do fundo é de R$ 351,074,436,51, com valor patrimonial da cota de R$ 9,53. (p. 2)\n   \n2. **Rendimento Distribuído e Yield Anualizado:** A distribuição de rendimentos foi de R$ 0,10/cota no mês, representando um yield anualizado de 16,34% com o gross-up do imposto de renda. (p. 2)\n\n3. **Portfólio e Alocação:** O fundo encerrou o mês com 95,65% do portfólio alocado em ativos-alvo, sendo 69,85% em CRIs, 9,41% em FIIs, 7,11% em Fundos Estruturados e 9,28% em Permutas Financeiras. (p. 3)\n\n4. **Movimentações no Portfólio:** Houve negociação de R$ 6,58 milhões na parte do portfólio relacionada a fundos imobiliários, com foco prioritariamente na geração de caixa. O fundo finalizou o mês com investimento em 16 FIIs totalizando R$ 28,66 milhões. (p. 3)\n\n5. **Cenário Macro:** No cenário doméstico, houve maior volatilidade nos ativos devido à antecipação das discussões relacionadas ao ambiente eleitoral e pressões inflacionárias decorrentes da alta do petróleo sobre as cadeias produtivas. (p. 3)\n\n6. **Desempenho dos FIIs:** As cotas dos FIIs apresentaram correção no mês, com os segmentos mais sensíveis à curva de juros tendo performance inferior, como lajes corporativas e shoppings. (p. 3)\n\n7. **Distribuição de Rendimentos:** A distribuição de rendimentos foi de R$ 0,10/cota no mês, representando yield anualizado de 16,34% com o gross-up do imposto de renda. (p. 2)\n\n8. **Risco e Tributação:** O fundo é isento de Imposto de Renda para cotistas que detêm volume inferior a 10% do total do fundo, desde que o fundo possua no mínimo 50 cotistas. (p. 2)\n\n### O que observar em seguida:\n- Monitorar as movimentações e desempenho dos FIIs, especialmente os segmentos mais sensíveis à curva de juros.\n- Observar a dinâmica do fluxo de caixa das obras oriundas das permutas financeiras."
+  },
+  "comunicados": {
+    "ids": [
+      1170634,
+      1096311,
+      1045633,
+      1045632
+    ],
+    "datas": [
+      "27/04/2026",
+      "29/01/2026",
+      "24/11/2025",
+      "24/11/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral Ordinária de Cotistas do XP Hedge Fund FII — 21/11/2025\n\n**O que aconteceu:** A assembleia geral ordinária de cotistas do fundo XP Hedge Fund FII ocorreu em 21 de novembro de 2025, na sede da XP Investimentos Corretora de Câmbio, Títulos e Valores Mobiliários S.A., de forma não presencial.\n\n**Resumo:** A assembleia aprovou as demonstrações financeiras do exercício social findo em 30.06.2025, conforme regulamentação aplicável.\n\n**Trecho-chave:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas:  \n(i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 30.06.2025, os quais estão disponíveis no website da CVM, através do endereço eletrônico https://www.gov.br/cvm/pt-br/assuntos/regulados/consultas-por-participante/fundos-de-investimento, seguindo a rota: Fundos Registrados > Inserir CNPJ do Fundo > Demonstrações contábeis.\"\n\n---\n\n### Comunicação de Apresentação Trimestral de Resultados — 4T25\n\n**O que aconteceu:** A XP Vista Asset Management informou os dados para participação na apresentação trimestral de resultados do fundo XP Hedge Fund FII, no quarto trimestre de 2025.\n\n**Resumo:** A apresentação será realizada em 26 de fevereiro de 2026, às 10h (horário de Brasília), com acesso via link fornecido.\n\n**Trecho-chave:**\n\"Quinta-feira, 26 de fevereiro de 2026\nÀs 10h00 (horário de Brasília)\nLink de acesso: \nhttps://bit.ly/call_xpsf_xphf\nLink para envio de perguntas:\nhttps://bit.ly/perguntas_xpsf_xphf\"\n\n---\n\n### Comunicação de Apresentação Trimestral de Resultados — 1T26\n\n**O que aconteceu:** A XP Vista Asset Management informou os dados para participação na apresentação trimestral de resultados do fundo XP Hedge Fund FII, no primeiro trimestre de 2026.\n\n**Resumo:** A apresentação será realizada em 21 de maio de 2026, às 17h (horário de Brasília), com acesso via link fornecido.\n\n**Trecho-chave:**\n\"Quinta-feira, 21 de maio de 2026\nÀs 17h00 (horário de Brasília)\nLink de acesso: \nhttps://bit.ly/call_xpsf_xphf\nLink para envio de perguntas:\nhttps://bit.ly/perguntas_xpsf_xphf\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1023916,
+    "data_entrega": "30/10/2025 10:16",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do XP Hedge Fund Fundo de Investimento Imobiliário - FII - Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotad"
+  }
+}

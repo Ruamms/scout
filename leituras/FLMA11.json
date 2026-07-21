@@ -1,0 +1,45 @@
+{
+  "ticker": "FLMA11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T21:54:15",
+  "relatorio": {
+    "id": 1227630,
+    "data_entrega": "24/06/2026 23:04",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Distribuição de dividendos**: O Fundo distribuiu R$ 1,14 por cota em junho de 2026, representando um decréscimo de 20,83% em relação ao mês anterior.\n   > \"O Fundo distribuiu, em 15 de junho de 2026, R$ 1,14 por cota, referente às receitas recebidas, às despesas incorridas e à reserva constituída em maio de 2026. O valor distribuído teve um decréscimo de 20,83% em relação ao mês anterior, o que corresponde a uma variação de R$ 0,30.\" (p. 3)\n\n2. **Receita do hotel**: A receita do hotel em maio foi de R$ 940,3 mil, representando uma redução de 24,6% em relação ao mês anterior.\n   > \"A receita do hotel recebida em maio foi de R$ 940,3 mil, apresentando redução de 24,6% em relação ao mês anterior.\" (p. 3)\n\n3. **Taxa de ocupação do hotel**: A taxa de ocupação do hotel em maio foi de 70,69%, com uma elevação de 1,23 ponto percentual em comparação a abril.\n   > \"A taxa de ocupação do hotel em maio foi de 70,69%, apresentando elevação de 1,23 ponto percentual em relação a abril.\" (p. 3)\n\n4. **Diária média**: A diária média no hotel em maio foi de R$ 1.339, representando um aumento de 12% em comparação ao mês anterior.\n   > \"A diária média em maio foi de R$ 1.339, ficando 12% acima do valor registrado no mês anterior.\" (p. 3)\n\n5. **Certificação LEED**: O Continental Square Faria Lima obteve a certificação LEED nível PLATINUM para \"Operações e Manutenção Edifícios Existentes\".\n   > \"O Continental Square Faria Lima Torre Comercial obteve a certificação LEED nível PLATINUM para 'Operações e Manutenção Edifícios Existentes'\" (p. 3)\n\n6. **Aumento nas despesas**: Em maio, houve um aumento de 30,22% nas despesas totais, principalmente devido ao reembolso do investimento efetuado pela Accor.\n   > \"Em maio, houve aumento de 30,22% nas despesas totais, resultantes principalmente do aumento nas despesas com benfeitorias do hotel. O pagamento das benfeitorias corresponde ao reembolso do investimento efetuado pela Accor, com 24 meses de carência.\" (p. 4)\n\n7. **Recolhimento de fundo de reserva extra**: Foi pago a décima sétima parcela referente ao recolhimento de fundo de reserva extra para o retrofit do sistema de ar-condicionado da torre comercial.\n   > \"A cobrança ocorrerá em vinte e quatro parcelas e está sendo apropriada na rubrica de condomínio.\" (p. 4)\n\n8. **Ata da Consulta Formal aos Cotistas**: Foi realizada uma consulta formal aos cotistas sobre as Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025, bem como do relatório dos Auditores Independentes.\n   > \"Ata da Consulta Formal aos Cotistas, feita por correspondência, publicada em nosso site em 31 de março, a ser respondida até o dia 30 de abril de 2026 e publicada na data de 04 de maio de 2026.\" (p. 4)\n\n### O que observar em seguida:\n- **Taxa de ocupação do hotel**: A taxa de ocupação do hotel tem apresentado variações, com impactos no desempenho financeiro.\n- **Despesas e investimentos**: As despesas totais têm aumentado, especialmente com benfeitorias do hotel, o que pode afetar a rentabilidade."
+  },
+  "comunicados": {
+    "ids": [
+      977714,
+      1180502,
+      1152801
+    ],
+    "datas": [
+      "26/08/2025",
+      "05/05/2026",
+      "01/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 26/08/2025\n\n**O QUE aconteceu:** A administradora do Fundo Continental Square Faria Lima consultou os cotistas sobre a reativação do Comitê de Investimentos.\n\n**Resumo:** A BR-Capital, como administradora, convidou os cotistas para se manifestarem até 26 de setembro sobre a reativação do Comitê de Investimentos conforme previsto no Regulamento do Fundo. A própria Petros, uma das cotistas relevantes, expressou interesse em ser um membro.\n\n**Trecho-chave:** \"Análise e deliberação acerca da solicitação recebida da Fundação Petrobras de Seguridade Social - Petros, cotista relevante do Fundo, para reativação do Comitê de Investimentos conforme previsto no artigo 37 do Regulamento do Fundo.\"\n\n### ASSEMBLEIA AGO entregue em 05/05/2026\n\n**O QUE aconteceu:** A assembleia virtual dos cotistas aprovou as Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas votaram sobre as Demonstrações Financeiras e o relatório dos Auditores Independentes. A proposta foi aprovada por 88,761% das cotas votantes, com 0,146% reprovando e 5,312% abstendo-se.\n\n**Trecho-chave:** \"A proposta foi aprovada pelo voto de quotistas representantes de 168.884 cotas, ou seja 88,761% das cotas votantes; foi reprovada pelo voto de quotistas representantes de 277 cotas, ou seja 0,146% das cotas votantes; teve abstenção de quotistas representantes de 10.107 cotas, ou seja 5,312% das cotas votantes.\"\n\n### ASSEMBLEIA AGO entregue em 01/04/2026\n\n**O QUE aconteceu:** A assembleia virtual dos cotistas foi convocada para analisar e votar sobre as Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas foram convidados a votar online sobre as Demonstrações Financeiras. A plataforma de votação foi disponibilizada, mas não há informações sobre o resultado desta assembleia no documento fornecido.\n\n**Trecho-chave:** \"Análise e deliberação acerca das Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025, bem como do relatório dos Auditores Independentes.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 150.46
+  },
+  "parecer": {
+    "id": 1181706,
+    "data_entrega": "07/05/2026 12:42",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acim a referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do FII Continental Square Faria Lima - Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas ope rações e os seus fluxos de caixa para o exercício findo nessa d ata, de acordo com as práticas contábeis adotadas no Brasil, "
+  }
+}

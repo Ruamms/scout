@@ -1,11 +1,11 @@
 {
   "ticker": "VGHF11",
-  "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-19T22:34:52",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T20:05:15",
   "relatorio": {
-    "id": 1223711,
-    "data_entrega": "17/06/2026 19:36",
-    "texto": "1. **Venda de ativos**: O Fundo realizou vendas líquidas no montante de R$2,9 milhões em cotas de FIIs e R$13,5 milhões em CRIs durante maio (p. 1).\n2. **Decisão sobre CRI Manhattan 161S**: Em junho, a Gestão decidiu por vencimento antecipado do CRI Manhattan 161S, que representa 1,68% do PL do Fundo, após negociações para dação em pagamento serem improdutivas (p. 2).\n3. **Inadimplência**: Os CRIs Selina continuam marcados a ZERO na carteira do Fundo, enquanto os demais ativos permanecem adimplentes (p. 1).\n4. **Alavancagem**: O Fundo possui compromissos de recompra futura de CRIs no montante de R$43,3 milhões ao custo médio de CDI + 0,84% ao ano (p. 5).\n5. **Distribuição de rendimentos**: Em maio, o Fundo distribuiu R$0,07 por cota, com uma rentabilidade líquida de 10,9% ou IPCA – 0,7% ao ano sobre a cota patrimonial (p. 1).\n6. **Renda vs Valor**: A carteira VALOR representou 52,9% do total de Ativos-Alvo no final de maio, enquanto a carteira RENDA foi de 47,1% (p. 1).\n\nO que observar em seguida:\n- Movimentações futuras relacionadas ao CRI Manhattan 161S.\n- Eventuais novas vendas ou compras de ativos na carteira do Fundo."
+    "id": 1260255,
+    "data_entrega": "20/07/2026 19:03",
+    "texto": "### Fatos do Relatório Gerencial\n\n1. **Cota Patrimonial e Distribuição de Rendimentos:**\n   - A cota patrimonial sofreu uma variação negativa de R$0,15 por cota no mês de junho de 2026.\n   - A distribuição de rendimentos do mês foi de R$0,07 por cota, equivalente a uma rentabilidade líquida de 10,5% ou IPCA + 2,0% ao ano sobre o valor da cota patrimonial no final de maio de 2026.\n   - Ao longo dos últimos 12 meses, o Fundo acumulou uma distribuição de dividendos de R$0,89 por cota.\n\n2. **Carteira de Ativos:**\n   - O Fundo encerrou o mês de junho de 2026 com 102,3% do seu patrimônio líquido investido em ativos-alvo.\n   - A carteira de VALOR representou 52,7% do total de ativos-alvo, enquanto a carteira de RENDA representou 47,3%.\n\n3. **Operações com CRIs:**\n   - Houve a venda da totalidade da participação no CRI Tecnisa 397 e compra de participações adicionais nos CRIs João Dias e CRI Helbor 86E.\n   - Os CRIs Selina continuam marcados a zero na carteira do Fundo.\n\n4. **Inadimplência:**\n   - A inadimplência da carteira de crédito permaneceu baixa, com os demais ativos do Fundo encontrando-se adimplentes.\n\n5. **Movimentações na Carteira:**\n   - A Gestão decidiu por decretar o vencimento antecipado do CRI Manhattan 161S, que representa 1,72% do PL do Fundo.\n   - Não há necessidade de fazer provisão para perda neste investimento.\n\n### O que observar em seguida:\n- Monitorar a evolução da cota patrimonial e as distribuições de rendimentos.\n- Observar as movimentações na carteira, especialmente as vendas e compras de CRIs."
   },
   "comunicados": {
     "ids": [
@@ -26,6 +26,16 @@
     "texto": "### 12/05/2026\n**O que aconteceu:** O Banco Daycoval S.A., administrador do Valora Hedge Fund Imobiliário, informou à B3 que desconhece a existência de fatos específicos que justifiquem as oscilações recentes nas cotas do fundo.\n\n**Resumo:** A administração não recebeu informações sobre atos ou fatos relevantes que possam explicar as variações no preço das cotas e o aumento da negociação. As cotações mostraram uma queda significativa de 7,40% em 11/05/2026.\n\n**Trecho-chave:**\n\"O Administrador informa que desconhece a existência de fato específico, no período mencionado, que justifique as oscilações verificadas nas cotas de emissão do Fundo, bem como o aumento do número de negócios e da quantidade negociada, decorrentes de suas atividades regulares de administração fiduciária.\" (p. 2)\n\n### 08/12/2025\n**O que aconteceu:** A assembleia geral ordinária do Valora Hedge Fund Imobiliário aprovou as demonstrações contábeis referentes ao exercício social encerrado em 30 de junho de 2025.\n\n**Resumo:** A reunião foi realizada por correspondência eletrônica e teve quórum suficiente para aprovar as contas sem restrições. O resumo das decisões ficará disponível no site do administrador e na CVM.\n\n**Trecho-chave:**\n\"A maioria dos Cotista(s) presente(s) aprovou(aram), sem quaisquer ressalvas ou restrições, as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 30 de junho de 2025.\" (p. 2)\n\n### 06/11/2025\n**O que aconteceu:** O Banco Daycoval S.A. convocou a assembleia geral ordinária do Valora Hedge Fund Imobiliário para deliberar sobre a aprovação das demonstrações contábeis referentes ao exercício social encerrado em 30 de junho de 2025.\n\n**Resumo:** A assembleia foi programada para o dia 8 de dezembro de 2025 às 10:45. Os cotistas foram informados sobre os requisitos e procedimentos para votar na reunião, incluindo a necessidade de comunicação eletrônica.\n\n**Trecho-chave:**\n\"O BANCO DAYCOVAL S.A., sociedade com sede na Cidade de São Paulo, Estado de São Paulo, na Avenida Paulista, 1.793, 9º andar, Bela Vista, São Paulo - SP, inscrita no CNPJ/ME sob o nº 62.232.889/0001-90, na qualidade de instituição administradora do Valora Hedge Fund Fundo de Investimento Imobiliário de Responsabilidade Limitada, inscrito no CNPJ/ME sob o nº 36.771.692/0001-19 (\"Administradora\" e \"Fundo\", respectivamente), nos termos do regulamento do Fundo, vem por meio desta, convocar V. Sas. (“Cotistas”) para a Assembleia Geral Ordinária (“Assembleia”), a ser realizada no dia 8 de dezembro de 2025, às 10:45.\" (p. 1)"
   },
   "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 5.92
+  },
+  "anterior": {
+    "gerada_em": "2026-07-19T22:34:52",
+    "relatorio_data": "17/06/2026 19:36",
     "selo": "Atenção",
     "nivel": "atencao",
     "alertas": [

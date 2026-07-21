@@ -1,0 +1,27 @@
+{
+  "ticker": "RLMI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T21:13:17",
+  "comunicados": {
+    "ids": [
+      810910
+    ],
+    "datas": [
+      "30/12/2024"
+    ],
+    "rotulos": [
+      "Fato Relevante"
+    ],
+    "texto": "**O QUE aconteceu:** O REAL MINAS FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII passará a ser classificado como \"Multiestratégia\".\n\n**Resumo:** A Administração do Fundo informou que o fundo será reclassificado para a categoria \"Multiestratégia\", com tipo de gestão \"Gestão Ativa\" e critério de classificação \"Multicategoria\". \n\n**Trecho-chave:**\n\"passará a ser classificado como  “Multiestratégia”, com a subclassificação  \n“Multiestrategia”, tipo de gestão “Gestão Ativa ” e critério de classificação  \n“Multicategoria” de acordo com o previsto no art. 27 da referida norma.\" (p. 1)\n\n**Conexão com contexto:** Esta reclassificação pode afetar a estratégia de investimento do fundo, mas não há informações específicas sobre mudanças nos ativos ou na gestão atualmente disponíveis neste comunicado."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151878,
+    "data_entrega": "31/03/2026 22:22",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Real Minas Fundo de Investimento Imobiliário em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo naquela data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fu"
+  }
+}

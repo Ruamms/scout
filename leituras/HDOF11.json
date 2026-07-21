@@ -1,0 +1,47 @@
+{
+  "ticker": "HDOF11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T22:19:29",
+  "relatorio": {
+    "id": 1159230,
+    "data_entrega": "10/04/2026 18:53",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Obras em Andamento:**\n   - O projeto de Franca está com o avanço físico postergado para maio/2026, devido a um replanejamento.\n   - As obras no Haddock estão em andamento e não há prazo específico mencionado.\n\n2. **Captação de Recursos:**\n   - Foram realizadas duas emissões de cotas do Fundo totalizando R$ 337 milhões, integralizadas.\n   - A HP Design fez captação via CRI no valor de R$ 297,1 milhões.\n\n3. **Status das Obras:**\n   - Em Franca, a estrutura e vedações estão concluídas, com instalações em execução.\n   - No Haddock, as contenções e escavação foram concluídas, com fundações e blocos também finalizados.\n   - No Itacema, a estrutura está concluída, com instalações em andamento.\n\n4. **Replanjeamentos:**\n   - Há um replanejamento da obra do Haddock devido a problemas estruturais e revisão de projetos.\n   - O projeto de Franca teve seu avanço físico previsto ajustado para maio/2026.\n\n5. **Alavancagem/Dívidas:**\n   - Foram emitidos certificados de recebíveis imobiliários (CRI) no valor total de R$ 300,875 milhões.\n   - A taxa de administração do Fundo é de 0,85% a.a.\n\n### O que Observar em Seguida:\n- Monitorar o avanço das obras e quaisquer novos replanejamentos.\n- Verificar as condições financeiras do Fundo, especialmente com relação à alavancagem."
+  },
+  "comunicados": {
+    "ids": [
+      937019,
+      1035448,
+      1035446
+    ],
+    "datas": [
+      "30/06/2025",
+      "12/11/2025",
+      "12/11/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Fato Relevante entregue em 30/06/2025\n\n**O QUE aconteceu:** A equivalência patrimonial do ativo detido pelo Fundo resultou em uma variação negativa de 1,01%.\n\n**Resumo:** O valor patrimonial da cota do Fundo diminuiu em relação ao valor atual do ativo detido.\n\n**Trecho-chave:**\n\"realizada nesta data, resultou em valor 1,01% (um inteiro e um centésimo por cento) inferior ao atual valor de referido ativo, o que representa uma variação negativa de 0,96% (noventa e seis centésimos por cento) no valor patrimonial da cota do Fundo nesta data.\" (p. 1)\n\n---\n\n### Assembleia Geral Extraordinária (AGE) entregue em 12/11/2025\n\n**O QUE aconteceu:** A AGE deliberou pela abstenção em relação a dois itens da Ordem do Dia.\n\n**Resumo:** Os cotistas abstiveram-se em ambos os itens propostos, resultando na não aprovação de ambas as matérias.\n\n**Trecho-chave:**\n\"Em relação ao item (i) da Ordem do Dia, a maioria dos Cotistas, representando 0,05% (cinco centésimos por cento) das cotas emitidas do Fundo, deliberou pela abstenção quanto à aprovação da possibilidade de operações, pelo Fundo, com CRI que contem com serviços de qualquer natureza prestados pela Administradora, pela Gestora ou pessoas a elas ligadas, desde que os CRI atendam os mesmos parâmetros descritos no item 3.3.3 no Regulamento do Fundo no Anexo da Classe Única.\" (p. 5)\n\n\"Em relação ao item (ii) da Ordem do Dia, a maioria dos Cotistas, representando 0,05% (cinco centésimos por cento) das cotas emitidas do Fundo, deliberou pela abstenção quanto à alteração dos incisos VIII e XIV do item 2.8. da Parte Geral do Regulamento, para prever a possibilidade da Administradora e da Gestora, no exercício das funções de gestores do patrimônio do Fundo e utilizando os recursos do Fundo prestar fiança, aval, bem como aceitar ou coobrigar-se sob qualquer forma nas operações praticadas pelo Fundo, bem como constituir ônus reais sobre os imóveis integrantes do patrimônio do Fundo, desde que para garantir obrigações assumidas pelo Fundo, nos termos da Lei 14.754 de 12 de dezembro de 2023 e do Anexo Normativo III da Resolução CVM 175.\" (p. 5)\n\n---\n\n**Conexão com o contexto:** A AGE ocorreu após a divulgação do Fato Relevante, refletindo uma situação onde os cotistas não se manifestaram sobre as propostas apresentadas, mantendo a base de cotistas pequena e sem mudanças significativas no quadro atual."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Emissão de cotas com VP/cota em queda",
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": 90.0
+  },
+  "parecer": {
+    "id": 994765,
+    "data_entrega": "19/09/2025 18:08",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Hedge Paladin Design Offices Fundo de Investimento Imobiliário de Responsabilidade Limitada em 30 de junho de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contá"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "ticker": "ANCR11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-19T07:24:07",
+  "verificado_em": "2026-07-20T20:00:10",
   "comunicados": {
     "ids": [
       1041404,
@@ -9,8 +9,8 @@
       993719,
       1073610,
       1050352,
-      1238724,
-      1177782
+      1260413,
+      1260408
     ],
     "datas": [
       "17/11/2025",
@@ -18,8 +18,8 @@
       "17/09/2025",
       "30/12/2025",
       "28/11/2025",
-      "03/07/2026",
-      "30/04/2026"
+      "20/07/2026",
+      "20/07/2026"
     ],
     "rotulos": [
       "Fato Relevante",
@@ -28,11 +28,11 @@
       "Comunicado ao Mercado",
       "Comunicado ao Mercado",
       "Assembleia AGE",
-      "Assembleia AGO"
+      "Assembleia AGE"
     ],
-    "texto": "### 17/11/2025 - Aprovação da 7ª Emissão de Cotas e Oferta Pública\n\nO Fundo ANCAR IC aprovou a emissão de até R$ 1.299.999.951,45 em novas cotas para integralização em moeda corrente nacional, sob o regime de melhores esforços de colocação. Além disso, foi estabelecido um direito de preferência aos cotistas que detinham cotas na data de divulgação do anúncio de início da oferta.\n\n\"Os demais termos e condições da 7ª Emissão e da Oferta serão descritos nos documentos da Oferta.\"\n\n### 19/09/2025 - Comunicado sobre Oscilações Atípicas no Mercado\n\nA administração do Fundo ANCAR IC comunicou que não há atos ou fatos relevantes não divulgados que justifiquem as oscilações recentes no preço e volume de negociação das cotas.\n\n\"Não há, até o momento, qualquer ato ou fato relevante não divulgado que possa justificar a oscilação atípica no preço e/ou volume de negociações das cotas do Fundo, conforme observado nas últimas semanas.\"\n\n### 17/09/2025 - Aquisição de Participação em Shopping Jardim Sul\n\nO Fundo ANCAR IC concluiu a aquisição de uma participação de 10% no shopping \"Jardim Sul\" localizado em São Paulo, pelo valor de R$ 63 milhões.\n\n\"(i) o Fundo concluiu a aquisição de parcela de participação de 10% (dez por cento) do empreendimento designado “Shopping Jardim Sul” localizado na cidade de São Paulo/SP pelo valor de R$ 63.000.000,00.\"\n\n### 30/12/2025 - Não Realização da Distribuição no Fundo\n\nO administrador do Fundo ANCAR IC informou que não será realizada a distribuição no fundo e que esta medida será reavaliada.\n\n\"A GENIAL INVESTIMENTOS CORRETORA DE VALORES MOBILIÁRIOS S.A. com sede na cidade do Rio de Janeiro, Estado do Rio de Janeiro, na Praia de Botafogo, nº 228, sala 913, inscrita no CNPJ/MF sob o nº 27.652.684/0001 -62 (“Administradora”), na qualidade de administradora e gestora do FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII ANCAR IC, informa que não será realizada a distribuição no Fundo.\"\n\n### 28/11/2025 - Não Realização da Distribuição no Fundo\n\nA administração comunicou novamente que não será realizada a distribuição no fundo e que esta medida será reavaliada.\n\n\"A GENIAL INVESTIMENTOS CORRETORA DE VALORES MOBILIÁRIOS S.A. com sede na cidade do Rio de Janeiro, Estado do Rio de Janeiro, na Praia de Botafogo, nº 228, sala 913, inscrita no CNPJ/MF sob o nº 27.652.684/0001 -62 (“Administradora”), na qualidade de administradora e gestora do FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII ANCAR IC, informa que não será realizada a distribuição no Fundo.\"\n\n### 30/04/2026 - Proposta para Assembleia Geral Ordinária\n\nA administração propôs a aprovação das demonstrações financeiras do exercício social de 2025 e informou que as deliberações dependerão da maioria dos votos dos cotistas.\n\n\"O Administrador propõe a aprovação das matérias da Ordem do Dia. Ademais, o Administrador informa que está à disposição para sanar eventuais dúvidas por meio dos canais de atendimento disponibilizados no Edital de Convocação da Consulta Formal.\""
+    "texto": "### FATO RELEVANTE entregue em 17/11/2025\n\n**O QUE aconteceu:** A GENIAL INVESTIMENTOS CORRETORA DE VALORES MOBILIÁRIOS S.A. e a SCAI GESTORA DE RECURSOS LTDA. aprovaram a 7ª emissão de cotas do FII ANCAR IC.\n\n**Resumo:** O fundo autorizou uma nova emissão de cotas, com um valor total estimado de R$ 1.299.999.951,45, e estabeleceu o direito de preferência para os cotistas atuais.\n\n**Trecho-chave:**\n\"Nos termos do item 5.8 do Anexo descritivo do Regulamento da classe única do Fundo ( “Regulamento” e “Anexo descritivo ”), aprovaram por meio de instrumento de deliberação conjunta (“Instrumento de Deliberação Conjunta”), os termos e condições da 7ª emissão de cotas da classe única do Fundo (\"7ª Emissão\" e \"Novas Cotas\", respectivamente), no montante de até R$ 1.299.999.951,45 (um bilhão, duzentos e noventa e nove milhões, novecentos e noventa e nove mil, novecentos e cinquenta e um reais e quarenta e cinco centavos), correspondente a, inicialmente, 11.398.509 (onze milhões, trezentos e noventa e oito mil, quinhentos e nove) Novas Cotas.\"\n\n### FATO RELEVANTE entregue em 17/09/2025\n\n**O QUE aconteceu:** O FII ANCAR IC concluiu a aquisição de uma parcela de participação do Shopping Jardim Sul, localizado na cidade de São Paulo.\n\n**Resumo:** O fundo adquiriu 10% da propriedade do Shopping Jardim Sul em São Paulo por R$ 63.000.000,00.\n\n**Trecho-chave:**\n\"o Fundo concluiu a aquisição de parcela de participação de 10% (dez por cento) do empreendimento designado “Shopping Jardim Sul” localizado na cidade de São Paulo/SP pelo valor de R$ 63.000.000,00.\"\n\n### FATO RELEVANTE entregue em 19/09/2025\n\n**O QUE aconteceu:** Não há ato ou fato relevante não divulgado que justifique a oscilação no preço e volume de negociações das cotas do Fundo.\n\n**Resumo:** O administrador e gestora informaram que não há nenhum evento relevante não divulgado que explique as variações recentes nas cotações.\n\n**Trecho-chave:**\n\"Não há, até o momento, qualquer ato ou fato relevante não divulgado que possa justificar a oscilação atípica no preço e/ou volume de negociações das cotas do Fundo, conforme observado nas últimas semanas.\"\n\n### COMUNICADO AO MERCADO entregue em 30/12/2025\n\n**O QUE aconteceu:** O FII ANCAR IC informa que não será realizada a distribuição de rendimentos.\n\n**Resumo:** O fundo decidiu não realizar a distribuição de rendimentos aos cotistas, mas reavaliará essa decisão no futuro.\n\n**Trecho-chave:**\n\"A GENIAL INVESTIMENTOS CORRETORA DE VALORES MOBILIÁRIOS S.A. com sede na cidade do Rio de Janeiro, Estado do Rio de Janeiro, na Praia de Botafogo, nº 228, sala 913, inscrita no CNPJ sob o nº 27.652.684/0001 -62 (“Administradora”), na qualidade de administradora e gestora do FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII ANCAR IC, inscrito no CNPJ/MF sob o nº 07.789.135/0001-27 (“Fundo”), vêm por meio deste Comunicado ao Mercado, informar os cotistas e ao mercado em geral que não será realizada a distribuição no Fundo.\"\n\n### COMUNICADO AO MERCADO entregue em 28/11/2025\n\n**O QUE aconteceu:** O FII ANCAR IC informa novamente que não será realizada a distribuição de rendimentos.\n\n**Resumo:** O fundo decidiu não realizar a distribuição de rendimentos aos cotistas, mas reavaliará essa decisão no futuro.\n\n**Trecho-chave:**\n\"A GENIAL INVESTIMENTOS CORRETORA DE VALORES MOBILIÁRIOS S.A. com sede na cidade do Rio de Janeiro, Estado do Rio de Janeiro, na Praia de Botafogo, nº 228, sala 913, inscrita no CNPJ sob o nº 27.652.684/0001 -62 (“Administradora”), na qualidade de administradora e gestora do FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII ANCAR IC, inscrito no CNPJ/MF sob o nº 07.789.135/0001-27 (“Fundo”), vêm por meio deste Comunicado ao Mercado, informar os cotistas e ao mercado em geral que não será realizada a distribuição no Fundo.\"\n\n### ASSEMBLEIA AGE entregue em 20/07/2026\n\n**O QUE aconteceu:** A GENIAL INVESTIMENTOS CORRETORA DE VALORES MOBILIÁRIOS S.A. propôs uma assembleia para deliberar sobre a distribuição de rendimentos e retenção do resultado caixa.\n\n**Resumo:** O administrador propõe que os cotistas votem em uma assembleia especial extraordinária para aprovar a distribuição de 100% dos rendimentos do primeiro semestre de 2026, com o objetivo de reter R$ 127.165.321,50 para novos investimentos.\n\n**Trecho-chave:**\n\"ORDEM DO DIA: Deliberar: (I) Nos termos do Ofício Circular 01/2015/CVM/SIN/SNC, sobre o pagamento de 100% (cem por cento) dos rendimentos declarados da Classe Única do Fundo, aos Cotistas, de forma proporcional, à título de distribuição de rendimentos, com base nos períodos encerrados em 01 de janeiro de 2026 e 30 de junho de 2026 (\"Primeiro Semestre de 2026\"), com o objetivo de reter R$ 127.165.321,50 (cento e vinte e sete milhões, cento e sessenta e cinco mil, trezentos e vinte e um reais e 50 centavos), correspondente a 100% (cem por cento) do resultado caixa da Classe Única do Fundo para, exclusivamente, cobrir novos investimentos realizados.\""
   },
-  "modelo": "qwen2.5:14b",
+  "modelo": "qwen2.5:7b",
   "parecer": {
     "id": 1149267,
     "data_entrega": "31/03/2026 01:37",

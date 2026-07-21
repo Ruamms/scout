@@ -1,0 +1,42 @@
+{
+  "ticker": "BCIA11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T21:31:17",
+  "relatorio": {
+    "id": 1249723,
+    "data_entrega": "15/07/2026 18:19",
+    "texto": "### Fatos do Relatório Gerencial\n\n1. **Cota Patrimonial e Mercado:** A cota patrimonial do BCIA11 apresentou uma queda de 1,48% em junho, com o valor da cota de mercado caindo 2,23%. O duplo desconto do fundo aumentou para 22,6%, indicando potencial de valorização.\n\n2. **Composição Setorial:** A carteira do BCIA11 foi reorganizada, elevando a participação dos fundos de recebíveis imobiliários (CRIs) para 43,6% do patrimônio líquido e reduzindo a participação nos fundos de tijolo para 56%.\n\n3. **Rendimentos:** Em junho, o resultado distribuído foi R$ 1,17 por cota, com destaque para os rendimentos extraordinários provenientes da venda dos ativos do fundo HGPO.\n\n4. **Cenário Econômico Internacional e Nacional:** O cenário internacional teve uma queda nos preços do petróleo, mas as tensões geopolíticas persistiram. No Brasil, o IPCA ficou abaixo das expectativas de mercado, levando a expectativa de mais dois cortes na Selic.\n\n5. **Desempenho Setorial:** Os fundos de galpões logísticos (INLG) e CRI (XPCI) apresentaram desempenho positivo em junho, enquanto os fundos de shopping centers (BBIG) e CRI (PCIP) tiveram queda.\n\n6. **Gestão do Fundo:** A gestão do BCIA11 realizou aquisições de ativos com boa localização e especificações técnicas, reduzindo a vacância no fundo BTLG para 2%.\n\n7. **Duplo Desconto:** O desconto entre o valor patrimonial e o de mercado aumentou para 22,6%, indicando potencial de valorização.\n\n8. **Rendimentos Futuros:** A distribuição de rendimentos será ajustada conforme os cenários de inflação e taxas de juros, buscando equilibrar retorno em dividendos com ganho de capital.\n\n### O que observar em seguida:\n1. Monitorar a evolução do desconto BCIA.\n2. Observar as aquisições futuras no fundo BTLG."
+  },
+  "comunicados": {
+    "ids": [
+      1175117,
+      1175112
+    ],
+    "datas": [
+      "30/04/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "**30/04/2026 - Aprovação das demonstrações contábeis do exercício social findo em 31 de dezembro de 2025**\n\nA aprovação foi alcançada após a realização de uma consulta formal não presencial, onde os cotistas detentores das cotas emitidas pelo Fundo expressaram seu voto. A BEM DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA., na qualidade de Administradora Fiduciária do Fundo, informou que a consulta foi concluída com a aprovação da matéria submetida.\n\n*\"Em razão do recebimento do voto formalizado pelo s cotistas do Fundo, a presente consulta foi concluída e, após apuração das respostas recebidas, verificou-se a APROVAÇÃO da matéria.\"* (p. 1)\n\nEsta aprovação se conecta aos indicadores contábeis do contexto, indicando que as demonstrações contábeis foram aprovadas pelos cotistas após o exercício social findo em 31 de dezembro de 2025."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 88.63
+  },
+  "parecer": {
+    "id": 1151217,
+    "data_entrega": "31/03/2026 19:16",
+    "tipo": "nao_identificado",
+    "rotulo": "parecer não identificado no texto",
+    "grave": false,
+    "continuidade": false,
+    "trecho": ""
+  }
+}

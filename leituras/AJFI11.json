@@ -1,0 +1,55 @@
+{
+  "ticker": "AJFI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T21:48:15",
+  "relatorio": {
+    "id": 1224960,
+    "data_entrega": "19/06/2026 18:26",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Cotação e Valor Patrimonial**: A cotação do AJFI11 foi de R$ 8,35, com valor patrimonial de R$ 11,07 por cota (p. 4).\n2. **Dividend Yield**: O dividend yield anualizado foi de 7,4% a.a., considerando a cota de fechamento de 30/04/2026 (p. 5).\n3. **Desempenho Operacional**: A ocupação média ponderada por ABL foi de 91,8%, com vendas de R$ 15.366,66/m² e NOI de R$ 1.198,30/m² (LTM) (p. 4).\n4. **Ativos Imobiliários**: O valor dos ativos imobiliários foi de R$ 358.070.418,00, com obrigações por aquisição de imóveis no valor de R$ 9.771.928,00 (p. 6).\n5. **Vacância**: A vacância do portfólio foi de 6,61% (p. 4), sem alteração em relação ao último relatório.\n6. **Cotistas**: O número de cotistas encerrou abril com 9.783, um recuo de 2,4% em relação ao mês anterior (p. 7).\n7. **Taxa de Administração e Gestão**: A taxa de administração e gestão é de 0,70% a.a. (p. 1).\n8. **Patrimônio Líquido**: O patrimônio líquido do fundo foi de R$ 372.176.627,00 (p. 4).\n\n### Observações a Acompanhar:\n- **Vacância e Inadimplência**: Manter-se atento à vacância que permanece estável em 6,61%.\n- **Cotistas**: Monitorar o número de cotistas, que apresentou uma redução significativa (-26,50%) nos últimos 12 meses."
+  },
+  "comunicados": {
+    "ids": [
+      1087802,
+      1087793,
+      1087132,
+      955617,
+      1095803,
+      1095798
+    ],
+    "datas": [
+      "19/01/2026",
+      "19/01/2026",
+      "19/01/2026",
+      "29/07/2025",
+      "29/01/2026",
+      "29/01/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O que aconteceu em 19/01/2026: FATO RELEVANTE - 2ª EMISSÃO DE COTAS\n\n**Resumo:** A XP Investimentos Corretora de Câmbio, Títulos e Valores Mobiliários S.A. anunciou a aprovação da segunda emissão de cotas do AJ Malls Fundo de Investimento Imobiliário.\n\n**Trecho-chave:**\n\"foi aprovada, na presente data, por meio d o “Instrumento Particular de Deliberação Conjunta dos Prestadores de Serviços Essenciais do AJ Malls Fundo de Investimento Imobiliário Responsabilidade Limitada” (“Ato de Aprovação da Oferta ”), independentemente de aprovação pelos Cotistas em Assembleia Geral de Cotistas do Fundo, a realização da 2ª (segunda) emissão de cotas da Classe (\"Novas Cotas\" e \"Emissão\", respectivamente)\"\n\n### O que aconteceu em 29/07/2025: COMUNICADO AO MERCADO\n\n**Resumo:** A XP Investimentos Corretora de Câmbio, Títulos e Valores Mobiliários S.A. informou sobre a adaptação do regulamento do AJ Malls Fundo de Investimento Imobiliário à Resolução da CVM nº 175.\n\n**Trecho-chave:**\n\"A XP CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A., com sede na Praia De Botafogo, 501, BLC I SAL 501, Botafogo, na cidade e Estado do Rio de Janeiro, CEP 22.250-911, inscrita no CNPJ nº 02.332.886/0001-04, na qualidade de instituição administradora (\"Administradora\") do AJ MALLS FUNDO DE INVESTIMENTO IMOBILIÁRIO vem, por meio desta, informar os cotistas sobre a adaptação do regulamento do Fundo a Resolução da CVM nº 175, de 23 de dezembro de 2022, conforme alterada (\"Resolução CVM 175\").\"\n\n### O que aconteceu em 29/01/2026: ASSEMBLEIA GERAL ORDINÁRIA DE COTISTAS\n\n**Resumo:** A assembleia geral ordinária de cotistas do AJ Malls Fundo de Investimento Imobiliário aprovou as demonstrações financeiras, notas explicativas e parecer dos auditores independentes referentes ao exercício social findo em 30.06.2025.\n\n**Trecho-chave:**\n\"Os cotistas aprovaram, sem quaisquer restrições ou ressalvas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 30.06.2025, os quais estão disponíveis no website da CVM, através do endereço eletrônico https://www.gov.br/cvm/pt-br/assuntos/regulados/consultas-por-participante/fundos-de-investimento, seguindo a rota: Fundos Registrados > Inserir CNPJ do Fundo > Demonstrações contábeis, tendo os votos proferidos pela aprovação representando 0.39 % (trinta e nove centésimos por cento) do total das cotas emitidas pelo Fundo.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "VP/cota em queda relevante"
+    ],
+    "cota": 8.12
+  },
+  "parecer": {
+    "id": 1061065,
+    "data_entrega": "12/12/2025 17:55",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do AJ Malls Fundo de Investimento Imobiliário – Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasi"
+  }
+}

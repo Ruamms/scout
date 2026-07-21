@@ -1,0 +1,39 @@
+{
+  "ticker": "KDLG11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T20:46:43",
+  "relatorio": {
+    "id": 1246014,
+    "data_entrega": "13/07/2026 18:13",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Distribuição de Rendimentos:**\n   \"O Fundo realizará a distribuição de rendimentos no valor de R$ 0,29 por cota, com pagamento previsto para 10 de julho de 2026.\" (p. 1)\n\n2. **Avanço das Obras:**\n   \"Em junho, o empreendimento registrou avanço físico acumulado de 14,72%, em linha com o cronograma previsto.\" (p. 1)\n\n3. **Contratações e Obras:**\n   \"As obras seguiram com um efetivo de 270 profissionais mobilizados no canteiro, concentrados nas frentes de execução das redes enterradas de drenagem, montagem da estrutura pré-moldada de concreto, avanço da estrutura metálica de cobertura do G100 e execução das contenções.\" (p. 2)\n\n4. **Cronograma de Chamadas de Capital:**\n   \"Os chamamentos de capital seguirão o ritmo de evolução das obras, com as próximas integralizações previstas entre o final do 3º trimestre e o 4º trimestre de 2026.\" (p. 2)\n\n5. **Taxas de Administração e Performance:**\n   \"A taxa de administração é cobrada sobre o valor do capital efetivamente integralizado, já considerado no montante a ser investido pelos participantes.\"\n   \"A taxa de performance será cobrada após retorno total do capital aportado.\" (p. 2)\n\n6. **Espaço Construído:**\n   \"Área construída: 219.007,89m²\" (p. 4)\n\n### O que observar em seguida:\n- Monitorar o avanço físico das obras e a contratação de profissionais.\n- Verificar as próximas chamadas de capital conforme planejado."
+  },
+  "comunicados": {
+    "ids": [
+      1077638,
+      964904,
+      1221576,
+      1206579
+    ],
+    "datas": [
+      "08/01/2026",
+      "11/08/2025",
+      "15/06/2026",
+      "28/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### 08/01/2026 - Início do Período de Coleta de Intenções de Investimento Suspendido\n\n**O que aconteceu:** O início do período de coleta de intenções de investimento para a emissão primária de cotas da classe A do KINEA DESENVOLVIMENTO LOGÍSTICO II FII foi suspenso.\n\n**Resumo:** A Oferta foi modificada, e os prazos previstos no cronograma foram suspensos até a divulgação do comunicado de modificação da oferta.\n\n**Trecho-chave:**\n\"o Início do Período de Coleta de Intenções de Investimento, no âmbito das Cotas A” previstos para ocorrer no dia 12 de janeiro de 2026, conforme cronograma da Oferta divulgado em 01 de dezembro de 2025, não irá ocorrer, suspendendo-se, portanto, os prazos previstos no referido cronograma.\"\n\n---\n\n### 11/08/2025 - Modificação da Oferta\n\n**O que aconteceu:** A oferta pública primária de cotas foi modificada para ajustar a especificação do Público-Alvo.\n\n**Resumo:** O cronograma da oferta foi alterado, e o período de desistência não será concedido em razão dessa modificação.\n\n**Trecho-chave:**\n\"informamos que, tendo em vista que, até a presente data, não houve recebimento de quaisquer documentos de aceitação da oferta por potenciais investidores, não será concedido período de desistência em razão da Modificação da Oferta.\"\n\n---\n\n### 15/06/2026 - Assembleia Geral Extraordinária\n\n**O que aconteceu:** A assembleia deliberou sobre a possibilidade de aquisição direta ou indireta dos direitos reais decorrentes do imóvel localizado na Rodovia Presidente Tancredo de Almeida Neves, em Franco de Rocha.\n\n**Resumo:** Os cotistas deliberaram sobre a aquisição do Imóvel Franco, podendo ser adquirido diretamente ou indiretamente por meio da Sociedade Investida.\n\n**Trecho-chave:**\n\"o Fundo poderá adquirir, direta ou indiretamente, os direitos reais decorrentes do imóvel localizado na Rodovia Presidente Tancredo de Almeida Neves, na Cidade de Franco de Rocha, Estado de São Paulo, com área total aproximada de 1.160.834,93 m² (um milhão, cento e sessenta mil, oitocentos e trinta e quatro metros quadrados e noventa e três centésimos) (\"Imóvel Franco\").\"\n\n---\n\n### 28/05/2026 - Edital de Convocação para Assembleia Geral Extraordinária\n\n**O que aconteceu:** Foi convocada a assembleia para deliberar sobre a possibilidade de aquisição direta ou indireta dos direitos reais decorrentes do imóvel localizado na Rodovia Presidente Tancredo de Almeida Neves, em Franco de Rocha.\n\n**Resumo:** Os cotistas foram convidados a votar sobre a aquisição do Imóvel Franco, podendo ser adquirido diretamente ou indiretamente por meio da Sociedade Investida.\n\n**Trecho-chave:**\n\"o Fundo poderá adquirir, direta ou indiretamente, os direitos reais decorrentes do imóvel localizado na Rodovia Presidente Tancredo de Almeida Neves, na Cidade de Franco de Rocha, Estado de São Paulo, com área total aproximada de 1.160.834,93 m² (um milhão, cento e sessenta mil, oitocentos e trinta e quatro metros quadrados e noventa e três centésimos) (\"Imóvel Franco\").\""
+  },
+  "retrato": {
+    "selo": "Histórico insuficiente",
+    "nivel": "insuficiente",
+    "alertas": [
+      "Fundo novo — histórico curto"
+    ],
+    "cota": null
+  }
+}

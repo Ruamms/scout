@@ -1,0 +1,49 @@
+{
+  "ticker": "QAGR11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T21:33:06",
+  "relatorio": {
+    "id": 1224967,
+    "data_entrega": "19/06/2026 18:31",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Venda de Ativos:**\n   \"Os 4 imóveis da transação mencionada haviam sido adquiridos por R$ 90 milhões em 2020 e foram vendidos por R$ 136 milhões em janeiro de 2026. A operação gerou ganho de aproximadamente 51% sobre o valor investido (R$ 8,42/cota), a ser reconhecido conforme o recebimento das parcelas.\" (p. 5)\n\n2. **Reajustes Contratuais:**\n   \"Durante o mês, foram realizados reajustes contratuais (inflação) em 4 contratos, equivalentes a 23% das receitas imobiliárias do Fundo.\" (p. 5)\n\n3. **Obras de Melhorias:**\n   - \"Em maio, houve a formalização da divisão do escopo das obras nos ativos de Jataí, Nova Ponte e Uberlândia em duas fases: Fase 1 (pré-safra) e Fase 2 (pós-safra), com previsão de finalização até julho e dezembro, respectivamente.\" \n   - \"O avanço físico consolidado para as unidades foi de 72,7% (Fase 1 - 83%, Fase 2 - 65%), sendo que 92% do escopo total já foi contratado.\" (p. 8-9)\n\n4. **Vacância e Inadimplência:**\n   \"A vacância física e financeira permanecem em 0,0%.\" (p. 3)\n\n5. **Distribuição de Rendimentos:**\n   - \"Neste mês, a distribuição de rendimentos foi de R$ 0,65/cota, pago no dia 08 de junho de 2026.\"\n   - \"A expectativa é manter o patamar de R$ 0,65/cota para este semestre.\" (p. 4)\n\n### O que Observar em Seguida:\n1. **Avanço das Obras:** Monitorar o andamento e conclusão das obras nos ativos de Jataí, Nova Ponte e Uberlândia.\n2. **Distribuição de Rendimentos:** Verificar se a distribuição mantém-se conforme as expectativas da gestão."
+  },
+  "comunicados": {
+    "ids": [
+      1093270,
+      1200615,
+      952443,
+      1072450,
+      1045288
+    ],
+    "datas": [
+      "26/01/2026",
+      "21/05/2026",
+      "24/07/2025",
+      "29/12/2025",
+      "21/11/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 26/01/2026\n\n**O QUE aconteceu:** A venda de quatro imóveis localizados no Paraná.\n\n**Resumo:** O Fundo vendeu quatro imóveis adquiridos em 2020 por R$ 90.085.876,82 e recebeu R$ 136.000.000,00, com lucro de R$ 45.914.123,18.\n\n**Trecho-chave:** \"O Fundo lavrou Escritura Pública de Venda e Compra (“Escritura”) por meio da qual concluiu a venda de 4 ativos, localizados nas cidades de Sabáudia, Assaí, Bela Vista do Paraíso e Cambé, todas do Estado do Paraná (em conjunto “Imóveis”).\"\n\n### COMUNICADO AO MERCADO entregue em 21/05/2026\n\n**O QUE aconteceu:** Atualização da forma de divulgação da remuneração dos Prestadores de Serviços Essenciais.\n\n**Resumo:** A Administradora atualizou a forma de divulgação, substituindo o \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas).\n\n**Trecho-chave:** \"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do 'Sumário de Remuneração' pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação.\"\n\n### COMUNICADO AO MERCADO entregue em 24/07/2025\n\n**O QUE aconteceu:** Alteração na data de pagamento da distribuição de rendimentos.\n\n**Resumo:** A data de pagamento da distribuição de rendimentos foi alterada para o 5º dia útil, considerando que a possibilidade prevista no Regulamento permite até o 6º dia útil.\n\n**Trecho-chave:** \"Conforme possibilidade prevista no Regulamento, a Gestora realizará a alteração da data de pagamento da distribuição de rendimentos para o 5º (quinto) dia útil, considerando que o referido regulamento permite que essa distribuição ocorra até o 6º (sexto) dia útil.\"\n\n### ASSEMBLEIA AGO entregue em 29/12/2025\n\n**O QUE aconteceu:** Aprovada a alteração da denominação social do Fundo.\n\n**Resumo:** A assembleia aprovou a mudança de nome do Fundo para PATRIA LOGÍSTICA AGRO – FUNDO DE INVESTIMENTO IMOBILIÁRIO – RESPONSABILIDADE LIMITADA, com 49,06% dos votos favoráveis.\n\n**Trecho-chave:** \"Foram recebidas respostas à Consulta Formal representando 49,60% das Cotas de emissão do Fundo, sendo que as matérias colocadas em deliberação, conforme descritas acima, restaram aprovadas pelos Cotistas, conforme os percentuais de votos favoráveis, de votos contrários, bem como de abstenções formalmente manifestadas detalhados abaixo: Quóruns com relação ao total de cotas presentes Aprovação Não Aprovação Abstenção Resultado 49,06% 0,33% 0,21% Aprovada\"\n\n### ASSEMBLEIA AGO/E entregue em 21/11/2025\n\n**O QUE aconteceu:** Convocação para a Assembleia Geral Ordinária e Extraordinária do Fundo.\n\n**Resumo:** A Administradora convocou os cotistas para participar da assembleia, onde serão deliberadas as contas e demonstrações contábeis do exercício social findo em 30 de junho de 2025 e a alteração da denominação social do Fundo.\n\n**Trecho-chave:** \"A Administradora propõe a aceitação do item (2) referente a alteração de denominação social considerando os termos propostos.\""
+  },
+  "retrato": {
+    "selo": "Sem alertas",
+    "nivel": "sem_alertas",
+    "alertas": [],
+    "cota": 41.0
+  },
+  "parecer": {
+    "id": 999887,
+    "data_entrega": "26/09/2025 23:10",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do VBI Agro - Fundo de Investimento Imobiliário - Responsabilidade Limitada em 30 de junho de 202 5 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no B"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ticker": "TMFI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T20:19:16",
+  "comunicados": {
+    "ids": [
+      1201182,
+      1198801,
+      1198798,
+      1180717
+    ],
+    "datas": [
+      "22/05/2026",
+      "18/05/2026",
+      "18/05/2026",
+      "05/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 18/05/2026\n\n**O QUE aconteceu:** As contas anuais do Fundo foram aprovadas na assembleia geral de cotistas realizada em 14 de maio de 2026.\n\n**Resumo:** A assembleia de cotistas para aprovar as contas do exercício social encerrado em 31 de dezembro de 2025 foi realizada, mas nenhum cotista compareceu, resultando na aprovação automática das contas.\n\n**Trecho-chave:**\n\"Na assembleia geral de cotistas realizada em 14 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 18/05/2026\n\n**O QUE aconteceu:** A assembleia geral de cotistas para aprovar as contas do exercício social encerrado em 31 de dezembro de 2025 não foi instalada, pois nenhum cotista compareceu.\n\n**Resumo:** A assembleia de cotistas para aprovar as contas do Fundo foi convocada e realizada, mas não houve presença de cotistas, resultando na aprovação automática das contas.\n\n**Trecho-chave:**\n\"Ficam as mesmas consideradas automaticamente aprovadas.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 22/05/2026\n\n**O QUE aconteceu:** A forma de divulgação da remuneração dos Prestadores de Serviços Essenciais foi atualizada para utilizar exclusivamente a Ferramenta ANBIMA.\n\n**Resumo:** A Administradora aprovou a atualização da forma de divulgação, passando a utilizar a Ferramenta ANBIMA como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais.\n\n**Trecho-chave:**\n\"restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 05/05/2026\n\n**O QUE aconteceu:** A administradora convocou os cotistas para uma assembleia geral de votos sobre a aprovação das contas do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A administradora convocou os cotistas para deliberarem sobre a aprovação das contas e demonstrações contábeis do Fundo referente ao exercício social findo em 31 de dezembro de 2025, com prazo de recebimento de votos até 14 de maio de 2026.\n\n**Trecho-chave:**\n\"Solicitamos a manifestação de V.Sa. até 14 de maio de 2026.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1153098,
+    "data_entrega": "01/04/2026 22:51",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe Única de Cotas do Fundo de Investimento Imobiliário TM FII – Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o período de 4 de novembro de 2025 (data após a transfer"
+  }
+}

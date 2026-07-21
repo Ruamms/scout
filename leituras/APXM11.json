@@ -1,0 +1,33 @@
+{
+  "ticker": "APXM11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T21:46:16",
+  "comunicados": {
+    "ids": [
+      1198049,
+      1198046,
+      1169269
+    ],
+    "datas": [
+      "18/05/2026",
+      "18/05/2026",
+      "24/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral de Cotistas realizada em 08 de maio de 2026\n\n**O que aconteceu:** A assembleia geral de cotistas do Fundo de Investimento Imobiliário APEX MALLS FII aprovou as contas anuais do exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi realizada via manifestação de voto enviada pelos cotistas e aprovou as demonstrações financeiras auditadas do ano passado.\n\n**Trecho-chave:**\n\"Realizada via manifestação de voto enviada pelos Cotistas em 08 de maio de 2026. / Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### Convocação para Assembleia Geral de Cotistas realizada em 08 de abril de 2026\n\n**O que aconteceu:** A administradora BTG Pactual Serviços Financeiros S.A. convocou os cotistas do Fundo de Investimento Imobiliário APEX MALLS FII para deliberarem sobre a aprovação das contas e demonstrações contábeis relativas ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi convocada com prazo até 8 de maio de 2026 para votação via plataforma eletrônica.\n\n**Trecho-chave:**\n\"Aos Cotistas do FUNDO DE INVESTIMENTO IMOBILIARIO APEX MALLS FII / Aprovacao das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\"\n\n---\n\n**Conexão com o contexto:** A aprovação das contas anuais pelo conselho de administração e a votação dos cotistas indicam que as demonstrações financeiras do fundo foram submetidas para avaliação, reforçando os alertas sobre rendimentos acima do resultado financeiro e P/VP muito abaixo da média histórica."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1152049,
+    "data_entrega": "31/03/2026 23:22",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

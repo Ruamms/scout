@@ -1,0 +1,21 @@
+{
+  "ticker": "VGRM11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T21:30:03",
+  "comunicados": {
+    "ids": [
+      1186043,
+      1176059
+    ],
+    "datas": [
+      "11/05/2026",
+      "30/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Assembleia Geral Extraordinária (AGE) entregue em 30/04/2026\n\n**O QUE aconteceu:** A AGE do VALORA CRI CDI FLUXO MENSAL MARÇO 26 FEEDER foi realizada de forma não presencial, por meio da consulta formal enviada aos cotistas.\n\n**Resumo:** Os cotistas foram convocados a deliberar sobre a orientação de voto na assembleia de conflito de interesses do FII Master, que trata da aprovação de aquisições e/ou alienações de ativos considerados potenciais conflitos de interesse.\n\n**Trecho-chave:**\n\"Os Cotistas foram convocados a deliberar quanto:\n(a) Deliberar sobre a orientação de voto na assembleia de conflito de interesses do VALORA CRI CDI FLUXO MENSAL MARÇO 26 MASTER FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob nº 64.607.895/0001-00 (“FII Master”) a qual deliberará acerca da aprovação de aquisição e/ou alienação pela classe única de cotas do FII Master, na forma prevista no regulamento do FII Master, dos seguintes ativos (‘Ativos Conflitados’), desde que atendidos os critérios de elegibilidade descritos abaixo (‘Critérios de Elegibilidade’)...\" (p. 1)\n\n### Assembleia Geral Extraordinária (AGE) entregue em 11/05/2026\n\n**O QUE aconteceu:** A AGE do VALORA CRI CDI FLUXO MENSAL MARÇO 26 FEEDER foi realizada de forma não presencial, por meio da consulta formal enviada aos cotistas.\n\n**Resumo:** Os cotistas foram convocados a deliberar sobre a orientação de voto na assembleia de conflito de interesses do FII Master, que trata da aprovação de aquisições e/ou alienações de ativos considerados potenciais conflitos de interesse.\n\n**Trecho-chave:**\n\"Os Cotistas foram convocados a deliberar quanto:\n(a) Deliberar sobre a orientação de voto na assembleia de conflito de interesses do VALORA CRI CDI FLUXO MENSAL MARÇO 26 MASTER FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob nº 64.607.895/0001-00 (“FII Master”) a qual deliberará acerca da aprovação de aquisição e/ou alienação pela classe única de cotas do FII Master, na forma prevista no regulamento do FII Master, dos seguintes ativos (‘Ativos Conflitados’), desde que atendidos os critérios de elegibilidade descritos abaixo (‘Critérios de Elegibilidade’)...\" (p. 1)\n\n**Conexão com o contexto:** A AGE discute a aprovação de aquisições e/ou alienações de ativos considerados potenciais conflitos de interesse, conforme os critérios estabelecidos no regulamento do FII Master, que pode impactar na composição da carteira do fundo."
+  },
+  "modelo": "qwen2.5:7b"
+}

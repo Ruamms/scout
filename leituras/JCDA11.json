@@ -1,0 +1,39 @@
+{
+  "ticker": "JCDA11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T20:57:33",
+  "comunicados": {
+    "ids": [
+      754968,
+      1159162,
+      1107408,
+      1210041,
+      1171559
+    ],
+    "datas": [
+      "09/10/2024",
+      "10/04/2026",
+      "10/02/2026",
+      "01/06/2026",
+      "28/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 09/10/2024\n\n**O QUE aconteceu:** A Assembleia Geral Extraordinária do Fundo aprovou a 4ª emissão de cotas.\n\n**Resumo:** O fundo JACARANDÁ I FII autorizou uma nova emissão de até R$ 2.650.000,00 em novas cotações com preços e condições detalhadas estabelecidas.\n\n**Trecho-chave:**\n\"i) Valor total da Emissão: montante total de até R$ 2.650.000,00 (dois milhões e seiscentos e cinquenta mil reais) em Novas Cotas, incluindo a subscrição por meio do exercício do Direito de Preferência e a subscrição no âmbito da Oferta.\"\n\n### COMUNICADO AO MERCADO entregue em 10/04/2026\n\n**O QUE aconteceu:** Não haverá distribuição de resultados para o mês de Março/2026.\n\n**Resumo:** O fundo JACARANDÁ I FII comunicou que não realizará a distribuição de resultados referentes ao mês de Março/2026.\n\n**Trecho-chave:**\n\"JACARANDÁ I FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ/MF sob o nº 31.772.231/0001-47, vem comunicar que, em relação ao mês de Março/2026, não haverá distribuição de resultados.\"\n\n### COMUNICADO AO MERCADO entregue em 10/02/2026\n\n**O QUE aconteceu:** Não haverá distribuição de resultados para o mês de Janeiro/2026.\n\n**Resumo:** O fundo JACARANDÁ I FII comunicou que não realizará a distribuição de resultados referentes ao mês de Janeiro/2026.\n\n**Trecho-chave:**\n\"JACARANDÁ I FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ/MF sob o nº 31.772.231/0001-47, vem comunicar que, em relação ao mês de Janeiro/2026, não haverá distribuição de resultados.\"\n\n### ASSEMBLEIA AGO entregue em 01/06/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária aprovou as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas do fundo JACARANDÁ I FII aprovaram, por aproximadamente 8,98% das cotações emitidas, as demonstrações financeiras referentes ao exercício de 2025.\n\n**Trecho-chave:**\n\"APROVADO REPROVADO ABSTENÇÃO ABSTENÇÃO \nPOR CONFLITO \n8,98% 0,00% 5,99% 0,00%\" \n\n### ASSEMBLEIA AGO entregue em 28/04/2026\n\n**O QUE aconteceu:** Foi convocada a assembleia geral ordinária para aprovar as demonstrações financeiras do exercício social findo em 31 de dezembro de 2025.\n\n**Resumo:** A BRL TRUST, como administradora do fundo JACARANDÁ I FII, convocou os cotistas para a assembleia geral ordinária que será realizada por meio de consulta formal.\n\n**Trecho-chave:**\n\"A BRL TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., com sede na cidade de São Paulo, Estado de São Paulo, na Rua Alves Guimarães, nº 1212, Pinheiros, inscrita no Cadastro Nacional de Pessoas Jurídicas do Ministério da Fazenda (“CNPJ/MF”) sob o nº 13.486.793/0001-42, habilitada para administração de fundos de investimento conforme ato declaratório expedido pela Comissão de Valores Mobiliários (“CVM”) nº 11.784, de 30 de junho de 2011 (\"Administradora\"), na qualidade de instituição administradora do JACARANDÁ 01 FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA, fundo de investimento imobiliário, inscrito no CNPJ sob o nº 31.772.231/0001-47 (\"Fundo\"), convida os cotistas do Fundo (‘Cotistas'), por meio desta, a participar da Assembleia Geral Ordinária de Cotistas do Fundo ('AGO'), a ser realizada de forma não presencial, por meio de coleta de voto a distância.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1145963,
+    "data_entrega": "27/03/2026 00:03",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

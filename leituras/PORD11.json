@@ -1,0 +1,45 @@
+{
+  "ticker": "PORD11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T21:45:43",
+  "relatorio": {
+    "id": 1251753,
+    "data_entrega": "17/07/2026 10:08",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Distribuição de Dividendos**: O fundo realizou uma distribuição de R$ 0,098 por cota referente ao mês de junho/26, totalizando R$ 1,183 por cota nos últimos 12 meses (cota base R$ 8,45). O dividend yield mensal foi de 14,00% e o acumulado do ano é de 10,35%.\n\n   > \"O fundo realizou distribuição de R$ 0,098 por cota referente à competência de Junho/26. Nos últimos doze meses, a distribuição somou R$ 1,18 por cota, equivalente a um dividend yield de 14,00% ao ano (cota base R$ 8,45) ou IPCA + 9,20% (IPCA + 11,57% com o Gross Up de IR)\" (p. 2)\n\n2. **Compras e Vendas no Mercado Secundário**: O fundo liquidou cerca de 4% do Patrimônio Líquido em operações no mercado secundário.\n\n   > \"Ao longo de junho e julho, seguimos aproveitando oportunidades no mercado secundário, incrementando posições em emissores que já temos em carteira. No total, liquidamos cerca de 4% do PL nessas movimentações.\" (p. 3)\n\n3. **Novas Alocações**: O fundo está em estágio avançado de estruturação de duas operações proprietárias com novos emissores.\n\n   > \"No front de novas alocações, estamos em estágio avançado de estruturação de duas operações proprietárias, ambas com novos emissores, que devem ser concluídas ao longo de agosto e consumiriam juntas aproximadamente 8% do PL do Fundo.\" (p. 3)\n\n4. **Composição da Carteira**: A carteira é composta principalmente por CRI Corporativo Sênior (11%), CRI Corporativo Série Subordinada (2%), CRI Corporativo Série Única (32%), e CRI Pulverizado Mezanino (6%).\n\n   > \"Breakdown da Carteira (%PL) \n   Caixa 23%\n   CRI Corporativo Sênior 11%\n   CRI Corporativo Série Subordinada 2%\n   CRI Corporativo Série Única 32%\n   CRI Pulverizado Mezanino 6%\" (p. 9)\n\n5. **Renda Urbana**: A maior parte da carteira está concentrada em imóveis residenciais, com 97% do PL.\n\n   > \"Comercial 3%\n   Residencial 97%\" (p. 10)\n\n### O que Observar Em Seguida:\n\n- **Distribuição de Dividendos**: Verificar se a distribuição mensal mantém-se consistente e se há possibilidade de aumento.\n- **Novas Alocações**: Monitorar o progresso das operações proprietárias em andamento."
+  },
+  "comunicados": {
+    "ids": [
+      811137,
+      1199579,
+      1166303
+    ],
+    "datas": [
+      "30/12/2024",
+      "19/05/2026",
+      "17/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Fato Relevante entregue em 30/12/2024\n\n**O QUE aconteceu:** O Fundo POLO CRÉDITO IMOBILIÁRIO - FUNDO DE INVESTIMENTO IMOBILIÁRIO passará a ser classificado como \"Papel\", com a subclassificação “Multiestratégia”, tipo de gestão “Gestão Ativa” e critério de classificação “Multicategoria”.\n\n**Resumo:** O Fundo foi reclassificado pela administradora para uma nova categoria, refletindo possivelmente mudanças na estratégia de investimento.\n\n**Trecho-chave:**\n\"passará a ser classificado como  “Papel”, com a subclassificação  \n“Multiestratégia”, tipo de gestão “Gestão Ativa ” e critério de classificação  \n“Multicategoria” de acordo com o previsto no art. 27 da referida norma.\"\n\n---\n\n### Assembleia Geral Ordinária entregue em 19/05/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária do Fundo POLO CRÉDITO IMOBILIÁRIO aprovou as demonstrações financeiras referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas, através da consulta formal, aprovaram as demonstrações financeiras do Fundo para o ano de 2025.\n\n**Trecho-chave:**\n\"após análises das respostas dos Cotistas à \nConsulta Formal, foi apurado que (a) Cotistas representando 3.66% das cotas em circulação \naprovaram, sem quaisquer ressalvas ou restrições , as Demonstrações Financeiras do Fundo \nreferentes ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### Assembleia Geral Ordinária entregue em 17/04/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária convocada para consultar os cotistas sobre a aprovação das demonstrações financeiras do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi convocada para que os cotistas pudessem votar sobre as demonstrações financeiras do Fundo, com a consulta formal sendo realizada por meio eletrônico e presencial.\n\n**Trecho-chave:**\n\"A Consulta Formal será apurada com a presença de qualquer número de cotistas, nos termos do \nArt. 74 da parte geral da RCVM nº 175, e a matéria descrita no item acima dependerá da \naprovação de quórum simples, ou seja, por maioria de votos dos cotistas prese ntes, nos termos \ndo Artigo 15 do Anexo Normativo III da RCVM 175.\"\n\n---\n\n**Conexão com o contexto:** As alterações na classificação do Fundo e a aprovação das demonstrações financeiras refletem possíveis mudanças no desempenho e estratégia de investimento, que podem afetar os indicadores financeiros apresentados."
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 8.44
+  },
+  "parecer": {
+    "id": 1152294,
+    "data_entrega": "01/04/2026 07:31",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Polo Crédito Imobiliário – Fundo de Investimento Imobiliário - Responsabilidade Limitada e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo em 31 de dezembro de 2025 e o desempenho de suas operações e os seus "
+  }
+}

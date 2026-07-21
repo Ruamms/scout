@@ -1,0 +1,49 @@
+{
+  "ticker": "KLOG11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T21:24:27",
+  "relatorio": {
+    "id": 1246000,
+    "data_entrega": "13/07/2026 18:05",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Locação Completa**: O empreendimento atingiu 100% de taxa de ocupação com a locação do último módulo para a empresa LMX Logística, superando os patamares projetados inicialmente.\n2. **Obras Concluídas**: As obras do empreendimento foram integralmente concluídas, restando apenas etapas relacionadas à implementação do condomínio e quitação de obrigações remanescentes.\n3. **Capital Integralizado**: Realizou a última integralização do capital comprometido no valor aproximado de 7,73% do capital total em junho/26.\n4. **Melhorias na Segurança e Manutenção**: Implementaram melhorias nas áreas de segurança e manutenção do empreendimento, incluindo novos postos de vigilância e sistemas de controle de acesso.\n5. **Cenário Macroeconômico Desafiador**: O ambiente macroeconômico permanece desafiador, com a Selic postergada, incertezas eleitorais e um cenário global instável.\n6. **Cap Rate Atualizado**: Os cap rates atualizados são de 18,2%, 17,0% e 16,0% para setembro/26, dezembro/26 e março/27, respectivamente.\n7. **Taxa de Administração**: A taxa de administração é de 0,80% sobre o valor efetivamente integralizado.\n8. **Histórico das Chamadas de Capital**: As chamadas de capital foram realizadas em dezembro/23 (44,05%), maio/24 (9,08%), agosto/24 (15,89%), novembro/24 (11,58%), março/25 (8,51%), setembro/25 (2,02%), março/26 (1,14%) e junho/26 (7,73%).\n\n### O que Observar em Seguida:\n- **Desenvolvimento da Estratégia de Venda**: A equipe de gestão passará a focar na avaliação mais apurada do valor do ativo para definir a estratégia de venda.\n- **Riscos Macroeconômicos**: O cenário macroeconômico desafiador continuará pressionando o valor de venda do empreendimento."
+  },
+  "comunicados": {
+    "ids": [
+      1223578,
+      1098334,
+      1049011,
+      1013197
+    ],
+    "datas": [
+      "17/06/2026",
+      "30/01/2026",
+      "27/11/2025",
+      "14/10/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 17/06/2026\n\n**O que aconteceu:** A KINEA DESENVOLVIMENTO LOGÍSTICO realizou a 8ª chamada de capital para integralização de cotas.\n\n**Resumo:** O fundo está realizando uma chamada de capital para integralizar 34.050.820 cotas, com valor total de R$ 34.050.820,00, a serem integralizados por meio do Sistema DDA.\n\n**Trecho-chave:**\n\"Na 8ª Chamada de Capital, haverá a integralização de 34.050.820 (trinta e quatro milhões cinqüenta mil oitocentos e vinte) Cotas da 1ª Emissão, a ocorrer por meio do Sistema de Distribuição de Ativos (DDA), operacionalizado e administrado pela B3 S.A. - Brasil, Bolsa, Balcão, tendo como base o Valor Atualizado da Cota da 1ª Emissão (conforme definido nos Boletins de Subscrição), calculado nos termos do s compromissos de investimento, equivalente a R$ 1,00 (um real) por Cota da 1ª Emissão para a 8ª Chamada de Capital, totalizando o montante de R$ 34.050.820,00 (trinta e quatro milhões cinqüenta mil oitocentos e vinte reais), com liquidação prevista para 01/07/2026.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 30/01/2026\n\n**O que aconteceu:** O Gestor do Fundo decidiu renunciar temporariamente a uma parte da Taxa Global.\n\n**Resumo:** O Gestor KINEA INVESTIMENTOS LTDA. decidiu renunciar, de forma temporária, a um percentual de sua parcela da Taxa Global do Fundo para o período entre 02/01/2026 e 31/12/2026.\n\n**Trecho-chave:**\n\"O Gestor, reforçando o seu compromisso com os cotistas e sua visão de longo prazo relacionada ao Fundo, buscando alternativas para mitigar os efeitos do atual cenário macroeconômico do país, reavaliou e decidiu por renunciar, de forma temporária, exclusiva mente para o período compreendido entre 02 de janeiro de 2026 (inclusive) e 31 de zembro de 2026 (inclusive), a um percentual de sua parcela da Taxa Global do Fundo.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 27/11/2025\n\n**O que aconteceu:** A assembleia aprovou as demonstrações contábeis do fundo.\n\n**Resumo:** A assembleia geral extraordinária aprovou as Demonstrações Contábeis do Fundo, devidamente acompanhadas do relatório dos auditores independentes, referentes ao exercício social findo em 30.06.2025.\n\n**Trecho-chave:**\n\"MATÉRIA DELIBERADA: aprovadas as Demonstrações Contábeis do Fundo, devidamente acompanhadas do relatório dos auditores independentes, documentos disponibilizados aos cotistas nos termos da regulamentação em vigor, relativos ao exercício social findo em 30.06.2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 14/10/2025\n\n**O que aconteceu:** A assembleia submeteu a consulta formal para aprovar as demonstrações financeiras.\n\n**Resumo:** A assembleia submeteu a consulta formal eletrônica de cotistas para aprovar as demonstrações financeiras, notas explicativas e parecer dos auditores independentes referentes ao exercício social findo em 30.06.2025.\n\n**Trecho-chave:**\n\"(i) Aprovar as demonstrações financeiras, notas explicativas e parecer dos auditores independentes, relativas ao exercício social findo em 30 de junho de 2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena"
+    ],
+    "cota": null
+  },
+  "parecer": {
+    "id": 1001601,
+    "data_entrega": "29/09/2025 21:22",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

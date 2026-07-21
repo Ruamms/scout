@@ -1,0 +1,51 @@
+{
+  "ticker": "RPRI11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T21:56:19",
+  "relatorio": {
+    "id": 1246531,
+    "data_entrega": "14/07/2026 09:45",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Resultado Distribuível e Rendimento:**\n   - Em junho, o Fundo RPRI11 apresentou um resultado distribuível de R$ 1,18/cota, resultando na distribuição de rendimentos no montante de R$ 1,40/cota aos cotistas em 14 de julho de 2026.\n   - O saldo da reserva acumulada foi reduzido para R$ 1,24/cota ao final do período (versus R$ 1,46/cota no mês de maio).\n\n2. **Movimentações na Carteira:**\n   - Houve aumento de exposição no CRI Pulverizado MK IPCA II, à taxa de IPCA + 10,50% a.a.\n   - A integralização da posição total do CRI Mora no FII CTA II foi realizada.\n\n3. **Watchlist e Reavaliações:**\n   - O CRI Tarjab Altino foi reprecificado em função da deterioração adicional observada em seu risco de crédito, gerando um ajuste pontual de marcação a mercado.\n   - O CRI Landsol está sendo reavaliado para revisão do LTV e das taxas de MTM.\n\n4. **Carteira de Ativos:**\n   - A carteira contém 32 CRIs e 2 Operações Estruturadas, com 98% indexados ao IPCA (IPCA + 11,4% a.a.) e 2% indexados ao CDI (CDI + 3,4% a.a.).\n   - A maior exposição está nos segmentos de Finanças Construção (36%), Pulverizado (36%) e Logística (18%).\n\n5. **Operações Estruturadas:**\n   - O FII Casas AAA tem 6 projetos em andamento, com 2 projetos em reta final de obra e conclusão de habite-se.\n   - O CRI Mora teve uma provisão de perda R$ 2,2 milhões reconhecida no mês de maio, representando cerca de 50% do saldo devedor.\n\n### O que Observar em Seguida:\n1. **Monitoramento das Operações Estruturadas:** A evolução dos projetos do FII Casas AAA e o andamento da reestruturação do CRI Mora.\n2. **Reavaliações de Risco:** As revisões no LTV e taxas de MTM dos CRIs Tarjab Altino e Landsol, bem como a monitoração das garantias dessas operações."
+  },
+  "comunicados": {
+    "ids": [
+      1099812,
+      1058412,
+      1102952,
+      1049009,
+      1013199
+    ],
+    "datas": [
+      "03/02/2026",
+      "11/12/2025",
+      "05/02/2026",
+      "27/11/2025",
+      "14/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 03/02/2026\n\n**O que aconteceu:** A RBR Gestão de Recursos Ltda., que gerencia o fundo, passará a ser controlada pelo Patria Investimentos Ltda. e terá sua denominação social alterada para Patria Gestão de Recursos Ltda.\n\n**Resumo:** A gestão do fundo será transferida para o Patria, garantindo a continuidade da qualidade na administração.\n\n**Trecho-chave:**\n\"Com isso, a RBR Gestão de Recursos Ltda., que passa a ser controlada pelo Patria Investimentos Ltda., terá sua denominação social alterada para Patria Gestão de Recursos Ltda.\"\n\n### FATO RELEVANTE entregue em 11/12/2025\n\n**O que aconteceu:** A sociedade PATRIA INVESTIMENTOS LTDA. celebrou o Contrato de Venda e Compra de Quotas e Outras Avenças referente à aquisição da totalidade das quotas do Gestor.\n\n**Resumo:** O fundo será gerido pelo time de Real Estate do Patria, que contará com cerca de R$ 38 bilhões sob gestão em mais de 30 fundos imobiliários.\n\n**Trecho-chave:**\n\"Em 10 de dezembro de 2025, a sociedade PATRIA INVESTIMENTOS LTDA., inscrita no CNPJ sob o nº 12.461.756/0001-17, celebrou o Contrato de Venda e Compra de Quotas e Outras Avenças referente à aquisição da totalidade das quotas do Gestor ('Transação').\"\n\n### COMUNICADO AO MERCADO entregue em 05/02/2026\n\n**O que aconteceu:** O Fundo passará a divulgar as informações de remuneração de forma segregada na Plataforma ANBIMA de Transparência de Taxas.\n\n**Resumo:** As informações de remuneração do fundo, incluindo a abertura de taxas e as condições aplicáveis, estarão disponíveis na Ferramenta ANBIMA.\n\n**Trecho-chave:**\n\"Para fundos que adotam taxa global, a partir de 31 de março de 2026, as informações de remuneração passarão a ser divulgadas de forma segregada por meio da Plataforma ANBIMA de Transparência de Taxas.\"\n\n### ASSEMBLEIA AGO entregue em 27/11/2025\n\n**O que aconteceu:** A assembleia aprovou as Demonstrações Contábeis do Fundo, acompanhadas do relatório dos auditores independentes.\n\n**Resumo:** As demonstrações contábeis e o relatório dos auditores foram aprovados na assembleia geral extraordinária.\n\n**Trecho-chave:**\n\"MATÉRIA DELIBERADA:  aprovadas as Demonstrações Contábeis do Fundo, devidamente acompanhadas do relatório dos auditores independentes.\"\n\n### ASSEMBLEIA AGO entregue em 14/10/2025\n\n**O que aconteceu:** A assembleia submeteu à consulta formal eletrônica a aprovação das demonstrações financeiras e notas explicativas, relativas ao exercício social findo em 30 de junho de 2025.\n\n**Resumo:** Os documentos financeiros do fundo foram submetidos para aprovação pelos cotistas.\n\n**Trecho-chave:**\n\"(i) Aprovar as demonstrações financeiras, notas explicativas e parecer dos auditores independentes, relativas ao exercício social findo em 30 de junho de 2025.\""
+  },
+  "retrato": {
+    "selo": "Alertas leves",
+    "nivel": "leves",
+    "alertas": [
+      "Rendimentos irregulares"
+    ],
+    "cota": 77.87
+  },
+  "parecer": {
+    "id": 1001579,
+    "data_entrega": "29/09/2025 21:10",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "ticker": "LIFE11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T21:15:23",
+  "relatorio": {
+    "id": 1239556,
+    "data_entrega": "03/07/2026 18:03",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Dividend Yield e Retorno do Fundo**:\n   - O fundo LIFE11 apresentou um dividend yield anualizado de aproximadamente 15,98% em maio.\n   - Em termos absolutos, o fundo entregou um retorno equivalente a 136,27% do CDI líquido no mês de maio.\n\n2. **Patrimônio e Liquidez**:\n   - O patrimônio líquido do fundo encerrou o mês de maio em R$ 383,768.615,88.\n   - A liquidez média diária no período foi de R$ 1,314 milhões.\n\n3. **Número de Cotistas**:\n   - O fundo encerrou o mês com 20,449 cotistas.\n\n4. **Atualizações da Carteira e Operações**:\n   - A operação FIDC Residence registrou uma valorização em sua cota, revertendo remarcações de meses anteriores.\n   - O empreendimento CRI Vectra registrou 4 vendas e 4 distratos no mês, resultando em variação líquida nula.\n\n5. **Desempenho dos Empréstimos**:\n   - O empreendimento CRI Abecker II registrou uma nova venda, mas também houve distratos, reduzindo marginalmente o percentual de vendas em relação ao mês anterior.\n   - No empreendimento Mirante Residence, foram realizadas 12 vendas e a obra manteve evolução consistente.\n\n6. **Operações de True Sale**:\n   - O empreendimento Ilha do Sol realizou 13 vendas no mês de maio, com atividades voltadas para as frentes preparatórias para o soft opening na ilha e no continente.\n   \n7. **Cota Patrimonial e Mercado**:\n   - A cota patrimonial encerrou em R$ 9,65, enquanto a cota de mercado estava em R$ 8,20.\n\n### O que observar em seguida:\n\n1. **Monitoramento da Cota Patrimonial**: Observar se haverá ajustes na cota patrimonial no próximo relatório.\n2. **Desenvolvimento das Operações Imobiliárias**: Atentar para as atualizações e vendas nos diversos empreendimentos mencionados, especialmente o Ilha do Sol."
+  },
+  "comunicados": {
+    "ids": [
+      1212203,
+      914171,
+      1247742,
+      1247733
+    ],
+    "datas": [
+      "03/06/2026",
+      "29/05/2025",
+      "14/07/2026",
+      "14/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 03/06/2026\n\n**Data:** 03/06/2026  \n**Título:** Variação positiva na cota de FIDC Investido impacta PL do Fundo  \n**Resumo:** A Administradora e a Gestora informaram sobre uma variação positiva de 281% na cota do FIDC Investido, que resultou em um impacto positivo estimado de 9,79% no Patrimônio Líquido (PL) do Fundo.  \n**Trecho-chave:** \"Em 01/06/2026, a Administradora, ao recepcionar a cota diária do FIDC Investido para fins de processamento da carteira do Fundo, identificou uma variação positiva de 281% (duzentos e oitenta e um por cento) na cota do FIDC Investido, no fechamento de 29/05/2026; referida oscilação representou, para o Fundo, um impacto positivo estimado em 9,79% (nove vírgula setenta e nove por cento) sobre o seu PL, o qual será integralmente refletido na cota do Fundo na data-base de 29/05/2026.\"\n\n### FATO RELEVANTE entregue em 29/05/2025\n\n**Data:** 29/05/2025  \n**Título:** Aprovação da oferta primária de cotas da 8ª emissão  \n**Resumo:** O Administrador aprovou a realização da distribuição pública primária de cotas da 8ª emissão do Fundo, com preços e condições detalhadas.  \n**Trecho-chave:** \"Nesta data, foi celebrado o “ATO DO ADMINISTRADOR DE APROVAÇÃO DA 8ª (OITAVA) EMISSÃO DE COTAS DO LIFE CAPITAL PARTNERS FUNDO DE INVESTIMENTOS IMOBILIÁRIOS” (“Ato do Administrador”), por meio do qual o Administrador aprovou a realização da distribuição pública primária de cotas da 8ª (oitava) emissão do Fundo (\"Cotas\" e \"Oitava Emissão\", respectivamente), a ser realizada nos termos da Resolução CVM nº 160, de 13 de julho de 2022 (“Resolução CVM 160”) em rito de registro automático de distribuição perante a CVM, nos termos do artigo 26 da Resolução CVM 160 (\"Oferta\").\"\n\n### ASSEMBLEIA AGO entregue em 14/07/2026\n\n**Data:** 14/07/2026  \n**Título:** Deliberação sobre aprovação das contas e demonstrações contábeis do Fundo  \n**Resumo:** A Administradora propôs a deliberação sobre a aprovação das contas e demonstrações contábeis do Fundo referentes ao exercício social findo em 31/12/2025, que serão devidamente auditadas.  \n**Trecho-chave:** \"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas, conforme disponíveis para consulta nos sites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\"\n\n### ASSEMBLEIA AGO entregue em 14/07/2026\n\n**Data:** 14/07/2026  \n**Título:** Deliberação sobre aprovação das contas e demonstrações contábeis do Fundo (repetição)  \n**Resumo:** A Administradora propôs a deliberação sobre a aprovação das contas e demonstrações contábeis do Fundo referentes ao exercício social findo em 31/12/2025, que serão devidamente auditadas.  \n**Trecho-chave:** \"Deliberar sobre a aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31/12/2025, devidamente auditadas, conforme disponíveis para consulta nos sites da Administradora e nos demais canais exigidos pela regulamentação em vigor.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 6.77
+  },
+  "parecer": {
+    "id": 1156992,
+    "data_entrega": "08/04/2026 18:01",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Life Capital Partners Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adota"
+  }
+}

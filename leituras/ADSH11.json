@@ -1,0 +1,45 @@
+{
+  "ticker": "ADSH11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T20:44:21",
+  "comunicados": {
+    "ids": [
+      1242631,
+      1237877,
+      1053721,
+      1233003,
+      1224241,
+      1240236,
+      1223615
+    ],
+    "datas": [
+      "09/07/2026",
+      "02/07/2026",
+      "04/12/2025",
+      "29/06/2026",
+      "18/06/2026",
+      "06/07/2026",
+      "17/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 09/07/2026\n\n**O QUE aconteceu:** A OLIVEIRA TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. anunciou a realização da 2ª emissão de cotas da Classe Única do AD SHOPPING FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA.\n\n**Resumo:** A OLIVEIRA TRUST planeja emitir novas cotas, com preços e condições detalhadas estabelecidas no comunicado.\n\n**Trecho-chave:**\n\"O montante inicial da Oferta é de R$ 100.000.004,09 (cem milhões, quatro reais e nove centavos), sem considerar a Taxa de Distribuição Primária (conforme abaixo definido) (\"Montante Inicial da Oferta\"), correspondente a 9.930.487 (nove milhões, novecentas e trinta mil, quatrocentas e oitenta e sete) Novas Cotas.\"\n\n### FATO RELEVANTE entregue em 02/07/2026\n\n**O QUE aconteceu:** A OLIVEIRA TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. anunciou a realização da 2ª emissão de cotas da Classe Única do AD SHOPPING FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA.\n\n**Resumo:** A OLIVEIRA TRUST planeja emitir novas cotas, com preços e condições detalhadas estabelecidas no comunicado.\n\n**Trecho-chave:**\n\"O montante inicial da Oferta é de R$ 100.000.004,09 (cem milhões, quatro reais e nove centavos), sem considerar a Taxa de Distribuição Primária (conforme abaixo definido) (\"Montante Inicial da Oferta\"), correspondente a 9.930.487 (nove milhões, novecentas e trinta mil, quatrocentas e oitenta e sete) Novas Cotas.\"\n\n### FATO RELEVANTE entregue em 04/12/2025\n\n**O QUE aconteceu:** AD SHOPPING FII anunciou a sua primeira aquisição, o Viashopping Barreiro - MG.\n\n**Resumo:** O fundo adquiriu o Viashopping Barreiro, um shopping center localizado em Belo Horizonte, com detalhes sobre o valor investido e as estimativas de rendimento.\n\n**Trecho-chave:**\n\"O ViaShopping Barreiro é referência em conveniência e experiências no Barreiro, localizado a aproximadamente 12 km do centro de Belo Horizonte, com acesso rápido e estratégico a capital mineira.\"\n\n### COMUNICADO AO MERCADO entregue em 29/06/2026\n\n**O QUE aconteceu:** A OLIVEIRA TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. informou sobre a necessidade de alteração do PU (Preço Unitário) de distribuição dos rendimentos para junho de 2026.\n\n**Resumo:** O novo Preço Unitário será aplicado na próxima distribuição de rendimentos, conforme comunicado.\n\n### COMUNICADO AO MERCADO entregue em 18/06/2026\n\n**O QUE aconteceu:** A OLIVEIRA TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. estabeleceu a data de corte para a distribuição dos rendimentos de junho de 2026.\n\n**Resumo:** A data de corte foi definida como o fechamento do dia 23/06/2026, conforme comunicado.\n\n### ASSEMBLEIA AGE entregue em 06/07/2026\n\n**O QUE aconteceu:** A OLIVEIRA TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. realizou a Assembleia Geral Extraordinária para aprovar a constituição de consórcios com o AD SHOPPING.\n\n**Resumo:** Os cotistas aprovaram, sem ressalvas ou restrições, a constituição dos consórcios São Gonçalo Shopping Rio e Via Shopping Barreiro.\n\n### ASSEMBLEIA AGE entregue em 17/06/2026\n\n**O QUE aconteceu:** A OLIVEIRA TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. apresentou proposta para a Assembleia Especial Extraordinária de Cotistas, visando aprovar a constituição dos consórcios São Gonçalo Shopping Rio e Via Shopping Barreiro.\n\n**Resumo:** A proposta foi enviada aos cotistas para apreciação na assembleia, que será realizada por meio de consulta formal."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1150952,
+    "data_entrega": "31/03/2026 18:34",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas representam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do AD Shopping Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho das suas operações e os seus fluxos de caixa para o período de 24 de novembro de 2025 (início das atividades) a 31 de dezembro "
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "ticker": "SHPG11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T21:59:00",
+  "comunicados": {
+    "ids": [
+      1188483,
+      1188481,
+      1151704
+    ],
+    "datas": [
+      "13/05/2026",
+      "13/05/2026",
+      "31/03/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral de Cotistas Realizada em 30/04/2026\n\n**O que aconteceu:** A assembleia geral de cotistas para aprovação das contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025 foi realizada.\n\n**Resumo:** A assembleia ocorreu em 30 de abril de 2026, mas nenhum cotista compareceu. Como resultado, as contas e demonstrações contábeis foram consideradas automaticamente aprovadas.\n\n**Trecho-chave:**\n\"considerando que as demonstrações contábeis não contêm ressalvas, ficam as mesmas consideradas automaticamente aprovadas.\" (p. 1)\n\n### Convocação da Assembleia Geral de Cotistas\n\n**O que aconteceu:** A administradora convocou os cotistas para uma assembleia geral com o objetivo de aprovar as contas e demonstrações contábeis do exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi convocada em 31 de março de 2026, com prazo de votação até 30 de abril de 2026. Os cotistas poderiam votar via plataforma eletrônica.\n\n**Trecho-chave:**\n\"Assim sendo, solicitamos a manifestação de V.Sa. até 30 de abril de 2026.\" (p. 1)\n\n### Resposta à Consulta Formal\n\n**O que aconteceu:** A administradora recebeu respostas dos cotistas sobre a aprovação das contas e demonstrações contábeis do Fundo referente ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Todos os cotistas responderam, com todos votando SIM para a aprovação das contas e demonstrações contábeis.\n\n**Trecho-chave:**\n\"Voto: [ ] SIM, aprovo as contas e demonstrações contábeis do Fundo.\" (p. 3)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1140208,
+    "data_entrega": "18/03/2026 16:35",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Mais Shopping Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no"
+  }
+}

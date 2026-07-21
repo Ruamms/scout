@@ -1,0 +1,24 @@
+{
+  "ticker": "MARE11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T21:29:22",
+  "comunicados": {
+    "ids": [
+      1235825,
+      1225906,
+      1225905
+    ],
+    "datas": [
+      "30/06/2026",
+      "23/06/2026",
+      "23/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGE"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O QUE aconteceu:** Pagamento de dividendos aos cotistas.\n**Resumo:** O Fundo MANATÍ RENDA CDI PLUS FII realizou um pagamento de R$ 0,80 por cota no dia 1º de julho de 2026, totalizando R$ 3.000.000,00.\n**Trecho-chave:** \"Será pago o valor de R$ 0,80 (oitenta centavos) por cota, perfazendo o montante total de R$ 3.000.000,00 (três milhões de reais) no dia 01/07/2026.\"\n\n### COMUNICADO AO MERCADO entregue em 23/06/2026\n\n**O QUE aconteceu:** Deliberações aprovadas na Assembleia Geral Extraordinária.\n**Resumo:** A assembleia aprovou deliberações relacionadas à aquisição e alienação de certificados de recebíveis imobiliários (CRI) que possam conter conflitos de interesses, bem como a possibilidade de aquisição de ativos de zeragem.\n**Trecho-chave:** \"Os Cotistas foram convocados a: I. Deliberar pela: (a) aquisição e alienação, pelo Fundo, de certificados de recebíveis imobiliários (\"CRI\") que, cumulativamente ou não, sejam originados, estrutura dos, distribuídos, alienados nos mercados primário e secundário, e/ou contem com consultoria, pela Gestora e/ou pela Administradora, bem como por suas pessoas ligadas...\"\n\n### ASSEMBLEIA AGE entregue em 23/06/2026\n\n**O QUE aconteceu:** Deliberações aprovadas na Assembleia Geral Extraordinária.\n**Resumo:** A assembleia aprovou deliberações relacionadas à aquisição e alienação de certificados de recebíveis imobiliários (CRI) que possam conter conflitos de interesses, bem como a possibilidade de aquisição de ativos de zeragem.\n**Trecho-chave:** \"As MATÉRIAS FORAM APROVADAS pelos dos votos dos Cotistas que responderam à Consulta Formal.\"\n\n---\n\nEstes fatos são baseados nos documentos fornecidos e não incluem interpretações ou cálculos adicionais."
+  },
+  "modelo": "qwen2.5:7b"
+}

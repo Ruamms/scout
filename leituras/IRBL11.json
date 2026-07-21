@@ -1,0 +1,36 @@
+{
+  "ticker": "IRBL11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T20:17:02",
+  "comunicados": {
+    "ids": [
+      1018769,
+      955587,
+      1022217,
+      1002941
+    ],
+    "datas": [
+      "22/10/2025",
+      "29/07/2025",
+      "28/10/2025",
+      "30/09/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 22/10/2025\n\n**O QUE aconteceu:** A XP Malls e o Shopping Internacional Guarulhos adquiriram participações nos shoppings Metrô Tatuapé, Metrô Boulevard Tatuapé e Iguatemi Bosque.\n\n**Resumo:** As aquisições envolvem direitos de uso e receita bruta desses shoppings. Além disso, o Shopping Internacional Guarulhos foi vendido parcialmente.\n\n**Trecho-chave:**\n\"1 A aquisição do Shopping Metrô Tatuapé teve como objeto o direito de uso de 4,5263% do ativo até 27 de outubro de 2047, sendo certo que após essa data teremos a elevação automática dessa participação para 8,328% no shopping center até 27 de outubro de 2097. Além disso, o Internacional FII adquiriu a participação de 16,9959% nos direitos creditórios de 15% da receita bruta do referido shopping center até 27 de outubro de 2027 e 17,00% da receita bruta de 28 de outubro de 2027 até 27 de outubro de 2097. / 2 A aquisição do Shopping Metrô Boulevard Tatuapé teve como objeto o direito de uso de 15,00% do ativo até 27 de outubro de 2097.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 29/07/2025\n\n**O QUE aconteceu:** O Shopping Internacional Guarulhos adaptou seu regulamento para se alinhar com a Resolução CVM nº 175.\n\n**Resumo:** As alterações refletem apenas a adequação ao novo regulamento da CVM, sem impacto nas operações do fundo.\n\n**Trecho-chave:**\n\"Destacamos que o Fundo não sofreu qualquer alteração que dependa de deliberação dos cotistas, sendo certo que as alterações promovidas refletem apenas a adequação a Resolução CVM 175.\"\n\n---\n\n### ASSEMBLEIA AGE entregue em 28/10/2025\n\n**O QUE aconteceu:** A assembleia geral de cotistas do Shopping Internacional Guarulhos aprovou mudanças na denominação social e dispensou a obrigação de enviar resumo das deliberações.\n\n**Resumo:** O fundo passa a se chamar Omni Malls Fundo de Investimento Imobiliário - FII, e o envio do resumo das deliberações foi dispensado.\n\n**Trecho-chave:**\n\"5.1 Alterar a denominação social do Fundo, que passa a ser “OMNI MALLS FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII”, que passará a vigorar conforme Regulamento anexo; / 5.2. Dispensar a Administradora da obrigação de envio do resumo das deliberações aprovadas nesta Assembleia Geral.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 30/09/2025\n\n**O QUE aconteceu:** A assembleia geral ordinária aprovou as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes.\n\n**Resumo:** Os cotistas confirmaram o conhecimento das deliberações e autorizaram alterações nos instrumentos do fundo. O envio do resumo das deliberações foi dispensado.\n\n**Trecho-chave:**\n\"Os cotistas, neste ato; (a) declaram-se ciente das deliberações acima aprovadas e não possui quaisquer dúvidas sobre a emissão de cotas e autoriza a Administradora a realizar todas as alterações necessárias nos instrumentos do Fundo em razão das deliberações acima aprovadas e (b) dispensam o envio do resumo das deliberações da presente ata.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1001663,
+    "data_entrega": "29/09/2025 21:52",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis aos fundos de investimento imobiliário."
+  }
+}

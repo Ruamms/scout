@@ -1,0 +1,36 @@
+{
+  "ticker": "ANGC11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T22:04:19",
+  "comunicados": {
+    "ids": [
+      950026,
+      1064429,
+      1212954,
+      1019045
+    ],
+    "datas": [
+      "21/07/2025",
+      "16/12/2025",
+      "05/06/2026",
+      "23/10/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 21/07/2025\n\n**O QUE aconteceu:** O Fundo foi procurado por um corretor local que apresentou a Prefeitura do Rio de Janeiro como potencial interessada na aquisição do imóvel localizado na Rua Campo Grande, nº 120 – Campo Grande, Rio de Janeiro (RJ).\n\n**Resumo:** A Prefeitura do Rio de Janeiro declarou o imóvel de utilidade pública para futura desapropriação.\n\n**Trecho-chave:**\n\"Posteriormente, após visita técnica realizada por representantes da Prefeitura ao imóvel, foi publicado decreto municipal nº 56.441 declarando a área como de utilidade pública, visando uma possível desapropriação futura.\"\n\n### COMUNICADO AO MERCADO entregue em 16/12/2025\n\n**O QUE aconteceu:** O Fundo informou sobre o pagamento dos rendimentos referentes ao período de julho a novembro de 2025.\n\n**Resumo:** O pagamento será realizado no dia 18 de dezembro de 2025 aos detentores de cotas do Fundo.\n\n**Trecho-chave:**\n\"O valor dos rendimentos referentes a o período de julho a novembro de 2025 corresponde a R$ 343,05 por cota. O pagamento será realizado no dia 18 de dezembro de 2025 aos detentores de cotas do Fundo no fechamento de 28 de novembro de 2025.\"\n\n### ASSEMBLEIA AGE entregue em 23/10/2025\n\n**O QUE aconteceu:** A Assembleia Geral Extraordinária aprovou a proposta apresentada pelo MRJ para locação do imóvel por 3 anos, mas reprovou a locação devido aos riscos jurídicos e operacionais.\n\n**Resumo:** Os cotistas decidiram apresentar ao MRJ o laudo de avaliação do imóvel e contratar uma empresa especializada para inventariar o imóvel, visando apoiar a negociação da desapropriação.\n\n**Trecho-chave:**\n\"Os Cotistas do Fundo deliberam, por unanimidade, sem quaisquer ressalvas ou restrições:\n(i) Reprovada, por unanimidade, a locação do imóvel por 3 anos ao MRJ, devido aos riscos jurídicos e operacionais relacionados a possíveis ações contra o município descritos nos Anexos II e III, a presente Ata.\n(ii) Aprovada, a apresentação ao MRJ do laudo de avaliação e a contratação da empresa para inventariar o imóvel, a fim de apoiar a negociação da desapropriação.\"\n\n### ASSEMBLEIA AGO entregue em 05/06/2026\n\n**O QUE aconteceu:** Não há informações relevantes neste documento.\n\n**Resumo:** Documento não contém informações adicionais relevantes."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1147257,
+    "data_entrega": "27/03/2026 21:36",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Renda Corporativa Angico - Responsabilidade Limitada (anteriormente denominado Fundo de Investimento Imobiliário Renda Corporativa Angico - FII) em 31 de dezembro de 202 5, o desempenho de suas operações e "
+  }
+}

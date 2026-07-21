@@ -1,0 +1,30 @@
+{
+  "ticker": "SPMO11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T22:20:51",
+  "comunicados": {
+    "ids": [
+      1180519,
+      1152831
+    ],
+    "datas": [
+      "05/05/2026",
+      "01/04/2026"
+    ],
+    "rotulos": [
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Agora entregue em 05/05/2026\n\n**O QUE aconteceu:** Não houve resposta dos cotistas à consulta formal.\n\n**Resumo:** A assembleia foi realizada por correspondência, mas nenhum cotista respondeu até a data prevista.\n\n**Trecho-chave:**\n\"Os Cotistas do SUPREMO FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA não responderam à consulta formulada até a data prevista.\"\n\n### Assembleia Agora entregue em 01/04/2026\n\n**O QUE aconteceu:** Foi enviada uma consulta formal aos cotistas sobre as Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A administradora do fundo convidou os cotistas a se manifestarem por escrito até o dia 04 de maio de 2026 sobre as Demonstrações Financeiras e relatório dos Auditores Independentes.\n\n**Trecho-chave:**\n\"BR-CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., (BR-CAPITAL) na qualidade de administradora do SUPREMO FUNDO DE INVESTIMENTO IMOBILIÁRIO, com base no artigo 33 do Regulamento do Fundo, vem pela presente consultar os cotistas...\"\n\n**Conexão com o contexto:** A falta de resposta dos cotistas pode impactar a transparência e governança do fundo, especialmente considerando que o número mínimo legal de cotistas para isenção de IR é 100."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1150812,
+    "data_entrega": "31/03/2026 18:04",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e fin anceira do Supremo Fundo de Investimento Imobiliário em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos Fundos de"
+  }
+}

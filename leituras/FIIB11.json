@@ -1,0 +1,52 @@
+{
+  "ticker": "FIIB11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T21:11:08",
+  "relatorio": {
+    "id": 1222729,
+    "data_entrega": "16/06/2026 14:44",
+    "texto": "### Fatos Relevantes do Relatório Gerencial:\n\n1. **Vacância**: A vacância no empreendimento foi de 6,80% no mês de maio de 2026, sem alteração em relação ao ano anterior.\n   > \"O impacto no fluxo de caixa de a partir de outubro/2026 será de R$ 0,03 por cota.\" (p. 5)\n\n2. **Desocupação**: Uma locatária do Bloco 2 - Módulo D decidiu rescindir antecipadamente o contrato.\n   > \"A locatária ocupante do Bloco 2 – Módulo D, com área de 685,97m², decidiu rescindir antecipadamente o contrato de locação...\" (p. 5)\n\n3. **Inadimplência**: Houve inadimplência temporária em cobrança extrajudicial.\n   > \"Inadimplência temporária em cobrança extrajudicial:\" (p. 7)\n\n4. **Rendimentos**: O rendimento do mês de maio foi impactado pela parcela correspondente a 45% do aluguel postergada, totalizando R$ 3.663.259,52 para pagamento em 24 parcelas.\n   > \"O total das parcelas postergadas, já acrescidas de juros de 1,70% ao mês, totalizará, em 20/07/2026, o montante de R$ 3.663.259,52 para pagamento em 24 parcelas fixas, no valor de R$ 187.161,14 (R$ 0,27 por cota), com vencimento da primeira parcela em 20/07/2026.\" (p. 4)\n\n5. **Obras e Reformas**: Existem obras programadas para 2026.\n   > \"31/05/2026 Valor total Status Situação do imóvel Observações Imóvel Obras contratadas em 2026 - 63.989,17 Contratada Cliente Ampliação de Entrada de Energia de 100A para 125A Bloco - 4 - D\" (p. 16)\n\n### Observações a Acompanhar:\n\n- **Vacância**: Manter-se atento à tendência da vacância, que pode indicar problemas de ocupação.\n- **Inadimplência**: Monitorar o fluxo de caixa e as medidas tomadas para cobrar dívidas."
+  },
+  "comunicados": {
+    "ids": [
+      1235602,
+      1133427,
+      1126922,
+      1179885,
+      1147702
+    ],
+    "datas": [
+      "30/06/2026",
+      "11/03/2026",
+      "03/03/2026",
+      "05/05/2026",
+      "30/03/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 30/06/2026\n\n**O QUE aconteceu:** Alocatária não pagou aluguel e encargos locatícios, causando impacto no caixa do fundo.\n\n**Resumo:** A locatária não realizou o pagamento de parte do aluguel e dos encargos locatícios, resultando em um impacto negativo no caixa do fundo. \n\n**Trecho-chave:**\n\"Diante do exposto, considerando a parcela de 45% do aluguel postergada como parte do acordo de parcelamento, a parcela do aluguel inadimplida dos 55% restantes e a inadimplência dos encargos locatícios, o impacto total no caixa do Fundo é de R$ 1,21 por cota, conforme abaixo detalhado:\"\n\n### FATO RELEVANTE entregue em 11/03/2026\n\n**O QUE aconteceu:** Locatária solicitou renegociação de contrato e acordou com fundo para prorrogação da locação e parcelamento do aluguel.\n\n**Resumo:** A locatária, após inadimplência parcial, solicitou renegociação. Foi formalizado um acordo que incluiu a prorrogação da locação por 24 meses e o pagamento de parte do aluguel em 24 parcelas mensais.\n\n**Trecho-chave:**\n\"Assim, considerando:  \n1. O impacto no fluxo de caixa mensal do Fundo decorrente da eventual rescisão do contrato de locação, estimado em R$ 1,15 por cota;\"\n\n### FATO RELEVANTE entregue em 03/03/2026\n\n**O QUE aconteceu:** Locatária não viabilizou acordo de parcelamento e o Fundo rescindiu contrato.\n\n**Resumo:** A locatária solicitou postergação do pagamento, mas não viabilizou um acordo. O contrato foi rescindido, com a locatária sendo notificada para desocupar o imóvel.\n\n**Trecho-chave:**\n\"Entretanto, o cenário atualmente verificado é substancialmente mais gravoso. Além de não ter retomado o pagamento integral conforme prometido, a Locatária deixou de adimplir 100% do aluguel de janeiro/2026.\"\n\n### ASSEMBLEIA AGO entregue em 05/05/2026\n\n**O QUE aconteceu:** Assembleia geral ordinária para aprovação das contas relativas ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi realizada por meio de consulta formal, com os cotistas votando sobre as contas do fundo e demais documentos pertinentes.\n\n### ASSEMBLEIA AGO entregue em 30/03/2026\n\n**O QUE aconteceu:** Convocação da assembleia geral ordinária para aprovação das contas relativas ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A administradora convocou os cotistas para a assembleia, que será realizada por meio de consulta formal. \n\n**Trecho-chave:**\n\"1. Matéria de Assembleia Geral Ordinária  \n(i) apreciação e votação das contas relativas ao Fundo e das demonstrações contábeis e suas notas explicativas, referentes ao exercício encerrado em 31 de dezembro de 2025.\""
+  },
+  "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 442.97
+  },
+  "parecer": {
+    "id": 1147603,
+    "data_entrega": "30/03/2026 11:55",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo de Investimento Imobiliário Industrial do Brasil Responsabilidade L imitada em 31 de dezembro de 2025, o desempenho das suas operações e os seus fluxos de c aixa para o exercício findo nessa data, de acordo com as práticas contábeis a"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "ticker": "GRIV11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T21:08:56",
+  "comunicados": {
+    "ids": [
+      425576,
+      1173240,
+      1048486
+    ],
+    "datas": [
+      "07/03/2023",
+      "29/04/2026",
+      "27/11/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 07/03/2023\n\n**O QUE aconteceu:** A transferência da totalidade das ações de emissão da Administradora para a APEX FUND HOLDING LTDA foi aprovada pelo Banco Central do Brasil e concluída.\n\n**Resumo:** A BRL Trust Distribuidora de Títulos e Valores Mobiliários S.A. informou que a transferência das ações de emissão da Administradora para a APEX FUND Holding Ltda. foi aprovada e finalizada pelo Banco Central do Brasil.\n\n**Trecho-chave:** \"A Operação foi concluída.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGE entregue em 29/04/2026\n\n**O QUE aconteceu:** A assembleia aprovou a não distribuição semestral de 95% do rendimento do Fundo para reinvestimento.\n\n**Resumo:** Os cotistas do TAG GR IV aprovaram a nona deliberação, decidindo não distribuir o rendimento do Fundo no período de 01/07/2025 a 31/12/2025, optando por reinvestir os recursos.\n\n**Trecho-chave:** \"Foi deliberado e aprovado pelos Cotistas representantes da totalidade das cotas em circulação da Classe, sem quaisquer ressalvas: (a) A não distribuição semestral de 95% (noventa e cinco por cento) de rendimento do Fundo, conforme exigido pela Lei nº 9.779/1999, conforme alterada, referente ao período de 01/07/2025 até 31/12/2025 para fins de reinvestimento deste montante em ativos imobiliários.\" (p. 1)\n\n---\n\n### ASSEMBLEIA AGE entregue em 27/11/2025\n\n**O QUE aconteceu:** A assembleia aprovou a amortização das cotas do Fundo no valor líquido de R$12,000,000,00.\n\n**Resumo:** Os cotistas do TAG GR IV aprovaram a amortização extraordinária das cotas do Fundo no montante líquido de R$12.000.000,00, distribuído na proporcionalidade da participação de cada cotista.\n\n**Trecho-chave:** \"Foi deliberado e aprovado pelos Cotistas representantes da totalidade das cotas em circulação do Fundo, sem quaisquer ressalvas, a amortização das Cotas do Fundo (\"Amortização Extraordinária), no montante líquido de R$12.000.000,00 (doze milhões de reais), distribuído na proporcionalidade da participação de cada cotista.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1099326,
+    "data_entrega": "02/02/2026 17:36",
+    "tipo": "ressalva",
+    "rotulo": "opinião com ressalva",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, exceto pelos efeitos e possíveis efeitos dos assuntos descritos na seção a seguir, intitulada “Base para opinião com ressalvas”, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do TAG GR IV – Fundo de Investimento Imobiliário de Responsabilidade Limitada em 31 de dezembro de 2024, o desempenh"
+  }
+}

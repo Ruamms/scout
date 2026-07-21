@@ -1,0 +1,33 @@
+{
+  "ticker": "PMOV11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T22:21:24",
+  "comunicados": {
+    "ids": [
+      1188255,
+      1206488,
+      1188254
+    ],
+    "datas": [
+      "13/05/2026",
+      "28/05/2026",
+      "13/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Assembleia AGE",
+      "Assembleia AGO"
+    ],
+    "texto": "### Assembleia Geral Ordinária (AGO) entregue em 13/05/2026\n\n**O que aconteceu:** A assembleia de cotistas para aprovação das contas anuais do exercício encerrado em 31 de dezembro de 2025 não ocorreu, pois nenhum cotista compareceu.\n\n**Resumo:** A assembleia foi convocada em 01 de abril de 2026 e agendada para 04 de maio de 2026. Como não houve presença de cotistas, as contas anuais foram consideradas automaticamente aprovadas sem a necessidade de uma reunião.\n\n**Trecho-chave:**\n\"não sendo, portanto, possível sua instalação. Dessa forma, e considerando que as demonstrações contábeis não contêm ressalvas, ficam as mesmas consideradas automaticamente aprovadas.\"\n\n---\n\n### Assembleia Especial de Cotistas entregue em 28/05/2026\n\n**O que aconteceu:** A assembleia especial de cotistas deliberou aprovar a concessão de allowance para custear obras, benfeitorias e adaptações em um salão comercial do MOINHOS SHOPPING.\n\n**Resumo:** Os cotistas aprovaram a realização de despesas até R$ 4.000.000,00 para a execução de obras no MOINHOS SHOPPING com a finalidade de instalar uma unidade da Lojas Renner. Como resultado, a distribuição de rendimentos aos cotistas foi restringida em 95% do valor previsto.\n\n**Trecho-chave:**\n\"Os Cotistas deliberaram, por unanimidade, sem quaisquer reservas ou restrições: \n4.1. Aprovar a concessão de allowance ao Administrador e ao Gestor para que, no âmbito da celebração de contrato de locação com a Lojas Renner, inscrita no CNPJ sob o nº 92.754.738/0001 -62 (“Locatária”), a Classe custeie a execução de obras, benfeitorias e adaptações em um dos salões de uso comercial (“SUC”) do MOINHOS SHOPPING...\"\n\n**Conexão com o contexto:** Esta decisão pode afetar negativamente os rendimentos dos cotistas no curto prazo, considerando a restrição na distribuição de rendimentos."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1150110,
+    "data_entrega": "31/03/2026 15:59",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Pateo Moinhos de Vento Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis ad"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ticker": "PRPY11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-20T20:44:59",
+  "comunicados": {
+    "ids": [
+      1067471,
+      1037377
+    ],
+    "datas": [
+      "22/12/2025",
+      "13/11/2025"
+    ],
+    "rotulos": [
+      "Assembleia AGE",
+      "Assembleia AGE"
+    ],
+    "texto": "### Assembleia Geral de Cotistas realizada em 17/12/2025\n\n**O QUE aconteceu:** Substituição da atual administradora, custodiante, controladora, escrituradora e distribuidora do Fundo pela Nova Administradora.\n\n**Resumo:** A assembleia aprovou a substituição da atual instituição administradora pelo Nova Administradora a partir de 22/12/2025.\n\n**Trecho-chave:**\n\"6.2. Aprovaram a substituição da atual Administradora, controladora, escrituradora, distribuidora do Fundo pela Nova Administradora a partir da abertura do dia 22 de dezembro  de 2025 (“Data da Transferência ”) utilizando por base a posição de fechamento do Fundo em 19 de dezembro  de 2025  (“Data-Base”),\"\n\n---\n\n### Assembleia Geral de Cotistas realizada em 13/11/2025\n\n**O QUE aconteceu:** Contratação da nova administradora especializada e alteração do regulamento.\n\n**Resumo:** A assembleia aprovou a contratação da CAROLINE HIDALGO DA SILVA como administradora especializada, bem como as alterações no regulamento do Fundo.\n\n**Trecho-chave:**\n\"(iii) Aprovou a contratação da CAROLINE HIDALGO DA SILVA , pessoa jurídica de direito privado devidamente inscrita no CNPJ/MF sob o nº 58.469.116/0001-54, com endereço na Rua Alpes nº 408, Município Jardim Presidente Dutra, Município de Guarulhos, Estado de São Paulo, CEP: 07171-100, como administradora especializada pelo Fundo, bem como a sua remuneração fixa mensal de R$ 3.000,00 (três mil reais), iniciando-se o pagamento no presente mês.\"\n\n**Conexão com indicadores:** A contratação da nova administradora e as alterações regulamentares podem impactar na gestão do fundo, potencialmente afetando os indicadores financeiros a longo prazo."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151130,
+    "data_entrega": "31/03/2026 19:04",
+    "tipo": "abstencao",
+    "rotulo": "abstenção de opinião",
+    "grave": true,
+    "continuidade": false,
+    "trecho": "Nossa opinião não está ressalvada em relação a esse assunto."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "ticker": "ABCP11",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-20T20:18:34",
+  "relatorio": {
+    "id": 1251350,
+    "data_entrega": "16/07/2026 17:59",
+    "texto": "### Fatos Extraídos:\n\n1. **Vacância:** O shopping encerrou o mês com 1,865 mil metros quadrados vagos, representando 2,7% de vacância.\n   > \"O shopping encerrou o mês com 1.865 m² vagos, representando 2,7%.\" (p.4)\n\n2. **Inadimplência:** A inadimplência líquida encerrou em 3%, impactada principalmente pelo Aluguel Percentual.\n   > \"A inadimplência líquida encerrou em 3% (R$ 534 mil) (0,7%), pior que o orçado (R$ 289 mil).\" (p.4)\n\n3. **Aluguel Mínimo:** O aluguel mínimo apresentou alta de 2% na comparação anual.\n   > \"Aluguel mínimo: apresentou alta de 2% na comparação anual, atingindo o valor de R$ 5,90 milhões.\" (p.4)\n\n4. **Vendas:** As vendas do shopping tiveram um aumento de 6,6% em relação ao mesmo período do ano anterior.\n   > \"Vendas: Alta de 6,6% na comparação anual, atingindo valor de R$106,7 milhões.\" (p.4)\n\n5. **Obras e Reformas:** Em maio de 2026, foi realizado um investimento de R$743,8 mil em obras do piso, sistema elétricos/automação e remediação ambiental.\n   > \"Conforme orçamento aprovado, em maio de 2026 foi realizado um investimento de R$743,8 mil, sendo a maior parte representada por obras do piso, sistema elétricos/automação e remediação ambiental.\" (p.5)\n\n### O que observar em seguida:\n1. **Vacância e Inadimplência:** Observar se haverá melhorias na gestão desses indicadores.\n2. **Vendas:** Verificar a consistência do crescimento nas vendas ao longo dos próximos meses."
+  },
+  "comunicados": {
+    "ids": [
+      1124552,
+      1015611,
+      1173373,
+      1168477
+    ],
+    "datas": [
+      "27/02/2026",
+      "15/10/2025",
+      "29/04/2026",
+      "23/04/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO/E",
+      "Assembleia AGO/E"
+    ],
+    "texto": "### Comunicação de 27/02/2026\n\n**Título:** Disponibilidade do Informe de Rendimentos Ano-CALENDÁRIO 2025\n\n**Resumo:** O informe de rendimentos dos fundos listados, incluindo o ABCP11 (Grand Plaza Shopping FII), está disponível no Portal do Investidor da Rio Bravo.\n\n**Trecho-chave:**\n\"Os informes de rendimentos (IR) dos fundos listados no Anexo I estão disponíveis aos investidores a partir desta data no Portal do Investidor da Rio Bravo.\"\n\n---\n\n### Comunicação de 15/10/2025\n\n**Título:** Resposta à B3 S.A. sobre Oscilações Atípicas na Cotação do ABCP11 (Grand Plaza Shopping FII)\n\n**Resumo:** A administradora Rio Bravo informa que não há novos fatos ou atos específicos que justifiquem as oscilações das cotas de emissão do fundo.\n\n**Trecho-chave:**\n\"A Administradora informa que desconhece a existência de um fato específico, dentro do período mencionado, que tenha originado as referidas oscilações das cotas de emissão do Fundo.\"\n\n---\n\n### Assembleia Extraordinária de 23/04/2026\n\n**Título:** Resultado da Consulta Formal nº 01/2026 sobre Alteração no Regulamento do ABCP11 (Grand Plaza Shopping FII)\n\n**Resumo:** A alteração no regulamento do fundo para permitir a aplicação de até 25% do patrimônio líquido em ativos de renda fixa não foi aprovada, devido à falta de quórum mínimo.\n\n**Trecho-chave:**\n\"A matéria do item (ii) dependia da aprovação por maioria de votos dos cotistas presentes e que representassem, no mínimo, 25% (vinte e cinco por cento) do total das cotas emitidas. Sendo o que nos cabia para o momento, a matéria foi reprovada.\""
+  },
+  "retrato": {
+    "selo": "Alertas leves",
+    "nivel": "leves",
+    "alertas": [
+      "P/VP muito abaixo da média histórica"
+    ],
+    "cota": 74.0
+  },
+  "parecer": {
+    "id": 1143643,
+    "data_entrega": "24/03/2026 22:05",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e Grand Plaza Shopping Fundo de Investimento Imobiliário - Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no"
+  }
+}
