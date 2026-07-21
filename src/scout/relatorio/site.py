@@ -764,7 +764,8 @@ tbody tr:hover td {{ background:#161D20; }}
 .filtro-tipo:hover {{ border-color:#8FCB9B; color:#8FCB9B; }}
 .filtro-tipo.ativo {{ background:#8FCB9B; color:#0F1416; border-color:#8FCB9B; font-weight:700; }}
 .filtro-tipo b {{ color:inherit; }}
-td:not(:first-child):not(:nth-child(2)):not(:nth-child(3)), th:not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {{ text-align:right; }}
+td:not(:first-child):not(:nth-child(2)):not(:nth-child(3)):not(:last-child), th:not(:first-child):not(:nth-child(2)):not(:nth-child(3)):not(:last-child) {{ text-align:right; }}
+th.col-selo, td.col-selo {{ text-align:left; }}
 .selo {{ display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700;
   font-size:11px; color:#0F1416; white-space:nowrap; }}
 h2 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:22px; font-weight:700; letter-spacing:-.01em; margin:28px 0 10px; }}
