@@ -99,6 +99,45 @@ def test_indice_acoes_lista_e_rankings(con):
     assert "não recomendação" in pagina
 
 
+def test_calculadoras_graham_e_bazin(con):
+    _semear_empresa(con)
+    dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))
+    pagina = acao_html.gerar(dados, agora=datetime(2026, 7, 21, 12, 0))
+    # Graham: prefill com LPA (20e9/1e9=20.00) e VPA (100e9/1e9=100.00) reais
+    assert "fórmula de Graham" in pagina
+    assert 'id="gr-lpa" value="20.00"' in pagina
+    assert 'id="gr-vpa" value="100.00"' in pagina
+    assert 'id="gr-mult" value="22.5"' in pagina  # premissa editável do usuário
+    # Bazin: sem ano cheio anterior (provento é de 2026), base = últimos 12m
+    assert "método Bazin" in pagina
+    assert 'id="bz-div"' in pagina and 'data-v12m="2.00"' in pagina
+    assert 'id="bz-dy" value="6"' in pagina  # DY mínimo clássico
+    # mesmo padrão da Gordon: aviso ANTES do botão, corpo escondido, sem veredito
+    assert pagina.count("não é recomendação") >= 2
+    assert 'onclick="abrirCalc(this, calcGraham)"' in pagina
+    for veredito in ("compre", "comprar", "barato", "subvalor", "sobrevalor"):
+        assert veredito not in pagina.lower()
+
+
+def test_graham_ausente_em_prejuizo(con):
+    _semear_empresa(con)
+    con.execute("UPDATE fundamentos SET lucro_liquido = -5e9 WHERE ano = 2025")
+    con.commit()
+    dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))
+    pagina = acao_html.gerar(dados, agora=datetime(2026, 7, 21, 12, 0))
+    assert "fórmula de Graham" not in pagina  # raiz de negativo não existe
+    assert "método Bazin" in pagina  # dividendos existem, Bazin segue
+
+
+def test_historico_de_proventos_com_dy(con):
+    _semear_empresa(con)
+    dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))
+    pagina = acao_html.gerar(dados, agora=datetime(2026, 7, 21, 12, 0))
+    assert "Histórico de proventos" in pagina
+    # DY do ano = 2.00 / 44.00 (fechamento de jun/2026, último mês do ano na base)
+    assert "DY 4,55%" in pagina
+
+
 def test_busca_viva_inclui_acoes(con):
     _semear_empresa(con)
     dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))

@@ -79,6 +79,12 @@ def montar_dados_acao(con: sqlite3.Connection, ticker: str, hoje: date | None = 
         "SELECT * FROM acao_proventos WHERE ticker = ? ORDER BY data_com DESC LIMIT 1",
         (ticker,),
     ).fetchone()
+    proventos_ano = armazenamento.proventos_por_ano(con, ticker)
+    # preço de referência por ano (fechamento do último mês disponível do ano):
+    # base do DY histórico do gráfico de proventos
+    preco_fim_ano: dict[int, float] = {}
+    for competencia, valor in cotacao:
+        preco_fim_ano[int(competencia[:4])] = valor
 
     # red flags societárias (A3, benchmarkadas) + selo — mesmos 5 níveis de FII/ETF
     from .. import acao_flags, redflags
@@ -112,6 +118,8 @@ def montar_dados_acao(con: sqlite3.Connection, ticker: str, hoje: date | None = 
     ).fetchall()
 
     return {
+        "proventos_por_ano": proventos_ano,
+        "preco_fim_ano": preco_fim_ano,
         "administradores": administradores,
         "partes_relacionadas": partes,
         "flags": resultado_flags,
@@ -143,6 +151,98 @@ def _setor_curto(empresa) -> str:
     """Setor legível: o setor_b3 vem como 'A / B / C' — o 1º nível já orienta."""
     bruto = (empresa["setor_b3"] or empresa["setor_cvm"] or "").strip()
     return bruto.split("/")[0].strip().rstrip(".") if bruto else "—"
+
+
+_AVISO_CALC = (
+    '<div style="background:#2a2320;border:1px solid #6b5a2a;color:#e8d9a8;'
+    'padding:10px 12px;border-radius:8px;font-size:13px;margin:6px 0">'
+    "Esta calculadora está aqui para <b>facilitar sua análise</b> — <b>não é recomendação</b> de "
+    "compra ou venda. O resultado depende inteiramente das premissas que <b>VOCÊ</b> define. "
+    "É uma simulação sua, não um veredito do Scout.</div>"
+)
+
+
+def _calculadora_graham(preco: float, lpa: float | None, vpa: float | None, ano: int) -> str:
+    """Preço justo de Graham — EXTRA opt-in no mesmo padrão da Gordon dos FIIs:
+    aviso antes do botão, prefill com os números REAIS (LPA/VPA do último anual)
+    e premissa (multiplicador 22,5 = P/L 15 × P/VP 1,5) editável pelo usuário.
+    Não se aplica com prejuízo ou PL negativo (raiz de número negativo)."""
+    if not preco or lpa is None or vpa is None or lpa <= 0 or vpa <= 0:
+        return ""
+    return f"""
+  <div class="calc">
+    <h3>🧮 Preço justo (fórmula de Graham)</h3>
+    {_AVISO_CALC}
+    <button class="btn-topo" onclick="abrirCalc(this, calcGraham)">Abrir a calculadora</button>
+    <div hidden>
+      <p class="desc">Benjamin Graham: <b>preço justo = √(multiplicador × LPA × VPA)</b>. As letras:
+      <b>LPA</b> = lucro por ação (lucro anual ÷ ações); <b>VPA</b> = valor patrimonial por ação
+      (patrimônio ÷ ações); <b>multiplicador</b> = 22,5 no livro (P/L 15 × P/VP 1,5) — premissa SUA,
+      ajuste à vontade. Tudo editável.</p>
+      <div class="campos gordon">
+        <div><label for="gr-lpa">LPA (R$)</label>
+        <input type="number" id="gr-lpa" value="{lpa:.2f}" step="0.05" oninput="calcGraham()">
+        <div class="gd-cap">lucro por ação do anual {ano} (DFP consolidada)</div></div>
+        <div><label for="gr-vpa">VPA (R$)</label>
+        <input type="number" id="gr-vpa" value="{vpa:.2f}" step="0.05" oninput="calcGraham()">
+        <div class="gd-cap">valor patrimonial por ação do anual {ano}</div></div>
+        <div><label for="gr-mult">Multiplicador</label>
+        <input type="number" id="gr-mult" value="22.5" step="0.5" min="0.5" oninput="calcGraham()">
+        <div class="gd-cap">22,5 = P/L 15 × P/VP 1,5 (os tetos que Graham considerava razoáveis)</div></div>
+      </div>
+      <div class="resultado">
+        <div class="res"><div class="rotulo">Preço justo (com suas premissas)</div><div class="num" id="gr-justo">—</div></div>
+        <div class="res"><div class="rotulo">Cotação atual (D-1)</div><div class="num">R$ {preco:.2f}</div></div>
+      </div>
+      <p class="aviso">A fórmula usa o valor PATRIMONIAL — funciona mal para empresas de ativo leve
+      (tecnologia, serviços) e não se aplica a prejuízo. Modelo do livro "O Investidor Inteligente"
+      (1949), sensível às premissas: não é recomendação nem promessa de retorno.</p>
+    </div>
+  </div>"""
+
+
+def _calculadora_bazin(preco: float, media5: float, prov_12m: float, n_anos: int) -> str:
+    """Preço-teto de Bazin — EXTRA opt-in no padrão da Gordon: base do dividendo
+    escolhida por botão (média dos últimos anos CHEIOS × últimos 12 meses) e o
+    DY mínimo (6% no método clássico) é premissa editável do usuário."""
+    if not preco or (media5 <= 0 and prov_12m <= 0):
+        return ""
+    tem_media = media5 > 0
+    val_padrao = media5 if tem_media else prov_12m
+    modo_padrao = "med" if tem_media else "12m"
+    ativo_med = "ativo" if tem_media else ""
+    ativo_12m = "" if tem_media else "ativo"
+    btn_media = f"Média dos últimos {n_anos} anos" if n_anos else "Média (sem anos cheios)"
+    return f"""
+  <div class="calc">
+    <h3>🧮 Preço-teto (método Bazin)</h3>
+    {_AVISO_CALC}
+    <button class="btn-topo" onclick="abrirCalc(this, calcBazin)">Abrir a calculadora</button>
+    <div hidden>
+      <p class="desc">Décio Bazin: <b>preço-teto = dividendo anual por ação ÷ DY mínimo</b>. O
+      preço-teto é o MÁXIMO que você pagaria para que os dividendos rendam pelo menos o DY que
+      você exige (6% a.a. no método clássico). Tudo editável.</p>
+      <div class="gd-base">Base do dividendo:
+        <button type="button" class="{ativo_med}" onclick="bazinBase('med', this)">{btn_media}</button>
+        <button type="button" class="{ativo_12m}" onclick="bazinBase('12m', this)">Últimos 12 meses</button>
+      </div>
+      <div class="campos gordon">
+        <div><label for="bz-div">Dividendo anual por ação (R$)</label>
+        <input type="number" id="bz-div" value="{val_padrao:.2f}" data-modo="{modo_padrao}" data-vmed="{media5:.2f}" data-v12m="{prov_12m:.2f}" step="0.05" min="0" oninput="calcBazin()">
+        <div class="gd-cap">valores brutos com data-com no período (JCP tem 15% retido) · fonte: B3</div></div>
+        <div><label for="bz-dy">DY mínimo desejado (% a.a.)</label>
+        <input type="number" id="bz-dy" value="6" step="0.5" min="0.5" oninput="calcBazin()">
+        <div class="gd-cap">o retorno em dividendos que VOCÊ exige — 6% é o número do método clássico</div></div>
+      </div>
+      <div class="resultado">
+        <div class="res"><div class="rotulo">Preço-teto (com suas premissas)</div><div class="num" id="bz-teto">—</div></div>
+        <div class="res"><div class="rotulo">Cotação atual (D-1)</div><div class="num">R$ {preco:.2f}</div></div>
+      </div>
+      <p class="aviso">Só faz sentido para empresas que PAGAM dividendos com constância — dividendo
+      passado não garante dividendo futuro (a empresa pode cortar amanhã). Método do livro "Faça
+      Fortuna com Ações" — não é recomendação nem promessa de retorno.</p>
+    </div>
+  </div>"""
 
 
 def gerar(
@@ -340,6 +440,51 @@ def gerar(
             f"{formato.dia_br(ultimo_prov['data_com'])}) — fonte: B3.</li>"
         )
 
+    # --- Histórico de proventos por ano (barras R$/ação + DY do ano) ----------
+    secao_proventos = ""
+    proventos_ano = dados.get("proventos_por_ano") or {}
+    if proventos_ano:
+        preco_fim = dados.get("preco_fim_ano") or {}
+        anos_prov = sorted(proventos_ano)[-10:]
+        pontos = [(str(ano), proventos_ano[ano]) for ano in anos_prov]
+        extras = [
+            f"DY {formato.percentual(100 * proventos_ano[ano] / preco_fim[ano])}"
+            if preco_fim.get(ano)
+            else None
+            for ano in anos_prov
+        ]
+        svg_prov = graficos.grafico_barras(
+            pontos, formatador=lambda v: f"R$ {formato.decimal(v)}", extras=extras
+        )
+        if svg_prov:
+            secao_proventos = f"""
+  <h2>Histórico de proventos</h2>
+  <div class="grafico"><h3>Proventos por ação por ano (R$) · DY do ano no topo</h3>{svg_prov}
+  <div class="nota">soma dos proventos com data-com no ano (dividendos + JCP, valores brutos — JCP tem
+  15% retido na fonte) · DY = proventos do ano ÷ fechamento do fim do ano · fonte: B3</div></div>
+"""
+
+    # --- Calculadoras (opt-in, mesmo padrão da Gordon dos FIIs) ---------------
+    lpa = vpa = None
+    if ultimo is not None and empresa["acoes_total"]:
+        if ultimo["lucro_liquido"] is not None:
+            lpa = ultimo["lucro_liquido"] / empresa["acoes_total"]
+        if ultimo["patrimonio_liquido"] is not None:
+            vpa = ultimo["patrimonio_liquido"] / empresa["acoes_total"]
+    ano_atual = agora.year
+    anos_cheios = [a for a in sorted(proventos_ano) if a < ano_atual][-5:]
+    media5 = sum(proventos_ano[a] for a in anos_cheios) / len(anos_cheios) if anos_cheios else 0.0
+    prov_12m = mult.get("proventos_12m") or 0.0
+    calc_graham = _calculadora_graham(dados["preco_atual"] or 0, lpa, vpa, ultimo["ano"] if ultimo else 0)
+    calc_bazin = _calculadora_bazin(dados["preco_atual"] or 0, media5, prov_12m, len(anos_cheios))
+    secao_calculadoras = ""
+    if calc_graham or calc_bazin:
+        secao_calculadoras = f"""
+  <h2 id="calculadoras">Calculadoras</h2>
+{calc_graham}
+{calc_bazin}
+"""
+
     from .html import _COR_SELO, _COR_SEVERIDADE
 
     selo_html = ""
@@ -491,6 +636,23 @@ a {{ color:#8FCB9B; }}
 ul.ok {{ list-style:none; padding-left:6px; }}
 ul.ok li {{ color:#9AA7B2; margin:3px 0; }}
 ul.ok li::before {{ content:'✓  '; color:#7BD69A; font-weight:700; }}
+.calc {{ background:#161D20; border:1px solid #1B2225; border-radius:10px; padding:16px; margin-bottom:14px; }}
+.calc h3 {{ font-size:15px; color:#9AA7B2; margin-bottom:4px; }}
+.calc .desc {{ color:#9AA7B2; font-size:13px; margin-bottom:12px; }}
+.calc .campos {{ display:flex; flex-wrap:wrap; gap:10px; align-items:flex-start; }}
+.calc label {{ display:block; color:#9AA7B2; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; margin-bottom:3px; }}
+.calc input[type=number] {{ background:#0F1416; color:#EAEEF0; border:1px solid #33434A; border-radius:8px; padding:8px 10px; width:130px; font-size:15px; }}
+.calc .resultado {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:10px; margin-top:14px; }}
+.calc .res {{ background:#0F1416; border:1px solid #1B2225; border-radius:9px; padding:10px 12px; }}
+.calc .res .rotulo {{ color:#9AA7B2; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; }}
+.calc .res .num {{ font-size:19px; font-weight:700; margin-top:2px; color:#8FCB9B; }}
+.calc .aviso {{ color:#6B7681; font-size:11.5px; margin-top:10px; }}
+.calc .gd-base {{ display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:0 0 12px; color:#9AA7B2; font-size:12px; }}
+.calc .gd-base button {{ background:#1B2225; color:#9AA7B2; border:1px solid #33434A; border-radius:7px; padding:4px 12px; font-size:12px; cursor:pointer; }}
+.calc .gd-base button.ativo {{ background:#8FCB9B; color:#0F1416; border-color:#8FCB9B; font-weight:700; }}
+.calc .gd-cap {{ margin-top:5px; max-width:170px; font-size:11px; color:#6B7681; line-height:1.5; }}
+.btn-topo {{ background:#1B2225; border:1px solid #33434A; color:#8FCB9B; padding:6px 14px; border-radius:8px; font-size:13px; font-weight:600; cursor:pointer; }}
+.btn-topo:hover {{ border-color:#8FCB9B; }}
 .regras {{ background:#161D20; border:1px solid #8FCB9B; border-radius:10px; padding:16px 18px; }}
 .regras h2 {{ margin:0 0 8px; font-size:16px; color:#8FCB9B; }}
 .regras li {{ margin:6px 0 6px 18px; font-size:14px; }}
@@ -535,8 +697,12 @@ table.imoveis td:not(:first-child):not(:nth-child(2)), table.imoveis th:not(:fir
 
   {secao_balanco}
 
+  {secao_proventos}
+
   {grafico_cotacao}
   {rentabilidade}
+
+  {secao_calculadoras}
 
   <div class="rodape">{_RODAPE}<br>
   Projeto open source: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a>
@@ -544,6 +710,39 @@ table.imoveis td:not(:first-child):not(:nth-child(2)), table.imoveis th:not(:fir
   · <a href="acoes.html">todas as ações</a> · <a href="index.html">início</a></div>
 </div>
 <script>
+const num = id => {{ const el = document.getElementById(id); return el ? (parseFloat(el.value) || 0) : 0; }};
+const brl2 = v => v.toLocaleString('pt-BR', {{style: 'currency', currency: 'BRL', minimumFractionDigits: 2}});
+
+function calcGraham() {{
+  const el = document.getElementById('gr-justo');
+  if (!el) return;
+  const lpa = num('gr-lpa'), vpa = num('gr-vpa'), mult = num('gr-mult');
+  if (lpa <= 0 || vpa <= 0 || mult <= 0) {{ el.textContent = 'não se aplica (LPA/VPA ≤ 0)'; return; }}
+  el.textContent = brl2(Math.sqrt(mult * lpa * vpa));
+}}
+
+function calcBazin() {{
+  const el = document.getElementById('bz-teto');
+  if (!el) return;
+  const div = num('bz-div'), dy = num('bz-dy') / 100;
+  if (div <= 0 || dy <= 0) {{ el.textContent = '—'; return; }}
+  el.textContent = brl2(div / dy);
+}}
+
+function bazinBase(modo, botao) {{
+  const inp = document.getElementById('bz-div');
+  if (!inp) return;
+  inp.dataset.modo = modo;
+  inp.value = modo === '12m' ? inp.dataset.v12m : inp.dataset.vmed;
+  if (botao) botao.parentElement.querySelectorAll('button').forEach(b => b.classList.toggle('ativo', b === botao));
+  calcBazin();
+}}
+
+function abrirCalc(botao, calc) {{
+  botao.hidden = true;
+  botao.nextElementSibling.hidden = false;
+  if (calc) calc();
+}}
 {JS_GRAFICO_HOVER}
 {js_menu}
 </script>
