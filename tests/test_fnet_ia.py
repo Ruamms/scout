@@ -427,6 +427,7 @@ def test_cli_ia_lote_incremental(con, zip_cvm, tmp_path, monkeypatch):
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
     monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
+    monkeypatch.setattr(modulo_ia, "modelo_visao_instalado", lambda *a: None)  # hermético (o teste de visão redefine)
     monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: _DOCUMENTOS)
     caminho_pdf = tmp_path / "doc.pdf"
     caminho_pdf.write_bytes(_pdf_minimo("Relatorio para o lote " * 50))
@@ -483,6 +484,7 @@ def test_cli_ia_lote_marca_fundo_sem_relatorio_e_le_quando_aparece(con, zip_cvm,
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
     monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
+    monkeypatch.setattr(modulo_ia, "modelo_visao_instalado", lambda *a: None)  # hermético (o teste de visão redefine)
     # FNET só com documentos estruturados: relatório gerencial é opcional e este fundo não tem
     so_estruturados = [d for d in _DOCUMENTOS if d["tipo"] != "Relatório Gerencial"]
     monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: so_estruturados)
@@ -533,6 +535,7 @@ def test_cli_ia_lote_sem_relatorio_le_fatos_relevantes(con, zip_cvm, tmp_path, m
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
     monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
+    monkeypatch.setattr(modulo_ia, "modelo_visao_instalado", lambda *a: None)  # hermético (o teste de visão redefine)
     # sem relatório gerencial, mas COM fato relevante publicado
     so_estruturados = [d for d in _DOCUMENTOS if d["tipo"] != "Relatório Gerencial"]
     monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: so_estruturados)
@@ -576,6 +579,7 @@ def test_cli_ia_lote_parecer_do_auditor(con, zip_cvm, tmp_path, monkeypatch):
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
     monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
+    monkeypatch.setattr(modulo_ia, "modelo_visao_instalado", lambda *a: None)  # hermético (o teste de visão redefine)
 
     df_ok = {"id": 400, "tipo": "Demonstrações Financeiras", "categoria": "Informes Periódicos", "data_entrega": "18/02/2026 10:00"}
     docs = _DOCUMENTOS + [df_ok]
@@ -653,6 +657,7 @@ def test_cli_ia_lote_registra_erros_e_reprocessa_so_eles(con, zip_cvm, tmp_path,
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
     monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
+    monkeypatch.setattr(modulo_ia, "modelo_visao_instalado", lambda *a: None)  # hermético (o teste de visão redefine)
     monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: _DOCUMENTOS)
     caminho_pdf = tmp_path / "doc.pdf"
     caminho_pdf.write_bytes(_pdf_minimo("Relatorio para o lote " * 50))
@@ -703,6 +708,7 @@ def test_cli_ia_lote_pdf_imagem_pula_sem_erro(con, zip_cvm, tmp_path, monkeypatc
     cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
     monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
     monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
+    monkeypatch.setattr(modulo_ia, "modelo_visao_instalado", lambda *a: None)  # hermético (o teste de visão redefine)
     monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: _DOCUMENTOS)
     caminho_pdf = tmp_path / "imagem.pdf"
     caminho_pdf.write_bytes(_pdf_minimo("x"))
@@ -710,6 +716,7 @@ def test_cli_ia_lote_pdf_imagem_pula_sem_erro(con, zip_cvm, tmp_path, monkeypatc
         modulo_fnet, "_garantir_documento", lambda con_, cnpj, doc, destino, timeout=180, tentativas=3: caminho_pdf
     )
     monkeypatch.setattr(modulo_ia, "extrair_texto_pdf", lambda caminho, **kw: "")  # imagem: sem texto
+    monkeypatch.setattr(modulo_ia, "modelo_visao_instalado", lambda *a: None)  # sem visão: cai no pulado
     pasta = tmp_path / "leituras"
 
     resultado = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta), "--sem-fatos"])
@@ -722,6 +729,64 @@ def test_cli_ia_lote_pdf_imagem_pula_sem_erro(con, zip_cvm, tmp_path, monkeypatc
     assert leitura["relatorio"]["texto"] == ""
     historico = (pasta / "_historico.txt").read_text(encoding="utf-8")
     assert "TSTE11\tsem-texto" in historico
+
+
+def test_modelo_visao_instalado_casa_por_prefixo_e_marca():
+    from scout import ia as modulo_ia
+
+    # nenhum modelo de visão instalado -> None
+    assert modulo_ia.modelo_visao_instalado.__doc__  # existe
+    orig = modulo_ia.modelos_instalados
+    try:
+        modulo_ia.modelos_instalados = lambda: ["qwen2.5:14b", "gemma2:9b"]
+        assert modulo_ia.modelo_visao_instalado("llama3.2-vision") is None
+        # preferido instalado (tag :latest) -> casa por prefixo
+        modulo_ia.modelos_instalados = lambda: ["qwen2.5:14b", "llama3.2-vision:latest"]
+        assert modulo_ia.modelo_visao_instalado("llama3.2-vision") == "llama3.2-vision:latest"
+        # preferido ausente, mas há outro com cara de visão -> aceita
+        modulo_ia.modelos_instalados = lambda: ["qwen2.5:14b", "llava:13b"]
+        assert modulo_ia.modelo_visao_instalado("llama3.2-vision") == "llava:13b"
+    finally:
+        modulo_ia.modelos_instalados = orig
+
+
+def test_cli_ia_lote_visao_le_escaneado(con, zip_cvm, tmp_path, monkeypatch):
+    """PLUS: com modelo de visão instalado, o relatório escaneado É LIDO pela
+    imagem (não fica pulado) e a leitura fica marcada via_visao."""
+    from typer.testing import CliRunner
+
+    from scout import cli as modulo_cli
+    from scout import ia as modulo_ia
+    from scout.cli import app
+    from scout.coleta import cvm
+    from scout.coleta import fnet as modulo_fnet
+
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
+    monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
+    monkeypatch.setattr(modulo_ia, "modelo_visao_instalado", lambda *a: None)  # hermético (o teste de visão redefine)
+    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: _DOCUMENTOS)
+    caminho_pdf = tmp_path / "imagem.pdf"
+    caminho_pdf.write_bytes(_pdf_minimo("x"))
+    monkeypatch.setattr(
+        modulo_fnet, "_garantir_documento", lambda con_, cnpj, doc, destino, timeout=180, tentativas=3: caminho_pdf
+    )
+    monkeypatch.setattr(modulo_ia, "extrair_texto_pdf", lambda caminho, **kw: "")  # escaneado
+    monkeypatch.setattr(modulo_ia, "modelo_visao_instalado", lambda *a: "llava:13b")
+    monkeypatch.setattr(
+        modulo_ia, "analisar_relatorio_imagem",
+        lambda caminho, ctx, modelo=None, ao_progresso=None: "• fato lido na imagem (p. 1)",
+    )
+    pasta = tmp_path / "leituras"
+
+    resultado = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta), "--sem-fatos"])
+    assert resultado.exit_code == 0, resultado.output
+    assert "1 lidos" in resultado.output
+    assert not (pasta / "_erros.txt").exists()
+    leitura = json.loads((pasta / "TSTE11.json").read_text(encoding="utf-8"))
+    assert leitura["relatorio"]["texto"] == "• fato lido na imagem (p. 1)"
+    assert leitura["relatorio"]["via_visao"] is True
+    assert leitura["modelo"] == "llava:13b"
 
 
 def test_cli_ia_sem_ollama_orienta_instalacao(con, zip_cvm, tmp_path, monkeypatch):

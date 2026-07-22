@@ -610,6 +610,12 @@ def ia_lote(
     apenas_erros: bool = typer.Option(
         False, "--apenas-erros", help="Reprocessa somente os fundos listados no arquivo de erros da rodada anterior."
     ),
+    modelo_visao: str = typer.Option(
+        None,
+        "--modelo-visao",
+        help="Modelo de visão do Ollama para relatórios escaneados (padrão: SCOUT_MODELO_VISAO "
+        "ou llama3.2-vision se instalado). Não instalado = escaneado fica pulado, como hoje.",
+    ),
 ) -> None:
     """Lê com IA os relatórios de TODOS os fundos negociáveis (incremental).
 
@@ -631,6 +637,11 @@ def ia_lote(
             console.print("[yellow]Base local vazia.[/] Rode [bold]scout atualizar[/] primeiro.")
             raise typer.Exit(1)
         modelo_final = _preparar_ia(modelo)
+        # visão é opcional: só para relatórios escaneados (imagem). Se não houver
+        # modelo de visão instalado no Ollama, o escaneado segue "pulado".
+        modelo_visao_final = modulo_ia.modelo_visao_instalado(modelo_visao)
+        if modelo_visao_final:
+            console.print(f"[dim]visão p/ escaneados: modelo [bold]{modelo_visao_final}[/][/]")
         pasta = Path(destino)
         arquivo_erros = pasta / "_erros.txt"
 
@@ -957,6 +968,7 @@ def ia_lote(
                 # relatório já lido nesta versão do documento: reaproveita a
                 # leitura e só processa os comunicados que faltam
                 leitura_relatorio = None
+                via_visao = False
                 if (
                     existente
                     and existente.get("relatorio")
@@ -971,47 +983,62 @@ def ia_lote(
                     )
                     texto = modulo_ia.extrair_texto_pdf(caminho)
                     if len(texto) < 500:
-                        # imagem/escaneado é TERMINAL (repetir não gera texto):
-                        # marca como pulado — NÃO vai para _erros.txt, senão
-                        # --apenas-erros o repetiria pra sempre. Comunicados e
-                        # parecer, quando existem, são lidos assim mesmo.
-                        texto_docs = (
-                            _ler_documentos(docs_meta, contexto)
-                            if docs_meta and not reusar_docs else None
-                        )
-                        dados = leituras.montar_relatorio_ilegivel(
-                            resumo.ticker, relatorio, docs_meta, texto_docs, modelo=modelo_final
-                        )
-                        if reusar_docs:
-                            dados["comunicados"] = bloco_lido
-                        bloco_parecer = _processar_parecer(df, existente)
-                        if bloco_parecer:
-                            dados["parecer"] = bloco_parecer
-                        leituras.salvar(pasta, dados)
-                        console.print(
-                            f"{prefixo}: [yellow]relatório em imagem/escaneado — "
-                            "pulado (não é erro)[/]"
-                        )
-                        _registrar(f"{resumo.ticker}\tsem-texto\trelatorio id {relatorio['id']} (imagem/escaneado)")
-                        pulados += 1
-                        continue
-                    with console.status(f"{prefixo}: lendo o relatório com IA…") as estado:
-                        leitura_relatorio = modulo_ia.analisar_relatorio(
-                            texto,
-                            contexto,
-                            modelo_final,
-                            ao_progresso=lambda n: estado.update(
-                                f"{prefixo}: lendo o relatório com IA… {n} trechos recebidos"
-                            ),
-                        )
+                        # relatório escaneado (imagem, sem texto). PLUS: se houver
+                        # modelo de VISÃO instalado, lê pela imagem; senão fica
+                        # "pulado" (terminal, NÃO vai para _erros.txt — repetir
+                        # não geraria texto, e --apenas-erros o repetiria à toa).
+                        leitura_visao = None
+                        if modelo_visao_final:
+                            with console.status(f"{prefixo}: lendo o relatório (imagem) por visão…"):
+                                leitura_visao = modulo_ia.analisar_relatorio_imagem(
+                                    caminho, contexto, modelo_visao_final
+                                )
+                        if leitura_visao is None:
+                            texto_docs = (
+                                _ler_documentos(docs_meta, contexto)
+                                if docs_meta and not reusar_docs else None
+                            )
+                            dados = leituras.montar_relatorio_ilegivel(
+                                resumo.ticker, relatorio, docs_meta, texto_docs, modelo=modelo_final
+                            )
+                            if reusar_docs:
+                                dados["comunicados"] = bloco_lido
+                            bloco_parecer = _processar_parecer(df, existente)
+                            if bloco_parecer:
+                                dados["parecer"] = bloco_parecer
+                            leituras.salvar(pasta, dados)
+                            console.print(
+                                f"{prefixo}: [yellow]relatório em imagem/escaneado — "
+                                "pulado (sem modelo de visão)[/]"
+                            )
+                            _registrar(f"{resumo.ticker}\tsem-texto\trelatorio id {relatorio['id']} (imagem/escaneado)")
+                            pulados += 1
+                            continue
+                        # leu pela imagem: segue como uma leitura normal do relatório
+                        leitura_relatorio = leitura_visao
+                        via_visao = True
+                    if not via_visao:
+                        with console.status(f"{prefixo}: lendo o relatório com IA…") as estado:
+                            leitura_relatorio = modulo_ia.analisar_relatorio(
+                                texto,
+                                contexto,
+                                modelo_final,
+                                ao_progresso=lambda n: estado.update(
+                                    f"{prefixo}: lendo o relatório com IA… {n} trechos recebidos"
+                                ),
+                            )
 
                 texto_docs = (
                     _ler_documentos(docs_meta, contexto) if docs_meta and not reusar_docs else None
                 )
 
                 dados = leituras.montar(
-                    resumo.ticker, modelo_final, relatorio, leitura_relatorio, docs_meta, texto_docs
+                    resumo.ticker,
+                    modelo_visao_final if via_visao else modelo_final,
+                    relatorio, leitura_relatorio, docs_meta, texto_docs,
                 )
+                if via_visao:
+                    dados["relatorio"]["via_visao"] = True
                 dados = leituras.anexar_snapshot(dados, snapshot, existente)
                 if reusar_docs:
                     dados["comunicados"] = bloco_lido

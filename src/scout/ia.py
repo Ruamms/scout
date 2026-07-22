@@ -25,6 +25,10 @@ logging.getLogger("pypdf").setLevel(logging.ERROR)
 
 URL_OLLAMA = os.environ.get("SCOUT_OLLAMA_URL", "http://localhost:11434")
 MODELO_PADRAO = os.environ.get("SCOUT_MODELO_IA", "qwen2.5:14b")
+# modelo de VISÃO (fallback só para relatórios escaneados/imagem): reaproveita o
+# Ollama local. Precisa ser puxado à parte (ex.: `ollama pull llama3.2-vision`);
+# se não estiver instalado, o escaneado apenas continua "pulado".
+MODELO_VISAO_PADRAO = os.environ.get("SCOUT_MODELO_VISAO", "llama3.2-vision")
 _MAX_CARACTERES = 24_000  # ~6k tokens de relatório; o que passar disso é cortado
 
 PROMPT_SISTEMA = (
@@ -128,6 +132,70 @@ def analisar_relatorio(
     return _conversar(PROMPT_SISTEMA, conteudo, modelo, ao_progresso)
 
 
+def modelo_visao_instalado(preferido: str | None = None) -> str | None:
+    """Nome do modelo de visão instalado no Ollama, ou None. Casa por nome exato
+    e por prefixo (as tags vêm como 'nome:latest'); se o preferido não estiver
+    lá, aceita qualquer modelo com cara de visão (vision/vl/llava/minicpm-v…)."""
+    preferido = preferido or MODELO_VISAO_PADRAO
+    instalados = modelos_instalados()
+    alvo = preferido.split(":")[0].lower()
+    for modelo in instalados:
+        if modelo == preferido or modelo.split(":")[0].lower() == alvo:
+            return modelo
+    marcas = ("vision", "-vl", "vl-", "llava", "minicpm-v", "moondream")
+    for modelo in instalados:
+        if any(marca in modelo.lower() for marca in marcas):
+            return modelo
+    return None
+
+
+def _imagens_do_pdf(caminho: Path, max_paginas: int = 8, dpi: int = 150) -> list[str]:
+    """Renderiza as primeiras páginas do PDF em PNG base64 (para o modelo de
+    visão). Só as primeiras: imagem custa muito no contexto do modelo."""
+    import base64
+
+    try:
+        import fitz  # PyMuPDF
+    except Exception:
+        return []
+    imagens = []
+    with fitz.open(str(caminho)) as doc:
+        for i in range(min(doc.page_count, max_paginas)):
+            pix = doc[i].get_pixmap(dpi=dpi)
+            imagens.append(base64.b64encode(pix.tobytes("png")).decode("ascii"))
+    return imagens
+
+
+def analisar_relatorio_imagem(
+    caminho_pdf: Path,
+    contexto_fundo: str,
+    modelo: str | None = None,
+    ao_progresso=None,
+) -> str | None:
+    """Lê um relatório ESCANEADO (PDF só-imagem) por um modelo de VISÃO local,
+    seguindo as mesmas regras do texto. Retorna None quando não há modelo de
+    visão instalado, quando o PDF não rende imagens, ou quando o Ollama falha —
+    aí o chamador mantém o comportamento atual (pulado)."""
+    modelo = modelo or modelo_visao_instalado()
+    if not modelo:
+        return None
+    imagens = _imagens_do_pdf(caminho_pdf)
+    if not imagens:
+        return None
+    conteudo = (
+        "CONTEXTO (calculado por código a partir de dados oficiais — use apenas "
+        f"para conectar fatos, não recalcule):\n{contexto_fundo}\n\n"
+        "O RELATÓRIO GERENCIAL está nas IMAGENS anexas (PDF escaneado, sem texto "
+        "selecionável). Leia o que está escrito nas imagens e siga as regras. "
+        "Sem marcadores [página N]: cite o trecho e, se não tiver certeza da "
+        "página, omita-a."
+    )
+    try:
+        return _conversar(PROMPT_SISTEMA, conteudo, modelo, ao_progresso, imagens=imagens) or None
+    except (urllib.error.URLError, OSError):
+        return None
+
+
 PROMPT_FATOS = (
     "Você é um extrator de fatos de comunicados oficiais de fundos imobiliários "
     "brasileiros — fatos relevantes, comunicados ao mercado e editais/atas de "
@@ -181,12 +249,22 @@ def analisar_fatos_relevantes(
     )
 
 
-def _conversar(prompt_sistema: str, conteudo_usuario: str, modelo: str | None, ao_progresso) -> str:
+def _conversar(
+    prompt_sistema: str,
+    conteudo_usuario: str,
+    modelo: str | None,
+    ao_progresso,
+    imagens: list[str] | None = None,
+) -> str:
     """Chamada ao Ollama em STREAMING: em máquinas onde o modelo não cabe
     todo na GPU, o processamento do prompt pode levar minutos — com stream
     a conexão nunca fica ociosa e dá para mostrar progresso
-    (`ao_progresso(n_trechos)` é chamado a cada pedaço recebido)."""
+    (`ao_progresso(n_trechos)` é chamado a cada pedaço recebido). `imagens`
+    (base64 PNG) anexa páginas ao modelo de visão para ler PDF escaneado."""
     modelo = modelo or MODELO_PADRAO
+    mensagem_usuario: dict = {"role": "user", "content": conteudo_usuario}
+    if imagens:
+        mensagem_usuario["images"] = imagens
     corpo = json.dumps(
         {
             "model": modelo,
@@ -197,7 +275,7 @@ def _conversar(prompt_sistema: str, conteudo_usuario: str, modelo: str | None, a
             "options": {"temperature": 0.2, "num_ctx": 16384},
             "messages": [
                 {"role": "system", "content": prompt_sistema},
-                {"role": "user", "content": conteudo_usuario},
+                mensagem_usuario,
             ],
         }
     ).encode("utf-8")
