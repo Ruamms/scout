@@ -1,0 +1,24 @@
+{
+  "ticker": "CEAB3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:20:03",
+  "comunicados": {
+    "ids": [
+      742628064097973230,
+      355993838774807147,
+      771248959834275849
+    ],
+    "datas": [
+      "05/05/2026",
+      "12/06/2026",
+      "10/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 05/05/2026\n\n**O que aconteceu:** A C&A Modas S.A. encerrou o Programa de Recompra de Ações 2025 e aprovou um novo programa de recompra.\n\n**Resumo:** A companhia encerrou seu programa de recompra de ações em vigor e iniciou um novo programa com objetivo de gerar valor para acionistas.\n\n**Trecho-chave:**\n\"i) o encerramento, nesta data, do 3º programa de recompra de ações de emissão da Companhia, aprovado em 13 de janeiro de 2025 (“Programa de recompra 2025”) e vencimento previsto para 13 de julho de 2026. No Programa de Recompra de 2025, 4.713.800 ações foram adquiridas, representando 94,3% de execução deste programa.\"\n\n### COMUNICADO AO MERCADO entregue em 12/06/2026\n\n**O que aconteceu:** A C&A Modas S.A. recebeu uma correspondência do Norges Bank sobre a alteração de sua participação acionária.\n\n**Resumo:** O Norges Bank informou que sua participação na C&A Modas S.A. caiu abaixo do 5% e passou para 4,99%.\n\n**Trecho-chave:**\n\"(III) On 11 June 2026 Norges Bank's holding in C&A Modas S.A. (ISIN: BRCEABACNOR1) fell below the 5% threshold and amounted to 15,383,500 shares or 4.99% based upon 308,245,068 total shares outstanding.\"\n\n### COMUNICADO AO MERCADO entregue em 10/06/2026\n\n**O que aconteceu:** A C&A Modas S.A. recebeu uma correspondência do Norges Bank sobre a alteração de sua participação acionária.\n\n**Resumo:** O Norges Bank informou que sua participação na C&A Modas S.A. ultrapassou o 5% e passou para 5,05%.\n\n**Trecho-chave:**\n\"(III) On 28 May 2026 Norges Bank's holding in C&A MODAS SA (ISIN: BRCEABACNOR1) exceeded the 5% threshold and amounted to 15,555,100 shares or 5.05% based upon 308,245,068 total shares outstanding.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

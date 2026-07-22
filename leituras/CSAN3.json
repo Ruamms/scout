@@ -1,0 +1,27 @@
+{
+  "ticker": "CSAN3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:24:47",
+  "comunicados": {
+    "ids": [
+      477511881261387031,
+      821497752430066790,
+      71194252737265825,
+      999099131427581042
+    ],
+    "datas": [
+      "09/07/2026",
+      "17/06/2026",
+      "01/07/2026",
+      "29/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O que aconteceu em 09/07/2026\n\n**Título:** Acordo para segregação consensual dos imóveis e novos compromissos de compra e venda.\n\n**Resumo:** A Cosan S.A. informou que, após os exercícios concorrentes do direito de preferência pelos arrendatários das áreas alienadas no Mato Grosso, foram assinados acordos para segregação consensual dos imóveis e novos compromissos de compra e venda com arrendatários adquirentes. O valor total da transação é de R$ 1,85 bilhão.\n\n**Trecho-chave:** \"foram assinados, na presente data, um acordo para segregação consensual dos Imóveis, bem como novos compromissos de compra e venda com a SLC Agrícola, Bom Futuro e Alexandre Jacques Bottan (‘Arrendatários Adquirentes’), respeitadas as mesmas condições comerciais já pactuadas anteriormente (valor total de R$ 1,85 bilhão, sendo aproximadamente R$ 586 milhões referentes à participação indireta da Cosan).\"\n\n### O que aconteceu em 17/06/2026\n\n**Título:** Compromisso de compra e venda para alienação de propriedades agrícolas.\n\n**Resumo:** A Cosan S.A. informou sobre o compromisso de compra e venda celebrado pelo Grupo Radar, por meio de suas subsidiárias, para a alienação de parte do seu portfólio de propriedades agrícolas no Mato Grosso. O valor total da transação é de R$ 1,85 bilhão, sendo aproximadamente R$ 586 milhões referentes à participação indireta da Cosan.\n\n**Trecho-chave:** \"o Grupo Radar celebrou, na data de ontem, por meio de algumas de suas subsidiárias (‘Radar’), compromisso de compra e venda (‘Compromisso de Compra e Venda’) para alienação de parte das propriedades do seu portfólio (‘Imóveis’). Os Imóveis correspondem a 12% do portfólio total de propriedades agrícolas detido pela Radar, estão localizados no Estado do Mato Grosso, compreendem uma área total de 41.214 hectares e são destinados ao cultivo de soja, milho e algodão.\"\n\n### O que aconteceu em 01/07/2026\n\n**Título:** Publicação do Relatório Integrado referente ao ano de 2025.\n\n**Resumo:** A Cosan S.A. informou a publicação do seu Relatório Integrado para o ano de 2025, que reúne os principais resultados e desempenhos ambientais, sociais e de governança da Companhia. O relatório está disponível no website da Cosan e da Comissão de Valores Mobiliários (CVM).\n\n**Trecho-chave:** \"A Cosan S.A. informa aos seus acionistas e ao mercado em geral a publicação do seu Relatório Integrado referente ao ano de 2025, que reúne os principais resultados e desempenhos ambientais, sociais e de governança da Companhia.\"\n\n### O que aconteceu em 29/06/2026\n\n**Título:** Avaliação de potenciais alternativas relacionadas à participação na Rumo S.A.\n\n**Resumo:** A Cosan S.A. informou que está avaliando potenciais alternativas relacionadas à sua participação na Rumo S.A., tendo contratado o banco BTG Pactual como assessor financeiro. O processo está em fase de tratativas iniciais e ainda não há decisão sobre a realização de uma transação.\n\n**Trecho-chave:** \"está avaliando potenciais alternativas relacionadas a sua participação neste ativo, tendo contratado o banco BTG Pactual como assessor financeiro. A Companhia informa que o processo está em fase de tratativas iniciais e que não há, ainda, qualquer decisão da Companhia com relação à efetiva realização de uma transação envolvendo sua participação na Rumo ou ao formato e às condições de um eventual negócio.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

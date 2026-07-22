@@ -1,0 +1,30 @@
+{
+  "ticker": "SMTO3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:08:56",
+  "comunicados": {
+    "ids": [
+      106751028946758983,
+      218217839984620735,
+      17560504660620089,
+      760558124352446744,
+      565946223817782636
+    ],
+    "datas": [
+      "25/05/2026",
+      "27/04/2026",
+      "06/02/2026",
+      "26/05/2026",
+      "05/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 25/05/2026\n\n**O QUE aconteceu:** Guidance de Produção e Capex para Safra 2026/27.\n\n**Resumo:** São Martinho anunciou as estimativas de produção e investimentos (capex) para a safra 2026/27, com foco na cana-de-açúcar e etanol de milho.\n\n**Trecho-chave:**\n\"Para as operações de cana-de açúcar, estima-se a produção de um total de 3.370,0 mil toneladas de ATR em 12M27 (+10,7% vs. 12M26), decorrente da moagem de aproximadamente 23,7 milhões de toneladas (+7,9%) e de um ATR médio previsto de 142,5 quilos por tonelada de cana (+2,5%).\"\n\n---\n\n### FATO RELEVANTE entregue em 27/04/2026\n\n**O QUE aconteceu:** Anúncio da emissão de debêntures.\n\n**Resumo:** São Martinho anunciou a 9ª emissão de debêntures simples, não conversíveis em ações, no valor total de R$1.100.000.000,00.\n\n**Trecho-chave:**\n\"A 9ª Emissão será objeto de oferta pública, sob o rito de registro automático, nos termos da Lei nº 6.385/1976, da Resolução da CVM 160/2022 e das demais disposições legais e regulamentares aplicáveis, sob o regime de garantia firme de colocação.\"\n\n---\n\n### FATO RELEVANTE entregue em 06/02/2026\n\n**O QUE aconteceu:** Incorporação da Nova Egito Agrícola Ltda.\n\n**Resumo:** A Assembleia Geral Extraordinária aprovou a incorporação da Nova Egito Agrícola Ltda, sem aumento do capital social da São Martinho S.A.\n\n**Trecho-chave:**\n\"Não houve aumento do capital social da SMSA em decorrência da operação descrita.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 26/05/2026\n\nEste documento parece ser um resumo dos resultados financeiros do primeiro trimestre da safra 2025/26, mas não contém fatos relevantes suficientemente novos ou distintos para serem destacados como fatos recentes."
+  },
+  "modelo": "qwen2.5:7b"
+}

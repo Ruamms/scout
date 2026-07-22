@@ -1,0 +1,21 @@
+{
+  "ticker": "PETR3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:56:11",
+  "comunicados": {
+    "ids": [
+      366215782845628680,
+      518776087830081947
+    ],
+    "datas": [
+      "13/07/2026",
+      "09/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 13/07/2026\n\n**O QUE aconteceu:** Alteração de participação acionária relevante.\n\n**Resumo:** A Petrobras informou que a GQG Partners LLC passou a ter exposição total de sua carteira de clientes a 185.869.498 ADRs, representando aproximadamente 4,99% das ações ordinárias emitidas pela companhia.\n\n**Trecho-chave:** \"A GQG Partners LLC passaram a ter exposição total de sua carteira de clientes a 185.869.498 (cento e oitenta e cinco milhões, oitocentos e sessenta e nove mil e quatrocentos e noventa e oito) American Depositary Receipts - ADRs, representando aproximadamente 4,99% das ações ordinárias emitidas pela companhia.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 09/07/2026\n\n**O QUE aconteceu:** Conclusão da aquisição de bloco exploratório em São Tomé e Príncipe.\n\n**Resumo:** A Petrobras concluiu a aquisição do bloco 3, localizado no offshore de São Tomé e Príncipe, na África. O consórcio agora é composto pela Petrobras (operadora, com 75% de participação), Oranto (15%) e a Agência Nacional do Petróleo de São Tomé e Príncipe (10%).\n\n**Trecho-chave:** \"A Petrobras, em continuidade ao comunicado de 17 de abril de 2026, informa que concluiu a aquisição da participação e a assunção da operação do bloco 3, localizado no offshore de São Tomé e Príncipe, na África.\" (p. 1)\n\n**Conexão com o contexto:** Esta aquisição alinha-se à estratégia da Petrobras de recomposição das reservas de óleo e gás por meio da exploração de novas fronteiras, tanto no Brasil quanto no exterior, conforme previsto em seu Plano de Negócios."
+  },
+  "modelo": "qwen2.5:7b"
+}

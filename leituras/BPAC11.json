@@ -1,0 +1,21 @@
+{
+  "ticker": "BPAC11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:16:01",
+  "comunicados": {
+    "ids": [
+      407467810731779487,
+      98891633324185951
+    ],
+    "datas": [
+      "24/06/2026",
+      "21/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 24/06/2026\n\n**O QUE aconteceu:** O BTG Pactual esclarece uma notícia sobre a possível desistência da compra do Digimais.\n\n**Resumo:** A Companhia informa que não verificou as condições necessárias para a conclusão da transação e que continuará acompanhando o processo, sem confirmar ou negar a possibilidade de desistência.\n\n**Trecho-chave:**\n\"O BTG Pactual está acompanhando as recentes notícias envolvendo o Digimais, e, quando do eventual lançamento de processo competitivo aprovado e acompanhado pelo FGC para alienação da totalidade das ações do Digimais, avaliará, diante das informações disponíveis, a oportunidade de participar no referido processo competitivo.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 21/05/2026\n\n**O QUE aconteceu:** O BTG Pactual divulgou os resultados da Reunião Anual e apresentou atualizações sobre suas Business Units.\n\n**Resumo:** A Companhia destacou seu crescimento, expansão de receitas e presença internacional. As principais métricas incluem receitas totais, lucro líquido ajustado, índice de eficiência ajustado e forte crescimento das franquias de clientes.\n\n**Trecho-chave:**\n\"O Banco de Investimento mais completo da América Latina\nBusiness altamente sinérgico, com forte expansão da franquia de clientes\nR$2,3 Tri\n3T 25\nWuM/AuM\n15,5%\nBasileia\nR$185 BI\nMarket Cap(1)\nSales & Trading\nInvestment\nBanking\nCorporate \nLending\nWealth & Asset \nManagement\n24,1%\nLTM 3T 2025  Receitas\n21,9%\nLTM 3T 2025 Receitas\n7,5%\nLTM 3T 2025 Receitas\n26,2%\nLTM 3T 2025 Receitas\nInvestidores \nInstitucionais\nHNWI & \nVarejo de \nAlta Renda \nGrandes \nEmpresas e \nPME\nEmpresas e \nInstituições \nFInanceiras\nMexico\nMexico City\nColombia\nBogotá\nMedellín\nPeru\nLima\nChile\nSantiago\nArgentina\nBuenos Aires\nUSA\nNew York\nMiami\nBrasil\nUK\nLondon\nPortugal\nEspanha\nLuxemburgo\"\n\n**Conexão com indicadores:** Este comunicado reflete o desempenho financeiro e a expansão geográfica do BTG Pactual, que são indicadores relevantes para os investidores."
+  },
+  "modelo": "qwen2.5:7b"
+}

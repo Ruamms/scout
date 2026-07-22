@@ -1,0 +1,24 @@
+{
+  "ticker": "DIRR3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:29:43",
+  "comunicados": {
+    "ids": [
+      62627710756341162,
+      452642376472468908,
+      897827322043098538
+    ],
+    "datas": [
+      "10/12/2025",
+      "08/07/2026",
+      "12/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE ENTREGUE EM 10/12/2025\n\n**O QUE ACONTECEU:** A Direcional Engenharia S/A aprovou a distribuição de dividendos intermediários.\n\n**RESUMO:** A Companhia decidiu pagar R$ 804.390.591,60 em dividendos intermediários, correspondendo a R$ 1,55 por ação, totalizando 518.961.672 ações.\n\n**CITAÇÃO CHAVE:** \"O Conselho de Administração da Companhia, em reunião realizada nesta data, aprovou a distribuição de dividendos intermediários, no valor total de R$ 804.390.591,60 (oitocentos e quatro milhões trezentos e noventa mil e quinhentos e noventa e um reais e sessenta centavos), considerando a posição de 518.961.672 (quinhentas e dezoito milhões novecentas e sessenta e uma mil seiscentas e setenta e duas) ações na presente data, não incluídas as ações em tesouraria, equivalendo, na presente data, à quantia de R$ 1,55 por ação.\"\n\n**CONEXÃO COM O CONTEXTO:** Este fato relevante se conecta com o contexto fornecido, pois indica que os dividendos distribuídos no ano de 2025 somaram um total significativo, contribuindo para o retorno total aos acionistas.\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 08/07/2026\n\n**O QUE ACONTECEU:** A Direcional Engenharia S/A divulgou a prévia operacional do segundo trimestre de 2026 (2T26).\n\n**RESUMO:** As vendas brutas no 2T26 atingiram R$ 2,0 bilhões, o maior patamar da história da companhia. A geração de caixa foi positiva em R$ 130 milhões.\n\n**CITAÇÃO CHAVE:** \"VENDAS BRUTAS ALCANÇAM R$ 2,0 BILHÕES NO 2T26 (R$ 1,6 BILHÃO % COMPANHIA), O MAIOR PATAMAR DA HISTÓRIA DA COMPANHIA.\"\n\n**CONEXÃO COM O CONTEXTO:** Este comunicado ao mercado se conecta com o contexto fornecido, pois destaca os resultados operacionais robustos do segundo trimestre de 2026, que contribuem para a geração de caixa e o retorno aos acionistas.\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 12/05/2026\n\n**O QUE ACONTECEU:** A Direcional Engenharia S/A apresentou os resultados do primeiro trimestre de 2026 (1T26).\n\n**RESUMO:** O Lucro Líquido e a Margem Líquida Operacional aumentaram, com o Lucro Líquido operacional antes dos minoritários atingindo R$ 379 milhões.\n\n**CITAÇÃO CHAVE:** \"Lucro Líquido Operacional ML - Antes dos Minoritários: R$ 379 milhões.\"\n\n**CONEXÃO COM O CONTEXTO:** Este comunicado ao mercado se conecta com o contexto fornecido, pois destaca os resultados financeiros positivos do primeiro trimestre de 2026, que contribuem para a geração de caixa e o retorno aos acionistas."
+  },
+  "modelo": "qwen2.5:7b"
+}

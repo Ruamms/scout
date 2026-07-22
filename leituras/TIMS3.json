@@ -1,0 +1,21 @@
+{
+  "ticker": "TIMS3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:11:21",
+  "comunicados": {
+    "ids": [
+      568104897273974335,
+      681967679679130938
+    ],
+    "datas": [
+      "17/06/2026",
+      "16/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 17/06/2026\n\n**O que aconteceu:** Eleição da Sra. Luciene Pandolfo como Diretora Jurídica da TIM S.A.\n\n**Resumo:** A TIM S.A. nomeou a Sra. Luciene Pandolfo para o cargo de Diretora Jurídica, com ampla experiência em gestão jurídica e indústrias relevantes.\n\n**Trecho-chave:**\n\"O Conselho de Administração da Companhia elegeu a Sra. Luciene Pandolfo para o cargo de Diretora Jurídica da Companhia.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 16/06/2026\n\n**O que aconteceu:** Confirmação do Rating Nacional de Longo Prazo \"AAA (bra)\" pela Fitch Ratings.\n\n**Resumo:** A agência de classificação de risco Fitch Ratings confirmou o Rating Nacional de Longo Prazo da TIM S.A. em \"AAA (bra)\", com perspectiva estável.\n\n**Trecho-chave:**\n\"Fitch confirmou à Companhia o Rating Nacional de Longo Prazo “AAA (bra)”, com perspectiva estável.\"\n\n---\n\n**Conexão com indicadores do contexto:** A confirmação do rating \"AAA\" pela Fitch Ratings pode ser vista como um sinal positivo para a TIM S.A., potencialmente influenciando a percepção de risco e a atratividade financeira da empresa."
+  },
+  "modelo": "qwen2.5:7b"
+}

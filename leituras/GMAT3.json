@@ -1,0 +1,24 @@
+{
+  "ticker": "GMAT3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:39:27",
+  "comunicados": {
+    "ids": [
+      576868511648201523,
+      414775185977669004,
+      495455394563261293
+    ],
+    "datas": [
+      "29/06/2026",
+      "26/06/2026",
+      "19/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 29/06/2026\n\nO GRUPO MATEUS S.A. informou que foi notificado por uma infração fiscal pela Receita Federal do Brasil, relacionada a exclusões de créditos presumidos de ICMS na base de cálculo do IRPJ e CSLL da Armazém Mateus S.A., com um valor total de R$ 1.281.949.121,24.\n\n*\"O montante total do Auto de Infração é de R$ 1.281.949.121,24, dos quais R$ 492.890.219,56 correspondem ao valor principal e R$ 789.058.901,68 correspondem ao valor de multas e juros.\"* (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 26/06/2026\n\nO GRUPO MATEUS S.A. inaugurou a primeira unidade da Mix Toureiro Farma, localizada em São Luís (MA), que representa o início de sua atuação no segmento farmacêutico.\n\n*“Em continuidade ao seu plano de expansão, o GRUPO MATEUS S.A. anunciou a inauguração da primeira unidade da Mix Toureiro Farma, marcando o início da atuação da Companhia no segmento farmacêutico.”* (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 19/06/2026\n\nO GRUPO MATEUS S.A. comunicou que as lojas anteriormente operadas sob a bandeira Mateus nos estados de Pernambuco, Paraíba e Alagoas passarão a operar exclusivamente sob a bandeira Novo Atacarejo.\n\n*“O GRUPO MATEUS S.A. comunica aos seus acionistas e ao mercado em geral que as lojas anteriormente operadas sob a bandeira Mateus nos estados de Pernambuco, Paraíba e Alagoas passarão a operar exclusivamente sob a bandeira Novo Atacarejo.”* (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

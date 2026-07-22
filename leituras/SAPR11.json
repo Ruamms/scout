@@ -1,0 +1,30 @@
+{
+  "ticker": "SAPR11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:03:47",
+  "comunicados": {
+    "ids": [
+      403926147975543366,
+      1087169569421578063,
+      173383138405350271,
+      29975097112311418,
+      613975273672287689
+    ],
+    "datas": [
+      "24/06/2026",
+      "23/06/2026",
+      "18/06/2026",
+      "18/06/2026",
+      "14/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 24/06/2026\n\n**O QUE aconteceu:** A Companhia de Saneamento do Paraná – Sanepar decidiu não distribuir Juros sobre o Capital Próprio (JCP) referentes ao primeiro semestre de 2026.\n\n**Resumo:** A decisão foi tomada em reunião extraordinária do Conselho de Administração e está alinhada com a recente decisão da Agepar que destina recursos para modicidade tarifária.\n\n**Trecho-chave:**\n\"o Conselho de Administração, em sua 3ª/2026 Reunião Extraordinária, realizada nesta data, deliberou pela não distribuição de Juros sobre o Capital Próprio (JCP) referentes ao primeiro semestre de 2026.\"\n\n### FATO RELEVANTE entregue em 23/06/2026\n\n**O QUE aconteceu:** A Agência Reguladora do Paraná – Agepar determinou que a totalidade dos recursos do precatório seja destinada à modicidade tarifária.\n\n**Resumo:** A decisão estabelece que 50% dos recursos serão aplicados em investimentos não onerosos e 50% em desconto nas faturas, com atualização pela taxa WACC regulatória.\n\n**Trecho-chave:**\n\"A referida Nota Técnica nº 002/2026-GTI manteve o entendimento da Nota Técnica nº 01/2026-GTI, determinando que a totalidade do montante originário do recebimento do precatório, líquido de tributos e honorários, seja integralmente destinada aos usuários da Sanepar para fins de modicidade tarifária.\"\n\n### FATO RELEVANTE entregue em 18/06/2026\n\n**O QUE aconteceu:** O Conselho de Administração aprovou as deliberações sobre a composição da Diretoria Executiva da Companhia.\n\n**Resumo:** Os diretores foram reconduzidos e eleitos, com mandato unificado até 18/06/2028. Ozires Kloster foi nomeado Diretor Financeiro e de Relações com Investidores.\n\n**Trecho-chave:**\n\"O Conselho de Administração, na 6ª/2026 Reunião Ordinária, realizada nesta data, aprovou as seguintes deliberações acerca da composição da Diretoria Executiva da Companhia.\"\n\n### COMUNICADO AO MERCADO entregue em 18/06/2026\n\n**O QUE aconteceu:** A Sanepar autorizou o projeto do Sistema de Abastecimento Integrado do Norte do Paraná (SAINP) sob a modalidade de locação de ativos.\n\n**Resumo:** O projeto será executado em regime de locação de ativos para atender os municípios de Apucarana, Rolândia e Arapongas. A Companhia manterá o mercado informado sobre o andamento do processo.\n\n**Trecho-chave:**\n\"A Companhia autorizou a execução do projeto do Sistema de Abastecimento Integrado do Norte do Paraná (SAINP) sob a modalidade de locação de ativos.\"\n\n### COMUNICADO AO MERCADO entregue em 14/05/2026\n\n**O QUE aconteceu:** A Sanepar apresentou os resultados do primeiro trimestre de 2026.\n\n**Resumo:** Os resultados indicaram crescimento na receita líquida, expansão no volume faturado e redução da dívida líquida. O investimento foi maior em comparação ao mesmo período do ano anterior.\n\n**Trecho-chave:**\n\"Receita Líquida R$ 1.946 milhões +7,8% vs 1T25; Volume Faturado 154,7 milhões de m³ (+1,2% vs 1T25); Dívida Líqua R$ 1.921 milhões -59,6% vs 1T25.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

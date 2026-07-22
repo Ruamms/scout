@@ -1,0 +1,21 @@
+{
+  "ticker": "RADL3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:59:09",
+  "comunicados": {
+    "ids": [
+      702349132628640849,
+      57355792766511897
+    ],
+    "datas": [
+      "02/07/2026",
+      "16/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 02/07/2026\n\n**O QUE aconteceu:** A Raia Drogasil S.A. concluiu a aquisição de participação societária na Stix Fidelidade e Inteligência S.A.\n\n**Resumo:** A Raia Drogasil finalizou a compra da participação de 66,67% no capital social da Stix, uma empresa que opera em programas de fidelidade. Com isso, a Raia passa a deter 100% do capital social da Stix.\n\n**Trecho-chave:** \"Após o cumprimento das condições precedentes aplicáveis, incluindo a aprovação pelo Conselho Administrativo de Defesa Econômica (CADE), foi concluída a aquisição da participação correspondente a 66,67% do capital social da Stix Fidelidade e Inteligência S.A.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 16/06/2026\n\n**O QUE aconteceu:** Nenhuma informação relevante foi fornecida neste comunicado.\n\n**Resumo:** Este documento é uma apresentação institucional que contém declarações prospectivas e informações sobre a Raia Drogasil S.A., incluindo dados financeiros, demográficos e de mercado. Não há detalhes específicos sobre eventos recentes ou transações.\n\n**Trecho-chave:** \"Esta apresentação contém certas declarações futuras e informações relacionadas à Companhia que refletem as visões e/ou expectativas atuais da Companhia e de sua administração com respeito à sua performance, seus negócios e eventos futuros.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

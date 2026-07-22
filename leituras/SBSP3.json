@@ -1,0 +1,27 @@
+{
+  "ticker": "SBSP3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:05:35",
+  "comunicados": {
+    "ids": [
+      429296040615896598,
+      462474487605675159,
+      208084198056832431,
+      835549685450846104
+    ],
+    "datas": [
+      "29/06/2026",
+      "15/06/2026",
+      "25/06/2026",
+      "19/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 29/06/2026\n\n**O QUE aconteceu:** Protocolo e Justificação de Incorporação das Ações da EMAE pela Sabesp.\n\n**Resumo:** As Companhias (Sabesp e EMAE) celebraram um protocolo para a incorporação de todas as ações da EMAE não detidas pela Sabesp, resultando na transformação da EMAE em uma subsidiária integral da Sabesp. A assembleia geral extraordinária será realizada em 30 de julho de 2026.\n\n**Trecho-chave:**\n\"Na presente data, foi celebrado o 'Protocolo e Justificação de Incorporação das Ações de Emissão da Empresa Metropolitana de Águas e Energia S.A. – EMAE pela Companhia de Saneamento Básico do Estado de São Paulo – SABESP' (\"Protocolo e Justificação\"), o qual disciplina os termos e condições aplicáveis à Incorporação de Ações (conforme abaixo definida).\"\n\n### FATO RELEVANTE entregue em 15/06/2026\n\n**O QUE aconteceu:** Mudanças na composição da Diretoria da Sabesp.\n\n**Resumo:** O Sr. Claudio Kawa Hermolin assumiu a liderança da nova Diretoria de Experiência do Cliente, enquanto a Sra. Débora Pierini Longo passou para liderar o projeto de implantação do Centro de Operações Integradas (COI). O Sr. Roberval Tavares acumulou interinamente os cargos de Diretor de Engenharia e Operação.\n\n**Trecho-chave:**\n\"O Sr. Claudio Kawa Hermolin assume a liderança da recém-criada Diretoria de Experiência do Cliente.\"\n\n### COMUNICADO AO MERCADO entregue em 25/06/2026\n\n**O QUE aconteceu:** Wellington Management Group atingiu participação relevante na Sabesp.\n\n**Resumo:** A administradora de recursos de terceiros, Wellington Management Group, informou que adquiriu ações ordinárias da Sabesp, elevando sua participação para 5,02% do total de ações ordinárias emitidas pela companhia.\n\n**Trecho-chave:**\n\"A Wellington Management Group LLP (\"Wellington Management\") é uma partnership constituída no Estado de Delaware, que atua na área de gestão de investimentos.\"\n\n### COMUNICADO AO MERCADO entregue em 19/06/2026\n\n**O QUE aconteceu:** Alteração da Escriturador e Banco Liquidante da 31ª Emissão de Debêntures.\n\n**Resumo:** A Sabesp formalizou a substituição do Escriturador e Banco Liquidante da 31ª Emissão de Debêntures, passando a ser exercida pela Itaú Corretora de Valores S.A. e Itaú Unibanco S.A., respectivamente.\n\n**Trecho-chave:**\n\"A Companhia de Saneamento Básico do Estado de São Paulo – Sabesp (“Companhia”), comunica aos seus acionistas e ao mercado em geral que celebrou aditivo ao Instrumento Particular de Escritura da 31ª Emissão de Debêntures Simples para formalizar a substituição do Escriturador e do Banco Liquidante da emissão.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

@@ -1,0 +1,24 @@
+{
+  "ticker": "RENT3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:02:06",
+  "comunicados": {
+    "ids": [
+      751926594001650950,
+      1053885193789210454,
+      855124333404569468
+    ],
+    "datas": [
+      "23/06/2026",
+      "26/06/2026",
+      "24/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 23/06/2026\n\n**O que aconteceu:** A Localiza Rent a Car S.A. autorizou o pagamento de juros sobre o capital próprio.\n\n**Resumo:** A companhia decidiu pagar R$591,109,687,95 em juros sobre o capital próprio aos acionistas no valor bruto de R$0,535127379 por ação. O pagamento será realizado em 20/08/2026.\n\n**Trecho-chave:** \"o Conselho de Administração, reunido em 23/06/2026, deliberou autorizar o crédito e pagamento aos acionistas de juros sobre o capital próprio no valor bruto de R$591.109.687,95.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 26/06/2026\n\n**O que aconteceu:** O valor por ação dos juros sobre o capital próprio permanece inalterado.\n\n**Resumo:** Como não houve alienação de ações em tesouraria, o valor por ação dos juros sobre o capital próprio continua sendo R$0,535127379. O pagamento ocorrerá no dia 20/08/2026.\n\n**Trecho-chave:** \"permanece inalterado o valor por ação dos juros sobre capital próprio aprovados na referida reunião em R$0,535127379.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 24/06/2026\n\n**O que aconteceu:** A Localiza Rent a Car S.A. comunicou uma aquisição facultativa de debêntures.\n\n**Resumo:** A companhia divulgou um aviso aos debenturistas sobre a proposta para aquisição facultativa das debêntures, conforme as disposições da Resolução CVM 80 e 77.\n\n**Trecho-chave:** \"divulgou, nesta data, aviso aos debenturistas (i) da 22ª (vigésima segunda) emissão de debêntures simples, não conversíveis em ações, da espécie quirografária, com garantia fidejussória adicional, em série única, para distribuição pública com esforços restritos de distribuição.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

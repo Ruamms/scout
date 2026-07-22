@@ -1,0 +1,21 @@
+{
+  "ticker": "RECV3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:01:31",
+  "comunicados": {
+    "ids": [
+      288560136817905466,
+      228719081848419689
+    ],
+    "datas": [
+      "08/07/2026",
+      "08/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE aconteceu em 08/07/2026\n\n**Resumo:** A PetroReconcavo relatou a produção média de junho de 2026, com um aumento de 0,8% em comparação ao mês anterior. A produção foi impactada principalmente pelo incremento no campo Tiê devido aos projetos de workover.\n\n**Citação do trecho-chave:**\n\"Produção média registrada em junho foi de 24,1 mil boe/dia, representando aumento de 0,8% em comparação ao mês anterior. A produção foi impactada, principalmente, pelo incremento de produção no campo de Tiê devido aos projetos de workover.\"\n\n---\n\n### O QUE aconteceu em 31/12/2025\n\n**Resumo:** A PetroReconcavo apresentou dados operacionais para o ano de 2025, destacando a produção e entrega de óleo e gás.\n\n**Citação do trecho-chave:**\n\"Produção média registrada em junho foi de 24,1 mil boe/dia, representando aumento de 0,8% em comparação ao mês anterior. A produção foi impactada, principalmente, pelo incremento de produção no campo de Tiê devido aos projetos de workover.\"\n\n---\n\n### O QUE aconteceu em 31/12/2024\n\n**Resumo:** Não há informações específicas sobre o ano de 2024 nos documentos fornecidos.\n\n---\n\n### O QUE aconteceu em 31/12/2023\n\n**Resumo:** Não há informações específicas sobre o ano de 2023 nos documentos fornecidos.\n\n---\n\n### O QUE aconteceu em 31/12/2022\n\n**Resumo:** Não há informações específicas sobre o ano de 2022 nos documentos fornecidos.\n\n---\n\n### O QUE aconteceu em 31/12/2021\n\n**Resumo:** Não há informações específicas sobre o ano de 2021 nos documentos fornecidos.\n\n---\n\n### O QUE aconteceu em 31/12/2020\n\n**Resumo:** Não há informações específicas sobre o ano de 2020 nos documentos fornecidos."
+  },
+  "modelo": "qwen2.5:7b"
+}

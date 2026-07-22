@@ -1,0 +1,27 @@
+{
+  "ticker": "CMIN3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:21:39",
+  "comunicados": {
+    "ids": [
+      612432025375406402,
+      797638628518890205,
+      962422924295493877,
+      97877842652783573
+    ],
+    "datas": [
+      "20/05/2026",
+      "27/03/2026",
+      "20/05/2026",
+      "14/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### Ocorrências em 20/05/2026\n\n**O QUE aconteceu:** Aprovou um novo programa de recompra de ações.\n\n**Resumo:** A CSN Mineração S.A. aprovou um novo programa para aquisição de até 50 milhões de suas próprias ações no período de 19/05/2026 a 19/11/2027, com o objetivo de manter as ações em tesouraria e posteriormente alienar ou cancelá-las.\n\n**Trecho-chave:** \"A Companhia, em atendimento ao disposto na Resolução CVM nº 44/2021, conforme alterada, comunica aos seus acionistas e ao mercado em geral, a aprovação em Reunião do Conselho de Administração, realizada em 19 de maio de 2026 (\"RCA\") da abertura de um novo programa de recompra de ações de emissão da Companhia.\"\n\n---\n\n### Ocorrências em 27/03/2026\n\n**O QUE aconteceu:** Cancelamento de ações em tesouraria e encerramento do programa de alienação.\n\n**Resumo:** A CSN Mineração S.A. cancelou 53,294,297 ações ordinárias mantidas em tesouraria sem redução do capital social e encerrou o Programa de Alienação de Ações.\n\n**Trecho-chave:** \"A Companhia, em atendimento ao disposto no artigo 157, §4º, da Lei nº 6.404, de 15 de dezembro de 1976, conforme alterada, e na Resolução CVM nº 44, de 23 de agosto de 2021, conforme alterada, comunica aos seus acionistas e ao mercado em geral que o Conselho de Administração da Companhia, em reunião realizada nesta data, aprovou: (i) o cancelamento de 53.294.297 (cinquenta e três milhões, duzentas e noventa e quatro mil, duzentas e noventa e sete) ações ordinárias, nominativas, escriturais e sem valor nominal, de emissão da Companhia mantidas em tesouraria, sem redução do capital social; e (ii) o encerramento do Programa de Alienação de Ações de Emissão da Companhia.\"\n\n---\n\n### Ocorrências em 14/05/2026\n\n**O QUE aconteceu:** Apresentação dos resultados do primeiro trimestre de 2026.\n\n**Resumo:** Os resultados do primeiro trimestre de 2026 mostraram um novo recorde de produção própria, com crescimento de 6,7% em comparação com o primeiro trimestre de 2025. A receita líquida também apresentou um recorde para o primeiro trimestre.\n\n**Trecho-chave:** \"Novo recorde de produção própria para o 1T: crescimento de 6,7% no volume em comparação com o 1T25.\"\n\n---\n\n### Conexão com Indicadores do Contexto\n\n- **Programa de Recompra de Ações (20/05/2026):** Este comunicado se conecta aos indicadores financeiros e estratégicos da empresa, pois a recompra de ações pode afetar o capital social, a liquidez e a estrutura de capital da companhia.\n- **Cancelamento de Ações (27/03/2026):** Este comunicado se conecta diretamente aos indicadores financeiros, como o número total de ações em circulação e o capital social, que foram alterados com a aprovação do cancelamento das ações em tesouraria.\n- **Apresentação dos Resultados (14/05/2026):** Este comunicado se conecta aos indicadores operacionais e financeiros, como a produção, as vendas e a receita líquida, que são fundamentais para avaliar o desempenho da empresa."
+  },
+  "modelo": "qwen2.5:7b"
+}

@@ -1,0 +1,21 @@
+{
+  "ticker": "JHSF3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:46:54",
+  "comunicados": {
+    "ids": [
+      1022300363207145616,
+      488869706942916826
+    ],
+    "datas": [
+      "15/07/2026",
+      "10/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### 15/07/2026 - JHSF Conclui Captação de R$ 400 Milhões para Aquisição do SCJ\n\nA JHSF Participações S.A. informa que sua subsidiária, JHSF Capital, concluiu com êxito a captação de R$ 400 milhões por meio da oferta pública de cotas do fundo JCSC11, dedicado à aquisição de participação no Shopping Cidade Jardim (SCJ). A oferta registrou demanda superior ao volume inicial e foi estruturada em duas classes: a cota sênior, no montante de R$ 235 milhões, foi integralmente alocada em menos de três dias; a cota subordinada, totalizando R$ 165 milhões, foi subscrita por investidores e parceiros da JHSF Capital. Com a aquisição, os fundos geridos pela JHSF Capital atingem 49,99% de participação no SCJ, principal shopping de alta renda do Brasil.\n\n*\"A conclusão bem-sucedida da captação evidencia a qualidade do ativo, reforça ainda mais a presença dos fundos da JHSF Capital no segmento de alta renda e contribui com a estratégia consistente da JHSF de crescimento dos negócios de renda recorrente.\"* (p. 1)\n\n---\n\n### 10/07/2026 - JHSF Compra Totalidade do Complexo Enjoy Punta del Este\n\nA JHSF Participações S.A. informa que a JHSF Península, empresa do grupo econômico que controla a Companhia, concluiu a compra de ações representativas da totalidade do capital social da Baluma S.A., sociedade domiciliada no Uruguai, proprietária do complexo Enjoy Punta del Este. O projeto será ampliado para se tornar um complexo multiuso de alta renda, incluindo um shopping com 50 lojas e restaurantes, predominantemente internacionais, um hotel Fasano, um cassino e unidades residenciais. A JHSF Capital atuou como assessora financeira nesta transação.\n\n*\"A JHSF, controladora do Grupo Fasano, reforça sua presença no Uruguai, onde está há mais de 15 anos, por meio da operação do Hotel Fasano Punta del Este, e adiciona a operação de mais um destino de excelência e de renome internacional, sinalizando o compromisso do seu plano estratégico de expansão internacional e da ampliação de seus negócios de renda recorrente.\"* (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

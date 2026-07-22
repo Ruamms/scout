@@ -1,0 +1,27 @@
+{
+  "ticker": "AURE3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:11:36",
+  "comunicados": {
+    "ids": [
+      1041972270732643735,
+      810288368803360592,
+      912264116156208458,
+      485870704545840612
+    ],
+    "datas": [
+      "24/06/2026",
+      "14/04/2026",
+      "01/06/2026",
+      "07/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 24/06/2026\n\n**O QUE aconteceu:** A CESP, Auren Energia e Auren Operações aprovaram as etapas da Fase 2 da Reorganização Societária.\n\n**Resumo:** As companhias aprovaram o aumento do capital social da CESP e a incorporação da Auren Operações pela CESP. Essas etapas visam concentrar ativos hidrelétricos, racionalizar estrutura societária e aumentar eficiência na gestão de caixa.\n\n**Trecho-chave:** \"Nesta data, foram aprovadas as etapas da Fase 2 da Reorganização Societária, que em conjunto com a Fase 1, implementada no dia 31 de maio de 2026, visam entre outros objetivos: (a) a concentração dos ativos hidrelétricos em um único veículo de investimento da Auren Energia; (b) a racionalização e simplificação da estrutura societária do grupo empresarial da Auren Energia, com a redução do número de companhias abertas; e (c) a maior eficiência na gestão de caixa e endividamento.\" (p. 1)\n\n---\n\n### FATO RELEVANTE entregue em 14/04/2026\n\n**O QUE aconteceu:** A CESP, Auren Energia, Auren Participações e Auren Operações aprovaram as condições para a Incorporação Reversa da Auren Participações pela Auren Operações.\n\n**Resumo:** As companhias aprovaram o aumento do capital social da CESP e a incorporação da Auren Operações pela CESP. Essas etapas visam concentrar ativos hidrelétricos, racionalizar estrutura societária e aumentar eficiência na gestão de caixa.\n\n**Trecho-chave:** \"Nesta data, no contexto da Reorganização Societária, as assembleias gerais da Auren Participações e da Auren Operações aprovaram, dentre outras matérias, a Incorporação Reversa ou Fase 1, nos termos condições estabelecidos no “Instrumento Particular de Protocolo e Justificação de Incorporação da Auren Participações S.A. pela Auren Operações S.A.”\" (p. 2)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 01/06/2026\n\n**O QUE aconteceu:** As condições suspensivas para a incorporação reversa da Auren Participações pela Auren Operações foram confirmadas, e os atos do fechamento foram realizados.\n\n**Resumo:** A Incorporação Reversa foi consumada em 31 de maio de 2026, resultando na extinção da Auren Participações e na passagem dos seus ativos para a Auren Operações. As debêntures emitidas pela Auren Participações foram transferidas para a Auren Operações.\n\n**Trecho-chave:** \"A Incorporação Reversa ou Fase 1 foi consumada, nos termos previstos no Protocolo e Justificação, com a consequente extinção da Auren Participações e a versão, para a Auren Operações, a título universal e sem solução de continuidade, da totalidade do patrimônio da Auren Participações.\" (p. 2)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 07/05/2026\n\n**O QUE aconteceu:** A Auren registrou EBITDA Ajustado de R$ 926 milhões no primeiro trimestre de 2026.\n\n**Resumo:** O resultado financeiro foi impactado por ganhos com modulação, redução da dívida líquida e avanços na construção do projeto Cajuína 3. A reorganização societária também foi destacada como um ponto positivo.\n\n**Trecho-chave:** \"A Auren registrou EBITDA Ajustado de R$ 926 milhões no 1T26, inferior em 23% vs. o 1T25, principalmente em decorrência do menor resultado da comercializadora, da redução do recurso eólico e solar e da menor geração hidrelétrica das usinas do MRE.\" (p. 4)"
+  },
+  "modelo": "qwen2.5:7b"
+}

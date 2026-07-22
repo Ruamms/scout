@@ -1,0 +1,24 @@
+{
+  "ticker": "SIMH3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:06:16",
+  "comunicados": {
+    "ids": [
+      55984677823674469,
+      1059154977673000050,
+      987526105045227618
+    ],
+    "datas": [
+      "21/05/2026",
+      "01/07/2026",
+      "24/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 21/05/2026\n\n**O que aconteceu:** A SIMPAR vendeu ações da JSL à BNDESPAR.\n\n**Resumo:** A SIMPAR alienou ações ordinárias de emissão da JSL para a BNDESPAR, representando uma participação de 5% do capital social. O preço por ação foi R$6,22, totalizando R$88.749.734,12.\n\n**Trecho-chave:** \"A SIMPAR alienou à BNDESPAR 14.268.446 (quatorze milhões, duzentas e sessenta e oito mil, quatrocentas e quarenta e seis) ações ordinárias de emissão da JSL, que representam uma participação de 5% do capital social, pelo preço de R$6,22 por ação, totalizando R$ 88.749.734,12.\"\n\n### COMUNICADO AO MERCADO entregue em 01/07/2026\n\n**O que aconteceu:** A SIMPAR vendeu sua participação na Ciclus Amazônia para a Alvor.\n\n**Resumo:** A SIMPAR vendeu sua participação de 45% na Ciclus Amazônia por R$124,5 milhões. O valor será pago em parcelas até 01/01/2028, com correção pelo CDI.\n\n**Trecho-chave:** \"A Transação evidencia a disciplina na execução do planejamento estratégico e o compromisso com a alocação de capital com o objetivo de gerar valor de forma consistente e sustentável.\"\n\n### COMUNICADO AO MERCADO entregue em 24/06/2026\n\n**O que aconteceu:** A SIMPAR elegera um novo membro para o Comitê de Auditoria.\n\n**Resumo:** O Conselho de Administração da SIMPAR nomeou o Sr. Augusto Marques da Cruz Filho como novo membro do Comitê de Auditoria, com mandato de 5 anos a partir de 31 de maio de 2024.\n\n**Trecho-chave:** \"Ato contínuo, a Companhia informa que, na mesma RCA 17/06/2026, elegeu como membro do Comitê de Auditoria o Sr. Augusto Marques da Cruz Filho, cujo mandato unificado é de 5 anos contados a partir de 31 de maio de 2024.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

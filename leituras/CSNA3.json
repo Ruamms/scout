@@ -1,0 +1,24 @@
+{
+  "ticker": "CSNA3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:26:06",
+  "comunicados": {
+    "ids": [
+      1144078246351538058,
+      403802387549856048,
+      557274309371433951
+    ],
+    "datas": [
+      "21/03/2026",
+      "14/05/2026",
+      "13/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE ENTREGUE EM 21/03/2026\n\n**O QUE ACONTECEU:** A Companhia Siderúrgica Nacional (CSN) celebrou uma carta-compromisso vinculante com vários bancos para estruturar um novo contrato de crédito sindicalizado.\n\n**RESUMO:** CSN e suas subsidiárias firmaram um empréstimo de até US$ 1,4 bilhão para refinanciar dívidas existentes e pagar taxas correlatas. O empréstimo está alinhado com a estratégia de desinvestimento da empresa.\n\n**CITAÇÃO CHAVE:** \"A CSN pretende utilizar os recursos do Empréstimo para refinanciar dívidas existentes e para o pagamento de taxas, despesas e custos correlatos do Empréstimo.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 14/05/2026\n\n**O QUE ACONTECEU:** CSN apresentou seus resultados financeiros para o primeiro trimestre de 2026.\n\n**RESUMO:** Os resultados mostraram um EBITDA recorde, com destaque para os segmentos de cimento e logística. A alavancagem da empresa diminuiu, refletindo a resiliência operacional e a diversificação do portfólio.\n\n**CITAÇÃO CHAVE:** \"O EBITDA da CSN no 1T26 apresentou crescimento anual de 5,5%, mesmo considerando o maior volume de chuvas registrado no período, o que enfatiza a resiliência operacional e a força de contar com um portfólio diversificado de ativos.\" (p. 3)\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 13/05/2026\n\n**O QUE ACONTECEU:** CSN divulgou seu relatório trimestral sobre sustentabilidade.\n\n**RESUMO:** O relatório destaca avanços em governança, gestão ambiental e diversidade. A empresa também aderiu a um pacto de integridade e publicou seus relatos integrados 2025.\n\n**CITAÇÃO CHAVE:** \"Ainda no ano, a CSN Mineração aderiu ao Pacto Empresarial pela Integridade e Contra a Corrupção organizado pela Controladoria Geral da União (CGU), reafirmando publicamente seu compromisso com a integridade e transparência.\" (p. 2)"
+  },
+  "modelo": "qwen2.5:7b"
+}

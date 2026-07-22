@@ -1,0 +1,21 @@
+{
+  "ticker": "WEGE3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:18:19",
+  "comunicados": {
+    "ids": [
+      566623905145297359,
+      202650154842354826
+    ],
+    "datas": [
+      "06/07/2026",
+      "12/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O QUE aconteceu:** Teleconferência para apresentação dos resultados do primeiro trimestre de 2026.\n\n**Resumo:** A WEG S.A. realizou uma teleconferência no dia 30 de abril de 2026, onde foram apresentados os resultados do primeiro trimestre de 2026.\n\n**Trecho-chave:**\n\"Este é um documento de apoio para a teleconferência de resultados da WEG S.A. Quaisquer previsões contidas neste documento ou eventuais declarações que possam ser feitas durante a teleconferência acerca de eventos futuros, à perspectiva dos negócios, às projeções e metas operacionais e financeiras e ao potencial de crescimento futuro da WEG constituem-se em meras crenças e expectativas da administração da WEG, baseadas nas informações atualmente disponíveis. Estas declarações envolvem riscos e incertezas e, portanto, dependem de circunstâncias que podem ou não ocorrer.\"\n\n**Conexão com o contexto:** Este comunicado apresenta os resultados do primeiro trimestre de 2026, que são relevantes para a agenda de divulgação dos resultados do segundo trimestre.\n\n---\n\n### COMUNICADO AO MERCADO entregue em 06/07/2026\n\n**O QUE aconteceu:** Anúncio da agenda de divulgação dos resultados do segundo trimestre de 2026.\n\n**Resumo:** A WEG S.A. divulgou a agenda para a divulgação dos resultados do segundo trimestre de 2026, incluindo a data e horário da teleconferência.\n\n**Trecho-chave:**\n\"• No dia 22 de julho de 2026 (quarta-feira): divulgação dos resultados, antes da abertura do mercado; \n• No dia 23 de julho de 2026 (quinta-feira): teleconferência para apresentação dos resultados, em português, com tradução simultânea para o inglês.\"\n\n**Conexão com o contexto:** Este comunicado anuncia a agenda para a divulgação dos resultados do segundo trimestre de 2026, que é um passo crucial após os resultados do primeiro trimestre apresentados anteriormente."
+  },
+  "modelo": "qwen2.5:7b"
+}

@@ -1,0 +1,24 @@
+{
+  "ticker": "RDOR3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:00:58",
+  "comunicados": {
+    "ids": [
+      873428014047161569,
+      894937705038082921,
+      187555826624181377
+    ],
+    "datas": [
+      "10/06/2026",
+      "13/07/2026",
+      "22/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 10/06/2026\n\n**O que aconteceu:** Encerramento do 3º Programa de Recompra de Ações e aprovação do 4º Programa de Recompra.\n\n**Resumo:** A Companhia encerrou o 3º Programa de Recompra, adquirindo 14.725.400 ações ordinárias por R$36,64 cada. Além disso, foi aprovado um novo programa de recompra com limites específicos.\n\n**Trecho-chave:**\n\"Por meio do 3º Programa de Recompra, foram adquiridas 14.725.400 (quatorze milhões setecentos e vinte cinco mil e quatrocentas) de ações ordinárias de emissão da Companhia, a um custo médio de R$36,64 por ação (\"Ações Adquiridas\").\"\n\n### COMUNICADO AO MERCADO entregue em 22/06/2026\n\n**O que aconteceu:** Aprovada a distribuição de Juros sobre o Capital Próprio.\n\n**Resumo:** A Companhia aprovou a distribuição de R$400.000.000 em Juros sobre o Capital Próprio, correspondentes a R$0,18320141504 por ação ordinária. O pagamento será efetuado em 08/07/2026.\n\n**Trecho-chave:**\n\"O montante total de Juros sobre o Capital Próprio ora declarado será imputado e deduzirá o valor dos dividendos obrigatórios do exercício social de 2026, e não será objeto de qualquer atualização monetária.\"\n\n### COMUNICADO AO MERCADO entregue em 13/07/2026\n\n**O que aconteceu:** Conclusão da operação de contribuição de imóveis para a rede de hospitais \"Atlântica D'Or\".\n\n**Resumo:** A Companhia concluiu a contribuição de certos imóveis do grupo Rede D’Or, localizados no bairro São Conrado, Rio de Janeiro, para a rede hospitalar \"Atlântica D'Or\" com o objetivo de construir e operar Hospital São Conrado D'Or.\n\n**Trecho-chave:**\n\"Foi concluída a operação de contribuição de certos imóveis do grupo Rede D’Or, localizados no bairro São Conrado, na cidade do Rio de Janeiro/RJ, à rede de hospitais “Atlântica D’Or”.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

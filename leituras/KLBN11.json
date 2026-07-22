@@ -1,0 +1,24 @@
+{
+  "ticker": "KLBN11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:47:28",
+  "comunicados": {
+    "ids": [
+      836833626326850257,
+      167973615428641206,
+      211036376954105070
+    ],
+    "datas": [
+      "24/06/2026",
+      "10/07/2026",
+      "07/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 24/06/2026\n\n**O que aconteceu:** Klabin aprovou um programa de recompra de ações.\n\n**Resumo:** A companhia planeja adquirir até 31.250.000 ações, representando aproximadamente 3% das ordinárias e 3.3% das preferenciais em circulação, com prazo máximo de 18 meses.\n\n**Trecho-chave:**\n\"O Conselho de Administração da Companhia, em reunião realizada nesta data, aprovou a criação de um programa de aquisição de ações de sua própria emissão (\"Programa de Recompra\") sob as seguintes condições:\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 07/07/2026\n\n**O que aconteceu:** Francisco Cesar Razzolini, Diretor de Sustentabilidade, Pesquisa & Desenvolvimento e Inovação, apresentou sua renúncia.\n\n**Resumo:** O diretor deixará a companhia após um processo de transição planejado para assegurar a continuidade do crescimento da Klabin. As áreas de Sustentabilidade, Pesquisa & Desenvolvimento e Inovação passarão a ser diretórias não estatutárias.\n\n**Trecho-chave:**\n\"A Klabin agradece ao Sr. Francisco Cesar Razzolini por sua dedicação e pelas relevantes contribuições prestadas ao longo de seus 41 anos de trajetória profissional na Companhia, período em que desempenhou papel fundamental no desenvolvimento e fortalecimento do negócio da Klabin.\" (p. 2)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 10/07/2026\n\n**O que aconteceu:** A Guepardo passou a ter participações significativas na companhia.\n\n**Resumo:** A empresa informa que a Guepardo, de forma agregada, passou a detém 49.707.100 ações ordinárias (2,15%) e 198.828.400 ações preferenciais (5,06%), sem intenção de alterar a administração ou o controle da companhia.\n\n**Trecho-chave:**\n\"A Guepardo informou, ainda, que a participação ora informada (i) não tem por escopo aquisição do controle da Companhia; (ii) não busca alterar sua administração, composição de controle ou o regular funcionamento; e (iii) tem por escopo meramente investimento na Companhia.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

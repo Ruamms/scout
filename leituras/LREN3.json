@@ -1,0 +1,24 @@
+{
+  "ticker": "LREN3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:48:03",
+  "comunicados": {
+    "ids": [
+      9692151839327082,
+      388419777149204084,
+      344043524682009762
+    ],
+    "datas": [
+      "09/03/2026",
+      "17/07/2026",
+      "03/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 09/03/2026\n\n**O que aconteceu:** Lojas Renner divulga projeções financeiras e operacionais para o período até 31/12/2026.\n\n**Resumo:** A companhia planeja investir R$ 1.050 milhões em capital fixo, abrir entre 22 a 30 lojas Renner BR, de 23 a 25 lojas Youcom e cerca de 5 lojas Camicado até o final de 2026.\n\n**Trecho-chave:** \"Indicador Financeiro / Investimento em Capital Fixo: R$ 1.050 milhões / Até 31/12/2026\" (p. 1).\n\n### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O que aconteceu:** Lojas Renner publica seu Relatório de Informações Financeiras Relacionadas à Sustentabilidade de 2025.\n\n**Resumo:** O relatório destaca a integração da sustentabilidade nas estratégias de negócios, financeira e operacional, incluindo novos riscos físicos relacionados a ventos fortes. A gestão dos desafios climáticos pode gerar valor através de oportunidades na eficiência hídrica.\n\n**Trecho-chave:** \"A Companhia também avançou na integração dos temas climáticos à matriz de riscos corporativos e ao planejamento estratégico, fortalecendo a consistência e a transparência na tomada de decisões.\" (p. 1).\n\n### COMUNICADO AO MERCADO entregue em 03/06/2026\n\n**O que aconteceu:** Lojas Renner anuncia mudanças na diretoria da subsidiária Realize SCFI.\n\n**Resumo:** Daniel Martins dos Santos, Vice-Presidente de Finanças e Relações com Investidores, foi eleito Diretor Presidente da Realize SCFI. Paula Luciana Viana da Silva Lima Mazanék iniciará um período de transição até julho de 2026, enquanto Tiago Nunes Nicolaidis permanecerá como Diretor Estatutário.\n\n**Trecho-chave:** \"O Sr. Daniel Martins dos Santos, Vice-Presidente de Finanças, Administrativo e de Relações com Investidores da Companhia foi eleito, nesta data, como Diretor Presidente da Realize SCFI.\" (p. 1)."
+  },
+  "modelo": "qwen2.5:7b"
+}

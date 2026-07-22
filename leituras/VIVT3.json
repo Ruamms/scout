@@ -1,0 +1,27 @@
+{
+  "ticker": "VIVT3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:17:49",
+  "comunicados": {
+    "ids": [
+      762116291509934412,
+      793217682089991612,
+      1033040846847590257,
+      1094192347819113876
+    ],
+    "datas": [
+      "16/06/2026",
+      "15/05/2026",
+      "01/07/2026",
+      "27/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 16/06/2026\n\n**O que aconteceu:** A Telefônica Brasil S.A. aprovou a incorporação de sua subsidiária, a Fibrasil Infraestrutura e Fibra Ótica S.A.\n\n**Resumo:** A Telefônica Brasil S.A. planeja incorporar sua subsidiária Fibrasil Infraestrutura e Fibra Ótica S.A., resultando na extinção da Fibrasil e na sucessão universal pela Companhia, sem alteração no capital social ou composição acionária.\n\n**Trecho-chave:** \"A operação proposta consiste na incorporação pela Companhia, com efeitos a partir de 1º de agosto de 2026, do patrimônio líquido da Fibrasil, pelo valor contábil desta, equivalente a R$812.613.844,28 (oitocentos e doze milhões, seiscentos e treze mil, oitocentos e quarenta e quatro reais e vinte e oito centavos), nos termos do artigo 227 da Lei das S.A., mediante o cancelamento das ações de emissão da Fibrasil e sua consequente extinção.\"\n\n### FATO RELEVANTE entregue em 15/05/2026\n\n**O que aconteceu:** A Telefônica Brasil S.A. informou sobre a conclusão do processo de redução de capital social.\n\n**Resumo:** A Companhia encerrou o prazo para a redução de capital social, tornando-a plenamente eficaz e iniciando o pagamento aos acionistas da restituição em moeda corrente nacional. O valor por ação será calculado com base na posição acionária de 31 de dezembro de 2025.\n\n**Trecho-chave:** \"A Companhia informa que prosseguirá com a restituição aos acionistas, em moeda corrente nacional, do valor de R$ 1,25171862845 por ação ordinária de emissão da Companhia, considerando um total de 3.195.606.352 ações ordinárias em que se divide o seu capital social, excluídas as 30.940.270 ações mantidas em tesouraria em 31 de dezembro de 2025.\"\n\n### COMUNICADO AO MERCADO entregue em 01/07/2026\n\n**O que aconteceu:** A TIS (Telefônica Infraestrutura e Segurança Ltda.) incorporou a Cyber co Brasil.\n\n**Resumo:** A incorporação visa simplificar estruturas operacionais, reduzir custos e aproveitar sinergias internas sem alterar o capital social ou participação societária da TIS.\n\n**Trecho-chave:** \"A Incorporação consiste em uma reorganização societária e operacional a fim de promover benefícios de ordem administrativa e econômica mediante a simplificação de estruturas operacionais, redução de custos incidentes sobre as operações e atividades desenvolvidas pela Cyber co Brasil e pela TIS e aproveitamento de sinergias internas.\"\n\n### COMUNICADO AO MERCADO entregue em 27/05/2026\n\n**O que aconteceu:** A Telefônica Brasil S.A. confirmou o valor unitário por ação do Juros Sobre Capital Próprio (JSCP).\n\n**Resumo:** O valor unitário por ação do JSCP permanece inalterado em R$ 0,15490018027.\n\n**Trecho-chave:** \"O valor unitário por ação referente ao Juros Sobre Capital Próprio (JSCP) deliberado pelo Conselho de Administração em 15 de maio de 2026 permanece inalterado, conforme descrito na tabela abaixo.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

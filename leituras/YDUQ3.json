@@ -1,0 +1,24 @@
+{
+  "ticker": "YDUQ3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:19:05",
+  "comunicados": {
+    "ids": [
+      754993952668541389,
+      427025281293950593,
+      111317571777478493
+    ],
+    "datas": [
+      "07/05/2026",
+      "26/06/2026",
+      "22/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 07/05/2026\n\n**O QUE aconteceu:** A YDUQS divulgou projeções de Lucro Líquido ajustado por ação e Fluxo de Caixa do Acionista para os próximos anos.\n\n**Resumo:** A empresa projetou Lucro Líquido ajustado por ação entre R$ 1,4 e R$ 2,0 para 2026 e entre R$ 2,0 e R$ 3,5 para 2027-2030. O Fluxo de Caixa do Acionista foi projetado entre R$ 520 milhões e R$ 620 milhões para 2026.\n\n**Trecho-chave:** \"Lucro Líquido ajustado por ação2: projeção entre R$ 1,4 e R$ 2,0 para o ano de 2026 e entre R$ 2,0 e R$ 3,5 para o período compreendido entre os anos de 2027 e 2030. Fluxo de Caixa do Acionista3: projeção entre R$ 520 milhões e R$ 620 milhões para o ano de 2026.\"\n\n### COMUNICADO AO MERCADO entregue em 22/06/2026\n\n**O QUE aconteceu:** A YDUQS anunciou a criação de um novo campus do Ibmec na cidade de Fortaleza, no Nordeste do Brasil.\n\n**Resumo:** A nova unidade será inaugurada no primeiro trimestre de 2027 e contará com investimento estimado em R$ 10 milhões. O campus oferecerá cursos em negócios, direito e tecnologia, além da possibilidade de intercâmbio com a unidade de São Paulo.\n\n**Trecho-chave:** \"A nova unidade se juntará à operação atual do Ibmec, que conta com seis unidades – duas delas ainda em maturação (Faria Lima e Brasília) – e cuja marca já representa 11% do EBITDA consolidado da Companhia.\"\n\n### COMUNICADO AO MERCADO entregue em 26/06/2026\n\n**O QUE aconteceu:** A YDUQS informou que a Amundi S.A. passou a deter mais de 5% das ações da companhia.\n\n**Resumo:** O fundo de investimento gerido pela Amundi S.A. detém agora 13,867.400 ações, representando 5,06% do capital social da YDUQS. A participação não tem como objetivo alterar a estrutura administrativa ou o controle da companhia.\n\n**Trecho-chave:** \"A Amundi S.A. informou que os fundos de investimento sob sua gestão passaram a deter, em conjunto, 13.867.400 (treze milhões, oitocentas e sessenta e sete mil e quatrocentas) ações de emissão da Companhia, ultrapassando o percentual de 5% de seu capital social.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

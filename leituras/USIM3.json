@@ -1,0 +1,21 @@
+{
+  "ticker": "USIM3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:13:13",
+  "comunicados": {
+    "ids": [
+      701873224583237306,
+      759181297419845626
+    ],
+    "datas": [
+      "14/07/2026",
+      "07/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 14/07/2026\n\n**O QUE aconteceu:** Redução de participação acionária relevante pela BlackRock.\n\n**Resumo:** A BlackRock alienou ações preferenciais e instrumentos financeiros derivativos, resultando em uma redução significativa de sua participação na Usiminas.\n\n**Trecho-chave:**\n\"alienou ações preferenciais de emissão da Usinas Siderúrgicas de Minas Gerais S.A. - Usiminas (“Companhia”), sendo que, em 9 de julho de 2026, suas participações, de forma agregada, passaram a corresponder a: (a) 26.609.040 ações preferenciais e 34.399 American Depositary Receipts (“ADRs”), totalizando 26.643.439 ações, representando aproximadamente 4,864% do total de ações preferenciais de emissão da Companhia; e (b) 21.602.682 instrumentos financeiros derivativos referenciados em ações preferenciais com liquidação financeira, representando aproximadamente 3,943% do total de ações preferenciais de emissão da Companhia.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 07/07/2026\n\n**O QUE aconteceu:** Redução de participação acionária relevante pela BlackRock.\n\n**Resumo:** A BlackRock alienou instrumentos financeiros derivativos e ações preferenciais, resultando em uma redução significativa de sua participação na Usiminas.\n\n**Trecho-chave:**\n\"alienou instrumentos financeiros derivativos referenciados em ações preferenciais com liquidação financeira emitidas pela Usinas Siderúrgicas de Minas Gerais S.A. - Usiminas (“Companhia”), sendo que, em 2 de julho de 2026, suas participações, de forma agregada, passaram a corresponder a: (a) 27.385.311 instrumentos financeiros derivativos referenciados em ações preferenciais com liquidação financeira, representando aproximadamente 4,999% do total de ações preferenciais de emissão da Companhia; e (b) 28.797.398 ações preferenciais e 41.009 American Depositary Receipts (“ADRs”), totalizando 28.838.407 ações, representando aproximadamente 5,264% do total de ações preferenciais de emissão da Companhia.\"\n\n---\n\n**Conexão com o contexto:** Ambos os comunicados informam sobre alterações na participação acionária relevante da BlackRock na Usiminas, refletindo mudanças no cenário de investimentos da companhia."
+  },
+  "modelo": "qwen2.5:7b"
+}

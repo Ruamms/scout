@@ -1,0 +1,24 @@
+{
+  "ticker": "VALE3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:13:58",
+  "comunicados": {
+    "ids": [
+      1095107746223351511,
+      164866681657155751,
+      1077576482616112351
+    ],
+    "datas": [
+      "06/07/2026",
+      "14/07/2026",
+      "14/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU: Renúncia do Presidente do Conselho de Administração\n\n**Data:** 06/07/2026  \n**Título:** Daniel André Stieler renuncia do cargo de presidente do Conselho de Administração da Vale.  \n**Resumo:** A Vale informa a renúncia imediata do Sr. Daniel André Stieler, que ocupava os cargos de membro e presidente do Conselho de Administração desde 2021 e 2023, respectivamente. O evento afeta o item 1 da pauta da Assembleia Geral Extraordinária convocada para 22 de julho de 2026.  \n**Trecho-chave:** \"A Companhia registra seu agradecimento ao Sr. Stieler pela liderança, dedicação e contribuições prestadas à Companhia durante seu mandato como membro do Conselho desde 2021 e, especialmente, como seu Presidente desde 2023.\" (p. 1)\n\n---\n\n### O QUE ACONTECEU: Eleição do Novo Presidente do Conselho de Administração\n\n**Data:** 14/07/2026  \n**Título:** Wilfred Theodoor Bruijn é eleito para ocupar o cargo de presidente do Conselho de Administração.  \n**Resumo:** O Conselho de Administração da Vale elegeu o Sr. Wilfred Theodoor Bruijn, membro independente do colegiado, para exercer o cargo de Presidente do Conselho de Administração até a eleição do novo presidente na Assembleia Geral Extraordinária convocada para 22 de julho de 2026.  \n**Trecho-chave:** \"A eleição ocorre pela vacância do cargo de Presidente do Conselho de Administração a partir de 6 de julho de 2026.\" (p. 1)\n\n---\n\n### O QUE ACONTECEU: Clarificação sobre Notícia de Investimento\n\n**Data:** 14/07/2026  \n**Título:** Vale esclarece que não houve investimento em minério de ferro localizado em Corumbá.  \n**Resumo:** A Vale esclarece que regularmente avalia oportunidades de investimento, mas descartou a possibilidade de investir no ativo de minério de ferro em Corumbá. A companhia reitera sua intenção de manter o mercado informado sobre fatores relevantes para seus negócios.  \n**Trecho-chave:** \"A Companhia avaliou a oportunidade e descartou qualquer investimento relacionado ao ativo de minério de ferro localizado em Corumbá.\" (p. 1)\n\n---\n\n**Conexão com o Contexto:**\n- O comunicado sobre a renúncia do presidente do Conselho de Administração pode afetar a governança corporativa e, consequentemente, as decisões estratégicas da Vale.\n- A eleição temporária do novo presidente do Conselho de Administração é um passo importante na manutenção da estrutura de governança durante o período de transição.\n- O esclarecimento sobre investimentos pode refletir a estratégia de alocação de capital da Vale, que está alinhada com suas prioridades estratégicas."
+  },
+  "modelo": "qwen2.5:7b"
+}

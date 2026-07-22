@@ -1,0 +1,30 @@
+{
+  "ticker": "VAMO3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:15:09",
+  "comunicados": {
+    "ids": [
+      76931664281608695,
+      762669042590227074,
+      882172900850646608,
+      1098731227927807314,
+      615908489235130534
+    ],
+    "datas": [
+      "16/07/2026",
+      "28/05/2026",
+      "20/05/2026",
+      "26/06/2026",
+      "03/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 16/07/2026\n\n**O QUE aconteceu:** A Vamos Locação de Caminhões, Máquinas e Equipamentos S.A. divulgou a prévia dos resultados do segundo trimestre de 2026 (2T26).\n\n**Resumo:** A companhia registrou receita líquida recorde, com crescimento acima da inflação, e destacou o forte demanda pelo produto Sempre Novo.\n\n**Trecho-chave:**\n\"Locação • Receita recorde, com crescimento acima da inflação; • Capex Contratado: forte demanda proveniente de diversos setores da economia, com destaque para o setor de e-commerce e contribuindo para a contínua diversificação da receita; • Capex Implantado: reflete em boa parte o Capex Contratado do 1T26 e apresentará aceleração nos próximos meses devido ao elevado volume de Capex Contratado no 2T26, conforme divulgado em nosso Guidance.\"\n\n---\n\n### FATO RELEVANTE entregue em 28/05/2026\n\n**O QUE aconteceu:** O Conselho de Administração da Vamos Locação de Caminhões, Máquinas e Equipamentos S.A. nomeou Christian Hahn da Silva como novo presidente.\n\n**Resumo:** Christian Hahn da Silva substitui Gustavo Henrique Braga Couto na presidência da companhia, com experiência em gestão de concessionárias de ativos pesados.\n\n**Trecho-chave:**\n\"Christian Hahn da Silva possui profundo conhecimento das operações e dos negócios da VAMOS, onde contribuiu ativamente na execução do planejamento estratégico da companhia para a consolidação de sua liderança de mercado.\"\n\n---\n\n### FATO RELEVANTE entregue em 20/05/2026\n\n**O QUE aconteceu:** A Vamos Locação de Caminhões, Máquinas e Equipamentos S.A. anunciou um novo programa de recompra de ações.\n\n**Resumo:** O programa tem como objetivo maximizar o valor para os acionistas, permitindo que a companhia adquira até 7% das ações em circulação no mercado.\n\n**Trecho-chave:**\n\"Objetivo: O Programa tem por objetivo a maximização de valor ao acionista, sem redução do capital social, sendo as ações adquiridas utilizadas para manutenção em tesouraria, cancelamento, alienação e/ou para atender as obrigações assumidas pela Companhia perante os beneficiários dos planos de remuneração baseados em ações.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 26/06/2026\n\n**O QUE aconteceu:** A Vamos Locação de Caminhões, Máquinas e Equipamentos S.A. informou sobre a renúncia do membro do Comitê de Auditoria Estatutário José Mauro Depes Lorga.\n\n**Resumo:** O Conselho de Administração nomeou Leonardo José da Silva Neves Gonzaga para substituir José Mauro na função, com mandato de 5 anos.\n\n**Trecho-chave:**\n\"O Sr. Leonardo é Bacharel em Ciências Contábeis pela Universidade do Estado do Rio de Janeiro, possui MBA em Finanças Corporativas pelo IBMEC, Certificação CFG pela ANBIMA e Certificação de Conselheiro Fiscal pelo IBGC.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 03/06/2026\n\n**O QUE aconteceu:** A Vamos Locação de Caminhões, Máquinas e Equipamentos S.A. comunicou a renúncia do diretor Rafael Gomes Vieira.\n\n**Resumo:** O Conselho de Administração agradeceu o trabalho prestado por Rafael Gomes Vieira durante sua atuação como diretor da companhia.\n\n**Trecho-chave:**\n\"O Conselho de Administração da Companhia agradece ao Sr. Rafael Gomes Vieira pela sua dedicação e contribuição na condição de Diretor da Companhia.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

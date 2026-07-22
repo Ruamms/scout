@@ -1,0 +1,30 @@
+{
+  "ticker": "MOVI3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:52:43",
+  "comunicados": {
+    "ids": [
+      964366353374360311,
+      304119832979783566,
+      1016572292635916778,
+      1143509214497574249,
+      446586852716059587
+    ],
+    "datas": [
+      "16/07/2026",
+      "19/05/2026",
+      "13/05/2026",
+      "25/05/2026",
+      "18/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 16/07/2026\n\n**O que aconteceu:** Lucro líquido dobra e chega a R$136 milhões no 2T26, superando guidance.\n\n**Resumo:** A MOVIDA PARTICIPAÇÕES S.A. anunciou um lucro líquido de R$135,6 milhões no segundo trimestre de 2026, o maior resultado em quatro anos e superior ao dobro do valor registrado no mesmo período do ano anterior.\n\n**Trecho-chave:** \"O lucro líquido do 2T26 foi de R$135,6 milhões, o maior verificado pela Companhia em um único trimestre em quatro anos, superior ao dobro do valor registrado no 2T25.\"\n\n---\n\n### FATO RELEVANTE entregue em 19/05/2026\n\n**O que aconteceu:** Programa de recompra de ações aprovado.\n\n**Resumo:** A MOVIDA PARTICIPAÇÕES S.A. aprovou um novo programa de recompra de ações, permitindo aquisições até 15% do total de ações em circulação no mercado, com prazo de 18 meses.\n\n**Trecho-chave:** \"A Companhia poderá adquirir até 27.855.793 (vinte e sete milhões oitocentos e cinquenta e cinco mil setecentos e noventa e três) ações ordinárias, nominativas e sem valor nominal, de sua própria emissão.\"\n\n---\n\n### FATO RELEVANTE entregue em 13/05/2026\n\n**O que aconteceu:** Emissão de títulos de dívida no mercado internacional.\n\n**Resumo:** A MOVIDA PARTICIPAÇÕES S.A. lançou títulos de dívida no valor total de US$350 milhões, com vencimento em 2033 e taxa de juros de 9,700% ao ano, para refinanciar parte do endividamento existente.\n\n**Trecho-chave:** \"A MOVIDA PARTICIPAÇÕES S.A. (B3: MOVI3) (“Movida” ou “Companhia”), em cumprimento com o disposto na Resolução CVM nº 44, de 23 de agosto de 2021, conforme alterada, e no artigo 157, §4º, da Lei nº 6.404, de 15 de dezembro de 1976, conforme alterada, vem informar aos seus acionistas e ao mercado em geral que a Companhia, por meio de sua subsidiária financeira Movida Europe S.A., sociedade constituída sob as leis do Grão-Ducado de Luxemburgo, precificou, nesta data, a emissão de títulos de dívida no mercado internacional.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 25/05/2026\n\n**O que aconteceu:** Publicação do Relatório Anual Integrado 2025.\n\n**Resumo:** A MOVIDA PARTICIPAÇÕES S.A. divulgou seu Relatório Anual Integrado 2025, destacando reconhecimentos em ESG e práticas de gestão socioambiental.\n\n**Trecho-chave:** \"O relatório foi elaborado de acordo com as diretrizes de Relato Integrado do International Integrated Reporting Council, seguindo a Orientação Técnica CPC 09, dos padrões da Global Reporting Initiative (GRI Standards 2021) e do Sustainability Accounting Standards Board (SASB).\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 18/05/2026\n\n**O que aconteceu:** Oferta de aquisição de títulos de dívida.\n\n**Resumo:** A Movida Europe S.A. realizou uma oferta de aquisição para adquirir todas as Senior Unsecured Guaranteed Notes com vencimento em 2029, recebendo ofertas válidas e garantias referentes a US$173,042 milhões.\n\n**Trecho-chave:** \"A Movida Europe espera aceitar e realizar o pagamento de todas as Notas validamente ofertadas e não validamente retiradas antes da Data e Horário de Vencimento, bem como de todas as Notas validamente ofertadas e entregues de acordo com os procedimentos de entrega garantida.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

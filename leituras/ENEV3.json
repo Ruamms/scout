@@ -1,0 +1,24 @@
+{
+  "ticker": "ENEV3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:33:21",
+  "comunicados": {
+    "ids": [
+      488043532123824818,
+      72236191926352358,
+      212628495220865633
+    ],
+    "datas": [
+      "25/06/2026",
+      "16/07/2026",
+      "18/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 25/06/2026\n\n**O QUE aconteceu:** A ENEVA S.A. aprovou um novo Programa de Recompra de Ações.\n\n**Resumo:** A companhia anunciou o encerramento do Programa de Recompra 2025 e a implementação de um novo programa, com objetivo de maximizar valor para acionistas através da administração eficiente do capital.\n\n**Trecho-chave:**\n\"O Programa de Recompra 2026 ora aprovado é regido pelos seguintes principais termos e condições:\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 18/06/2026\n\n**O QUE aconteceu:** A ENEVA S.A. informou sobre mudanças no Comitê de Auditoria Estatutário.\n\n**Resumo:** O Comitê de Auditoria Estatutário teve seu membro efetivo Sr. Fabricio Casali Reis substituído, alterando a composição do comitê.\n\n**Trecho-chave:**\n\"O CAE passa a ser composto pelos seguintes membros:\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 16/07/2026\n\n**O QUE aconteceu:** A ENEVA S.A. divulgou informações operacionais do segundo trimestre de 2026.\n\n**Resumo:** A companhia relatou aumento na geração bruta total e despacho térmico, além dos avanços nos projetos CRCAP 2021 e UTE Azulão I.\n\n**Trecho-chave:**\n\"▪ Geração bruta total atinge 2.537 GWh no 2T26, aumento de 35% frente à geração do 2T25, impulsionada pelo despacho termelétrico no mérito no período;\" (p. 2)"
+  },
+  "modelo": "qwen2.5:7b"
+}

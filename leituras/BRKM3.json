@@ -1,0 +1,30 @@
+{
+  "ticker": "BRKM3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:18:31",
+  "comunicados": {
+    "ids": [
+      185417721519579504,
+      897188312102915140,
+      108072536422506923,
+      385581819070342237,
+      49167539525872749
+    ],
+    "datas": [
+      "26/06/2026",
+      "25/06/2026",
+      "25/06/2026",
+      "29/06/2026",
+      "26/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O que aconteceu em 29/06/2026\n\n**Título:** Agências de classificação de risco revisam nota de crédito da Braskem.\n\n**Resumo:** As agências Fitch Ratings e S&P Global Ratings revisaram a nota de crédito da Braskem para C e D, respectivamente, em função da ação de Tutela de Urgência Cautelar ajuizada pela empresa.\n\n**Trecho-chave:**\n\"A Braskem reforça que a Tutela de Urgência e a Mediação possuem escopo limitado, estritamente financeiro, e não abrangem quaisquer obrigações da Companhia e suas controladas com seus fornecedores, clientes e demais stakeholders, as quais permanecem vigentes e seguem sendo cumpridas normalmente, nos termos dos respectivos contratos.\"\n\n---\n\n### O que aconteceu em 26/06/2026\n\n**Título:** Braskem inicia processo de mediação e protocola pedido de Tutela de Urgência Cautelar.\n\n**Resumo:** A Braskem iniciou um processo de mediação perante a Câmara Wind de Mediação e protocolou um pedido de Tutela de Urgência Cautelar para preservar o ambiente estável necessário para negociações com credores financeiros, alinhado à reestruturação da empresa.\n\n**Trecho-chave:**\n\"As medidas envolvem apenas os credores financeiros da Companhia e foram ajuizadas com o objetivo de preservar um ambiente estável para a continuidade das negociações em andamento exclusivamente com os referidos credores em busca de uma solução consensual, estruturante e ordenada para sua estrutura de capital.\"\n\n---\n\n### O que aconteceu em 25/06/2026\n\n**Título:** Braskem inicia processo de mediação e protocola pedido de Tutela de Urgência Cautelar.\n\n**Resumo:** A Braskem iniciou um processo de mediação perante a Câmara Wind de Mediação e protocolou um pedido de Tutela de Urgência Cautelar para preservar o ambiente estável necessário para negociações com credores financeiros, alinhado à reestruturação da empresa.\n\n**Trecho-chave:**\n\"As medidas envolvem apenas os credores financeiros da Companhia e foram ajuizadas com o objetivo de preservar um ambiente estável para a continuidade das negociações em andamento exclusivamente com os referidos credores em busca de uma solução consensual, estruturante e ordenada para sua estrutura de capital.\"\n\n---\n\n### O que aconteceu em 25/06/2026\n\n**Título:** Braskem compartilha informações não públicas com investidores sobre reestruturação.\n\n**Resumo:** A Braskem compartilhou informações não públicas relacionadas à sua reestruturação com certos investidores, sob acordo de confidencialidade. As partes discutiram propostas para a reestruturação, mas não chegaram a um acordo.\n\n**Trecho-chave:**\n\"Nos termos dos acordos de confidencialidade celebrados em 11 de junho de 2026 entre a Braskem e os Investidores (coletivamente, os “Acordos de Confidencialidade”) e, a Braskem concordou em divulgar publicamente as Informações Compartilhadas após o término do prazo, conforme estabelecido nos Acordos de Confidencialidade.\"\n\n---\n\n### O que aconteceu em 26/06/2026\n\n**Título:** Agências de classificação de risco revisam nota de crédito da Braskem.\n\n**Resumo:** As agências Fitch Ratings e S&P Global Ratings revisaram a nota de crédito da Braskem para C e D, respectivamente, em função da ação de Tutela de Urgência Cautelar ajuizada pela empresa.\n\n**Trecho-chave:**\n\"A Braskem reforça que a Tutela de Urgência e a Mediação possuem escopo limitado, estritamente financeiro, e não abrangem quaisquer obrigações da Companhia e suas controladas com seus fornecedores, clientes e demais stakeholders, as quais permanecem vigentes e seguem sendo cumpridas normalmente, nos termos dos respectivos contratos.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

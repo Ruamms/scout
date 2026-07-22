@@ -1,0 +1,27 @@
+{
+  "ticker": "IGTI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:42:46",
+  "comunicados": {
+    "ids": [
+      64236923101301217,
+      494366294268338713,
+      658703310438015264,
+      914487795900103613
+    ],
+    "datas": [
+      "09/06/2026",
+      "30/04/2026",
+      "30/06/2026",
+      "26/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### Comunicação de 26/06/2026: Resgate Antecipado de Debêntures\n\n**O que aconteceu:** Iguatemi S.A. anunciou o resgate antecipado da segunda série da décima primeira emissão de debêntures.\n\n**Resumo:** A subsidiária Iguatemi Empresa de Shopping Center S.A. realizará o resgate antecipado das debêntures, com pagamento previsto para 1º de julho de 2026.\n\n**Trecho-chave:**\n\"O resgate antecipado facultativo ocorrerá em 01 de julho de 2026, com o consequente cancelamento das debêntures da 2ª série da referida emissão.\" (p. 1)\n\n---\n\n### Comunicação de 30/06/2026: Relatório de Sustentabilidade\n\n**O que aconteceu:** Iguatemi S.A. lançou o Relatório Anual de Sustentabilidade para o exercício de 2025.\n\n**Resumo:** O relatório apresenta a evolução das iniciativas e resultados da Companhia nos pilares de Gestão Ambiental, Pessoas e Governança Corporativa em 2025.\n\n**Trecho-chave:**\n\"A quarta edição do relatório apresenta a evolução das iniciativas e resultados da Companhia nos pilares de Gestão Ambiental, Pessoas e Governança Corporativa ao longo de 2025.\" (p. 1)\n\n---\n\n### Fato Relevante entregue em 30/04/2026: Guia de Projeções para 2026\n\n**O que aconteceu:** Iguatemi S.A. divulgou projeções relativas ao CAPEX e aos dividendos referentes ao exercício social de 2026.\n\n**Resumo:** A Companhia informa que os investimentos em projetos de desenvolvimento (CAPEX) para o exercício social de 2026 estão estimados no intervalo entre R$450 milhões e R$600 milhões, com alvo central de R$550 milhões. Além disso, a Companhia projeta que os dividendos a serem pagos no curso do exercício social de 2026 serão de R$200 milhões.\n\n**Trecho-chave:**\n\"A Companhia informa que os investimentos em projetos de desenvolvimento (CAPEX) previstos para o exercício social de 2026, conforme detalhado no Formulário de Referência, estão estimados no intervalo entre R$450 milhões e R$600 milhões, com alvo central de R$550 milhões.\" (p. 1)\n\n---\n\n### Fato Relevante entregue em 09/06/2026: Encerramento do Programa de Recompra e Aprovação de Novo Programa\n\n**O que aconteceu:** Iguatemi S.A. encerrou o programa de recompra vigente e aprovou um novo programa.\n\n**Resumo:** O Conselho de Administração decidiu encerrar o programa de recompra de ações vigente e aprovar um novo programa com limite financeiro de R$60,267,824,90, podendo ser realizado até 18 meses após a data.\n\n**Trecho-chave:**\n\"O Conselho de Administração decidiu, por unanimidade, pelo encerramento do Programa de Recompra de Ações da Companhia aprovado na reunião realizada em 04 de fevereiro de 2025.\" (p. 1)\n\n---\n\n**Conexões com o contexto:**\n- As projeções de CAPEX e dividendos divulgadas no Fato Relevante de 30/04/2026 podem influenciar as decisões de investimento, considerando que a Companhia planeja investir entre R$450 milhões e R$600 milhões em projetos de desenvolvimento para o exercício social de 2026.\n- O encerramento do programa de recompra vigente e a aprovação de um novo programa podem afetar o fluxo de caixa da Companhia, já que as ações adquiridas serão mantidas em tesouraria."
+  },
+  "modelo": "qwen2.5:7b"
+}

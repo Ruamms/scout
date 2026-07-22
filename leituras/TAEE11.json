@@ -1,0 +1,21 @@
+{
+  "ticker": "TAEE11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:10:41",
+  "comunicados": {
+    "ids": [
+      252127107049893815,
+      843821713656568231
+    ],
+    "datas": [
+      "14/07/2026",
+      "08/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 14/07/2026\n\n**O QUE aconteceu:** Ratificação da aquisição das empresas da Energisa.\n**Resumo:** A TAESA ratificou a aquisição de 100% do capital das empresas da Energisa, sujeita à aprovação da ANEEL.\n**Trecho-chave:**\n\"Em Assembleia Geral Extraordinária realizada nesta data (“AGE”), foi ratificada, nos termos do art. 256 da Lei nº 6.404, de 15 de dezembro de 1976, conforme alterada (“Lei das S.A.”), a aquisição, pela Companhia, de 100% (cem por cento) das ações representativas do capital total e votante da Energisa Goiás Transmissora de Energia I S.A., da Energisa Pará Transmissora de Energia I S.A., da Energisa Pará Transmissora de Energia II S.A., da Energisa Tocantins Transmissora de Energia S.A. e da Energisa Tocantins Transmissora de Energia II S.A.\"\n\n### COMUNICADO AO MERCADO entregue em 08/07/2026\n\n**O QUE aconteceu:** Conclusão da captação de recursos por meio de emissão de debêntures.\n**Resumo:** A TAESA concluiu a captação de R$ 1.700.000.000,00 em debêntures para reforço de capital e/ou aquisições.\n**Trecho-chave:**\n\"A Emissão foi coordenada pelo Banco Bradesco BBI S.A. e pelo Itaú BBA Assessoria Financeira S.A. (“Coordenadores”). Nos termos do “Instrumento Particular de Escritura da 22ª (Vigésima Segunda) Emissão de Debêntures Simples, Não Conversíveis em Ações, da Espécie Quirografária, em Série Única, para Distribuição Pública, sob o Rito de Registro Automático de Distribuição, da Transmissora Aliança de Energia Elétrica S.A.” (“Escritura de Emissão”), os recursos captados pela Companhia por meio da integralização das Debêntures, excluídos os custos incorridos para pagamento de despesas decorrentes da Emissão, serão utilizados para reforço de capital de giro e/ou aquisições.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

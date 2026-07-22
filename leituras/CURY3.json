@@ -1,0 +1,21 @@
+{
+  "ticker": "CURY3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:27:00",
+  "comunicados": {
+    "ids": [
+      832149837145557076,
+      792691819077528990
+    ],
+    "datas": [
+      "07/07/2026",
+      "07/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### Comunicado ao Mercado entregue em 07/07/2026\n\n**O QUE aconteceu:** Cury apresenta resultados operacionais robustos no 2T26.\n\n**Resumo:** A Cury Construtora e Incorporadora S.A. relatou resultados operacionais positivos para o segundo trimestre de 2026, com uma venda líquida superior a 40%, geração de caixa de R$ 145 milhões e um landbank recorde.\n\n**Trecho-chave:** \"Cury apresenta resultados operacionais robustos no 2T26, com VSO acima de 40%, geração de caixa de R$ 145 milhões e maior landbank de sua história.\" (p. 1)\n\n---\n\n### Comunicado ao Mercado entregue em 07/07/2026\n\n**O QUE aconteceu:** Prévia operacional do 2T26 e 6M26.\n\n**Resumo:** A Cury Construtora e Incorporadora S.A. divulgou a prévia de seus resultados operacionais para o segundo trimestre (2T26) e os seis meses (6M26) de 2026, comparando-os com os períodos anteriores.\n\n**Trecho-chave:** \"A Cury Construtora e Incorporadora S.A. (B3: CURY3), uma das construtoras líderes do segmento residencial no Brasil atuando nas regiões metropolitanas de São Paulo e Rio de Janeiro, divulga a prévia de seus resultados operacionais do segundo trimestre de 2026 (2T26) e nos seis meses de 2026 (6M26).\" (p. 1)\n\n**O QUE aconteceu:** Produção, geração de caixa e landbank.\n\n**Resumo:** A Cury produziu 5.737 unidades no 2T26, gerando R$ 144,9 milhões em caixa e aumentando seu landbank para R$ 26,1 bilhões, o maior da história da empresa.\n\n**Trecho-chave:** \"Produção: 5.737 vs. 2T25 41,8% Unidades produzidas Geração de Caixa: R$ 144,9 MI Landbank: R$ 26,1 BI\" (p. 3)\n\n**O QUE aconteceu:** Lançamentos.\n\n**Resumo:** Nos lançamentos do 2T26, a Cury lançou um total de R$ 2.256,9 milhões em VGV, com uma redução de 14,7% em relação ao primeiro trimestre (1T26) e um aumento de 1,4% em comparação com o mesmo período do ano anterior.\n\n**Trecho-chave:** \"Lançamentos: R$ 2.256,9 milhões, representando aumento de 1,4% em relação ao mesmo período do ano anterior.\" (p. 3)\n\n**O QUE aconteceu:** Preço médio por unidade lançada.\n\n**Resumo:** O preço médio das unidades lançadas foi de R$ 344,6 mil no 2T26, um aumento de 4,2% em comparação com o primeiro trimestre (1T26).\n\n**Trecho-chave:** \"Preço Médio/Unid. (R$ mil): 344,6\" (p. 4)\n\n---\n\n### Conexão aos indicadores do contexto:\n- A geração de caixa robusta e a produção significativa refletem o desempenho positivo da Cury em um contexto geral de crescimento no setor imobiliário.\n- O aumento do landbank indica uma estratégia sólida para expansão futura, apoiando as projeções de crescimento da empresa."
+  },
+  "modelo": "qwen2.5:7b"
+}

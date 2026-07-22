@@ -1,0 +1,24 @@
+{
+  "ticker": "GGBR3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:37:42",
+  "comunicados": {
+    "ids": [
+      435569868246439462,
+      965002245920996255,
+      378603518112825009
+    ],
+    "datas": [
+      "27/04/2026",
+      "02/07/2026",
+      "30/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 27/04/2026\n\n**O QUE aconteceu:** A Companhia aprovou o cancelamento de 225.000 ações ordinárias e 7.380.000 ações preferenciais.\n\n**Resumo:** O capital social da GERDAU S.A. foi alterado, com a redução do número de ações em circulação.\n\n**Trecho-chave:**\n\"o Conselho de Administração, em reunião realizada nesta data, aprovou o cancelamento de 225.000 ações ordinárias (GGBR3) e de 7.380.000 ações preferenciais (GGBR4) de emissão da Companhia.\"\n\n### COMUNICADO AO MERCADO entregue em 02/07/2026\n\n**O QUE aconteceu:** A Fitch Ratings reafirmou os ratings de crédito da Companhia e revisou sua perspectiva para positiva.\n\n**Resumo:** A perspectiva de negócios e rentabilidade da Gerdau melhoraram, impulsionadas pela presença na América do Norte e recuperação das operações no Brasil.\n\n**Trecho-chave:**\n\"A Fitch Ratings reafirmou os ratings de crédito da Companhia e revisou sua perspectiva de estável para positiva.\"\n\n### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O QUE aconteceu:** A T. Rowe Price Associates, Inc. informou a aquisição de participação acionária relevante na GERDAU S.A.\n\n**Resumo:** A T. Rowe Price aumentou sua participação acionária, representando 5,12% do total de ações preferenciais emitidas pela Companhia.\n\n**Trecho-chave:**\n\"A T. Rowe Price Associates, Inc., em nome de suas afiliadas consultoras, informa que, em 26 de junho de 2026, adquiriu, em nome de alguns de seus clientes, ações ordinárias da GERDAU S.A.\"\n\n**Conexão com o contexto:** A aquisição de participação acionária relevante pode influenciar os futuros movimentos do mercado e as decisões estratégicas da empresa."
+  },
+  "modelo": "qwen2.5:7b"
+}

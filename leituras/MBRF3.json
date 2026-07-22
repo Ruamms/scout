@@ -1,0 +1,24 @@
+{
+  "ticker": "MBRF3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:48:44",
+  "comunicados": {
+    "ids": [
+      364394340640271307,
+      490243373029883945,
+      467934781602010188
+    ],
+    "datas": [
+      "03/05/2026",
+      "22/06/2026",
+      "19/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 03/05/2026\n\n**O QUE aconteceu:** Fechamento do contrato de investimento entre BRF GmbH e HPDC, resultando na aquisição de 90% da Sadia Halal.\n\n**Resumo:** A BRF GmbH adquiriu 90% do capital social da Sadia Halal, uma joint venture com a HPDC. A Sadia Halal agora possui distribuição localizada em diversos países árabes e fábricas na Arábia Saudita e nos Emirados Árabes Unidos.\n\n**Trecho-chave:**\n\"Com o fechamento, a BRF GmbH passou a deter 90% do capital social da Sadia Halal, veículo da joint venture com a HPDC, que detém os 10% restantes.\"\n\n### COMUNICADO AO MERCADO entregue em 22/06/2026\n\n**O QUE aconteceu:** Anúncio de resultados financeiros e estratégicos.\n\n**Resumo:** O comunicado destaca a receita líquida, EBITDA ajustado, capacidade diária de abate, participação no mercado global e regional, além das tendências demográficas e econômicas que impulsionam o crescimento da demanda por proteínas.\n\n**Trecho-chave:**\n\"Receita Líquida\nUS$30 bi1\n1T26 LTM\nEBITDA Aj.\nUS$2,4 bi1\n1T26 LTM\"\n\n### COMUNICADO AO MERCADO entregue em 19/06/2026\n\n**O QUE aconteceu:** Anúncio de resultados financeiros e estratégicos.\n\n**Resumo:** O comunicado destaca a receita líquida, EBITDA ajustado, capacidade diária de abate, participação no mercado global e regional, além das tendências demográficas e econômicas que impulsionam o crescimento da demanda por proteínas.\n\n**Trecho-chave:**\n\"Net Revenue\nUS$30 bn1\n1Q26 LTM\nAdj. EBITDA\nUS$2.4 bn1\n1Q26 LTM\"\n\n---\n\n**Conexão com o contexto:** O anúncio do fechamento do contrato de investimento e a criação da Sadia Halal (relacionado ao FATO RELEVANTE) reforçam as estratégias globais e os planos de expansão da BRF, que são detalhados nos comunicados subsequentes."
+  },
+  "modelo": "qwen2.5:7b"
+}

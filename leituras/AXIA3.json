@@ -1,0 +1,24 @@
+{
+  "ticker": "AXIA3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:12:08",
+  "comunicados": {
+    "ids": [
+      750522233692262325,
+      819051357274034486,
+      644174787276609427
+    ],
+    "datas": [
+      "17/07/2026",
+      "17/07/2026",
+      "15/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### 17/07/2026 - 11ª Emissão de Debêntures\n\nA AXIA Energia S.A. aprovou a captação de R$ 500 milhões em debêntures simples, não conversíveis em ações, da espécie quirografária.\n\n*\"AXIA Energia S.A. informa que, nesta data, o Conselho de Administração aprovou a captação de debêntures simples, não conversíveis em ações, da espécie quirografária, em série única, no montante de R$ 500 milhões.\"* (p. 1)\n\n---\n\n### 17/07/2026 - Liquidação da 10ª Emissão de Debêntures\n\nA AXIA Energia S.A. informou a liquidação da 10ª emissão de debêntures, que foi objeto de oferta pública sob o rito de registro automático.\n\n*\"A AXIA Energia S.A. informa que, em complemento ao Fato Relevante divulgado em 25 de junho de 2026, informa que, nesta data, ocorreu a liquidação da 10ª emissão de debêntures simples, não conversíveis em ações, da espécie quirografária, em 2 séries.\"* (p. 1)\n\n---\n\n### 15/07/2026 - Conclusão da Alienação de Participações Minoritárias para a GEBBRAS\n\nA AXIA Energia S.A. concluiu a alienação total das participações minoritárias em sociedades de propósito específico (SPEs) de transmissão de energia elétrica para a GEBBRAS, recebendo R$ 451,4 milhões.\n\n*\"A AXIA Energia S.A. informa que, após atendidas as condições precedentes, concluiu, nesta data, a alienação da totalidade das participações minoritárias de 49% detidas pela Companhia em sociedades de propósito específico (SPEs) de transmissão de energia elétrica para a GEBBRAS Participações Ltda. (\"GEBBRAS\"), com recebimento total de R$ 451,4 milhões.\"* (p. 1)\n\n---\n\n### Conexão aos Indicadores do Contexto\n\n- A emissão de debêntures e a liquidação da 10ª emissão de debêntures são operações financeiras que refletem o fluxo de caixa e a estratégia de captação de recursos da AXIA Energia.\n- A conclusão da alienação de participações minoritárias para a GEBBRAS indica uma otimização de ativos, simplificação da estrutura corporativa e alocação disciplinada de capital."
+  },
+  "modelo": "qwen2.5:7b"
+}

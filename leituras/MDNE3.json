@@ -1,0 +1,24 @@
+{
+  "ticker": "MDNE3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:49:47",
+  "comunicados": {
+    "ids": [
+      1031090323753078280,
+      924363871360814220,
+      1142087995986386522
+    ],
+    "datas": [
+      "16/06/2026",
+      "06/07/2026",
+      "25/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 16/06/2026\n\n**O que aconteceu:** Encerramento do Programa de Recompra de Ações e Criação de Novo Programa.\n\n**Resumo:** A Moura Dubeux Engenharia S.A. encerrou o programa de recompra de ações de 2025 e criou um novo programa com limites específicos para aquisição de ações em circulação.\n\n**Citação do trecho-chave:**\n\"o Conselho de Administração da Companhia aprovou, nesta data, (i) o encerramento do programa de recompra de ações da Companhia, aprovado pelo Conselho de Administração da Companhia em 26 de junho de 2025 (“Programa de Recompra de 2025”). No âmbito do Programa de Recompra de 2025, foram adquiridas 945.700 (novecentos e quarenta e cinco mil e setecentos) ações ordinárias de emissão da Companhia, destinadas à permanência em tesouraria, com possibilidade de posterior cancelamento, alienação e/ou utilização para cumprimento de obrigações decorrentes do plano de remuneração baseado em ações. O preço médio de aquisição das ações no âmbito do Programa de Recompra de 2025 foi de R$ 28,81 (vinte e oito reais e oitenta e um centavos); e (ii) a criação de um programa de recompra de ações de emissão da Companhia, cujas principais características estão descritas nos itens abaixo (“Programa de Recompra”).\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 06/07/2026\n\n**O que aconteceu:** Lançamento e Vendas do Segundo Trimestre de 2026.\n\n**Resumo:** A Moura Dubeux Engenharia S.A. lançou R$ 1,039 bilhão em projetos no segundo trimestre de 2026, com vendas líquidas de R$ 1,012 bilhão e pagamento da terceira e quarta parcela dos dividendos anunciados em outubro de 2025.\n\n**Citação do trecho-chave:**\n\"Recife, 06 de julho de 2026 - A Moura Dubeux Engenharia S.A. (\"MD” ou “Companhia\") (B3: MDNE3; Bloomberg: MDNE3:BZ), incorporadora líder em market share no Nordeste, atuando há mais de 40 anos na Região, apresenta a prévia dos seus resultados operacionais para o segundo trimestre de 2026 (2T26). Estes resultados operacionais são preliminares, ainda sujeitos à revisão da Auditoria.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 25/06/2026\n\n**O que aconteceu:** Arrematação de Imóvel na Pituba, Salvador.\n\n**Resumo:** A Moura Dubeux Engenharia S.A. arrematou um imóvel localizado no bairro da Pituba, em Salvador, Bahia, pelo valor de aproximadamente R$ 97 milhões e pretende desenvolver um empreendimento residencial na área.\n\n**Citação do trecho-chave:**\n\"A MOURA DUBEUX ENGENHARIA S.A. (“Companhia”) (B3: MDNE3; Bloomberg MDNE3: BZ) em cumprimento ao disposto na Resolução da Comissão de Valores Mobiliários (“CVM”) nº 44, de 23 de agosto de 2021, conforme alterada (“Resolução CVM 44”), comunica aos seus acionistas e ao mercado em geral que arrematou em leilão realizado, nesta data, o imóvel localizado no bairro da Pituba, em Salvador, Bahia, correspondente à antiga sede dos Correios e com área aproximada de 35.000 m², pelo valor de aproximadamente R$ 97 milhões.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

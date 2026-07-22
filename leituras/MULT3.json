@@ -1,0 +1,27 @@
+{
+  "ticker": "MULT3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:53:49",
+  "comunicados": {
+    "ids": [
+      1100654399991307927,
+      632813270393269816,
+      902449103200699482,
+      475211781625598615
+    ],
+    "datas": [
+      "25/06/2026",
+      "25/06/2026",
+      "17/07/2026",
+      "15/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 25/06/2026\n\n**O que aconteceu:** A Multiplan Empreendimentos Imobiliários S.A. declarou juros sobre o capital próprio.\n\n**Resumo:** A companhia decidiu pagar R$140 milhões em juros sobre o capital próprio, correspondente a R$0,28510533098 por ação, aos acionistas inscritos até 30 de junho de 2026.\n\n**Trecho-chave:** \"o Conselho de Administração da Companhia, em reunião realizada nesta data, deliberou declarar juros sobre o capital próprio no montante bruto de R$140.000.000,00 (cento e quarenta milhões de reais), correspondente a R$0,28510533098 por ação.\" (p. 1)\n\n### FATO RELEVANTE entregue em 25/06/2026\n\n**O que aconteceu:** A Multiplan Empreendimentos Imobiliários S.A. aprovou um novo programa de recompra de ações.\n\n**Resumo:** O programa autoriza a compra até 5 milhões de ações ordinárias, com prazo máximo de 12 meses e possibilidade de uso de instrumentos derivativos.\n\n**Trecho-chave:** \"O Programa de Recompra tem por objetivo aplicar recursos disponíveis da Companhia de forma a maximizar a geração de valor para os acionistas.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O que aconteceu:** A Multiplan Empreendimentos Imobiliários S.A. recebeu notificação sobre aumento de participação acionária relevante.\n\n**Resumo:** Fundos e investidores geridos pela Squadra Investimentos passaram a deter 5,01% das ações ordinárias da companhia.\n\n**Trecho-chave:** \"em negociações realizadas no pregão da Bolsa de Valores de São Paulo – BOVESPA, negociaram ações de emissão da MULTIPLAN EMPREENDIMENTOS IMOBILIÁRIOS S.A., sendo que, nesta data os Investidores passaram a deter 25.723.093 (vinte e cinco milhões, setecentos e vinte e três mil e noventa e três) ações ordinárias.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O que aconteceu:** A Multiplan Empreendimentos Imobiliários S.A. recebeu notificação sobre aumento de participação acionária relevante.\n\n**Resumo:** Fundos e investidores geridos pela Squadra Investimentos passaram a deter 5,01% das ações ordinárias da companhia.\n\n**Trecho-chave:** \"em negociações realizadas no pregão da Bolsa de Valores de São Paulo – BOVESPA, negociaram ações de emissão da MULTIPLAN EMPREENDIMENTOS IMOBILIÁRIOS S.A., sendo que, nesta data os Investidores passaram a deter 25.723.093 (vinte e cinco milhões, setecentos e vinte e três mil e noventa e três) ações ordinárias.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

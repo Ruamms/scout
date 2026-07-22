@@ -1,0 +1,24 @@
+{
+  "ticker": "CBAV3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:19:24",
+  "comunicados": {
+    "ids": [
+      321128709131600001,
+      649396573064798306,
+      238677298344933147
+    ],
+    "datas": [
+      "29/04/2026",
+      "13/05/2026",
+      "07/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 29/04/2026\n\n**O QUE aconteceu:** A Companhia Brasileira de Alumínio (CBA) aprovou o pagamento de dividendos.\n\n**Resumo:** A CBA informa que os acionistas aprovaram a distribuição e pagamento de dividendos no valor total de R$ 28.747.001,70, correspondente ao dividendo mínimo obrigatório de 25% do lucro líquido ajustado.\n\n**Trecho-chave:** \"Companhia, em atendimento ao disposto na Resolução da Comissão de Valores Mobiliários nº 44, de 23 de agosto de 2021, conforme alterada, vem informar a seus acionistas e ao mercado que, nesta data, os acionistas da Companhia, reunidos em Assembleia Geral Ordinária, aprovaram a declaração e o pagamento aos acionistas de dividendos no valor total de R$ 28.747.001,70 (vinte e oito milhões, setecentos e quarenta e sete mil, um real e setenta centavos), relativos à destinação do resultado do exercício social encerrado em 31 de dezembro de 2025, correspondente ao dividendo mínimo obrigatório de 25% do lucro líquido ajustado, equivalente a R$0,0441532902 por ação.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 07/05/2026\n\n**O QUE aconteceu:** A CBA divulgou resultados financeiros do primeiro trimestre de 2026.\n\n**Resumo:** Os resultados financeiros do primeiro trimestre de 2026 mostraram um EBITDA ajustado de R$466 milhões e uma margem EBITDA ajustada de 20%, maior patamar desde o quarto trimestre de 2024, sinalizando a forte performance da Companhia.\n\n**Trecho-chave:** \"✓EBITDA Ajustado atinge R$466 milhões e margem EBITDA ajustada de 20%, maior patamar visto desde o 4T24, sinalizando a forte performance da Companhia.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 13/05/2026\n\n**O QUE aconteceu:** A CBA divulgou um material sobre seus pilares estratégicos e principais marcos.\n\n**Resumo:** O comunicado destaca os pilares estratégicos da CBA, incluindo seu portfólio diversificado de negócios, sua posição competitiva global e seus compromissos com sustentabilidade.\n\n**Trecho-chave:** \"Pilares Estratégicos\nPipeline robusto de projetos de expansão e modernização\nPortfólio de produtos completo, com alta flexibilidade no mix de produção\n100% de produção de alumínio de baixo carbono (Alennium)\nIntegração vertical em toda a cadeia de valor do alumínio\nPosicionamento competitivo na curva global de custos\nPortfólio otimizado de geração de Energia\"\n\n---\n\n### CONEXÃO COM O CONTEXTUALIZAÇÃO\n\n- **Dividendos:** A aprovação dos dividendos (29/04/2026) reflete a boa performance financeira da CBA, que é evidenciada nos resultados do primeiro trimestre de 2026 (07/05/2026).\n- **Pilares Estratégicos:** Os pilares estratégicos mencionados no comunicado (13/05/2026) reforçam a posição competitiva e sustentável da CBA, que é demonstrada nos resultados financeiros."
+  },
+  "modelo": "qwen2.5:7b"
+}

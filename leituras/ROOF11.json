@@ -1,7 +1,7 @@
 {
   "ticker": "ROOF11",
   "modelo": "qwen2.5:7b",
-  "gerada_em": "2026-07-21T05:11:27",
+  "gerada_em": "2026-07-22T17:03:04",
   "relatorio": {
     "id": 908658,
     "data_entrega": "19/05/2025 18:10",
@@ -11,22 +11,22 @@
     "ids": [
       1185306,
       1153143,
-      1233054,
-      1201486
+      1262032,
+      1233054
     ],
     "datas": [
       "11/05/2026",
       "02/04/2026",
-      "29/06/2026",
-      "22/05/2026"
+      "22/07/2026",
+      "29/06/2026"
     ],
     "rotulos": [
       "Comunicado ao Mercado",
       "Comunicado ao Mercado",
       "Assembleia AGE",
-      "Assembleia AGO"
+      "Assembleia AGE"
     ],
-    "texto": "### COMUNICADO AO MERCADO entregue em 11/05/2026\n\n**O QUE aconteceu:** A administradora do ROOFTOP I FII informou sobre a ressalva apresentada pelos auditores independentes nas demonstrações financeiras de 2025.\n\n**Resumo:** A Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. solicitou esclarecimentos à B3 S.A. sobre as medidas a serem tomadas para endereçar a ressalva apontada pelos auditores independentes, relacionada à regularização da titularidade dos imóveis do fundo.\n\n**Trecho-chave:**\n\"A Administradora atuou de forma ativa e realizou cobranças ao Gestor e Consultor Imobiliário do Fundo para que a averbação da titularidade dos imóveis do Fundo nas matrículas objetos da ressalva fosse regularizada.\"\n\n### COMUNICADO AO MERCADO entregue em 02/04/2026\n\n**O QUE aconteceu:** A administradora do ROOFTOP I FII divulgou as demonstrações financeiras qualificadas referentes ao exercício de 2025.\n\n**Resumo:** As demonstrações financeiras foram emitidas com qualificação por parte dos auditores independentes, ECOVIS WFA Auditores Independentes SS., devido à ausência de matrículas atualizadas e impossibilidade de obter evidências apropriadas sobre a regularidade jurídica de parte dos ativos imobiliários.\n\n**Trecho-chave:**\n\"A ressalva se refere a ausência de matrículas atualizadas e a impossibilidade de se obter evidência apropriada e suficiente quanto à regularidade jurídica de parte dos ativos imobiliários, pela Administradora e pelos auditores.\"\n\n### ASSEMBLEIA AGE entregue em 29/06/2026\n\n**O QUE aconteceu:** A administradora do ROOFTOP I FII convocou uma assembleia geral extraordinária para deliberar sobre a prorrogação do prazo de duração do fundo.\n\n**Resumo:** A assembleia foi realizada via consulta formal e os cotistas foram convidados a aprovar o prazo de duração do fundo até 31 de dezembro de 2026, bem como a regularização do período entre o término do prazo anteriormente aprovado e a eventual aprovação de novo prazo.\n\n**Trecho-chave:**\n\"A Administradora convoca os Cotistas para deliberar sobre a continuidade das atividades do Fundo, com o objetivo de viabilizar a execução do plano de desinvestimento dos ativos integrantes da carteira da Classe, elaborado pela Gestora, mediante a prorrogação do prazo de duração da Classe e, consequentemente, do Fundo, até 31 de dezembro de 2026.\"\n\n### ASSEMBLEIA AGO entregue em 22/05/2026\n\n**O QUE aconteceu:** A administradora do ROOFTOP I FII divulgou o resultado da consulta formal sobre a aprovação das contas e demonstrações contábeis do fundo.\n\n**Resumo:** A Consulta Formal resultou na aprovação das contas e demonstrações contábeis do Fundo, relativas ao exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"restou aprovada a Consulta Formal, que deliberou pela matéria constante na Ordem do Dia.\""
+    "texto": "### COMUNICADO AO MERCADO entregue em 11/05/2026\n\n**O QUE aconteceu:** A administradora do ROOFTOP I FII solicitou informações sobre medidas para endereçar uma ressalva apontada pelos auditores.\n\n**Resumo:** A Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda. informou que atuou de forma ativa para regularizar a averbação dos imóveis do fundo, mas a regularização não foi concluída até a data das demonstrações financeiras.\n\n**Trecho-chave:** \"Ao longo do exercício de 2025, a Administradora atuou de forma ativa e realizou cobranças ao Gestor e Consultor Imobiliário do Fundo para que a averbação da titularidade dos imóveis do Fundo nas matrículas objetos da ressalva fosse regularizada.\"\n\n### COMUNICADO AO MERCADO entregue em 02/04/2026\n\n**O QUE aconteceu:** O ROOFTOP I FII divulgou suas demonstrações financeiras qualificadas referentes ao exercício de 2025.\n\n**Resumo:** As demonstrações foram emitidas com qualificação por parte dos auditores independentes, ECOVIS WFA Auditores Independentes SS., devido à ausência de matrículas atualizadas e impossibilidade de obter evidências apropriadas sobre a regularidade jurídica de parte dos ativos imobiliários.\n\n**Trecho-chave:** \"A ressalva se refere a ausência de matrículas atualizadas e a impossibilidade de se obter evidência apropriada e suficiente quanto à regularidade jurídica de parte dos ativos imobiliários, pela Administradora e pelos auditores.\"\n\n### ASSEMBLEIA AGE entregue em 29/06/2026\n\n**O QUE aconteceu:** A administradora convocou os cotistas para uma assembleia extraordinária via consulta formal.\n\n**Resumo:** A assembleia foi realizada com o objetivo de deliberar sobre a prorrogação do prazo de duração do fundo e regularização do período entre o término do prazo anteriormente aprovado e a eventual aprovação de um novo prazo de duração.\n\n**Trecho-chave:** \"A Administradora convoca os Cotistas para deliberar sobre as seguintes matérias da Ordem do Dia: (a) deliberar sobre a continuidade das atividades do Fundo, com o objetivo de viabilizar a execução do plano de desinvestimento dos ativos integrantes da carteira da Classe, elaborado pela Gestora, mediante a prorrogação do prazo de duração da Classe e, consequentemente, do Fundo, até 31 de dezembro de 2026 (\"Novo Prazo de Duração\"), com a correspondente alteração do Regulamento para refletir o Novo Prazo de Duração.\"\n\n### ASSEMBLEIA AGE entregue em 22/07/2026\n\n**O QUE aconteceu:** A assembleia extraordinária via consulta formal deliberou sobre a prorrogação do prazo de duração do fundo.\n\n**Resumo:** A assembleia decidiu pela continuidade das atividades do fundo, prorrogando o prazo de duração da Classe e do Fundo pelo período adicional de 4 meses contados do Prazo de Duração Anteriormente Aprovado, com a consequente alteração do Regulamento.\n\n**Trecho-chave:** \"A matéria constante da Ordem do Dia abaixo foi não ter atingido o quórum de aprovação previsto no Regulamento, conforme detalhado a seguir: (a) deliberar pela continuidade das atividades do fundo, prorrogando o prazo de duração da Classe e do Fundo pelo período adicional de 4 meses contados do Prazo de Duração Anteriormente Aprovado, com a consequente alteração do Regulamento para refletir o novo prazo de duração do Fundo e de sua Classe até 25 de junho de 2026 ('Novo Prazo de Duração').\""
   },
   "retrato": {
     "selo": "Alerta grave",
@@ -36,7 +36,7 @@
       "Menos cotistas que o mínimo para isenção de IR",
       "Rendimentos irregulares"
     ],
-    "cota": 323.31
+    "cota": 274.81
   },
   "parecer": {
     "id": 1152228,

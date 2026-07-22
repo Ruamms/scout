@@ -1,0 +1,24 @@
+{
+  "ticker": "UGPA3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:12:38",
+  "comunicados": {
+    "ids": [
+      68669533074467265,
+      12053302236042934,
+      641183215548304972
+    ],
+    "datas": [
+      "17/06/2026",
+      "02/06/2026",
+      "07/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 17/06/2026\n\n**O QUE aconteceu:** A Ultrapar Participações S.A. aprovou um Programa de Recompra de Ações.\n\n**Resumo:** A companhia aprovou um programa para recomprar até 18 milhões de ações ordinárias, com duração de 12 meses, para uso em planos de incentivo, tesouraria ou posterior cancelamento/alienação. \n\n**Trecho-chave:**\n\"O Programa está limitado ao máximo de 18.000.000 ações ordinárias e terá a duração de até 12 (doze) meses, contados a partir de 18 de junho de 2026.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 02/06/2026\n\n**O QUE aconteceu:** A Ultrapar informou sobre a alienação de participação acionária relevante.\n\n**Resumo:** O Canada Pension Plan Investment Board (CPPIB) reduziu sua participação na Ultrapar para 4,94% do total de ações ordinárias, passando a deter 55.117.773 ações.\n\n**Trecho-chave:**\n\"suas participações alcançaram, de forma agregada, 4,94% do total de ações ordinárias de emissão da Ultrapar, totalizando 55.117.773 ações.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 07/05/2026\n\n**O QUE aconteceu:** A Ultrapar divulgou os resultados do primeiro trimestre de 2026.\n\n**Resumo:** A companhia apresentou forte crescimento no EBITDA recorrente, investimentos significativos na Ipiranga e avanços em sua agenda de crescimento e produtividade. Também destacaram a publicação da regulamentação do devedor contumaz pela Receita Federal e a conversão da MP do \"Gás do Povo\" em lei.\n\n**Trecho-chave:**\n\"Forte crescimento de EBITDA recorrente, alavancado pela Ipiranga e consolidação da Hidrovias – Geração de R$ 1,1 bilhão de caixa operacional.\"\n\n---\n\nOs documentos apresentados mostram ações relevantes na estratégia de capitalização e gestão da Ultrapar Participações S.A."
+  },
+  "modelo": "qwen2.5:7b"
+}

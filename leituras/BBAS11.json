@@ -1,0 +1,24 @@
+{
+  "ticker": "BBAS11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:13:38",
+  "comunicados": {
+    "ids": [
+      121088882177074610,
+      469289330296540695,
+      284159579600120343
+    ],
+    "datas": [
+      "20/05/2026",
+      "26/06/2026",
+      "08/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 20/05/2026\n\n**O que aconteceu:** Aprovou distribuição de R$ 340.717.500,00 a título de remuneração antecipada aos acionistas.\n\n**Resumo:** O Banco do Brasil S.A. aprovou a distribuição de R$ 340.717.500,00 em Juros sobre o Capital Próprio (JCP) para os acionistas no segundo trimestre de 2026.\n\n**Trecho-chave:** \"O Banco do Brasil S.A. (“BB”) comunica que aprovou em 15/05/2026 a distribuição de R$ 340.717.500,00 a título de remuneração antecipada aos acionistas sob a forma de Juros sobre o Capital Próprio (JCP), relativos ao segundo trimestre de 2026.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 26/06/2026\n\n**O que aconteceu:** Tribunal de Contas da União declarou não objeção à repactuação do cronograma de devolução do IHCD.\n\n**Resumo:** O Banco do Brasil S.A. recebeu a não objeção do Tribunal de Contas da União para repactuar o cronograma de devolução do Instrumento Híbrido de Capital e Dívida (IHCD), alterando o plano de amortização.\n\n**Trecho-chave:** \"O Banco do Brasil S.A. (“BB”) informa que o Tribunal de Contas da União publicou, em 26 de junho de 2026, o Acordão 1553/2026 que declarou a não objeção daquele Tribunal ao pedido do BB à repactuação do cronograma de devolução do Instrumento Híbrido de Capital e Dívida (“IHCD”) contratado com o Tesouro Nacional.\"\n\n**Conexão com contexto:** A decisão do Tribunal de Contas da União impacta a estratégia financeira do Banco, incluindo a amortização do IHCD, que está alinhada ao Plano de Capital de médio prazo.\n\n---\n\n### COMUNICADO AO MERCADO entregue em 08/06/2026\n\n**O que aconteceu:** Distribuição de R$ 866 milhões em JCP no primeiro trimestre de 2026.\n\n**Resumo:** O Banco do Brasil S.A. distribuiu R$ 866 milhões em Juros sobre o Capital Próprio (JCP) para os acionistas no primeiro trimestre de 2026, com um payout total de 30%.\n\n**Trecho-chave:** \"No 1T26, foram distribuídos R$ 866 milhões em JCP.\"\n\n---\n\n### FATO RELEVANTE entregue em 20/05/2026\n\n**O que aconteceu:** Aprovou distribuição de R$ 340.717.500,00 a título de remuneração antecipada aos acionistas.\n\n**Resumo:** O Banco do Brasil S.A. aprovou a distribuição de R$ 340.717.500,00 em Juros sobre o Capital Próprio (JCP) para os acionistas no segundo trimestre de 2026.\n\n**Trecho-chave:** \"O Banco do Brasil S.A. (“BB”) comunica que aprovou em 15/05/2026 a distribuição de R$ 340.717.500,00 a título de remuneração antecipada aos acionistas sob a forma de Juros sobre o Capital Próprio (JCP), relativos ao segundo trimestre de 2026.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

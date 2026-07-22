@@ -1,0 +1,27 @@
+{
+  "ticker": "POMO3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:57:02",
+  "comunicados": {
+    "ids": [
+      1040566775748225877,
+      130440481459430269,
+      758823803568840003,
+      1117263592689769910
+    ],
+    "datas": [
+      "15/04/2026",
+      "24/03/2026",
+      "05/05/2026",
+      "03/03/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 15/04/2026\n\n**O QUE aconteceu:** Aprovou o pagamento de juros sobre o capital próprio.\n\n**Resumo:** A MARCOPOLO S.A. aprovou o pagamento de juros sobre o capital social, a serem creditados e pagos em maio de 2026.\n\n**Trecho-chave:**\n\"Em reunião do Conselho de Administração da MARCOPOLO S.A., realizada em 15 de abril de 2026, foi aprovado o pagamento de juros sobre o capital próprio, por conta do presente exercício, a razão de R$ 0,085 por ação representativa do capital social da Companhia.\"\n\n### FATO RELEVANTE entregue em 24/03/2026\n\n**O QUE aconteceu:** Alterou o portal oficial para divulgação de Fatos Relevantes.\n\n**Resumo:** A MARCOPOLO S.A. informou que passará a divulgar seus Fatos Relevantes no portal Luz (www.luzdigi.com.br).\n\n**Trecho-chave:**\n\"MARCOPOLO S.A., nos termos das normas regulamentares vigentes, vem informar aos seus acionistas e ao mercado em geral que, a partir da divulgação deste instrumento, todos os Fatos Relevantes da Companhia, além de serem disponibilizados no próprio site da Companhia, no site da CVM e da B3 (ri.marcopolo.com.br, www.cvm.gov.br e www.b3.com.br), passarão a ser divulgados apenas no portal Luz (www.luzdigi.com.br).\"\n\n### COMUNICADO AO MERCADO entregue em 05/05/2026\n\n**O QUE aconteceu:** Publicou resultados do primeiro trimestre de 2026.\n\n**Resumo:** A MARCOPOLO S.A. divulgou os resultados financeiros e operacionais do primeiro trimestre de 2026, destacando crescimento em algumas margens.\n\n**Trecho-chave:**\n\"DESTAQUES 1T26\n24,7%\nROIC\nR$ 264,6M\nLucro Líquido\n16,0%\nMargem Líquida\nR$ 1.655,2M\nReceita Líquida\nR$ 304,8M\nEBITDA\n18,4%\nMargem EBITDA\"\n\n### COMUNICADO AO MERCADO entregue em 03/03/2026\n\n**O QUE aconteceu:** Informou sobre aumento de participação acionária por fundos geridos.\n\n**Resumo:** A Alaska Investimentos LTDA e LAPB Gestão de Recursos Financeiros informaram que adquiriram ações da MARCOPOLO S.A., atingindo uma participação de 5,10% em ações preferenciais (PN POMO4).\n\n**Trecho-chave:**\n\"A Alaska Investimentos LTDA, instituição financeira com sede na Cidade e Estado de São Paulo, localizada à Rua Joaquim Floriano, 413 18º andar, Itaim Bibi, CEP: 04534-010, inscrita no CNPJ/MF sob o número 11.752.203/0001-50, devidamente credenciada na Comissão de Valores Mobiliários (\"CVM\") como Gestora de Valores Mobiliários, de acordo com o Ato Declaratório CVM n.º 11.198, de 28 de julho de 2010, e a LAPB Gestao De Recursos Financeiros LTDA., inscrito no CNPJ/MF sob o número 11.581.211/0001-81, devidamente autorizada à prestação dos serviços de administração de carteira de títulos e valores mobiliários por meio do Ato Declaratório número 11.011, expedido em 29 de abril de 2010, sociedades sob controle comum (\"Alaska\" e \"LAPB\" em conjunto denominadas \"Gestoras\"), declaram que adquiriram ações preferenciais da Marcopolo S.A. (“Companhia”), através de fundos de investimentos sob sua gestão (“Fundos”), atingindo nesta data participação conforme quadro abaixo:\""
+  },
+  "modelo": "qwen2.5:7b"
+}

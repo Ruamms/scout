@@ -1,0 +1,27 @@
+{
+  "ticker": "ITSA3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:45:40",
+  "comunicados": {
+    "ids": [
+      1026254656850509988,
+      21362284085851909,
+      603101270706389470,
+      1023946937813445437
+    ],
+    "datas": [
+      "07/07/2026",
+      "01/07/2026",
+      "15/06/2026",
+      "10/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 07/07/2026\n\n**O que aconteceu:** Aumento de participação acionária na Aegea.\n\n**Resumo:** A Itaúsa pode subscrever ações ordinárias da Aegea, aumentando sua participação acionária, com recursos provenientes do caixa da companhia.\n\n**Trecho-chave:**\n\"A depender de como os demais acionistas exercerem seus respectivos direitos, a Itaúsa poderá subscrever, dentro do prazo de 30 dias, montante entre aproximadamente R$730 milhões e R$1,5 bilhão.\" (p. 1)\n\n**Conexão com o contexto:** Este aumento de participação acionária na Aegea está alinhado à estratégia de alocação eficiente de capital da Itaúsa.\n\n---\n\n### FATO RELEVANTE entregue em 01/07/2026\n\n**O que aconteceu:** Recebimento de dividendos e juros sobre capital próprio extraordinários.\n\n**Resumo:** A Itaúsa recebeu R$ 0,9 bilhão do seu subsidiário Itautec, resultante de processos judiciais bem-sucedidos. Este recebimento deve gerar um impacto positivo no resultado do segundo trimestre de 2026.\n\n**Trecho-chave:**\n\"A Itaúsa estima que esse recebimento gerará impacto líquido positivo, não recorrente, de aproximadamente R$ 0,9 bilhão em seu resultado no 2º trimestre de 2026.\" (p. 1)\n\n---\n\n### FATO RELEVANTE entregue em 15/06/2026\n\n**O que aconteceu:** Declaração de juros sobre capital próprio.\n\n**Resumo:** O Conselho de Administração da Itaúsa deliberou declarar juros sobre capital próprio no montante bruto de R$ 1.547 milhões, com pagamento previsto até o fim do mês de agosto de 2026.\n\n**Trecho-chave:**\n\"Esses juros, relativos ao exercício de 2026, terão como base de cálculo a posição acionária final do dia 18 de junho de 2026 e serão pagos até 31 de agosto de 2026.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 10/06/2026\n\n**O que aconteceu:** Negociação das próprias ações para tesouraria.\n\n**Resumo:** A Itaúsa adquiriu 5 milhões de ações preferenciais para utilização no Plano de Incentivos de Longo Prazo da companhia, com preços variando entre R$ 12,84 e R$ 13,04.\n\n**Trecho-chave:**\n\"Em maio/2026, adquiriu 5.000.000 de ações preferenciais de sua emissão (ao preço mínimo de R$ 12,84, médio de R$ 12,98 e máximo de R$ 13,04 por ação) para utilização no âmbito do Plano de Incentivos de Longo Prazo da Companhia.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

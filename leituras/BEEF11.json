@@ -1,0 +1,21 @@
+{
+  "ticker": "BEEF11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:15:27",
+  "comunicados": {
+    "ids": [
+      817144053861415767,
+      339099099036300450
+    ],
+    "datas": [
+      "01/06/2026",
+      "07/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 01/06/2026\n\n**O QUE aconteceu:** Esclarecimentos sobre questionamentos da CVM.\n\n**Resumo:** A Minerva S.A. esclarece que não há planos para fechamento de capital ou operação de OPA no momento, reforçando a necessidade de divulgação imediata em caso de novidades.\n\n**Trecho-chave:**\n\"A Companhia, no curso normal de seu planejamento e gestão de capital, avalia continuamente alternativas estratégicas voltadas à otimização de sua estrutura societária e de capital, à geração de valor para seus acionistas e ao melhor posicionamento da Minerva nos mercados em que atua.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 07/05/2026\n\n**O QUE aconteceu:** Teleconferência de Resultados do Primeiro Trimestre de 2026.\n\n**Resumo:** A Minerva S.A. apresentou resultados positivos, com receita bruta e líquida recorde, fluxo de caixa livre robusto e avanços em ESG.\n\n**Trecho-chave:**\n\"Receita Bruta\n1T26     R$ 14,5 bilhões\nLTM1T26     R$ 60,6 bilhões\n\nFluxo de Caixa Livre\nPosição de Caixa:\nR$ 10,9 bilhões\n\nDividendos\n• Dividendos antecipados : R$ 162,1 milhões (dez/2025)\n• Dividendos Complementares: R$ 30,8 milhões (mai/2026)\nTotal Dividendos (Exercício 2025): R$ 192,9 milhões | Payout: 25%\" (p. 2)\n\n**Conexão com indicadores:** Os resultados financeiros apresentados na teleconferência refletem positivamente nos indicadores de receita bruta e fluxo de caixa livre, demonstrando a saúde financeira da empresa."
+  },
+  "modelo": "qwen2.5:7b"
+}

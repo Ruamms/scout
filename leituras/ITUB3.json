@@ -1,0 +1,27 @@
+{
+  "ticker": "ITUB3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:46:23",
+  "comunicados": {
+    "ids": [
+      758278997199275927,
+      1087793683860961939,
+      989821602938417323,
+      743773066869846627
+    ],
+    "datas": [
+      "28/05/2026",
+      "08/05/2026",
+      "13/07/2026",
+      "01/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 28/05/2026\n\n**O que aconteceu:** O Itaú Unibanco anunciou o pagamento de Juros sobre o Capital Próprio (JCP) no valor bruto de R$ 3,99 bilhões para o exercício de 2026.\n\n**Resumo:** A empresa aprovou o pagamento de JCP com retenção de imposto de renda na fonte e detalhou os valores por ação e as datas de pagamento.\n\n**Trecho-chave:**\n\"O Itaú Unibanco Holding S.A. comunica que seu Conselho de Administração, em reunião realizada na data de hoje, aprovou o pagamento de Juros sobre o Capital Próprio (JCP) no montante bruto de R$ 3,99 bilhões, relativos ao exercício de 2026, com retenção de 17,5% de imposto de renda na fonte¹, conforme detalhado a seguir:\"\n\n### FATO RELEVANTE entregue em 08/05/2026\n\n**O que aconteceu:** O Itaú Unibanco informou sobre a mudança no portal de notícias utilizado para divulgação de seus atos e fatos relevantes.\n\n**Resumo:** A Companhia passará a realizar as divulgações em um novo portal, com atualização do Formulário Cadastral e da Política de Divulgação de Ato ou Fato Relevante.\n\n**Trecho-chave:**\n\"O Itaú Unibanco Holding S.A. (“Companhia”) comunica aos seus acionistas e ao mercado em geral, em linha com o disposto no artigo 3º, § 4º, II, da Resolução CVM 44/21, que realizou a substituição do portal de notícias com página na internet utilizado para divulgação de seus atos e fatos relevantes. A Companhia passará a realizar referidas divulgações no portal https://mzgroup.com.br/fatos-relevantes/ em seção disponível para acesso gratuito.\"\n\n### COMUNICADO AO MERCADO entregue em 13/07/2026\n\n**O que aconteceu:** O Itaú Unibanco informou sobre a recompra das Letras Financeiras Subordinadas Nível 1.\n\n**Resumo:** A Companhia exercerá a opção de recompra da totalidade dessas letras no valor de R$ 1,4 bilhão, o que impactará negativamente em 0,1 ponto percentual no índice de capitalização Nível 1.\n\n**Trecho-chave:**\n\"O Itaú Unibanco Holding S.A. (“Companhia”) informa aos seus acionistas e ao mercado que exercerá, no dia 15 de julho de 2026, a opção de recompra da totalidade das Letras Financeiras Subordinadas Nível 1 (“Letras Financeiras”) perpétuas, emitidas pela Companhia entre 08 de janeiro e 16 de janeiro de 2019, no valor de R$ 1,4 bilhão.\"\n\n### COMUNICADO AO MERCADO entregue em 01/07/2026\n\n**O que aconteceu:** O Itaú Unibanco venceu uma nova licitação para prestação de serviços de pagamento a servidores e fornecedores do Governo do Estado de Minas Gerais.\n\n**Resumo:** A Companhia firmou um contrato com vigência de cinco anos, prevendo o pagamento de R$ 2,188 bilhões pela gestão da folha de pagamentos.\n\n**Trecho-chave:**\n\"ITAÚ UNIBANCO HOLDING S.A. (“Companhia” ou “Itaú Unibanco”) comunica aos seus acionistas que venceu a nova licitação promovida pelo Governo do Estado de Minas Gerais, ao apresentar proposta financeira para a prestação de serviços de pagamento a, aproximadamente, 670 mil servidores estaduais (ativos, aposentados e pensionistas) e fornecedores pessoas jurídicas do Estado de Minas Gerais (“Operação”).\""
+  },
+  "modelo": "qwen2.5:7b"
+}

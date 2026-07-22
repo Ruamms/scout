@@ -1,0 +1,27 @@
+{
+  "ticker": "RAIL3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:59:55",
+  "comunicados": {
+    "ids": [
+      980335087916537350,
+      466543105333057879,
+      1076286906341844079,
+      7051885978777764
+    ],
+    "datas": [
+      "01/07/2026",
+      "22/06/2026",
+      "09/07/2026",
+      "28/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 01/07/2026\n\n**O que aconteceu:** Rumo e sua controlada Malha Oeste celebraram o 5º Termo Aditivo ao Contrato de Concessão da Malha Oeste.\n\n**Resumo:** A Malha Oeste terá um regime excepcional de operação mínima por até 180 dias, sem prestar serviços de transporte ferroviário. Os custos inerentes a esta operação serão considerados créditos da Malha Oeste perante o Poder Concedente.\n\n**Trecho-chave:** \"O 5º Aditivo estabelece um regime excepcional e transitório de continuidade operacional mínima da Malha Oeste, com vigência de até 180 dias. Durante o período de extensão, a Malha Oeste não prestará serviços de transporte ferroviário e assumirá apenas um escopo mínimo de atividades, voltado à guarda, vigilância, manutenção essencial e monitoramento dos ativos.\" (p. 1)\n\n### FATO RELEVANTE entregue em 22/06/2026\n\n**O que aconteceu:** Pedro Palma deixará o cargo de Diretor Presidente da Rumo, sendo substituído temporariamente por Daniel Rockenbach.\n\n**Resumo:** Daniel Rockenbach, atual diretor presidente da Malha Sul e executivo há 15 anos na companhia, assumirá a presidência interinamente a partir do dia 20 de julho de 2026.\n\n**Trecho-chave:** \"Pedro Palma deixará o cargo de Diretor Presidente. Em sua substituição, de forma interina, assumirá Daniel Rockenbach, atual diretor presidente da Malha Sul e executivo da Companhia há 15 anos.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 09/07/2026\n\n**O que aconteceu:** BNP Paribas passou a ser detentor de 94.569.069 ações ordinárias, representando aproximadamente 5,09% do total de ações emitidas pela Rumo.\n\n**Resumo:** A participação da BNP Paribas na companhia aumentou significativamente, passando a detê-la como um investidor relevante.\n\n**Trecho-chave:** \"O BNP Paribas aumentou sua participação e passou a ser detentor de 94.569.069 ações ordinárias, 5,09% do total de ações emitidas pela Companhia.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 28/05/2026\n\n**O que aconteceu:** A Rumo inaugurará o novo terminal da BR-070 e o trecho ferroviário da Ferrovia do Mato Grosso no dia 19 de junho de 2026.\n\n**Resumo:** O projeto é considerado a maior obra ferroviária em execução no Brasil, reforçando o posicionamento da Rumo no Estado e contribuindo para a eficiência logística do agronegócio brasileiro.\n\n**Trecho-chave:** \"A Ferrovia do Mato Grosso é o principal projeto de investimento da Rumo e a maior obra ferroviária em execução no Brasil. A conclusão da primeira fase do projeto, com o início de comissionamento operacional dos novos ativos, representa um marco na história da Companhia.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

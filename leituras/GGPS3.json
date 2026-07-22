@@ -1,0 +1,30 @@
+{
+  "ticker": "GGPS3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:38:57",
+  "comunicados": {
+    "ids": [
+      583724517372129332,
+      838283123562903213,
+      406211768051421816,
+      687137161275363298,
+      808628462329963224
+    ],
+    "datas": [
+      "01/07/2026",
+      "25/06/2026",
+      "29/05/2026",
+      "14/05/2026",
+      "06/03/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU: GPS PARTICIPAÇÕES E EMPREENDIMENTOS S.A. REALIZA AQUISIÇÃO DE 65% DAS QUOTAS DO GRUPO ASTER\n\n**DATA:** 01/07/2026  \n**TÍTULO DA LINHA:** GPS PARTICIPAÇÕES E EMPREENDIMENTOS S.A. REALIZA AQUISIÇÃO DE 65% DAS QUOTAS DO GRUPO ASTER  \n**RESUMO:** A GPS PARTICIPAÇÕES E EMPREENDIMENTOS S.A. aprovou a aquisição de 65% das quotas do Grupo Aster, que oferece serviços em segurança patrimonial e facilities no estado de São Paulo, com receita bruta de R$ 154 milhões LTM.  \n**CITAÇÃO CHAVE:** \"Aquisição foi pela Graber Segurança Ltda., controlada da Companhia, e está condicionada à aprovação do CADE.\"\n\n---\n\n### O QUE ACONTECEU: GPS PARTICIPAÇÕES E EMPREENDIMENTOS S.A. REALIZA AQUISIÇÃO DE 100% DAS QUOTAS DA UNIFLEX\n\n**DATA:** 25/06/2026  \n**TÍTULO DA LINHA:** GPS PARTICIPAÇÕES E EMPREENDIMENTOS S.A. REALIZA AQUISIÇÃO DE 100% DAS QUOTAS DA UNIFLEX  \n**RESUMO:** A GPS PARTICIPAÇÕES E EMPREENDIMENTOS S.A. aprovou a aquisição de 100% das quotas da Uniflex, que oferece serviços de hotelaria marítima e alimentação no estado do Rio de Janeiro, com receita bruta de R$ 213 milhões em 2025.  \n**CITAÇÃO CHAVE:** \"Aquisição foi pela Marfood Comércio e Serviços de Hotelaria Ltda., controlada da Companhia.\"\n\n---\n\n### O QUE ACONTECEU: GPS PARTICIPAÇÕES E EMPREENDIMENTOS S.A. REALIZA AQUISIÇÃO DE 55% DAS QUOTAS DO GRUPO SEI\n\n**DATA:** 29/05/2026  \n**TÍTULO DA LINHA:** GPS PARTICIPAÇÕES E EMPREENDIMENTOS S.A. REALIZA AQUISIÇÃO DE 55% DAS QUOTAS DO GRUPO SEI  \n**RESUMO:** A GPS PARTICIPAÇÕES E EMPREENDIMENTOS S.A. aprovou a aquisição de 55% das quotas do Grupo SEI, que oferece serviços em segurança privada e facilities nos estados do Espírito Santo, Bahia e Rio de Janeiro, com receita bruta de R$ 220 milhões LTM.  \n**CITAÇÃO CHAVE:** \"Aquisição foi pela Graber Segurança Ltda., controlada da Companhia.\"\n\n---\n\n### COMENTÁRIO DE DESEMPENHO: GPS PARTICIPAÇÕES E EMPREENDIMENTOS S.A. REGISTRA CRESCEMENTO DE 9% NA RECEITA LÍQUIDA NO 1T26\n\n**DATA:** 14/05/2026  \n**TÍTULO DA LINHA:** GPS PARTICIPAÇÕES E EMPREENDIMENTOS S.A. REGISTRA CRESCEMENTO DE 9% NA RECEITA LÍQUIDA NO 1T26  \n**RESUMO:** A GPS PARTICIPAÇÕES E EMPREENDIMENTOS S.A. registrou uma receita líquida de R$ 4,484 milhões no primeiro trimestre de 2026, um crescimento de 9% em comparação com o mesmo período do ano anterior.  \n**CITAÇÃO CHAVE:** \"R$ 4,484 milhões no trimestre; 9% acima do 1T25.\"\n\n---\n\n### COMENTÁRIO DE DESEMPENHO: GPS PARTICIPAÇÕES E EMPREENDIMENTOS S.A. REGISTRA CRESCEMENTO DE 17% NA RECEITA LÍQUIDA NO 4T25\n\n**DATA:** 06/03/2026  \n**TÍTULO DA LINHA:** GPS PARTICIPAÇÕES E EMPREENDIMENTOS S.A. REGISTRA CRESCEMENTO DE 17% NA RECEITA LÍQUIDA NO 4T25  \n**RESUMO:** A GPS PARTICIPAÇÕES E EMPREENDIMENTOS S.A. registrou uma receita líquida de R$ 17,283 milhões no quarto trimestre de 2025, um crescimento de 17% em comparação com o mesmo período do ano anterior.  \n**CITAÇÃO CHAVE:** \"R$ 17.283 milhões no ano; 17% acima do 2024.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

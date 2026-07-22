@@ -1,0 +1,27 @@
+{
+  "ticker": "SANB11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:02:52",
+  "comunicados": {
+    "ids": [
+      628127740237888531,
+      96193528290376837,
+      1059078677812553883,
+      1089873390240436343
+    ],
+    "datas": [
+      "28/05/2026",
+      "19/03/2026",
+      "06/07/2026",
+      "26/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 28/05/2026\n\n**O que aconteceu:** Conselho de Administração deliberou pela submissão à apreciação dos acionistas, em Assembleia Geral Extraordinária a ser realizada em 30 de junho de 2026, da incorporação da Esfera Fidelidade S.A. pelo Banco Santander (Brasil) S.A.\n\n**Resumo:** A Companhia planeja incorporar sua subsidiária Esfera Fidelidade S.A., com a transferência do patrimônio líquido para a Companhia, visando otimizar a estrutura operacional e consolidar negócios relacionados à prestação de serviços acessórios.\n\n**Trecho-chave:** \"A incorporação da Esfera resultará na mera substituição do investimento atual pela Esfera pelo patrimônio líquido transferido para a Companhia, sem alterações no capital social.\" (p. 2)\n\n### FATO RELEVANTE entregue em 19/03/2026\n\n**O que aconteceu:** Mario Roberto Opice Leão anunciou sua saída do cargo de Diretor Presidente do Banco Santander (Brasil) S.A. até julho de 2026, sendo substituído pelo Sr. Gilson Finkelsztain.\n\n**Resumo:** O Banco Santander (Brasil) S.A. comunicou a saída do atual Diretor Presidente e Membro do Conselho de Administração, Mario Leão, após onze anos de liderança, e a nomeação do novo CEO, Gilson Finkelsztain, com experiência em instituições financeiras.\n\n**Trecho-chave:** \"A Companhia informa que, nos termos do plano de sucessão da Alta Administração do Santander Brasil, foi escolhido para assumir a posição de CEO do Santander Brasil o Sr. Gilson Finkelsztain.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 06/07/2026\n\n**O que aconteceu:** Banco Santander (Brasil) S.A. realizou emissão de Letras Financeiras com cláusula de subordinação, totalizando R$ 1.386.600.000,00, para compor o Nível II do Patrimônio de Referência.\n\n**Resumo:** A Companhia emitiu Letras Financeiras privadas com prazo de vencimento de 10 anos e opção de recompra a partir de 2031, visando aumentar seu capital Nível II conforme regulamentação aplicável.\n\n**Trecho-chave:** \"As Letras Financeiras ficam autorizadas a compor o Capital Nível II do Patrimônio de Referência da Companhia.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 26/06/2026\n\n**O que aconteceu:** Banco Santander (Brasil) S.A. informou a data de divulgação das informações financeiras referentes ao período encerrado em 30 de junho de 2026.\n\n**Resumo:** A Companhia comunicou que suas informações financeiras serão divulgadas no dia 29 de julho de 2026, e esclareceu que as informações do Banco Santander, S.A., seu acionista controlador, não são diretamente comparáveis às demonstrações financeiras da Companhia.\n\n**Trecho-chave:** \"A Companhia informa ainda que o Banco Santander, S.A., seu acionista controlador, divulgará em 22 de julho de 2026 suas informações financeiras consolidadas referentes ao mesmo período.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

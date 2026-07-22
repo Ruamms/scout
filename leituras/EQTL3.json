@@ -1,0 +1,30 @@
+{
+  "ticker": "EQTL3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:35:42",
+  "comunicados": {
+    "ids": [
+      427231635898907423,
+      289744136958621029,
+      1106281624538723361,
+      878511895587511867,
+      113640797870458361
+    ],
+    "datas": [
+      "12/06/2026",
+      "11/06/2026",
+      "03/06/2026",
+      "11/06/2026",
+      "11/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU: 16 de junho de 2026\n\n**Título:** Aquisição de Participação na COPASA - MG Concluída\n\n**Resumo:** A Gerais Saneamento, sociedade controlada pela Equatorial S.A., adquiriu a quantidade final de 114.075.921 ações ordinárias da COPASA, representando 30% do capital social, por um valor total de R$5.593.142.406,63.\n\n**Trecho-chave:**\n\"Conforme divulgado, nesta data, pela Companhia de Saneamento de Minas Gerais – COPASA MG (“COPASA”), pelo Estado de Minas Gerais e pelos Coordenadores da Oferta1, foi alocada à GERAIS SANEAMENTO S.A., sociedade 100% (cem por cento) controlada pela Companhia (“Gerais Saneamento”) a quantidade final de 114.075.921 (cento e quatorze milhões, setenta e cinco mil, novecentas e vinte e uma) ações ordinárias, nominativas, escriturais e sem valor nominal de emissão de COPASA, representativas de 30,00% (trinta por cento) do capital social da COPASA.\"\n\n---\n\n### O QUE ACONTECEU: 12 de junho de 2026\n\n**Título:** Investimento na COPASA Confirmado\n\n**Resumo:** A Gerais Saneamento foi confirmada como Investidor de Referência Selecionado e adquiriu ações da COPASA, representando 30% do capital social. O investimento total é de R$5.593.142.406,63.\n\n**Trecho-chave:**\n\"Conforme anúncio divulgado, em 10 de junho de 2026, pela Companhia de Saneamento de Minas Gerais – COPASA MG (“COPASA”), pelo Estado de Minas Gerais e pelos Coordenadores da Oferta1, a GERAIS SANEAMENTO S.A., sociedade 100% controlada pela Companhia (“Gerais Saneamento”), foi confirmada como Investidor de Referência Selecionado, com alocação à Gerais Saneamento de ações ordinárias de emissão da COPASA representativas de, no mínimo, 30,00% (trinta por cento) do capital social da COPASA.\"\n\n---\n\n### O QUE ACONTECEU: 11 de junho de 2026\n\n**Título:** Confirmação como Investidor de Referência Finalista\n\n**Resumo:** A Gerais Saneamento foi confirmada como Investidor de Referência Finalista na oferta pública de ações da COPASA, representando 30% do capital social. O investimento total é de R$5.593.142.406,63.\n\n**Trecho-chave:**\n\"A GERAIS SANEAMENTO S.A., sociedade 100% controlada pela Companhia (“Gerais Saneamento”), foi definida como Investidor de Referência Finalista no contexto da oferta pública de distribuição secundária de ações ordinárias, nominativas, escriturais e sem valor nominal de emissão de COPASA, de titularidade do Estado de Minas Gerais (‘Oferta’). O Pedido de Investimento foi de R$ 49,03 (quarenta e nove reais e três centavos) por ação.\"\n\n---\n\n### O QUE ACONTECEU: 03 de junho de 2026\n\n**Título:** Gerais Saneamento como Investidor de Referência Finalista\n\n**Resumo:** A Gerais Saneamento foi definida como Investidor de Referência Finalista na oferta pública de ações da COPASA, representando 30% do capital social. O investimento total é incerto até o resultado final do processo.\n\n**Trecho-chave:**\n\"A GERAIS SANEAMENTO S.A., sociedade 100% controlada pela Companhia (“Gerais Saneamento”), foi definida como Investidor de Referência Finalista no contexto da oferta pública de distribuição secundária de ações ordinárias, nominativas, escriturais e sem valor nominal de emissão de COPASA, de titularidade do Estado de Minas Gerais (‘Oferta’). O Pedido de Investimento foi de R$ 49,03 (quarenta e nove reais e três centavos) por ação.\"\n\n---\n\n**Conexões com o Contexto:**\n- A aquisição da COPASA representa um passo significativo na estratégia de crescimento da Equatorial S.A., alinhada à expansão do segmento de saneamento, conforme calculado pelo contexto."
+  },
+  "modelo": "qwen2.5:7b"
+}

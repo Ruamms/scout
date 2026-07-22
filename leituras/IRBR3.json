@@ -1,0 +1,21 @@
+{
+  "ticker": "IRBR3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:43:40",
+  "comunicados": {
+    "ids": [
+      27504718868738327,
+      123844168093866679
+    ],
+    "datas": [
+      "23/06/2026",
+      "08/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 23/06/2026\n\n**O que aconteceu:** A Justiça do Reino Unido aprovou, em 16 de junho de 2026, a transferência para a Community Re (Carrick Group) do portfólio (run off) da sucursal da Companhia em Londres.\n\n**Resumo:** Esta aprovação finaliza o processo iniciado em novembro de 2023 e desonerará a companhia de compromissos operacionais, regulatórios, fiscais e trabalhistas naquele país.\n\n**Trecho-chave:**\n\"A Justiça do Reino Unido aprovou, em 16 de junho de 2026, com validade a partir de 20 de junho de 2026, a transferência para a Community Re (Carrick Group) do portfólio (run off) da sucursal da Companhia em Londres, após o cumprimento das diversas exigências locais.\"\n\n**Conexão com contexto:** Esta transferência faz parte de uma estratégia maior de desonerar a companhia de compromissos internacionais e focar no crescimento doméstico e internacional.\n\n---\n\n### COMUNICADO AO MERCADO entregue em 08/06/2026\n\n**O que aconteceu:** A Companhia iniciou procedimentos regulatórios para expandir suas operações internacionais, com foco na Suíça e Malta.\n\n**Resumo:** IRB-Brasil Resseguros protocolou pedidos de autorização para constituir companhias resseguradoras em ambas localidades, visando a expansão da presença internacional e crescimento de prêmios no mercado global de reseguro.\n\n**Trecho-chave:**\n\"Suíça: protocolou pedido de autorização junto ao regulador local (Swiss Financial Market Supervisory Authority – FINMA), em 29 de maio de 2026, para constituição de uma companhia resseguradora com foco em resseguros de danos (P&C, ou não-vida).\"\n\n**Conexão com contexto:** Essa expansão internacional é alinhada com a estratégia da companhia de diversificar suas linhas de subscrição no mercado nacional e expandir operações internacionais."
+  },
+  "modelo": "qwen2.5:7b"
+}

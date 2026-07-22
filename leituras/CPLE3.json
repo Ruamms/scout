@@ -1,0 +1,30 @@
+{
+  "ticker": "CPLE3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:23:57",
+  "comunicados": {
+    "ids": [
+      699151404938636762,
+      1086011282770847348,
+      664015103167676415,
+      552183496122861795,
+      805133503517165912
+    ],
+    "datas": [
+      "15/07/2026",
+      "23/06/2026",
+      "25/05/2026",
+      "16/07/2026",
+      "15/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU EM 25/05/2026\n\n**Título:** Elejor Renegocia Public Utility Charges (\"UBP\")\n\n**Resumo:** A Elejor, uma empresa especializada em que Copel detém participação majoritária, renegociou os pagamentos de UBP conforme aprovado pela Aneel.\n\n**Trecho-chave:**\n\"Centrais Elétricas do Rio Jordão S.A. – Elejor, uma entidade especializada no qual a COPEL detém participação majoritária, formalizou a renegociação dos pagamentos futuros de UBP, conforme aprovado pela Aneel, no valor total de R$ 420,631,215.58.\"\n\n### O QUE ACONTECEU EM 23/06/2026\n\n**Título:** Copel Distribuição Passa por Revisão Tarifária Periódica\n\n**Resumo:** A Agência Nacional de Energia Elétrica (Aneel) aprovou a nova tarifa da Copel Distribuição, com um reajuste médio de 20.51%, refletindo investimentos recentes.\n\n**Trecho-chave:**\n\"A Aneel homologou, em seu 10º Circuito Deliberativo Público Ordinário, realizado nesta data, a nova composição da tarifa da Copel Distribuição, com o estabelecimento de R$ 19.936,2 milhões para o valor da Base de Remuneração Regulatória líquida (RAB), reflexo do reconhecimento dos investimentos prudentes realizados em ativos elétricos pela Copel Distribuição nos últimos cinco anos.\"\n\n### O QUE ACONTECEU EM 15/07/2026\n\n**Título:** Conselho de Administração Aprova Atualizações na Estrutura e Política\n\n**Resumo:** O Conselho de Administração aprovou atualizações na estrutura ótima de capital, política de dividendos e regimento interno das diretorias.\n\n**Trecho-chave:**\n\"O Conselho de Administração deliberou aprovar a atualização da Política de Dividendos nos termos apresentados e conforme registrado no material disponibilizado.\"\n\n### O QUE ACONTECEU EM 16/07/2026\n\n**Título:** Comunicação sobre Reunião Ordinária do Conselho de Administração\n\n**Resumo:** Durante a reunião, o Conselho de Administração deliberou aprovar atualizações na estrutura ótima de capital e política de dividendos.\n\n**Trecho-chave:**\n\"O Conselho de Administração, por unanimidade, deliberou aprovar a atualização da Política de Dividendos nos termos apresentados.\"\n\n### O QUE ACONTECEU EM 15/06/2026\n\n**Título:** Copel Vende Participação na Usina Hidrelétrica Dona Francisca\n\n**Resumo:** A COPEL aceitou a proposta de venda da sua participação societária na DFESA, uma empresa responsável pela operação da UHE Dona Francisca.\n\n**Trecho-chave:**\n\"A COPEL comunicou aos seus acionistas e ao mercado em geral que aceitou a proposta vinculante e celebrou o Contrato de Compra e Venda de Ações com a Gerdau S.A., tendo por objeto a alienação de sua participação societária na DFESA.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

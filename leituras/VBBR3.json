@@ -1,0 +1,24 @@
+{
+  "ticker": "VBBR3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:15:55",
+  "comunicados": {
+    "ids": [
+      578638200267381007,
+      864023382760161839,
+      603727825563697828
+    ],
+    "datas": [
+      "16/04/2026",
+      "16/06/2026",
+      "15/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE aconteceu em 16/04/2026:\n**Saída do Capital Social da Evolua Etanol**\nA Vibra Energia S.A. vendeu sua participação de 49,99% na ECE S.A., passando a ser titular de 50,00% dos créditos tributários de ICMS e PIS/COFINS.\n\n*\"Com a implementação da Operação, a Copersucar S.A. passa a ser titular de 100% do capital social da Evolua, o que implica na saída da Companhia da sua posição acionária da Evolua.\"* (p. 2)\n\n### O QUE aconteceu em 15/06/2026:\n**Remuneração aos Acionistas**\nA Vibra Energia S.A. aprovou, em reunião do Conselho de Administração, a declaração de Juros sobre o Capital Próprio para o exercício social de 2026.\n\n*\"A Companhia destaca que o valor por ação é estimado e poderá ser modificado em razão da eventual negociação de ações de emissão da Companhia em tesouraria.\"* (p. 1)\n\n### O QUE aconteceu em 15/06/2026:\n**Remuneração aos Acionistas**\nA Vibra Energia S.A. informou sobre a declaração de Juros sobre o Capital Próprio para o exercício social de 2026.\n\n*\"Terão direito aos Juros sobre Capital Próprio os acionistas da Companhia assim registrados no fechamento do pregão da B3 S.A. - Brasil, Bolsa, Balcão (“B3”) do dia 22 de junho de 2026.\"* (p. 1)\n\n### O QUE aconteceu em 16/06/2026:\n**Remuneração aos Acionistas**\nA Vibra Energia S.A. detalhou os procedimentos para o pagamento dos Juros sobre o Capital Próprio.\n\n*\"O pagamento dos Juros sobre o Capital Próprio será efetuado em 1 (uma) única parcela, sem que seja devida qualquer atualização monetária ou remuneração entre a data da sua declaração e a data do pagamento.\"* (p. 2)\n\n---\n\n**Conexão com Indicadores:**\nA saída da Vibra Energia S.A. da posição acionária na Evolua Etanol pode impactar os resultados financeiros futuros, potencialmente afetando indicadores como o lucro líquido e a margem de participação nos resultados das joint ventures. A remuneração aos acionistas através dos Juros sobre o Capital Próprio deve ser considerada no cálculo do dividendo per share (DPS) para os próximos exercícios."
+  },
+  "modelo": "qwen2.5:7b"
+}

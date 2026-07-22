@@ -1,0 +1,27 @@
+{
+  "ticker": "ENGI11",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:34:18",
+  "comunicados": {
+    "ids": [
+      339078601869881624,
+      1151960833316436484,
+      339292090876001292,
+      1104518739870509848
+    ],
+    "datas": [
+      "29/06/2026",
+      "29/05/2026",
+      "14/07/2026",
+      "30/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 29/06/2026\n\n**O QUE aconteceu:** Energisa S.A., junto com suas subsidiárias, celebrou um acordo para a subscrição e integralização das ações preferenciais de emissão da Denerge.\n\n**Resumo:** A Energisa e seus associados realizaram uma operação que resultou na aquisição de 9,98% do capital social da Denerge por R$ 1.399.994.615,52, reforçando a estrutura financeira da empresa.\n\n**Trecho-chave:**\n\"A Companhia celebrou, nesta data, o “Acordo de Investimento e Outras Avenças” (“Acordo de Investimento”) com o Itaú Unibanco S.A. (“Investidor”), a NOVA DENERGE S.A., sociedade porações acionárias em companhias que desenvolvem atividades de atuação no setor de energia elétrica.\"\n\n### FATO RELEVANTE entregue em 29/05/2026\n\n**O QUE aconteceu:** Energisa decidiu descontinuar a divulgação da estimativa referente ao aumento de participação das demais linhas de negócios no EBITDA Consolidado.\n\n**Resumo:** A empresa optou por não divulgar mais a projeção do crescimento das demais linhas de negócio, considerando o atual cenário macroeconômico e geopolítico.\n\n**Trecho-chave:**\n\"A Companhia esclarece que referida estimativa ponderava, dentre as suas premissas, o crescimento de receita das demais linhas de negócio além do segmento de distribuição de energia elétrica, considerando o cenário existente à época de sua divulgação.\"\n\n### COMUNICADO AO MERCADO entregue em 14/07/2026\n\n**O QUE aconteceu:** A Agência Nacional de Energia Elétrica (Aneel) aprovou a revisão tarifária periódica da Energisa Sul Sudeste - Distribuidora de Energia S.A. (ESS).\n\n**Resumo:** A ESS teve seus índices de reajuste aprovados, com efeitos médios para o consumidor de +9,63% em média.\n\n**Trecho-chave:**\n\"Os índices de reajuste aprovados constam da tabela abaixo:\nNível de Tensão\nEfeito Médio para o Consumidor da ESS\nAlta e Média Tensão\n+ 9,99%\nBaixa Tensão\n+ 9,49%\nTotal\n+ 9,63%\"\n\n### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O QUE aconteceu:** A Agência Nacional de Energia Elétrica (Aneel) aprovou o reajuste tarifário da Energisa Tocantins - Distribuidora de Energia S.A. (ETO).\n\n**Resumo:** O ETO teve seu efeito médio para o consumidor definido em +7,92%, refletindo os custos não gerenciáveis e a atualização dos custos gerenciáveis.\n\n**Trecho-chave:**\n\"O processo de reajuste tarifário anual consiste no repasse aos consumidores dos custos não gerenciáveis da concessão (Parcela A - compra de energia, encargos setoriais e encargos de transmissão) e na atualização dos custos gerenciáveis (Parcela B - distribuição) pela variação do IPCA menos o Fator X, que repassa aos consumidores os ganhos de produtividade anuais da concessionária.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

@@ -1,0 +1,21 @@
+{
+  "ticker": "MRVE3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:53:06",
+  "comunicados": {
+    "ids": [
+      291370461577716100,
+      32842439503976513
+    ],
+    "datas": [
+      "15/07/2026",
+      "09/07/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O QUE aconteceu:** MRV Engenharia e Participações S.A. celebrou um Memorando de Entendimentos para vender três ativos imobiliários.\n\n**Resumo:** A companhia anunciou a estruturação de uma operação que tem potencial valor de R$ 166 milhões, alinhada com sua estratégia de geração de caixa e desalavancagem. Os ativos são da antiga safra de projetos Luggo.\n\n**Trecho-chave:** \"A operação de venda desses ativos encerra o ciclo da antiga safra de projetos da Luggo.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 09/07/2026\n\n**O QUE aconteceu:** MRV Engenharia e Participações S.A. divulgou dados preliminares e não auditados do segundo trimestre de 2026, destacando a geração de caixa.\n\n**Resumo:** A companhia registrou uma forte geração de caixa no semestre, impulsionada pela venda de ativos da Resia e pelo resultado da operação de incorporação brasileira.\n\n**Trecho-chave:** \"MRV&CO registrou forte geração de caixa no semestre, impulsionada pela venda de ativos da Resia, dentro de seu plano de desalavancagem, e pelo resultado da operação de incorporação brasileira.\" (p. 3)\n\n---\n\n### Conexão com o contexto:\n- A geração de caixa mencionada no comunicado do 09/07/2026 está alinhada com a estratégia de desalavancagem e geração de caixa da MRV&CO, como destacado no comunicado do 15/07/2026."
+  },
+  "modelo": "qwen2.5:7b"
+}

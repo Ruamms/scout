@@ -1,0 +1,21 @@
+{
+  "ticker": "INTB3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:43:12",
+  "comunicados": {
+    "ids": [
+      306570038969604314,
+      876653515305226875
+    ],
+    "datas": [
+      "13/07/2026",
+      "06/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU: Reafirmação do Rating AA-(bra) pela Fitch com Perspectiva Estável\n\n**Resumo:** A Intelbras recebeu a confirmação de seu rating nacional de longo prazo pelo rating agency Fitch, mantendo o nível \"AA-(bra)\" e perspectiva estável.\n\n**Trecho-chave:**\n\"A INTELBRAS S.A. INDÚSTRIA DE TELECOMUNICAÇÃO ELETRÔNICA BRASILEIRA (B3: INTB3) (”Companhia” ou ”Intelbras”), comunica aos seus acionistas e ao mercado em geral, em atendimento ao disposto no artigo 33, XVI, da Resolução CVM nº 80, de 29 de março de 2022, que a agência de rating Fitch Ratings (“Fitch”) reafirmou, nesta data, o Rating Nacional de Longo Prazo “AA- (bra)” à Companhia, com Perspectiva Estável (“Relatório”).\"\n\n---\n\n### O QUE ACONTECEU: Apresentação dos Resultados do Primeiro Trimestre de 2026\n\n**Resumo:** A Intelbras apresentou seus resultados financeiros para o primeiro trimestre de 2026, mostrando crescimento significativo em receita líquida, EBITDA e lucro líquido.\n\n**Trecho-chave:**\n\"Destaques 1T26\nReceita Líquida (R$ mil)\nR$ 1.110.638\n20,6% 1T26/1T25\nEBITDA (R$ mil)\nR$ 156.260\n92,6% 1T26/1T25\nLucro Líquido (R$ mil)\nR$ 153.090\n148,5%1T26/1T25\"\n\n**Conexão com o Contexto:** O forte crescimento nos indicadores financeiros do primeiro trimestre de 2026 pode contribuir para a manutenção do rating positivo da Intelbras, conforme mencionado no comunicado ao mercado."
+  },
+  "modelo": "qwen2.5:7b"
+}

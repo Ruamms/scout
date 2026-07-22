@@ -1,0 +1,21 @@
+{
+  "ticker": "HAPV3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:41:18",
+  "comunicados": {
+    "ids": [
+      590085115534901541,
+      1000856286272059247
+    ],
+    "datas": [
+      "11/05/2026",
+      "04/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### COMUNICADO AO MERCADO entregue em 04/05/2026\n\n**Data:** 04 de maio de 2026  \n**Título:** Hapvida Participações e Investimentos S.A. anuncia aleração na participação acionária  \n**Resumo:** A Hapvida informa que os acionistas controladores realizaram negociações envolvendo ações ordinárias, passando a deter aproximadamente 47,87% do capital social da empresa.  \n**Trecho-chave:**\n\"Os acionistas controladores da Companhia, informam que realizaram negociações relevantes envolvendo ações ordinárias de emissão da Companhia nos termos do artigo 12 da Resolução CVM 44, passando a deter, em conjunto: (i) 194.876.306 ações ordinárias de emissão da Companhia, (ii) 2.000.000 de ações ordinárias de emissão da Companhia por meio de operações de empréstimo de ações, (iii) exposição, por meio de instrumentos derivativos com previsão de liquidação física, correspondente a 40.775.000 ações ordinárias subjacentes de emissão da Companhia; e (iv) direitos sobre 2.965.403 ações ordinárias de emissão da Companhia, resultando em participação agregada de 240.616.709 ações ordinárias, representando aproximadamente 47,87% do capital social da Companhia.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 11/05/2026\n\n**Data:** 12 de maio de 2026  \n**Título:** Hapvida apresenta resultados do primeiro trimestre de 2026  \n**Resumo:** A Hapvida divulgou os resultados financeiros do primeiro trimestre de 2026, demonstrando crescimento em receita líquida e benefícios, mas uma queda no Ebitda ajustado.  \n**Trecho-chave:**\n\"Apresentação de Resultados\n1T26\n\n[página 3]\nReceita Líquida\nR$7.892MM\nBeneficiários de Saúde (EoP)\n8.684,5k\nBeneficiários de Odonto (EoP)\n7.190,0k\nTicket Médio Mensal Saúde\nR$305,0\nSinistralidade Caixa\n72,2%\nEbitda Ajustado\nR$803MM\nLucro Líquido Ajustado\nR$244MM\n\nA receita líquida aumentou 5,2% em relação ao mesmo período do ano anterior, e o ticket médio mensal de saúde cresceu 7,3%. No entanto, a sinistralidade caixa diminuiu para 72,2%, enquanto o Ebitda ajustado caiu 20,0%.\"\n\n**Conexão com indicadores:** Os resultados financeiros apresentados refletem diretamente na receita líquida e no ticket médio mensal de saúde, que são indicadores importantes do desempenho operacional da empresa."
+  },
+  "modelo": "qwen2.5:7b"
+}

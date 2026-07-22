@@ -1,0 +1,24 @@
+{
+  "ticker": "CPFE3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:23:02",
+  "comunicados": {
+    "ids": [
+      132020379992721549,
+      781288393057086985,
+      542213921499414142
+    ],
+    "datas": [
+      "08/05/2026",
+      "09/06/2026",
+      "15/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 08/05/2026\n\n**O que aconteceu:** Renovação de Concessão de Distribuição.\n\n**Resumo:** CPFL Energia comunicou a renovação dos contratos de concessão para as concessionárias CPFL Piratininga, CPFL RGE e CPFL Paulista, prorrogando por 30 anos a partir das datas específicas mencionadas.\n\n**Trecho-chave:**\n\"CPFL Piratininga, CPFL RGE e CPFL Paulista (em conjunto, as \"Concessionárias\") concluíram o processo de assinatura dos Termos Aditivos aos respectivos Contratos de Concessão de Serviço Público de Distribuição de Energia Elétrica, com efeitos imediatos das cláusulas contratuais e efetivação da prorrogação da concessão por mais 30 (trinta) anos a partir de 23 de outubro de 2028 para a CPFL Piratininga, 6 de novembro de 2027 para a CPFL RGE e 20 de novembro de 2027 para a CPFL Paulista.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 15/05/2026\n\n**O que aconteceu:** Resultados do Primeiro Trimestre de 2026.\n\n**Resumo:** CPFL Energia apresentou resultados positivos para o primeiro trimestre, com crescimento no EBITDA e lucro líquido. Também destacou a renovação das concessões de distribuição.\n\n**Trecho-chave:**\n\"EBITDA R$ 3.860 MM (+0,2% no 1T26), Lucro Líquido R$ 1.909 MM (+18,2% no 1T26).\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 09/06/2026\n\n**O que aconteceu:** Definição das Atribuições dos Diretores Executivos.\n\n**Resumo:** CPFL Energia detalhou as atribuições dos membros da Diretoria Executiva, incluindo o Chief Executive Officer e os Vice Presidentes.\n\n**Trecho-chave:**\n\"Os deveres atribuídos aos membros da Diretoria Executiva são: (a) Ao Diretor Presidente: conduzir e liderar todos os negócios e a administração geral da Companhia; promover o desenvolvimento e a execução da estratégia corporativa, incluindo corporate risk and people management, e regulatory management. O Diretor Presidente tem como seus deveres exclusivos: (a.i) convocar e presidir as reuniões da Diretoria Executiva.\"\n\n---\n\n**Conexão com o Contexto:** Os resultados positivos apresentados no primeiro trimestre de 2026 refletem a estabilidade operacional garantida pela renovação das concessões de distribuição, conforme comunicado em 08/05/2026."
+  },
+  "modelo": "qwen2.5:7b"
+}

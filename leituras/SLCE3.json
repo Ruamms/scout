@@ -1,0 +1,30 @@
+{
+  "ticker": "SLCE3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:07:16",
+  "comunicados": {
+    "ids": [
+      491395154797619101,
+      719653670581042934,
+      383772848562787998,
+      698470476839807561,
+      1087223026823105169
+    ],
+    "datas": [
+      "09/07/2026",
+      "08/07/2026",
+      "26/06/2026",
+      "15/07/2026",
+      "18/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE aconteceu em 09/07/2026\n\n**Título:** SLC Agrícola Conclui Acordo para Alienação do Bloco Mato Grosso\n\n**Resumo:** A SLC Agrícola concluiu um acordo com o Grupo Radar para a composição consensual da alienação do portfólio de imóveis rurais denominado \"Bloco Mato Grosso\". A Companhia adquiriu 8,9 mil hectares agricultáveis.\n\n**Trecho-chave:** \"No acordo celebrado entre as partes, a Companhia adquirirá 8,9 mil hectares agricultáveis.\" (p. 1)\n\n---\n\n### O QUE aconteceu em 08/07/2026\n\n**Título:** SLC Agrícola Conclui Acordo para Alienação do Bloco Mato Grosso\n\n**Resumo:** A SLC Agrícola concluiu um acordo com o Grupo Radar para a composição consensual da alienação do portfólio de imóveis rurais denominado \"Bloco Mato Grosso\". A Companhia adquiriu 8,9 mil hectares agricultáveis.\n\n**Trecho-chave:** \"No acordo celebrado entre as partes, a Companhia adquirirá 8,9 mil hectares agricultáveis.\" (p. 1)\n\n---\n\n### O QUE aconteceu em 26/06/2026\n\n**Título:** SLC Agrícola Exerce Direito de Preferência sobre Bloco Mato Grosso\n\n**Resumo:** A SLC Agrícola exerceu o direito de preferência para a aquisição da totalidade dos imóveis rurais que compõem o portfólio denominado \"Bloco Mato Grosso\". O valor total da transação foi de R$ 1,85 bilhão.\n\n**Trecho-chave:** \"A Companhia comunica que exerceu de forma irrevogável e irretratável, o direito de preferência para a aquisição da totalidade dos imóveis rurais que compõem o portfólio denominado “Bloco Mato Grosso”.\" (p. 1)\n\n---\n\n### O QUE aconteceu em 15/07/2026\n\n**Título:** SLC Agrícola Executivo Participa de Podcast sobre Estratégia Countercíclica\n\n**Resumo:** O executivo Gustavo Lunardi, Diretor de Suprimentos, Sementes e Mecanização da SLC Agrícola, participou do podcast \"Pé no Barro\" para discutir como a empresa usa uma estratégia countercíclica para crescer quando o mercado recua.\n\n**Trecho-chave:** \"Gustavo Lunardi – Diretor de Suprimentos, Sementes e Mecanização\" (p. 1)\n\n---\n\n### O QUE aconteceu em 18/06/2026\n\n**Título:** SLC Agrícola Recebe Notificação para Exercício de Direito de Preferência\n\n**Resumo:** A SLC Agrícola recebeu notificação sobre a operação de alienação de propriedades integrantes do portfólio do Grupo Radar, onde a Companhia possui um contrato de arrendamento vigente correspondente a aproximadamente 17,6 mil hectares úteis para exploração agrícola.\n\n**Trecho-chave:** \"A SLC Agrícola (B3: SLCE3; ADRs: SLCJY; Bloomberg: SLCE3:BZ; Refinitiv: SLCE3.SA) (“SLC Agrícola” ou “Companhia”), em cumprimento à Resolução CVM nº 44/2021, comunica aos seus acionistas e ao mercado em geral que recebeu a notificação acerca da operação de alienação de propriedades integrantes do portfólio do Grupo Radar.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

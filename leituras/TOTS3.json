@@ -1,0 +1,24 @@
+{
+  "ticker": "TOTS3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T18:11:58",
+  "comunicados": {
+    "ids": [
+      104646538427124852,
+      991458450167060486,
+      508789506635015774
+    ],
+    "datas": [
+      "09/06/2026",
+      "15/07/2026",
+      "13/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 09/06/2026\n\n**O que aconteceu:** A TOTVS aprovou o pagamento de juros sobre capital próprio (JCP).\n\n**Resumo:** A Companhia decidiu pagar R$0,18 por ação, totalizando aproximadamente R$104,3 milhões.\n\n**Trecho-chave:**\n\"O Conselho de Administração, em reunião realizada nesta data, aprovou o pagamento de juros sobre capital próprio (“JCP”), correspondente a R$0,18 (dezoito centavos) por ação da Companhia (\"Ações\"), no montante total bruto de aproximadamente R$104,3 milhões.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O que aconteceu:** O programa de recompra de ações da TOTVS foi encerrado.\n\n**Resumo:** A Companhia adquiriu 20 milhões de ações, totalizando R$32,17 por ação, e encerrou o programa após atingir o limite máximo estabelecido pelo Conselho de Administração.\n\n**Trecho-chave:**\n\"A TOTVS S.A. (B3: TOTS3) (“Companhia” ou “TOTVS”) comunica, em observância ao disposto na Resolução CVM n.º 44/2021 e na Resolução CVM n.º 77/2022, o encerramento, nesta data, do programa de recompra de ações de emissão da própria Companhia...\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 13/07/2026\n\n**O que aconteceu:** A TOTVS divulgou uma apresentação institucional com perspectivas de negócios e projeções operacionais.\n\n**Resumo:** A Companhia apresentou sua história, estratégia e números importantes, incluindo a liderança no mercado brasileiro de sistemas de gestão.\n\n**Trecho-chave:**\n\"As informações contidas nesta apresentação, relativas às perspectivas de negócios, projeções e metas operacionais e financeiras da TOTVS, constituem-se em crenças e premissas da Diretoria da Companhia...\"\n\n---\n\n**Conexão com o contexto:**\n- O pagamento do JCP (Fato Relevante) pode impactar os resultados financeiros da companhia, que foram apresentados na apresentação institucional."
+  },
+  "modelo": "qwen2.5:7b"
+}

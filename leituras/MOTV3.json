@@ -1,0 +1,30 @@
+{
+  "ticker": "MOTV3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:51:30",
+  "comunicados": {
+    "ids": [
+      313696533055007747,
+      884320274865841892,
+      761346095441944821,
+      745224809948843337,
+      706391997092020746
+    ],
+    "datas": [
+      "01/07/2026",
+      "25/06/2026",
+      "15/06/2026",
+      "07/07/2026",
+      "10/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 01/07/2026\n\n**O que aconteceu:** Termo Aditivo Modificativo nº 27/2026 ao Contrato de Concessão celebrado entre a Renovias e o Estado de São Paulo.\n\n**Resumo:** A Motiva Infraestrutura de Mobilidade S.A. informa sobre um termo aditivo que prorroga o contrato de concessão do Sistema Rodoviário Mogiana, assegurando a continuidade dos serviços até a transferência para o novo concessionário vencedor do certame licitatório.\n\n**Trecho-chave:** \"O referido Termo Aditivo Modificativo nº 27/2026 tem por objeto (i) formalizar a prorrogação do prazo contratual pelo período necessário à assunção do Sistema Rodoviário pelo novo operador, vencedor do certame licitatório relativo à concessão da Rota Mogiana, que abrange os trechos atualmente explorados pela Renovias; e (ii) fixar o novo termo final da concessão em 31 de outubro de 2026.\"\n\n### FATO RELEVANTE entregue em 25/06/2026\n\n**O que aconteceu:** Nova oferta vinculante apresentada pelo Banco Bradesco BBI S.A. para aquisição das ações ordinárias da Motiva.\n\n**Resumo:** A Motiva Infraestrutura de Mobilidade S.A. recebeu uma nova oferta vinculante do Banco Bradesco BBI S.A., que substituiu a anterior e representa 14,86% do capital social da companhia.\n\n**Trecho-chave:** \"A Companhia informa que os termos e condições da nova oferta serão submetidos pelo Grupo Mover aos demais acionistas signatários do Acordo de Acionistas da Motiva, para fins de eventual exercício do direito de preferência.\"\n\n### FATO RELEVANTE entregue em 15/06/2026\n\n**O que aconteceu:** Termo Aditivo 11 ao Contrato de Concessão celebrado entre a ViaQuatro e o Estado de São Paulo.\n\n**Resumo:** A Motiva Infraestrutura de Mobilidade S.A. informa sobre um termo aditivo que formaliza a assunção dos investimentos necessários para a implantação do sistema de sinalização e contratação de certificação de segurança na Linha 4 do Metrô de São Paulo.\n\n**Trecho-chave:** \"O referido Termo Aditivo 11 formaliza a assunção, pela ViaQuatro, dos investimentos necessários à implantação do sistema de sinalização e à contratação de certificação de segurança para a extensão da Linha 4 até o município de Taboão da Serra.\"\n\n### COMUNICADO AO MERCADO entregue em 07/07/2026\n\n**O que aconteceu:** Informações consolidadas de tráfego das rodovias e vias urbanas.\n\n**Resumo:** A Motiva Infraestrutura de Mobilidade S.A. divulga dados de tráfego atualizados, mostrando um aumento no volume de veículos equivalentes e passageiros transportados em suas rodovias e vias urbanas comparado ao mesmo período do ano anterior.\n\n**Trecho-chave:** \"Veículos Equivalentes (em milhares) jun/25 jun/26 Var. % jan - jun/25 jan - jun/26 Var. % AutoBAn 26,447 26,799 1.3% 157,325 160,642 2.1%\" \n\n### COMUNICADO AO MERCADO entregue em 10/06/2026\n\n**O que aconteceu:** Informações consolidadas de tráfego das rodovias e vias urbanas.\n\n**Resumo:** A Motiva Infraestrutura de Mobilidade S.A. divulga dados de tráfego atualizados, mostrando um aumento no volume de veículos equivalentes e passageiros transportados em suas rodovias e vias urbanas comparado ao mesmo período do ano anterior.\n\n**Trecho-chave:** \"Veículos Equivalentes (em milhares) mai/25 mai/26 Var. % jan - mai/25 jan - mai/26 Var. % AutoBAn 27,487 27,843 1.3% 130,878 133,843 2.3%\""
+  },
+  "modelo": "qwen2.5:7b"
+}

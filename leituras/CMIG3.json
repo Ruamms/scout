@@ -1,0 +1,24 @@
+{
+  "ticker": "CMIG3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:20:41",
+  "comunicados": {
+    "ids": [
+      584424820475857894,
+      668573958362708826,
+      552356247572422761
+    ],
+    "datas": [
+      "12/06/2026",
+      "14/07/2026",
+      "26/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 12/06/2026\n\n**O QUE aconteceu:** Nova composição da Diretoria Executiva.\n\n**Resumo:** A Cemig nomeou novos Vice-presidentes para as funções de Finanças e Relações com Investidores, Geração e Transmissão, Distribuição, Comercialização, Tecnologia da Informação e Relações Institucionais.\n\n**Trecho-chave:**\n\"VICE-PRESIDENTE DE FINANÇAS E DE RELAÇÕES COM INVESTIDORES  \nLeonardo George Magalhães  \n... Possui mais de 20 anos de experiência em posições de liderança na área financeira, além de atuação em conselhos de administração.\"\n\n### COMUNICADO AO MERCADO entregue em 14/07/2026\n\n**O QUE aconteceu:** Redução da participação relevante do Grupo UBS em derivativos.\n\n**Resumo:** O Grupo UBS reduziu sua posição em derivativos referenciados nas ações preferenciais da Cemig de 10,17% para 0,03%.\n\n**Trecho-chave:**\n\"A nova posição corresponde a derivativos com liquidação financeira referenciados em ações preferenciais de emissão da CEMIG, passando de 10,17% para 0,03%, conforme correspondência anexa.\"\n\n### COMUNICADO AO MERCADO entregue em 26/06/2026\n\n**O QUE aconteceu:** Aumento da participação relevante do Grupo UBS em derivativos.\n\n**Resumo:** O Grupo UBS aumentou sua posição em derivativos referenciados nas ações preferenciais da Cemig de 9,96% para 10,17%.\n\n**Trecho-chave:**\n\"A nova posição corresponde a derivativos com liquidação financeira equivalentes a 10,17% das ações preferenciais da CEMIG, conforme correspondência anexa.\"\n\n---\n\n**Conexão com o contexto:** As alterações na participação relevante do Grupo UBS em derivativos podem impactar os indicadores de mercado e a percepção dos investidores sobre a volatilidade associada à Cemig."
+  },
+  "modelo": "qwen2.5:7b"
+}

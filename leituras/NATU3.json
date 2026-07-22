@@ -1,0 +1,30 @@
+{
+  "ticker": "NATU3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:55:09",
+  "comunicados": {
+    "ids": [
+      985171931642513254,
+      1059983935281814739,
+      730013594113082187,
+      1017466758776750770,
+      209590431220298376
+    ],
+    "datas": [
+      "08/07/2026",
+      "02/07/2026",
+      "02/07/2026",
+      "14/05/2026",
+      "12/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 08/07/2026\n\n**O QUE aconteceu:** Resultados Preliminares do 2º Trimestre de 2026.\n\n**Resumo:** A Natura Cosméticos S.A. informou resultados preliminares para o segundo trimestre de 2026, com uma receita líquida menor e melhora na margem EBITDA.\n\n**Trecho-chave:**\n\"Conforme mencionado na divulgação de resultados do 1T-26, o ambiente de consumo desaquecido no Brasil, somado a desafios e ajustes operacionais internos, pressionou a receita líquida do segundo trimestre de 2026 no país em uma magnitude maior do que a inicialmente prevista. A Companhia estima que a receita líquida consolidada fique entre R$ 5,1 bilhões e R$ 5,2 bilhões, implicando uma redução anual entre 9% e 10%. Quanto à rentabilidade, espera-se uma expansão trimestral (T/T) na margem EBITDA reportada.\"\n\n---\n\n### FATO RELEVANTE entregue em 02/07/2026\n\n**O QUE aconteceu:** Aquisição de Participação Relevante pela Advent.\n\n**Resumo:** A Natura Cosméticos S.A. informou que o fundo de investimento Lotus Fundo de Investimento em Participações Multiestratégia – Responsabilidade Limitada, detido por veículos geridos pela Advent International, passou a ser titular de 6,6% do capital social da Companhia.\n\n**Trecho-chave:**\n\"A Companhia recebeu, em 1º de julho de 2026, comunicação do LOTUS FUNDO DE INVESTIMENTO EM PARTICIPAÇÕES MULTIESTRATÉGIA – RESPONSABILIDADE LIMITADA, fundo de investimento detido por veículos geridos pela Advent International (\"Investidor\"), informando que passou a ser titular de 90.676.500 de ações de emissão da Natura Cosméticos S.A., que representam 6,6% do capital social da Companhia.\"\n\n---\n\n### FATO RELEVANTE entregue em 02/07/2026\n\n**O QUE aconteceu:** Aprovação do Programa de Recompra de Ações.\n\n**Resumo:** O Conselho de Administração aprovou um novo programa de recompra de ações da Natura Cosméticos S.A., com início em 3 de julho de 2026, visando adquirir até 2,1% do total de ações de emissão da Companhia.\n\n**Trecho-chave:**\n\"Nos termos do Programa de Recompra 2025, desde sua aprovação até a presente data, a Companhia adquiriu em bolsa de valores, a preços de mercado, o total de 5.562.500 ações ordinárias de emissão da Companhia. Informa, ainda, aos seus acionistas e ao mercado em geral que seu Conselho de Administração, em reunião realizada em 02 de julho de 2026, aprovou a abertura de um novo programa de recompra de ações da Companhia, com início de vigência em 03 de julho 2026.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 14/05/2026\n\n**O QUE aconteceu:** Resultados do 1º Trimestre de 2026.\n\n**Resumo:** A Natura Cosméticos S.A. divulgou resultados preliminares para o primeiro trimestre de 2026, com uma receita líquida menor e pressão na rentabilidade.\n\n**Trecho-chave:**\n\"Conforme mencionado na divulgação de resultados do 1T-26, a Companhia estima que a receita líquida consolidada fique entre R$ 5,1 bilhões e R$ 5,2 bilhões, implicando uma redução anual entre 9% e 10%. Quanto à rentabilidade, espera-se uma expansão trimestral (T/T) na margem EBITDA reportada.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O QUE aconteceu:** Resultados do 1º Trimestre de 2026.\n\n**Resumo:** A Natura Cosméticos S.A. divulgou resultados preliminares para o primeiro trimestre de 2026, com uma receita líquida menor e pressão na rentabilidade.\n\n**Trecho-chave:**\n\"Conforme mencionado na divulgação de resultados do 1T-26, a Companhia estima que a receita líquida consolidada fique entre R$ 5,1 bilhões e R$ 5,2 bilhões, implicando uma redução anual entre 9% e 10%. Quanto à rentabilidade, espera-se uma expansão trimestral (T/T) na margem EBITDA reportada.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

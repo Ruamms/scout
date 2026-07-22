@@ -1,0 +1,21 @@
+{
+  "ticker": "MGLU3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:50:09",
+  "comunicados": {
+    "ids": [
+      953069669660963277,
+      110350334880095203
+    ],
+    "datas": [
+      "30/06/2026",
+      "27/05/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### 30/06/2026 - Renúncia de membro do Conselho de Administração e designação de Conselheiro Substituto\n\nA companhia informa a renúncia da Sra. Inês Corrêa de Souza ao cargo de membro efetivo do Conselho de Administração, mantendo-a como membro do Comitê de Finanças e Crédito ao Consumidor - COFIC. A Companhia nomeou a Sra. Priscyla Lopes Alves Laham para substituir a Sra. Inês Corrêa de Souza.\n\n\"Priscyla Lopes Alves Laham é Presidente da Microsoft Brasil desde janeiro de 2025, acumulando mais de 25 anos de experiência nas indústrias de tecnologia e cloud, eletrônicos de consumo e serviços digitais.\"\n\n### 27/05/2026 - Teleconferência de Resultados 1T26\n\nA companhia divulgou os resultados do primeiro trimestre de 2026. Os principais pontos incluem o excelente desempenho das lojas físicas, aumento da participação do CDC nas vendas, rigoroso controle das despesas e geração de Caixa Operacional de R$2,0 bilhões nos últimos doze meses.\n\n\"Margem Bruta: 30,8% (R$718 Mi); EBITDA Ajustado: R$6,2 Bi; Caixa total: R$15 bilhões em vendas no 1T26.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

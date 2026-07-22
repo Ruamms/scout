@@ -1,0 +1,24 @@
+{
+  "ticker": "COGN3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:22:17",
+  "comunicados": {
+    "ids": [
+      107720645998563194,
+      33024101467855977,
+      856101207945817121
+    ],
+    "datas": [
+      "22/06/2026",
+      "26/06/2026",
+      "07/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 22/06/2026\n\n**O que aconteceu:** A Cogna Educação S.A. encerrou o contrato com a Itaú Corretora de Valores e contratou a BTG Pactual para ser formador de mercado.\n\n**Resumo:** A companhia está buscando aumentar a liquidez das suas ações através da contratação de um novo formador de mercado.\n\n**Trecho-chave:**\n\"Os serviços do BTG PACTUAL CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A. terão início no dia 23 de junho de 2026.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 26/06/2026\n\n**O que aconteceu:** A Cogna Educação S.A. adquiriu 47,0% do capital social da Educbank Pagamentos Educacionais S.A.\n\n**Resumo:** A aquisição visa fortalecer as soluções financeiras e tecnológicas oferecidas pela companhia.\n\n**Trecho-chave:**\n\"A Companhia manterá o mercado informado a respeito de eventuais desdobramentos relevantes.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 07/05/2026\n\n**O que aconteceu:** A Cogna Educação S.A. divulgou os resultados do primeiro trimestre de 2026.\n\n**Resumo:** Os resultados indicam crescimento significativo nas receitas, lucro líquido e geração de caixa.\n\n**Trecho-chave:**\n\"Lucro Líquido: R$ 141,4 MM (+48,7% vs. 1T25)\" (p. 3)\n\n---\n\n### FATO RELEVANTE entregue em 07/05/2026\n\n**O que aconteceu:** A Cogna Educação S.A. divulgou os resultados do primeiro trimestre de 2026.\n\n**Resumo:** Os resultados indicam crescimento significativo nas receitas, lucro líquido e geração de caixa.\n\n**Trecho-chave:**\n\"Lucro Líquido: R$ 141,4 MM (+48,7% vs. 1T25)\" (p. 3)\n\n---\n\n### FATO RELEVANTE entregue em 07/05/2026\n\n**O que aconteceu:** A Cogna Educação S.A. divulgou os resultados do primeiro trimestre de 2026.\n\n**Resumo:** Os resultados indicam crescimento significativo nas receitas, lucro líquido e geração de caixa.\n\n**Trecho-chave:**\n\"Lucro Líquido: R$ 141,4 MM (+48,7% vs. 1T25)\" (p. 3)"
+  },
+  "modelo": "qwen2.5:7b"
+}

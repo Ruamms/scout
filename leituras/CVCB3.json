@@ -1,0 +1,24 @@
+{
+  "ticker": "CVCB3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:27:35",
+  "comunicados": {
+    "ids": [
+      977373154193963425,
+      437369234586930667,
+      185393498727493137
+    ],
+    "datas": [
+      "10/04/2026",
+      "14/05/2026",
+      "05/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 10/04/2026\n\n**O que aconteceu:** A CVC Corp celebrou um acordo de acionistas com vários investidores, estabelecendo regras para o exercício do direito de voto e a indicação de membros ao Conselho de Administração.\n\n**Resumo:** A companhia comunicou a celebração de um acordo entre seus principais acionistas, que incluiu regras sobre o exercício do direito de voto e a indicação de conselheiros. O acordo está sujeito à aprovação em assembleia geral.\n\n**Trecho-chave:** \"A Companhia recebeu a carta de renúncia do Sr. Tiago Ring ao cargo de membro do Conselho de Administração, sendo que este permanecerá no exercício de suas funções até a posse do respectivo sucessor.\" (p. 2)\n\n### COMUNICADO AO MERCADO entregue em 14/05/2026\n\n**O que aconteceu:** Não há informações específicas sobre eventos recentes ou resultados financeiros neste comunicado.\n\n**Resumo:** O documento apresenta uma introdução genérica e declarações prospectivas, sem detalhes relevantes para investidores.\n\n### COMUNICADO AO MERCADO entregue em 05/05/2026\n\n**O que aconteceu:** A Assembleia Geral Extraordinária aprovou o Acordo de Acionistas e elegeram um novo membro do Conselho de Administração.\n\n**Resumo:** A assembleia aprovou o acordo entre os acionistas vinculados, permitindo a renúncia OPA. Além disso, foi eleito Fernando Antonio Kulnig Cinelli como novo conselheiro da CVC Corp.\n\n**Trecho-chave:** \"A Assembleia aprovou, ainda, a eleição do Sr. Fernando Antonio Kulnig Cinelli como membro efetivo do Conselho de Administração da Companhia, em substituição ao Sr. Tiago Ring.\" (p. 1)\n\n**Conexão com o contexto:** Este comunicado confirma a eficácia do Acordo de Acionistas mencionado no Fato Relevante anterior e informa sobre as mudanças no Conselho de Administração."
+  },
+  "modelo": "qwen2.5:7b"
+}

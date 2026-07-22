@@ -1,0 +1,24 @@
+{
+  "ticker": "ALOS3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:08:20",
+  "comunicados": {
+    "ids": [
+      724956303448371887,
+      128163765017891286,
+      543087935316293506
+    ],
+    "datas": [
+      "10/04/2026",
+      "07/07/2026",
+      "23/06/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### 10/04/2026 - Celebração de Memorando de Entendimento para constituição de Fundo de Investimento Imobiliário\n\nA ALLOS S.A. celebrou um Memorando de Entendimento (MOU) com a Kinea Investimentos Ltda., visando a criação do Kinea ALLOS Malls FII, um fundo de investimento imobiliário focado em shoppings centers.\n\n**Resumo:** A ALLOS e a Kinea planejam criar um fundo para aquisição de participações em shoppings centers maduros, com potencial captação entre R$789,5 milhões e R$1.973,7 milhões.\n\n**Trecho-chave:**\n\"A captação será destinada, principalmente, à aquisição de participações em ativos maduros do portfólio da ALLOS (Portfólio Alvo) a um cap rate médio ao redor de 9,5%.\"\n\n### 23/06/2026 - Esclarecimento sobre Questionamentos da CVM\n\nA ALLOS esclareceu que o valor mencionado na reportagem do Estadão Online (R$700 milhões) refere-se à receita total consolidada dos projetos multiuso, enquanto a receita atribuível à ALLOS é R$539 milhões.\n\n**Resumo:** A ALLOS esclareceu que a informação divulgada em uma reportagem sobre receitas de projetos multiuso não alterou suas projeções anteriores e já era conhecida do mercado.\n\n**Trecho-chave:**\n\"O montante mencionado na reportagem corresponde à receita total consolidada (100%) dos ativos relativos aos projetos multiuso. Referidos projetos estão vinculados a shoppings que possuem outros sócios, que participam proporcionalmente das receitas geradas.\"\n\n### 07/07/2026 - Obtenção do Selo Pró-Ética pela ALLOS\n\nA ALLOS foi reconhecida com o Selo Empresa Pró-Ética 2025-2026, concedido pela Controladoria-Geral da União (CGU) em parceria com o Instituto Ethos.\n\n**Resumo:** A ALLOS recebeu um selo de integridade empresarial, sendo a única empresa do setor de shopping centers reconhecida na edição deste ano.\n\n**Trecho-chave:**\n\"O selo Pró-Ética é concedido a organizações que demonstram o comprometimento efetivo com elevados padrões de ética, integridade e conformidade.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

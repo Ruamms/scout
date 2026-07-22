@@ -1,0 +1,27 @@
+{
+  "ticker": "ECOR3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:30:38",
+  "comunicados": {
+    "ids": [
+      924841667680251700,
+      169345568351065803,
+      1022852240972434726,
+      604896096040055995
+    ],
+    "datas": [
+      "28/05/2026",
+      "27/05/2026",
+      "06/07/2026",
+      "03/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 28/05/2026\n\n**O que aconteceu:** EcoRodovias informou sobre o Contrato de Transição celebrado com a Autoridade Portuária de Santos (APS).\n\n**Resumo:** A EcoRodovias e sua controlada direta, Ecoporto Santos, assinaram um contrato para garantir a continuidade das operações por 12 meses. Após este período, se não houver conclusão da licitação para o arrendamento do local, a APS pode autorizar uma nova celebração de contrato.\n\n**Trecho-chave:** \"O Contrato de Transição assegura a continuidade das operações e vigorará pelo prazo de 12 (doze) meses, a partir de 31 de maio de 2026.\"\n\n### FATO RELEVANTE entregue em 27/05/2026\n\n**O que aconteceu:** EcoRodovias e sua controlada direta, EcoRodovias Concessões e Serviços S.A., informaram sobre a homologação judicial do Acordo Global de Resolução de Controvérsias.\n\n**Resumo:** O acordo resolvê pendências relacionadas às concessões das rodovias no Paraná, incluindo encerramento de processos administrativos e judiciais, além da quitação de desequilíbrios econômicos-financeiros. As concessionárias se comprometeram a realizar obras e pagamentos.\n\n**Trecho-chave:** \"O Acordo Global equaciona as pendências relativas aos contratos de concessão das Concessionárias do Paraná, contemplando o encerramento (i) dos processos administrativos e ações judiciais entre as partes; e (ii) dos eventos de desequilíbrio da equação econômico-financeira dos Contratos de Concessão que não haviam sido solucionados quando do encerramento das concessões.\"\n\n### COMUNICADO AO MERCADO entregue em 06/07/2026\n\n**O que aconteceu:** EcoRodovias informou sobre o desempenho do tráfego de veículos em junho e no acumulado de 2026.\n\n**Resumo:** O volume de tráfego total comparável aumentou 2,3% em junho/2026 em comparação com junho/2025. Em termos consolidados, o aumento foi de 12,1%.\n\n**Trecho-chave:** \"O volume de tráfego total comparável aumentou 2,3% em junho/2026 em relação a junho/2025.\"\n\n### COMUNICADO AO MERCADO entregue em 03/07/2026\n\n**O que aconteceu:** EcoRodovias e sua controlada direta, EcoRodovias Concessões e Serviços S.A., assinaram o Contrato de Concessão para a Ecovias das Gerais.\n\n**Resumo:** A Ecovias das Gerais foi assumida pelo prazo de 30 anos, totalizando 734,9 km de rodovia. Esta aquisição consolidou 12 concessões rodoviárias da EcoRodovias.\n\n**Trecho-chave:** \"A Ecovias das Gerais, localizada em Minas Gerais, conecta os municípios de Montes Claros e Governador Valadares à divisa com a Bahia e apresenta sinergias com a Ecovias Rio Minas e Ecovias Norte Minas.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

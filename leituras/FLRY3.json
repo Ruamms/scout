@@ -1,0 +1,30 @@
+{
+  "ticker": "FLRY3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:37:07",
+  "comunicados": {
+    "ids": [
+      442653039930432312,
+      1075200621660175851,
+      1133317436587090517,
+      1074679900750273183,
+      1112759828741106752
+    ],
+    "datas": [
+      "29/05/2026",
+      "13/04/2026",
+      "23/03/2026",
+      "10/07/2026",
+      "07/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 29/05/2026\n\n**O QUE aconteceu:** Fleury S.A. concluiu a aquisição do FEMME Laboratório da Mulher.\n\n**Resumo:** A Fleury adquiriu 100% das ações de emissão da GIP Medicina Diagnóstica, operando 12 unidades em São Paulo sob a marca \"FEMME Laboratório da Mulher\".\n\n**Trecho-chave:**\n\"A Aquisição foi aprovada pelo Conselho de Administração em 03 de novembro de 2025, pela Assembleia Geral de Acionistas do Fleury S/A realizada em 01 de dezembro de 2025 e pelo Conselho Administrativo de Defesa Econômica (CADE), tendo o trânsito em julgado de tal aprovação sido verificado em 11 de maio de 2026.\"\n\n### FATO RELEVANTE entregue em 13/04/2026\n\n**O QUE aconteceu:** Fleury S.A. encerrou as tratativas com Porto Seguro e Oncoclínicas.\n\n**Resumo:** A Fleury informou que decidiu encerrar as negociações relacionadas a uma potencial operação envolvendo Porto Seguro, Oncoclínicas e a própria Fleury.\n\n**Trecho-chave:**\n\"O Fleury informa que manterá seus acionistas e o mercado em geral informados sobre o assunto, caso seja concretizado qualquer fato novo que deva ser divulgado na forma da lei e da regulamentação da CVM.\"\n\n### FATO RELEVANTE entregue em 23/03/2026\n\n**O QUE aconteceu:** Fleury S.A. aderiu a um Term Sheet não vinculante com Porto Seguro e Oncoclínicas.\n\n**Resumo:** A Fleury assinou um termo de intenções não vinculante com Porto Seguro e Oncoclínicas para discutir uma potencial operação envolvendo as três empresas, sujeita a aprovações e condições prévias.\n\n**Trecho-chave:**\n\"Com a assinatura do aditivo, o Term Sheet passou a estabelecer que, sujeito (i) à obtenção das aprovações internas necessárias por Fleury, Porto e Oncoclínicas; (ii) à realização de uma auditoria em Oncoclínicas, com resultados satisfatórios ao Fleury e à Porto; e (iii) à assinatura dos documentos definitivos estabelecendo as bases finais da potencial operação...\"\n\n### COMUNICADO AO MERCADO entregue em 10/07/2026\n\n**O QUE aconteceu:** Fleury S.A. respondeu a uma solicitação de esclarecimentos sobre notícia divulgada na mídia.\n\n**Resumo:** A Fleury respondeu ao CVM sobre uma notícia que relatava o crescimento da empresa através de aquisições e os desafios atuais em um cenário macroeconômico mais desafiador.\n\n**Trecho-chave:**\n\"Com atuação direta em 14 estados e market share de 13% no mercado de medicina diagnóstica, o grupo Fleury enxergou nas aquisições uma avenida forte de crescimento nos últimos anos. De 2017 até agora, a empresa realizou 22 M&As, com investimentos de R$ 2,4 bilhões.\"\n\n### COMUNICADO AO MERCADO entregue em 07/05/2026\n\n**O QUE aconteceu:** Fleury S.A. divulgou seus resultados do primeiro trimestre de 2026.\n\n**Resumo:** A apresentação abordou a visão geral da empresa, destacando suas unidades de negócios e marcas, além de mencionar desafios relacionados à manutenção das margens devido às aquisições recentes.\n\n**Trecho-chave:**\n\"Com atuação direta em 14 estados e market share de 13% no mercado de medicina diagnóstica, o grupo Fleury enxergou nas aquisições uma avenida forte de crescimento nos últimos anos. De 2017 até agora, a empresa realizou 22 M&As, com investimentos de R$ 2,4 bilhões.\""
+  },
+  "modelo": "qwen2.5:7b"
+}

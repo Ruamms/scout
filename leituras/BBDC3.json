@@ -1,0 +1,24 @@
+{
+  "ticker": "BBDC3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:14:23",
+  "comunicados": {
+    "ids": [
+      796458240633326209,
+      849400885613776705,
+      623268608458603980
+    ],
+    "datas": [
+      "23/06/2026",
+      "06/05/2026",
+      "06/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### O QUE ACONTECEU: Pagamento de Juros sobre o Capital Próprio Intermediários\n**Data:** 23/06/2026  \n**Resumo:** O Conselho de Administração do Bradesco aprovou um pagamento de juros sobre o capital próprio intermediários, totalizando R$3.5 bilhões.  \n**Trecho-chave:**\n\"O Banco Bradesco S.A. (Bradesco ou Sociedade) comunica aos seus acionistas e ao mercado em geral que o Conselho de Administração, em reunião hoje realizada, aprovou proposta da Diretoria para pagamento de juros sobre o capital próprio intermediários, no valor total de R$3.500.000.000,00, sendo R$0,315359035 por ação ordinária e R$0,346894939 por ação preferencial.\"\n\n### O QUE ACONTECEU: Resultados Financeiros do 1T26\n**Data:** 06/05/2026  \n**Resumo:** Os resultados financeiros do primeiro trimestre de 2026 (1T26) mostraram um lucro líquido recorrente de R$6,8 bilhões, com uma queda de 4,5% em comparação ao quarto trimestre de 2025. As receitas totais cresceram 14,0% em termos anuais.  \n**Trecho-chave:**\n\"Lucro Líquido Recorrente\n1T26 vs. 4T25 (t/t)\n1T26 vs. 1T25 (a/a)\n4,5%\n16,1%\"\n\n### O QUE ACONTECEU: Análise Econômico-Financeira do 1T26\n**Data:** 06/05/2026  \n**Resumo:** Os resultados financeiros do primeiro trimestre de 2026 (1T26) indicaram um aumento no lucro recorrente em comparação ao ano anterior, com uma forte performance nas receitas totais. A carteira de crédito expandida cresceu e a cobertura de inadimplência permaneceu estável.  \n**Trecho-chave:**\n\"Highlights\n1Q26\nPress Release \n• Recurring net income increases 16.1% y/y, growing for nine consecutive quarters\n• Revenues surge 14.0% y/y and represent the main driver of improved profitability\n• Higher proportion of secured lending in the total loan portfolio\n• Delinquencies within estimates, solid coverage, and further reduction in restructured loans\"\n\n### Conexão com o Contexto:\nO pagamento de juros sobre o capital próprio intermediários e os resultados financeiros do 1T26 refletem a estratégia financeira e operacional do Bradesco. O aumento no lucro recorrente e as receitas totais indicam uma boa performance financeira, que pode ser sustentada pelo pagamento de juros sobre o capital próprio intermediários."
+  },
+  "modelo": "qwen2.5:7b"
+}

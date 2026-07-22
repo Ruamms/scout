@@ -1,0 +1,21 @@
+{
+  "ticker": "CSMG3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:25:24",
+  "comunicados": {
+    "ids": [
+      1012785836510397950,
+      574725960734079594
+    ],
+    "datas": [
+      "13/07/2026",
+      "26/06/2026"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### 26/06/2026 - Aquisição de Participação Acionária Relevante\n\nA Companhia de Saneamento de Minas Gerais (COPASA MG) recebeu esclarecimentos sobre a aquisição de participação acionária relevante comunicada em 15 de junho de 2026.\n\n**Resumo:**\nOs Fundos Perfin não houve alteração na sua participação desde o envio da Carta, mantendo 76.473.727 ações ordinárias ou 20,11% do capital social.\n\n**Trecho-chave:**\n\"Portanto, a Carta deve ser lida da seguinte maneira:\nii. Dessa forma, os Fundos Perfin passaram a deter, em conjunto: (a) 48.509.5611 ações ordinárias, representativas de 12,76% do capital social, de maneira direta; (b) 27.297.900 ações ordinárias, representativas de 7,18% do capital social, de maneira direta e que foram emprestadas simultaneamente às contrapartes de operações de derivativos denominadas collar referenciadas no mesmo número de ações; (c) posição comprada em contratos a termo referenciados em 74.700 ações ordinárias, com liquidação física no vencimento, representativas de 0,02% do capital social; e (d) operações de empréstimo sobre 591.566 ações ordinárias, representativas de 0,16% do capital social, em que os Fundos Perfin figuram como doadores, mas com relação às quais mantiveram os direitos políticos.\" (p. 2)\n\n---\n\n### 13/07/2026 - Crescimento no Volume de Água e Esgoto\n\nA COPASA MG anunciou o crescimento nos volumes de água e esgoto no segundo trimestre de 2026.\n\n**Resumo:**\nO volume de água medido cresceu 1,0% e o volume de esgoto 3,6%, impulsionados pela expansão da base de clientes.\n\n**Trecho-chave:**\n\"Expansão da base de clientes impulsiona crescimento de 1,0% no volume de água e de 3,6% no volume de esgoto no 2T26\nNo 2T26, os volumes medidos consolidados totalizaram 173,0 milhões de m³ de água e 123,5 milhões de m³ de esgoto, representando acréscimos de 1,0% e 3,6%, respectivamente, em relação ao 2T25.\" (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}

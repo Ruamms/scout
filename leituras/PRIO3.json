@@ -1,0 +1,24 @@
+{
+  "ticker": "PRIO3",
+  "sem_relatorio": true,
+  "verificado_em": "2026-07-22T17:57:42",
+  "comunicados": {
+    "ids": [
+      560718069000710611,
+      1108435086386779305,
+      151188023579608958
+    ],
+    "datas": [
+      "16/06/2026",
+      "02/07/2026",
+      "02/07/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 16/06/2026\n\n**O QUE aconteceu:** PRODUÇÃO DO QUARTO POÇO DE WAHOO  \n**Resumo:** A PRIO S.A. abriu o quarto poço produtor do Campo de Wahoo, estabilizando a produção em 10.000 barris de óleo por dia, completando assim a abertura de todos os poços previstos no projeto.\n\n*\"A PRIO concluiu a abertura de todos os poços produtores previstos no projeto de desenvolvimento d e Wahoo e, conforme divulgado anteriormente, limitará a produção total do Campo em 40.000 barris de óleo por dia.\"* (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 02/07/2026\n\n**O QUE aconteceu:** DADOS OPERACIONAIS PRELIMINARES E NÃO AUDITADOS DE JUNHO/2026  \n**Resumo:** A PRIO S.A. divulgou dados operacionais preliminares e não auditados referentes ao mês de junho, mostrando que a produção do campo de Frade foi impactada pela substituição de uma linha de gas lift, enquanto a produção do campo Albacora Leste foi temporariamente afetada por problemas técnicos.\n\n*\"A produção do campo de Frade foi impactada pela necessidade de substituição de uma linha de gas lift, que resultou no fechamento temporário de três poços e redução de aproximadamente 7.000 bbl/d. A retomada plena do campo está prevista para a primeira quinzena de julho.\"* (p. 1)\n\n*\"A produção do campo de Albacora Leste foi temporariamente impactada por: (i) parada parcial da planta por três dias para manutenção do sistema de resfriamento; e (ii) formação de hidrato no poço ABL-68, solucionado em 1º de julho.\"* (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 02/07/2026\n\n**O QUE aconteceu:** RENÚNCIA DE MEMBRO SUPLENTE DO CONSELHO FISCAL  \n**Resumo:** A PRIO S.A. comunicou a renúncia do Sr. Anderson Mascouto Peixoto ao cargo de membro suplente do Conselho Fiscal da Companhia, em razão de sua nomeação para um cargo na administração pública.\n\n*\"A Companhia esclarece que, por se tratar da renúncia de membro suplente do Conselho Fiscal, o funcionamento do órgão permanece inalterado, mantendo-se o respectivo membro titular em pleno exercício de suas funções. A vaga decorrente da renúncia permanecerá aberta até a realização da próxima Assembleia Geral.\"* (p. 1)"
+  },
+  "modelo": "qwen2.5:7b"
+}
