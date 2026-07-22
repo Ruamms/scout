@@ -1198,3 +1198,34 @@
 2026-07-22 12:09:18	SPVT11	erro	The read operation timed out
 2026-07-22 12:09:19	SPXB11	erro	The read operation timed out
 2026-07-22 12:09:49	--- lote encerrado · 3 lidos, 726 em dia/sem relatório, 22 erros
+2026-07-22 12:25:53	--- lote iniciado · modelo qwen2.5:7b · 751 fundos na fila
+2026-07-22 12:27:46	HGRU11	erro	The read operation timed out
+2026-07-22 12:28:58	BROF11	erro	The read operation timed out
+2026-07-22 12:30:00	BVAR11	erro	The read operation timed out
+2026-07-22 12:32:12	BPLC11	erro	The read operation timed out
+2026-07-22 12:33:57	CDUP11	erro	The read operation timed out
+2026-07-22 12:34:28	CJCT11	erro	The read operation timed out
+2026-07-22 12:34:48	ALMI11	erro	The read operation timed out
+2026-07-22 12:36:36	HUSC11	erro	The read operation timed out
+2026-07-22 12:37:54	EDGA11	lido	66s
+2026-07-22 12:37:59	HJCT11	erro	The read operation timed out
+2026-07-22 12:39:17	ARTE11	erro	The read operation timed out
+2026-07-22 12:39:47	MCEM11	erro	The read operation timed out
+2026-07-22 12:40:55	CXSP11	erro	The read operation timed out
+2026-07-22 12:41:00	LSOI11	erro	The read operation timed out
+2026-07-22 12:41:20	WPLZ11	erro	The read operation timed out
+2026-07-22 12:42:01	ICNE11	erro	The read operation timed out
+2026-07-22 12:42:57	NAVF11	erro	The read operation timed out
+2026-07-22 12:46:09	FRHY11	erro	The read operation timed out
+2026-07-22 12:46:14	HYPI11	erro	The read operation timed out
+2026-07-22 12:47:44	EETH11	erro	The read operation timed out
+2026-07-22 12:47:52	FOMO11	erro	The read operation timed out
+2026-07-22 12:49:40	LLFT11	erro	HTTP Error 520: <none>
+2026-07-22 12:50:52	SPBZ11	erro	The read operation timed out
+2026-07-22 12:51:10	SPVT11	erro	The read operation timed out
+2026-07-22 12:53:07	XBOV11	erro	The read operation timed out
+2026-07-22 12:53:07	--- lote encerrado · 1 lidos, 726 em dia/sem relatório, 24 erros
+2026-07-22 12:53:07	--- 2a passada automatica em 23 fundos com timeout de rede
+2026-07-22 12:53:34	--- lote iniciado · modelo qwen2.5:7b · 24 fundos na fila
+2026-07-22 12:55:04	CDUP11	erro	The read operation timed out
+2026-07-22 12:55:10	--- lote encerrado · 0 lidos, 23 em dia/sem relatório, 1 erros

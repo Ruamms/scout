@@ -1,7 +1,7 @@
 {
   "ticker": "EDGA11",
   "modelo": "qwen2.5:7b",
-  "gerada_em": "2026-07-21T20:38:39",
+  "gerada_em": "2026-07-22T12:37:54",
   "relatorio": {
     "id": 1261605,
     "data_entrega": "21/07/2026 20:17",
@@ -9,18 +9,18 @@
   },
   "comunicados": {
     "ids": [
+      1261801,
       1261599,
       1068023,
-      951425,
       1198773,
       1035894,
       1198772,
       1169243
     ],
     "datas": [
+      "22/07/2026",
       "21/07/2026",
       "22/12/2025",
-      "24/07/2025",
       "18/05/2026",
       "13/11/2025",
       "18/05/2026",
@@ -35,7 +35,7 @@
       "Assembleia AGO",
       "Assembleia AGO"
     ],
-    "texto": "### FATO RELEVANTE entregue em 21/07/2026\n\n**O que aconteceu:** O Fundo celebrou contratos de locação com duas novas empresas.\n\n**Resumo:** A Galeria FII firmou contratos de locação com a FUNDAÇÃO DE APOIO AO DESENVOLVIMENTO DA COMPUTAÇÃO CIENTÍFICA e MONTO INDUSTRIAL LTDA, trazendo impacto positivo na receita do fundo.\n\n**Trecho-chave:** \"A locação refere-se à sala nº 801, com área locável de 1.640 m² , localizada no Edifício Galeria, Rua da Quitanda, 86, Centro, Rio de Janeiro/RJ. O contrato foi firmado pelo prazo de 120 (cento e vinte) meses, com início em 01 de agosto de 2026, e com a expectativa de um impacto positivo na receita do fundo de aproximadamente 9% (nove por cento).\"\n\n### FATO RELEVANTE entregue em 22/12/2025\n\n**O que aconteceu:** Atrasos no pagamento de aluguéis resultaram em prejuízo para o fundo.\n\n**Resumo:** Devido à inadimplência de locatários, a Galeria FII teve um impacto negativo na distribuição de rendimentos e já tomou medidas legais para cobrar os valores em aberto.\n\n**Trecho-chave:** \"Em razão da inadimplência de determinados locatários, a Classe deixou de receber os aluguéis devidos, o que resultou em um impacto negativo de , aproximandamente, R$ 0 ,066117 por cota na distribuição de rendimentos.\"\n\n### FATO RELEVANTE entregue em 24/07/2025\n\n**O que aconteceu:** Inadimplência de locatários causou prejuízo significativo ao fundo.\n\n**Resumo:** A inadimplência de locatários resultou em um prejuízo de R$ 885.247,45 para o fundo, impactando negativamente a distribuição de rendimentos.\n\n**Trecho-chave:** \"Em razão da inadimplência de determinados locatários, a Classe deixou de receber os aluguéis devidos, e arcou com encargos compusórios, tais como condomínio, IPTU e custas judiciais. Como consequência, não haverá resultado caixa disponível para a distribuição de rendimentos até que o prejuízo gerado pela inadimplência seja integralmente compensado.\"\n\n### COMUNICADO AO MERCADO entregue em 18/05/2026\n\n**O que aconteceu:** As contas anuais do Fundo foram aprovadas na assembleia geral de cotistas.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do FII Edifício Galeria referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n### COMUNICADO AO MERCADO entregue em 13/11/2025\n\n**O que aconteceu:** B3 solicitou esclarecimentos sobre as oscilações atípicas das cotas do fundo.\n\n**Resumo:** A B3 solicitou esclarecimentos à administradora sobre as oscilações atípicas registradas nas cotas do FII Edifício Galeria, mas a administradora não identificou nenhum fato relevante que justificasse tais variações.\n\n### ASSEMBLEIA AGO entregue em 18/05/2026\n\n**O que aconteceu:** A assembleia geral de cotistas aprovou as contas anuais do fundo.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas e demonstrações contábeis do FII Edifício Galeria referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n### ASSEMBLEIA AGO entregue em 24/04/2026\n\n**O que aconteceu:** A assembleia geral de cotistas foi convocada para aprovar as contas anuais do fundo.\n\n**Resumo:** A assembleia geral de cotistas foi convocada para deliberar sobre a aprovação das contas e demonstrações contábeis do FII Edifício Galeria referentes ao exercício social encerrado em 31 de dezembro de 2025."
+    "texto": "### O que aconteceu em 22/07/2026\n\n**Título:** Novas locações celebradas pelo FII Edifício Galeria\n\n**Resumo:** O fundo celebrou novos contratos de locação, trazendo um impacto positivo na receita e ocupação do edifício.\n\n**Trecho-chave:**\n\"Com a FUNDAÇÃO DE APOIO AO DESENVOLVIMENTO DA COMPUTAÇÃO CIENTÍFICA (FACC), na qualidade de locatária, envolvendo aluguel mensal de R$ 65.600,00 (sessenta e cinco mil e seiscentos reais), referente à locação de parte do 8º andar do Edifício Galeria. A locação refere-se à sala nº 801, com área locável de 1.640 m², localizada no Edifício Galeria, Rua da Quitanda, 86, Centro, Rio de Janeiro/RJ.\"\n\n---\n\n### O que aconteceu em 21/07/2026\n\n**Título:** Novas locações celebradas pelo FII Edifício Galeria\n\n**Resumo:** O fundo celebrou novos contratos de locação, trazendo um impacto positivo na receita e ocupação do edifício.\n\n**Trecho-chave:**\n\"Com a FUNDAÇÃO DE APOIO AO DESENVOLVIMENTO DA COMPUTAÇÃO CIENTÍFICA (FACC), na qualidade de locatária, envolvendo aluguel mensal de R$ 65.600,00 (sessenta e cinco mil e seiscentos reais), referente à locação de parte do 8º andar do Edifício Galeria.\"\n\n---\n\n### O que aconteceu em 22/12/2025\n\n**Título:** Impacto negativo na distribuição de rendimentos devido a inadimplência\n\n**Resumo:** A inadimplência de locatários resultou em um impacto negativo na distribuição de rendimentos.\n\n**Trecho-chave:**\n\"Em razão da inadimplência de determinados locatários, a Classe deixou de receber os aluguéis devidos, o que resultou em um impacto negativo de, aproximadamente, R$ 0,066117 por cota na distribuição de rendimentos.\"\n\n---\n\n### O que aconteceu em 18/05/2026\n\n**Título:** Assembleia Geral de Cotistas aprovou as contas anuais do exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A Assembleia Geral de Cotistas do FUNDO DE INVESTIMENTO IMOBILIARIO FII EDIFICIO GALERIA aprovou as Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### O que aconteceu em 13/11/2025\n\n**Título:** B3 solicita esclarecimentos sobre oscilação atípica das cotas do FII Edifício Galeria.\n\n**Resumo:** A B3 solicitou esclarecimentos sobre a oscilação atípica das cotas do fundo, e a administradora informou não ter conhecimento de fato relevante que justificasse as variações.\n\n**Trecho-chave:**\n\"A B3, por meio do Ofício, pediu informações à Administradora, nos seguintes termos: ‘Tendo em vista as últimas oscilações registradas com as cotas de emissão do fundo, o aumento do número de negócios e da quantidade negociada, conforme demonstrado abaixo, vimos solicitar que nos seja informado até 18/06/2025, se há algum fato do conhecimento dessa administradora que possam justificá-las.’\""
   },
   "retrato": {
     "selo": "Atenção",
@@ -44,7 +44,7 @@
       "Vacância física alta",
       "Rendimentos irregulares"
     ],
-    "cota": 13.25
+    "cota": 13.05
   },
   "anterior": {
     "gerada_em": "2026-07-21T00:44:54",
