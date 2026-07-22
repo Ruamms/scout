@@ -119,10 +119,10 @@ def test_atualizar_grava_serie_e_e_incremental(con, monkeypatch):
 
     monkeypatch.setattr(fundamentos, "_baixar", _baixar_fake)
     fundamentos.atualizar(con, hoje=date(2026, 7, 19))
-    # baixou os 4 anos completos (2022..2025)
-    assert baixados == [2022, 2023, 2024, 2025]
+    # baixou os 6 anos completos (2020..2025 — CAGR de 5 anos no checklist)
+    assert baixados == [2020, 2021, 2022, 2023, 2024, 2025]
     serie = armazenamento.fundamentos_da_empresa(con, "9512")
-    assert [linha["ano"] for linha in serie] == [2022, 2023, 2024, 2025]
+    assert [linha["ano"] for linha in serie] == [2020, 2021, 2022, 2023, 2024, 2025]
     assert serie[-1]["lucro_liquido"] == 15_000
 
     # 2ª rodada: anos fechados já carregados são pulados; só o mais recente rebaixa
@@ -168,3 +168,57 @@ def test_multiplos_do_papel_junta_as_fontes(con):
     assert r["pl"] == pytest.approx(10.0)
     assert r["pvp"] == pytest.approx(2.0)
     assert r["dy"] == pytest.approx(5.0)  # só os 0,10 recentes
+
+
+# --- ITR trimestral: trimestres isolados + lucro TTM -------------------------
+
+
+def _zip_itr(ano: int = 2026) -> bytes:
+    import io
+    import zipfile
+
+    cab = ("CNPJ_CIA;DT_REFER;VERSAO;DENOM_CIA;CD_CVM;ESCALA_MOEDA;ORDEM_EXERC;"
+           "DT_INI_EXERC;DT_FIM_EXERC;CD_CONTA;DS_CONTA;VL_CONTA\n")
+    linhas = (
+        # T1 isolado (ÚLTIMO) + homólogo (PENÚLTIMO) — receita e lucro
+        f"11;{ano}-03-31;1;TST;9999;MIL;ÚLTIMO;{ano}-01-01;{ano}-03-31;3.01;Receita;100000\n"
+        f"11;{ano}-03-31;1;TST;9999;MIL;ÚLTIMO;{ano}-01-01;{ano}-03-31;3.11;Lucro;20000\n"
+        f"11;{ano}-03-31;1;TST;9999;MIL;PENÚLTIMO;{ano-1}-01-01;{ano-1}-03-31;3.11;Lucro;15000\n"
+        # ACUMULADO do ano (jan–jun): NÃO pode entrar como trimestre
+        f"11;{ano}-06-30;1;TST;9999;MIL;ÚLTIMO;{ano}-01-01;{ano}-06-30;3.11;Lucro;45000\n"
+        # T2 isolado
+        f"11;{ano}-06-30;1;TST;9999;MIL;ÚLTIMO;{ano}-04-01;{ano}-06-30;3.11;Lucro;25000\n"
+        # versão 2 do T1 corrige o lucro (a maior versão vence)
+        f"11;{ano}-03-31;2;TST;9999;MIL;ÚLTIMO;{ano}-01-01;{ano}-03-31;3.11;Lucro;21000\n"
+    )
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, "w") as zf:
+        zf.writestr(f"itr_cia_aberta_DRE_con_{ano}.csv", (cab + linhas).encode("latin-1"))
+    return buffer.getvalue()
+
+
+def test_extrair_trimestres_isolados_e_versao():
+    tris = fundamentos.extrair_trimestres(_zip_itr(2026), {9999})
+    assert tris[(9999, "2026-T1")]["lucro_liquido"] == 21_000_000  # versão 2 venceu, escala MIL
+    assert tris[(9999, "2026-T2")]["lucro_liquido"] == 25_000_000
+    assert tris[(9999, "2025-T1")]["lucro_liquido"] == 15_000_000  # homólogo entra
+    # o acumulado jan–jun (6 meses) NÃO virou trimestre
+    assert all(t.endswith(("T1", "T2")) for _, t in tris)
+
+
+def test_lucro_ttm_desliza_a_janela(con):
+    con.execute("INSERT INTO fundamentos (cod_cvm, ano, lucro_liquido) VALUES ('9999', 2025, 100e9)")
+    con.executemany(
+        "INSERT INTO fundamentos_tri (cod_cvm, trimestre, lucro_liquido) VALUES ('9999', ?, ?)",
+        [("2026-T1", 30e9), ("2025-T1", 20e9)],
+    )
+    con.commit()
+    # TTM = 100 + 30 − 20 = 110 bi
+    assert fundamentos.lucro_ttm(con, "9999") == 110e9
+
+
+def test_lucro_ttm_none_sem_par_homologo(con):
+    con.execute("INSERT INTO fundamentos (cod_cvm, ano, lucro_liquido) VALUES ('9999', 2025, 100e9)")
+    con.execute("INSERT INTO fundamentos_tri (cod_cvm, trimestre, lucro_liquido) VALUES ('9999', '2026-T1', 30e9)")
+    con.commit()
+    assert fundamentos.lucro_ttm(con, "9999") is None  # sem o homólogo 2025-T1, não desliza

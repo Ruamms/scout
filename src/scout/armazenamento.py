@@ -32,6 +32,13 @@ CREATE TABLE IF NOT EXISTS informes_gerais (
 );
 CREATE INDEX IF NOT EXISTS idx_gerais_admin ON informes_gerais (cnpj_administrador);
 CREATE INDEX IF NOT EXISTS idx_gerais_isin ON informes_gerais (isin);
+CREATE TABLE IF NOT EXISTS fundamentos_tri (
+    cod_cvm       TEXT NOT NULL,
+    trimestre     TEXT NOT NULL,  -- AAAA-Tn (trimestre ISOLADO do ITR)
+    receita       REAL,
+    lucro_liquido REAL,
+    PRIMARY KEY (cod_cvm, trimestre)
+);
 CREATE TABLE IF NOT EXISTS dfp_meta (
     cod_cvm               TEXT NOT NULL,
     ano                   INTEGER NOT NULL,

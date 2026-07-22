@@ -80,6 +80,21 @@ def montar_dados_acao(con: sqlite3.Connection, ticker: str, hoje: date | None = 
         (ticker,),
     ).fetchone()
     proventos_ano = armazenamento.proventos_por_ano(con, ticker)
+    # série de lucros trimestrais: T1–T3 vêm do ITR; T4 NÃO existe isolado
+    # (o 4º tri só aparece dentro da DFP anual) — deriva: T4 = anual − (T1+T2+T3)
+    tris_db = {
+        l["trimestre"]: l["lucro_liquido"]
+        for l in con.execute(
+            "SELECT trimestre, lucro_liquido FROM fundamentos_tri WHERE cod_cvm = ?"
+            " AND lucro_liquido IS NOT NULL",
+            (empresa["cod_cvm"],),
+        )
+    }
+    for b in balancos:
+        t123 = [tris_db.get(f"{b['ano']}-T{n}") for n in (1, 2, 3)]
+        if b["lucro_liquido"] is not None and all(v is not None for v in t123):
+            tris_db.setdefault(f"{b['ano']}-T4", b["lucro_liquido"] - sum(t123))
+    trimestres_lucro = sorted(tris_db.items(), reverse=True)[:20]
     # preço de referência por ano (fechamento do último mês disponível do ano):
     # base do DY histórico do gráfico de proventos
     preco_fim_ano: dict[int, float] = {}
@@ -118,6 +133,7 @@ def montar_dados_acao(con: sqlite3.Connection, ticker: str, hoje: date | None = 
     ).fetchall()
 
     return {
+        "trimestres_lucro": trimestres_lucro,
         "proventos_por_ano": proventos_ano,
         "preco_fim_ano": preco_fim_ano,
         "administradores": administradores,
@@ -151,6 +167,107 @@ def _setor_curto(empresa) -> str:
     """Setor legível: o setor_b3 vem como 'A / B / C' — o 1º nível já orienta."""
     bruto = (empresa["setor_b3"] or empresa["setor_cvm"] or "").strip()
     return bruto.split("/")[0].strip().rstrip(".") if bruto else "—"
+
+
+def _checklist_fatos(dados: dict, ano_atual: int) -> list[tuple[str, str, str]]:
+    """Checklist de FATOS (critérios comuns de análise buy & hold, verificáveis
+    um a um): cada item vira (rótulo, status ✓/✗/—, detalhe com o número).
+    Sem nota, sem score, sem veredito — ✗ significa 'o fato não se verifica
+    hoje', não 'ruim'; — significa 'sem dado suficiente para afirmar'."""
+    itens: list[tuple[str, str, str]] = []
+    ind = dados["indicadores"]
+    balancos = dados["balancos"]
+    financeiro = bool(ind.get("setor_financeiro"))
+
+    # 1. tempo de bolsa (cotações mensais na base, desde 2011)
+    meses = len(dados["cotacao"])
+    if meses:
+        desde = dados["cotacao"][0][0]
+        itens.append((
+            "Mais de 5 anos de bolsa",
+            "✓" if meses >= 60 else "✗",
+            f"cotações desde {desde[5:7]}/{desde[:4]} ({meses} meses na base)",
+        ))
+    else:
+        itens.append(("Mais de 5 anos de bolsa", "—", "sem série de cotação na base"))
+
+    # 2. lucro nos últimos 20 trimestres (ITR)
+    tris = dados.get("trimestres_lucro") or []
+    if len(tris) >= 20:
+        prejuizos = [t for t, v in tris if v <= 0]
+        itens.append((
+            "Lucro em todos os últimos 20 trimestres",
+            "✗" if prejuizos else "✓",
+            f"prejuízo em {', '.join(sorted(prejuizos)[:4])}" if prejuizos else "20/20 trimestres com lucro (ITR)",
+        ))
+    else:
+        itens.append((
+            "Lucro em todos os últimos 20 trimestres", "—",
+            f"só {len(tris)}/20 trimestres com dado na base",
+        ))
+
+    # 3. ROE > 10% (último anual)
+    roe = ind.get("roe")
+    itens.append((
+        "ROE acima de 10%",
+        ("✓" if roe > 10 else "✗") if roe is not None else "—",
+        f"ROE {formato.percentual(roe)} no último anual" if roe is not None else "sem dado",
+    ))
+
+    # 4. dívida líquida menor que o patrimônio
+    if financeiro:
+        itens.append(("Dívida líquida menor que o patrimônio", "—",
+                      "não se aplica a banco/seguradora (modelo contábil próprio)"))
+    else:
+        razao = ind.get("divida_liquida_pl")
+        if razao is None:
+            itens.append(("Dívida líquida menor que o patrimônio", "—", "sem dado"))
+        else:
+            itens.append((
+                "Dívida líquida menor que o patrimônio",
+                "✓" if razao < 1 else "✗",
+                f"dívida líquida = {formato.decimal(razao)}× o patrimônio"
+                if razao >= 0 else "caixa líquido (dívida menor que o caixa)",
+            ))
+
+    # 5. dividendos em cada um dos últimos 5 anos cheios
+    proventos = dados.get("proventos_por_ano") or {}
+    anos5 = [a for a in range(ano_atual - 5, ano_atual)]
+    pagou = [a for a in anos5 if proventos.get(a, 0) > 0]
+    itens.append((
+        "Pagou dividendos em cada um dos últimos 5 anos",
+        "✓" if len(pagou) == 5 else "✗",
+        f"pagou em {len(pagou)}/5 anos ({anos5[0]}–{anos5[-1]}, por data-com)",
+    ))
+
+    # 6/7. receita e lucro cresceram no período dos balanços (CAGR)
+    def _cagr(campo: str, rotulo: str) -> None:
+        serie = [(b["ano"], b[campo]) for b in balancos if b[campo] is not None]
+        if len(serie) < 2:
+            itens.append((rotulo, "—", "sem série suficiente na base"))
+            return
+        (ano_a, ini), (ano_b, fim) = serie[0], serie[-1]
+        anos = ano_b - ano_a
+        if ini <= 0 or fim <= 0 or not anos:
+            comparacao = "✓" if fim > ini else "✗"
+            itens.append((rotulo, comparacao,
+                          f"{formato.moeda_compacta(ini)} ({ano_a}) → {formato.moeda_compacta(fim)} ({ano_b})"))
+            return
+        cagr = 100 * ((fim / ini) ** (1 / anos) - 1)
+        itens.append((rotulo, "✓" if cagr > 0 else "✗",
+                      f"{formato.percentual(cagr)} ao ano ({ano_a}→{ano_b})"))
+
+    _cagr("receita", "Receita cresceu no período")
+    _cagr("lucro_liquido", "Lucro cresceu no período")
+
+    # 8. liquidez diária
+    liquidez = dados.get("liquidez")
+    itens.append((
+        "Liquidez acima de R$ 2 milhões/dia",
+        ("✓" if liquidez > 2_000_000 else "✗") if liquidez else "—",
+        f"{formato.moeda_compacta(liquidez)}/dia (média 3 meses)" if liquidez else "sem dado",
+    ))
+    return itens
 
 
 _AVISO_CALC = (
@@ -295,7 +412,12 @@ def gerar(
         _card("Variação 12 meses", formato.percentual(dados["variacao_12m"], sinal=True),
               "preço ajustado por eventos e proventos")
     if mult.get("pl") is not None:
-        _card("P/L", formato.decimal(mult["pl"]), "preço ÷ lucro por ação (último anual)")
+        base_lucro = (
+            "últimos 12 meses (anual + trimestres ITR)"
+            if mult.get("lucro_base") == "ttm"
+            else "último anual"
+        )
+        _card("P/L", formato.decimal(mult["pl"]), f"preço ÷ lucro por ação ({base_lucro})")
     elif ultimo is not None and (ultimo["lucro_liquido"] or 0) <= 0:
         _card("P/L", "—", "empresa em prejuízo no último anual: P/L não se aplica")
     if mult.get("pvp") is not None:
@@ -462,6 +584,26 @@ def gerar(
   <div class="grafico"><h3>Proventos por ação por ano (R$) · DY do ano no topo</h3>{svg_prov}
   <div class="nota">soma dos proventos com data-com no ano (dividendos + JCP, valores brutos — JCP tem
   15% retido na fonte) · DY = proventos do ano ÷ fechamento do fim do ano · fonte: B3</div></div>
+"""
+
+    # --- Checklist de fatos (critérios buy & hold, um a um, sem nota) ---------
+    cores_check = {"✓": "#7BD69A", "✗": "#DB7A7A", "—": "#6B7681"}
+    linhas_check = "".join(
+        f'<tr><td style="color:{cores_check[status]};font-size:16px;width:26px">{status}</td>'
+        f"<td>{_e(rotulo)}</td><td>{_e(detalhe)}</td></tr>"
+        for rotulo, status, detalhe in _checklist_fatos(dados, agora.year)
+    )
+    secao_checklist = f"""
+  <h2>Checklist de fatos</h2>
+  <div class="grafico">
+  <table class="imoveis">
+    <thead><tr><th></th><th>critério</th><th>o fato</th></tr></thead>
+    <tbody>{linhas_check}</tbody>
+  </table>
+  <div class="nota">critérios comuns de quem analisa empresas para longo prazo, verificados um a um
+  com dados oficiais (B3 + CVM) — <b>não é nota nem recomendação</b>: ✗ significa que o fato não se
+  verifica hoje (não "ruim"), e — significa dado insuficiente para afirmar qualquer coisa</div>
+  </div>
 """
 
     # --- Calculadoras (opt-in, mesmo padrão da Gordon dos FIIs) ---------------
@@ -696,6 +838,8 @@ table.imoveis td:not(:first-child):not(:nth-child(2)), table.imoveis th:not(:fir
   {secao_partes}
 
   {secao_balanco}
+
+  {secao_checklist}
 
   {secao_proventos}
 

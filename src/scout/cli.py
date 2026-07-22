@@ -254,6 +254,7 @@ def _executar_atualizacao(con) -> None:
         ("informes da CVM", lambda p: cvm.atualizar(con, ao_progredir=p)),
         ("empresas (IBrX-100)", lambda p: empresas.atualizar_empresas(con, ao_progredir=p)),
         ("balanços (DFP)", lambda p: fundamentos.atualizar(con, ao_progredir=p)),
+        ("trimestres (ITR)", lambda p: fundamentos.atualizar_trimestres(con, ao_progredir=p)),
         ("FRE (administradores/partes)", lambda p: fre.atualizar(con, ao_progredir=p)),
         ("cotações da B3", lambda p: b3.atualizar(con, ao_progredir=p)),
         ("ETFs listados", lambda p: b3fundos.atualizar_etfs(con, ao_progredir=p)),

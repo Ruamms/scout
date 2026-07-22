@@ -138,6 +138,28 @@ def test_historico_de_proventos_com_dy(con):
     assert "DY 4,55%" in pagina
 
 
+def test_checklist_de_fatos_na_pagina(con):
+    _semear_empresa(con)
+    # trimestres: T1–T3/2025 lucrativos + T1/2026 e homólogo (P/L vira TTM)
+    con.executemany(
+        "INSERT INTO fundamentos_tri (cod_cvm, trimestre, receita, lucro_liquido) VALUES ('9999', ?, ?, ?)",
+        [("2025-T1", 25e9, 5e9), ("2025-T2", 25e9, 5e9), ("2025-T3", 25e9, 5e9),
+         ("2026-T1", 28e9, 7e9)],
+    )
+    con.commit()
+    dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))
+    # TTM = anual 2025 (20e9) + T1'26 (7e9) − T1'25 (5e9) = 22e9 → P/L 40/22 ≈ 1.82
+    assert dados["multiplos"]["TSTA4"]["lucro_base"] == "ttm"
+    assert round(dados["multiplos"]["TSTA4"]["pl"], 2) == round(40.0 / 22.0, 2)
+    # T4/2025 derivado do anual: 20e9 − 15e9 = 5e9 (entra na série dos 20 tris)
+    assert ("2025-T4", 5e9) in dados["trimestres_lucro"]
+    pagina = acao_html.gerar(dados, agora=datetime(2026, 7, 21, 12, 0))
+    assert "Checklist de fatos" in pagina
+    assert "não é nota nem recomendação" in pagina
+    assert "últimos 12 meses (anual + trimestres ITR)" in pagina  # rótulo do P/L TTM
+    assert "ROE acima de 10%" in pagina and "Liquidez acima de R$ 2 milhões/dia" in pagina
+
+
 def test_home_tem_pills_de_setor_das_acoes(con):
     _semear_empresa(con)
     dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))

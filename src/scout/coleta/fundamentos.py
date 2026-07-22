@@ -29,7 +29,7 @@ from .. import armazenamento
 
 URL = "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/DFP/DADOS/dfp_cia_aberta_{ano}.zip"
 _HEADERS = {"User-Agent": "Mozilla/5.0 (scout)"}
-ANOS_HISTORICO = 4  # DFP dos últimos N anos completos
+ANOS_HISTORICO = 6  # DFP dos últimos N anos completos (6 = CAGR de 5 anos no checklist)
 
 _CAMPOS = (
     "receita", "resultado_bruto", "ebit", "lucro_liquido",
@@ -220,6 +220,142 @@ def extrair_meta_ano(conteudo: bytes, cod_cvms: set[int]) -> dict[int, dict]:
             alvo["parecer_trecho"] = modulo_parecer.trecho_continuidade(texto)[:300] or None
 
     return dados
+
+
+URL_ITR = "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/ITR/DADOS/itr_cia_aberta_{ano}.zip"
+
+
+def _baixar_itr(ano: int) -> bytes | None:
+    import urllib.error
+    import urllib.request
+
+    try:
+        requisicao = urllib.request.Request(URL_ITR.format(ano=ano), headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(requisicao, timeout=300) as resposta:
+            return resposta.read()
+    except (urllib.error.URLError, OSError):
+        return None
+
+
+def extrair_trimestres(conteudo: bytes, cod_cvms: set[int]) -> dict[tuple[int, str], dict]:
+    """{(cod_cvm, 'AAAA-Tn'): {receita, lucro_liquido}} dos trimestres ISOLADOS
+    de um zip ITR anual. Cada ITR traz o trimestre atual (ÚLTIMO) e o homólogo
+    do ano anterior (PENÚLTIMO) — ambos entram (o homólogo preenche histórico).
+    A partir do 2º tri o DRE traz também o ACUMULADO do ano (01/01→30/06 etc.):
+    só o período de ~3 meses (isolado) é gravado. Lucro = maior conta 3.xx de
+    um ponto, exceto 3.99 (mesma regra da DFP). Versão maior vence."""
+    zf = zipfile.ZipFile(io.BytesIO(conteudo))
+    nome = next((n for n in zf.namelist() if "DRE_con" in n), None)
+    if nome is None:
+        return {}
+    dados: dict[tuple[int, str], dict] = {}
+    versoes: dict[tuple[int, str], int] = {}
+    lucro_cod: dict[tuple[int, str], str] = {}
+    with zf.open(nome) as f:
+        for linha in csv.DictReader(io.TextIOWrapper(f, encoding="latin-1"), delimiter=";"):
+            try:
+                cd = int(linha["CD_CVM"])
+            except (ValueError, KeyError, TypeError):
+                continue
+            if cd not in cod_cvms:
+                continue
+            ini, fim = (linha.get("DT_INI_EXERC") or "")[:10], (linha.get("DT_FIM_EXERC") or "")[:10]
+            if len(ini) != 10 or len(fim) != 10:
+                continue
+            meses = (int(fim[:4]) - int(ini[:4])) * 12 + int(fim[5:7]) - int(ini[5:7])
+            if meses != 2:  # acumulado do ano (5/8 meses de diferença) fica fora
+                continue
+            trimestre = f"{fim[:4]}-T{(int(fim[5:7]) + 2) // 3}"
+            chave = (cd, trimestre)
+            versao = int(linha.get("VERSAO") or 1)
+            if versao < versoes.get(chave, 0):
+                continue
+            if versao > versoes.get(chave, 0):
+                dados[chave] = {}
+                lucro_cod.pop(chave, None)
+            versoes[chave] = versao
+            conta = linha["CD_CONTA"]
+            val = _num(linha["VL_CONTA"]) * _escala(linha.get("ESCALA_MOEDA"))
+            alvo = dados.setdefault(chave, {})
+            if conta == "3.01":
+                alvo["receita"] = val
+            if conta.startswith("3.") and conta.count(".") == 1 and conta != "3.99":
+                if chave not in lucro_cod or conta > lucro_cod[chave]:
+                    lucro_cod[chave] = conta
+                    alvo["lucro_liquido"] = val
+    return dados
+
+
+def atualizar_trimestres(con: sqlite3.Connection, hoje: date | None = None, ao_progredir=None) -> str | None:
+    """Baixa o ITR dos últimos anos (escopo IBrX-100) e grava os trimestres
+    isolados. Incremental por ano (ITR_<ano>); o corrente sempre rebaixa."""
+    hoje = hoje or date.today()
+    cod_cvms = {
+        int(l["cod_cvm"]) for l in con.execute("SELECT cod_cvm FROM empresas WHERE no_ibrx100 = 1")
+        if str(l["cod_cvm"]).isdigit()
+    }
+    if not cod_cvms:
+        return None
+    carregados = {l[0] for l in con.execute("SELECT arquivo FROM cargas")}
+    novos = 0
+    for ano in range(hoje.year - 5, hoje.year + 1):  # 20 trimestres + homólogos
+        marcador = f"ITR_{ano}"
+        if marcador in carregados and ano != hoje.year:
+            continue
+        conteudo = _baixar_itr(ano)
+        if not conteudo:
+            continue
+        for (cd, trimestre), campos in extrair_trimestres(conteudo, cod_cvms).items():
+            con.execute(
+                "INSERT OR REPLACE INTO fundamentos_tri (cod_cvm, trimestre, receita, lucro_liquido)"
+                " VALUES (?, ?, ?, ?)",
+                (str(cd), trimestre, campos.get("receita"), campos.get("lucro_liquido")),
+            )
+        con.execute(
+            "INSERT OR REPLACE INTO cargas (arquivo, carregado_em) VALUES (?, ?)",
+            (marcador, hoje.isoformat()),
+        )
+        con.commit()
+        novos += 1
+    total = con.execute("SELECT COUNT(*) FROM fundamentos_tri").fetchone()[0]
+    mensagem = f"trimestres (ITR): {total} trimestres na base ({novos} anos nesta rodada)"
+    if ao_progredir:
+        ao_progredir(mensagem)
+    return mensagem
+
+
+def lucro_ttm(con: sqlite3.Connection, cod_cvm: str) -> float | None:
+    """Lucro dos últimos 12 meses: último ANUAL + trimestres do ano seguinte ao
+    anual − trimestres homólogos do ano do anual. Só quando os pares fecham
+    (cada tri corrente tem o homólogo) — senão None e o P/L usa o anual."""
+    anual = con.execute(
+        "SELECT ano, lucro_liquido FROM fundamentos WHERE cod_cvm = ? AND lucro_liquido IS NOT NULL"
+        " ORDER BY ano DESC LIMIT 1",
+        (cod_cvm,),
+    ).fetchone()
+    if anual is None:
+        return None
+    tris = {
+        l["trimestre"]: l["lucro_liquido"]
+        for l in con.execute(
+            "SELECT trimestre, lucro_liquido FROM fundamentos_tri WHERE cod_cvm = ?"
+            " AND lucro_liquido IS NOT NULL",
+            (cod_cvm,),
+        )
+    }
+    ano_base = int(anual["ano"])
+    ttm = float(anual["lucro_liquido"])
+    ajustou = False
+    for n in (1, 2, 3):
+        corrente, homologo = f"{ano_base + 1}-T{n}", f"{ano_base}-T{n}"
+        if corrente in tris:
+            if homologo not in tris:
+                return None  # par incompleto: não dá para deslizar a janela
+            ttm += tris[corrente] - tris[homologo]
+            ajustou = True
+        else:
+            break
+    return ttm if ajustou else None
 
 
 def atualizar_auditores(con: sqlite3.Connection, hoje: date | None = None) -> int:
@@ -435,10 +571,16 @@ def multiplos_do_papel(con: sqlite3.Connection, ticker: str, hoje: date | None =
         (cod_cvm,),
     ).fetchone()
     meta = armazenamento.cotacao_meta(con, ticker)
-    return multiplos(
+    # P/L com lucro dos ÚLTIMOS 12 MESES (anual + ITRs) quando a janela fecha;
+    # senão o anual — e a base usada fica explícita para a página rotular
+    ttm = lucro_ttm(con, cod_cvm)
+    lucro = ttm if ttm is not None else (balanco["lucro_liquido"] if balanco else None)
+    resultado = multiplos(
         preco=meta["preco_atual"] if meta else None,
         dividendos_12m=armazenamento.proventos_12m(con, ticker, hoje),
-        lucro=balanco["lucro_liquido"] if balanco else None,
+        lucro=lucro,
         patrimonio_liquido=balanco["patrimonio_liquido"] if balanco else None,
         acoes_total=empresa["acoes_total"] if empresa else None,
     )
+    resultado["lucro_base"] = "ttm" if ttm is not None else "anual"
+    return resultado
