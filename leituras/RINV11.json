@@ -1,11 +1,11 @@
 {
   "ticker": "RINV11",
   "modelo": "qwen2.5:7b",
-  "gerada_em": "2026-07-20T20:16:08",
+  "gerada_em": "2026-07-22T18:50:14",
   "relatorio": {
-    "id": 1223631,
-    "data_entrega": "17/06/2026 19:10",
-    "texto": "### Fatos Extraídos do Relatório\n\n1. **Oferta de Cotas:**\n   - Concluída a 6ª oferta de cotas, com captação de aproximadamente R$118 milhões.\n   - Patrimônio líquido do Fundo passou para acima de R$535 milhões.\n\n2. **Carteira de FIIs:**\n   - Representava cerca de 72% do patrimônio líquido do RINV11 no final de maio.\n   - Contribuiu negativamente em -0,6% para o desempenho consolidado do Fundo no mês.\n   - Posição destacada foi o IRIM11, que valorizou cerca de 6,0% e foi o maior contribuidor de performance.\n\n3. **Carteira de Recebíveis:**\n   - Representava 11% do patrimônio líquido do RINV11.\n   - Composto por 16 operações com remuneração média de IPCA + 11,5% a.a. e CDI + 2,1% a.a.\n\n4. **Ações do Setor Imobiliário:**\n   - Representavam aproximadamente 9,5% do patrimônio líquido.\n   - A única empresa com desempenho positivo no mês foi a Log Commercial Properties (LOGG3), que avançou 3,6%.\n\n5. **CRI e Outros Ativos:**\n   - Iniciadas posições em CRIs do Grupo Mateus e Trisul.\n   - Operações de CRI representavam cerca de 4,6% do patrimônio líquido.\n\n### O que observar em seguida:\n1. **Evolução da Carteira de FIIs:** Verificar se as posições em FIIs continuam a ser bem-sucedidas e se novas oportunidades são aproveitadas.\n2. **Desempenho das Ações do Setor Imobiliário:** Monitorar o comportamento dessas ações, especialmente a Log Commercial Properties (LOGG3)."
+    "id": 1262148,
+    "data_entrega": "22/07/2026 18:41",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Composição da Carteira:**\n   - Ao final de junho, o RINV11 tinha 75% de sua carteira em FIIs, 11% em CRIs (Créditos Reais Imobiliários), 9,5% em ações do setor imobiliário e 4,3% em caixa.\n\n2. **Resultado do Mês:**\n   - O RINV11 apresentou um resultado de R$1,15 por cota no mês de junho.\n   - Os dividendos distribuídos foram de R$1,40 por cota, cumprindo a obrigação de distribuição de 95% do resultado do semestre.\n\n3. **Desempenho dos FIIs:**\n   - A classe de Fundos Imobiliários representava aproximadamente 75% do patrimônio líquido e foi a principal detratora de desempenho no mês, com contribuição negativa concentrada nos FIIs de Recebíveis.\n\n4. **Ações do Setor Imobiliário:**\n   - A classe de ações representava cerca de 9,5% do patrimônio líquido e contribuiu positivamente para o desempenho do mês.\n   - A Log Commercial Properties foi destaque com valorização de 12,9% no mês.\n\n5. **CRIs:**\n   - As operações de CRIs representavam cerca de 4,3% do patrimônio líquido e contribuíram levemente positivamente para o resultado do Fundo.\n   - Houve aumento da exposição nos CRIs Grupo Mateus, Trisul e Uniq.\n\n6. **Reservas:**\n   - Ao final de junho, o RINV11 acumulava R$0,93 por cota em reservas após a distribuição dos dividendos.\n\n7. **Dividendos:**\n   - O RINV11 pagou R$0,36 por cota em junho da LOGG3 e anunciou um dividendo extraordinário de R$2,86 por cota para julho.\n   - Além disso, foram pagos dividendos da ALOS3 e EVEN3.\n\n8. **Patrimônio Líquido:**\n   - O patrimônio líquido do RINV11 foi de R$525,2M no mês de junho.\n\n### O que observar em seguida:\n- Monitorar a evolução da carteira de FIIs, especialmente os FIIs de Recebíveis.\n- Observar o desempenho das ações do setor imobiliário e as novas posições adquiridas nos CRIs."
   },
   "comunicados": {
     "ids": [
@@ -35,6 +35,18 @@
     "texto": "### O que aconteceu em 15/04/2026\n\n**Título:** Aprovada a sexta emissão de cotas.\n\n**Resumo:** A administradora aprovou a oferta pública de distribuição primária de até 1.124.500 novas cotas, com preço unitário de R$ 106,71.\n\n**Trecho-chave:**\n\"serão emitidas, inicialmente, até 1.124.500 (um milhão cento e vinte e quatro mil e quinhentos) novas cotas (“Cotas”), em série única...\"\n\n### O que aconteceu em 17/10/2025\n\n**Título:** Aprovada a quinta emissão de cotas.\n\n**Resumo:** A administradora aprovou a oferta pública de distribuição primária de até 980.200 novas cotas, com preço unitário de R$ 102,02.\n\n**Trecho-chave:**\n\"serão emitidas, inicialmente, até 980.200 (novecentas e oitenta mil e duzentas) novas cotas (“Cotas”), em série única...\"\n\n### O que aconteceu em 27/05/2026\n\n**Título:** Encerramento do período de exercício do direito de subscrição de sobras e montante adicional.\n\n**Resumo:** Foi encerrado o prazo para exercício do direito de preferência, com 392.967 Cotas subscritas. Restam 301.009 Cotas disponíveis para exercício do direito de subscrição de sobras e montante adicional.\n\n**Trecho-chave:**\n\"restam 301.009 (trezentas e uma mil e nove) Cotas que poderão ser subscritas e integralizadas por Investidores Profissionais durante o Período de Subscrição da Oferta...\"\n\n### O que aconteceu em 11/05/2026\n\n**Título:** Encerramento do período de exercício do direito de preferência e início do período de exercício do direito de subscrição de sobras e montante adicional.\n\n**Resumo:** Foi encerrado o prazo para exercício do direito de preferência, com 392.967 Cotas subscritas. Iniciou-se um novo período para a subscrição de sobras e montante adicional.\n\n**Trecho-chave:**\n\"Encerrou-se o prazo para exercício, pelos Cotistas, do Direito de Preferência para subscrição de Cotas na B3 em 07 de maio de 2026 (inclusive), e junto ao Escriturador do Fundo, em 08 de maio de 2026 (inclusive).\"\n\n### O que aconteceu em 07/05/2026\n\n**Título:** Assembleia Geral de Cotistas aprovou as demonstrações financeiras auditadas.\n\n**Resumo:** A assembleia geral de cotistas aprovou as demonstrações financeiras auditadas relativas ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\""
   },
   "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Emissão de cotas com VP/cota em queda",
+      "Rendimentos irregulares"
+    ],
+    "cota": 103.6
+  },
+  "anterior": {
+    "gerada_em": "2026-07-20T20:16:08",
+    "relatorio_data": "17/06/2026 19:10",
     "selo": "Atenção",
     "nivel": "atencao",
     "alertas": [

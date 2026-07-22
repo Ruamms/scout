@@ -1,11 +1,11 @@
 {
   "ticker": "TRNT11",
-  "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-20T13:57:28",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-22T18:49:14",
   "relatorio": {
-    "id": 1224956,
-    "data_entrega": "19/06/2026 18:25",
-    "texto": "1. **Vacância reduzida**: A vacância do fundo caiu de 17,8% para 15,3%, após a assinatura de novos contratos com BFW e Semantix (p. 4).\n2. **Nenhuma movimentação de locatários em abril**: Não houve mudanças na carteira de locatários no mês anterior (p. 4).\n3. **Reajustes realizados**: Foram realizados reajustes em 6.507 m² do portfólio do fundo durante o mês (p. 4).\n4. **Sem alavancagem ou obrigações de aquisição**: O Fundo não possui nenhuma alavancagem ou obrigação por aquisição de ativos em 29/05 (p. 4, p. 7).\n5. **Investimentos no Projeto Masterplan**: As obras do Projeto Masterplan avançaram para 56,4% no mês de maio, com várias intervenções concluídas e outras em andamento (p. 10).\n6. **Não distribuição de rendimentos**: Os rendimentos foram retidos para investimentos em melhorias e manutenção do ativo, resultando em uma reserva disponível de R$ 2,86/cota ao final do mês (p. 4).\n7. **Cenário externo desafiador**: O cenário externo foi marcado por tensões geopolíticas e aumento da volatilidade, impactando a precificação dos ativos no Brasil (p. 3).\n8. **Vacância projetada para reduzir**: A estratégia comercial visa reduzir ainda mais a vacância com contratos em estágio avançado de minuta (p. 14).\n\n**O que observar em seguida:**\n- Progresso das obras do Projeto Masterplan.\n- Movimentações futuras de locatários e impacto na vacância física e financeira."
+    "id": 1262128,
+    "data_entrega": "22/07/2026 18:37",
+    "texto": "### Fatos Extraídos do Relatório Gerencial\n\n1. **Vacância e Locações:**\n   - A vacância física do fundo reduziu para 9,4% em junho devido à conclusão de três operações relevantes.\n   - O fundo mantém um pipeline qualificado de negociações para novas ocupações, expansões e renovações.\n\n2. **Obras e Reformas:**\n   - As obras de retrofit da Torre Norte alcançaram 61,02% do total, com previsão de finalização em dezembro de 2026.\n   - O projeto Masterplan foi aprovado em dezembro de 2023 para desenvolver e reposicionar as áreas comuns do edifício.\n\n3. **Cota Patrimonial:**\n   - A cota patrimonial do fundo é R$ 166,17.\n   \n4. **Vacância Financeira:**\n   - A vacância financeira foi de 27,0% no mês, refletindo o ajuste metodológico.\n\n5. **Cotistas e Cotação:**\n   - O número de cotistas é 497, considerado muito pequeno.\n   - A cotação do fundo é R$ 109,99, com um P/VP de 0,66.\n\n### Observações a Seguir\n\n- **Vacância:** Monitorar as movimentações locatícias e o progresso das obras para reduzir a vacância.\n- **Cotistas:** O número baixo de cotistas pode indicar uma base de investidores limitada."
   },
   "comunicados": {
     "ids": [
@@ -29,6 +29,18 @@
     "texto": "### COMUNICADO AO MERCADO (11/05/2026)\n**O QUE ACONTECEU:** As contas anuais do Fundo Torre Norte foram aprovadas em assembleia geral.\n\n**RESUMO:** A assembleia geral de cotistas realizada em 4 de maio de 2026 aprovou as demonstrações financeiras auditadas referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**TRECHO-CHAVE:**\n\"na assembleia geral de cotistas realizada em 04 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n### COMUNICADO AO MERCADO (27/02/2026)\n**O QUE ACONTECEU:** Os Informes de Rendimentos de 2025 do Fundo Torre Norte estão disponíveis exclusivamente por meio digital.\n\n**RESUMO:** Para reduzir custos e impacto ambiental, os informes de rendimento referentes ao ano de 2025 serão disponibilizados apenas via Portal do Investidor. Cotistas que já possuem acesso podem usar suas credenciais existentes; novos cotistas devem realizar o cadastro conforme instruções.\n\n**TRECHO-CHAVE:**\n\"Em complemento ao Comunicado ao Mercado de 2 de fevereiro de 2026 e ao Comunicado ao Mercado de 13 de fevereiro de 2026, a Administradora informa que, com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos (“Informes”) referentes ao ano de 2025, já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital, por meio do Portal do Investidor (“Portal”).\"\n\n### ASSEMBLEIA AGO (11/05/2026)\n**O QUE ACONTECEU:** Assembleia geral de cotistas aprovou as demonstrações financeiras auditadas referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**RESUMO:** A assembleia foi realizada via manifestação de voto enviada pelos cotistas em 4 de maio de 2026. As contas anuais foram aprovadas por unanimidade.\n\n**TRECHO-CHAVE:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n### ASSEMBLEIA AGO (24/04/2026)\n**O QUE ACONTECEU:** Convocação para consulta formal sobre a aprovação das contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**RESUMO:** Os cotistas foram convocados via plataforma eletrônica para deliberar sobre a aprovação das contas anuais até o dia 4 de maio de 2026. Cotistas que não receberam a consulta por e-mail devem atualizar suas informações cadastrais.\n\n**TRECHO-CHAVE:**\n\"A BTG Pactual Serviços Financeiros S.A Distribuidora de Títulos e Valores Mobiliários, sociedade anônima, com sede na Cidade e Estado do Rio de Janeiro, localizada à Praia de Botafogo, nº 501, Torre Corcovado, 5º Andar (Parte), Botafogo, e inscrita no CNPJ sob o nº 59.281.253/0001-23, devidamente autorizada pela Comissão de Valores Mobiliários (“CVM”) para a atividade de administração de carteiras de valores mobiliários, de acordo com o Ato Declaratório CVM nº 8 .695, de 20 de março de 2006 (“Administradora”), na qualidade de administradora d o FUNDO DE INVESTIMENTO IMOBILIARIO - FII TORRE NORTE , inscrito no CNPJ sob o nº 04.722.883/0001-02 (\"Fundo\"), bem como de sua classe única, vem, pela presente, convocar os cotistas do Fundo (“Cotistas”) para a Consulta Formal, com prazo de recebimento de votos até 04 de maio de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
   },
   "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Vacância física alta",
+      "Base de cotistas muito pequena",
+      "Rendimentos irregulares"
+    ],
+    "cota": 109.99
+  },
+  "anterior": {
+    "gerada_em": "2026-07-20T13:57:28",
+    "relatorio_data": "19/06/2026 18:25",
     "selo": "Atenção",
     "nivel": "atencao",
     "alertas": [

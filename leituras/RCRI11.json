@@ -1,11 +1,11 @@
 {
   "ticker": "RCRI11",
   "modelo": "qwen2.5:7b",
-  "gerada_em": "2026-07-21T04:11:35",
+  "gerada_em": "2026-07-22T19:00:51",
   "relatorio": {
-    "id": 1223629,
-    "data_entrega": "17/06/2026 19:00",
-    "texto": "### Fatos do Relatório:\n\n1. **Resultado e Distribuição Mensal:**\n   - Em maio, o RCRI11 gerou R$ 1,22 de resultado por cota.\n   - A distribuição foi de R$ 1,15 em dividendos.\n   - O dividend yield corresponde a 1,1% com consideração do IR à alíquota de 15%.\n\n2. **Composição da Carteira:**\n   - 62% do patrimônio líquido está alocado em FIIs de recebíveis.\n   - 16% em CRIs atrelados ao CDI.\n   - 19% em CRIs atrelados ao IPCA.\n\n3. **Operações de CRI:**\n   - Iniciou posição no CRI Grupo Mateus via mercado secundário, representando 1,1% do PL com remuneração de IPCA + 10,6%, acima da taxa de emissão.\n   - Aumentou marginalmente a exposição ao CRI Trisul (Out/22).\n\n4. **Performance dos FIIs:**\n   - Os FIIs de recebíveis contribuíram positivamente para o resultado patrimonial do fundo, com uma performance superior ao segmento do IFIX.\n   - IRIM11 foi a maior posição em FIIs e teve um desempenho de 6,0% no mês.\n\n5. **Riscos e Garantias:**\n   - As operações de CRI contam com diversas garantias como Alienação Fiduciária, Cessão Fiduciária, Aval dos sócios, entre outros.\n   - O CRI Grupo Mateus possui um rating \"AAsf(bra)\" pela Fitch Ratings Brasil.\n\n### O que observar em seguida:\n- Monitorar a evolução da posição no CRI Grupo Mateus e suas garantias.\n- Observar o desempenho dos FIIs de recebíveis, especialmente IRIM11."
+    "id": 1262162,
+    "data_entrega": "22/07/2026 18:42",
+    "texto": "### Fatos do Relatório:\n\n1. **Resultado e Distribuição Mensal:**\n   - Em junho, o RCRI11 gerou R$ 1,27 de resultado por cota.\n   - A distribuição prevista é de R$ 1,50 em dividendos.\n\n2. **Composição do Portfólio:**\n   - 62% do patrimônio líquido está alocado em FIIs de recebíveis.\n   - 16% em CRIs atrelados ao CDI.\n   - 18% em CRIs atrelados ao IPCA.\n\n3. **Distribuição do Resultado:**\n   - O resultado caixa apresentou avanço, impulsionado principalmente pelos dividendos dos FIIs de recebíveis.\n\n4. **Operações de CRI:**\n   - As operações de CRI representam 34,5% do patrimônio líquido.\n   - A maior parte está atrelada ao IPCA com remuneração média de IPCA + 11,7% a.a.\n\n5. **FIIs de Recebíveis:**\n   - Ao final de junho, a alocação em FIIs de recebíveis representava 62% do patrimônio líquido.\n   - A carteira de FIIs é composta por 19 fundos com dividend yield médio de 14,8%.\n\n6. **Dividend Yield e P/VP:**\n   - O dividend yield corresponde a 1,5%, equivalente a uma rentabilidade líquida de aproximadamente 1,8%.\n   - O preço/valor patrimonial (P/VPA) é 0,84x.\n\n7. **Cotistas e Cota Patrimonial:**\n   - O número de cotistas aumentou para 354 no último informe mensal.\n   - A cota patrimonial é R$ 100,53.\n\n### O que observar em seguida:\n- Monitorar a evolução da carteira de FIIs e CRIs, especialmente as operações com maior risco (high yield).\n- Observar o impacto das realocações recentes na geração de renda.\n- Verificar os avanços nas obras dos projetos imobiliários."
   },
   "comunicados": {
     "ids": [
@@ -29,6 +29,18 @@
     "texto": "### COMUNICADO AO MERCADO ENTREGUE EM 12/05/2026\n\n**O QUE ACONTECEU:** As contas anuais do Fundo REAL INVEST REC FII referentes ao exercício encerrado em 31 de dezembro de 2025 foram aprovadas na assembleia geral realizada em 8 de maio de 2026.\n\n**RESUMO:** A assembleia geral aprovou as contas anuais do Fundo, finalizando o exercício social do ano anterior.\n\n**CITAÇÃO-CHAVE:**\n\"Na assembleia geral de cotistas realizada em 08 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 24/11/2025\n\n**O QUE ACONTECEU:** Foi divulgada a quantidade de Cotas subscritas e integralizadas durante o período de exercício do direito de subscrição de sobras e montante adicional.\n\n**RESUMO:** O Fundo recebeu 406.123 Cotas adicionais, totalizando 647.528 Cotas em circulação.\n\n**CITAÇÃO-CHAVE:**\n\"De acordo com as informações recebidas pela B3 S.A. – Brasil, e pelo Escriturador, durante o Período de Exercício do Direito de Subscrição de Sobras e de Montante Adicional, encerrado em 14 de novembro de 2025, foram subscritas e integralizadas 406.123 (quatrocentas e seis mil, cento e vinte e três) Cotas.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS ENTREGUE EM 12/05/2026\n\n**O QUE ACONTECEU:** A assembleia geral de cotistas aprovou as contas anuais do Fundo REAL INVEST REC FII referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**RESUMO:** A assembleia geral realizada via manifestação de voto confirmou o fechamento das contas do ano anterior.\n\n**CITAÇÃO-CHAVE:**\n\"Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA GERAL DE COTISTAS ENTREGUE EM 04/05/2026\n\n**O QUE ACONTECEU:** Foi convocada a assembleia geral para aprovar as contas e demonstrações contábeis do Fundo referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**RESUMO:** Os cotistas foram convidados a votar sobre a aprovação das contas anuais do Fundo, que serão apresentadas na assembleia geral.\n\n**CITAÇÃO-CHAVE:**\n\"A convocação da assembleia geral para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
   },
   "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos irregulares",
+      "Base de cotistas muito pequena",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": 98.76
+  },
+  "anterior": {
+    "gerada_em": "2026-07-21T04:11:35",
+    "relatorio_data": "17/06/2026 19:00",
     "selo": "Atenção",
     "nivel": "atencao",
     "alertas": [

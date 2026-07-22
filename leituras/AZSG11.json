@@ -1,24 +1,27 @@
 {
   "ticker": "AZSG11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-21T06:05:16",
+  "verificado_em": "2026-07-22T19:06:36",
   "comunicados": {
     "ids": [
+      1262125,
       1244501,
       1259717,
       1259715
     ],
     "datas": [
+      "22/07/2026",
       "10/07/2026",
       "20/07/2026",
       "20/07/2026"
     ],
     "rotulos": [
       "Fato Relevante",
+      "Fato Relevante",
       "Assembleia AGE",
       "Assembleia AGE"
     ],
-    "texto": "### FATO RELEVANTE entregue em 10/07/2026\n\n**O que aconteceu:** A administradora e a gestora do Fundo AZ SOLARGRID RENDA SOLAR comunicaram sobre oscilações no patrimônio líquido, que permanece negativo.\n\n**Resumo:** O patrimônio líquido do fundo está negativo em R$5.803.106,78 devido a um descasamento temporário entre ativos e passivo. A mensuração a valor justo será realizada antes do encerramento do exercício social.\n\n**Trecho-chave:** \"O Patrimônio Líquido da Classe Única de cotas do Fundo está negativo no valor de -R$5.803.106,78, em decorrência de um descasamento temporário entre os valores registrados no ativo e no passivo.\" (p. 2)\n\n---\n\n### ASSEMBLEIA AGE entregue em 20/07/2026\n\n**O que aconteceu:** A assembleia geral extraordinária do Fundo AZ SOLARGRID RENDA SOLAR aprovou o plano de resolução do patrimônio líquido negativo.\n\n**Resumo:** O plano prevê a contratação de um avaliador independente para realizar a mensuração dos ativos a valor justo, com previsão de conclusão até 24/07/2026. A aprovação do plano foi submetida aos cotistas.\n\n**Trecho-chave:** \"O cronograma previsto para a conclusão dos trabalhos é o seguinte:\" (p. 3)\n\n---\n\n### Conexão com indicadores:\n- O patrimônio líquido negativo (-R$5,8M) está em linha com o contexto fornecido, onde o fundo apresentou oscilações e permaneceu negativo.\n\n- A contratação do avaliador independente para a mensuração dos ativos a valor justo pode impactar os indicadores de VP/cota (atualmente -289,78) e DY mensal (0,00%), uma vez que a avaliação pode refletir no valor contábil dos ativos."
+    "texto": "### FATO RELEVANTE entregue em 22/07/2026\n\n**O QUE aconteceu:** Remarcação dos ativos da carteira do Fundo concluída.\n**Resumo:** A remarcação resultou em um aumento de R$ 63.694.107 no Patrimônio Líquido do Fundo.\n**Trecho-chave:** \"A remarcação dos ativos da carteira do Fundo resultou em um aumento de R$ 63.694.107 no Patrimônio Líquido do Fundo.\" (p. 2)\n\n### FATO RELEVANTE entregue em 10/07/2026\n\n**O QUE aconteceu:** Informação sobre oscilações no Patrimônio Líquido e plano de resolução.\n**Resumo:** O Patrimônio Líquido do Fundo está negativo em R$5.803.106,78 devido a um descasamento temporário entre ativos e passivo. Um laudo de avaliação será realizado antes do encerramento do exercício social.\n**Trecho-chave:** \"O Patrimônio Líquido da Classe Única de cotas do Fundo está negativo no valor de -R$5.803.106,78, em decorrência de um descasamento temporário entre os valores registrados no ativo e no passivo.\" (p. 2)\n\n### ASSEMBLEIA AGE entregue em 20/07/2026\n\n**O QUE aconteceu:** Convocação da assembleia para aprovação do plano de resolução do patrimônio líquido negativo.\n**Resumo:** O Fundo possui 17 ativos correspondentes a usinas solares, registrados pelo valor de custo. Um laudo de avaliação independente será realizado e os ativos passarão a ser registrados pelo valor justo.\n**Trecho-chave:** \"O plano de resolução do patrimônio líquido negativo será submetido a aprovação dos cotistas em assembleia a ser convocada nos termos do art. 122, II da RCVM 175.\" (p. 4)"
   },
   "modelo": "qwen2.5:7b"
 }
