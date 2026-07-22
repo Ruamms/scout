@@ -89,6 +89,61 @@ def test_comunicados_e_assembleias_selecao():
     assert selecionados[2]["rotulo"] == "Assembleia AGE"
 
 
+def test_baixar_repete_quando_o_read_estoura(monkeypatch):
+    """Regressão: o timeout do FNET estoura no read() do corpo, não no open.
+    O retry TEM que cobrir a leitura — senão um stall transitório vira erro."""
+    import time
+    import urllib.request
+
+    monkeypatch.setattr(time, "sleep", lambda *_: None)  # não espera o backoff
+    leituras_read = {"n": 0}
+
+    class _Resp:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *a):
+            return False
+
+        def read(self):
+            leituras_read["n"] += 1
+            if leituras_read["n"] == 1:
+                raise TimeoutError("The read operation timed out")
+            return b"%PDF-conteudo-ok"
+
+    monkeypatch.setattr(urllib.request, "urlopen", lambda req, timeout=None: _Resp())
+    assert fnet.baixar(150, timeout=1, tentativas=3) == b"%PDF-conteudo-ok"
+    assert leituras_read["n"] == 2  # 1ª falhou no read, 2ª deu certo
+
+
+def test_baixar_repete_em_stream_truncado(monkeypatch):
+    """'Stream has ended unexpectedly' via IncompleteRead (HTTPException, não
+    OSError): também precisa ser repetido."""
+    import http.client
+    import time
+    import urllib.request
+
+    monkeypatch.setattr(time, "sleep", lambda *_: None)
+    tentativas = {"n": 0}
+
+    class _Resp:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *a):
+            return False
+
+        def read(self):
+            tentativas["n"] += 1
+            if tentativas["n"] == 1:
+                raise http.client.IncompleteRead(b"parcial")
+            return b"completo"
+
+    monkeypatch.setattr(urllib.request, "urlopen", lambda req, timeout=None: _Resp())
+    assert fnet.baixar(1, timeout=1, tentativas=3) == b"completo"
+    assert tentativas["n"] == 2
+
+
 def test_garantir_fatos_relevantes_baixa_e_e_idempotente(con, tmp_path, monkeypatch):
     downloads = []
     monkeypatch.setattr(fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: _DOCUMENTOS)

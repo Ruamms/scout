@@ -29,16 +29,23 @@ def so_digitos(cnpj: str) -> str:
     return re.sub(r"\D", "", cnpj)
 
 
-def _abrir_com_retry(requisicao, timeout: int, tentativas: int = 3):
-    """O FNET oscila (timeouts esporádicos); espera 5s/20s entre tentativas."""
+def _buscar_com_retry(requisicao, timeout: int, tentativas: int, consumir):
+    """Abre E LÊ O CORPO dentro do mesmo retry. O FNET oscila (timeouts
+    esporádicos) e o `timed out` costuma estourar no read() do corpo, não no
+    open — se a leitura ficar fora do retry, um stall transitório vira erro
+    definitivo mesmo o FNET voltando 2s depois. `consumir(resposta)` faz a
+    leitura (json.load ou .read()). Espera 5s/20s entre tentativas e trata
+    também IncompleteRead ('Stream has ended unexpectedly')."""
+    import http.client
     import time
     import urllib.error
 
     ultimo_erro: Exception | None = None
     for tentativa in range(tentativas):
         try:
-            return urllib.request.urlopen(requisicao, timeout=timeout)
-        except (urllib.error.URLError, OSError, TimeoutError) as erro:
+            with urllib.request.urlopen(requisicao, timeout=timeout) as resposta:
+                return consumir(resposta)
+        except (urllib.error.URLError, OSError, TimeoutError, http.client.HTTPException) as erro:
             ultimo_erro = erro
             if tentativa < tentativas - 1:
                 time.sleep(5 * (tentativa + 1) ** 2)
@@ -56,8 +63,7 @@ def listar(
     rodada inteira — melhor pular rápido e retomar na semana seguinte."""
     url = URL_PESQUISA.format(cnpj=so_digitos(cnpj), quantidade=quantidade)
     requisicao = urllib.request.Request(url, headers=_HEADERS)
-    with _abrir_com_retry(requisicao, timeout=timeout, tentativas=tentativas) as resposta:
-        dados = json.load(resposta)
+    dados = _buscar_com_retry(requisicao, timeout=timeout, tentativas=tentativas, consumir=json.load)
     return [
         {
             "id": item.get("id"),
@@ -77,8 +83,9 @@ def baixar(id_fnet: int, timeout: int = 180, tentativas: int = 3) -> bytes:
     requisicao = urllib.request.Request(
         URL_DOWNLOAD.format(id=id_fnet), headers=_HEADERS
     )
-    with _abrir_com_retry(requisicao, timeout=timeout, tentativas=tentativas) as resposta:
-        return resposta.read()
+    return _buscar_com_retry(
+        requisicao, timeout=timeout, tentativas=tentativas, consumir=lambda r: r.read()
+    )
 
 
 def ultimo_relatorio_gerencial(documentos: list[dict]) -> dict | None:
