@@ -107,6 +107,36 @@ def montar_sem_relatorio(
     return dados
 
 
+def montar_relatorio_ilegivel(
+    ticker: str,
+    relatorio_meta: dict,
+    docs_meta: list[dict] = (),
+    texto_docs: str | None = None,
+    modelo: str | None = None,
+    agora: datetime | None = None,
+) -> dict:
+    """Marcador para relatório gerencial que EXISTE mas é imagem/escaneado (sem
+    texto extraível). Não é erro (repetir não muda o PDF) nem 'sem relatório'
+    (ele existe) — guarda o id e `ilegivel` para a página não mostrar leitura
+    falsa (o render só exibe quando há `texto`) e os comunicados/parecer, quando
+    dá, são lidos mesmo assim."""
+    agora = agora or datetime.now()
+    dados = {
+        "ticker": ticker.upper(),
+        "gerada_em": agora.isoformat(timespec="seconds"),
+        "relatorio": {
+            "id": relatorio_meta["id"],
+            "data_entrega": relatorio_meta["data_entrega"],
+            "texto": "",
+            "ilegivel": True,
+        },
+        "comunicados": _bloco_comunicados(docs_meta, texto_docs),
+    }
+    if modelo:
+        dados["modelo"] = modelo
+    return dados
+
+
 def montar(
     ticker: str,
     modelo: str,

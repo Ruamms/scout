@@ -45,11 +45,30 @@ def _buscar_com_retry(requisicao, timeout: int, tentativas: int, consumir):
         try:
             with urllib.request.urlopen(requisicao, timeout=timeout) as resposta:
                 return consumir(resposta)
-        except (urllib.error.URLError, OSError, TimeoutError, http.client.HTTPException) as erro:
+        except (urllib.error.URLError, OSError, TimeoutError, http.client.HTTPException, EOFError) as erro:
             ultimo_erro = erro
             if tentativa < tentativas - 1:
                 time.sleep(5 * (tentativa + 1) ** 2)
     raise ultimo_erro
+
+
+def _pdf_truncado(conteudo: bytes) -> bool:
+    """Um PDF completo termina com o marcador %%EOF. Se começa como PDF mas não
+    tem %%EOF perto do fim, o download veio truncado — o read() às vezes devolve
+    bytes parciais sem lançar, e o fitz depois falha 'Stream has ended'."""
+    return conteudo[:5] == b"%PDF-" and b"%%EOF" not in conteudo[-2048:]
+
+
+def _arquivo_pdf_truncado(caminho: Path) -> bool:
+    """Mesma checagem de %%EOF lendo só as bordas do arquivo em cache."""
+    try:
+        with open(caminho, "rb") as fh:
+            head = fh.read(5)
+            fh.seek(max(0, caminho.stat().st_size - 2048))
+            cauda = fh.read()
+    except OSError:
+        return True
+    return head == b"%PDF-" and b"%%EOF" not in cauda
 
 
 def listar(
@@ -83,9 +102,14 @@ def baixar(id_fnet: int, timeout: int = 180, tentativas: int = 3) -> bytes:
     requisicao = urllib.request.Request(
         URL_DOWNLOAD.format(id=id_fnet), headers=_HEADERS
     )
-    return _buscar_com_retry(
-        requisicao, timeout=timeout, tentativas=tentativas, consumir=lambda r: r.read()
-    )
+
+    def _ler(resposta) -> bytes:
+        conteudo = resposta.read()
+        if _pdf_truncado(conteudo):  # download parcial: força mais uma tentativa
+            raise EOFError("download de PDF truncado (sem %%EOF)")
+        return conteudo
+
+    return _buscar_com_retry(requisicao, timeout=timeout, tentativas=tentativas, consumir=_ler)
 
 
 def ultimo_relatorio_gerencial(documentos: list[dict]) -> dict | None:
@@ -210,7 +234,11 @@ def _garantir_documento(
 ) -> Path:
     registrado = armazenamento.documento(con, cnpj, documento_["id"])
     if registrado and registrado["arquivo"] and Path(registrado["arquivo"]).exists():
-        return Path(registrado["arquivo"])
+        cache = Path(registrado["arquivo"])
+        if not _arquivo_pdf_truncado(cache):
+            return cache
+        # cache truncado (download parcial de uma rodada anterior, quando ainda
+        # não validávamos): baixa de novo em vez de servir o arquivo corrompido
 
     conteudo = baixar(documento_["id"], timeout=timeout, tentativas=tentativas)
     pasta = destino / so_digitos(cnpj)

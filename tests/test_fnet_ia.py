@@ -109,10 +109,10 @@ def test_baixar_repete_quando_o_read_estoura(monkeypatch):
             leituras_read["n"] += 1
             if leituras_read["n"] == 1:
                 raise TimeoutError("The read operation timed out")
-            return b"%PDF-conteudo-ok"
+            return b"%PDF-1.4\nconteudo ok\n%%EOF"
 
     monkeypatch.setattr(urllib.request, "urlopen", lambda req, timeout=None: _Resp())
-    assert fnet.baixar(150, timeout=1, tentativas=3) == b"%PDF-conteudo-ok"
+    assert fnet.baixar(150, timeout=1, tentativas=3) == b"%PDF-1.4\nconteudo ok\n%%EOF"
     assert leituras_read["n"] == 2  # 1ª falhou no read, 2ª deu certo
 
 
@@ -142,6 +142,56 @@ def test_baixar_repete_em_stream_truncado(monkeypatch):
     monkeypatch.setattr(urllib.request, "urlopen", lambda req, timeout=None: _Resp())
     assert fnet.baixar(1, timeout=1, tentativas=3) == b"completo"
     assert tentativas["n"] == 2
+
+
+def test_baixar_repete_pdf_truncado(monkeypatch):
+    """Download parcial (read() devolve bytes sem %%EOF, sem lançar): tem que
+    ser repetido — senão vira PDF corrompido que o fitz não abre."""
+    import time
+    import urllib.request
+
+    monkeypatch.setattr(time, "sleep", lambda *_: None)
+    n = {"i": 0}
+    completo = b"%PDF-1.4\ncorpo do documento\n%%EOF"
+
+    class _Resp:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *a):
+            return False
+
+        def read(self):
+            n["i"] += 1
+            return b"%PDF-1.4\ncorpo truncado sem fim" if n["i"] == 1 else completo
+
+    monkeypatch.setattr(urllib.request, "urlopen", lambda req, timeout=None: _Resp())
+    assert fnet.baixar(1, timeout=1, tentativas=3) == completo
+    assert n["i"] == 2  # 1ª veio truncada, 2ª completa
+
+
+def test_garantir_documento_rebaixa_cache_truncado(con, tmp_path, monkeypatch):
+    """Cache truncado de uma rodada antiga não deve ser servido — re-baixa."""
+    from scout import armazenamento
+
+    cnpj = "11.111.111/0001-11"
+    doc = {"id": 999, "tipo": "Relatório Gerencial", "categoria": "Relatórios", "data_entrega": "13/07/2026 19:00"}
+    pasta = tmp_path / "docs"
+    (pasta / fnet.so_digitos(cnpj)).mkdir(parents=True)
+    ruim = pasta / fnet.so_digitos(cnpj) / "999.pdf"
+    ruim.write_bytes(b"%PDF-1.4\ntruncado sem eof")  # sem %%EOF
+    armazenamento.gravar_documento(
+        con, cnpj, 999, doc["tipo"], doc["categoria"], doc["data_entrega"], str(ruim)
+    )
+    bom = b"%PDF-1.4\ncompleto\n%%EOF"
+    chamou = {"n": 0}
+    monkeypatch.setattr(
+        fnet, "baixar",
+        lambda id_fnet, timeout=180, tentativas=3: chamou.__setitem__("n", chamou["n"] + 1) or bom,
+    )
+    caminho = fnet._garantir_documento(con, cnpj, doc, pasta)
+    assert chamou["n"] == 1  # cache truncado -> baixou de novo
+    assert caminho.read_bytes() == bom
 
 
 def test_garantir_fatos_relevantes_baixa_e_e_idempotente(con, tmp_path, monkeypatch):
@@ -637,6 +687,41 @@ def test_cli_ia_lote_registra_erros_e_reprocessa_so_eles(con, zip_cvm, tmp_path,
     assert "1 lidos" in resultado2.output
     assert (pasta / "TSTE11.json").exists()
     assert not (pasta / "_erros.txt").exists()  # rodada limpa apaga a lista
+
+
+def test_cli_ia_lote_pdf_imagem_pula_sem_erro(con, zip_cvm, tmp_path, monkeypatch):
+    """PDF só-imagem é TERMINAL: vira pulado (não erro), não entra em _erros.txt
+    (senão --apenas-erros repetiria pra sempre) e grava o marcador ilegível."""
+    from typer.testing import CliRunner
+
+    from scout import cli as modulo_cli
+    from scout import ia as modulo_ia
+    from scout.cli import app
+    from scout.coleta import cvm
+    from scout.coleta import fnet as modulo_fnet
+
+    cvm.carregar_zip(con, zip_cvm(True), "inf_mensal_fii_2026.zip")
+    monkeypatch.setenv("SCOUT_DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(modulo_cli, "_preparar_ia", lambda modelo: "teste:1b")
+    monkeypatch.setattr(modulo_fnet, "listar", lambda cnpj, quantidade=30, timeout=60, tentativas=3: _DOCUMENTOS)
+    caminho_pdf = tmp_path / "imagem.pdf"
+    caminho_pdf.write_bytes(_pdf_minimo("x"))
+    monkeypatch.setattr(
+        modulo_fnet, "_garantir_documento", lambda con_, cnpj, doc, destino, timeout=180, tentativas=3: caminho_pdf
+    )
+    monkeypatch.setattr(modulo_ia, "extrair_texto_pdf", lambda caminho, **kw: "")  # imagem: sem texto
+    pasta = tmp_path / "leituras"
+
+    resultado = CliRunner().invoke(app, ["ia-lote", "--destino", str(pasta), "--sem-fatos"])
+    assert resultado.exit_code == 0, resultado.output
+    assert "0 com erro" in resultado.output
+    assert "imagem/escaneado" in resultado.output
+    assert not (pasta / "_erros.txt").exists()  # NÃO é erro
+    leitura = json.loads((pasta / "TSTE11.json").read_text(encoding="utf-8"))
+    assert leitura["relatorio"]["ilegivel"] is True
+    assert leitura["relatorio"]["texto"] == ""
+    historico = (pasta / "_historico.txt").read_text(encoding="utf-8")
+    assert "TSTE11\tsem-texto" in historico
 
 
 def test_cli_ia_sem_ollama_orienta_instalacao(con, zip_cvm, tmp_path, monkeypatch):

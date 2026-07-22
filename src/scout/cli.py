@@ -971,9 +971,29 @@ def ia_lote(
                     )
                     texto = modulo_ia.extrair_texto_pdf(caminho)
                     if len(texto) < 500:
-                        console.print(f"{prefixo}: [yellow]PDF sem texto extraível — pulado[/]")
-                        falhas.append((resumo.ticker, "PDF sem texto extraível (imagem/escaneado)"))
-                        _registrar(f"{resumo.ticker}\terro\tPDF sem texto extraível")
+                        # imagem/escaneado é TERMINAL (repetir não gera texto):
+                        # marca como pulado — NÃO vai para _erros.txt, senão
+                        # --apenas-erros o repetiria pra sempre. Comunicados e
+                        # parecer, quando existem, são lidos assim mesmo.
+                        texto_docs = (
+                            _ler_documentos(docs_meta, contexto)
+                            if docs_meta and not reusar_docs else None
+                        )
+                        dados = leituras.montar_relatorio_ilegivel(
+                            resumo.ticker, relatorio, docs_meta, texto_docs, modelo=modelo_final
+                        )
+                        if reusar_docs:
+                            dados["comunicados"] = bloco_lido
+                        bloco_parecer = _processar_parecer(df, existente)
+                        if bloco_parecer:
+                            dados["parecer"] = bloco_parecer
+                        leituras.salvar(pasta, dados)
+                        console.print(
+                            f"{prefixo}: [yellow]relatório em imagem/escaneado — "
+                            "pulado (não é erro)[/]"
+                        )
+                        _registrar(f"{resumo.ticker}\tsem-texto\trelatorio id {relatorio['id']} (imagem/escaneado)")
+                        pulados += 1
                         continue
                     with console.status(f"{prefixo}: lendo o relatório com IA…") as estado:
                         leitura_relatorio = modulo_ia.analisar_relatorio(
