@@ -1,0 +1,44 @@
+{
+  "ticker": "RZLC11",
+  "gerada_em": "2026-07-22T10:59:04",
+  "relatorio": {
+    "id": 1244443,
+    "data_entrega": "10/07/2026 19:11",
+    "texto": "",
+    "ilegivel": true
+  },
+  "comunicados": {
+    "ids": [
+      910200,
+      1199651,
+      1125081,
+      1199650,
+      1181463
+    ],
+    "datas": [
+      "22/05/2025",
+      "19/05/2026",
+      "28/02/2026",
+      "19/05/2026",
+      "06/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 22/05/2025\n\n**O que aconteceu:** A Classe RIZA LECCI FII contratou o BANCO BTG PACTUAL S.A. para prestar serviços de formador de mercado.\n\n**Resumo:** A administradora e a gestora do fundo informaram sobre a contratação de um formador de mercado pelo prazo de 12 meses, iniciando no dia 23 de maio de 2025.\n\n**Trecho-chave:**\n\"A Classe contratou o BANCO BTG PACTUAL S.A., com escritório na cidade de São Paulo, Estado de São Paulo, na Avenida Brigadeiro Faria Lima, nº 3.477, 14º andar, Itaim Bibi, inscrito no CNPJ sob nº 30.306.294/0002-26, para prestar os serviços de formador de mercado para as cotas da Classe, nos termos do Art. 27, IV, ANEXO A da Resolução CVM nº 184 (\"Formador de Mercado\"), pelo prazo de 12 (doze) meses a contar da data de sua celebração, prorrogável automaticamente por períodos iguais caso não haja manifestação de qualquer das partes em sentido contrário.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 19/05/2026\n\n**O que aconteceu:** As contas anuais do RIZA LECCI FII foram aprovadas na assembleia geral realizada em 18 de maio de 2026.\n\n**Resumo:** A administradora informou sobre a aprovação das contas anuais do fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A Administradora, na qualidade de administradora do RIZA LECCI FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA, inscrito no CNPJ sob o nº 56.212.023/0001-14, serve-se da presente para comunicar que na assembleia geral de cotistas realizada em 18 de maio de 2026 foram aprovadas as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 28/02/2026\n\n**O que aconteceu:** A administradora informou sobre a disponibilização dos Informes de Rendimentos referentes ao ano de 2025 por meio digital.\n\n**Resumo:** A administradora notificou os cotistas e o mercado sobre a disponibilidade exclusiva do Portal do Investidor para acesso aos Informes de Rendimentos do ano de 2025, em conformidade com a Instrução Normativa RFB nº 2.060/2021.\n\n**Trecho-chave:**\n\"Em complemento ao Comunicado ao Mercado de 2 de fevereiro de 2026 e ao Comunicado ao Mercado de 13 de fevereiro de 2026, a Administradora informa que, com o intuito de reduzir os custos de impressão e correios para os Fundos, bem como minimizar o uso de papel e seus impactos para o meio ambiente, os Informes de Rendimentos (\"Informes\") referentes ao ano de 2025, já estão disponíveis aos investidores, conforme previsto na Instrução Normativa RFB nº 2.060/2021, exclusivamente por meio digital, por meio do Portal do Investidor (\"Portal\").\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 19/05/2026\n\n**O que aconteceu:** A assembleia geral de cotistas aprovou as contas anuais do fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi realizada via manifestação de voto enviada pelos cotistas e deliberou aprovar as demonstrações financeiras auditadas relativas ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 06/05/2026\n\n**O que aconteceu:** A administradora convocou os cotistas para a consulta formal sobre a aprovação das contas e demonstrações contábeis do fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A administradora notificou os cotistas para votarem sobre a aprovação das contas e demonstrações contábeis do fundo, acompanhadas do relatório do auditor independente, referentes ao exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"A administradora convocou os cotistas para a Consulta Formal, com prazo de recebimento de votos até 18 de maio de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1151961,
+    "data_entrega": "31/03/2026 22:50",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe Única de Cotas do Riza Lecci Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as prática"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "ticker": "RZDS11",
+  "gerada_em": "2026-07-22T10:57:52",
+  "relatorio": {
+    "id": 1238687,
+    "data_entrega": "03/07/2026 12:15",
+    "texto": "",
+    "ilegivel": true
+  },
+  "comunicados": {
+    "ids": [
+      1179615,
+      1159342,
+      1030615,
+      1028995
+    ],
+    "datas": [
+      "04/05/2026",
+      "10/04/2026",
+      "07/11/2025",
+      "05/11/2025"
+    ],
+    "rotulos": [
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### Comunicado ao Mercado entregue em 10/04/2026\n\n**O QUE aconteceu:** Modificação da Oferta Pública de Distribuição da 3ª Emissão de Cotas do RIZA DOMUS FII.\n\n**Resumo:** A administradora e a gestora ajustaram as redações relativas ao momento em que as novas cotas poderão ser negociadas no mercado secundário, permitindo que elas sejam negociadas após a Data de Liquidação da Oferta, sem depender da divulgação do Anúncio de Encerramento.\n\n**Trecho-chave:**\n\"Os itens 7.1, 8.2, 8.5, 8.6 e o fator de risco “Risco relativo à impossibilidade de negociação das Novas Cotas no mercado secundário até o encerramento da Oferta” do Prospecto Definitivo, bem como os demais documentos da Oferta, conforme aplicável, foram ajustados para prever que as Novas Cotas passarão a ser livremente negociadas na B3 após a Data de Liquidação da Oferta e não somente após a divulgação do Anúncio de Encerramento da Oferta.\"\n\n---\n\n### Comunicado ao Mercado entregue em 04/05/2026\n\n**O QUE aconteceu:** Unificação dos Códigos de Negociação das Cotas da 3ª Emissão do RIZA DOMUS FII.\n\n**Resumo:** As cotas da 3ª emissão, que inicialmente eram negociadas sob um código diferente, serão convertidas e passarão a ser negociadas sob o mesmo código utilizado pelas cotas em circulação atualmente. A unificação será realizada no dia 05 de maio de 2026.\n\n**Trecho-chave:**\n\"1. As cotas da 3ª Emissão atualmente negociadas sob o código 5095526UN3 serão convertidas e passarão a ser negociadas sob o mesmo código atualmente utilizado para as cotas em circulação do Fundo, qual seja, 5095523FII;\"\n\n---\n\n### Assembleia Geral Ordinária (AGO) realizada em 07/11/2025\n\n**O QUE aconteceu:** Aprovou as Demonstrações Financeiras e Notas Explicativas do exercício social findo em 30.06.2024.\n\n**Resumo:** A assembleia, realizada de forma não presencial, aprovou as demonstrações financeiras, notas explicativas e parecer dos auditores independentes relativos ao exercício social findo em 30.06.2024.\n\n**Trecho-chave:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 30.06.2024, os quais estão disponíveis no website da CVM.\"\n\n---\n\n### Assembleia Geral Ordinária (AGO) realizada em 05/11/2025\n\n**O QUE aconteceu:** Aprovou as Demonstrações Financeiras e Notas Explicativas do exercício social findo em 30.06.2025.\n\n**Resumo:** Similar à AGO anterior, a assembleia realizada de forma não presencial aprovou as demonstrações financeiras, notas explicativas e parecer dos auditores independentes relativos ao exercício social findo em 30.06.2025.\n\n**Trecho-chave:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 30.06.2025, os quais estão disponíveis no website da CVM.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1001722,
+    "data_entrega": "29/09/2025 23:01",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Fundo em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nesta data, de acordo com as práticas contábeis adotadas no Brasil aplicáveis aos fundos de investimento imobiliário."
+  }
+}

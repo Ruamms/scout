@@ -1152,3 +1152,49 @@
 2026-07-22 09:57:31	XB3011	erro	The read operation timed out
 2026-07-22 09:57:31	XIFR11	erro	The read operation timed out
 2026-07-22 09:57:31	--- lote encerrado · 15 lidos, 701 em dia/sem relatório, 35 erros
+2026-07-22 10:35:37	--- lote iniciado · modelo qwen2.5:7b · 35 fundos na fila
+2026-07-22 10:35:38	ISSH11	erro	Stream has ended unexpectedly
+2026-07-22 10:37:15	RZAK11	erro	PDF sem texto extraível
+2026-07-22 10:37:15	RZDS11	erro	PDF sem texto extraível
+2026-07-22 10:37:15	RZZV11	erro	The read operation timed out
+2026-07-22 10:37:16	RZLC11	erro	PDF sem texto extraível
+2026-07-22 10:37:16	RZZI11	erro	Stream has ended unexpectedly
+2026-07-22 10:37:16	MAXR11	erro	The read operation timed out
+2026-07-22 10:37:30	ISUS11	erro	The read operation timed out
+2026-07-22 10:37:59	SPXI11	erro	The read operation timed out
+2026-07-22 10:37:59	--- lote encerrado · 0 lidos, 26 em dia/sem relatório, 9 erros
+2026-07-22 10:54:17	--- lote iniciado · modelo qwen2.5:7b · 9 fundos na fila
+2026-07-22 10:56:03	ISSH11	sem-texto	relatorio id 1236323 (imagem/escaneado)
+2026-07-22 10:56:54	RZAK11	sem-texto	relatorio id 1261610 (imagem/escaneado)
+2026-07-22 10:57:52	RZDS11	sem-texto	relatorio id 1238687 (imagem/escaneado)
+2026-07-22 10:57:52	RZZV11	erro	The read operation timed out
+2026-07-22 10:59:04	RZLC11	sem-texto	relatorio id 1244443 (imagem/escaneado)
+2026-07-22 11:00:12	RZZI11	sem-texto	relatorio id 1236316 (imagem/escaneado)
+2026-07-22 11:00:12	--- lote encerrado · 0 lidos, 8 em dia/sem relatório, 1 erros
+2026-07-22 11:59:37	--- lote iniciado · modelo qwen2.5:7b · 751 fundos na fila
+2026-07-22 12:01:10	JKEF11	erro	The read operation timed out
+2026-07-22 12:01:10	BPML11	erro	The read operation timed out
+2026-07-22 12:02:05	MCLG11	lido	55s
+2026-07-22 12:02:55	ZAGH11	lido	50s
+2026-07-22 12:02:55	HBCR11	erro	The read operation timed out
+2026-07-22 12:02:55	VVCR11	erro	The read operation timed out
+2026-07-22 12:02:55	SIGR11	erro	The read operation timed out
+2026-07-22 12:02:55	ARRI11	erro	The read operation timed out
+2026-07-22 12:02:55	BTML11	erro	The read operation timed out
+2026-07-22 12:03:30	CDHY11	erro	The read operation timed out
+2026-07-22 12:04:38	MCFA11	lido	61s
+2026-07-22 12:04:54	BDAP11	erro	The read operation timed out
+2026-07-22 12:05:15	BNKS11	erro	The read operation timed out
+2026-07-22 12:05:15	BOVV11	erro	The read operation timed out
+2026-07-22 12:05:51	BULZ11	erro	The read operation timed out
+2026-07-22 12:06:17	DIVD11	erro	The read operation timed out
+2026-07-22 12:06:25	DIVO11	erro	The read operation timed out
+2026-07-22 12:06:46	ESGB11	erro	The read operation timed out
+2026-07-22 12:07:10	LIQB11	erro	The read operation timed out
+2026-07-22 12:07:49	NDIV11	erro	The read operation timed out
+2026-07-22 12:08:52	QLBR11	erro	The read operation timed out
+2026-07-22 12:08:53	QQQI11	erro	The read operation timed out
+2026-07-22 12:09:17	SPUB11	erro	The read operation timed out
+2026-07-22 12:09:18	SPVT11	erro	The read operation timed out
+2026-07-22 12:09:19	SPXB11	erro	The read operation timed out
+2026-07-22 12:09:49	--- lote encerrado · 3 lidos, 726 em dia/sem relatório, 22 erros

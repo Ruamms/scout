@@ -1,0 +1,41 @@
+{
+  "ticker": "RZAK11",
+  "gerada_em": "2026-07-22T10:56:54",
+  "relatorio": {
+    "id": 1261610,
+    "data_entrega": "21/07/2026 20:28",
+    "texto": "",
+    "ilegivel": true
+  },
+  "comunicados": {
+    "ids": [
+      929756,
+      1201017,
+      1069143,
+      1044158
+    ],
+    "datas": [
+      "24/06/2025",
+      "21/05/2026",
+      "23/12/2025",
+      "18/11/2025"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 24/06/2025\n\n**O que aconteceu:** A Gestora Riza Gestora de Recursos Ltda. foi cindida, e a Nova Gestora RIZA ALLOCATION GESTORA DE RECURSOS LTDA. passou a ser responsável pela gestão do Fundo.\n\n**Resumo:** A cisão da Gestora resultou na transferência da gestão para a Nova Gestora, mantendo os mesmos profissionais envolvidos nas atividades de gestão.\n\n**Trecho-chave:**\n\"Em 20 de maio de 2025, foi realizada a 35ª Alteração do Contrato Social da Riza Gestora de Recursos Ltda. (“Gestora”), na qual foi deliberada a cisão parcial da Gestora com a incorporação da parcela cindida, a qual inclui os direitos e obrigações oriundos da gestão da totalidade da carteira do Fundo, pela RIZA ALLOCATION GESTORA DE RECURSOS LTDA., sociedade limitada, com sede na Cidade de São Paulo, Estado de São Paulo, na Rua Elvira Ferraz, 68 – 5º andar, Vila Olímpia, CEP 04552-040, inscrita no CNPJ sob o n.º 47.138.945/0001-38.\"\n\n### COMUNICADO AO MERCADO entregue em 21/05/2026\n\n**O que aconteceu:** A forma de divulgação da remuneração dos Prestadores de Serviços Essenciais foi atualizada para utilizar a Ferramenta ANBIMA.\n\n**Resumo:** A Administradora atualizou o formato de divulgação da remuneração dos Prestadores de Serviços Essenciais do Fundo, passando a utilizá-la exclusivamente na Ferramenta ANBIMA.\n\n**Trecho-chave:**\n\"Considerando as interpretações adicionais divulgadas pelo Ofício-Circular Conjunto nº 1/2025/CVM/SIN/SSE (\"Ofício-Circular CVM nº 1/2025\"), em especial quanto à substituição do \"Sumário de Remuneração\" pela Ferramenta ANBIMA (Plataforma de Transparência de Taxas) como meio centralizado e adequado de divulgação da remuneração dos Prestadores de Serviços Essenciais da Classe, restou aprovada a atualização da forma de divulgação, com a inclusão do referido link de acesso no Anexo I da Classe.\"\n\n### ASSEMBLEIA AGO entregue em 23/12/2025\n\n**O que aconteceu:** A Assembleia Geral Ordinária dos Cotistas aprovou as contas e demonstrações contábeis do Fundo.\n\n**Resumo:** Os Cotistas aprovaram as contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"Matéria I - Aprovar as contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\nAprovada com 75,62% dos votos a favor.\"\n\n### ASSEMBLEIA AGO entregue em 18/11/2025\n\n**O que aconteceu:** A Assembleia Geral Ordinária dos Cotistas foi convocada para aprovar as contas e demonstrações contábeis do Fundo.\n\n**Resumo:** A Assembleia Geral Ordinária do Fundo foi convocada para deliberar sobre a aprovação das contas e demonstrações contábeis do exercício social findo em 30 de junho de 2025.\n\n**Trecho-chave:**\n\"1. Aprovar as contas e demonstrações contábeis do Fundo, devidamente auditadas, relativas ao exercício social findo em 30 de junho de 2025.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 999624,
+    "data_entrega": "26/09/2025 17:24",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Riza Akin Fundo de Investimento Imobiliário Responsabilidade Limitada em 30 de junho de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil"
+  }
+}

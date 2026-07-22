@@ -1,0 +1,50 @@
+{
+  "ticker": "ISSH11",
+  "gerada_em": "2026-07-22T10:56:02",
+  "relatorio": {
+    "id": 1236323,
+    "data_entrega": "30/06/2026 20:38",
+    "texto": "",
+    "ilegivel": true
+  },
+  "comunicados": {
+    "ids": [
+      1120732,
+      1119762,
+      1073874,
+      1185215,
+      1139814,
+      1185205,
+      1173566
+    ],
+    "datas": [
+      "24/02/2026",
+      "23/02/2026",
+      "30/12/2025",
+      "11/05/2026",
+      "17/03/2026",
+      "11/05/2026",
+      "29/04/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### FATO RELEVANTE entregue em 30/12/2025\n\n**O que aconteceu:** Aprovada e concluída a venda de um imóvel para o Fundo Morumbi Town I, com os rendimentos sendo utilizados para custear a construção do deck park no Internacional Shopping Guarulhos.\n\n**Resumo:** O fundo vendeu um imóvel e os rendimentos foram aplicados na construção de um deck park em outro shopping.\n\n**Trecho-chave:**\n\"Conforme deliberado em Assembleia Geral Extraordinária realizada em 23 de dezembro de 2025: (a) foi aprovada e concluída a venda do imóvel localizado na Avenida Rotary, 1.350, próximo ao Internacional Shopping, localizado em Guarulhos (SP), para o Fundo Morumbi Town I (\"Transação\"), bem como b) aprovada a retenção e/ou reinvestimento, especificamente, dos rendimentos decorrentes da transação, de forma que todos os valores recebidos pelo Fundo em decorrência do pagamento da primeira parcela do preço de aquisição do Imóvel sejam utilizados para custear a construção do deck park do Internacional Shopping Guarulhos e outras necessidades de caixa do Fundo verificadas pelos prestadores de serviços.\"\n\n---\n\n### FATO RELEVANTE entregue em 24/02/2026\n\n**O que aconteceu:** Aprovada a realização da 8ª emissão e distribuição pública primária de cotas nominativas e escriturais da subclasse A do fundo.\n\n**Resumo:** O fundo vai emitir novas cotações para serem vendidas ao público, com um preço de R$48,44 cada.\n\n**Trecho-chave:**\n\"Trata-se de oferta pública primária de distribuição de 1.456.605 (um milhão, quatrocentos e cinquenta e seis mil, seiscentos e cinco) cotas nominativas e escriturais da subclasse A da Classe, em série única (\"Oferta Pública\"), com preço de emissão de R$ 48,44 (quarenta e oito reais e quarenta e quatro centavos) cada.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 17/03/2026\n\n**O que aconteceu:** Encerrado o período de exercício do direito de preferência para a nova emissão de cotas.\n\n**Resumo:** O período para os cotistas exercerem seu direito de preferência terminou, e as cotações restantes serão distribuídas aos investidores que fizeram pedidos durante esse período.\n\n**Trecho-chave:**\n\"Durante o Período de Exercício do Direito de Preferência, foram subscritas 1.171.956 (um milhão, cento e setenta e uma mil, novecentas e cinquenta e seis) Novas Cotas junto à B3 e 30.232 (trinta mil, duzentas e trinta e duas) Cotas junto ao Escriturador.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 11/05/2026\n\n**O que aconteceu:** Aprovadas as contas anuais do exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia geral aprovou o balanço financeiro do ano passado.\n\n**Trecho-chave:**\n\"4.1. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 29/04/2026\n\n**O que aconteceu:** Convocação para a assembleia geral onde os cotistas vão votar sobre as contas do exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** Os cotistas foram convocados para votar sobre o balanço anual do fundo.\n\n**Trecho-chave:**\n\"Aos Cotistas do GAZIT MALLS FUNDO DE INVESTIMENTO IMOBILIARIO A BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários, sociedade anônima, com sede na Cidade e Estado do Rio de Janeiro, localizada à Praia de Botafogo, nº 501, Torre Corcovado, 5º Andar (Parte), Botafogo, e inscrita no CNPJ sob o nº 59.281.253/0001-23, devidamente autorizada pela Comissão de Valores Mobiliários (\"CVM\") para a atividade de administração de carteiras de valores mobiliários, de acordo com o Ato Declaratório CVM nº 8.695, de 20 de março de 2006 (\"Administradora\"), na qualidade de administradora do GAZIT MALLS FUNDO DE INVESTIMENTO IMOBILIARIO, inscrito no CNPJ sob o nº 15.447.108/0001-02 (\"Fundo\"), bem como de sua classe única, vem, pela presente, convocar os cotistas do Fundo (Cotistas) para a Consulta Formal, com prazo de recebimento de votos até 04 de maio de 2026, para deliberarem sobre: (i) A aprovação das contas e demonstrações contábeis do Fundo, acompanhadas do respectivo relatório do auditor independente, relativas ao exercício social findo em 31 de dezembro de 2025.\""
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1143782,
+    "data_entrega": "25/03/2026 10:35",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Gazit Malls Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no B"
+  }
+}

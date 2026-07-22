@@ -1,11 +1,11 @@
 {
   "ticker": "MCFA11",
   "modelo": "qwen2.5:7b",
-  "gerada_em": "2026-07-21T04:07:16",
+  "gerada_em": "2026-07-22T12:04:38",
   "relatorio": {
-    "id": 1224829,
-    "data_entrega": "19/06/2026 16:56",
-    "texto": "### Fatos Extraídos do Relatório\n\n1. **Patrimônio Líquido:** O patrimônio líquido do fundo foi de R$ 48,7 milhões em junho/2026, representando uma queda de 30,76% em relação ao ano anterior.\n   > \"Patrimônio Líquido: R$ 48.705.135,74\" (p. 2)\n\n2. **Dividend Yield:** O dividend yield anualizado foi de 10,8%, considerando a cota patrimonial de fechamento do mês.\n   > \"Dividend Yield Anualizado¹: 10,8% a.a.\" (p. 2)\n\n3. **Cotas Distribuídas:** O fundo possui 1.270 cotistas em junho/2026.\n   > \"Número de Cotistas: 1.270\" (p. 2)\n\n4. **Amortizações e Rendimentos:** Em maio/2026, o fundo realizou uma nova amortização no valor de R$ 0,22/cota, totalizando R$ 4,373/cota já retornado aos cotistas.\n   > \"Ao longo do mês realizamos uma nova amortização no valor de R$ 0,22/cota (aprox. 2,2% do Fundo). O processo de amortização do MCFA11 tem sido acelerado em razão dos eventos de pré-pagamento ocorridos na carteira, incluindo os eventos mencionados nos últimos relatórios.\" (p. 3)\n\n5. **Portfólio de Ativos:** A alocação majoritária do fundo está em segmentos resilientes, como logístico e residencial.\n   > \"Alocação majoritária em segmentos resilientes\" (p. 7)\n\n6. **Ativos Detalhados:**\n   - CRI Assaí Varejo Essencial: 4,8 milhões de reais, com LTV de 61% e taxa IPCA + 7,04%\n   - CRI Log II: 3,5 milhões de reais, com LTV de 56% e taxa IPCA + 7,20%\n   - CRI Superfrio: 3,4 milhões de reais, com LTV de 57% e taxa IPCA + 9,60%\n   > Detalhamento dos ativos (p. 8-12)\n\n### O que Observar em Seguida:\n\n1. **Amortizações Aceleradas:** Verificar se as amortizações continuarão a ser aceleradas conforme mencionado no relatório.\n2. **Rendimentos e Dividendos:** Monitorar o dividend yield anualizado, que deve manter-se em 10,8% considerando a cota teórica como base."
+    "id": 1261783,
+    "data_entrega": "22/07/2026 11:47",
+    "texto": "### Fatos Extraídos:\n\n1. **Patrimônio Líquido e Valor da Cota:**\n   - Patrimônio líquido do fundo é R$ 46,642,685,46.\n   - Valor de cota é R$ 5,22.\n\n2. **Dividendos e Amortizações:**\n   - Dividendos pagos em junho/2026 foram de R$ 0,045 por cota.\n   - Amortização realizada no mês foi de R$ 0,22/cota (aprox. 2,2% do Fundo).\n\n3. **Taxa de Administração:**\n   - Taxa de administração é de 0,10% a.a.\n\n4. **Cotas e Cotistas:**\n   - Quantidade de cotas é de 8,938,436.\n   - Número de cotistas é de 1,270.\n\n5. **Rendimentos e Dividend Yield:**\n   - Dividend yield anualizado é de 10,9% a.a.\n\n6. **Carteira do Fundo:**\n   - A alocação majoritária (70%) está em ativos alvo.\n   - Segmentos principais incluem logístico (42%), residencial (26%), comercial (15%), varejo essencial (13%), e hotel (4%).\n\n7. **Ativos de Crédito:**\n   - Ativos de crédito representam 53% do patrimônio líquido.\n   - O maior ativo é o CRI Assaí, com R$ 4,3 milhões.\n\n8. **Riscos e Considerações Contábeis:**\n   - A marcação a mercado dos ativos de crédito pode impactar negativamente o patrimônio líquido do fundo.\n   - O valor patrimonial da cota considera a marcação a mercado, além das amortizações.\n\n9. **Projeção de Rendimentos:**\n   - A projeção é de manutenção dos rendimentos em 10,5% a.a., baseada na cota teórica (considerando amortizações).\n\n### O que observar em seguida:\n- Monitorar o impacto da marcação a mercado nos ativos de crédito.\n- Observar as próximas amortizações e como elas afetam o valor patrimonial das cotas."
   },
   "comunicados": {
     "ids": [
@@ -23,6 +23,17 @@
     "texto": "### O QUE aconteceu:\n**Assembleia Geral Ordinária de Cotistas do MAUÁ CAPITAL HIGH GRADE FII**\n\n**Resumo:** A assembleia foi realizada em 04 de maio de 2026, na sede da XP INVESTIMENTOS, não presencialmente. Foram aprovadas as Demonstrações Financeiras e Notas Explicativas do exercício social findo em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025 os quais estão disponíveis no website da CVM, através do endereço eletrônico https://www.gov.br/cvm/pt-br/assuntos/regulados/consultas-por-participante/fundos-de-investimento, seguindo a rota: Fundos Registrados > Inserir CNPJ do Fundo > Demonstrações contábeis.\"\n\n### Conexão com o contexto:\nEsta assembleia trata das demonstrações financeiras do exercício social findo em 31 de dezembro de 2025, que são relevantes para entender a situação atual do fundo."
   },
   "retrato": {
+    "selo": "Alerta grave",
+    "nivel": "grave",
+    "alertas": [
+      "VP/cota em queda relevante",
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": null
+  },
+  "anterior": {
+    "gerada_em": "2026-07-21T04:07:16",
+    "relatorio_data": "19/06/2026 16:56",
     "selo": "Alerta grave",
     "nivel": "grave",
     "alertas": [

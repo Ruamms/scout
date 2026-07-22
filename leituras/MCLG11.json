@@ -1,11 +1,11 @@
 {
   "ticker": "MCLG11",
-  "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-20T07:43:08",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-22T12:02:05",
   "relatorio": {
-    "id": 1226746,
-    "data_entrega": "23/06/2026 19:26",
-    "texto": "1. **Vacância:** Os ativos imobiliários do fundo possuem 100% de ocupação, sem vacância física ou financeira (p. 3).\n2. **Distribuição de Dividendos:** A distribuição referente ao mês de maio/26 foi de R$ 0,0735 por cota, com um dividend yield anualizado de 9% a.a., equivalente ao cupom pré-definido (p. 3).\n3. **Índice de Cobertura:** O índice de cobertura do MCLG11 no mês de maio/26 foi de 1,66x (p. 4).\n4. **Patrimônio Líquido:** O patrimônio líquido consolidado encerrou o mês de maio/26 em R$ 863,5 milhões (p. 4).\n5. **Subordinação:** A razão de subordinação corrente do MCLG11 é de 49,9% (p. 4).\n6. **Alavancagem:** O fundo não possui exposição a dívidas, sellers finance ou qualquer forma de alavancagem ao final do mês (p. 5).\n7. **Locatários Principais:** Os principais locatários são Casas Bahia e Ford, com contratos que vencem entre junho/30 e dezembro/33 (págs. 9-12).\n\n**O que observar em seguida:**\n1. Monitorar a evolução da distribuição de dividendos nos próximos meses.\n2. Verificar se há alterações na estrutura de subordinação ou alavancagem no próximo relatório mensal."
+    "id": 1261786,
+    "data_entrega": "22/07/2026 11:50",
+    "texto": "### Fatos Extraídos do Relatório\n\n1. **Vacância e Ocupação:** Os quatro galpões logísticos que compõem o portfólio do fundo apresentam 100% de ocupação, sem vacância física ou financeira.\n2. **Distribuição dos Rendimentos:** A distribuição de rendimentos em junho/26 foi de R$ 0,0777 por cota para as cotas sêniores e R$ 0,1501 por cota para as cotas subordinadas.\n3. **Razão de Subordinação:** A razão atual de subordinação do MCLG11 é de 49,6%, indicando um \"colchão\" significativo entre os patrimônios das cotas sêniores e subordinadas.\n4. **Resultado Consolidado:** O resultado consolidado do fundo no mês de junho/26 foi de R$ 9,8 milhões, com uma distribuição de R$ 6,2 milhões para as cotas sêniores, resultando em um índice de cobertura de 1,58x.\n5. **Dividend Yield:** O dividend yield anualizado é de 9% a.a., conforme pré-definido no regulamento do fundo.\n6. **Cotas e Cotistas:** O número de cotas é de 80 milhões, com 14.108 cotistas.\n7. **Taxa de Administração:** A taxa de administração é de 0,05% a.a., cobrada sobre o patrimônio líquido do fundo.\n8. **Patrimônio Líquido e Valor da Cota:** O patrimônio líquido do fundo é de R$ 869,586,112,02, com valor de mercado por cota de R$ 10,87.\n\n### Observações a Acompanhar\n- **Vacância e Ocupação:** Verificar se há mudanças significativas na ocupação dos galpões no próximo relatório.\n- **Distribuição de Rendimentos:** Monitorar as distribuições mensais para verificar se elas seguem o padrão estabelecido."
   },
   "comunicados": {
     "ids": [
@@ -23,6 +23,17 @@
     "texto": "### Assembleia Geral Ordinária (AGO) do MCLG11 realizada em 04/05/2026\n\n**O QUE ACONTECEU:** O Fundo Mauá Capital Logística Feeder FII aprovou as Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31 de dezembro de 2025.\n\n**RESUMO:** A assembleia foi realizada de forma não presencial, com encerramento às 23:59h do dia 03/05/2026. Não houve comparecimento de cotistas, e as deliberações foram aprovadas conforme o artigo 71 da Instrução CVM 175/2022.\n\n**TRECHO-CHAVE:**\n\"Observado o art. 71 da Instrução CVM 175/2022, restam aprovadas: (i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025\" (p. 1).\n\n---\n\n**CONEXÃO COM O CONTEXTO:** A aprovação das demonstrações financeiras do exercício de 2025 é um indicador importante para a continuidade e transparência operacional do fundo, considerando seu patrimônio líquido atual de R$ 869,6M."
   },
   "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro",
+      "Fundo novo — histórico curto"
+    ],
+    "cota": null
+  },
+  "anterior": {
+    "gerada_em": "2026-07-20T07:43:08",
+    "relatorio_data": "23/06/2026 19:26",
     "selo": "Atenção",
     "nivel": "atencao",
     "alertas": [

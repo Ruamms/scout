@@ -1,0 +1,50 @@
+{
+  "ticker": "RZZI11",
+  "gerada_em": "2026-07-22T11:00:12",
+  "relatorio": {
+    "id": 1236316,
+    "data_entrega": "30/06/2026 20:34",
+    "texto": "",
+    "ilegivel": true
+  },
+  "comunicados": {
+    "ids": [
+      1033984,
+      965059,
+      950313,
+      1223019,
+      1199640,
+      1199638,
+      1181468
+    ],
+    "datas": [
+      "11/11/2025",
+      "11/08/2025",
+      "21/07/2025",
+      "16/06/2026",
+      "19/05/2026",
+      "19/05/2026",
+      "06/05/2026"
+    ],
+    "rotulos": [
+      "Fato Relevante",
+      "Fato Relevante",
+      "Fato Relevante",
+      "Comunicado ao Mercado",
+      "Comunicado ao Mercado",
+      "Assembleia AGO",
+      "Assembleia AGO"
+    ],
+    "texto": "### O que aconteceu em 19/05/2026\n\n**Título:** Assembleia Geral Aprova Contas Anuais\n\n**Resumo:** A assembleia geral de cotistas aprovou as contas anuais do Fundo referente ao exercício encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:**\n\"Realizada via manifestação de voto enviada pelos Cotistas em 18 de maio de 2026. Aprovação das Demonstrações Financeiras Auditadas relativa ao exercício social encerrado em 31 de dezembro de 2025.\"\n\n---\n\n### O que aconteceu em 16/06/2026\n\n**Título:** Empreendimento Raizz Itajaí Alcança 100% de Ocupação\n\n**Resumo:** A Classe Única celebrou um novo contrato de locação com uma empresa global do setor de logística e transporte, resultando na ocupação total do empreendimento Raizz Itajaí.\n\n**Trecho-chave:**\n\"A Classe Única celebrou novo Contrato de Locação para Fins Não Residenciais, na modalidade típica, com uma empresa global do setor de logística e transporte, tendo por objeto a locação de área localizada no empreendimento Raizz Itajaí (‘Imóvel’), correspondente a aproximadamente 10% (dez por cento) da Área Bruta Locável total do Imóvel. Com a celebração deste contrato, o empreendimento atingiu 100% (cem por cento) de ocupação.\"\n\n---\n\n### O que aconteceu em 21/07/2025\n\n**Título:** Nova Locação com Empresa do Setor de Comércio Exterior\n\n**Resumo:** A Classe Única assinou um novo contrato de locação com uma empresa do setor de comércio exterior/importação, ocupando 25% da Área Bruta Locável total do empreendimento Raizz Itajaí.\n\n**Trecho-chave:**\n\"A Classe Única assinou um novo Contrato de Locação Para Fins Não Residenciais na modalidade típica com uma empresa do setor de comércio exterior/importação, tendo por objeto a locação de uma área de aproximadamente 11.299,09 m², correspondente aos módulos 9, 10, 11 e 12 do empreendimento Raizz Itajaí (‘Imóvel’), equivalente a 25% (vinte e cinco por cento) da Área Bruta Locável total do Imóvel.\"\n\n---\n\n### O que aconteceu em 11/08/2025\n\n**Título:** Nova Locação com Empresa Multinacional de E-commerce\n\n**Resumo:** A Classe Única assinou um novo contrato de locação com uma empresa multinacional líder no setor de e-commerce, ocupando 9% da Área Bruta Locável total do empreendimento Raizz Itajaí.\n\n**Trecho-chave:**\n\"A Classe Única assinou um novo Contrato de Locação Para Fins Não Residenciais na modalidade típica com empresa multinacional líder no setor de e-commerce, tendo por objeto a locação de uma área de aproximadamente 4.127,25 m², correspondente aos módulos 1 e 2 do empreendimento Raizz Itajaí (‘Imóvel’), equivalente a 9% (nove por cento) da Área Bruta Locável total do Imóvel.\"\n\n---\n\n### O que aconteceu em 11/11/2025\n\n**Título:** Nova Locação com Empresa Logística\n\n**Resumo:** A Classe Única assinou um novo contrato de locação com uma empresa logística, ocupando 13% da Área Bruta Locável total do empreendimento Raizz Itajaí.\n\n**Trecho-chave:**\n\"A Classe Única assinou um novo Contrato de Locação Para Fins Não Residenciais na modalidade típica com empresa do setor logístico, tendo por objeto a locação de uma área de aproximadamente 5.650,19 m², correspondente aos módulos 7 e 8 do empreendimento Raizz Itajaí (‘Imóvel’), equivalente a 13% (treze por cento) da Área Bruta Locável total do Imóvel.\"\n\n---\n\n### Conexão com o Contexto\n\n- **Ocupação Total:** A ocupação de 100% do empreendimento Raizz Itajaí, conforme comunicado em 16/06/2026, reflete a tendência positiva de novas locações desde julho de 2025."
+  },
+  "modelo": "qwen2.5:7b",
+  "parecer": {
+    "id": 1132242,
+    "data_entrega": "10/03/2026 15:31",
+    "tipo": "sem_ressalva",
+    "rotulo": "opinião sem ressalvas",
+    "grave": false,
+    "continuidade": false,
+    "trecho": "Em nossa opinião, as demonstrações financeiras acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira da Classe Única de Cotas do Raizz Desenvolvimento II Fundo de Investimento Imobiliário Responsabilidade Limitada em 31 de dezembro de 2025 e o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo "
+  }
+}
