@@ -158,6 +158,10 @@ def gerar(
     (destino / "acoes.html").write_text(
         _indice_acoes(acoes_publicadas, agora or datetime.now()), encoding="utf-8"
     )
+    if acoes_publicadas:
+        (destino / "comparar-acoes.html").write_text(
+            _pagina_comparar_acoes(acoes_publicadas), encoding="utf-8"
+        )
     progresso(f"ações: {len(acoes_publicadas)} páginas")
 
     apoio.salvar(destino, analytics)
@@ -772,7 +776,8 @@ tbody tr:hover td {{ background:#161D20; }}
   {menu_html()}
   <h1>Ações</h1>
   <div class="meta">{len(acoes)} papéis de empresas do <b>IBrX-100</b> · balanço (DFP/CVM), múltiplos e
-  proventos com fonte oficial · <a href="index.html">início</a> · atualizado em {agora.strftime("%d/%m/%Y %H:%M")}</div>
+  proventos com fonte oficial · <a href="comparar-acoes.html">comparar ações</a> ·
+  <a href="index.html">início</a> · atualizado em {agora.strftime("%d/%m/%Y %H:%M")}</div>
   <div class="meta" style="background:#161D20;border:1px solid #263034;border-radius:10px;padding:10px 14px;margin-bottom:4px">
   <b>Cobertura em fases:</b> a B3 tem ~360 companhias listadas; nesta primeira fase cobrimos as
   <b>~100 mais líquidas</b> (índice IBrX-100). Não é erro — cada empresa nova exige validar o balanço
@@ -915,6 +920,144 @@ function renderiza() {{
     .filter(t => t && DADOS[t]);
   const alvo = document.getElementById("tabela");
   if (escolhidos.length < 2) {{ alvo.innerHTML = '<p class="meta">escolha pelo menos dois fundos acima.</p>'; return; }}
+  const cabecalho = "<tr><th></th>" + escolhidos.map(t => `<th><a href="${{t}}.html">${{t}}</a></th>`).join("") + "</tr>";
+  const corpo = LINHAS.map(([rotulo, extrator]) =>
+    "<tr><td>" + rotulo + "</td>" + escolhidos.map(t => "<td>" + extrator(DADOS[t]) + "</td>").join("") + "</tr>"
+  ).join("");
+  alvo.innerHTML = "<table><thead>" + cabecalho + "</thead><tbody>" + corpo + "</tbody></table>";
+}}
+renderiza();
+const parametros = new URLSearchParams(location.search);
+["f1", "f2", "f3"].forEach(id => {{
+  const ticker = (parametros.get(id) || "").toUpperCase();
+  if (ticker && DADOS[ticker]) document.getElementById(id).value = ticker;
+}});
+renderiza();
+{JS_MENU}
+</script>
+</body>
+</html>
+"""
+
+
+def _pagina_comparar_acoes(acoes: list[dict]) -> str:
+    """Comparador de AÇÕES lado a lado (fecha o A6): os mesmos fatos por papel,
+    sem 'vencedor'. Quando os setores diferem, um aviso factual lembra que
+    múltiplos não se comparam entre setores (P/L de banco ≠ P/L de varejo)."""
+    import json as _json
+
+    from .. import formato
+    from .acao_html import _setor_curto
+
+    def _ou_traco(valor, formatador):
+        return formatador(valor) if valor is not None else "—"
+
+    dados = {}
+    for d in sorted(acoes, key=lambda x: x["ticker"]):
+        empresa = d["empresa"]
+        m = d["multiplos"].get(d["ticker"], {})
+        ind = d["indicadores"]
+        ultimo = d["balancos"][-1] if d["balancos"] else None
+        motivos = [f.titulo for f in d["flags"].flags] if d.get("flags") else []
+        dados[d["ticker"]] = {
+            "nome": (empresa["nome_pregao"] or empresa["nome"] or "")[:60],
+            "setor": _setor_curto(empresa),
+            "selo": d["selo"].rotulo if d.get("selo") else "—",
+            "cor": _COR_SELO.get(d["selo"].nivel, "#7C8894") if d.get("selo") else "#7C8894",
+            "motivos": motivos,
+            "cotacao": _ou_traco(d["preco_atual"], lambda v: f"R$ {formato.decimal(v)}"),
+            "pl": _ou_traco(m.get("pl"), formato.decimal),
+            "pvp": _ou_traco(m.get("pvp"), formato.decimal),
+            "dy": _ou_traco(m.get("dy"), formato.percentual),
+            "roe": _ou_traco(ind.get("roe"), formato.percentual),
+            "margem": _ou_traco(ind.get("margem_liquida"), formato.percentual),
+            "ebitda": _ou_traco(ind.get("ebitda"), formato.moeda_compacta),
+            "divida_pl": _ou_traco(ind.get("divida_liquida_pl"), lambda v: f"{formato.decimal(v)}×"),
+            "lucro": _ou_traco(ultimo["lucro_liquido"] if ultimo else None, formato.moeda_compacta),
+            "receita": _ou_traco(ultimo["receita"] if ultimo else None, formato.moeda_compacta),
+            "ano": ultimo["ano"] if ultimo else "—",
+        }
+    json_dados = _json.dumps(dados, ensure_ascii=False).replace("</", "<\\/")
+    opcoes = "".join(
+        f'<option value="{t}">{t} — {_e(v["nome"][:32])}</option>' for t, v in dados.items()
+    )
+    return f"""<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comparar ações — Scout</title>
+{relatorio_html.TAG_FAVICON}
+<style>
+:root {{ color-scheme: dark; }}
+* {{ box-sizing:border-box; margin:0; }}
+body {{ background:#0F1416; color:#EAEEF0; font-family:system-ui,sans-serif; line-height:1.5; }}
+.pagina {{ max-width:960px; margin:0 auto; padding:28px 20px 40px; }}
+h1 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:30px; font-weight:700; letter-spacing:-.02em; margin:8px 0 4px; }}
+.meta {{ color:#9AA7B2; font-size:13px; margin-bottom:16px; }}
+a {{ color:#8FCB9B; }}
+select {{ background:#161D20; color:#EAEEF0; border:1px solid #263034; border-radius:8px;
+  padding:9px 12px; font-size:14px; min-width:180px; max-width:280px; }}
+.seletores {{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px; }}
+#aviso-setor {{ background:#2a2320; border:1px solid #6b5a2a; color:#e8d9a8; padding:9px 12px;
+  border-radius:8px; font-size:13px; margin-bottom:14px; }}
+table {{ width:100%; border-collapse:collapse; font-size:14px; font-variant-numeric:tabular-nums; }}
+th, td {{ padding:9px 10px; border-bottom:1px solid #1B2225; text-align:left; }}
+th {{ color:#9AA7B2; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; }}
+td:first-child {{ color:#9AA7B2; font-size:12.5px; text-transform:uppercase; letter-spacing:.04em; white-space:nowrap; }}
+tbody tr:hover td {{ background:#161D20; }}
+.selo {{ display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700;
+  font-size:11px; color:#0F1416; white-space:nowrap; }}
+.rodape {{ color:#9AA7B2; font-size:12.5px; border-top:1px solid #1B2225; margin-top:26px; padding-top:12px; }}
+{CSS_MENU}
+{relatorio_html.CSS_MARCA}
+</style>
+</head>
+<body>
+<div class="pagina">
+  {relatorio_html.marca_html("index.html")}
+  {menu_html()}
+  <h1>Comparar ações</h1>
+  <div class="meta">os mesmos fatos, lado a lado — sem "vencedor": a decisão é sua ·
+  <a href="acoes.html">voltar para todas as ações</a></div>
+  <div class="seletores">
+    <select id="f1" onchange="renderiza()"><option value="">papel 1…</option>{opcoes}</select>
+    <select id="f2" onchange="renderiza()"><option value="">papel 2…</option>{opcoes}</select>
+    <select id="f3" onchange="renderiza()"><option value="">papel 3 (opcional)…</option>{opcoes}</select>
+  </div>
+  <div id="aviso-setor" hidden>Atenção: os papéis escolhidos são de <b>setores diferentes</b> —
+  múltiplos como P/L e P/VP têm réguas próprias por setor e não se comparam diretamente entre eles.</div>
+  <div id="tabela"></div>
+  <div class="rodape">Comparação factual com dados públicos oficiais (B3 + CVM) — não é recomendação
+  de investimento. Critérios e código: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
+  <a href="apoie.html">apoie o projeto</a></div>
+</div>
+<script>
+const DADOS = {json_dados};
+const LINHAS = [
+  ["Empresa", d => d.nome],
+  ["Setor", d => d.setor],
+  ["Selo", d => `<span class="selo" style="background:${{d.cor}}" title="${{(d.motivos || []).join('; ')}}">${{d.selo}}</span>`],
+  ["Cotação (D-1)", d => d.cotacao],
+  ["P/L", d => d.pl],
+  ["P/VP", d => d.pvp],
+  ["DY 12 meses", d => d.dy],
+  ["ROE", d => d.roe],
+  ["Margem líquida", d => d.margem],
+  ["EBITDA", d => d.ebitda],
+  ["Dívida líq. / PL", d => d.divida_pl],
+  ["Lucro (anual)", d => `${{d.lucro}} <span style="color:#6B7681">(${{d.ano}})</span>`],
+  ["Receita (anual)", d => d.receita],
+  ["Alertas", d => (d.motivos && d.motivos.length) ? d.motivos.join("<br>") : "nenhum alerta disparado"],
+];
+function renderiza() {{
+  const escolhidos = ["f1", "f2", "f3"]
+    .map(id => document.getElementById(id).value)
+    .filter(t => t && DADOS[t]);
+  const alvo = document.getElementById("tabela");
+  const aviso = document.getElementById("aviso-setor");
+  if (escolhidos.length < 2) {{ alvo.innerHTML = '<p class="meta">escolha pelo menos dois papéis acima.</p>'; aviso.hidden = true; return; }}
+  aviso.hidden = new Set(escolhidos.map(t => DADOS[t].setor)).size <= 1;
   const cabecalho = "<tr><th></th>" + escolhidos.map(t => `<th><a href="${{t}}.html">${{t}}</a></th>`).join("") + "</tr>";
   const corpo = LINHAS.map(([rotulo, extrator]) =>
     "<tr><td>" + rotulo + "</td>" + escolhidos.map(t => "<td>" + extrator(DADOS[t]) + "</td>").join("") + "</tr>"

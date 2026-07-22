@@ -187,7 +187,13 @@ def menu_html() -> str:
         <a href="etfs.html?classe=Cripto">Cripto</a>
       </div>
     </div>
-    <a href="acoes.html">Ações</a>
+    <div class="item">
+      <button class="topo-btn" type="button">Ações ▾</button>
+      <div class="painel">
+        <a href="acoes.html">Todas as ações</a>
+        <a href="comparar-acoes.html">Comparar ações</a>
+      </div>
+    </div>
     <a href="apoie.html">Apoiar</a>
   </nav>
 """

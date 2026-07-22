@@ -138,6 +138,21 @@ def test_historico_de_proventos_com_dy(con):
     assert "DY 4,55%" in pagina
 
 
+def test_comparador_de_acoes(con):
+    _semear_empresa(con)
+    dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))
+    pagina = modulo_site._pagina_comparar_acoes([dados])
+    assert "Comparar ações" in pagina
+    assert '<option value="TSTA4">TSTA4 — TESTECO</option>' in pagina
+    # linhas de fatos por papel + aviso de setores diferentes (JS)
+    for rotulo in ('["P/L"', '["ROE"', '["Margem líquida"', '["Alertas"'):
+        assert rotulo in pagina
+    assert "setores diferentes" in pagina
+    assert "sem &quot;vencedor&quot;" in pagina or 'sem "vencedor"' in pagina
+    for veredito in ("compre", "comprar", "barato", "vencedor:"):
+        assert veredito not in pagina.lower()
+
+
 def test_busca_viva_inclui_acoes(con):
     _semear_empresa(con)
     dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))
