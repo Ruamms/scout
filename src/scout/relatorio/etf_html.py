@@ -173,6 +173,7 @@ def _posicoes_com_links(con: sqlite3.Connection, cnpj: str) -> list[dict]:
                 "codigo": linha["codigo"],
                 "pct": linha["pct"],
                 "quantidade": linha["quantidade"] if "quantidade" in linha.keys() else None,
+                "vencimento": linha["vencimento"] if "vencimento" in linha.keys() else None,
                 "competencia": linha["competencia"],
                 "ticker_alvo": ticker_alvo,
                 "classe_alvo": classe_alvo,

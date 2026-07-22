@@ -107,6 +107,18 @@ def extrair_carteiras(conteudo: bytes, cnpjs: set[str]) -> tuple[dict, dict, str
                         or (linha.get("EMISSOR") or "").strip()
                         or codigo
                     )
+                    vencimento = (linha.get("DT_VENC") or "").strip()[:10]
+                    cd_selic = (linha.get("CD_SELIC") or "").strip()
+                    if not codigo and not nome and cd_selic:
+                        # título público: o CDA não traz CD_ATIVO/DS_ATIVO — a
+                        # identidade é CD_SELIC + vencimento (chave do PU ANBIMA).
+                        # Antes essas linhas eram DESCARTADAS (IMAB11 ficava vazio).
+                        codigo = f"TPF{cd_selic}"
+                        nome = "Título público federal" + (
+                            f" (venc. {vencimento[8:10]}/{vencimento[5:7]}/{vencimento[:4]})"
+                            if len(vencimento) == 10
+                            else ""
+                        )
                     if codigo or nome:
                         try:
                             quantidade = float(linha.get("QT_POS_FINAL") or 0)
@@ -120,6 +132,7 @@ def extrair_carteiras(conteudo: bytes, cnpjs: set[str]) -> tuple[dict, dict, str
                                 "valor": valor,
                                 "quantidade": quantidade,
                                 "grupo": grupo,  # tipo do ativo (Ações/Renda Fixa/Exterior/Cotas de Fundos)
+                                "vencimento": vencimento or None,
                             }
                         )
     composicao = {}
@@ -480,13 +493,14 @@ def atualizar_composicao(
         con.executemany(
             """
             INSERT INTO etf_posicoes
-                (cnpj, competencia, item, codigo, nome, cnpj_emissor, pct, quantidade, grupo)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                (cnpj, competencia, item, codigo, nome, cnpj_emissor, pct, quantidade, grupo, vencimento)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             [
                 (
                     cnpj, competencia, indice, item["codigo"], item["nome"],
                     item["cnpj_emissor"], item["pct"], item.get("quantidade"), item.get("grupo"),
+                    item.get("vencimento"),
                 )
                 for indice, item in enumerate(top_posicoes.get(cnpj, []))
             ],

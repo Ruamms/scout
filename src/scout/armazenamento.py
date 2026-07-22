@@ -361,7 +361,9 @@ def _migrar(con: sqlite3.Connection) -> None:
         colunas_pos = {linha[1] for linha in con.execute("PRAGMA table_info(etf_posicoes)")}
         # CDA v3: carteira COMPLETA (todas as posições) + quantidade + grupo (tipo
         # do ativo, para reprecificar a preço de hoje). Reprocessa o CDA p/ preencher.
-        faltantes = {"quantidade": "REAL", "grupo": "TEXT"} .items()
+        # CDA v4: vencimento — títulos públicos são identificados por CD_SELIC +
+        # DT_VENC (chave que casa com o PU diário da ANBIMA no precos.py).
+        faltantes = {"quantidade": "REAL", "grupo": "TEXT", "vencimento": "TEXT"}.items()
         novas = [(col, tipo) for col, tipo in faltantes if col not in colunas_pos]
         if novas:
             for col, tipo in novas:
