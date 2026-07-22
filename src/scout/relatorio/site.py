@@ -410,8 +410,11 @@ input#busca:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color
     {f'''<div class="bloco">
       <h2>Ações</h2>
       <div class="num">{len(acoes)}</div>
-      <p>Empresas do IBrX-100 com balanço oficial (DFP/CVM), múltiplos por papel (P/L, P/VP, DY),
-      ROE, EBITDA e proventos — e as regras da classe explicadas para leigo.</p>
+      <p>Balanço oficial (DFP/CVM), múltiplos por papel (P/L, P/VP, DY), ROE, EBITDA,
+      proventos e red flags societárias — e as regras da classe explicadas para leigo.</p>
+      <p style="color:#6B7681;font-size:12px;margin-top:-6px">cobertura inicial: as ~100 empresas
+      mais líquidas da bolsa (IBrX-100) — validamos a qualidade antes de expandir para as demais.
+      Não achou uma empresa? É isso, não é erro.</p>
       <a class="btn" href="acoes.html">ver todas as ações</a>
     </div>''' if acoes else ""}
   </div>
@@ -768,8 +771,13 @@ tbody tr:hover td {{ background:#161D20; }}
   {relatorio_html.marca_html("index.html")}
   {menu_html()}
   <h1>Ações</h1>
-  <div class="meta">{len(acoes)} papéis de empresas do IBrX-100 · balanço (DFP/CVM), múltiplos e
+  <div class="meta">{len(acoes)} papéis de empresas do <b>IBrX-100</b> · balanço (DFP/CVM), múltiplos e
   proventos com fonte oficial · <a href="index.html">início</a> · atualizado em {agora.strftime("%d/%m/%Y %H:%M")}</div>
+  <div class="meta" style="background:#161D20;border:1px solid #263034;border-radius:10px;padding:10px 14px;margin-bottom:4px">
+  <b>Cobertura em fases:</b> a B3 tem ~360 companhias listadas; nesta primeira fase cobrimos as
+  <b>~100 mais líquidas</b> (índice IBrX-100). Não é erro — cada empresa nova exige validar o balanço
+  do setor dela (banco não tem EBITDA, seguradora tem outra DRE) para as red flags não mentirem.
+  A cobertura vai crescer; sentiu falta de uma empresa? <a href="https://github.com/Ruamms/scout/issues">peça aqui</a>.</div>
   <input id="busca" type="search" placeholder="Busque por ticker, empresa ou setor… (ex.: PETR, bancos, energia)"
    oninput="filtrar()">
   <div class="filtros"><button class="filtro ativo" onclick="filtraClasse(this, '')">Todos</button>{botoes}</div>

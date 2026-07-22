@@ -90,7 +90,9 @@ def test_indice_acoes_lista_e_rankings(con):
     _semear_empresa(con)
     dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))
     pagina = modulo_site._indice_acoes([dados], datetime(2026, 7, 21, 12, 0))
-    assert "1 papéis de empresas do IBrX-100" in pagina
+    assert "1 papéis de empresas do <b>IBrX-100</b>" in pagina
+    # aviso explícito de cobertura em fases (para não parecer erro do site)
+    assert "Cobertura em fases" in pagina and "~100 mais líquidas" in pagina
     assert 'href="TSTA4.html"' in pagina and "TESTECO" in pagina
     assert "Energia" in pagina  # setor curto (1º nível)
     assert "Maior dividend yield 12m" in pagina and "Menor P/L (com lucro)" in pagina
