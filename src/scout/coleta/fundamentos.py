@@ -214,8 +214,10 @@ def extrair_meta_ano(conteudo: bytes, cod_cvms: set[int]) -> dict[int, dict]:
         resultado = modulo_parecer.classificar(texto)
         alvo = dados[cd]
         alvo["parecer_continuidade"] = 1 if resultado.get("continuidade") else 0
-        if resultado.get("continuidade") and resultado.get("trecho"):
-            alvo["parecer_trecho"] = resultado["trecho"][:300]
+        if resultado.get("continuidade"):
+            # a evidência tem que ser a FRASE DA CONTINUIDADE (não a da opinião,
+            # que diz "apresentam adequadamente" e contradiz o alerta)
+            alvo["parecer_trecho"] = modulo_parecer.trecho_continuidade(texto)[:300] or None
 
     return dados
 

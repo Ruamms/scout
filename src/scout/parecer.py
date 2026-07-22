@@ -50,6 +50,17 @@ def _trecho_original(texto: str, padrao_normalizado: str) -> str:
     return ""
 
 
+def trecho_continuidade(texto: str) -> str:
+    """A FRASE ORIGINAL que disparou a detecção de continuidade operacional —
+    evidência tem que sustentar a afirmação (citar a frase da opinião no lugar
+    dela é evidência errada). O regex roda no texto normalizado, então a busca
+    é feita frase a frase para recuperar a redação original."""
+    for frase in re.split(r"(?<=[.;])\s+|(?=Incerteza relevante)", texto):
+        if re.search(_CONTINUIDADE, _normalizar(frase)):
+            return re.sub(r"\s+", " ", frase).strip()[:400]
+    return ""
+
+
 def classificar(texto: str) -> dict:
     """{tipo, rotulo, grave, continuidade, trecho} a partir do texto da DF."""
     normalizado = _normalizar(texto)

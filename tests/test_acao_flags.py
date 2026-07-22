@@ -104,6 +104,27 @@ def test_troca_frequente_de_auditor():
     assert any("auditores diferentes" in f.titulo for f in r.flags)
 
 
+def test_trecho_da_continuidade_e_a_frase_certa():
+    """Regressão (caso BRKM3 real): a evidência da flag de continuidade citava a
+    frase da OPINIÃO ('apresentam adequadamente...'), que contradiz o alerta. O
+    trecho tem que ser a frase da própria incerteza de continuidade."""
+    from scout import parecer
+
+    texto = (
+        "Opinião sobre as demonstrações financeiras. Em nossa opinião, as demonstrações "
+        "financeiras acima referidas apresentam adequadamente, em todos os aspectos "
+        "relevantes, a posição patrimonial e financeira da Companhia. "
+        "Incerteza relevante relacionada com a continuidade operacional. Chamamos a "
+        "atenção para a Nota 1, que indica que a Companhia incorreu no prejuízo de "
+        "R$ 9.880 milhões no exercício."
+    )
+    resultado = parecer.classificar(texto)
+    assert resultado["continuidade"] is True
+    trecho = parecer.trecho_continuidade(texto)
+    assert "continuidade operacional" in trecho
+    assert "apresentam adequadamente" not in trecho  # a frase da opinião NÃO é evidência disso
+
+
 def test_sem_dado_e_nao_avaliada_nunca_aprovacao():
     r = acao_flags.avaliar({"metas": [], "balancos": [], "auditores": [],
                             "proventos_ano_por_ticker": {}}, hoje=date(2025, 7, 1))
