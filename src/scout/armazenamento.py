@@ -400,6 +400,18 @@ def _migrar(con: sqlite3.Connection) -> None:
             con.execute("DELETE FROM cargas WHERE arquivo LIKE 'DFP_%'")
             con.commit()
     if "cargas" in tabelas:
+        # Expansão A9 (22/07/2026): o marcador semanal EMPRESAS_B3 fica "fresco"
+        # no cache do CI e faria o sync pular por até 7 dias — a base publicada
+        # ficaria só com o IBrX-100. Força UMA resincronização completa.
+        marcador_exp = con.execute(
+            "SELECT 1 FROM cargas WHERE arquivo = 'EXPANSAO_BOLSA_V1'"
+        ).fetchone()
+        if marcador_exp is None:
+            con.execute("DELETE FROM cargas WHERE arquivo = 'EMPRESAS_B3'")
+            con.execute(
+                "INSERT INTO cargas (arquivo, carregado_em) VALUES ('EXPANSAO_BOLSA_V1', datetime('now'))"
+            )
+            con.commit()
         marcador_cda = con.execute(
             "SELECT 1 FROM cargas WHERE arquivo = 'CDA_V2_POSICOES'"
         ).fetchone()

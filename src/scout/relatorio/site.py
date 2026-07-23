@@ -417,8 +417,8 @@ input#busca:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color
       <div class="num">{len(fundos)}</div>
       <p>Reconhecimento completo: red flags com evidência, parecer do auditor, imóveis com vacância,
       gestora, e a IA local vasculhando relatórios e comunicados.</p>
-      <div class="linha-acoes"><a class="btn" href="fiis.html">ver todos os FIIs</a>
-      <a class="pill" href="fiis.html#rankings">rankings do dia</a>
+      <div class="linha-acoes"><a class="btn" href="fiis.html">ver todos os FIIs</a></div>
+      <div class="linha-acoes" style="margin-top:8px"><a class="pill" href="fiis.html#rankings">rankings do dia</a>
       <a class="pill" href="comparar.html">comparar</a></div>
       <div class="chips">{pills_fii}</div>
     </div>
