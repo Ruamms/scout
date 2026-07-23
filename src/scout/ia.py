@@ -271,8 +271,11 @@ def _conversar(
             "stream": True,
             # num_ctx: o padrão do modelo (32k) desperdiça VRAM — nossos prompts
             # nunca passam de ~10k tokens (relatório ≤24k chars, fatos ≤8k cada);
-            # com 16k o cache de contexto encolhe e mais camadas cabem na GPU
-            "options": {"temperature": 0.2, "num_ctx": 16384},
+            # com 16k o cache de contexto encolhe e mais camadas cabem na GPU.
+            # num_predict: TETO da resposta — nossas leituras são tópicos curtos
+            # (≤1k tokens); sem o teto, um modelo em loop de repetição gera
+            # PARA SEMPRE (caso real: 85 mil trechos, >1h preso num fundo)
+            "options": {"temperature": 0.2, "num_ctx": 16384, "num_predict": 2048},
             "messages": [
                 {"role": "system", "content": prompt_sistema},
                 mensagem_usuario,
@@ -299,6 +302,10 @@ def _conversar(
                     ao_progresso(len(pedacos))
             if evento.get("done"):
                 break
+            if len(pedacos) > 6000:  # cinto e suspensório: servidor ignorou o num_predict
+                raise RuntimeError(
+                    "resposta do modelo fora de controle (loop de repetição) — abortada"
+                )
     return "".join(pedacos).strip()
 
 
