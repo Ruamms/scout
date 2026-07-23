@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AUAU3 — Scout</title>
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA2NCA2NCc+PGNpcmNsZSBjeD0nMzInIGN5PSczMicgcj0nMjUnIGZpbGw9J25vbmUnIHN0cm9rZT0nIzhGQ0I5Qicgc3Ryb2tlLXdpZHRoPSc1Jy8+PHBvbHlnb24gcG9pbnRzPSc0Ny41NiwxNi40NCAzNi45NSwzNi45NSAxNi40NCw0Ny41NicgZmlsbD0nI0NERUJEMycvPjxwb2x5Z29uIHBvaW50cz0nNDcuNTYsMTYuNDQgMjcuMDUsMjcuMDUgMTYuNDQsNDcuNTYnIGZpbGw9JyM2RkE4N0MnLz48Y2lyY2xlIGN4PSczMicgY3k9JzMyJyByPSczLjYnIGZpbGw9JyMwRjE0MTYnLz48L3N2Zz4=">
+<style>
+:root { color-scheme: dark; }
+* { box-sizing:border-box; margin:0; }
+body { background:#0F1416; color:#EAEEF0; font-family:system-ui,sans-serif; line-height:1.5; }
+.pagina { max-width:960px; margin:0 auto; padding:28px 20px 40px; }
+h1 { font-family:'Scout Display',system-ui,sans-serif; font-size:28px; font-weight:700; letter-spacing:-.02em; margin:6px 0 2px; } h1 small { color:#9AA7B2; font-size:15px; font-weight:400; }
+h2 { font-family:'Scout Display',system-ui,sans-serif; font-size:22px; font-weight:700; letter-spacing:-.01em; margin:26px 0 10px; }
+a { color:#8FCB9B; }
+.meta { color:#9AA7B2; font-size:13px; }
+.cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:10px; margin:20px 0; }
+.card { background:#161D20; border:1px solid #1B2225; border-radius:10px; padding:12px 14px; }
+.card .nome { color:#9AA7B2; font-size:12px; text-transform:uppercase; letter-spacing:.06em; }
+.card .valor { font-family:'Scout Display',system-ui,sans-serif; font-size:23px; font-weight:700; letter-spacing:-.01em; margin-top:4px; font-variant-numeric:tabular-nums; }
+.card .valor .compacto { font-size:15px; line-height:1.35; display:block; }
+.card .extra { color:#9AA7B2; font-size:12px; margin-top:2px; }
+.selo { display:inline-block; padding:3px 12px; border-radius:999px; font-weight:700;
+  font-size:12px; color:#0F1416; white-space:nowrap; vertical-align:middle; }
+.flag { background:#161D20; border:1px solid #1B2225; border-left:4px solid; border-radius:10px; padding:14px 16px; margin-bottom:10px; }
+.flag .sev { font-size:12px; font-weight:800; letter-spacing:.08em; }
+.flag h3 { font-size:16px; margin:2px 0 6px; }
+.flag .evid { background:#0F1416; border:1px solid #1B2225; border-radius:7px; padding:6px 10px;
+  font-family:ui-monospace,Consolas,monospace; font-size:12.5px; color:#9AA7B2; margin-top:8px; }
+.flag .fonte { color:#6B7681; font-size:12px; margin-top:5px; }
+.ok { color:#7BD69A; font-size:14px; } .na { color:#9AA7B2; font-size:13px; }
+ul.ok { list-style:none; padding-left:6px; }
+ul.ok li { color:#9AA7B2; margin:3px 0; }
+ul.ok li::before { content:'✓  '; color:#7BD69A; font-weight:700; }
+.calc { background:#161D20; border:1px solid #1B2225; border-radius:10px; padding:16px; margin-bottom:14px; }
+.calc h3 { font-size:15px; color:#9AA7B2; margin-bottom:4px; }
+.calc .desc { color:#9AA7B2; font-size:13px; margin-bottom:12px; }
+.calc .campos { display:flex; flex-wrap:wrap; gap:10px; align-items:flex-start; }
+.calc label { display:block; color:#9AA7B2; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; margin-bottom:3px; }
+.calc input[type=number] { background:#0F1416; color:#EAEEF0; border:1px solid #33434A; border-radius:8px; padding:8px 10px; width:130px; font-size:15px; }
+.calc .resultado { display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:10px; margin-top:14px; }
+.calc .res { background:#0F1416; border:1px solid #1B2225; border-radius:9px; padding:10px 12px; }
+.calc .res .rotulo { color:#9AA7B2; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; }
+.calc .res .num { font-size:19px; font-weight:700; margin-top:2px; color:#8FCB9B; }
+.calc .aviso { color:#6B7681; font-size:11.5px; margin-top:10px; }
+.calc .gd-base { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:0 0 12px; color:#9AA7B2; font-size:12px; }
+.calc .gd-base button { background:#1B2225; color:#9AA7B2; border:1px solid #33434A; border-radius:7px; padding:4px 12px; font-size:12px; cursor:pointer; }
+.calc .gd-base button.ativo { background:#8FCB9B; color:#0F1416; border-color:#8FCB9B; font-weight:700; }
+.calc .gd-cap { margin-top:5px; max-width:170px; font-size:11px; color:#6B7681; line-height:1.5; }
+.btn-topo { background:#1B2225; border:1px solid #33434A; color:#8FCB9B; padding:6px 14px; border-radius:8px; font-size:13px; font-weight:600; cursor:pointer; }
+.btn-topo:hover { border-color:#8FCB9B; }
+.regras { background:#161D20; border:1px solid #8FCB9B; border-radius:10px; padding:16px 18px; }
+.regras h2 { margin:0 0 8px; font-size:16px; color:#8FCB9B; }
+.regras li { margin:6px 0 6px 18px; font-size:14px; }
+.grafico { background:#161D20; border:1px solid #1B2225; border-radius:10px; padding:14px 16px 10px; margin-bottom:14px; }
+.grafico h3 { font-size:15px; color:#9AA7B2; margin-bottom:8px; }
+.grafico .nota, .nota { color:#6B7681; font-size:11.5px; }
+table.imoveis { width:100%; border-collapse:collapse; font-size:13.5px; font-variant-numeric:tabular-nums; }
+table.imoveis th { color:#9AA7B2; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; text-align:left; padding:6px 10px; border-bottom:1px solid #263034; }
+table.imoveis td { padding:7px 10px; border-bottom:1px solid #1B2225; }
+table.imoveis td:not(:first-child):not(:nth-child(2)), table.imoveis th:not(:first-child):not(:nth-child(2)) { text-align:right; }
+.rodape { color:#9AA7B2; font-size:12.5px; border-top:1px solid #1B2225; margin-top:30px; padding-top:14px; }
+
+
+@font-face { font-family:'Scout Display'; src:url('scout-display.ttf') format('truetype');
+  font-weight:400 700; font-display:swap; }
+.topo-site { position:sticky; top:0; z-index:20; display:flex; align-items:center; gap:16px;
+  flex-wrap:wrap; padding:12px 0; border-bottom:1px solid #263034; margin-bottom:22px;
+  background:rgba(15,20,22,.92); backdrop-filter:blur(10px); }
+.brand { display:inline-flex; align-items:center; gap:10px; text-decoration:none; }
+.wordmark { font-family:'Scout Display',system-ui,sans-serif; font-size:20px; font-weight:700;
+  letter-spacing:.08em; color:#EAEEF0; }
+.brand-o { color:#8FCB9B; }
+.brand-tag { color:#6B7681; font-size:11px; letter-spacing:.08em; text-transform:uppercase; }
+.topo-site input { margin-left:auto; background:#161D20; color:#EAEEF0;
+  border:1px solid #263034; border-radius:9px; padding:8px 13px; font-size:13.5px; width:270px; }
+.topo-site input:focus { outline:2px solid #8FCB9B; outline-offset:1px; border-color:#8FCB9B; }
+.selo-dot { display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600; white-space:nowrap; }
+.selo-dot .pt { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
+td.col-selo, th.col-selo { text-align:left; }
+
+</style>
+</head>
+<body>
+<div class="pagina">
+  <header class="topo-site"><a class="brand" href="index.html" title="todos os fundos"><svg width='34' height='34' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='25' fill='none' stroke='#8FCB9B' stroke-width='5'/><polygon points='47.56,16.44 36.95,36.95 16.44,47.56' fill='#CDEBD3'/><polygon points='47.56,16.44 27.05,27.05 16.44,47.56' fill='#6FA87C'/><circle cx='32' cy='32' r='3.6' fill='#0F1416'/></svg><span class="wordmark">SC<span class="brand-o">O</span>UT</span></a><span class="brand-tag">nós exploramos. <span class="brand-o">você decide.</span></span></header>
+  
+  <h1>AUAU3 <small title="UNIÃO PET PARTICIPAÇÕES S.A.">PETZCOBASI</small> <span class="selo" style="background:#7BD69A" title="Todas as regras avaliadas; nenhuma disparou">Sem alertas</span></h1>
+  <div class="meta">Ação · ON · Consumo Cíclico
+  · Produtos Diversos · auditor: KPMG AUDITORES INDEPENDENTES LTDA. · página gerada em 22/07/2026 17:14</div>
+
+  <div class="cards"><div class="card"><div class="nome">Cotação (fechamento oficial)</div><div class="valor">R$ 3,14</div><div class="extra">pregão de 21/07/2026</div></div><div class="card"><div class="nome">P/L</div><div class="valor">24,72</div><div class="extra">preço ÷ lucro por ação (último anual)</div></div><div class="card"><div class="nome">P/VP</div><div class="valor">2,52</div><div class="extra">preço ÷ valor patrimonial por ação</div></div><div class="card"><div class="nome">Dividend yield 12m</div><div class="valor">0,96%</div><div class="extra">R$ 0,03/ação em proventos (data-com)</div></div><div class="card"><div class="nome">ROE</div><div class="valor">10,19%</div><div class="extra">lucro ÷ patrimônio · anual 2025</div></div><div class="card"><div class="nome">Margem líquida</div><div class="valor">3,63%</div><div class="extra">lucro ÷ receita · anual 2025</div></div><div class="card"><div class="nome">EBITDA</div><div class="valor">R$ 474,6M</div><div class="extra">margem 15,75% · anual 2025</div></div><div class="card"><div class="nome">Caixa líquido</div><div class="valor">R$ 454,1M</div><div class="extra">-0,42× o patrimônio líquido</div></div><div class="card"><div class="nome">Lucro líquido</div><div class="valor">R$ 109,3M</div><div class="extra">anual 2025 (DFP consolidada)</div></div><div class="card"><div class="nome">Liquidez</div><div class="valor">R$ 9,3M/dia</div><div class="extra">volume financeiro médio por pregão (3 meses)</div></div></div>
+
+  <h2>🚩 Red flags</h2><p class="ok">✓ nenhum alerta disparado</p><p class="ok">✓ Verificações que rodaram e passaram sem alerta:</p><ul class="ok"><li>Parecer do auditor sem ressalvas no último exercício</li><li>DFP do último exercício sem reapresentação</li><li>DFP do último exercício entregue no prazo</li><li>Proventos compatíveis com anos de lucro (nenhum pagamento em ano de prejuízo)</li><li>Sem rodízio anormal de auditores nos últimos 5 anos</li></ul><p class="na">· não avaliada: Diluição relevante por emissão de ações (unidade inconsistente no informe da CVM)</p>
+
+  
+
+  
+  <h2>🤖 Leitura por IA<span class="ajuda" tabindex="0">?<span class="dica">Um modelo de inteligência artificial rodando localmente (sem nuvem) leu o relatório oficial do fundo e extraiu os fatos, citando os trechos. A IA não calcula números nem dá opinião — e o documento original está sempre a um clique para conferência.</span></span></h2>
+  <div class="grafico">
+  <div class="nota" style="font-size:13px">Companhias abertas não publicam relatório gerencial — os documentos que assustam são os <b>fatos relevantes e comunicados ao mercado</b> (sistema IPE/CVM), e são eles que a IA lê aqui. Os <b>fatos relevantes e comunicados</b> publicados pela empresa foram lidos pela IA e estão abaixo.
+  Verificado em 2026-07-22; a checagem se repete a cada rodada de leituras.</div>
+  <h3 style="font-size:15px;color:#9AA7B2;margin:16px 0 8px">Fatos relevantes, comunicados e assembleias <span style="color:#9AA7B2;font-weight:400">(<a href="https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id=223395952653181338" target="_blank" rel="noopener">Fato Relevante de 14/05/2026</a> · <a href="https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id=316960336225686360" target="_blank" rel="noopener">Comunicado ao Mercado de 08/05/2026</a> · <a href="https://fnet.bmfbovespa.com.br/fnet/publico/downloadDocumento?id=14245317905969810" target="_blank" rel="noopener">Comunicado ao Mercado de 24/04/2026</a>)</span></h3><div style="white-space:pre-wrap">### 14/05/2026 - Cancelamento de Registro de Emissor de Valores Mobiliários
+
+<b>O que aconteceu:</b> A União Pet Participações S.A. e PET Center Comércio e Participações S.A., em conjunto com o Grupo Petz Cobasi, comunicaram o deferimento do pedido de cancelamento de registro de emissor de valores mobiliários na categoria A da Companhia.
+
+<b>Resumo:</b> As companhias receberam notificação oficial da CVM sobre a aprovação para cancelar o registro devido à extinção da empresa em 14 de maio de 2026.
+
+<b>Trecho-chave:</b>
+&quot;UNIÃO PET PARTICIPAÇÕES S.A.
+Grupo Petz Cobasi
+e PET CENTER COMÉRCIO E 
+PARTICIPAÇÕES S.A. 
+Petz
+Grupo Petz Cobasi
+Companies , in
+compliance with Article 56 of CVM Resolution No. 80/2022, and further to the Material Fact
+disclosed on March 17th
+Registration Cancellation
+it has received, on this date, Official Letter No. 100/2026/CVM/SEP/GEA 2 from the Brazilian 
+Securities and Exchange Commission (CVM), notifying the approval of the request for 
+dissolution on May 14th, 2026.&quot;
+
+### 08/05/2026 - Resultados do Primeiro Trimestre de 2026
+
+<b>O que aconteceu:</b> A União Pet Participações S.A. divulgou os resultados financeiros do primeiro trimestre de 2026.
+
+<b>Resumo:</b> As marcas e canais da empresa apresentaram resultados sólidos, com crescimento na receita bruta e EBITDA ajustado. O foco está em integração e geração de sinergias.
+
+<b>Trecho-chave:</b>
+&quot;Destaques 1T26
+Resultados sólidos de nossas marcas e canais – mesmo antes do início 
+de qualquer captura relevante de sinergias
+Crescimento de receita gerando alavancagem operacional:
+▪Receita Bruta atingiu R$2,0 bilhões, com crescimento de +9,7% a/a  
+(+8,0% canal físico e +12,7% canal digital)
+▪Expansão de margem bruta de +0,4 p.p., atingindo 46,8%
+▪EBITDA Ajustado atingiu R$166,6 milhões, um crescimento de 
++37,8% a/a com ganho expressivo na margem EBITDA Ajustada (+2,0 
+p.p. a/a) atingindo 9,8%&quot;
+&quot;Confiança na capacidade de entrega da curva de sinergias e na geração de 
+valor à todos os stakeholders em 2026 e nos próximos anos&quot;
+
+### 24/04/2026 - Aquisição de Participação Relevante
+
+<b>O que aconteceu:</b> KINEA PRIVATE EQUITY IV Master Fundo de Investimento em Participações Multiestratégia (FIP IV) e KINEA PRIVATE EQUITY V Master Fundo de Investimento em Participações Multiestratégia (FIP V), juntos, passaram a deter aproximadamente 10,13% do capital social da União Pet Participações S.A.
+
+<b>Resumo:</b> As duas companhias passaram a detê-las ações representando cerca de 10,13% do capital social da União Pet, sem intenção de alterar a composição do controle ou estrutura administrativa da empresa.
+
+<b>Trecho-chave:</b>
+&quot;UNIÃO PET PARTICIPAÇÕES S.A. 
+Companhia Aberta de Capital Autorizado 
+CNPJ/MF nº 53.153.938/0001-08 
+ 
+COMUNICADO AO MERCADO 
+A UNIÃO PET PARTICIPAÇÕES S.A.  (“Companhia”), nos termos do Art. 12 da Resolução 
+da CVM nº 44, de 23 de agosto de 2021, conforme alterada, comunica aos seus acionistas e 
+ao mercado em geral que recebeu correspondência eletrônica encaminhada pelo KINEA PRIVATE EQUITY IV MASTER FUNDO DE INVESTIMENTO EM PARTICIPAÇÕES MULTISTRATÉGIA inscrito no CNPJ/MF sob o nº 27.782.802/0001-57 (“FIP IV”) e  pelo KINEA PRIVATE EQUITY V MASTER FUNDO DE INVESTIMENTO EM PARTICIPAÇÕES MULTISTRATÉGIA, inscrito no CNPJ/MF sob o nº 41.536.198/0001-00 (“FIP V”), informando que passaram a deter, em conjunto, 87.173.952 ações de emissão da Companhia, correspondentes a aproximadamente 10,13% do capital social da Companhia.&quot;</div>
+  <div class="nota" style="margin-top:12px">Resumo gerado por IA a partir dos documentos oficiais — pode conter erros de leitura; os links para os originais permitem conferir tudo na fonte. Não é recomendação.</div>
+  </div>
+
+
+  <div class="regras">
+  <h2>As regras desta classe (Ações)</h2>
+  <ul><li>Uma ação = um pedaço da empresa. O retorno vem de dois lugares: valorização do preço e proventos (dividendos e JCP).</li><li>IR na venda: 15% sobre o ganho em operações comuns — mas vendas de até R$ 20 mil/MÊS (somando todas as ações) são ISENTAS (Lei 9.250/1995, art. 22). Day trade não tem isenção e paga 20%.</li><li>Dividendos chegam LÍQUIDOS (isentos de IR hoje). JCP (juros sobre capital próprio) chega com 15% retido na fonte — o valor anunciado não é o valor que cai na conta.</li><li>ON (final 3) = ação ordinária, dá direito a VOTO e ao tag along mínimo de 80% em venda de controle. PN (final 4) = preferencial, prioridade nos proventos mas em geral sem voto. UNIT (final 11) = pacote com ON+PN juntas.</li><li>O preço aqui é o fechamento oficial da B3 do último pregão (D-1) — não é cotação em tempo real.</li><li><b>Último provento deste papel:</b> DIVIDENDO de R$ 0,03/ação (data-com 14/05/2026) — fonte: B3.</li></ul>
+  </div>
+
+  
+  <h2>Papéis da empresa</h2>
+  <div class="grafico">
+  <table class="imoveis">
+    <thead><tr><th>papel</th><th>tipo</th><th>preço (D-1)</th><th>P/L</th><th>P/VP</th><th>DY 12m</th></tr></thead>
+    <tbody><tr><td><b>AUAU3</b> ◀</td><td>ON</td><td>R$ 3,14</td><td>24,72</td><td>2,52</td><td>0,96%</td></tr></tbody>
+  </table>
+  <div class="nota">mesma empresa, preços independentes por papel — P/L, P/VP e DY seguem o preço de cada um</div>
+  </div>
+
+
+  
+  <h2>Quem manda na empresa</h2>
+  <div class="grafico">
+  <table class="imoveis">
+    <thead><tr><th>nome</th><th>órgão</th><th>cargo</th><th>na casa desde</th><th>presença</th></tr></thead>
+    <tbody><tr><td title="Claudio Roberto Ely é consultor sênior da Warburg Pincus. Anteriormente, o Sr. Ely foi presidente da Drogasil S.A., onde liderou o processo de abertura decapital da empresa em 2007 e participou do processo de fusão da Drogasil com a Raia S.A., formando a Raiadrogasil S.A., maior rede de farmácias do">CLAUDIO ROBERTO ELY</td><td>Conselho de Administração</td><td>Conselho de Adm. Independente (Efetiv…</td><td>2026</td><td>—</td></tr><tr><td title="O Sr. Cristiano Gioia Lauretti é formado em Engenharia de Produção pela Escola Politécnica da Universidade de São Paulo, formação que complementa suaexperiência prática com uma base analítica para o gerenciamento de processos e riscos financeiros. Cristiano Lauretti possui mais de 25 anos de atuação">CRISTIANO GIOIA LAURETTI</td><td>Conselho de Administração</td><td>Conselho de Administração (Efetivo)</td><td>2021</td><td>—</td></tr><tr><td title="O Sr. Eduardo de Almeida Salles Terra é graduado em Administração de Empresas na Escopa Superior de Propaganda e Marketing (ESPM). Em 2000, fezsua pós-graduação pela FIA e é Mestre em Administração pela FEA/USP. O Sr. Eduardo de Almeida Salles Terra é conselheiro deliberativo do SavegnagoSupermercad">EDUARDO DE ALMEIDA SALLES TERRA</td><td>Conselho de Administração</td><td>Conselho de Adm. Independente (Efetiv…</td><td>2026</td><td>—</td></tr><tr><td title="O Sr. Germán Pasquale Quiroga Vilardo é graduado em engenharia eletrônica pelo Instituto Militar de Engenharia (IME) e possui mestrado em sistemas digitais pela Escola Politécnica da USP. É fundador e ex-CEO da TV1.com (cargo que exerceu entre 1994 e 1999), fundador, CIO e CMO da Americanas.com (car">GERMÁN PASQUALE QUIROGA VILARDO</td><td>Conselho de Administração</td><td>Conselho de Adm. Independente (Efetiv…</td><td>2021</td><td>—</td></tr><tr><td title="O Sr. João Urbano Nassar é cofundador da Companhia, que iniciou suas atividades como uma loja de produtos agropecuários em 14 de outubro de 1985 e evoluiu para uma grande rede com 243 megalojas de produtos destinados ao cuidado de animais de estimação, sendo a pioneira deste ramo no país. Formado em">JOÃO URBANO NASSAR</td><td>Conselho de Administração</td><td>Conselho de Administração (Efetivo)</td><td>2021</td><td>—</td></tr><tr><td title="O Sr. Paulo Urbano Nassar é cofundador da Companhia, que iniciou suas atividades como uma loja de produtos agropecuários em 14 de outubro de 1985 e que evoluiu para uma grande rede com 243 megalojas de produtos destinados para o cuidado de animais de estimação, sendo a pioneira deste ramo no país. F">PAULO URBANO NASSAR</td><td>Conselho de Administração</td><td>Conselho de Administração (Efetivo)</td><td>2021</td><td>—</td></tr><tr><td title="O Sr. Ricardo Urbano Nassar é cofundador da Cobasi, que iniciou suas atividades como uma loja de produtos agropecuários em 14 de outubro de 1985 e que evoluiu para uma grande rede com 243 megalojas de produtos destinados para o cuidado de animais de estimação, sendo a pioneira deste ramo no país. Fo">RICARDO URBANO NASSAR</td><td>Conselho de Administração</td><td>Conselho de Administração (Efetivo)</td><td>2021</td><td>—</td></tr><tr><td title="O Sr. Sergio Zimerman é o Presidente do Conselho de Administração da Companhia. Idealizador e criador da marca Petz (antiga Pet Center Marginal), fundou a empresa em 2002, após identificar um mercado de alto potencial e carente de concorrentes. Formado em Administração pela UNIP (Universidade Paulis">SERGIO ZIMERMAN</td><td>Conselho de Administração</td><td>Presidente do Conselho de Administraç…</td><td>2026</td><td>—</td></tr><tr><td title="A Sra. Tania Zimerman é formada em Processos Gerenciais e possui MBA em Gestão de Varejo pela UBS-SP. Em 2002 iniciou sua trajetória na Petz, atuando no BackOffice, e foi responsável pela implementação de inúmeras melhorias, tais como a estruturação dos departamentos e implantação dos processos, a m">TANIA ZIMERMAN</td><td>Conselho de Administração</td><td>Conselho de Administração (Efetivo)</td><td>2026</td><td>—</td></tr><tr><td title="O Sr. Marcelo Maia é formado em Engenharia Elétrica pela Universidade Estadual de Campinas (UNICAMP). Possui MBA Executivo pelo Instituto de Ensinoe Pesquisa (INSPER) e pós-graduação em Supply Chain e Logística pelo Massachusetts Institute of Technology (MIT). Sr. Marcelo tem mais de 15 anos deexper">MARCELO SILVEIRA MAIA</td><td>Diretoria</td><td>Outros Diretores</td><td>2026</td><td>—</td></tr><tr><td title="Oderi Gerin Leite é formado em Administração de Empresas pela Faculdade de Economia, Administração, Contabilidade e Atuária da Universidade de São Paulo (1997). Possui mais de 20 anos de experiência no setor de varejo e tecnologia, com ênfase em e-commerce e transformação digital, com passagem por e">ODERI GERIN LEITE</td><td>Diretoria</td><td>Outros Diretores</td><td>2026</td><td>—</td></tr><tr><td title="O Sr. Paulo Urbano Nassar é cofundador da Companhia, que iniciou suas atividades como uma loja de produtos agropecuários em 14 de outubro de 1985 e que evoluiu para uma grande rede com 243 megalojas de produtos destinados para o cuidado de animais de estimação, sendo a pioneira deste ramo no país. F">PAULO URBANO NASSAR</td><td>Diretoria</td><td>Diretor Presidente / Superintendente</td><td>2020</td><td>—</td></tr><tr><td title="O Sr. Rafael Siqueira Rodrigues formou-se em engenharia de produção pela Escola Politécnica da USP em 2010. Atua como Diretor Financeiro e de Relações com Investidores na Companhia desde 2018. Possui mais de 10 anos de experiência em cargos de liderança em grandes redes de varejo, com passagem pela ">RAFAEL SIQUEIRA RODRIGUES</td><td>Diretoria</td><td>Diretor Financeiro / Diretor de Relaç…</td><td>2021</td><td>—</td></tr><tr><td title="Rodrigo Fernandes Cruz é graduado em Administração de Empresas pela Pontifícia Universidade Católica de Minas Gerais (PUC-MG) e possui MBA em Gestão Empresarial pela Fundação Getúlio Vargas (FGV). Com mais de 20 anos de trajetória no setor varejista, consolidou sua expertise nas áreas de Operações e">RODRIGO FERNANDES DALAGO DA CRUZ</td><td>Diretoria</td><td>Outros Diretores</td><td>2026</td><td>—</td></tr></tbody>
+  </table>
+  <div class="nota">Formulário de Referência (FRE/CVM, ref. 31/12/2026) —
+  passe o mouse no nome para ver a experiência declarada · "presença" = % de participação nas reuniões do órgão</div>
+  </div>
+
+
+  
+  <h2>Transações com partes relacionadas</h2>
+  <div class="grafico">
+  <table class="imoveis">
+    <thead><tr><th>parte relacionada</th><th>relação com a empresa</th><th>montante</th><th>data</th></tr></thead>
+    <tbody><tr><td title="Contrato de locação de natureza não residencial de imóvel situado na Avenida Pirambóia, nº 3.254, Galpão 2998, Setor A, Barueri/SP, correspondente à área de 7.938,17 m². Matrículas nº 23.578 do 10º Cartório de Barueri. O valor mensal da locação é de R$ 895.965,40 na data base de ">BIAPAR BENS IMÓVEIS ADMINISTRAÇÃO E PARTICIPA…</td><td title="Sociedade limitada cujos sócios são parentes de 2º grau da família Nassar, que integra o grupo controlador da Companhia.">Sociedade limitada cujos sócios são par…</td><td>R$ 107,5M</td><td>01/09/2020</td></tr><tr><td title="Contrato de mútuo celebrado pela subsidiária Pet Center Comércio e Participações S.A., na qualidade de credora, com a respectiva parte relacionada, na qualidade de devedora, no contexto da combinação de negócios entre Pet Center Comércio e Participações S.A. e União Pet Participa">SERGIO ZIMERMAN</td><td title="Sérgio Zimerman é acionista/parte relacionada da Companhia e membro do Conselho de Administração, tendo se abstido da deliberação que aprovou a celebração dos contratos de mútuo, conforme ata de reuni">Sérgio Zimerman é acionista/parte relac…</td><td>R$ 104,2M</td><td>26/02/2026</td></tr><tr><td title="Contrato de locação de natureza não residencial de imóvel situado na cidade de São Paulo, Estado de São Paulo, Rua Augusta, nº 2.380, Matrícula 59.863 do 13º Registro de Imóveis de São Paulo. O valor mensal da locação é de R$ 255.437,75 na data-base de 31 de dezembro de 2025. O v">MANDAÇAIA AGRÍCOLA LTDA.</td><td title="Sociedade limitada cujos sócios são parentes de 2º grau da família Nassar, que integra o grupo controlador da Companhia.">Sociedade limitada cujos sócios são par…</td><td>R$ 46,0M</td><td>01/01/2017</td></tr><tr><td title="Contrato de locação de natureza não residencial de imóvel situado na cidade de São Caetano do Sul, Estado de São Paulo, Alameda Caulim, nº 125, Matrícula 45.904 do 2º Registro de Imóveis de São Caetano do Sul. O valor mensal da locação é de R$ 205.777,86 na data base de 31 de dez">MANDAÇAIA AGRÍCOLA LTDA.</td><td title="Sociedade limitada cujos sócios são parentes de 2º grau da família Nassar, que integra o grupo controlador da Companhia.">Sociedade limitada cujos sócios são par…</td><td>R$ 33,5M</td><td>01/04/2012</td></tr><tr><td title="Contrato de locação de natureza não residencial de imóvel situado na cidade de Curitiba, Estado do Paraná, Rua General Mário Tourinho, nº 2.425, Curitiba/PR, Matrícula 66.389 do 6° Ofício de Registro de Imóveis de Curitiba. O valor mensal da locação é de R$ 221.112,15 na data bas">MANDAÇAIA AGRÍCOLA LTDA.</td><td title="Sociedade limitada cujos sócios são parentes de 2º grau da família Nassar, que integra o grupo controlador da Companhia.">Sociedade limitada cujos sócios são par…</td><td>R$ 26,5M</td><td>01/08/2013</td></tr><tr><td title="Contrato de locação de natureza não residencial de imóvel situado na cidade de São Paulo, Estado de São Paulo, Avenida Onófrio Milano, nº 466/506. Matrícula 115.993 do 18º Registro de Imóveis de São Paulo. O valor mensal da locação é de R$ 129.398,00 na data-base de 31 de dezembr">MANDAÇAIA AGRÍCOLA LTDA.</td><td title="Sociedade limitada cujos sócios são parentes de 2º grau da família Nassar, que integra o grupo controlador da Companhia.">Sociedade limitada cujos sócios são par…</td><td>R$ 25,8M</td><td>01/01/2009</td></tr><tr><td title="Contrato de locação de natureza não residencial de imóvel situado na cidade de Cotia, Estado de São Paulo, Avenida Marginal, 1287, Parque São Jorge. Matrículas 63.732 78.756 80.754 80.755 27.361, Cartório Registro de Imóveis de Cotia. O valor mensal da locação é de R$ 198.504,41 ">MANDAÇAIA AGRÍCOLA LTDA.</td><td title="Sociedade limitada cujos sócios são parentes de 2º grau da família Nassar, que integra o grupo controlador da Companhia.">Sociedade limitada cujos sócios são par…</td><td>R$ 23,8M</td><td>01/07/2015</td></tr><tr><td title="Contrato de locação de natureza não residencial de imóvel situado na cidade de São Paulo, Estado de São Paulo, Avenida das Nações Unidas, nº 19.579. Matrículas 199.732 9.457 9.458 51.120 51.121 51.122 51.124 51.125, 11º Registro de Imóveis de São Paulo. O valor mensal da locação ">MANDAÇAIA AGRÍCOLA LTDA.</td><td title="Sociedade limitada cujos sócios são parentes de 2º grau da família Nassar, que integra o grupo controlador da Companhia.">Sociedade limitada cujos sócios são par…</td><td>R$ 23,3M</td><td>01/10/2016</td></tr></tbody>
+  </table>
+  <div class="nota">as maiores transações declaradas no FRE (negócios da empresa com quem é "de casa":
+  controlador, coligadas, administradores) — passe o mouse para ver o objeto do contrato · fatos declarados, não julgamento</div>
+  </div>
+
+
+  
+  <h2>Balanço anual (DFP)</h2>
+  <div class="grafico">
+  <table class="imoveis">
+    <thead><tr><th>ano</th><th>receita</th><th>lucro líquido</th><th>margem líq.</th><th>ROE</th><th>EBITDA</th><th>dívida líquida</th><th>patrimônio líquido</th></tr></thead>
+    <tbody><tr><td>2023</td><td>R$ 2,6B</td><td>R$ 58,7M</td><td>2,27%</td><td>6,64%</td><td>R$ 747,7M</td><td>R$ -437,6M</td><td>R$ 884,8M</td></tr><tr><td>2024</td><td>R$ 2,7B</td><td>R$ 116,8M</td><td>4,27%</td><td>11,82%</td><td>R$ 436,1M</td><td>R$ -228,9M</td><td>R$ 988,3M</td></tr><tr><td>2025</td><td>R$ 3,0B</td><td>R$ 109,3M</td><td>3,63%</td><td>10,19%</td><td>R$ 474,6M</td><td>R$ -454,1M</td><td>R$ 1,1B</td></tr></tbody>
+  </table>
+  <div class="nota">demonstrações financeiras padronizadas (CVM), consolidado · valores do exercício
+  </div>
+  </div>
+  <div class="grafico"><h3>Receita × Lucro líquido (anual)</h3><svg viewBox="0 0 860 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto" font-family="system-ui, sans-serif"><line x1="74" y1="266.0" x2="844" y2="266.0" stroke="#263034" stroke-width="1"/><text x="66" y="270.0" text-anchor="end" fill="#9AA7B2" font-size="11">R$ -177,7M</text><line x1="74" y1="203.0" x2="844" y2="203.0" stroke="#263034" stroke-width="1"/><text x="66" y="207.0" text-anchor="end" fill="#9AA7B2" font-size="11">R$ 679,3M</text><line x1="74" y1="140.0" x2="844" y2="140.0" stroke="#263034" stroke-width="1"/><text x="66" y="144.0" text-anchor="end" fill="#9AA7B2" font-size="11">R$ 1,5B</text><line x1="74" y1="77.0" x2="844" y2="77.0" stroke="#263034" stroke-width="1"/><text x="66" y="81.0" text-anchor="end" fill="#9AA7B2" font-size="11">R$ 2,4B</text><line x1="74" y1="14.0" x2="844" y2="14.0" stroke="#263034" stroke-width="1"/><text x="66" y="18.0" text-anchor="end" fill="#9AA7B2" font-size="11">R$ 3,3B</text><text x="74.0" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">2023</text><text x="459.0" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">2024</text><text x="844.0" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">2025</text><polyline points="74.0,63.1 459.0,51.7 844.0,31.4" fill="none" stroke="#8FCB9B" stroke-width="2" stroke-linejoin="round"/><circle cx="74.0" cy="63.1" r="3" fill="#8FCB9B" opacity="1" data-val="R$ 2,6B" data-lbl="2023" data-nome="Receita" data-cor="#8FCB9B"><title>Receita · 2023: R$ 2,6B</title></circle><circle cx="459.0" cy="51.7" r="3" fill="#8FCB9B" opacity="1" data-val="R$ 2,7B" data-lbl="2024" data-nome="Receita" data-cor="#8FCB9B"><title>Receita · 2024: R$ 2,7B</title></circle><circle cx="844.0" cy="31.4" r="3" fill="#8FCB9B" opacity="1" data-val="R$ 3,0B" data-lbl="2025" data-nome="Receita" data-cor="#8FCB9B"><title>Receita · 2025: R$ 3,0B</title></circle><text x="82" y="26" fill="#8FCB9B" font-size="12" font-weight="bold">— Receita</text><polyline points="74.0,248.6 459.0,244.4 844.0,244.9" fill="none" stroke="#6FB6D8" stroke-width="2" stroke-linejoin="round"/><circle cx="74.0" cy="248.6" r="3" fill="#6FB6D8" opacity="1" data-val="R$ 58,7M" data-lbl="2023" data-nome="Lucro líquido" data-cor="#6FB6D8"><title>Lucro líquido · 2023: R$ 58,7M</title></circle><circle cx="459.0" cy="244.4" r="3" fill="#6FB6D8" opacity="1" data-val="R$ 116,8M" data-lbl="2024" data-nome="Lucro líquido" data-cor="#6FB6D8"><title>Lucro líquido · 2024: R$ 116,8M</title></circle><circle cx="844.0" cy="244.9" r="3" fill="#6FB6D8" opacity="1" data-val="R$ 109,3M" data-lbl="2025" data-nome="Lucro líquido" data-cor="#6FB6D8"><title>Lucro líquido · 2025: R$ 109,3M</title></circle><text x="252" y="26" fill="#6FB6D8" font-size="12" font-weight="bold">— Lucro líquido</text></svg></div>
+
+
+  
+  <h2>Histórico de proventos</h2>
+  <div class="grafico"><h3>Proventos por ação por ano (R$) · DY do ano no topo</h3><svg viewBox="0 0 860 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto" font-family="system-ui, sans-serif"><line x1="74" y1="266.0" x2="844" y2="266.0" stroke="#263034" stroke-width="1"/><text x="66" y="270.0" text-anchor="end" fill="#9AA7B2" font-size="11">R$ 0,00</text><line x1="74" y1="203.0" x2="844" y2="203.0" stroke="#263034" stroke-width="1"/><text x="66" y="207.0" text-anchor="end" fill="#9AA7B2" font-size="11">R$ 0,01</text><line x1="74" y1="140.0" x2="844" y2="140.0" stroke="#263034" stroke-width="1"/><text x="66" y="144.0" text-anchor="end" fill="#9AA7B2" font-size="11">R$ 0,02</text><line x1="74" y1="77.0" x2="844" y2="77.0" stroke="#263034" stroke-width="1"/><text x="66" y="81.0" text-anchor="end" fill="#9AA7B2" font-size="11">R$ 0,03</text><line x1="74" y1="14.0" x2="844" y2="14.0" stroke="#263034" stroke-width="1"/><text x="66" y="18.0" text-anchor="end" fill="#9AA7B2" font-size="11">R$ 0,04</text><rect x="427.0" y="72.2" width="64.0" height="193.8" rx="3" fill="#8FCB9B" opacity="0.85"><title>2026: R$ 0,03 · DY 0,96%</title></rect><text x="459.0" y="52.2" text-anchor="middle" fill="#9AA7B2" font-size="11">R$ 0,03</text><text x="459.0" y="66.2" text-anchor="middle" fill="#6B7681" font-size="10">DY 0,96%</text><text x="459.0" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">2026</text></svg>
+  <div class="nota">soma dos proventos com data-com no ano (dividendos + JCP, valores brutos — JCP tem
+  15% retido na fonte) · DY = proventos do ano ÷ fechamento do fim do ano · fonte: B3</div></div>
+
+
+  <h2>Gráficos</h2><div class="grafico"><h3>Cotação (fechamento oficial B3)</h3><svg viewBox="0 0 860 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto" font-family="system-ui, sans-serif"><line x1="74" y1="266.0" x2="844" y2="266.0" stroke="#263034" stroke-width="1"/><text x="66" y="270.0" text-anchor="end" fill="#9AA7B2" font-size="11">R$ 3,00</text><line x1="74" y1="203.0" x2="844" y2="203.0" stroke="#263034" stroke-width="1"/><text x="66" y="207.0" text-anchor="end" fill="#9AA7B2" font-size="11">R$ 3,14</text><line x1="74" y1="140.0" x2="844" y2="140.0" stroke="#263034" stroke-width="1"/><text x="66" y="144.0" text-anchor="end" fill="#9AA7B2" font-size="11">R$ 3,28</text><line x1="74" y1="77.0" x2="844" y2="77.0" stroke="#263034" stroke-width="1"/><text x="66" y="81.0" text-anchor="end" fill="#9AA7B2" font-size="11">R$ 3,42</text><line x1="74" y1="14.0" x2="844" y2="14.0" stroke="#263034" stroke-width="1"/><text x="66" y="18.0" text-anchor="end" fill="#9AA7B2" font-size="11">R$ 3,56</text><text x="74.0" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">jan/26</text><text x="202.3" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">fev/26</text><text x="330.7" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">mar/26</text><text x="459.0" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">abr/26</text><text x="587.3" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">mai/26</text><text x="715.7" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">jun/26</text><text x="844.0" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">jul/26</text><polyline points="74.0,31.4 202.3,248.6 330.7,54.0 459.0,76.6 587.3,167.2 715.7,158.1 844.0,203.4" fill="none" stroke="#8FCB9B" stroke-width="2" stroke-linejoin="round"/><circle cx="74.0" cy="31.4" r="3" fill="#8FCB9B" opacity="1" data-val="R$ 3,52" data-lbl="jan/26" data-nome="Cotação" data-cor="#8FCB9B"><title>Cotação · jan/26: R$ 3,52</title></circle><circle cx="202.3" cy="248.6" r="3" fill="#8FCB9B" opacity="1" data-val="R$ 3,04" data-lbl="fev/26" data-nome="Cotação" data-cor="#8FCB9B"><title>Cotação · fev/26: R$ 3,04</title></circle><circle cx="330.7" cy="54.0" r="3" fill="#8FCB9B" opacity="1" data-val="R$ 3,47" data-lbl="mar/26" data-nome="Cotação" data-cor="#8FCB9B"><title>Cotação · mar/26: R$ 3,47</title></circle><circle cx="459.0" cy="76.6" r="3" fill="#8FCB9B" opacity="1" data-val="R$ 3,42" data-lbl="abr/26" data-nome="Cotação" data-cor="#8FCB9B"><title>Cotação · abr/26: R$ 3,42</title></circle><circle cx="587.3" cy="167.2" r="3" fill="#8FCB9B" opacity="1" data-val="R$ 3,22" data-lbl="mai/26" data-nome="Cotação" data-cor="#8FCB9B"><title>Cotação · mai/26: R$ 3,22</title></circle><circle cx="715.7" cy="158.1" r="3" fill="#8FCB9B" opacity="1" data-val="R$ 3,24" data-lbl="jun/26" data-nome="Cotação" data-cor="#8FCB9B"><title>Cotação · jun/26: R$ 3,24</title></circle><circle cx="844.0" cy="203.4" r="3" fill="#8FCB9B" opacity="1" data-val="R$ 3,14" data-lbl="jul/26" data-nome="Cotação" data-cor="#8FCB9B"><title>Cotação · jul/26: R$ 3,14</title></circle></svg></div>
+  <div class="grafico"><h3>Rentabilidade acumulada × CDI × IPCA</h3><svg viewBox="0 0 860 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto" font-family="system-ui, sans-serif"><line x1="74" y1="266.0" x2="844" y2="266.0" stroke="#263034" stroke-width="1"/><text x="66" y="270.0" text-anchor="end" fill="#9AA7B2" font-size="11">-15,24%</text><line x1="74" y1="203.0" x2="844" y2="203.0" stroke="#263034" stroke-width="1"/><text x="66" y="207.0" text-anchor="end" fill="#9AA7B2" font-size="11">-9,42%</text><line x1="74" y1="140.0" x2="844" y2="140.0" stroke="#263034" stroke-width="1"/><text x="66" y="144.0" text-anchor="end" fill="#9AA7B2" font-size="11">-3,60%</text><line x1="74" y1="77.0" x2="844" y2="77.0" stroke="#263034" stroke-width="1"/><text x="66" y="81.0" text-anchor="end" fill="#9AA7B2" font-size="11">2,23%</text><line x1="74" y1="14.0" x2="844" y2="14.0" stroke="#263034" stroke-width="1"/><text x="66" y="18.0" text-anchor="end" fill="#9AA7B2" font-size="11">8,05%</text><text x="74.0" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">jan/26</text><text x="202.3" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">fev/26</text><text x="330.7" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">mar/26</text><text x="459.0" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">abr/26</text><text x="587.3" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">mai/26</text><text x="715.7" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">jun/26</text><text x="844.0" y="284" text-anchor="middle" fill="#9AA7B2" font-size="12">jul/26</text><polyline points="74.0,101.1 202.3,248.6 330.7,116.5 459.0,131.8 587.3,184.0 715.7,177.8 844.0,208.8" fill="none" stroke="#8FCB9B" stroke-width="2" stroke-linejoin="round"/><circle cx="74.0" cy="101.1" r="3" fill="#8FCB9B" opacity="1" data-val="0,00%" data-lbl="jan/26" data-nome="Fundo" data-cor="#8FCB9B"><title>Fundo · jan/26: 0,00%</title></circle><circle cx="202.3" cy="248.6" r="3" fill="#8FCB9B" opacity="1" data-val="-13,64%" data-lbl="fev/26" data-nome="Fundo" data-cor="#8FCB9B"><title>Fundo · fev/26: -13,64%</title></circle><circle cx="330.7" cy="116.5" r="3" fill="#8FCB9B" opacity="1" data-val="-1,42%" data-lbl="mar/26" data-nome="Fundo" data-cor="#8FCB9B"><title>Fundo · mar/26: -1,42%</title></circle><circle cx="459.0" cy="131.8" r="3" fill="#8FCB9B" opacity="1" data-val="-2,84%" data-lbl="abr/26" data-nome="Fundo" data-cor="#8FCB9B"><title>Fundo · abr/26: -2,84%</title></circle><circle cx="587.3" cy="184.0" r="3" fill="#8FCB9B" opacity="1" data-val="-7,66%" data-lbl="mai/26" data-nome="Fundo" data-cor="#8FCB9B"><title>Fundo · mai/26: -7,66%</title></circle><circle cx="715.7" cy="177.8" r="3" fill="#8FCB9B" opacity="1" data-val="-7,09%" data-lbl="jun/26" data-nome="Fundo" data-cor="#8FCB9B"><title>Fundo · jun/26: -7,09%</title></circle><circle cx="844.0" cy="208.8" r="3" fill="#8FCB9B" opacity="1" data-val="-9,96%" data-lbl="jul/26" data-nome="Fundo" data-cor="#8FCB9B"><title>Fundo · jul/26: -9,96%</title></circle><text x="82" y="26" fill="#8FCB9B" font-size="12" font-weight="bold">— Fundo</text><polyline points="74.0,101.1 202.3,90.3 330.7,77.1 459.0,65.0 587.3,53.1 715.7,40.4 844.0,31.4" fill="none" stroke="#6FB6D8" stroke-width="2" stroke-linejoin="round"/><circle cx="74.0" cy="101.1" r="3" fill="#6FB6D8" opacity="1" data-val="0,00%" data-lbl="jan/26" data-nome="CDI" data-cor="#6FB6D8"><title>CDI · jan/26: 0,00%</title></circle><circle cx="202.3" cy="90.3" r="3" fill="#6FB6D8" opacity="1" data-val="1,00%" data-lbl="fev/26" data-nome="CDI" data-cor="#6FB6D8"><title>CDI · fev/26: 1,00%</title></circle><circle cx="330.7" cy="77.1" r="3" fill="#6FB6D8" opacity="1" data-val="2,22%" data-lbl="mar/26" data-nome="CDI" data-cor="#6FB6D8"><title>CDI · mar/26: 2,22%</title></circle><circle cx="459.0" cy="65.0" r="3" fill="#6FB6D8" opacity="1" data-val="3,34%" data-lbl="abr/26" data-nome="CDI" data-cor="#6FB6D8"><title>CDI · abr/26: 3,34%</title></circle><circle cx="587.3" cy="53.1" r="3" fill="#6FB6D8" opacity="1" data-val="4,44%" data-lbl="mai/26" data-nome="CDI" data-cor="#6FB6D8"><title>CDI · mai/26: 4,44%</title></circle><circle cx="715.7" cy="40.4" r="3" fill="#6FB6D8" opacity="1" data-val="5,61%" data-lbl="jun/26" data-nome="CDI" data-cor="#6FB6D8"><title>CDI · jun/26: 5,61%</title></circle><circle cx="844.0" cy="31.4" r="3" fill="#6FB6D8" opacity="1" data-val="6,45%" data-lbl="jul/26" data-nome="CDI" data-cor="#6FB6D8"><title>CDI · jul/26: 6,45%</title></circle><text x="252" y="26" fill="#6FB6D8" font-size="12" font-weight="bold">— CDI</text><polyline points="74.0,101.1 202.3,93.5 330.7,84.0 459.0,76.6 587.3,70.2 715.7,68.4" fill="none" stroke="#E3C25C" stroke-width="2" stroke-linejoin="round"/><circle cx="74.0" cy="101.1" r="3" fill="#E3C25C" opacity="1" data-val="0,00%" data-lbl="jan/26" data-nome="IPCA" data-cor="#E3C25C"><title>IPCA · jan/26: 0,00%</title></circle><circle cx="202.3" cy="93.5" r="3" fill="#E3C25C" opacity="1" data-val="0,70%" data-lbl="fev/26" data-nome="IPCA" data-cor="#E3C25C"><title>IPCA · fev/26: 0,70%</title></circle><circle cx="330.7" cy="84.0" r="3" fill="#E3C25C" opacity="1" data-val="1,59%" data-lbl="mar/26" data-nome="IPCA" data-cor="#E3C25C"><title>IPCA · mar/26: 1,59%</title></circle><circle cx="459.0" cy="76.6" r="3" fill="#E3C25C" opacity="1" data-val="2,27%" data-lbl="abr/26" data-nome="IPCA" data-cor="#E3C25C"><title>IPCA · abr/26: 2,27%</title></circle><circle cx="587.3" cy="70.2" r="3" fill="#E3C25C" opacity="1" data-val="2,86%" data-lbl="mai/26" data-nome="IPCA" data-cor="#E3C25C"><title>IPCA · mai/26: 2,86%</title></circle><circle cx="715.7" cy="68.4" r="3" fill="#E3C25C" opacity="1" data-val="3,02%" data-lbl="jun/26" data-nome="IPCA" data-cor="#E3C25C"><title>IPCA · jun/26: 3,02%</title></circle><text x="422" y="26" fill="#E3C25C" font-size="12" font-weight="bold">— IPCA</text></svg><div class="nota">retorno total (preço ajustado por eventos + proventos reinvestidos) · índices: Banco Central</div></div>
+
+  
+  <h2 id="calculadoras">Calculadoras</h2>
+
+  <div class="calc">
+    <h3>🧮 Preço justo (fórmula de Graham)</h3>
+    <div style="background:#2a2320;border:1px solid #6b5a2a;color:#e8d9a8;padding:10px 12px;border-radius:8px;font-size:13px;margin:6px 0">Esta calculadora está aqui para <b>facilitar sua análise</b> — <b>não é recomendação</b> de compra ou venda. O resultado depende inteiramente das premissas que <b>VOCÊ</b> define. É uma simulação sua, não um veredito do Scout.</div>
+    <button class="btn-topo" onclick="abrirCalc(this, calcGraham)">Abrir a calculadora</button>
+    <div hidden>
+      <p class="desc">Benjamin Graham: <b>preço justo = √(multiplicador × LPA × VPA)</b>. As letras:
+      <b>LPA</b> = lucro por ação (lucro anual ÷ ações); <b>VPA</b> = valor patrimonial por ação
+      (patrimônio ÷ ações); <b>multiplicador</b> = 22,5 no livro (P/L 15 × P/VP 1,5) — premissa SUA,
+      ajuste à vontade. Tudo editável.</p>
+      <div class="campos gordon">
+        <div><label for="gr-lpa">LPA (R$)</label>
+        <input type="number" id="gr-lpa" value="0.13" step="0.05" oninput="calcGraham()">
+        <div class="gd-cap">lucro por ação do anual 2025 (DFP consolidada)</div></div>
+        <div><label for="gr-vpa">VPA (R$)</label>
+        <input type="number" id="gr-vpa" value="1.25" step="0.05" oninput="calcGraham()">
+        <div class="gd-cap">valor patrimonial por ação do anual 2025</div></div>
+        <div><label for="gr-mult">Multiplicador</label>
+        <input type="number" id="gr-mult" value="22.5" step="0.5" min="0.5" oninput="calcGraham()">
+        <div class="gd-cap">22,5 = P/L 15 × P/VP 1,5 (os tetos que Graham considerava razoáveis)</div></div>
+      </div>
+      <div class="resultado">
+        <div class="res"><div class="rotulo">Preço justo (com suas premissas)</div><div class="num" id="gr-justo">—</div></div>
+        <div class="res"><div class="rotulo">Cotação atual (D-1)</div><div class="num">R$ 3.14</div></div>
+      </div>
+      <p class="aviso">A fórmula usa o valor PATRIMONIAL — funciona mal para empresas de ativo leve
+      (tecnologia, serviços) e não se aplica a prejuízo. Modelo do livro "O Investidor Inteligente"
+      (1949), sensível às premissas: não é recomendação nem promessa de retorno.</p>
+    </div>
+  </div>
+
+  <div class="calc">
+    <h3>🧮 Preço-teto (método Bazin)</h3>
+    <div style="background:#2a2320;border:1px solid #6b5a2a;color:#e8d9a8;padding:10px 12px;border-radius:8px;font-size:13px;margin:6px 0">Esta calculadora está aqui para <b>facilitar sua análise</b> — <b>não é recomendação</b> de compra ou venda. O resultado depende inteiramente das premissas que <b>VOCÊ</b> define. É uma simulação sua, não um veredito do Scout.</div>
+    <button class="btn-topo" onclick="abrirCalc(this, calcBazin)">Abrir a calculadora</button>
+    <div hidden>
+      <p class="desc">Décio Bazin: <b>preço-teto = dividendo anual por ação ÷ DY mínimo</b>. O
+      preço-teto é o MÁXIMO que você pagaria para que os dividendos rendam pelo menos o DY que
+      você exige (6% a.a. no método clássico). Tudo editável.</p>
+      <div class="gd-base">Base do dividendo:
+        <button type="button" class="" onclick="bazinBase('med', this)">Média (sem anos cheios)</button>
+        <button type="button" class="ativo" onclick="bazinBase('12m', this)">Últimos 12 meses</button>
+      </div>
+      <div class="campos gordon">
+        <div><label for="bz-div">Dividendo anual por ação (R$)</label>
+        <input type="number" id="bz-div" value="0.03" data-modo="12m" data-vmed="0.00" data-v12m="0.03" step="0.05" min="0" oninput="calcBazin()">
+        <div class="gd-cap">valores brutos com data-com no período (JCP tem 15% retido) · fonte: B3</div></div>
+        <div><label for="bz-dy">DY mínimo desejado (% a.a.)</label>
+        <input type="number" id="bz-dy" value="6" step="0.5" min="0.5" oninput="calcBazin()">
+        <div class="gd-cap">o retorno em dividendos que VOCÊ exige — 6% é o número do método clássico</div></div>
+      </div>
+      <div class="resultado">
+        <div class="res"><div class="rotulo">Preço-teto (com suas premissas)</div><div class="num" id="bz-teto">—</div></div>
+        <div class="res"><div class="rotulo">Cotação atual (D-1)</div><div class="num">R$ 3.14</div></div>
+      </div>
+      <p class="aviso">Só faz sentido para empresas que PAGAM dividendos com constância — dividendo
+      passado não garante dividendo futuro (a empresa pode cortar amanhã). Método do livro "Faça
+      Fortuna com Ações" — não é recomendação nem promessa de retorno.</p>
+    </div>
+  </div>
+
+
+  <div class="rodape">Isto não é recomendação de investimento. Fontes: B3 (cotações oficiais COTAHIST, listagem, eventos e proventos) e CVM (cadastro de companhias e demonstrações financeiras padronizadas — DFP). Regras tributárias citadas em caráter informativo — confirme com um contador.<br>
+  Projeto open source: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a>
+  · <a href="apoie.html">apoie o projeto</a>
+  · <a href="acoes.html">todas as ações</a> · <a href="index.html">início</a></div>
+</div>
+<script>
+const num = id => { const el = document.getElementById(id); return el ? (parseFloat(el.value) || 0) : 0; };
+const brl2 = v => v.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL', minimumFractionDigits: 2});
+
+function calcGraham() {
+  const el = document.getElementById('gr-justo');
+  if (!el) return;
+  const lpa = num('gr-lpa'), vpa = num('gr-vpa'), mult = num('gr-mult');
+  if (lpa <= 0 || vpa <= 0 || mult <= 0) { el.textContent = 'não se aplica (LPA/VPA ≤ 0)'; return; }
+  el.textContent = brl2(Math.sqrt(mult * lpa * vpa));
+}
+
+function calcBazin() {
+  const el = document.getElementById('bz-teto');
+  if (!el) return;
+  const div = num('bz-div'), dy = num('bz-dy') / 100;
+  if (div <= 0 || dy <= 0) { el.textContent = '—'; return; }
+  el.textContent = brl2(div / dy);
+}
+
+function bazinBase(modo, botao) {
+  const inp = document.getElementById('bz-div');
+  if (!inp) return;
+  inp.dataset.modo = modo;
+  inp.value = modo === '12m' ? inp.dataset.v12m : inp.dataset.vmed;
+  if (botao) botao.parentElement.querySelectorAll('button').forEach(b => b.classList.toggle('ativo', b === botao));
+  calcBazin();
+}
+
+function abrirCalc(botao, calc) {
+  botao.hidden = true;
+  botao.nextElementSibling.hidden = false;
+  if (calc) calc();
+}
+
+(function(){
+  var NS='http://www.w3.org/2000/svg';
+  function wire(svg){
+    var pts=[].slice.call(svg.querySelectorAll('circle[data-val]'));
+    if(pts.length<2) return;
+    var wrap=svg.closest('.grafico'); if(!wrap) return;
+    if(getComputedStyle(wrap).position==='static') wrap.style.position='relative';
+    var groups={}, order=[];
+    pts.forEach(function(c){
+      c.setAttribute('data-r0', c.getAttribute('r')||'3');
+      c.setAttribute('data-op0', c.getAttribute('opacity')||'1');
+      var lbl=c.getAttribute('data-lbl'), x=parseFloat(c.getAttribute('cx'));
+      if(!groups[lbl]){ groups[lbl]={x:x,lbl:lbl,items:[]}; order.push(lbl); }
+      groups[lbl].items.push({nome:c.getAttribute('data-nome'),val:c.getAttribute('data-val'),
+        cor:c.getAttribute('data-cor'),cy:parseFloat(c.getAttribute('cy')),el:c});
+    });
+    var cols=order.map(function(l){return groups[l];}).sort(function(a,b){return a.x-b.x;});
+    var guide=document.createElementNS(NS,'line');
+    guide.setAttribute('y1',14); guide.setAttribute('y2',266);
+    guide.setAttribute('stroke','#8FCB9B'); guide.setAttribute('stroke-width','1');
+    guide.setAttribute('stroke-dasharray','3 3'); guide.setAttribute('opacity','0');
+    guide.setAttribute('pointer-events','none'); svg.appendChild(guide);
+    var tip=document.createElement('div');
+    tip.style.cssText='position:absolute;pointer-events:none;z-index:6;background:#1E272B;border:1px solid #33434A;border-radius:9px;padding:8px 11px;font-size:12px;color:#EAEEF0;box-shadow:0 8px 24px rgba(0,0,0,.5);opacity:0;transition:opacity .08s;white-space:nowrap;font-variant-numeric:tabular-nums;';
+    wrap.appendChild(tip);
+    function reset(){ pts.forEach(function(c){ c.setAttribute('r',c.getAttribute('data-r0')); c.setAttribute('opacity',c.getAttribute('data-op0')); }); }
+    svg.addEventListener('pointermove', function(e){
+      var rect=svg.getBoundingClientRect(); if(!rect.width) return;
+      var sx=rect.width/860, sy=rect.height/300;
+      var vbx=(e.clientX-rect.left)/sx, best=null, bd=1e9;
+      cols.forEach(function(g){ var d=Math.abs(g.x-vbx); if(d<bd){bd=d;best=g;} });
+      if(!best) return;
+      reset();
+      guide.setAttribute('x1',best.x); guide.setAttribute('x2',best.x); guide.setAttribute('opacity','1');
+      var top=1e9;
+      best.items.forEach(function(it){ it.el.setAttribute('r','5'); it.el.setAttribute('opacity','1'); if(it.cy<top) top=it.cy; });
+      tip.innerHTML='<div style="color:#6B7681;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;">'+best.lbl+'</div>'+
+        best.items.map(function(it){ return '<div style="display:flex;align-items:center;gap:7px;margin-top:2px;"><span style="width:8px;height:8px;border-radius:50%;background:'+it.cor+';"></span><span style="color:#9AA7B2;">'+it.nome+'</span><b style="margin-left:auto;padding-left:12px;">'+it.val+'</b></div>'; }).join('');
+      var leftPx=best.x*sx, topPx=top*sy, flip=leftPx>rect.width-160;
+      tip.style.left=leftPx+'px'; tip.style.top=(topPx-12)+'px';
+      tip.style.transform='translate('+(flip?'calc(-100% - 14px)':'14px')+',-100%)';
+      tip.style.opacity='1';
+    });
+    svg.addEventListener('pointerleave', function(){ guide.setAttribute('opacity','0'); tip.style.opacity='0'; reset(); });
+  }
+  var svgs=document.querySelectorAll('.grafico svg');
+  for(var i=0;i<svgs.length;i++){ try{ wire(svgs[i]); }catch(e){} }
+})();
+
+
+</script>
+</body>
+</html>

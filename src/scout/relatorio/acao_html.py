@@ -801,6 +801,40 @@ def gerar(
   </div>
 """
 
+    # --- Processos judiciais (FRE seção 4.3+, PDF lido por IA) ----------------
+    secao_processos = ""
+    bloco_proc = (leitura or {}).get("processos") or {}
+    if bloco_proc:
+        partes_proc = []
+        if bloco_proc.get("valor_provisionado"):
+            partes_proc.append(
+                f'<div class="card" style="max-width:280px;margin-bottom:10px"><div class="nome">Valor provisionado</div>'
+                f'<div class="valor">{formato.moeda_compacta(bloco_proc["valor_provisionado"])}</div>'
+                '<div class="extra">provisão declarada para processos não sigilosos (FRE)</div></div>'
+            )
+        if bloco_proc.get("texto"):
+            from .html import _texto_ia_para_html
+
+            partes_proc.append(
+                f'<div style="white-space:pre-wrap">{_texto_ia_para_html(bloco_proc["texto"])}</div>'
+                '<div class="nota" style="margin-top:10px">resumo gerado por IA local a partir da seção de '
+                "processos do FRE — pode conter erros de leitura; confira no documento original. Não é recomendação.</div>"
+            )
+        if partes_proc:
+            link_fre = (
+                f'<a href="https://www.rad.cvm.gov.br/ENET/frmExibirArquivoFRE.aspx?NumeroSequencialDocumento={bloco_proc["id"]}"'
+                ' target="_blank" rel="noopener">FRE no RAD/CVM</a>' if bloco_proc.get("id") else "FRE"
+            )
+            secao_processos = f"""
+  <h2>⚖️ Processos judiciais (FRE)</h2>
+  <div class="grafico">
+  <div class="nota" style="font-size:13px;margin-bottom:8px">seção 4.3+ do Formulário de Referência
+  {f"(ref. {formato.dia_br(bloco_proc['referencia'])})" if bloco_proc.get("referencia") else ""} —
+  processos relevantes declarados pela própria companhia · fonte: {link_fre}</div>
+  {''.join(partes_proc)}
+  </div>
+"""
+
     auditor = (empresa["auditor"] or "").strip()
     meta_auditor = f" · auditor: {_e(_trunca(auditor, 40))}" if auditor else ""
     situacao = (empresa["situacao"] or "").strip().upper()
@@ -891,6 +925,8 @@ table.imoveis td:not(:first-child):not(:nth-child(2)), table.imoveis th:not(:fir
   {_secao_parecer(leitura)}
 
   {_secao_ia(leitura, agora, classe="empresa")}
+
+  {secao_processos}
 
   <div class="regras">
   <h2>As regras desta classe (Ações)</h2>

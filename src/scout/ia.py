@@ -309,6 +309,38 @@ def _conversar(
     return "".join(pedacos).strip()
 
 
+PROMPT_PROCESSOS = (
+    "Você é um extrator de fatos da seção de PROCESSOS JUDICIAIS do Formulário "
+    "de Referência (FRE) de companhias abertas brasileiras. Regras invioláveis:\n"
+    "1. Extraia APENAS o que está escrito — nunca invente, nunca calcule, nunca "
+    "extrapole.\n"
+    "2. Para cada processo relevante, produza um tópico com: a NATUREZA "
+    "(trabalhista/tributário/cível/ambiental/regulatório), o VALOR envolvido "
+    "quando declarado, a CHANCE DE PERDA declarada pela companhia (provável/"
+    "possível/remota) e um resumo de 1-2 linhas do objeto, citando um trecho "
+    "curto entre aspas.\n"
+    "3. NUNCA dê opinião sobre mérito, resultado provável ou impacto no preço.\n"
+    "4. Priorize os maiores valores e o que a companhia marcou como provável.\n"
+    "5. Responda em português, em tópicos (máximo 8), do maior para o menor "
+    "valor. Se a seção declarar que não há processos relevantes, diga só isso."
+)
+
+
+def analisar_processos(
+    texto_processos: str,
+    contexto_empresa: str,
+    modelo: str | None = None,
+    ao_progresso=None,
+) -> str:
+    """Lê a seção 4.3+ do FRE (processos judiciais) — fatos com citação."""
+    conteudo = (
+        "CONTEXTO (calculado por código a partir de dados oficiais — use apenas "
+        f"para conectar fatos, não recalcule):\n{contexto_empresa}\n\n"
+        f"SEÇÃO DE PROCESSOS JUDICIAIS DO FRE (texto extraído do PDF):\n{texto_processos}"
+    )
+    return _conversar(PROMPT_PROCESSOS, conteudo, modelo, ao_progresso)
+
+
 PROMPT_CLASSIFICAR = (
     "Você classifica ETFs brasileiros lendo APENAS os nomes das maiores "
     "posições da carteira. Escolha EXATAMENTE UMA das classes oferecidas — "

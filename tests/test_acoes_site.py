@@ -249,3 +249,17 @@ def test_selo_e_flags_na_pagina_e_listagem(con):
     assert "Atenção" in pagina  # selo no topo
     listagem = modulo_site._indice_acoes([dados], datetime(2026, 7, 21, 12, 0))
     assert "selo-dot" in listagem and "Atenção" in listagem
+
+
+def test_secao_processos_judiciais_na_pagina(con):
+    _semear_empresa(con)
+    dados = acao_html.montar_dados_acao(con, "TSTA4", hoje=date(2026, 7, 21))
+    leitura = {"processos": {"id": 999, "referencia": "2026-12-31", "valor_provisionado": 2.5e9,
+                             "texto": "- Tributário de R$ 1,2 bi: \"trecho\" (perda: possível)"}}
+    pagina = acao_html.gerar(dados, agora=datetime(2026, 7, 21, 12, 0), leitura=leitura)
+    assert "Processos judiciais (FRE)" in pagina
+    assert "R$ 2,5B" in pagina  # valor provisionado (estruturado, sem IA)
+    assert "rad.cvm.gov.br" in pagina  # link para o original
+    assert "pode conter erros de leitura" in pagina  # honestidade da IA
+    # sem o bloco, a seção não aparece
+    assert "Processos judiciais (FRE)" not in acao_html.gerar(dados, agora=datetime(2026, 7, 21, 12, 0))

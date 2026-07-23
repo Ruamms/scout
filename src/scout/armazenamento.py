@@ -58,6 +58,12 @@ CREATE TABLE IF NOT EXISTS auditores (
     fim     TEXT,
     PRIMARY KEY (cod_cvm, auditor, inicio)
 );
+CREATE TABLE IF NOT EXISTS fre_docs (
+    cod_cvm    TEXT PRIMARY KEY,
+    id_doc     INTEGER,  -- documento FRE vigente no RAD (última versão)
+    link       TEXT,     -- frmDownloadDocumento (zip com o XML do FRE)
+    referencia TEXT      -- DT_REFER
+);
 CREATE TABLE IF NOT EXISTS administradores (
     cod_cvm          TEXT NOT NULL,
     nome             TEXT NOT NULL,

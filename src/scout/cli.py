@@ -966,6 +966,46 @@ def ia_lote(
                     return True
                 return bool(existente and (existente.get("parecer") or {}).get("id") == df["id"])
 
+            def _doc_fre():
+                if getattr(resumo, "classe", None) != "empresa":
+                    return None
+                return con.execute(
+                    "SELECT * FROM fre_docs WHERE cod_cvm = ?", (resumo.cod_cvm,)
+                ).fetchone()
+
+            def _processos_atual(existente: dict | None) -> bool:
+                doc = _doc_fre()
+                if doc is None or not doc["link"]:
+                    return True
+                return bool(existente and (existente.get("processos") or {}).get("id") == doc["id_doc"])
+
+            def _processar_processos(existente: dict | None) -> dict | None:
+                """Empresas: seção de processos judiciais do FRE (PDF embutido)
+                lida por IA — incremental por id do FRE (documento anual)."""
+                doc = _doc_fre()
+                if doc is None or not doc["link"]:
+                    return (existente or {}).get("processos")
+                if existente and (existente.get("processos") or {}).get("id") == doc["id_doc"]:
+                    return existente["processos"]
+                from .coleta import fre_processos
+
+                caminho_p, valor_prov = fre_processos.garantir_pdf_processos(
+                    doc["link"], doc["id_doc"],
+                    armazenamento.diretorio_dados() / "documentos" / "fre",
+                )
+                bloco = {
+                    "id": doc["id_doc"], "referencia": doc["referencia"],
+                    "valor_provisionado": valor_prov,
+                }
+                if caminho_p:
+                    texto_p = modulo_ia.extrair_texto_pdf(caminho_p, max_paginas=25)
+                    if len(texto_p) >= 500:
+                        with console.status(f"{prefixo}: lendo processos judiciais (FRE)…"):
+                            bloco["texto"] = modulo_ia.analisar_processos(
+                                texto_p, f"Empresa: {resumo.ticker}", modelo_final
+                            )
+                return bloco
+
             try:
                 docs, erro_prefetch = _proximo_da_fila()
                 if erro_prefetch is not None:
@@ -984,7 +1024,7 @@ def ia_lote(
                     # comunicados e assembleias, quando existem, são lidos mesmo assim
                     if existente and existente.get("sem_relatorio") and leituras.ids_comunicados(
                         existente
-                    ) >= ids_novos and _parecer_atual(existente, df):
+                    ) >= ids_novos and _parecer_atual(existente, df) and _processos_atual(existente):
                         pulados += 1
                         continue  # já marcado e sem documento novo
                     texto_docs = None
@@ -1000,6 +1040,12 @@ def ia_lote(
                     bloco_parecer = _processar_parecer(df, existente)
                     if bloco_parecer:
                         dados["parecer"] = bloco_parecer
+                    try:
+                        bloco_processos = _processar_processos(existente)
+                    except Exception:  # RAD fora do ar não derruba a leitura
+                        bloco_processos = (existente or {}).get("processos")
+                    if bloco_processos:
+                        dados["processos"] = bloco_processos
                     leituras.salvar(pasta, dados)
                     if texto_docs:
                         novos += 1

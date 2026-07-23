@@ -77,6 +77,33 @@ def carregar_zip(con: sqlite3.Connection, conteudo: bytes, cnpj_para_cod: dict[s
                 maiores[cod] = versao
         return maiores
 
+    # documento FRE vigente por companhia (id + link do RAD): a porta de entrada
+    # dos processos judiciais (seção 4.3+, PDF embutido — fre_processos.py)
+    import re as _re
+
+    meta_csv = next(
+        (n for n in zf.namelist() if _re.fullmatch(r"fre_cia_aberta_\d{4}\.csv", n)), None
+    )
+    if meta_csv:
+        docs_versao: dict[str, int] = {}
+        for linha in _ler(meta_csv):
+            cod = cnpj_para_cod.get(armazenamento.so_digitos(linha.get("CNPJ_CIA") or ""))
+            if cod is None:
+                continue
+            versao = int(linha.get("VERSAO") or 1)
+            if versao < docs_versao.get(cod, 0):
+                continue
+            docs_versao[cod] = versao
+            try:
+                id_doc = int(linha.get("ID_DOC") or 0)
+            except ValueError:
+                continue
+            con.execute(
+                "INSERT OR REPLACE INTO fre_docs (cod_cvm, id_doc, link, referencia) VALUES (?, ?, ?, ?)",
+                (cod, id_doc, (linha.get("LINK_DOC") or "").strip() or None,
+                 (linha.get("DT_REFER") or "").strip()[:10] or None),
+            )
+
     n_adm = 0
     versoes = _versoes("administrador_membro")
     codigos_com_fre = set()
