@@ -202,6 +202,7 @@ def menu_html() -> str:
         <a href="comparar-bancos.html">Comparar bancos</a>
       </div>
     </div>
+    <a href="metodologia.html">Metodologia</a>
     <a href="apoie.html">Apoiar</a>
   </nav>
 """

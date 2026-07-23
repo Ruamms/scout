@@ -450,6 +450,19 @@ def _migrar(con: sqlite3.Connection) -> None:
             # re-sincroniza o IF.data para preencher a liquidez imediata
             con.execute("DELETE FROM cargas WHERE arquivo LIKE 'IFDATA_%'")
             con.commit()
+    if "cargas" in tabelas:
+        marcador_carteira = con.execute(
+            "SELECT 1 FROM cargas WHERE arquivo = 'IFDATA_V2_CARTEIRA'"
+        ).fetchone()
+        if marcador_carteira is None:
+            # a Res. 4.966 renomeou "Carteira de Crédito Classificada" no IF.data
+            # a partir de 2025 — trimestres carregados antes do fix ficaram com
+            # carteira NULL; força UMA recarga completa
+            con.execute("DELETE FROM cargas WHERE arquivo LIKE 'IFDATA_2%'")
+            con.execute(
+                "INSERT INTO cargas (arquivo, carregado_em) VALUES ('IFDATA_V2_CARTEIRA', datetime('now'))"
+            )
+            con.commit()
     if "administradores" in tabelas:
         colunas_adm = {linha[1] for linha in con.execute("PRAGMA table_info(administradores)")}
         if "cpf" not in colunas_adm:

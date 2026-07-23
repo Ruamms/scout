@@ -6,15 +6,16 @@ from scout import banco_flags
 from scout.modelos import Severidade
 
 
-def _tri(anomes, basileia=15.0, lucro=100.0, captacoes=1000.0, carteira=800.0):
+def _tri(anomes, basileia=15.0, lucro=100.0, captacoes=1000.0, carteira=800.0,
+         ativo=2000.0, caixa=200.0):
     return {"anomes": anomes, "basileia": basileia, "lucro": lucro,
-            "captacoes": captacoes, "carteira": carteira}
+            "captacoes": captacoes, "carteira": carteira, "ativo": ativo, "caixa": caixa}
 
 
 def test_banco_saudavel_zero_flags():
     serie = [_tri(a) for a in (202412, 202503, 202506, 202512, 202603)]
     r = banco_flags.avaliar(serie)
-    assert r.flags == [] and len(r.aprovadas) == 4
+    assert r.flags == [] and len(r.aprovadas) == 5
 
 
 def test_basileia_no_piso_e_alta_caso_master():
@@ -57,6 +58,27 @@ def test_basileia_derretendo():
     assert any("caiu" in f.titulo for f in r.flags)
 
 
+def test_balanco_atipico_de_captador():
+    # retrato as-of do caso real (mar/2025): capta 75% do ativo, caixa 0,2%,
+    # crédito 23% -> MÉDIA factual com os 3 números e a fonte nominal
+    r = banco_flags.avaliar([_tri(202503, ativo=86800, captacoes=65000, caixa=180, carteira=20000)])
+    flag = next(f for f in r.flags if "Caixa mínimo" in f.titulo)
+    assert flag.severidade == Severidade.MEDIA
+    assert "captações" in flag.evidencia and "liquidez imediata" in flag.evidencia
+    assert "ifdata.bcb.gov.br" in flag.fonte and "'Ativo'" in flag.fonte
+    # a redação é fato, não acusação — nunca nomeia caso de fraude
+    assert "Master" not in flag.fato and "fraude" not in flag.fato.lower()
+    assert "não uma acusação" in flag.fato or "não é uma acusação" in flag.fato.replace("não uma", "não é uma")
+    # banco com caixa normal (Itaú-like: 11% do ativo) não dispara
+    r2 = banco_flags.avaliar([_tri(202503, ativo=10000, captacoes=7600, caixa=1100, carteira=3100)])
+    assert not any("Caixa mínimo" in f.titulo for f in r2.flags)
+    # sem o dado de caixa (base antiga): não avaliada, nunca aprovação
+    sem_caixa = _tri(202503)
+    sem_caixa["caixa"] = None
+    r3 = banco_flags.avaliar([sem_caixa])
+    assert "Balanço atípico para quem capta do público" in r3.nao_avaliadas
+
+
 def test_sem_dado_e_nao_avaliada():
     r = banco_flags.avaliar([])
-    assert r.flags == [] and r.aprovadas == [] and len(r.nao_avaliadas) == 4
+    assert r.flags == [] and r.aprovadas == [] and len(r.nao_avaliadas) == 5

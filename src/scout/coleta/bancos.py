@@ -34,7 +34,10 @@ TRIMESTRES_HISTORICO = 12  # 3 anos: base das red flags de tendência (R2)
 # quebras de linha; o casamento é por PREFIXO do nome normalizado.
 _COLUNAS = {
     "Ativo Total": "ativo",
-    "Carteira de Crédito Classificada": "carteira",
+    # até 2024 o nome era "Carteira de Crédito Classificada"; a Res. 4.966
+    # (vigente 2025) mudou a contabilidade e o IF.data renomeou para
+    # "Carteira de Crédito" — o prefixo casa os DOIS vocabulários
+    "Carteira de Crédito": "carteira",
     "Captações": "captacoes",
     "Patrimônio Líquido": "pl",
     "Lucro Líquido": "lucro",

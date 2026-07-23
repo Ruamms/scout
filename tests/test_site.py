@@ -261,3 +261,19 @@ def test_ranking_abre_no_top5_com_ver_mais():
     # com 5 ou menos, sem botão
     curto = modulo_site._bloco_ranking("Maior DY", SimpleNamespace(criterio="dy", linhas=linhas[:4]))
     assert "rk-mais" not in curto and "hidden" not in curto
+
+
+def test_pagina_metodologia_e_aviso_legal():
+    from datetime import datetime
+
+    from scout.relatorio import site as modulo_site
+
+    pagina = modulo_site._pagina_metodologia(datetime(2026, 7, 23))
+    assert "não é recomendação de investimento" in pagina
+    assert "Resoluções CVM 20/2021 e 19/2021" in pagina  # o que NÃO somos, com a norma
+    assert "síntese mecânica" in pagina and "nunca uma acusação" in pagina
+    assert "LGPD" in pagina and "nunca são exibidos" in pagina
+    assert "ifdata.bcb.gov.br" in pagina  # fontes nominais verificáveis
+    assert "reportar" in pagina  # canal de correção
+    for placeholder in ("{CSS_", "{JS_", "{relatorio_html.", "{menu_html"):
+        assert placeholder not in pagina

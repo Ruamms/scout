@@ -212,6 +212,9 @@ def gerar(
         )
     progresso(f"ações: {len(acoes_publicadas)} páginas")
 
+    (destino / "metodologia.html").write_text(
+        _pagina_metodologia(agora or datetime.now()), encoding="utf-8"
+    )
     apoio.salvar(destino, analytics)
     # fonte display auto-hospedada (sem CDN, sem fetch externo) — um único
     # arquivo no destino, cacheado pelo navegador; @font-face aponta para ela
@@ -1874,6 +1877,101 @@ def _linha_fundo(resumo, extra: bool = False, tipo: str | None = None) -> str:
         f"<td>{_ou_traco(resumo.pl, formato.moeda_compacta)}</td>"
         f'<td class="col-selo"><span class="selo-dot" style="color:{cor}" title="{dica}"><span class="pt" style="background:{cor}"></span>{resumo.selo.rotulo}</span></td></tr>'
     )
+
+
+def _pagina_metodologia(agora: datetime) -> str:
+    """Metodologia + aviso legal + dados pessoais — a blindagem pública: o que
+    o Scout é (dados públicos organizados com critérios abertos) e o que NÃO é
+    (análise, consultoria ou recomendação)."""
+    return f"""<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metodologia e aviso legal — Scout</title>
+{relatorio_html.TAG_FAVICON}
+<style>
+:root {{ color-scheme: dark; }}
+* {{ box-sizing:border-box; margin:0; }}
+body {{ background:#0F1416; color:#EAEEF0; font-family:system-ui,sans-serif; line-height:1.65; }}
+.pagina {{ max-width:780px; margin:0 auto; padding:28px 20px 40px; }}
+h1 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:30px; font-weight:700; letter-spacing:-.02em; margin:8px 0 4px; }}
+h2 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:19px; font-weight:700; margin:26px 0 8px; }}
+p, li {{ color:#C7CFD4; font-size:14.5px; }}
+ul {{ padding-left:22px; margin:8px 0; }}
+a {{ color:#8FCB9B; }}
+.destaque {{ background:#161D20; border:1px solid #8FCB9B; border-radius:10px; padding:14px 18px; margin:14px 0; }}
+.rodape {{ color:#9AA7B2; font-size:12.5px; border-top:1px solid #1B2225; margin-top:26px; padding-top:12px; }}
+{CSS_MENU}{_CSS_RK_MAIS}
+{relatorio_html.CSS_MARCA}
+</style>
+</head>
+<body>
+<div class="pagina">
+  {relatorio_html.marca_html("index.html")}
+  {menu_html()}
+  <h1>Metodologia e aviso legal</h1>
+
+  <div class="destaque"><p><b>O Scout não é recomendação de investimento.</b> Não somos analistas nem
+  consultores de valores mobiliários (Resoluções CVM 20/2021 e 19/2021) e não recomendamos comprar,
+  vender ou manter nenhum ativo. O que fazemos: organizar DADOS PÚBLICOS OFICIAIS com critérios
+  abertos e auditáveis. A decisão é sempre sua — e retorno passado não garante futuro.</p></div>
+
+  <h2>De onde vêm os números</h2>
+  <p>Todo número exibido sai de documento público oficial, citado na própria página:</p>
+  <ul>
+    <li><b>FIIs</b> — informes mensais/trimestrais/anuais e registro de fundos (dados abertos da CVM),
+    documentos do FNET (B3), cotação = fechamento oficial D-1 (B3, série histórica);</li>
+    <li><b>ETFs</b> — carteiras (CDA/CVM), listagem e preços (B3), proventos e regulamentos (FNET);</li>
+    <li><b>Ações</b> — DFP/ITR/FRE/FCA e fatos relevantes (dados abertos da CVM), eventos e proventos (B3);</li>
+    <li><b>Bancos (CDB)</b> — IF.data do Banco Central (<a href="https://www3.bcb.gov.br/ifdata/"
+    target="_blank" rel="noopener">ifdata.bcb.gov.br</a>), conglomerado prudencial, com o relatório e o
+    trimestre citados em cada alerta;</li>
+    <li>índices e renda fixa — Banco Central (SGS) e ANBIMA (dados públicos).</li>
+  </ul>
+
+  <h2>Como nascem selos e red flags</h2>
+  <p>O selo é uma <b>síntese mecânica</b>: regras determinísticas, publicadas em
+  <a href="https://github.com/Ruamms/scout">código aberto</a>, rodam sobre os dados oficiais e o selo
+  reflete a maior severidade disparada. Cada alerta carrega o fato, a evidência numérica e a fonte —
+  nunca uma opinião nossa sobre o ativo, e <b>nunca uma acusação</b>: são retratos de dados públicos,
+  que podem ter explicações legítimas próprias de cada negócio. Regra sem dado suficiente aparece como
+  "não avaliada" — nunca vira aprovação nem alerta silencioso.</p>
+
+  <h2>Calculadoras</h2>
+  <p>Graham, Bazin, Gordon, gross-up de CDB e cobertura do FGC são <b>ferramentas aritméticas</b> de
+  fórmulas públicas: os resultados dependem das premissas que VOCÊ digita e não são preço-alvo nem
+  recomendação nossa. Elas ficam fechadas até você optar por abri-las.</p>
+
+  <h2>Leituras por IA</h2>
+  <p>Uma IA local resume documentos oficiais (relatórios, fatos relevantes, atas) apenas EXTRAINDO
+  fatos com citação do trecho — é proibida de criar números ou opinar. Ainda assim <b>pode conter
+  erros de leitura</b>: todos os links para os documentos originais ficam na página para conferência.</p>
+
+  <h2>Dados pessoais (LGPD)</h2>
+  <p>A seção "Quem manda na empresa" exibe nome, cargo e experiência de administradores exatamente
+  como publicados pela CVM no Formulário de Referência — documento público obrigatório cuja finalidade
+  legal é informar o público investidor. Identificadores pessoais presentes na fonte são usados
+  <b>somente</b> para cruzar a mesma pessoa entre companhias e <b>nunca são exibidos</b>. Visitantes:
+  não usamos cookies nem identificamos ninguém — a medição de audiência é anônima e agregada.
+  Titulares de dados podem falar conosco pelo canal abaixo.</p>
+
+  <h2>Erros e correções</h2>
+  <p>Trabalhamos com melhor esforço sobre fontes oficiais, sem garantia de exatidão, completude ou
+  atualidade — a fonte pode errar, atrasar ou mudar de formato, e nosso processamento também pode
+  falhar. Encontrou erro? Use o botão <b>"reportar"</b> presente em todas as páginas ou abra uma issue
+  no <a href="https://github.com/Ruamms/scout/issues">GitHub</a>: corrigimos e o histórico fica público.</p>
+
+  <div class="rodape">Não é recomendação de investimento · critérios e código:
+  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
+  <a href="apoie.html">apoie o projeto</a> · atualizado em {agora.strftime("%d/%m/%Y")}</div>
+</div>
+<script>
+{_JS_RK_MAIS}{JS_MENU}
+</script>
+</body>
+</html>
+"""
 
 
 def _bloco_ranking(titulo: str, resultado) -> str:

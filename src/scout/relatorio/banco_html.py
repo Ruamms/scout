@@ -258,7 +258,9 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
   <h1>{_e(nome)} {selo_html}</h1>
   <div class="meta">Banco emissor (CDB/LCI/LCA) · {_e(_TCB.get(banco["tcb"], banco["tcb"] or ""))}
   {f"· porte {_e(banco['segmento'])}" if banco["segmento"] else ""} · conglomerado prudencial ·
-  dados IF.data/BCB até <b>{trimestre}</b> · página gerada em {agora.strftime("%d/%m/%Y %H:%M")}</div>
+  dados IF.data/BCB até <b>{trimestre}</b> ·
+  <a href="https://www3.bcb.gov.br/ifdata/" target="_blank" rel="noopener">confira todos os números
+  na fonte oficial (IF.data)</a> · página gerada em {agora.strftime("%d/%m/%Y %H:%M")}</div>
 
   <div class="cards">{"".join(cards)}</div>
 

@@ -18,6 +18,16 @@ Réguas (calibradas no benchmark):
 - Aspirador de CDB: captações crescendo forte (YoY) com a carteira de crédito
   crescendo muito menos — captar sem emprestar é rolagem/queima, não negócio.
 - Basileia derretendo: queda relevante em 4 trimestres.
+- Balanço atípico de captador (gate aprovado em 23/07/2026): captações > 40%
+  do ativo + liquidez imediata < 2% + carteira < 35% — no benchmark de mar/2025
+  disparou em 4 de 106 (entre eles o retrato as-of do caso real que motivou a
+  regra), com os 10 controles limpos. A redação da flag NÃO nomeia casos de
+  fraude nem compara o banco a eles (cuidado jurídico deliberado): só os três
+  números, a fonte e a explicação alternativa legítima (modelos de pagamento).
+
+Toda flag carrega a FONTE nominal — os números são reproduzíveis no portal
+público IF.data do Banco Central (ifdata.bcb.gov.br), selecionando o
+conglomerado prudencial e o trimestre citados na evidência.
 """
 
 from __future__ import annotations
@@ -25,7 +35,14 @@ from __future__ import annotations
 from . import formato, redflags
 from .modelos import RedFlag, Severidade
 
-_FONTE = "BCB — IF.data (conglomerado prudencial, dados públicos trimestrais)"
+_FONTE = (
+    "BCB — IF.data (ifdata.bcb.gov.br), conglomerado prudencial, relatório "
+    "'Resumo' e 'Informações de Capital' — dados públicos trimestrais"
+)
+_FONTE_ATIVO = (
+    "BCB — IF.data (ifdata.bcb.gov.br), conglomerado prudencial, relatórios "
+    "'Resumo' e 'Ativo' — dados públicos trimestrais"
+)
 
 
 def _pct(v: float) -> str:
@@ -169,6 +186,41 @@ def avaliar(serie: list[dict]) -> redflags.Resultado:
             ))
         else:
             resultado.aprovadas.append("Basileia estável nos últimos 12 meses")
+
+    # --- 5. Balanço atípico de captador (gate do dono aprovado em 23/07/2026) --
+    nome = "Balanço atípico para quem capta do público"
+    if (
+        atual is None or not atual.get("ativo") or atual.get("caixa") is None
+        or atual.get("captacoes") is None or atual.get("carteira") is None
+    ):
+        resultado.nao_avaliadas.append(nome)
+    else:
+        ativo = atual["ativo"]
+        pct_capt = 100 * atual["captacoes"] / ativo
+        pct_caixa = 100 * atual["caixa"] / ativo
+        pct_carteira = 100 * atual["carteira"] / ativo
+        if pct_capt > 40 and pct_caixa < 2 and pct_carteira < 35:
+            resultado.flags.append(RedFlag(
+                severidade=Severidade.MEDIA,
+                titulo="Caixa mínimo para o tamanho da captação",
+                fato=(
+                    "O banco capta pesado do público, mas caixa + aplicações interfinanceiras "
+                    "são uma fração mínima do ativo e a carteira de crédito é minoritária — a "
+                    "maior parte do ativo está em títulos e outros itens cuja liquidez o dado "
+                    "público não permite verificar. É um FATO de composição de balanço, não uma "
+                    "acusação: modelos de negócio específicos (ex.: instituições de pagamento, "
+                    "que carregam recebíveis) também produzem esse retrato."
+                ),
+                evidencia=(
+                    f"captações {_pct(pct_capt)} do ativo · liquidez imediata {_pct(pct_caixa)} "
+                    f"· carteira de crédito {_pct(pct_carteira)} — trimestre {atual['anomes']}"
+                ),
+                fonte=_FONTE_ATIVO,
+            ))
+        else:
+            resultado.aprovadas.append(
+                "Composição de balanço sem o padrão captação alta + caixa mínimo + crédito minoritário"
+            )
 
     resultado.flags.sort(
         key=lambda f: {Severidade.ALTA: 0, Severidade.MEDIA: 1, Severidade.BAIXA: 2}[f.severidade]
