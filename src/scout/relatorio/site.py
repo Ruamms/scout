@@ -513,7 +513,9 @@ def _indice_etfs(etfs: list[dict], agora) -> str:
         for classe in classes
     )
     linhas = []
-    for dados in sorted(etfs, key=lambda d: d["etf"]["ticker"]):
+    # abre com o TOP 10 por patrimônio (rankings logo abaixo); o resto sob demanda
+    ordenados = sorted(etfs, key=lambda d: (d["pl"]["pl"] if d.get("pl") else 0), reverse=True)
+    for posicao, dados in enumerate(ordenados):
         etf = dados["etf"]
         classe = dados["classe"] or "?"
         preco = f"R$ {formato.decimal(dados['preco_atual'])}" if dados["preco_atual"] else "—"
@@ -598,6 +600,9 @@ input#busca {{ width:100%; background:#161D20; color:#EAEEF0; border:1px solid #
 .filtro {{ background:#1B2225; color:#9AA7B2; border:1px solid #263034; border-radius:99px;
   padding:4px 14px; font-size:12.5px; cursor:pointer; }}
 .filtro.ativo {{ background:#8FCB9B; color:#0F1416; border-color:#8FCB9B; font-weight:700; }}
+.btn-todos {{ display:block; margin:12px auto 0; background:#1B2225; border:1px solid #263034;
+  color:#8FCB9B; padding:8px 22px; border-radius:8px; font-size:13.5px; font-weight:600; cursor:pointer; }}
+.btn-todos:hover {{ border-color:#8FCB9B; }}
 table {{ width:100%; border-collapse:collapse; font-size:13.5px; font-variant-numeric:tabular-nums; }}
 th {{ color:#9AA7B2; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em;
   text-align:left; padding:8px 10px;
@@ -637,6 +642,9 @@ tbody tr:hover td {{ background:#161D20; }}
     <thead><tr><th>ticker</th><th>fundo</th><th>classe</th><th>preço (D-1)</th><th>12 meses</th><th>PL</th><th>taxa</th><th class="col-selo">selo</th></tr></thead>
     <tbody>{"".join(linhas)}</tbody>
   </table>
+  <button id="ver-todos" class="btn-todos" onclick="mostrarTodos()"
+   {"hidden" if len(etfs) <= 10 else ""}>Mostrar todos os {len(etfs)} ETFs
+   (acima: os {min(len(etfs), 10)} maiores por patrimônio)</button>
   <h2 class="rk-titulo">Rankings do dia</h2>
   <div class="meta" style="margin:0 0 14px">fatos ordenados com critério explícito — não recomendação · retorno passado não garante futuro</div>
   <div class="blocos">{rankings_etf}</div>
@@ -646,13 +654,22 @@ tbody tr:hover td {{ background:#161D20; }}
 </div>
 <script>
 let classeAtiva = '';
+let todosVisiveis = false;
 function filtrar() {{
   const termo = document.getElementById('busca').value.trim().toLowerCase();
+  const filtrando = termo !== '' || classeAtiva !== '';
   document.querySelectorAll('#etfs tbody tr').forEach(tr => {{
     const casaTermo = termo === '' || tr.dataset.busca.includes(termo);
     const casaClasse = classeAtiva === '' || tr.dataset.classe === classeAtiva;
-    tr.hidden = !(casaTermo && casaClasse);
+    const recolhida = !filtrando && !todosVisiveis && tr.classList.contains('etf-extra');
+    tr.hidden = !(casaTermo && casaClasse) || recolhida;
   }});
+  const botao = document.getElementById('ver-todos');
+  if (botao) botao.hidden = todosVisiveis || filtrando || !document.querySelector('.etf-extra');
+}}
+function mostrarTodos() {{
+  todosVisiveis = true;
+  filtrar();
 }}
 function filtraClasse(botao, classe) {{
   classeAtiva = classe;
@@ -687,7 +704,9 @@ def _indice_acoes(acoes: list[dict], agora) -> str:
         return d["multiplos"].get(d["ticker"], {})
 
     linhas = []
-    for dados in sorted(acoes, key=lambda d: d["ticker"]):
+    # abre com o TOP 10 por liquidez (rankings logo abaixo); o resto sob demanda
+    ordenados = sorted(acoes, key=lambda d: d.get("liquidez") or 0, reverse=True)
+    for posicao, dados in enumerate(ordenados):
         empresa = dados["empresa"]
         setor = _setor_curto(empresa)
         m = _mult(dados)
@@ -768,6 +787,9 @@ input#busca {{ width:100%; background:#161D20; color:#EAEEF0; border:1px solid #
 .filtro {{ background:#1B2225; color:#9AA7B2; border:1px solid #263034; border-radius:99px;
   padding:4px 14px; font-size:12.5px; cursor:pointer; }}
 .filtro.ativo {{ background:#8FCB9B; color:#0F1416; border-color:#8FCB9B; font-weight:700; }}
+.btn-todos {{ display:block; margin:12px auto 0; background:#1B2225; border:1px solid #263034;
+  color:#8FCB9B; padding:8px 22px; border-radius:8px; font-size:13.5px; font-weight:600; cursor:pointer; }}
+.btn-todos:hover {{ border-color:#8FCB9B; }}
 table {{ width:100%; border-collapse:collapse; font-size:13.5px; font-variant-numeric:tabular-nums; }}
 th {{ color:#9AA7B2; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em;
   text-align:left; padding:8px 10px;
@@ -810,6 +832,9 @@ tbody tr:hover td {{ background:#161D20; }}
     <thead><tr><th>papel</th><th>empresa</th><th>setor</th><th>preço (D-1)</th><th>12 meses</th><th>P/L</th><th>P/VP</th><th>DY 12m</th><th class="col-selo">selo</th></tr></thead>
     <tbody>{"".join(linhas)}</tbody>
   </table>
+  <button id="ver-todos" class="btn-todos" onclick="mostrarTodos()"
+   {"hidden" if len(acoes) <= 10 else ""}>Mostrar todos os {len(acoes)} papéis
+   (acima: os {min(len(acoes), 10)} mais negociados por dia)</button>
   <h2 class="rk-titulo">Rankings do dia</h2>
   <div class="meta" style="margin:0 0 14px">fatos ordenados com critério explícito — não recomendação · retorno passado não garante futuro</div>
   <div class="blocos">{rankings}</div>
@@ -819,13 +844,22 @@ tbody tr:hover td {{ background:#161D20; }}
 </div>
 <script>
 let classeAtiva = '';
+let todosVisiveis = false;
 function filtrar() {{
   const termo = document.getElementById('busca').value.trim().toLowerCase();
+  const filtrando = termo !== '' || classeAtiva !== '';
   document.querySelectorAll('#acoes tbody tr').forEach(tr => {{
     const casaTermo = termo === '' || tr.dataset.busca.includes(termo);
     const casaClasse = classeAtiva === '' || tr.dataset.classe === classeAtiva;
-    tr.hidden = !(casaTermo && casaClasse);
+    const recolhida = !filtrando && !todosVisiveis && tr.classList.contains('acao-extra');
+    tr.hidden = !(casaTermo && casaClasse) || recolhida;
   }});
+  const botao = document.getElementById('ver-todos');
+  if (botao) botao.hidden = todosVisiveis || filtrando || !document.querySelector('.acao-extra');
+}}
+function mostrarTodos() {{
+  todosVisiveis = true;
+  filtrar();
 }}
 function filtraClasse(botao, classe) {{
   classeAtiva = classe;
@@ -1098,7 +1132,7 @@ renderiza();
 """
 
 
-_VISIVEIS_DE_INICIO = 50  # tabela abre com os maiores por PL; o resto sob demanda
+_VISIVEIS_DE_INICIO = 10  # tabela abre com o TOP 10 (rankings logo abaixo); o resto sob demanda
 
 
 def _indice(fundos: list, base: list, agora: datetime, tipos_fii: dict | None = None) -> str:
