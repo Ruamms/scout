@@ -44,6 +44,12 @@ def test_atualizar_grava_b1_b2_e_basileia(con, monkeypatch):
                 {"CodInst": "111", "NomeColuna": "Lucro Líquido", "Saldo": 10.0},
                 {"CodInst": "222", "NomeColuna": "Ativo Total", "Saldo": 5.0},  # não é b1/b2
             ]
+        if relatorio == "2":
+            return [
+                {"CodInst": "111", "NomeColuna": "Disponibilidades (a)", "Saldo": 30.0},
+                {"CodInst": "111", "NomeColuna": "Aplicações Interfinanceiras de Liquidez (b)", "Saldo": 20.0},
+                {"CodInst": "111", "NomeColuna": "Títulos e Valores Mobiliários (c)", "Saldo": 500.0},
+            ]
         return [
             {"CodInst": "111", "NomeColuna": "Patrimônio de Referência para Comparação com o RWA \n(e)", "Saldo": 15.0},
             {"CodInst": "111", "NomeColuna": "Ativos Ponderados pelo Risco (RWA) \n(j)", "Saldo": 100.0},
@@ -58,6 +64,7 @@ def test_atualizar_grava_b1_b2_e_basileia(con, monkeypatch):
     tri = con.execute("SELECT * FROM bancos_tri WHERE cod_inst='111'").fetchone()
     assert tri["anomes"] == 202606 and tri["captacoes"] == 700.0
     assert tri["basileia"] == 15.0  # 100·15/100 — calculada, não inventada
+    assert tri["caixa"] == 50.0  # disp + interfin; TVM fica de fora de propósito
 
 
 def test_ifdata_fora_do_ar_nao_quebra(con, monkeypatch):

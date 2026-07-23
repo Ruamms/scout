@@ -7,6 +7,9 @@ cadastro filtra Tcb b1/b2 (bancos comerciais/múltiplos e de câmbio/investiment
 
 Dados por trimestre (formato longo NomeColuna/Saldo, pivotado aqui):
 - Relatório 1 (Resumo): ativo, carteira de crédito, captações, PL, lucro;
+- Relatório 2 (Ativo): Disponibilidades + Aplicações Interfinanceiras →
+  **caixa** (liquidez IMEDIATA — títulos ficam de fora de propósito: TVM pode
+  ser LFT líquida ou papel remarcado sem mercado, o IF.data não separa);
 - Relatório 5 (Informações de Capital): Capital Principal, PR e RWA —
   **Basileia = 100·PR/RWA** (calculada, determinística; o mínimo regulatório
   é 8% de PR/RWA + adicionais — a régua exata fica para as red flags do R2).
@@ -38,6 +41,12 @@ _COLUNAS = {
     "Capital Principal para Comparação": "capital_principal",
     "Patrimônio de Referência para Comparação": "pr",
     "Ativos Ponderados pelo Risco": "rwa",
+}
+
+# relatório 2 (composição do ATIVO): só o que é saque imediato
+_COLUNAS_ATIVO = {
+    "Disponibilidades": "disp",
+    "Aplicações Interfinanceiras de Liquidez": "interfin",
 }
 
 
@@ -85,16 +94,21 @@ def valores(anomes: int, relatorio: str) -> list[dict]:
     return dados.get("value") or []
 
 
-def pivotar(linhas: list[dict], so_cod_inst: set[str] | None = None) -> dict[str, dict]:
+def pivotar(
+    linhas: list[dict],
+    so_cod_inst: set[str] | None = None,
+    colunas: dict[str, str] | None = None,
+) -> dict[str, dict]:
     """{cod_inst: {coluna: saldo}} — casa o NomeColuna por prefixo (os nomes do
     IF.data têm sufixos de fórmula e quebras de linha)."""
+    colunas = colunas or _COLUNAS
     saida: dict[str, dict] = {}
     for linha in linhas:
         cod = str(linha.get("CodInst") or "")
         if not cod or (so_cod_inst is not None and cod not in so_cod_inst):
             continue
         nome_coluna = " ".join(str(linha.get("NomeColuna") or "").split())
-        for prefixo, coluna in _COLUNAS.items():
+        for prefixo, coluna in colunas.items():
             if nome_coluna.startswith(prefixo):
                 try:
                     saida.setdefault(cod, {})[coluna] = float(linha.get("Saldo"))
@@ -151,6 +165,7 @@ def atualizar_bancos(con: sqlite3.Connection, hoje: date | None = None, ao_progr
         try:
             resumo = pivotar(valores(anomes, "1"), bancos_v1)
             capital = pivotar(valores(anomes, "5"), bancos_v1)
+            composicao = pivotar(valores(anomes, "2"), bancos_v1, _COLUNAS_ATIVO)
         except Exception:  # noqa: BLE001 — trimestre indisponível não derruba a carga
             continue
         if not resumo:
@@ -159,18 +174,24 @@ def atualizar_bancos(con: sqlite3.Connection, hoje: date | None = None, ao_progr
             cap = capital.get(cod, {})
             pr, rwa = cap.get("pr"), cap.get("rwa")
             basileia = (100 * pr / rwa) if (pr is not None and rwa) else None
+            comp = composicao.get(cod, {})
+            caixa = (
+                (comp.get("disp") or 0) + (comp.get("interfin") or 0)
+                if ("disp" in comp or "interfin" in comp)
+                else None
+            )
             con.execute(
                 """
                 INSERT OR REPLACE INTO bancos_tri
                     (cod_inst, anomes, ativo, carteira, captacoes, pl, lucro,
-                     capital_principal, pr, rwa, basileia)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                     capital_principal, pr, rwa, basileia, caixa)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 (
                     cod, anomes,
                     campos.get("ativo"), campos.get("carteira"), campos.get("captacoes"),
                     campos.get("pl"), campos.get("lucro"),
-                    cap.get("capital_principal"), pr, rwa, basileia,
+                    cap.get("capital_principal"), pr, rwa, basileia, caixa,
                 ),
             )
         con.execute(

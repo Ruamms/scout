@@ -244,3 +244,20 @@ def test_pagina_do_fundo_no_site_tem_pares_via_varredura(con, tmp_path):
     # pares do segmento calculados a partir da varredura pré-computada
     assert "Pares do segmento" in pagina
     assert 'href="BETA11.html"' in pagina
+
+
+def test_ranking_abre_no_top5_com_ver_mais():
+    from types import SimpleNamespace
+
+    from scout.relatorio import site as modulo_site
+
+    linhas = [
+        SimpleNamespace(ticker=f"TST{i:02d}", dy_12m=10.0 - i, pvp=None, pl=None)
+        for i in range(8)
+    ]
+    bloco = modulo_site._bloco_ranking("Maior DY", SimpleNamespace(criterio="dy", linhas=linhas))
+    assert bloco.count('class="rk-extra" hidden') == 3  # 6º ao 8º recolhidos
+    assert "ver top 8" in bloco and "rkMais(this)" in bloco
+    # com 5 ou menos, sem botão
+    curto = modulo_site._bloco_ranking("Maior DY", SimpleNamespace(criterio="dy", linhas=linhas[:4]))
+    assert "rk-mais" not in curto and "hidden" not in curto

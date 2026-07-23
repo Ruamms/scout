@@ -462,7 +462,7 @@ input#busca:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color
 .beta-caixa p {{ color:#9AA7B2; margin:10px 0 14px; }}
 .beta-caixa button {{ background:#8FCB9B; color:#0F1416; border:none; border-radius:9px;
   padding:9px 22px; font-size:13.5px; font-weight:700; cursor:pointer; }}
-{CSS_MENU}
+{CSS_MENU}{_CSS_RK_MAIS}
 {relatorio_html.CSS_MARCA}
 </style>
 </head>
@@ -586,7 +586,7 @@ function fecharBeta() {{
   localStorage.setItem('scout-beta-visto', '1');
   document.getElementById('aviso-beta').hidden = true;
 }}
-{JS_MENU}
+{_JS_RK_MAIS}{JS_MENU}
 </script>
 </body>
 </html>
@@ -645,12 +645,15 @@ def _indice_etfs(etfs: list[dict], agora) -> str:
         cand = [d for d in etfs if chave(d) is not None]
         cand.sort(key=chave, reverse=reverso)
         itens = "".join(
-            f'<li><span class="pos">{i}</span>'
+            f'<li{_rk_oculto(i)}><span class="pos">{i}</span>'
             f'<a href="{d["etf"]["ticker"]}.html">{d["etf"]["ticker"]}</a>'
             f'<span class="val">{rotulo(d)}</span></li>'
-            for i, d in enumerate(cand[:5], 1)
+            for i, d in enumerate(cand[:20], 1)
         )
-        return f'<div class="bloco"><h3>{titulo}</h3><ol>{itens or "<li>—</li>"}</ol></div>'
+        return (
+            f'<div class="bloco"><h3>{titulo}</h3><ol>{itens or "<li>—</li>"}</ol>'
+            f"{_rk_botao(min(len(cand), 20))}</div>"
+        )
 
     rankings_etf = (
         _rk_etf(
@@ -714,7 +717,7 @@ tbody tr:hover td {{ background:#161D20; }}
 .selo {{ display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700;
   font-size:11px; color:#0F1416; white-space:nowrap; }}
 .rodape {{ color:#9AA7B2; font-size:12.5px; border-top:1px solid #1B2225; margin-top:26px; padding-top:12px; }}
-{CSS_MENU}
+{CSS_MENU}{_CSS_RK_MAIS}
 {relatorio_html.CSS_MARCA}
 </style>
 </head>
@@ -773,7 +776,7 @@ if (classeUrl) {{
   const botao = Array.from(document.querySelectorAll('.filtro')).find(b => b.textContent === classeUrl);
   if (botao) filtraClasse(botao, classeUrl);
 }}
-{JS_MENU}
+{_JS_RK_MAIS}{JS_MENU}
 </script>
 </body>
 </html>
@@ -833,12 +836,15 @@ def _indice_acoes(acoes: list[dict], agora) -> str:
         cand = [d for d in acoes if chave(d) is not None]
         cand.sort(key=chave, reverse=reverso)
         itens = "".join(
-            f'<li><span class="pos">{i}</span>'
+            f'<li{_rk_oculto(i)}><span class="pos">{i}</span>'
             f'<a href="{d["ticker"]}.html">{d["ticker"]}</a>'
             f'<span class="val">{rotulo(d)}</span></li>'
-            for i, d in enumerate(cand[:5], 1)
+            for i, d in enumerate(cand[:20], 1)
         )
-        return f'<div class="bloco"><h3>{titulo}</h3><ol>{itens or "<li>—</li>"}</ol></div>'
+        return (
+            f'<div class="bloco"><h3>{titulo}</h3><ol>{itens or "<li>—</li>"}</ol>'
+            f"{_rk_botao(min(len(cand), 20))}</div>"
+        )
 
     rankings = (
         _rk(
@@ -900,7 +906,7 @@ td:nth-child(n+4), th:nth-child(n+4) {{ text-align:right; }}
 .bloco .val {{ margin-left:auto; color:#EAEEF0; font-weight:600; font-variant-numeric:tabular-nums; }}
 tbody tr:hover td {{ background:#161D20; }}
 .rodape {{ color:#9AA7B2; font-size:12.5px; border-top:1px solid #1B2225; margin-top:26px; padding-top:12px; }}
-{CSS_MENU}
+{CSS_MENU}{_CSS_RK_MAIS}
 {relatorio_html.CSS_MARCA}
 </style>
 </head>
@@ -964,7 +970,7 @@ if (classeUrl) {{
   const botao = Array.from(document.querySelectorAll('.filtro')).find(b => b.textContent === classeUrl);
   if (botao) filtraClasse(botao, classeUrl);
 }}
-{JS_MENU}
+{_JS_RK_MAIS}{JS_MENU}
 </script>
 </body>
 </html>
@@ -1025,7 +1031,7 @@ tbody tr:hover td {{ background:#161D20; }}
 .selo {{ display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700;
   font-size:11px; color:#0F1416; white-space:nowrap; }}
 .rodape {{ color:#9AA7B2; font-size:12.5px; border-top:1px solid #1B2225; margin-top:26px; padding-top:12px; }}
-{CSS_MENU}
+{CSS_MENU}{_CSS_RK_MAIS}
 {relatorio_html.CSS_MARCA}
 </style>
 </head>
@@ -1079,7 +1085,7 @@ const parametros = new URLSearchParams(location.search);
   if (ticker && DADOS[ticker]) document.getElementById(id).value = ticker;
 }});
 renderiza();
-{JS_MENU}
+{_JS_RK_MAIS}{JS_MENU}
 </script>
 </body>
 </html>
@@ -1123,12 +1129,15 @@ def _indice_bancos(bancos: list[dict], agora) -> str:
         cand = [d for d in bancos if chave(d) is not None and (d["atual"].get("captacoes") or 0) > minimo_capt]
         cand.sort(key=chave, reverse=reverso)
         itens = "".join(
-            f'<li><span class="pos">{i}</span>'
+            f'<li{_rk_oculto(i)}><span class="pos">{i}</span>'
             f'<a href="{slug(d["banco"]["cod_inst"])}.html">{_e(nome_curto(d["banco"]["nome"])[:22])}</a>'
             f'<span class="val">{rotulo(d)}</span></li>'
-            for i, d in enumerate(cand[:5], 1)
+            for i, d in enumerate(cand[:20], 1)
         )
-        return f'<div class="bloco"><h3>{titulo}</h3><ol>{itens or "<li>—</li>"}</ol></div>'
+        return (
+            f'<div class="bloco"><h3>{titulo}</h3><ol>{itens or "<li>—</li>"}</ol>'
+            f"{_rk_botao(min(len(cand), 20))}</div>"
+        )
 
     rankings = (
         _rk("Maior Basileia (captações > R$ 1 bi)",
@@ -1179,7 +1188,7 @@ td:not(:first-child), th:not(:first-child) {{ text-align:right; }}
 .bloco .val {{ margin-left:auto; color:#EAEEF0; font-weight:600; font-variant-numeric:tabular-nums; }}
 tbody tr:hover td {{ background:#161D20; }}
 .rodape {{ color:#9AA7B2; font-size:12.5px; border-top:1px solid #1B2225; margin-top:26px; padding-top:12px; }}
-{CSS_MENU}
+{CSS_MENU}{_CSS_RK_MAIS}
 {relatorio_html.CSS_MARCA}
 </style>
 </head>
@@ -1228,7 +1237,7 @@ function mostrarTodos() {{
   todosVisiveis = true;
   filtrar();
 }}
-{JS_MENU}
+{_JS_RK_MAIS}{JS_MENU}
 </script>
 </body>
 </html>
@@ -1304,7 +1313,7 @@ tbody tr:hover td {{ background:#161D20; }}
 .selo {{ display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700;
   font-size:11px; color:#0F1416; white-space:nowrap; }}
 .rodape {{ color:#9AA7B2; font-size:12.5px; border-top:1px solid #1B2225; margin-top:26px; padding-top:12px; }}
-{CSS_MENU}
+{CSS_MENU}{_CSS_RK_MAIS}
 {relatorio_html.CSS_MARCA}
 </style>
 </head>
@@ -1366,7 +1375,7 @@ const parametros = new URLSearchParams(location.search);
   if (ticker && DADOS[ticker]) document.getElementById(id).value = ticker;
 }});
 renderiza();
-{JS_MENU}
+{_JS_RK_MAIS}{JS_MENU}
 </script>
 </body>
 </html>
@@ -1417,7 +1426,7 @@ tbody tr:hover td {{ background:#161D20; }}
 .selo {{ display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700;
   font-size:11px; color:#0F1416; white-space:nowrap; }}
 .rodape {{ color:#9AA7B2; font-size:12.5px; border-top:1px solid #1B2225; margin-top:26px; padding-top:12px; }}
-{CSS_MENU}
+{CSS_MENU}{_CSS_RK_MAIS}
 {relatorio_html.CSS_MARCA}
 </style>
 </head>
@@ -1464,7 +1473,7 @@ const parametros = new URLSearchParams(location.search);
   if (escolhido && DADOS[escolhido]) document.getElementById(id).value = escolhido;
 }});
 renderiza();
-{JS_MENU}
+{_JS_RK_MAIS}{JS_MENU}
 </script>
 </body>
 </html>
@@ -1562,6 +1571,12 @@ def _pagina_comparar_bancos(bancos: list[dict]) -> str:
             "cor": _COR_SELO.get(d["selo"].nivel, "#7C8894") if d.get("selo") else "#7C8894",
             "motivos": motivos,
             "basileia": _ou_traco(atual.get("basileia"), formato.percentual),
+            "caixa": (
+                f"{formato.moeda_compacta(atual['caixa'])}"
+                f" ({formato.percentual(100 * atual['caixa'] / atual['ativo'])} do ativo)"
+                if atual.get("caixa") is not None and atual.get("ativo")
+                else "—"
+            ),
             "captacoes": _ou_traco(atual.get("captacoes"), formato.moeda_compacta),
             "carteira": _ou_traco(atual.get("carteira"), formato.moeda_compacta),
             "lucro": _ou_traco(atual.get("lucro"), formato.moeda_compacta),
@@ -1577,6 +1592,7 @@ def _pagina_comparar_bancos(bancos: list[dict]) -> str:
   ["Porte (BCB)", d => d.porte],
   ["Selo", d => `<span class="selo" style="background:${d.cor}" title="${(d.motivos || []).join('; ')}">${d.selo}</span>`],
   ["Índice de Basileia", d => d.basileia + ' <span style="color:#6B7681">(mínimo ~10,5%)</span>'],
+  ["Liquidez imediata", d => d.caixa],
   ["Captações", d => d.captacoes],
   ["Carteira de crédito", d => d.carteira],
   ["Lucro no ano", d => d.lucro],
@@ -1626,7 +1642,7 @@ def _indice(fundos: list, base: list, agora: datetime, tipos_fii: dict | None = 
         if tipos_contagem.get(tipo)
     )
     rankings = "".join(
-        _bloco_ranking(titulo, ranking.montar(None, por=por, top=10, sem_alertas=sem_alertas, fundos=base))
+        _bloco_ranking(titulo, ranking.montar(None, por=por, top=20, sem_alertas=sem_alertas, fundos=base))
         for titulo, por, sem_alertas in (
             ("Maior DY 12m, sem alertas de atenção", "dy", True),
             ("Menor P/VP, sem alertas de atenção", "pvp", True),
@@ -1694,7 +1710,7 @@ h2 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:22px; font-wei
 .beta-caixa p {{ color:#9AA7B2; margin:10px 0 14px; }}
 .beta-caixa button {{ background:#8FCB9B; color:#0F1416; border:none; border-radius:9px;
   padding:8px 22px; font-size:13.5px; font-weight:700; cursor:pointer; }}
-{CSS_MENU}
+{CSS_MENU}{_CSS_RK_MAIS}
 {relatorio_html.CSS_MARCA}
 </style>
 </head>
@@ -1832,7 +1848,7 @@ async function statusAtualizacao() {{
   }} catch (e) {{ texto.textContent = ''; }}
 }}
 statusAtualizacao();
-{JS_MENU}
+{_JS_RK_MAIS}{JS_MENU}
 </script>
 </body>
 </html>
@@ -1862,11 +1878,42 @@ def _linha_fundo(resumo, extra: bool = False, tipo: str | None = None) -> str:
 
 def _bloco_ranking(titulo: str, resultado) -> str:
     itens = "".join(
-        f'<li><a href="{linha.ticker}.html">{linha.ticker}</a> — '
+        f'<li{_rk_oculto(posicao)}><a href="{linha.ticker}.html">{linha.ticker}</a> — '
         f"{_valor_criterio(resultado.criterio, linha)}</li>"
-        for linha in resultado.linhas
+        for posicao, linha in enumerate(resultado.linhas, 1)
     )
-    return f'<div class="bloco"><h3>{titulo}</h3><ol>{itens or "<li>—</li>"}</ol></div>'
+    return (
+        f'<div class="bloco"><h3>{titulo}</h3><ol>{itens or "<li>—</li>"}</ol>'
+        f"{_rk_botao(len(resultado.linhas))}</div>"
+    )
+
+
+# rankings abrem no top 5; o "ver mais" revela até o 20º (pedido do dono)
+_RK_VISIVEIS = 5
+
+
+def _rk_oculto(posicao: int) -> str:
+    return ' class="rk-extra" hidden' if posicao > _RK_VISIVEIS else ""
+
+
+def _rk_botao(total: int) -> str:
+    if total <= _RK_VISIVEIS:
+        return ""
+    return f'<button class="rk-mais" onclick="rkMais(this)">ver top {total}</button>'
+
+
+_CSS_RK_MAIS = """
+.rk-mais { background:#1B2225; border:1px solid #33434A; color:#8FCB9B; border-radius:8px;
+  padding:4px 12px; font-size:12px; font-weight:600; cursor:pointer; margin-top:8px; }
+.rk-mais:hover { border-color:#8FCB9B; }
+"""
+
+_JS_RK_MAIS = """
+function rkMais(botao) {
+  botao.parentElement.querySelectorAll('.rk-extra').forEach(li => li.hidden = false);
+  botao.remove();
+}
+"""
 
 
 def _valor_criterio(criterio: str, linha) -> str:

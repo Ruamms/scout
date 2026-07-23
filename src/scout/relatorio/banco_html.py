@@ -114,6 +114,11 @@ def gerar(dados: dict, agora: datetime | None = None, com_menu: bool = False) ->
     if atual.get("carteira"):
         _card("Carteira de crédito", formato.moeda_compacta(atual["carteira"]),
               "o que o banco emprestou (classificada)")
+    if atual.get("caixa") is not None and atual.get("ativo"):
+        pct_caixa = 100 * atual["caixa"] / atual["ativo"]
+        _card("Liquidez imediata", formato.moeda_compacta(atual["caixa"]),
+              f"{formato.percentual(pct_caixa)} do ativo · caixa + interfinanceiras — "
+              "títulos NÃO entram aqui")
     if atual.get("lucro") is not None:
         rotulo_lucro = "Lucro no ano" if atual["lucro"] >= 0 else "Prejuízo no ano"
         _card(rotulo_lucro, formato.moeda_compacta(abs(atual["lucro"])),

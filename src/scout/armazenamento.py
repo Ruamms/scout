@@ -78,6 +78,7 @@ CREATE TABLE IF NOT EXISTS bancos_tri (
     pr                REAL,   -- patrimônio de referência
     rwa               REAL,   -- ativos ponderados pelo risco
     basileia          REAL,   -- 100·PR/RWA (calculado, determinístico)
+    caixa             REAL,   -- disponibilidades + interfinanceiras (liquidez IMEDIATA)
     PRIMARY KEY (cod_inst, anomes)
 );
 CREATE TABLE IF NOT EXISTS fii_posicoes_anuais (
@@ -441,6 +442,13 @@ def _migrar(con: sqlite3.Connection) -> None:
             con.execute("ALTER TABLE fundamentos ADD COLUMN da REAL")
             # re-baixa a DFP para preencher o D&A (base do EBITDA)
             con.execute("DELETE FROM cargas WHERE arquivo LIKE 'DFP_%'")
+            con.commit()
+    if "bancos_tri" in tabelas:
+        colunas_tri = {linha[1] for linha in con.execute("PRAGMA table_info(bancos_tri)")}
+        if "caixa" not in colunas_tri:
+            con.execute("ALTER TABLE bancos_tri ADD COLUMN caixa REAL")
+            # re-sincroniza o IF.data para preencher a liquidez imediata
+            con.execute("DELETE FROM cargas WHERE arquivo LIKE 'IFDATA_%'")
             con.commit()
     if "administradores" in tabelas:
         colunas_adm = {linha[1] for linha in con.execute("PRAGMA table_info(administradores)")}

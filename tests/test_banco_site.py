@@ -12,10 +12,11 @@ def _semear_banco(con, cod="C001", nome="BANCO TESTE - PRUDENCIAL", basileia=15.
     )
     con.executemany(
         "INSERT INTO bancos_tri (cod_inst, anomes, ativo, carteira, captacoes, pl, lucro,"
-        " capital_principal, pr, rwa, basileia) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        " capital_principal, pr, rwa, basileia, caixa)"
+        " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
         [
-            (cod, 202412, 10e9, 6e9, 7e9, 1.5e9, 200e6, 1.2e9, 1.5e9, 10e9, basileia),
-            (cod, 202503, 11e9, 6.5e9, 7.5e9, 1.6e9, 60e6, 1.3e9, 1.6e9, 10.5e9, basileia),
+            (cod, 202412, 10e9, 6e9, 7e9, 1.5e9, 200e6, 1.2e9, 1.5e9, 10e9, basileia, 0.4e9),
+            (cod, 202503, 11e9, 6.5e9, 7.5e9, 1.6e9, 60e6, 1.3e9, 1.6e9, 10.5e9, basileia, 0.55e9),
         ],
     )
     con.commit()
@@ -28,6 +29,9 @@ def test_pagina_do_banco_no_design(con):
     pagina = banco_html.gerar(dados, agora=datetime(2026, 7, 23, 12, 0))
     assert "BANCO TESTE" in pagina and "PRUDENCIAL" not in pagina.split("<h1")[1][:80]
     assert "Índice de Basileia" in pagina and "15,00%" in pagina
+    # liquidez imediata: 0,55bi / 11bi = 5% do ativo, com a explicação do que entra
+    assert "Liquidez imediata" in pagina and "5,00% do ativo" in pagina
+    assert "títulos NÃO entram aqui" in pagina
     assert "🚩 Red flags" in pagina
     # carteirinha da classe: FGC por conglomerado + teto global + FGCoop
     assert "R$ 250 mil" in pagina and "conglomerado" in pagina and "FGCoop" in pagina
