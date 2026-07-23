@@ -363,8 +363,11 @@ input#busca:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color
 .bloco h2 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:20px; font-weight:700; margin-bottom:4px; }}
 .bloco .num {{ font-family:'Scout Display',system-ui,sans-serif; font-size:40px; font-weight:700; letter-spacing:-.02em; color:#EAEEF0; font-variant-numeric:tabular-nums; }}
 .bloco p {{ color:#9AA7B2; font-size:13.5px; margin:6px 0 14px; line-height:1.55; }}
-.pill {{ display:inline-block; background:#161D20; border:1px solid #263034; color:#9AA7B2;
-  border-radius:99px; padding:5px 13px; font-size:12.5px; text-decoration:none; margin:2px 2px 2px 0; }}
+.pill {{ display:inline-flex; align-items:center; background:#161D20; border:1px solid #263034; color:#9AA7B2;
+  border-radius:99px; padding:5px 13px; font-size:12.5px; text-decoration:none; }}
+.pill b {{ margin-left:5px; }}
+.bloco .linha-acoes {{ display:flex; align-items:center; flex-wrap:wrap; gap:8px; }}
+.bloco .chips {{ display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }}
 .pill:hover {{ border-color:#8FCB9B; color:#8FCB9B; }}
 .pill b {{ color:#EAEEF0; }}
 .btn {{ display:inline-block; background:#8FCB9B; color:#0F1416; border-radius:9px; padding:9px 18px;
@@ -414,18 +417,18 @@ input#busca:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color
       <div class="num">{len(fundos)}</div>
       <p>Reconhecimento completo: red flags com evidência, parecer do auditor, imóveis com vacância,
       gestora, e a IA local vasculhando relatórios e comunicados.</p>
-      <a class="btn" href="fiis.html">ver todos os FIIs</a>
-      <a class="pill" href="fiis.html#rankings" style="margin-left:8px">rankings do dia</a>
-      <a class="pill" href="comparar.html">comparar</a>
-      <div style="margin-top:10px">{pills_fii}</div>
+      <div class="linha-acoes"><a class="btn" href="fiis.html">ver todos os FIIs</a>
+      <a class="pill" href="fiis.html#rankings">rankings do dia</a>
+      <a class="pill" href="comparar.html">comparar</a></div>
+      <div class="chips">{pills_fii}</div>
     </div>
     <div class="bloco">
       <h2>ETFs</h2>
       <div class="num">{len(etfs)}</div>
       <p>Cada página traz as REGRAS do tipo (distribuição, tributação) que quase ninguém conta,
       a carteira oficial e o selo com alertas próprios da classe.</p>
-      <a class="btn" href="etfs.html">ver todos os ETFs</a>
-      <div style="margin-top:10px">{pills}</div>
+      <div class="linha-acoes"><a class="btn" href="etfs.html">ver todos os ETFs</a></div>
+      <div class="chips">{pills}</div>
     </div>
     {f'''<div class="bloco">
       <h2>Ações</h2>
@@ -435,8 +438,8 @@ input#busca:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color
       <p style="color:#6B7681;font-size:12px;margin-top:-6px">cobertura: todas as companhias
       listadas em bolsa na B3 (validada primeiro nas 100 mais líquidas, expandida em 22/07/2026).
       Empresa com pouco dado mostra "—"/"não avaliada" — nunca número inventado.</p>
-      <a class="btn" href="acoes.html">ver todas as ações</a>
-      <div style="margin-top:10px">{pills_acoes}</div>
+      <div class="linha-acoes"><a class="btn" href="acoes.html">ver todas as ações</a></div>
+      <div class="chips">{pills_acoes}</div>
     </div>''' if acoes else ""}
   </div>
 
