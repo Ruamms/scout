@@ -541,8 +541,9 @@ def _indice_etfs(etfs: list[dict], agora) -> str:
         from .etf_html import _trunca
 
         busca = f"{etf['ticker']} {etf['denominacao'] or ''} {classe}".lower().replace('"', "")
+        oculta = ' class="etf-extra" hidden' if posicao >= 10 else ""
         linhas.append(
-            f'<tr data-busca="{busca}" data-classe="{_e(classe)}">'
+            f'<tr data-busca="{busca}" data-classe="{_e(classe)}"{oculta}>'
             f'<td><a href="{etf["ticker"]}.html">{etf["ticker"]}</a></td>'
             f'<td title="{_e(etf["denominacao"] or "")}">{_e(_trunca(etf["denominacao"] or "", 48))}</td>'
             f"<td>{_e(classe)}</td><td>{preco}</td><td>{variacao}</td><td>{pl}</td>"
@@ -727,8 +728,9 @@ def _indice_acoes(acoes: list[dict], agora) -> str:
                 f'<span class="pt" style="background:{cor}"></span>{_e(dados["selo"].rotulo)}</span>'
             )
         busca = f"{dados['ticker']} {nome} {setor}".lower().replace('"', "")
+        oculta = ' class="acao-extra" hidden' if posicao >= 10 else ""
         linhas.append(
-            f'<tr data-busca="{busca}" data-classe="{_e(setor)}">'
+            f'<tr data-busca="{busca}" data-classe="{_e(setor)}"{oculta}>'
             f'<td><a href="{dados["ticker"]}.html">{dados["ticker"]}</a></td>'
             f'<td title="{_e(empresa["nome"] or "")}">{_e(_trunca(nome, 34))}</td>'
             f"<td>{_e(_trunca(setor, 26))}</td><td>{preco}</td><td>{variacao}</td>"
