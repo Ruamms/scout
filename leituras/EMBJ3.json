@@ -1,7 +1,7 @@
 {
   "ticker": "EMBJ3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T17:32:35",
+  "verificado_em": "2026-07-23T19:29:07",
   "comunicados": {
     "ids": [
       635197522982264084,
@@ -17,5 +17,10 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 02/07/2026\n\n**O QUE aconteceu:** A Embraer registrou um aumento significativo nas entregas de aeronaves no segundo trimestre de 2026.\n\n**Resumo:** A companhia entregou 65 aeronaves, o melhor desempenho desde 2010, com crescimento em ambas as divisões: Aviação Comercial e Aviação Executiva. \n\n**Trecho-chave:** \"A Embraer (B3: EMBJ3 / NYSE: EMBJ) entregou 65 aeronaves no 2T26, registrando seu melhor desempenho de entregas no período durante os últimos 16 anos.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 05/06/2026\n\n**O QUE aconteceu:** A Azorra firmou um novo pedido para 15 aeronaves Embraer E195-E2, elevando o total de pedidos firmes da companhia.\n\n**Resumo:** O acordo também garantiu direitos de compra para mais 15 jatos, reforçando a parceria entre as duas empresas e fortalecendo a demanda pelo programa E2.\n\n**Trecho-chave:** \"A Embraer e a Azorra assinaram um novo pedido firme para 15 aeronaves E195-E2, com direitos de compra para mais 15 jatos.\" (p. 1)\n\n---\n\n### Conexão ao Contexto\n\n- **Entregas de Aeronaves:** O comunicado do segundo trimestre de 2026 destaca o aumento nas entregas de aeronaves, que é um indicador positivo para a empresa e reflete bem o progresso contínuo das iniciativas da Embraer para nivelamento da produção. Este crescimento pode estar relacionado à demanda por aeronaves do tamanho certo e mais eficientes no consumo de combustível, como mencionado na assinatura do novo pedido pela Azorra.\n\n- **Programa E2:** O novo pedido firmado pela Azorra reforça o sucesso do programa E2 da Embraer, que já ultrapassou 500 encomendas. Este fato é importante para a empresa, pois indica uma crescente demanda e confiança nas aeronaves nessa categoria de tamanho."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159155,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Cível** - R$ 463,9 milhões - Possível - Trata-se de Execução Fiscal ajuizada pelo Município de São José dos Campos para cobrança de valores relativos ao ISS e multa, referente ao período de 01.07.2010 a 01.07.2015.\n\n2. **Tributário** - R$ 258,5 milhões - Possível - Trata-se de auto de infração acerca da validade das disposições constantes na Instrução Normativa nº 213/02, que determinou a tributação de lucros no exterior por meio da aplicação das regras brasileiras, referente ao ano-calendário de 2012, glosando as compensações realizadas com o saldo negativo de 2012."
+  }
 }

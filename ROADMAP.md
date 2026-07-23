@@ -92,7 +92,7 @@ Tese: FRE lido por IA (diretoria/processos/partes relacionadas), parecer do audi
 
 
 ## Jurídico
-- [x] **Blindagem jurídica v1 (23/07/2026, pedido do dono)** — análise função-por-função em [docs/JURIDICO.md](docs/JURIDICO.md) (CVM 20/19-2021, difamação, LGPD, termos de fontes, marca, tributário, IA) + página pública `metodologia.html` (metodologia, aviso legal, LGPD, canal de correção) linkada no menu de TODO o site; varredura de linguagem confirmou zero termos acusatórios/recomendatórios. Checklist fora do código no fim do JURIDICO.md (advogado mercado de capitais p/ selos, LGPD/DPO, termos B3, INPI)
+- [x] **Blindagem jurídica v1 (23/07/2026, pedido do dono)** — página pública `metodologia.html` (metodologia, aviso legal, LGPD, canal de correção) linkada no menu de TODO o site; varredura de linguagem confirmou zero termos acusatórios/recomendatórios; flags citam fonte NOMINAL. **Reposicionamento (23/07/2026, decisão do dono)**: o Scout é declarado PROJETO PARTICULAR DE CUNHO EDUCACIONAL (estudo aberto de desenvolvimento de software) na home e na metodologia; a página de apoio/PIX foi REMOVIDA (sem fins comerciais) e o docs/JURIDICO.md foi excluído do repo a pedido — o checklist fora do código segue valendo de memória: advogado de mercado de capitais p/ selos (CVM 20/2021), LGPD/DPO, termos de market data da B3 antes de qualquer monetização, INPI
 
 ## Princípios que não mudam
 

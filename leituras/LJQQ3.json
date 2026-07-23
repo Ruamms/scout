@@ -1,7 +1,7 @@
 {
   "ticker": "LJQQ3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:34:06",
+  "verificado_em": "2026-07-23T20:12:08",
   "comunicados": {
     "ids": [
       536358202991677471,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 04/03/2026\n\n**O QUE aconteceu:** A Lojas Quero-Quero S.A. anunciou a projeção de abrir até 10 novas lojas no exercício social encerrado em 31 de dezembro de 2026.\n\n**Resumo:** A empresa baseou essa projeção em seu histórico, estratégia geográfica, disponibilidade financeira e capacidade operacional.\n\n**Trecho-chave:**\n\"LOJAS QUERO-QUERO S.A. (“Companhia”), em atendimento ao disposto no artigo 157, §4º da Lei nº 6.404, de 15 de dezembro de 1976, conforme alterada, e às disposições da Resolução da CVM nº 44, de 23 de agosto de 2021, comunica aos seus acionistas e ao mercado em geral, a projeção de abertura de até 10 (dez) novas lojas para o exercício social a encerrar-se em 31 de dezembro de 2026.\"\n\n### COMUNICADO AO MERCADO entregue em 05/03/2026\n\n**O QUE aconteceu:** A Lojas Quero-Quero S.A. apresentou os resultados do quarto trimestre de 2025 e do ano completo.\n\n**Resumo:** As vendas aumentaram 3% no RBLD, com a inadimplência controlada na carteira VerdeCard. Foram inauguradas 21 novas lojas ao longo do ano, totalizando 586 em operação.\n\n**Trecho-chave:**\n\"Crescimento de 3% em RBLD Total no 4T25, totalizando R$858 milhões.\"\n\n### COMUNICADO AO MERCADO entregue em 08/05/2026\n\n**O QUE aconteceu:** A Lojas Quero-Quero S.A. apresentou os resultados do primeiro trimestre de 2026.\n\n**Resumo:** As vendas aumentaram 3% no RBLD, com a inadimplência controlada na carteira VerdeCard. Foram inauguradas 2 novas lojas e formados 198 gerentes de loja em 2025.\n\n**Trecho-chave:**\n\"Crescimento de 3% em RBLD Total no 1T26, totalizando R$790 milhões.\"\n\n---\n\n**Conexão com o contexto:** As projeções e resultados apresentados nos comunicados refletem a estratégia de expansão da empresa, que visa aumentar sua presença geográfica e manter a inadimplência sob controle."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158835,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "- Tributário: R$ 20.281.205,20 - chance de perda remota; trata-se de um processo administrativo tributário da Receita Federal do Brasil em Porto Alegre/RS, relativo a contribuições previdenciárias patronais e multa por descumprimento de obrigação acessória.\n\nNão há outros processos relevantes declarados na seção."
+  }
 }

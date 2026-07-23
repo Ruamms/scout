@@ -1,7 +1,7 @@
 {
   "ticker": "PDGR3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:56:27",
+  "verificado_em": "2026-07-23T20:46:14",
   "comunicados": {
     "ids": [
       710430522039623595,
@@ -22,6 +22,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 13/07/2026\n\n**O QUE aconteceu:** PDG Realty S.A. realizou mudanças na administração da companhia.\n\n**Resumo:** A Companhia destituiu Mauricio Tiso de Souza dos cargos de Diretor Presidente e Diretor de Relações com Investidores, e eleito Roberto Giarelli como novo Diretor Presidente e Diretor de Relações com Investidores.\n\n**Trecho-chave:**\n\"Em reunião do Conselho de Administração realizada nesta data, foi aprovada a destituição do Sr. Mauricio Tiso de Souza dos cargos de Diretor Presidente e Diretor de Relações com Investidores da Companhia. Em substituição, foi aprovada, com efeitos imediatos, a eleição do Sr. Roberto Giarelli, atual Diretor Vice-Presidente Financeiro da Companhia, que, então, passará a acumular também os cargos de Diretor Presidente e Diretor de Relações com Investidores da Companhia.\"\n\n### FATO RELEVANTE entregue em 15/04/2026\n\n**O QUE aconteceu:** PDG Realty S.A. recebeu a carta de renúncia do Sr. Luan Vinícius da Silva, que deixou os cargos de Membro do Conselho de Administração e Presidente do Conselho de Administração.\n\n**Resumo:** A Companhia informou que o Conselho de Administração deliberará oportunamente sobre a recomposição de sua composição.\n\n**Trecho-chave:**\n\"A Companhia informa que o Conselho de Administração deliberará oportunamente sobre a recomposição de sua composição, nos termos da legislação aplicável.\"\n\n### COMUNICADO AO MERCADO entregue em 01/06/2026\n\n**O QUE aconteceu:** PDG Realty S.A. informou detalhes do Aumento de Capital Privado nos termos do Plano de Recuperação Judicial.\n\n**Resumo:** A Companhia planeja realizar um aumento de capital a partir dos créditos trabalhistas retardatários e extraconcursais, emitindo novas ações ordinárias para quitar esses créditos. O preço das ações será determinado pela média da cotação do fechamento nas 90 sessões anteriores à deliberação societária.\n\n**Trecho-chave:**\n\"O valor do Aumento de Capital proposto corresponderá ao saldo agregado dos Créditos Trabalhistas Retardatários que venham a aderir à Capitalização Facultativa de Créditos Trabalhistas, bem como os Créditos Extraconcursais identificados pela Companhia, mediante emissão privada de novas ações ordinárias, nominativas e sem valor nominal da PDG.\"\n\n### COMUNICADO AO MERCADO entregue em 18/05/2026\n\n**O QUE aconteceu:** PDG Realty S.A. divulgou resultados financeiros do primeiro trimestre de 2026 (1T26).\n\n**Resumo:** As vendas brutas aumentaram 2% comparado ao primeiro trimestre de 2025, e as vendas líquidas caíram 15%. O prejuízo líquido diminuiu drasticamente. Houve uma redução no gasto administrativo.\n\n**Trecho-chave:**\n\"Início do repasse do ix.Tatuapé\nLucro Bruto de R$ 1,5 milhão\ncom margem de 21%\nnos 1T26\nAumento de 2% nas Vendas \nBrutas YoY e 70% QoQ\nRedução de 85% no Prejuízo \nLíquido\n1T26 vs. 1T25\""
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

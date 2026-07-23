@@ -1,7 +1,7 @@
 {
   "ticker": "BMOB3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:44:16",
+  "verificado_em": "2026-07-23T18:44:11",
   "comunicados": {
     "ids": [
       773724725494174189,
@@ -23,5 +23,10 @@
     ],
     "texto": "### O QUE aconteceu em 02/07/2026\n\n**Título:** Bemobi adquire participação remanescente na 7AZ Softwares S.A.\n\n**Resumo:** A Bemobi Mobile Tech S.A. concluiu a aquisição de 49% do capital social da 7AZ Softwares S.A., antecipando o prazo original para 2027, tornando-se detentora de 100% do capital social e votante.\n\n**Trecho-chave:**\n\"A Bemobi Mobile Tech S.A. (“Companhia”), nos termos da Lei n.º 6.404, de 15 de dezembro de 1976, conforme alterada (“Lei das Sociedades por Ações”) e da regulamentação emanada da Comissão de Valores Mobiliários (“CVM”), vem a público informar que, nesta data, adquiriu participação remanescente de 49% do capital social da 7AZ Softwares S.A. (“7AZ”), por meio da celebração de contrato de compra e venda de ações, antecipando a aquisição originalmente acordada para 2027.\"\n\n---\n\n### O QUE aconteceu em 22/05/2026\n\n**Título:** Bemobi inclui mais instituições financeiras no 6º Programa de Recompra de Ações\n\n**Resumo:** A Bemobi Mobile Tech S.A. adicionou a Safra Distribuidora de Títulos e Valores Mobiliários Ltda. e Necton Investimentos S.A. Corretora de Valores Mobiliários e Commodities à lista de instituições financeiras autorizadas para intermediar as operações do 6º Programa de Recompra.\n\n**Trecho-chave:**\n\"A inclusão da Safra Distribuidora de Títulos e Valores Mobiliários Ltda. e da Necton Investimentos S.A. Corretora de Valores Mobiliários e Commodities como intermediárias está alinhada à previsão constante do Fato Relevante divulgado em 14 de agosto de 2025, segundo a qual a Companhia poderia contratar outras instituições financeiras para atuarem como intermediárias das operações de aquisição de ações, mediante correspondente divulgação ao mercado.\"\n\n---\n\n### O QUE aconteceu em 02/06/2026\n\n**Título:** Bemobi inclui mais instituições financeiras no 6º Programa de Recompra de Ações\n\n**Resumo:** A Bemobi Mobile Tech S.A. adicionou a Safra Distribuidora de Títulos e Valores Mobiliários Ltda. e Necton Investimentos SP (BTG Pactual Corretora de Títulos e Valores Mobiliários S.A) à lista de instituições financeiras autorizadas para intermediar as operações do 6º Programa de Recompra.\n\n**Trecho-chave:**\n\"A inclusão da Safra Distribuidora de Títulos e Valores Mobiliários Ltda. e da Necton Investimentos SP (BTG Pactual Corretora de Títulos e Valores Mobiliários S.A) como intermediárias está alinhada à previsão constante do Fato Relevante divulgado em 14 de agosto de 2025, segundo a qual a Companhia poderia contratar outras instituições financeiras para atuarem como intermediárias das operações de aquisição de ações, mediante correspondente divulgação ao mercado.\"\n\n---\n\n### Conexão com o contexto\n\n- **Comunicação do 6º Programa de Recompra:** As alterações nas instituições financeiras autorizadas para intermediar as operações do 6º Programa de Recompra (22/05/2026 e 02/06/2026) são alinhadas com o contexto do programa originalmente divulgado em 14/08/2025."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158414,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Tributário** - R$ 52.615.699,21 (provável)\n   \"Auto de Infração contra a Companhia relacionado à dedução fiscal de ágio por expectativa de rentabilidade futura, decorrente da incorporação da Opera Software Brasil Ltda.\"\n\n2. **Tributário** - R$ 25.770.871,08 (provável)\n   \"A controvérsia envolve divergência de interpretação quanto ao tratamento fiscal de operações realizadas com pessoa jurídica então relacionada, e quanto à necessidade de emissão de notas fiscais pelas empresas.\"\n\n3. **Cível** - R$ 553.384,34 (possível)\n   \"Trata-se de ação ajuizada pela Serasa S.A. em face da Companhia, envolvendo alegações de suposta violação de direitos de propriedade intelectual.\""
+  }
 }

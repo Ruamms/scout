@@ -1,7 +1,7 @@
 {
   "ticker": "LAND3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:30:25",
+  "verificado_em": "2026-07-23T20:10:57",
   "comunicados": {
     "ids": [
       646305803826939259,
@@ -22,6 +22,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 15/07/2026\n\n**O que aconteceu:** A Companhia enfrenta uma decisão judicial que questiona a propriedade de 2.091,43 hectares de imóveis, com prognóstico de sucesso remoto.\n\n**Resumo:** A companhia está avaliando os possíveis impactos da decisão judicial, que pode resultar na baixa contábil dessas áreas e em custos de sucumbência. A eventual perda dessas áreas não afetará a receita ou avaliação anual das terras.\n\n**Trecho-chave:** \"Em decorrência de decisão em processo judicial que discute a propriedade de 2.091,43 hectares de imóveis integrantes do ativo da Companhia, o prognóstico de êxito em tal processo foi alterado para remoto.\" (p. 1)\n\n---\n\n### FATO RELEVANTE entregue em 12/01/2026\n\n**O que aconteceu:** A companhia divulgou o resultado do laudo de avaliação das terras, realizado pela S&P Global.\n\n**Resumo:** O valor das terras da companhia aumentou para R$ 2.796.386.180,49 em novembro de 2025, um aumento de R$ 40.493.907,09 em relação ao ano anterior.\n\n**Trecho-chave:** \"O laudo emitido pela S&P avaliou as propriedades da Companhia (terra nua + benfeitorias) em R$ 2.796.386.180,49 contra um valor de R$ 2.755.892.273,40 em 2024.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 16/06/2026\n\n**O que aconteceu:** A companhia informou sobre a alienação de participação acionária por parte da Gávea Investimentos.\n\n**Resumo:** A Gávea Investimentos vendeu ações ordinárias da companhia, passando a deter uma participação inferior a 5% do total de ações emitidas. As operações não visam alterar o controle ou estrutura administrativa da companhia.\n\n**Trecho-chave:** \"A GÁVEA INVESTIMENTOS LTDA., inscrita no CNPJ/MF sob o nº 05.669.128/0001-66, com sede na Av. Ataulfo de Paiva, nº 1.100, 7º andar, na Cidade do Rio de Janeiro, Estado do Rio de Janeiro (“Gávea”), na qualidade de gestora de fundos e carteiras de investimentos (“Fundos”), e detentora de poderes discricionários relativos à sua gestão, comunica que realizou, na presente data, a venda de Ações Ordinárias de emissão da Companhia.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O que aconteceu:** A companhia divulgou os resultados do primeiro trimestre de 2026.\n\n**Resumo:** A receita líquida foi de R$ 22,5 milhões, o EBITDA foi de R$ 15,7 milhões e o lucro líquido foi de R$ 8,3 milhões. Houve uma redução de gastos administrativos em 8% em comparação ao primeiro trimestre do ano anterior.\n\n**Trecho-chave:** \"Receita líquida de R$ 22,5 milhões, em linha com o 1T25 / EBITDA de R$ 15,7 milhões, mantendo elevada rentabilidade / Lucro líquido de R$ 8,3 milhões, impactado pelo resultado financeiro.\" (p. 4)"
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

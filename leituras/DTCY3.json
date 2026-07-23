@@ -1,11 +1,17 @@
 {
   "ticker": "DTCY3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:04:01",
+  "verificado_em": "2026-07-23T19:24:14",
   "comunicados": {
     "ids": [],
     "datas": [],
     "rotulos": [],
     "texto": null
+  },
+  "processos": {
+    "id": 158437,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes declarados para a DTCY3 na seção de Processos Judiciais do FRE."
   }
 }

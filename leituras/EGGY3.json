@@ -1,11 +1,17 @@
 {
   "ticker": "EGGY3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:06:47",
+  "verificado_em": "2026-07-23T19:27:23",
   "comunicados": {
     "ids": [],
     "datas": [],
     "rotulos": [],
     "texto": null
+  },
+  "processos": {
+    "id": 158779,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes declarados para a companhia EGGY3 em 31 de dezembro de 2025."
   }
 }

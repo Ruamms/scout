@@ -1,7 +1,7 @@
 {
   "ticker": "CLSC3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:57:43",
+  "verificado_em": "2026-07-23T19:05:24",
   "comunicados": {
     "ids": [
       243669199806560866,
@@ -16,6 +16,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### O que aconteceu em 02/07/2026:\nA CENTRAIS ELÉTRICAS DE SANTA CATARINA S.A. (\"CELESC\") aprovou, por meio do Conselho de Administração, o termo de compromisso relacionado à execução do Programa Celesc Rural Trifásico.\n\n**Resumo:** A CELESC e o Estado de Santa Catarina celebraram um termo de compromisso para expandir a infraestrutura elétrica rural, com recursos tributários presumidos.\n\n**Trecho-chave:**\n\"O termo de compromisso foi celebrado, em 29 de junho de 2026, entre a Celesc Distribuição S.A. e o Estado de Santa Catarina, por intermédio da Secretaria de Estado da Fazenda de Santa Catarina (\"SEF/SC\"). Seu extrato foi publicado no Diário Oficial do Estado de Santa Catarina (\"DOE/SC\") em 1º de julho de 2026.\" (p. 1)\n\n### O que aconteceu em 30/06/2026:\nA CENTRAIS ELÉTRICAS DE SANTA CATARINA S.A. (\"CELESC\") comunicou a realização da segunda Emissão de Notas Comerciais Escriturais pela sua subsidiária Celesc Distribuição S.A.\n\n**Resumo:** A Celesc Distribuição S.A. emitiu notas comerciais no valor total de R$ 750 milhões, com garantia fidejussória adicional da CELESC.\n\n**Trecho-chave:**\n\"A Emissão conta com garantia fidejussória adicional prestada pela CELESC, possui prazo de 24 (vinte e quatro) meses, contados de 25 de junho de 2026, com vencimento em parcela única (bullet), pagamento semestral de remuneração, sem período de carência, e remuneração correspondente a CDI + 0,58% ao ano.\" (p. 1)"
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

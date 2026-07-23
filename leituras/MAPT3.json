@@ -1,11 +1,16 @@
 {
   "ticker": "MAPT3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:37:49",
+  "verificado_em": "2026-07-23T20:16:19",
   "comunicados": {
     "ids": [],
     "datas": [],
     "rotulos": [],
     "texto": null
+  },
+  "processos": {
+    "id": 157956,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null
   }
 }

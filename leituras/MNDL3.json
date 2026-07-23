@@ -1,7 +1,7 @@
 {
   "ticker": "MNDL3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:44:22",
+  "verificado_em": "2026-07-23T20:26:37",
   "comunicados": {
     "ids": [
       455462914033147197,
@@ -17,5 +17,10 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 25/11/2025\n\n**O que aconteceu:** Mudança no agente escriturador das ações da Mundial S.A. Produtos de Consumo.\n\n**Resumo:** A Companhia aprovou a contratação do Banco Itaú-Unibanco S.A. como novo agente escriturador, substituindo o Banco Bradesco S.A., com a transição prevista para 1º de dezembro de 2025.\n\n**Citação:** \"Em reunião realizada em 17 de julho de 2025, o Conselho de Administração da Companhia aprovou a contratação do Banco Itaú-Unibanco S.A como agente escriturador de suas ações, e que a partir de 1º de dezembro de 2025, o Banco Itaú-Unibanco S.A passará a prestar os serviços...\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 09/02/2026\n\n**O que aconteceu:** Encerramento da oferta pública de debêntures.\n\n**Resumo:** A Mundial S.A. Produtos de Consumo encerrou a oferta pública de 200.000 debêntures simples, não conversíveis em ações, com garantia real e adicional fidejussória, totalizando R$200.000.000,00.\n\n**Citação:** \"ANÚNCIO DE ENCERRAMENTO DA OFERTA PÚBLICA, DA 4ª (QUARTA) EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, DA ESPÉCIE COM GARANTIA REAL, COM GARANTIA FIDEJUSSÓRIA ADICIONAL, EM SÉRIE ÚNICA, PARA DISTRIBUIÇÃO PÚBLICA SOB O RITO DE REGISTRO AUTOMÁTICO DE DISTRIBUIÇÃO...\"\n\n**Conexão com o contexto:** A oferta de debêntures mencionada neste comunicado se refere à 4ª emissão da Emissora, que está alinhada aos indicadores do contexto fornecido."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158421,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Cível - Processo nº 5002570-28.2013.8.21.0010**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 56.280.693,33 + R$ 2.601.679,81 = R$ 58.882.373,14\n   - **Chance de perda:** Provável (contabilizado)\n   - **Resumo:** Trata-se de um pedido de recuperação judicial que resultou na falência da Voges Metalúrgica Ltda., com a Mundial sendo potencialmente responsabilizada subsidiariamente.\n\n2. **Cível - Processo nº 1069517-81.2014.8.26.0100**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 7.200.382,52 (contabilizado como depósito judicial)\n   - **Chance de perda:** Provável\n   - **Resumo:** Cumprimento de sentença arbitral em favor dos Scroback contra a Mundial S/A Produtos de Consumo.\n\n3. **Cível - Processo nº 0012583-34.2002.8.05.0001**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 2.071.170,24\n   - **Chance de perda:** Provável (contabilizado)\n   - **Resumo:** Ação de rescisão contratual cumulada com ação de cobrança e danos morais movida por Eduardo Laranjeira contra Mundial S/A Produtos de Consumo e Hercules S.A. Fábrica de Talheres, resultando em condenação da Mundial para pagamento de diferenças de comissões e indenização.\n\n4. **Tributário**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** Não declarado\n   - **Chance de perda:** Provável (contabilizado)\n   - **Resumo:** Termo de transação individual assinado com a PGFN para parcelamento de débitos fiscais, com potencial impacto financeiro."
+  }
 }

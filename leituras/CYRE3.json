@@ -1,7 +1,7 @@
 {
   "ticker": "CYRE3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T17:28:52",
+  "verificado_em": "2026-07-23T19:20:42",
   "comunicados": {
     "ids": [
       1112452786526987008,
@@ -20,5 +20,9 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 07/06/2026\n\n**O que aconteceu:** Aprovação do Novo Programa de Recompra de Ações.\n\n**Resumo:** A Cyrela Brazil Realty S.A. aprovou um novo programa de recompra de ações, permitindo a aquisição de até 9.680.000 ações ordinárias e 4.800.000 ações preferenciais.\n\n**Trecho-chave:**\n\"Em reunião realizada em 05 de junho de 2026, o Conselho de Administração da Companhia aprovou (i) o cancelamento de 3.353.550 (três milhões, trezentas e cinquenta e três mil, quinhentas e cinquenta) ações preferenciais de emissão da Companhia atualmente mantidas em tesouraria; e (ii) a criação de novo Programa de Recompra...\"\n\n### COMUNICADO AO MERCADO entregue em 13/07/2026\n\n**O que aconteceu:** Lançamentos e Vendas no Segundo Trimestre.\n\n**Resumo:** A Cyrela lançou R$ 3.840 milhões de imóveis no segundo trimestre, com uma participação de 79% em comparação ao mesmo período do ano anterior. As vendas líquidas foram de R$ 2.561 milhões.\n\n**Trecho-chave:**\n\"A Companhia lançou 20 empreendimentos no trimestre, totalizando um volume de R$ 3.840 milhões, ao se excluir as permutas, e tomando como base apenas o %CBR, 34% superior ao mesmo período do ano anterior (R$ 2.864 milhões no 2T25) e 120% acima do 1T26 (R$ 1.747 milhões).\"\n\n### COMUNICADO AO MERCADO entregue em 23/06/2026\n\n**O que aconteceu:** Aumento de Participação Acionária.\n\n**Resumo:** O fundo SPX Gestão aumentou sua participação na Cyrela, passando a detê-la com aproximadamente 5,0% das ações preferenciais emitidas.\n\n**Trecho-chave:**\n\"A SPX Gestão de Recursos Ltda., inscrita no CNPJ sob o nº 12.330.774/0001-60 (“SPX Gestão”), na qualidade de gestora de fundos de investimento (“Fundos”) vem, por meio desta, informar que, nos termos da Resolução CVM nº 44/21 e alterações posteriores: (i) em negociações realizadas ao longo dos últimos dias, os Fundos realizaram operações que culminaram com o aumento de sua participação em ações preferenciais de emissão da Companhia (CYRE4), passando a deter, em conjunto, 3.642.780 ações preferenciais de emissão da Companhia, que representam aproximadamente 5,0% das ações preferencias de emissão da Companhia.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159325,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null
+  }
 }

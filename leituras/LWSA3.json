@@ -1,7 +1,7 @@
 {
   "ticker": "LWSA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:37:49",
+  "verificado_em": "2026-07-23T20:16:19",
   "comunicados": {
     "ids": [
       655835387837304877,
@@ -16,6 +16,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 15/06/2026\n\n**O QUE aconteceu:** A LWSA S/A esclarece informações veiculadas por uma notícia na revista Veja.\n\n**Resumo:** A companhia detalhou que as informações publicadas na entrevista do CEO Rafael Chamas Alves não refletem projeções futuras, mas dados históricos já divulgados. Foram apresentados números sobre crescimento de receita, solidez financeira e participação no comércio eletrônico brasileiro.\n\n**Trecho-chave:**\n\"A Companhia esclarece que as informações veiculadas na Notícia foram prestadas pelo Presidente da Companhia (“CEO”), Rafael Chamas Alves, em entrevista à revista Veja, e refletem dados históricos já amplamente divulgados ao mercado, conforme detalhado a seguir.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 15/05/2026\n\n**O QUE aconteceu:** A LWSA S/A apresentou sua Política de Responsabilidade Socioambiental.\n\n**Resumo:** O documento formaliza o compromisso da empresa com a sustentabilidade, alinhando suas operações aos pilares Ambiental, Social e de Governança (ESG). A política abrange administradores, funcionários, fornecedores e parceiros, priorizando temas como governança responsável, segurança da informação, experiência do cliente, inovação e gestão de emissões.\n\n**Trecho-chave:**\n\"A Política de Responsabilidade Socioambiental (PRSA) da LWSA formaliza o compromisso da empresa com o desenvolvimento sustentável, alinhando suas operações e estratégia aos pilares Ambiental, Social e de Governança (ESG).\" (p. 1)\n\n**Conexão com indicadores:** A política reflete a importância do ESG para a companhia, que pode impactar sua reputação e estratégias futuras."
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

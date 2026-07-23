@@ -1,7 +1,7 @@
 {
   "ticker": "BBSE3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T17:14:53",
+  "verificado_em": "2026-07-23T18:33:48",
   "comunicados": {
     "ids": [
       25900285391409408,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 24/06/2026\n\n**O que aconteceu:** A BB Seguridade Participações S.A. aprovou a distribuição de R$3,85 bilhões como dividendos intercalares referentes ao primeiro semestre de 2026.\n\n**Resumo:** A empresa decidiu distribuir um valor significativo em forma de dividendos aos seus acionistas, mas ainda não detalhou o valor por ação e as datas exatas do pagamento.\n\n**Trecho-chave:**\n\"A BB Seguridade Participações S.A. (“BB Seguridade”), nos termos do Inciso XVI do parágrafo único do artigo 2º da Resolução CVM n.º 44, de 23 de agosto de 2021, comunica ao mercado, aos seus acionistas e ao público em geral que o Conselho de Administração aprovou a distribuição do montante de R$3.850.000.000,00, a título de dividendos intercalares referentes ao resultado do primeiro semestre de 2026.\"\n\n### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O que aconteceu:** A BB Seguridade informou sobre o período de silêncio e a data para divulgação dos resultados do segundo trimestre de 2026.\n\n**Resumo:** A empresa estabeleceu um período de silêncio entre 19/07/2026 e 03/08/2026, durante o qual não fornecerá informações adicionais sobre os resultados até a divulgação oficial no dia 03/08/2026.\n\n**Trecho-chave:**\n\"A BB Seguridade divulgará o resultado referente ao 2º trimestre de 2026 no dia 03.08.2026, segunda-feira, após o fechamento do mercado.\"\n\n### COMUNICADO AO MERCADO entregue em 08/07/2026\n\n**O que aconteceu:** A BB Seguridade anunciou que a Brasilprev, empresa de previdência privada investida pela companhia, atingiu R$500 bilhões em ativos sob gestão.\n\n**Resumo:** A Brasilprev consolidou sua posição de liderança no mercado brasileiro com 32 anos de atuação e se destacou como especialista em previdência privada, oferecendo soluções financeiras acessíveis e diferenciadas.\n\n**Trecho-chave:**\n\"A BB Seguridade Participações S.A. (“BB Seguridade”) comunica que a Brasilprev, empresa de previdência privada investida da BB Seguridade, atingiu R$ 500 bilhões em ativos sob gestão, consolidando sua posição de liderança no mercado brasileiro.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158372,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Tributário**  \n   - **Valor envolvido:** R$ 889.846.521,68 (provisionado: R$ 744.554.382,07; depositado: R$ 776.681.196,08)  \n   - **Chance de perda:** Provável  \n   - **Resumo:** O processo trata da incidência do PIS e COFINS sobre prêmios de seguro e receitas financeiras das seguradoras, com decisão final aguardando julgamento no STF.\n\n2. **Tributário**  \n   - **Valor envolvido:** R$ 819.757.869,85 (provisionado: R$ 819.757.869,85; depositado: R$ 819.757.869,85)  \n   - **Chance de perda:** Possível  \n   - **Resumo:** O processo questiona a Lei 9.718/98 que revogou isenção de COFINS para sociedades de capitalização e ampliou a base de cálculo, com julgamentos em andamento no STF."
+  }
 }

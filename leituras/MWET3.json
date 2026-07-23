@@ -1,7 +1,7 @@
 {
   "ticker": "MWET3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:47:58",
+  "verificado_em": "2026-07-23T20:35:32",
   "comunicados": {
     "ids": [
       802416264039338903,
@@ -23,5 +23,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 28/05/2026\n\n**O que aconteceu:** A Wetzel S.A. informou sobre o indeferimento do pedido de homologação do Plano de Recuperação Extrajudicial (PRE) pelo Juízo da Vara Regional de Falências, Recuperação Judicial e Extrajudicial de Jaraguá do Sul/SC.\n\n**Resumo:** A Wetzel S.A. teve seu pedido de homologação do PRE indeferido por falta de pressupostos processuais. No entanto, os contratos com credores aderentes permanecem válidos e a empresa continua suas negociações com outros credores.\n\n**Trecho-chave:** \"Os fundamentos da sentença estão sendo analisados pela Administração e seus assessores jurídicos para definição das medidas processuais eventualmente cabíveis.\" (p. 1)\n\n### FATO RELEVANTE entregue em 11/03/2026\n\n**O que aconteceu:** A Wetzel S.A. protocolou um pedido de Homologação do Plano de Recuperação Extrajudicial (PRE) após negociações bem-sucedidas com seus credores.\n\n**Resumo:** A Wetzel S.A. chegou a acordo com seus principais credores para apresentar um PRE, que foi bem aceito pelo mercado e pelos clientes, mantendo-se comprometida com a continuidade de suas operações.\n\n**Trecho-chave:** \"O protocolo ocorreu após uma bem-sucedida negociação com seus principais credores quirografários (financeiros e operacionais), com quem a Wetzel alinhou um plano amplo e estruturado para a readequação de seu fluxo de caixa, fortalecendo a sustentabilidade financeira da Companhia.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 28/05/2026\n\n**O que aconteceu:** A Wetzel S.A. respondeu à solicitação da CVM e B3 sobre o indeferimento do pedido de recuperação extrajudicial.\n\n**Resumo:** A Wetzel S.A. esclareceu que o prazo para a intimação da sentença foi iniciado na data do comunicado, e informou que está avaliando os impactos e elaborando um Fato Relevante para divulgação.\n\n**Trecho-chave:** \"A Companhia adotou imediatamente as providências necessárias para a avaliação dos impactos da decisão e a consequente elaboração do respectivo Fato Relevante, o qual será devidamente divulgado por meio do sistema B3 Way após o encerramento das negociações no mercado nesta data.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 03/02/2026\n\n**O que aconteceu:** A Wetzel S.A. informou sobre a alienação de participação acionária relevante por um dos seus acionistas.\n\n**Resumo:** O Sr. Antônio Amaral Vilas Boas Neto alienou 240.800 ações preferenciais (MWET4) representando aproximadamente 17,55% do total de ações desta classe emitidas pela Wetzel S.A., passando a deter apenas 34 ações preferenciais e 921 ações ordinárias.\n\n**Trecho-chave:** \"Realizei a alienação de 240.800 (duzentas e quarenta mil e oitocentas) ações preferenciais (MWET4) de emissão da Companhia.\" (p. 1)"
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158328,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes declarados na seção de processos judiciais do Formulário de Referência (FRE) da companhia MWET3."
+  }
 }

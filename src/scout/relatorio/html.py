@@ -203,7 +203,6 @@ def menu_html() -> str:
       </div>
     </div>
     <a href="metodologia.html">Metodologia</a>
-    <a href="apoie.html">Apoiar</a>
   </nav>
 """
 
@@ -644,7 +643,7 @@ table.imoveis td.col-selo, table.imoveis th.col-selo {{ text-align:left; }}
 
   <div class="rodape">{_RODAPE}<br>
   Projeto open source: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a>
-  · <a href="apoie.html">☕ Apoie o projeto (PIX)</a></div>
+ </div>
 </div>
 <script>
 function mostrar(botao, idPainel) {{

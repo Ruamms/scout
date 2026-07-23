@@ -1,7 +1,7 @@
 {
   "ticker": "CEED3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:55:53",
+  "verificado_em": "2026-07-23T19:01:36",
   "comunicados": {
     "ids": [
       57283682579413573,
@@ -17,5 +17,10 @@
     ],
     "texto": "### 02/04/2026 - Alteração na Composição do Comitê de Auditoria Estatutário (CAE) da CEEE-D\n\nA Companhia Estadual de Distribuição de Energia Elétrica – CEEE-D realizou alterações no Comitê de Auditoria Estatutário (CAE), com efeitos a partir do dia 1º de abril de 2026. O Sr. Tiago de Almeida Noel renunciou ao cargo de membro e Coordenador do CAE, sendo substituído pelo Sr. Tinn Freire Amado.\n\n**Trecho-chave:**\n\"ocorreram as seguintes alterações na composição do Comitê de Auditoria Estatutário (“CAE”) da Companhia, com efeitos a partir de 1º de abril de 2026: (i) renúncia do Sr. Tiago de Almeida Noel ao cargo de membro e Coordenador do CAE; (ii) eleição do Sr. Tinn Freire Amado ao cargo de membro e Coordenador do CAE.\"\n\n---\n\n### 18/11/2025 - Reajuste Tarifário Anual da CEEE-D\n\nA Equatorial S.A. e a Companhia Estadual de Distribuição de Energia Elétrica – CEEE-D, Distribuidora de Energia S.A., informaram que a ANEEL homologou o reajuste anual das tarifas da CEEE-D em 19,53%. A parcela B da CEEE-D teve um reajuste positivo de 4,6%.\n\n**Trecho-chave:**\n\"O Reajuste Tarifário Anual (RTA) foi estabelecido pela ANEEL com efeito médio a ser percebido pelo consumidor de 19,53%.\"\n\n---\n\n### Conexão com Indicadores do Contexto\n\nO reajuste tarifário anunciado em 18/11/2025 pode impactar os resultados financeiros da CEEE-D e, por extensão, dos fundos imobiliários que investem nela."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159032,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Contingência Cível**\n   - **Natureza:** Contingência cível\n   - **Valor envolvido:** R$ 266.898.004,97\n   - **Chance de perda:** Provável\n   - **Resumo:** Ação indenizatória movida pelo Banco Master contra a CEEE-D em razão da frustração da conversão de debentures em ações.\n\n2. **Contingência Cível**\n   - **Natureza:** Contingência cível\n   - **Valor envolvido:** R$ 75.867.974,03\n   - **Chance de perda:** Possível\n   - **Resumo:** Ação indenizatória movida por FLPM Participações S.A. em face da CEEE-D por violação ao direito de conversão de debêntures em ações.\n\n3. **Contingência Cível**\n   - **Natureza:** Contingência cível\n   - **Valor envolvido:** R$ 35.574.344,48\n   - **Chance de perda:** Provável\n   - **Resumo:** Ação civil pública movida pelo Ministério Público do Rio Grande do Sul contra a CEEE-D por uso irregular de produtos químicos na \"Fábrica de Postes\".\n\n4. **Contingência Cível**\n   - **Natureza:** Contingência cível\n   - **Valor envolvido:** R$ 30.136,780,50\n   - **Chance de perda:** Provável\n   - **Resumo:** Ação de repetição de indébito movida pela Irmandade Santa Casa de Misericórdia contra a CEEE-D por supostas cobranças tarifárias indevidas.\n\n5. **Contingência Tributária**\n   - **Natureza:** Contingência tributária\n   - **Valor envolvido:** R$ 67.409.283,11\n   - **Chance de perda:** Possível\n   - **Resumo:** Execução fiscal movida pela União Federal contra a CEEE-D por supostos débitos de PIS e COFINS sobre \"perdas não técnicas\" de energia elétrica."
+  }
 }

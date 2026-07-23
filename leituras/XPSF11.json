@@ -1,11 +1,11 @@
 {
   "ticker": "XPSF11",
   "modelo": "qwen2.5:7b",
-  "gerada_em": "2026-07-20T22:10:56",
+  "gerada_em": "2026-07-23T17:55:18",
   "relatorio": {
-    "id": 1227247,
-    "data_entrega": "24/06/2026 15:36",
-    "texto": "### Fatos Extraídos do Relatório\n\n1. **Compras de Ativos**: No mês, o fundo realizou compras pontuais em CRIs (KNIP e KNSC) com um total de R$0,9 mm.\n2. **Distribuição de Rendimentos**: A distribuição de rendimentos foi de R$ 0,07 por cota, a ser realizada em 15/06/26.\n3. **Comentário do Gestor sobre o Cenário Econômico**: O cenário econômico doméstico foi desafiador, com volatilidade nos preços dos ativos e preocupações macroeconômicas relacionadas à inflação e política fiscal.\n4. **Desempenho dos FIIs no Mês**: As cotas de FIIs passaram por uma correção, especialmente as de lajes corporativas e shoppings, que tiveram desempenhos negativos.\n5. **Alocação do Fundo**: A exposição na parcela do fundo alocada diretamente em CRIs atingiu cerca de 10,4% do patrimônio do XPSF no fim de maio.\n6. **Cota Patrimonial e Dividend Yield**: A cota patrimonial atingiu R$ 7,95 antes da distribuição de proventos, resultando em um dividend yield de 13,17% ao ano.\n\n### O que Observar Em Seguida:\n- Monitorar as próximas distribuições de rendimentos.\n- Atentar para os desempenhos dos segmentos de FIIs no mercado secundário."
+    "id": 1262484,
+    "data_entrega": "23/07/2026 11:40",
+    "texto": "### Fatos Extraídos do Relatório:\n\n1. **Movimentações na Carteira:**\n   - A carteira realizou a venda de 25.000 cotas de KNSC11, gerando R$ 0,2 milhões.\n   - Houve a compra de 28.975 cotas de TEPP11 e 1.196 cotas de KNIP11.\n\n2. **Desempenho do Fundo:**\n   - O fundo encerrou o mês com uma cota patrimonial ajustada em R$ 7,72.\n   - A distribuição de rendimentos foi de R$ 0,07 por cota no final de junho.\n\n3. **Vacância e Inadimplência:**\n   - Não há menção específica sobre vacância ou inadimplência nos ativos do fundo.\n\n4. **Obras e Reformas:**\n   - Não há menção a obras ou reformas em andamento nos ativos do fundo.\n\n5. **Rendimentos e Cotação:**\n   - A cota de mercado secundário foi R$ 6,37.\n   - O yield anualizado da cota foi de 16,67%.\n\n6. **Indicadores Finais:**\n   - Patrimônio líquido do fundo foi de R$ 331,2 milhões (12 meses atrás: -1,14%).\n   - Valor do ativo do fundo foi de R$ 334,5 milhões (12 meses atrás: -1,01%).\n\n7. **Riscos e Eventos Societários:**\n   - Não há menção a eventos societários ou riscos específicos.\n\n8. **Comentário do Gestor:**\n   - O gestor comentou sobre o cenário internacional com conflitos entre Estados Unidos, Israel e Irã.\n   - No cenário doméstico, houve pressões inflacionárias e preocupações com a governabilidade.\n\n### O que observar em seguida:\n- Monitorar as movimentações na carteira do fundo, especialmente as compras de ativos como TEPP11 e KNIP11.\n- Observar o comportamento dos rendimentos distribuídos e sua relação com os resultados financeiros."
   },
   "comunicados": {
     "ids": [
@@ -29,6 +29,16 @@
     "texto": "### COMUNICADO AO MERCADO entregue em 29/01/2026\n\n**O QUE aconteceu:** A XP VISTA ASSET MANAGEMENT LTDA informou os dados para participação na apresentação trimestral de resultados do 4T25.\n\n**Resumo:** A Gestora informou detalhes sobre a próxima apresentação de resultados, incluindo data e horário.\n\n**Trecho-chave:**\n\"Quinta-feira, 26 de fevereiro de 2026\nÀs 10h00 (horário de Brasília)\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 04/05/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária dos cotistas do XP SELECTION FUNDO FII aprovou as demonstrações financeiras e notas explicativas relativas ao exercício social findo em 31.12.2025.\n\n**Resumo:** Os cotistas aprovaram sem restrições ou ressalvas as demonstrações financeiras, notícias explicativas e parecer dos auditores independentes do exercício social de 2025.\n\n**Trecho-chave:**\n\"Os cotistas aprovaram, sem quaisquer restrições ou ressalvas:  \n(i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 27/04/2026\n\n**O QUE aconteceu:** A XP VISTA ASSET MANAGEMENT LTDA informou os dados para participação na apresentação trimestral de resultados do 1T26.\n\n**Resumo:** A Gestora informou detalhes sobre a próxima apresentação de resultados, incluindo data e horário.\n\n**Trecho-chave:**\n\"Quinta-feira, 21 de maio de 2026\nÀs 17h00 (horário de Brasília)\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 04/05/2026\n\n**O QUE aconteceu:** A assembleia geral ordinária dos cotistas do XP SELECTION FUNDO FII aprovou as demonstrações financeiras e notas explicativas relativas ao exercício social findo em 31.12.2025.\n\n**Resumo:** Os cotistas aprovaram sem restrições ou ressalvas as demonstrações financeiras, notícias explicativas e parecer dos auditores independentes do exercício social de 2025.\n\n**Trecho-chave:**\n\"Os cotistas aprovaram, sem quaisquer restrições ou ressalvas:  \n(i) As Demonstrações Financeiras, Notas Explicativas e Parecer dos Auditores Independentes relativos ao exercício social findo em 31.12.2025\"\n\n---\n\n**Conexão com o contexto:** A aprovação das demonstrações financeiras na assembleia geral ordinária de 4 de maio de 2026 pode estar relacionada à publicação dos resultados do primeiro trimestre (1T26) que serão apresentados em 21 de maio de 2026."
   },
   "retrato": {
+    "selo": "Atenção",
+    "nivel": "atencao",
+    "alertas": [
+      "Rendimentos acima do resultado financeiro"
+    ],
+    "cota": 6.15
+  },
+  "anterior": {
+    "gerada_em": "2026-07-20T22:10:56",
+    "relatorio_data": "24/06/2026 15:36",
     "selo": "Atenção",
     "nivel": "atencao",
     "alertas": [

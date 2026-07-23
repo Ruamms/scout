@@ -1,7 +1,7 @@
 {
   "ticker": "GFSA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:20:36",
+  "verificado_em": "2026-07-23T19:44:14",
   "comunicados": {
     "ids": [
       974407110397604430,
@@ -20,5 +20,10 @@
     ],
     "texto": "### 07/07/2026 - Rerratificação da Homologação de Aumento de Capital\n\n**O que aconteceu:** Gafisa rerratificou a homologação do aumento de capital ocorrido em 26 de junho de 2026.\n\n**Resumo:** O Conselho de Administração aprovou a rerratificação da homologação do aumento de capital, corrigindo um erro material que resultou na emissão excessiva de ações.\n\n**Trecho-chave:**\n\"O Conselho de Administração, reunido em 07 de julho de 2026, aprovou a rerratificação da homologação do aumento de capital ocorrida em 26 de junho de 2026, em virtude de erro material identificado no cômputo final do total de ações emitidas.\"\n\n**Conexão com o contexto:** A retificação afeta os indicadores de capital social da companhia.\n\n---\n\n### 17/07/2026 - Alienação de Participação Relevante\n\n**O que aconteceu:** LAD Capital Gestora de Recursos passou a deter 23.552.777 ações ordinárias, representando 14,70% do capital social da Gafisa.\n\n**Resumo:** A LAD Capital informou à Gafisa sobre a redução de sua posição no capital social, passando a detê-la em 14,70%.\n\n**Trecho-chave:**\n\"GAFISA S.A. (“Gafisa” ou “Companhia”) (B3: GFSA3), em atendimento ao artigo 12 da Resolução Comissão de Valores Mobiliários n° 44, de 23 de agosto de 2021, conforme alterada, informa aos seus acionistas e ao mercado em geral que recebeu a notificação anexa da LAD CAPITAL GESTORA DE RECURSOS LTDA (“LAD CAPITAL”), informando à Companhia que passou a deter 23.552.777 ações ordinárias, representativas de 14,70% do capital social da Gafisa.\"\n\n---\n\n### 10/07/2026 - Alienação de Participação Relevante\n\n**O que aconteceu:** Suno Gestora de Recursos passou a deter 7.235.506 ações ordinárias, representando 4,60% do capital social da Gafisa.\n\n**Resumo:** A Suno informou à Gafisa sobre a redução de sua posição no capital social, passando a detê-la em 4,60%.\n\n**Trecho-chave:**\n\"GAFISA S.A. (“Gafisa” ou “Companhia”) (B3: GFSA3), em atendimento ao artigo 12 da Resolução Comissão de Valores Mobiliários n° 44, de 23 de agosto de 2021, conforme alterada, informa aos seus acionistas e ao mercado em geral que recebeu a notificação anexa da Suno Gestora de Recursos Ltda (“Suno”), informando à Companhia que passou a deter 7.235.506 ações ordinárias, representativas de 4,60% do capital social da Gafisa.\"\n\n**Conexão com o contexto:** As informações sobre as participações relevantes podem afetar a percepção dos investidores sobre a distribuição de ações e a influência dos principais acionistas."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159515,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Tributário**\n   - **Valor:** R$ 326,691,057,02\n   - **Chance de perda:** Provável\n   - **Resumo:** Processo judicial nº 0021423-26.04.8.26.0090, envolvendo a Cimob Companhia Imobiliária e Gafisa S.A., com valor de R$ 86,676,827,88 em tributos ISS.\n\n2. **Cível**\n   - **Valor:** R$ 178,176,803,36\n   - **Chance de perda:** Provável (R$ 119,457,596,70) / Possível (R$ 58,719,206,66)\n   - **Resumo:** Processo nº 5101543-83.2023.4.02.5101, envolvendo a Caixa Econômica Federal e Gafisa S/A, com valor de R$ 178,176,803,36 em um contrato de mútuo.\n\n3. **Cível**\n   - **Valor:** R$ 68,352,639,39\n   - **Chance de perda:** Provável (R$ 44,755,053,75) / Possível (R$ 23,597,585,64)\n   - **Resumo:** Processo nº 5035238-03.2023.4.03.6100, envolvendo a Caixa Econômica Federal e Gafisa S/A, com valor de R$ 68,352,639,39 em um contrato de mútuo.\n\n4. **Cível**\n   - **Valor:** R$ 73,937,992,79\n   - **Chance de perda:** Provável (R$ 48,228,083,17) / Possível (R$ 25,709,909,62)\n   - **Resumo:** Processo nº 5104674-66.2023.4.02.5101, envolvendo a Caixa Econômica Federal e Gafisa S/A, com valor de R$ 73,937,992,79 em um contrato de mútuo.\n\nNão há processos relevantes declarados para outras naturezas (trabalhista, ambiental ou regulatório)."
+  }
 }

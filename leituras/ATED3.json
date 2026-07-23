@@ -1,7 +1,7 @@
 {
   "ticker": "ATED3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:29:48",
+  "verificado_em": "2026-07-23T18:22:22",
   "comunicados": {
     "ids": [
       284283614618039490,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 10/07/2026\n\n**O QUE aconteceu:** A AGE da Atom Educação aprovou a suspensão do exercício dos direitos políticos da Valorant Capital S.A.\n\n**Resumo:** A assembleia decidiu suspender temporariamente os direitos políticos da Ofertante, devido ao não cumprimento da OPA.\n\n**Trecho-chave:**\n\"A AGE foi instalada em primeira convocação, com a presença de acionistas representando 27,97% (vinte e sete inteiros e noventa e sete centésimos por cento) do capital social votante da Companhia. Por maioria dos votos presentes foi aprovada a suspensão do exercício dos direitos políticos da Ofertante, nos termos do art. 120 da Lei das S.A., em razão da não realização da OPA.\"\n\n### FATO RELEVANTE entregue em 08/07/2026\n\n**O QUE aconteceu:** A CVM cancelou o registro da OPA formulada pela Valorant Capital S.A.\n\n**Resumo:** A Companhia foi notificada do cancelamento do registro da OPA, que não foi sanabilizada dentro do prazo estipulado.\n\n**Trecho-chave:**\n\"O cancelamento do registro da OPA foi informado à Companhia, nesta data, por meio do Ofício nº 154/2026/CVM/SRE/GER-1, de 10 de junho de 2026, encaminhado pela CVM, diante do não saneamento, pela Ofertante, da irregularidade apontada no Ofício nº 121/2026/CVM/SRE/GER-1, de 10 de junho de 2026.\"\n\n### FATO RELEVANTE entregue em 07/07/2026\n\n**O QUE aconteceu:** A Atom Educação notificou extrajudicialmente a Valorant Capital S.A. sobre o cancelamento do registro da OPA e reiterou a obrigação de realizar a OPA.\n\n**Resumo:** A Companhia reforçou que a obrigação de realizar a OPA é exclusiva da Ofertante, mesmo com o prazo praticamente esgotado.\n\n**Trecho-chave:**\n\"A Companhia notiﬁcou extrajudicialmente a Valorant Capital S.A. nesta data, reiterando: (i) que o eventual cancelamento do registro da OPA pela CVM, nos termos dos §§1º e 2º do art. 7º da Resolução CVM nº 215/2024, não extingue a obrigação legal da Ofertante de realizar a OPA prevista no art. 254-A da Lei das S.A., decorrente da aquisição do controle acionário da Companhia ocorrida em 14 de agosto de 2025; e (ii) a exigência de que a Ofertante apresente, no prazo de 5 (cinco) dias úteis, esclarecimentos formais à Companhia e à CVM sobre as providências concretas adotadas para o cumprimento integral de tal obrigação.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159503,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos judiciais, administrativos ou arbitrais relevantes para os negócios do emissor ou de suas controladas."
+  }
 }

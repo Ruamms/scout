@@ -1,7 +1,7 @@
 {
   "ticker": "PEAB3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:30:39",
+  "verificado_em": "2026-07-23T20:47:47",
   "comunicados": {
     "ids": [
       864793900129563044,
@@ -16,6 +16,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 15/12/2025\n\n**O QUE aconteceu:** A Companhia de Participações Aliança da Bahia decidiu cancelar ações em tesouraria.\n\n**Resumo:** A companhia deliberou pelo cancelamento de todas as ações ordinárias e preferenciais mantidas em tesouraria, sem alteração do capital social. Após o cancelamento, o número total de ações será ajustado.\n\n**Trecho-chave:**\n\"A COMPANHIA DE PARTICIPAÇÕES ALIANÇA DA BAHIA (B3: PEAB3 e PEAB4) (“Companhia”), em cumprimento às disposições da Resolução da Comissão de Valores Mobiliários (“CVM”) nº 44, de 23 de agosto de 2021, conforme alterada, da Resolução da CVM nº 85, de 31 de março de 2022, conforme alterada, e do artigo 157, § 4º, da Lei nº 6.404, de 15 de dezembro de 1976, conforme alterada, comunica aos acionistas e ao mercado que o Conselho de Administração da Companhia, reunido na presente data, deliberou pelo cancelamento de todas as 769.042 (setecentas e sessenta e nove mil e quarenta e duas) ações, sendo 178.471 (cento e setenta e oito mil, quatrocentas e setenta e uma) ações ordinárias e 590.571 (quinhentas e noventa mil, quinhentas e setenta e uma) ações preferenciais, atualmente mantidas em tesouraria, sem alteração do capital social e contra os saldos das reservas de lucro disponíveis, excluindo-se os saldos das reservas indicadas no inciso I do parágrafo 1º do artigo 8º da Resolução CVM 77, de 29 de março de 2022 (\"Cancelamento de Ações\").\"\n\n**Conexão com o contexto:** Este fato relevante afeta a estrutura acionária e o capital social da companhia, podendo impactar os indicadores financeiros e operacionais.\n\n### COMUNICADO AO MERCADO entregue em 27/02/2026\n\n**O QUE aconteceu:** A Companhia de Participações Aliança da Bahia alterou a auditora independente responsável pela prestação de serviços de auditoria.\n\n**Resumo:** O Conselho de Administração aprovou a contratação da BDO RCS Auditores Independentes S/S em substituição à KPMG Auditores Independentes S/S, devido ao rodízio obrigatório previsto na regulamentação da CVM.\n\n**Trecho-chave:**\n\"A COMPANHIA DE PARTICIPAÇÕES ALIANÇA DA BAHIA (“COMPANHIA”) em conformidade com a Resolução CVM nº 23/2021, vem comunicar aos seus acionistas e ao mercado que seu Conselho de Administração aprovou a contratação da BDO RCS Auditores Independentes S/S em substituição à KPMG Auditores Independentes S/S, para a prestação de serviços de auditoria independente das demonstrações financeiras e de revisão das informações financeiras intermediárias da Companhia para o período contábil com início em 1º de janeiro de 2026.\"\n\n**Conexão com o contexto:** A mudança na auditora pode afetar a qualidade dos relatórios financeiros e a confiança dos investidores."
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

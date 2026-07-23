@@ -1,7 +1,7 @@
 {
   "ticker": "OFSA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:50:33",
+  "verificado_em": "2026-07-23T20:38:46",
   "comunicados": {
     "ids": [
       1091541082680490008,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 01/10/2025\n\nOuroFino S.A. concluiu a incorporação de sua subsidiária integral Ouro Fino Agronegócio Ltda.\n\nA Companhia realizou a incorporação da Ouro Fino Agronegócio, conforme previsto no Protocolo e Justificação, após a confirmação do cumprimento das Condições Suspensivas estabelecidas. A Incorporação resultou na extinção da Ouro Fino Agronegócio e sua sucessão pela Companhia.\n\n\"Companhia manterá seus acionistas e o mercado em geral informados sobre quaisquer atualizações relevantes em relação à Incorporação.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 06/03/2026\n\nOuroFino S.A. lançou seis produtos em 2025, por meio de desenvolvimento interno, parcerias e novos negócios.\n\nA Companhia registrou um crescimento significativo nas receitas líquidas consolidadas no quarto trimestre de 2025 (4T25), com uma alta de 19,5% em comparação ao mesmo período do ano anterior. O EBITDA ajustado também cresceu 27,4%, atingindo R$ 282,5 milhões.\n\n\"Receita líquida consolidada cresceu 19,5%, atingindo R$ 1.225 milhões contra 2024.\" (p. 3)\n\n### COMUNICADO AO MERCADO entregue em 08/05/2026\n\nOuroFino S.A. apresentou os resultados do primeiro trimestre de 2026 (1T26).\n\nOs resultados financeiros do primeiro trimestre de 2026 mostraram um aumento significativo na receita líquida total, que cresceu 32,1% em comparação ao mesmo período do ano anterior. O lucro bruto também aumentou 46,9%, com uma margem bruta de 53,9%. A margem EBITDA ajustada melhorou para 17,8%, e o lucro líquido ajustado dobrou, atingindo 20,8 milhões.\n\n\"Receita Líquida - Total cresceu 32,1%, atingindo R$ 250,5 milhões contra 1T25. Lucro Bruto cresceu 46,9% no 1T26, atingindo R$ 134,9 milhões.\" (p. 4)\n\n### Conexão com o Contexto\n\n- A incorporação da Ouro Fino Agronegócio Ltda., mencionada no Fato Relevante de outubro de 2025, pode ter contribuído para a expansão do portfólio e a melhoria dos resultados financeiros apresentados nos comunicados subsequentes."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158912,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Natureza:** Tributário  \n   **Valor envolvido:** R$ 70.792.323,38  \n   **Chance de perda:** Possível  \n   *Resumo:* Auto de infração e imposição de multa relativa a PIS/COFINS, com discussões na esfera federal.\n\n2. **Natureza:** Tributário  \n   **Valor envolvido:** R$ 3.787.245,48  \n   **Chance de perda:** Possível  \n   *Resumo:* Auto de infração relativo à falta de recolhimento de ICMS sobre importação de produtos técnicos.\n\n3. **Natureza:** Tributário  \n   **Valor envolvido:** R$ 3.262.795,15  \n   **Chance de perda:** Possível  \n   *Resumo:* Auto de infração que discute a transferência indevida de créditos de ICMS entre filiais.\n\n4. **Natureza:** Tributário  \n   **Valor envolvido:** R$ 2.604.490,22  \n   **Chance de perda:** Possível  \n   *Resumo:* Auto de infração que discute a falta de recolhimento de ICMS sobre importação de produtos técnicos.\n\n5. **Natureza:** Tributário  \n   **Valor envolvido:** R$ 1.714.511,59  \n   **Chance de perda:** Possível  \n   *Resumo:* Execução fiscal ajuizada pelo Estado de São Paulo para exigir pagamento de supostos débitos de ICMS.\n\n6. **Natureza:** Tributário  \n   **Valor envolvido:** R$ 2.795.071,47 (chance de perda remota) + R$ 992.174,01 (chance de perda provável) = R$ 3.787.245,48  \n   **Chance de perda:** Remota - R$ 992.174,01; Possível - R$ 2.795.071,47  \n   *Resumo:* Auto de infração que discute a transferência indevida de créditos de ICMS entre filiais e multa.\n\nNão há processos relevantes declarados com maior valor ou chance de perda provável além dos citados acima."
+  }
 }

@@ -1,7 +1,7 @@
 {
   "ticker": "BIED3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:39:49",
+  "verificado_em": "2026-07-23T18:39:29",
   "comunicados": {
     "ids": [
       150587248195023059,
@@ -23,5 +23,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 09/09/2025\n\n**O que aconteceu:** Conclusão do fechamento da operação de venda de participação societária.\n\n**Resumo:** A Companhia concluiu a venda total das ações de suas controladas Curso Inter Graus Ltda. e Escolas Besa Ltda., que detinham as ações emitidas pela Cursinho Intergraus S.A., operadora do curso pré-vestibular \"Intergraus\".\n\n**Trecho-chave:** \"Tendo em vista o fechamento da operação, as controladas Curso Inter Graus Ltda. e Escolas Besa Ltda. venderam à Compradora a totalidade das ações de sua titularidade emitidas pela Cursinho Intergraus S.A.\" (p. 1)\n\n**Conexão com o contexto:** Esta transação finaliza uma operação iniciada em maio de 2025, alinhando-se com a estratégia da Companhia de focar no segmento de escolas contemporâneas e bilíngues na educação básica.\n\n---\n\n### FATO RELEVANTE entregue em 07/05/2025\n\n**O que aconteceu:** Celebração do Contrato de Compra e Venda de Participação Societária.\n\n**Resumo:** A Companhia celebrou um contrato com a Oranje S.A. para vender suas controladas Curso Inter Graus Ltda. e Escolas Besa Ltda., que detinham as ações da Cursinho Intergraus S.A., por R$ 15 milhões, sujeito a condições suspensivas.\n\n**Trecho-chave:** \"Pelo Contrato, as controladas Curso Inter Graus Ltda. e Escolas Besa Ltda. venderão a totalidade das quotas do Cursinho Intergraus Ltda.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 08/09/2025\n\n**O que aconteceu:** Esclarecimento sobre o registro da Cursinho Intergraus S.A.\n\n**Resumo:** A Companhia informou que a Cursinho Intergraus S.A. obteve o registro de companhia aberta e listagem na B3, cumprindo uma condição suspensiva do contrato celebrado em maio de 2025.\n\n**Trecho-chave:** \"A Comissão de Valores Mobiliários deferiu o pedido de registro de emissor categoria A da Cursinho Intergraus S.A.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 13/08/2025\n\n**O que aconteceu:** Renúncia do Conselheiro Maurício Nogueira Escobar.\n\n**Resumo:** O conselheiro Maurício Nogueira Escobar apresentou pedido de renúncia ao cargo, sendo substituído pelo suplente Daniel Faccini Castanho.\n\n**Trecho-chave:** \"O Conselheiro esclarece que ‘referido pedido de renúncia é realizado por motivos de natureza pessoal, tendo em vista desafios profissionais que irão requerer maior dedicação do meu tempo’.\" (p. 1)"
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158488,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes declarados na seção de processos judiciais do FRE da BIED3."
+  }
 }

@@ -1,7 +1,7 @@
 {
   "ticker": "CALI11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:49:39",
+  "verificado_em": "2026-07-23T18:53:32",
   "comunicados": {
     "ids": [
       1105417778276218755,
@@ -17,5 +17,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 25/09/2025\n\n**O QUE aconteceu:** A Companhia aprovou a emissão de debêntures.\n\n**Resumo:** A Construtora Adolpho Lindenbergs S.A. decidiu emitir debêntures para financiar obras imobiliárias, com juros remuneratórios variáveis.\n\n**Trecho-chave:**\n\"A Companhia aprovou, nos termos do art. 59, § 1º, da Lei das Sociedades por Ações, a realização de sua 4ª (quarta) emissão de debêntures simples, não conversíveis em ações, da espécie quirografária, com garantia fidejussória, em até 2 (duas) séries...\" (p. 1)\n\n**Conexão com o contexto:** A emissão de debêntures pode ser usada para financiar projetos imobiliários, que são um dos principais negócios da Companhia.\n\n---\n\n### FATO RELEVANTE entregue em 31/01/2025\n\n**O QUE aconteceu:** A Companhia aprovou o aumento de capital por meio do exercício de bônus de subscrição.\n\n**Resumo:** A Construtora Adolpho Lindenbergs S.A. aumentou seu capital social através da integralização de bônus de subscrição detidos pela EZTEC, tornando-a co-controladora da Companhia.\n\n**Trecho-chave:**\n\"O referido Aumento de Capital foi totalmente subscrito e integralizado pela EZTEC Empreendimentos e Participações S.A. (“EZTEC”), de forma a dar cumprimento ao exercício de 3.267.735 (três milhões, duzentos e sessenta e sete mil, setecentas e trinta e cinco) bônus de subscrição de ações da Companhia emitidos no âmbito do aumento de capital da Companhia aprovado em 28 de abril de 2022 (“Bônus de Subscrição”) detidos pela EZTEC...\" (p. 1)\n\n**Conexão com o contexto:** O aumento de capital por meio dos bônus de subscrição resultou na integralização do Aumento de Capital e na transformação da EZTEC em co-controladora da Companhia, alinhando-se com as estratégias de expansão e crescimento da empresa."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158878,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "[página 1]\nContingências Cíveis\n\nProcesso nº 0002607-44.2009.8.26.0301 - Ação Civil Pública  \nNatureza: cível  \nValor envolvido: R$13,573,264,98 (meramente estimativo)  \nChance de perda: Possível  \nResumo: Busca o Ministério Público a declaração de nulidade do alvará de aprovação expedido pela Prefeitura do Município de Jarinu em 1974, autorizando o loteamento Palomino Valley. A Companhia foi contratada para prestar serviços de assessoramento e não é proprietária dos imóveis.\n\nContingências Cíveis\n\nProcesso nº 0002607-44.2009.8.26.0301 - Ação Civil Pública  \nNatureza: cível  \nValor envolvido: R$13,573,264,98 (meramente estimativo)  \nChance de perda: Possível  \nResumo: Sentença proferida em 2015 deu parcial provimento ao pedido do Ministério Público. O Tribunal de Justiça de São Paulo julgou as apelações interpostas pelo Ministério Público e Companhia, dando provimento à última, incluindo os adquirentes no polo passivo da demanda."
+  }
 }

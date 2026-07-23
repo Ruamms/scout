@@ -1,11 +1,16 @@
 {
   "ticker": "EPAR3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:10:48",
+  "verificado_em": "2026-07-23T19:32:33",
   "comunicados": {
     "ids": [],
     "datas": [],
     "rotulos": [],
     "texto": null
+  },
+  "processos": {
+    "id": 157913,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null
   }
 }

@@ -1,7 +1,7 @@
 {
   "ticker": "CAML3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:50:24",
+  "verificado_em": "2026-07-23T18:53:55",
   "comunicados": {
     "ids": [
       364977859412060028,
@@ -17,5 +17,10 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 14/07/2026\n\n**O QUE aconteceu:** Apresentação de Resultados do Primeiro Trimestre de 2026 (1T26).\n\n**Resumo:** A receita líquida e o EBITDA apresentaram variações, com destaque para o aumento no volume de vendas em todos os segmentos.\n\n**Trecho-chave:**\n\"R$ 2,7 bilhões Receita Líquida (-0,7% YoY e +6,6% QoQ)\nR$ 210 milhões EBITDA (-9,9% YoY e +8,9% QoQ) \n7,9% Margem EBITDA\n(-0,8pp YoY e +0,2pp QoQ)\"\n\n### COMUNICADO AO MERCADO entregue em 07/05/2026\n\n**O QUE aconteceu:** Apresentação de Resultados do Quarto Trimestre de 2025 (4T25) e Ano Fiscal de 2025.\n\n**Resumo:** A receita líquida e o EBITDA apresentaram variações, com destaque para a expansão no volume de vendas em todos os segmentos.\n\n**Trecho-chave:**\n\"R$2,5 bilhões Receita Líquida (-16,5 % YoY)\nR$192,8 milhões EBITDA\n(-0,5% YoY) \n7,7% Margem EBITDA\n(+1,2pp YoY)\"\n\n**Conexão com indicadores:** As variações nos preços e volumes de vendas refletem diretamente nas margens financeiras apresentadas."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159449,
+    "referencia": "2026-02-28",
+    "valor_provisionado": null,
+    "texto": "1. **Tributário**\n   - **Valor envolvido:** R$ 407.309.038,01 (atualizado em 28/02/2025)\n   - **Chance de perda:** Possível (R$ 312.889.419,91) / Remota (R$ 94.419.618,10)\n   - **Resumo do objeto:** O processo trata da cobrança de IRPJ e CSLL referentes aos anos-calendário de 2012 a 2015, com multas qualificadas.\n\n2. **Tributário**\n   - **Valor envolvido:** R$ 41.188.095,18 (atualizado em 28/02/2025)\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** A Companhia discute a cobrança de imposto de importação e multa decorrente da lavratura de auto de infração por suposta classificação incorreta de arroz em operações de importação.\n\n3. **Tributário**\n   - **Valor envolvido:** R$ 29.746.199,61 (atualizado em 28/02/2025)\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** Trata-se de Auto de Infração por meio do qual a Receita Federal está exigindo o pagamento de IRPJ e CSLL relativos aos anos-calendário de 2017, 2018 e 2020.\n\n4. **Tributário**\n   - **Valor envolvido:** R$ 18.204.636,53 (atualizado em 28/02/2025)\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** Trata-se de Auto de Infração lavrado pelo Fisco Federal para a cobrança de IRPJ e CSLL referentes aos anos-base de 2017 e 2018, com juros de mora e multa de ofício.\n\n5. **Trabalhista**\n   - **Valor envolvido:** R$ 20.704.199,62 (atualizado para 28/02/2025)\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** O Ministério Público do Trabalho alega terceirização irregular e práticas trabalhistas análogas à escravidão, requerendo regularização das condições de trabalho.\n\n6. **Cível**\n   - **Valor envolvido:** R$ 29.230.323,67 (atualizado para 28/02/2025)\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** O Ministério Público Federal ajuizou ação civil pública visando à condenação da Companhia ao pagamento de indenização por danos morais coletivos, com fundamento em supostas infrações aos limites de peso no transporte rodoviário de cargas.\n\n7. **Tributário**\n   - **Valor envolvido:** R$ 34.911.744,60 (atualizado em 28/02/2025)\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** Em 2015, o Estado do Rio Grande do Sul autuou a Companhia visando a cobrança de débitos de ICMS dos períodos de 2013 a 2015.\n\n8. **Trabalhista**\n   - **Valor envolvido:** R$ 816.299,40 (atualizado para 28/02/2025)\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** O Ministério Público do Trabalho propôs ação civil pública em face da Pastifício Santa Amália (PSA), por não preencher os percentuais legais de cargos com pessoas com deficiência."
+  }
 }

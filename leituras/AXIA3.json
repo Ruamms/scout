@@ -1,7 +1,7 @@
 {
   "ticker": "AXIA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T17:12:08",
+  "verificado_em": "2026-07-23T18:24:57",
   "comunicados": {
     "ids": [
       750522233692262325,
@@ -20,5 +20,10 @@
     ],
     "texto": "### 17/07/2026 - 11ª Emissão de Debêntures\n\nA AXIA Energia S.A. aprovou a captação de R$ 500 milhões em debêntures simples, não conversíveis em ações, da espécie quirografária.\n\n*\"AXIA Energia S.A. informa que, nesta data, o Conselho de Administração aprovou a captação de debêntures simples, não conversíveis em ações, da espécie quirografária, em série única, no montante de R$ 500 milhões.\"* (p. 1)\n\n---\n\n### 17/07/2026 - Liquidação da 10ª Emissão de Debêntures\n\nA AXIA Energia S.A. informou a liquidação da 10ª emissão de debêntures, que foi objeto de oferta pública sob o rito de registro automático.\n\n*\"A AXIA Energia S.A. informa que, em complemento ao Fato Relevante divulgado em 25 de junho de 2026, informa que, nesta data, ocorreu a liquidação da 10ª emissão de debêntures simples, não conversíveis em ações, da espécie quirografária, em 2 séries.\"* (p. 1)\n\n---\n\n### 15/07/2026 - Conclusão da Alienação de Participações Minoritárias para a GEBBRAS\n\nA AXIA Energia S.A. concluiu a alienação total das participações minoritárias em sociedades de propósito específico (SPEs) de transmissão de energia elétrica para a GEBBRAS, recebendo R$ 451,4 milhões.\n\n*\"A AXIA Energia S.A. informa que, após atendidas as condições precedentes, concluiu, nesta data, a alienação da totalidade das participações minoritárias de 49% detidas pela Companhia em sociedades de propósito específico (SPEs) de transmissão de energia elétrica para a GEBBRAS Participações Ltda. (\"GEBBRAS\"), com recebimento total de R$ 451,4 milhões.\"* (p. 1)\n\n---\n\n### Conexão aos Indicadores do Contexto\n\n- A emissão de debêntures e a liquidação da 10ª emissão de debêntures são operações financeiras que refletem o fluxo de caixa e a estratégia de captação de recursos da AXIA Energia.\n- A conclusão da alienação de participações minoritárias para a GEBBRAS indica uma otimização de ativos, simplificação da estrutura corporativa e alocação disciplinada de capital."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159494,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "### Tópicos dos Processos Relevantes\n\n1. **Ação Cível Originária (Processo n.º 3024)**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 3.595.706.590,88 (considerado provável)\n   - **Chance de perda:** Provável\n   - **Resumo:** Trata-se de uma ação cível originária no Supremo Tribunal Federal, relacionada à federalização da CEPISA, com condenação solidária e indenização expressiva.\n\n2. **Ação Cível Originária (Processo n.º 3132)**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 152.680.940,69 (considerado remota)\n   - **Chance de perda:** Remota\n   - **Resumo:** Ação cível originária no Supremo Tribunal Federal relacionada à federalização da CEAL, com condenação expressiva em caso de perda.\n\n3. **Ação Civil Pública – UHE Manso**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 500.000.000,00 (considerado remota)\n   - **Chance de perda:** Remota\n   - **Resumo:** Ação civil pública no Supremo Tribunal Federal relacionada à Usina Hidrelétrica Manso, com risco expressivo em caso de condenação.\n\n4. **Ação Indenizatória (Processo n.º 0823177-84.2018)**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 586.194.323,63 (considerado remota)\n   - **Chance de perda:** Remota\n   - **Resumo:** Ação ordinária ajuizada pela Companhia Energética de Roraima contra AXIA Energia S.A., com risco expressivo em caso de condenação.\n\n5. **Ação Cível Originária (Processo n.º 3024)**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 16.481.664 mil (considerado possível)\n   - **Chance de perda:** Possível\n   - **Resumo:** Ação cível originária no Supremo Tribunal Federal, com condenação solidária e indenização expressiva.\n\n**Observação:** Não há processos declarados como relevantes com valores superiores a R$ 0,42% do patrimônio líquido da Companhia."
+  }
 }

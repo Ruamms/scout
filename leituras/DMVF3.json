@@ -1,7 +1,7 @@
 {
   "ticker": "DMVF3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:02:44",
+  "verificado_em": "2026-07-23T19:23:05",
   "comunicados": {
     "ids": [
       781446059154345105,
@@ -17,5 +17,10 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 17/06/2026\n\n**O que aconteceu:** Renúncia do membro do Conselho de Administração e convocação de Assembleia Geral Extraordinária.\n\n**Resumo:** A d1000 Varejo Farma Participações S.A. informou sobre a renúncia do Sr. Jonathan Matthew McGowens, membro do Conselho de Administração, e convocou uma Assembleia Geral Extraordinária para eleger seu substituto.\n\n**Trecho-chave:** \"tomou conhecimento da renúncia do membro do Conselho de Administração, Sr. Jonathan Matthew McGowens, eleito em votação realizada na Assembleia Geral Ordinária da Companhia realizada em 29 de abril de 2026.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 29/05/2026\n\n**O que aconteceu:** Aquisição de participação relevante por Profarma.\n\n**Resumo:** A d1000 Varejo Farma Participações S.A. informou a aquisição de 2.095.100 ações ordinárias, elevando sua participação societária para 72,6% do capital social da Companhia.\n\n**Trecho-chave:** \"adquiriu 2.095.100 ações ordinárias de emissão da Companhia, e que sua participação societária totalizou 36.744.437 ações ordinárias, representando 72,6% do total do capital social da Companhia.\" (p. 1)\n\n**Conexão com o contexto:** A aquisição de Profarma resultou em uma participação relevante na companhia, que pode afetar o controle acionário e a estrutura administrativa da d1000 Varejo Farma Participações S.A., conforme mencionado no comunicado."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159525,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Tributários**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 13.143.802,54\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** Trata-se de um Auto de Infração para cobrança de contribuições previdenciárias e ambientais, com decisão parcialmente favorável à empresa em primeira instância.\n\n2. **Tributários**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 11.027.566,37\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** Ação Rescisória da União contra acórdão do Tribunal Regional Federal da 2ª Região, com decisão favorável à empresa em segunda instância.\n\n3. **Trabalhistas**\n   - **Natureza:** Trabalhista\n   - **Valor envolvido:** R$ 27,5 milhões\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** Involuente ações trabalhistas com probabilidade de perda provável.\n\n4. **Tributários**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 24,4 milhões\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** Processos tributários com probabilidade de perda provável.\n\n5. **Trabalhistas**\n   - **Natureza:** Trabalhista\n   - **Valor envolvido:** R$ 19,0 milhões\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** Involuente ações trabalhistas com probabilidade de perda possível.\n\n6. **Tributários**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 14,3 milhões\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** Processos tributários com probabilidade de perda possível.\n\n7. **Trabalhistas**\n   - **Natureza:** Trabalhista\n   - **Valor envolvido:** R$ 6,0 milhões\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** Involuente ações trabalhistas com probabilidade de perda possível.\n\n8. **Cíveis**\n   - **Natureza:** Cível/Regulatório\n   - **Valor envolvido:** R$ 4,4 milhões\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** Processos cíveis/regulatórios com probabilidade de perda possível."
+  }
 }

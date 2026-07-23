@@ -1,7 +1,7 @@
 {
   "ticker": "AMAR3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:24:04",
+  "verificado_em": "2026-07-23T18:16:01",
   "comunicados": {
     "ids": [
       118945393641635191,
@@ -23,7 +23,6 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 26/03/2026\n\n**O que aconteceu:** Renúncia e eleição de membros do Conselho de Administração.\n\n**Resumo:** A MARISA LOJAS S.A. informou a renúncia das conselheiras Maria Laura Peixoto Santos Tarnow e Andrea Maria Meirelles de Menezes, respectivamente, Presidente do Conselho de Administração e membro independente. O Conselho nomeou Ivan Murias como novo Presidente do Conselho de Administração e Adriana Caetano como nova conselheira independente.\n\n**Trecho-chave:** \"O Sr. Ivan Murias, como membro independente e Presidente do Conselho de Administração da Companhia, em substituição direta à Sra. Andrea Maria Meirelles de Menezes.\" (p. 2)\n\n### FATO RELEVANTE entregue em 02/01/2026\n\n**O que aconteceu:** Reversão de decisão sobre restituição de demonstrações financeiras.\n\n**Resumo:** A MARISA LOJAS S.A. informou que a CVM reverteu sua decisão anterior, determinando que não seria necessário refazer as demonstrações financeiras da empresa.\n\n**Trecho-chave:** \"A Companhia tomou conhecimento da decisão do Colegiado da CVM de 30 de dezembro de 2025 que, dando provimento ao recurso apresentado pela Companhia, reverteu a decisão da área técnica.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 26/05/2026\n\n**O que aconteceu:** Eleição de membros do Comitê Estatutário de Auditoria e Riscos.\n\n**Resumo:** A MARISA LOJAS S.A. informou a eleição dos novos membros do Comitê Estatutário de Auditoria e Riscos, incluindo Ivan Luiz Murias dos Santos como membro independente em substituição a Sérgio Moreno.\n\n**Trecho-chave:** \"A Companhia comunica que foi aprovada a eleição dos membros do Comitê Estatutário de Auditoria e Riscos da Companhia, com a manutenção da composição anteriormente vigente, ressalvada a eleição do Sr. Ivan Luiz Murias dos Santos em substituição ao Sr. Sérgio Moreno.\" (p. 1)"
   },
-  "modelo": "qwen2.5:7b",
   "parecer": {
     "id": 143615907617336642,
     "data_entrega": "02/01/2026 00:00",
@@ -32,5 +31,11 @@
     "grave": false,
     "continuidade": false,
     "trecho": ""
+  },
+  "processos": {
+    "id": 159088,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Tributário**  \n   - **Valor envolvido:** R$ 121.822.388,58  \n   - **Chance de perda:** Possível  \n   - **Resumo do objeto:** \"Trata-se execução fiscal ajuizada para exigência de débitos de IRPJ e CSLL objetos do Processo Administrativo nº 16327.720105/2021-79, relativas ao ano-calendário de 2012.\"\n\n2. **Tributário**  \n   - **Valor envolvido:** R$ 99.741.932,67  \n   - **Chance de perda:** Possível  \n   - **Resumo do objeto:** \"Trata-se de Execução Fiscal ajuizada pela União Federal visando a cobrança de valores controvertidos de IRPJ/Imposto de Renda de Pessoa Juridica e CSLL/Contribuição Social Sobre o Lucro Liquido – CDAs nº. 80215005038-81 e 80615060484-09, referentes ao ano calendário de 2007.\"\n\n3. **Tributário**  \n   - **Valor envolvido:** R$ 91.262.804,17  \n   - **Chance de perda:** Possível  \n   - **Resumo do objeto:** \"Trata-se de Execução Fiscal ajuizada para a cobrança dos créditos tributários consubstanciados nas Certidões de Dívida Ativa, originárias do Processo Administrativo n o 16327.720843/2016-59.\"\n\n4. **Tributário**  \n   - **Valor envolvido:** R$ 46.110.730,63  \n   - **Chance de perda:** Possível  \n   - **Resumo do objeto:** \"Trata-se de execução fiscal ajuizada para a cobrança dos créditos tributários consubstanciados nas Certidões de Dívida Ativa nos 80 6 19 134788-44 e 80 2 19 080320-44, originárias do Processo Administrativo nº 16327 720029/2019-87.\"\n\n5. **Tributário**  \n   - **Valor envolvido:** R$ 35.076.087,95  \n   - **Chance de perda:** Possível  \n   - **Resumo do objeto:** \"Trata-se execução fiscal ajuizada para exigência de débitos de IRPJ e CSLL objetos do Processo Administrativo nº 16327 720173/2017-51, relativas ao ano-calendário de 2012.\"\n\n6. **Tributário**  \n   - **Valor envolvido:** R$ 132.380.583,71  \n   - **Chance de perda:** Possível  \n   - **Resumo do objeto:** \"Auto de Infração e Imposição de Multa lavrado sob os seguintes fundamentos: (i) Recolhimento a menor do ICMS devido em operações de transferência de mercadorias para estabelecimentos de titularidade da empresa situados em outros Estados, em razão de suposto erro na aplicação da alíquota e na apuração da base de cálculo; (ii) Creditamento indevido do ICMS incidente na aquisição de bens que deveriam ser classificados como sendo de uso e consumo do estabelecimento.\"\n\n7. **Cível**  \n   - **Valor envolvido:** R$ 294.304.382,86  \n   - **Chance de perda:** Possível  \n   - **Resumo do objeto:** \"Trata-se de Ação Condenatória ajuizada em face da União Federal, buscando o reconhecimento do direito e respectiva determinação de pagamento/devolução/restituição por meio de Precatório.\""
   }
 }

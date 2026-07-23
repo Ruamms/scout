@@ -1,7 +1,7 @@
 {
   "ticker": "LEVE3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:32:01",
+  "verificado_em": "2026-07-23T20:11:02",
   "comunicados": {
     "ids": [
       1012346799875904397,
@@ -20,5 +20,10 @@
     ],
     "texto": "### O QUE aconteceu: Indicação do novo CEO para a presidência e composição do Conselho de Administração\n\n**Resumo:** A MAHLE indicou o Sr. Eduardo Luiz Spilla como novo Diretor Presidente da Companhia, substituindo o atual CEO, Sergio Pancini de Sá. Também foram propostas mudanças no Conselho de Administração.\n\n**Trecho-chave:**\n\"Em decorrência dessa movimentação e como resultado de um plano de sucessão e transição, o novo ciclo de gestão deverá ser conduzido sob a liderança do Sr. Eduardo Luiz Spilla, executivo com trajetória profissional consolidada no Grupo MAHLE, cuja eleição para Diretor Presidente da Companhia será submetida à deliberação do Conselho de Administração na mesma data da AGO 2026.\"\n\n---\n\n### O QUE aconteceu: Lançamento de solução inovadora para carregamento de veículos elétricos\n\n**Resumo:** A MAHLE Metal Leve lançou a linha \"MAHLE chargeBIG\", uma solução de carregamento modular e inteligente, ampliando sua atuação no mercado brasileiro.\n\n**Trecho-chave:**\n\"A Companhia traz para o mercado nacional a linha “MAHLE chargeBIG”, uma solução de carregamento inovadora e inteligente que permite múltiplos pontos e recarga com gestão otimizada de energia.\"\n\n---\n\n### O QUE aconteceu: Videoconferência de Resultados do 1º Trimestre\n\n**Resumo:** A MAHLE realizou uma videoconferência para apresentar os resultados do primeiro trimestre de 2026.\n\n**Trecho-chave:**\n\"MAHLE Metal Leve S.A. (B3 – New Market: LEVE3) (“Company” or “MAHLE”), pursuant to Brazilian Corporate Law (Law No. 6,404/76) and CVM Resolution No. 44/21, hereby informs its shareholders and the market in general that proposals related to the composition of the current administration of the Company are being submitted for deliberation at the Ordinary General Meeting scheduled for April 29, 2026.\"\n\n---\n\n### O QUE aconteceu: Comunicação sobre a AGO 2026\n\n**Resumo:** A MAHLE convocou uma Assembleia Geral Ordinária (AGO) para 29 de abril de 2026, onde serão deliberadas propostas relacionadas à composição da administração.\n\n**Trecho-chave:**\n\"A MAHLE METAL LEVE S.A. (B3 – Novo Mercado: LEVE3) (“Companhia” ou “MAHLE”), nos termos da lei 6.404/76 e da Resolução CVM 44/21, comunica aos seus acionistas e ao mercado em geral que foram submetidas à deliberação da Assembleia Geral Ordinária a ser realizada em 29 de abril de 2026 (“AGO 2026”) propostas relacionadas à composição atual da administração da Companhia alinhadas com o processo de sucessão da Companhia e continuidade da sua estratégia.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158212,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes de acordo com os critérios estabelecidos."
+  }
 }

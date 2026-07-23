@@ -1,21 +1,21 @@
 {
   "ticker": "HUSI11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-21T01:02:57",
+  "verificado_em": "2026-07-23T18:00:33",
   "comunicados": {
     "ids": [
-      1245983,
-      1245982
+      1262428,
+      1262427
     ],
     "datas": [
-      "13/07/2026",
-      "13/07/2026"
+      "23/07/2026",
+      "23/07/2026"
     ],
     "rotulos": [
       "Assembleia AGE",
       "Assembleia AGE"
     ],
-    "texto": "**13/07/2026 - Regulamento do HUSI Fundo de Investimento Imobiliário**\n\nO fundo foi regulamentado com detalhes sobre sua estrutura e operações. O documento define o fundo como um investimento imobiliário com objetivo de valorização e rentabilidade através da construção e locação atípica de um empreendimento hospitalar.\n\n*\"Artigo 1º. HUSI FUNDO DE INVESTIMENTO IMOBILIÁRIO, inscrito no CNPJ sob o nº 30.017.492/0001-99, doravante designado de forma abreviada “Fundo”, constituído por deliberação conjunta de uma administradora fiduciária e um gestor de recursos, conforme adiante qualificados, assim definidos como Prestadores de Serviços Essenciais, com prazo indeterminado de duração, é  um Fundo de Investimento regido pelo presente Regulamento e pelas disposições legais e regulamentares que lhe forem aplicáveis, em especial a Resolução CVM n.º 175/22 e suas alterações posteriores (“Resolução CVM 175/22”).\"*"
+    "texto": "**23/07/2026 - Revisão do Regulamento e Anexo I**\n\nO fundo HUSI11 revisou seu regulamento e anexo I, detalhando as características da Classe Única do Fundo.\n\n*Resumo:* O documento reafirma os objetivos do fundo, que é construir um empreendimento hospitalar com a locação atípica ao Locatário. A distribuição de resultados será feita no mínimo 95% das disponibilidades de caixa, podendo ser antecipada mensalmente ou reinvestida conforme critérios da administradora.\n\n*Trecho-chave:*\n\"O resultado parcial apurado segundo regime de caixa ao longo de cada semestre poderá, a critério da ADMINISTRADORA, conforme indicado pela GESTORA, ser distribuído aos Cotistas, mensalmente, até o 10º (décimo) Dia Útil do mês subsequente ao mês de apuração, a título de antecipação dos rendimentos do semestre a serem distribuídos.\" (p. 2)\n\n**Conexão com indicadores:** A revisão do regulamento e anexo I não altera diretamente os indicadores financeiros mencionados no contexto, mas reforça as práticas de distribuição de resultados e responsabilidades dos prestadores de serviços essenciais."
   },
   "modelo": "qwen2.5:7b",
   "parecer": {

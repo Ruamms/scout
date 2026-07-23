@@ -1,40 +1,7 @@
+"""Rótulos e tooltips dos gráficos SVG."""
+
 from scout import formato
-from scout.relatorio import apoio, graficos
-
-
-# --- PIX ------------------------------------------------------------------------
-
-
-def test_crc16_vetor_padrao():
-    # vetor de verificação clássico do CRC-16/CCITT-FALSE
-    assert apoio._crc16("123456789") == "29B1"
-
-
-def test_payload_pix_estrutura():
-    payload = apoio.payload_pix()
-    assert payload.startswith("000201")
-    assert "br.gov.bcb.pix" in payload
-    assert "ruamms3@gmail.com" in payload
-    assert "5802BR" in payload
-    # CRC: 6304 + 4 hexas no final, e recalculável
-    assert payload[-8:-4] == "6304"
-    assert apoio._crc16(payload[:-4]) == payload[-4:]
-
-
-def test_pagina_apoio(tmp_path):
-    caminho = apoio.salvar(tmp_path)
-    conteudo = caminho.read_text(encoding="utf-8")
-    assert caminho.name == "apoie.html"
-    assert "ruamms3@gmail.com" in conteudo
-    assert "<svg" in conteudo  # QR code
-    assert "copia-e-cola" in conteudo
-    assert f'mailto:{apoio.EMAIL_CONTATO}' in conteudo
-
-
-def test_linkedin_configurado_aparece_e_vazio_oculta(monkeypatch):
-    assert 'href="https://www.linkedin.com/in/ruan-magalhaes-sampaio/"' in apoio.gerar()
-    monkeypatch.setattr(apoio, "LINKEDIN", "")
-    assert "LinkedIn" not in apoio.gerar()
+from scout.relatorio import graficos
 
 
 # --- rótulos e tooltips dos gráficos ----------------------------------------------

@@ -1,11 +1,17 @@
 {
   "ticker": "CEGR3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:55:53",
+  "verificado_em": "2026-07-23T19:02:20",
   "comunicados": {
     "ids": [],
     "datas": [],
     "rotulos": [],
     "texto": null
+  },
+  "processos": {
+    "id": 159344,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Processos Tributários:**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 464,660,625,58\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** Ação movida pelo Fisco Federal contra a CEGR3 para anular débitos fiscais, com valor atualizado estimado em R$ 464.660.625,58.\n\n2. **Processo Trabalhista:**\n   - **Natureza:** Trabalhista\n   - **Valor envolvido:** R$ 354,442,971,68 (suspensão da contratação de serviços terceirizados)\n   - **Chance de perda:** Remota\n   - **Resumo do objeto:** Ação trabalhista movida pelo Ministério Público do Trabalho no Rio de Janeiro contra a CEGR3 para suspender a contratação de serviços terceirizados, com decisão em andamento.\n\n3. **Processos Fiscais:**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 546,122,631,13 (anulação de débitos)\n   - **Chance de perda:** Provável para o principal / Remota para multa e juros\n   - **Resumo do objeto:** Ação movida pela CEGR3 contra a União Federal para anular débitos de PIS/CONFINS, com valor atualizado estimado em R$ 546.122.631,13.\n\n4. **Processo Cível:**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 7,981,831,79 (acidente com intoxicação por gás)\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** Ação movida pelo Estado do Rio de Janeiro contra a CEGR3 para o pagamento de multa relacionada a um acidente com intoxicação por gás, com valor atualizado estimado em R$ 7,981.831,79.\n\n5. **Processo Cível:**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 6,517,026,01 (irregularidades em dutos de canalização de gás natural)\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** Ação movida pelo Estado do Rio de Janeiro contra a CEGR3 para o pagamento de multa relacionada a irregularidades em dutos de canalização de gás natural, com valor atualizado estimado em R$ 6,517.026,01.\n\n6. **Processo Cível:**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 3,619,656,34 (multa arbitrária)\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** Ação movida pelo Estado do Rio de Janeiro contra a CEGR3 para o pagamento de multa arbitrária relacionada ao plano plurianual de investimentos, com valor atualizado estimado em R$ 3,619.656,34.\n\n7. **Processo Cível:**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 2,922,739,11 (multa arbitrária)\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** Ação movida pelo Estado do Rio de Janeiro contra a CEGR3 para o pagamento de multa arbitrária relacionada ao plano plurianual de investimentos, com valor atualizado estimado em R$ 2,922.739,11.\n\n8. **Processo Cível:**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 1,533,710,16 (multa arbitrária)\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** Ação movida pelo Estado do Rio de Janeiro contra a CEGR3 para o pagamento de multa arbitrária relacionada a um acidente com morte, com valor atualizado estimado em R$ 1,533.710,16.\n\nNenhuma informação relevante foi encontrada para processos trabalhistas, ambientais ou regulatórios."
   }
 }

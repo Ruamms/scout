@@ -1,7 +1,7 @@
 {
   "ticker": "LOGG3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:34:51",
+  "verificado_em": "2026-07-23T20:12:22",
   "comunicados": {
     "ids": [
       1013900284631551661,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 29/05/2026\n\n**O QUE aconteceu:** LOG COMMERCIAL PROPERTIES E PARTICIPAÇÕES S.A. aprovou um novo Programa de Recompra de Ações.\n\n**Resumo:** A Companhia aprovou um novo programa para recompra de ações com prazo máximo de 18 meses, permitindo aquisição de até 5.058.069 ações ordinárias.\n\n**Trecho-chave:**\n\"i. a aprovação de um novo Programa de Recompra de Ações da Companhia (\"Program\") para permanência em tesouraria, cancelamento e/ou alienação, bem como para serem utilizadas no âmbito dos Planos de Outorga de Opções de Compra de Ações, sob as seguintes principais condições: (a) O prazo máximo para realização do Programa é de até 18 meses contados a partir da presente data; (b) Aquisição de até 5.058.069 (cinco milhões, cinquenta e oito mil e sessenta e nove) ações ordinárias de emissão da Companhia.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 10/06/2026\n\n**O QUE aconteceu:** LOG COMMERCIAL PROPERTIES E PARTICIPAÇÕES S.A. informou sobre a alienação de uma participação acionária relevante.\n\n**Resumo:** A Companhia recebeu notificação do Real Investor Asset Management, que passou a detentar 9,63% das ações ordinárias da empresa.\n\n**Trecho-chave:**\n\"A LOG COMMERCIAL PROPERTIES E PARTICIPAÇÕES S.A. (“Companhia”), nos termos da Resolução CVM nº 44 de 23 de agosto de 2021, comunica aos seus acionistas e ao mercado em geral, que recebeu, nesta data, correspondência do acionista Real Investor Asset Management (\"Real Investor\"), informando que sua participação em ações ordinárias emitidas pela Companhia passou a ser de 8.462.391 ações ordinárias, representando 9,63% do total de ações ordinárias emitidas pela Companhia.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 08/07/2026\n\n**O QUE aconteceu:** LOG COMMERCIAL PROPERTIES E PARTICIPAÇÕES S.A. foi reconhecida com o selo Empresa Pró-Ética 2025-2026.\n\n**Resumo:** A Companhia recebeu o selo Empresa Pró-Ética, concedido pela Controladoria-Geral da União (CGU) em parceria com o instituto Ethos, sendo a única empresa do setor de propriedades logísticas a receber o reconhecimento.\n\n**Trecho-chave:**\n\"O Selo Pró-Ética resulta da atuação conjunta dos setores público e privado para fomentar práticas empresariais mais íntegras, éticas e transparentes. A Certificação é concedida a empresas que, de forma voluntária, demonstram compromisso efetivo com a implementação de medidas de prevenção, detecção e remediação de atos relacionados à corrupção, fraude, violações socioambientais e de desrespeito aos direitos humanos.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159061,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes que possam lhe causar efeito financeiro adverso, afetar a sua operação ou impactar de maneira significativa a sua imagem."
+  }
 }

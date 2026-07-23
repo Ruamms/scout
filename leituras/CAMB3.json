@@ -1,7 +1,7 @@
 {
   "ticker": "CAMB3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:49:51",
+  "verificado_em": "2026-07-23T18:53:54",
   "comunicados": {
     "ids": [
       609250326251222769
@@ -13,6 +13,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "**Data:** 18/03/2026  \n**O QUE aconteceu:** A Tática Asset Management atingiu a posse de 5,05% das ações ordinárias da Cambuci S.A.  \n\n**Resumo:** A administradora de recursos alcançou uma participação significativa nas ações ordinárias da empresa.\n\n**Trecho-chave:**\n\"informando que atingiu 2.134.901 (dois milhões, cento e trinta e quatro mil e novecentas e uma) ações ordinárias de emissão da Cambuci S.A., representando aproximadamente 5,05% (cinco vírgula zero cinco por cento) do total de ações em circulação da companhia, com base em um total de 42.275.000 ações.\" (p. 1)\n\n**Conexão com o contexto:** Esta aquisição de ações pode impactar os indicadores de concentração acionária e potencialmente influenciar o mercado de ações da Cambuci S.A."
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

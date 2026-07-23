@@ -1,11 +1,16 @@
 {
   "ticker": "AFLT3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:19:18",
+  "verificado_em": "2026-07-23T18:10:11",
   "comunicados": {
     "ids": [],
     "datas": [],
     "rotulos": [],
     "texto": null
+  },
+  "processos": {
+    "id": 159301,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null
   }
 }

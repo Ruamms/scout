@@ -1,7 +1,7 @@
 {
   "ticker": "FRIO3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:19:33",
+  "verificado_em": "2026-07-23T19:42:55",
   "comunicados": {
     "ids": [
       666770599158602098,
@@ -17,7 +17,6 @@
     ],
     "texto": "### Comunicado ao Mercado entregue em 26/03/2026\n\n**O QUE aconteceu:** Resultados financeiros do ano de 2025 e quarto trimestre (4T25).\n\n**Resumo:** A receita líquida atingiu um recorde de R$ 2,403 bilhões em 2025, com crescimento de 9,8% na comparação anual. O lucro bruto aumentou para R$ 423,3 milhões (17,6% de margem), e o EBITDA também atingiu um recorde de R$ 274,7 milhões.\n\n**Trecho-chave:**\n\"Receita líquida recorde de R$ 2,403 bilhões no ano de 2025 (+9,8% vs. R$ 2,189 bilhões em 2024). No 4T25: R$ 557,2 milhões vs. R$ 614,7 milhões no 4T24.\" (p. 2)\n\n---\n\n### Comunicado ao Mercado entregue em 21/05/2026\n\n**O QUE aconteceu:** Resultados financeiros do primeiro trimestre de 2026 (1T26).\n\n**Resumo:** A receita líquida aumentou para R$ 606,7 milhões com crescimento de 11,6% em comparação ao mesmo período de 2025. O lucro bruto foi de R$ 116,9 milhões (19,3% de margem), e o EBITDA atingiu R$ 78,1 milhões com uma margem de 12,9%.\n\n**Trecho-chave:**\n\"Receita líquida de R$ 606,7 milhões, crescimento de 11,6% na comparação anual, refletindo aumento de volumes em todas as regiões, com destaque para as Américas.\" (p. 2)\n\n---\n\n### Conexão aos Indicadores do Contexto:\n\n- **Receita Líquida:** O crescimento constante da receita líquida nos dois comunicados reflete a estabilidade e o fortalecimento das operações em diferentes regiões.\n- **Lucro Bruto e EBITDA:** A melhoria contínua no lucro bruto e EBITDA indica uma gestão eficiente e aumento na rentabilidade, que são indicadores positivos para os investidores."
   },
-  "modelo": "qwen2.5:7b",
   "parecer": {
     "id": 1035339376162812981,
     "data_entrega": "20/03/2026 00:00",
@@ -26,5 +25,11 @@
     "grave": false,
     "continuidade": false,
     "trecho": ""
+  },
+  "processos": {
+    "id": 158292,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Tributário** - R$261,5 milhões (provável) - \"A Companhia enfrenta processos tributários com probabilidade de perda provável no valor total de R$261,5 milhões.\"\n\n2. **Tributário** - R$178,1 milhões (possível) - \"Em 14 de fevereiro de 2025, a Companhia foi notificada de dois novos autos de infração no valor total atualizado de R$135,1 milhões.\"\n\n3. **Tributário** - R$101,2 milhões (possível) - \"Em outubro de 2021, a Companhia recebeu dois autos de infração relacionados à aquisição de performances para liquidação de financiamentos à exportação.\"\n\n4. **Tributário** - R$91,3 milhões (possível) - \"Em 19 de novembro de 2025, a Companhia foi notificada de um auto de infração para cobrança de débitos de ICMS sobre operações de exportação.\"\n\n5. **Trabalhista** - R$12,1 milhões (provável) - \"A Companhia mantinha provisões para processos trabalhistas no montante de R$12,1 milhões.\"\n\n6. **Cível** - R$24,9 milhões (possível) - \"A Companhia mantinha provisões para processos cíveis no montante de R$24,9 milhões.\""
   }
 }

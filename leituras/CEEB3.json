@@ -1,7 +1,7 @@
 {
   "ticker": "CEEB3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:55:28",
+  "verificado_em": "2026-07-23T19:00:31",
   "comunicados": {
     "ids": [
       278289996555717445,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 11/05/2026\n\n**O que aconteceu:** A Companhia de Eletricidade do Estado da Bahia - COELBA elegeram a Sra. Fabiana Carvalho Lopes como Diretora Presidente.\n\n**Resumo:** A companhia nomeou uma nova diretora para substituir o Sr. Thiago Freire Guth, com mandato de 3 anos.\n\n**Trecho-chave:**\n\"A Companhia aprovou, nesta data, a eleição da Sra. Fabiana Carvalho Lopes para o cargo de Diretora Presidente da Companhia, em substituição ao Sr. Thiago Freire Guth.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 08/05/2026\n\n**O que aconteceu:** A Companhia de Eletricidade do Estado da Bahia - COELBA anunciou planos para investimentos entre 2026 e 2030.\n\n**Resumo:** A companhia planeja investir R$ 25 bilhões em expansão e reforço das redes de distribuição, visando suportar o crescimento econômico da área de concessão.\n\n**Trecho-chave:**\n\"A Neoenergia Coelba pretende investir entre os anos de 2026 e 2030 um montante bruto de cerca de R$ 25 bilhões.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 08/05/2026\n\n**O que aconteceu:** A Companhia de Eletricidade do Estado da Bahia - COELBA assinou um Termo Aditivo de Prorrogação da Concessão.\n\n**Resumo:** A concessão foi prorrogada por 30 anos, até agosto de 2057, sem onerosidades para a companhia.\n\n**Trecho-chave:**\n\"A Neoenergia Coelba assinou o Termo Aditivo de Prorrogação da Concessão da Companhia, sem qualquer onerosidade, por um período adicional de 30 anos.\" (p. 1)\n\n**Conexão com indicadores do contexto:** O prazo estendido da concessão alinha-se com a estratégia de investimento em redes de distribuição de eletricidade pela Neoenergia, assegurando rentabilidade e qualidade no serviço para seus clientes."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159302,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Processo 0037100-68.2009.5.05.0661 (Trabalhista)**\n   - **Natureza:** Trabalhista\n   - **Valor envolvido:** R$ 359.000,05\n   - **Chance de perda:** Provável\n   - **Resumo:** Ação Civil Pública contra Neoenergia Coelba e seus diretores, relativa a um acidente fatal em 2006.\n\n2. **Processo 001800-30.2007.4.01.3306 (Cível)**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 1.842.481,68 em maio de 2026\n   - **Chance de perda:** Possível\n   - **Resumo:** Ação civil pública proposta pelo Ministério Público Federal para proteger o interesse indígena.\n\n3. **Processo 0000931-73.2013.805.0182 (Cível)**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 5.070.481,41\n   - **Chance de perda:** Possível\n   - **Resumo:** Ação civil pública para regularização do fornecimento de energia em Nova Viçosa.\n\n4. **Processo nº 0028104-40.2014.4.01.3300 (Cível)**\n   - **Natureza:** Cível\n   - **Valor envolvido:** Ilíquido\n   - **Chance de perda:** Provável\n   - **Resumo:** Ação civil pública do Ministério Público Federal contra a possibilidade de suspensão do fornecimento em unidades de saúde.\n\n5. **Processo nº 8000124-54.2015.8.05.0049 (Cível)**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 220.259,68\n   - **Chance de perda:** Possível\n   - **Resumo:** Ação civil pública do Município de Capim Grosso contra a Neoenergia Coelba por má prestação de serviço.\n\n6. **Processo nº 0006084-84.2016.4.01.3300 (Cível)**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 92.731,34 em maio de 2026\n   - **Chance de perda:** Possível\n   - **Resumo:** Ação civil pública do Ministério Público Federal contra a colocação indevida de medidores nos imóveis tombados em Cachoeira/BA."
+  }
 }

@@ -1,7 +1,7 @@
 {
   "ticker": "PATI3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:55:05",
+  "verificado_em": "2026-07-23T20:45:02",
   "comunicados": {
     "ids": [
       158737696531167817,
@@ -17,5 +17,9 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 28/04/2026\n\n**O que aconteceu:** A Companhia Aberta aprovou a distribuição de dividendos.\n\n**Resumo:** A assembleia geral ordinária realizada em 28/04/2026 aprovou a distribuição de R$ 11.843.272,27 em dividendos, equivalentes a R$ 1,8603928214 por ação preferencial e R$ 0,4337452113 por ação ordinária.\n\n**Trecho-chave:** \"A base para o pagamento será a posição acionária de 28/04/2026, sendo que, de 29/04/2026 em diante as ações da Companhia passarão a ser negociadas “ex” dividendos.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 15/10/2025\n\n**O que aconteceu:** A Companhia Aberta distribuiu dividendos e aprovou uma distribuição extraordinária.\n\n**Resumo:** Na assembleia geral ordinária realizada em 24/04/2025, foram aprovados dividendos no valor total de R$ 20.106.525,24, equivalentes a R$ 0,7914352867 por ação ordinária e R$ 1,9282926301 por ação preferencial. Além disso, foi aprovada uma distribuição extraordinária de R$ 45.000.000,00, equivalente a R$ 1,9290026791 para as ações ordinárias e R$ 0,79214533357 para as preferenciais.\n\n**Trecho-chave:** \"Os dividendos extraordinários serão pagos aos acionistas no dia 29 de outubro de 2025 e farão jus aos dividendos os acionistas que constarem na base acionária da companhia no dia 20 de outubro de 2025.\"\n\n**Conexão com o contexto:** A distribuição extraordinária aprovada em 15/10/2025 garantiu um dividendo igualitário entre as ações ordinárias e preferenciais, refletindo uma estratégia para manter a paridade de dividendos entre os tipos de ação."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158208,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null
+  }
 }

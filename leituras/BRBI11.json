@@ -1,7 +1,7 @@
 {
   "ticker": "BRBI11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:46:20",
+  "verificado_em": "2026-07-23T18:49:55",
   "comunicados": {
     "ids": [
       969958741469304919,
@@ -17,7 +17,6 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O QUE aconteceu:** O BR Partners Banco de Investimentos S/A divulgou seus resultados do primeiro trimestre de 2026 (1T26).\n\n**Resumo:** A receita total e a receita com clientes registraram crescimento em comparação ao mesmo período do ano anterior, apesar da diminuição no lucro líquido. O ROAE também foi destaque positivo.\n\n**Trecho-chave:**\n\"Receita Total1\n1T26\nR$134,8 mi\n( +2,7% vs. 4T25)\n( +5,7% vs. 1T25) \nReceita com Clientes2\n1T26\nR$106,7 mi\n( +0,9% vs. 4T25)\n( +7,7% vs. 1T25) \nLucro Líquido\n1T26\nR$37,7 mi\n( -15,3% vs. 4T25)\n( -12,5% vs. 1T25) \nROAE3\n1T26\n19,1%\"\n\n### COMUNICADO AO MERCADO entregue em 09/11/2025\n\n**O QUE aconteceu:** O BR Partners Banco de Investimentos S/A divulgou seus resultados do terceiro trimestre de 2025 (3T25) e acumulado no primeiro semestre de 2025 (9M25).\n\n**Resumo:** Houve uma resiliência na receita total, lucro líquido e rentabilidade, mesmo com a continuidade da política monetária restritiva. As áreas de investimento banking e mercado de capitais apresentaram estabilidade.\n\n**Trecho-chave:**\n\"Receita Total1\n3T25\nR$133,3 mi\n( -4.3% vs. 2T25)\n(-15.5% vs. 3T24) \n9M25\nR$400,1 mi\n( -8.5% vs. 9M24)\nLucro Líquido\n3T25\nR$42,2 mi\n(-6,6% vs. 2T25)\n(-15,8% vs. 3T24) \n9M25\nR$130,5 mi\n(-13,9% vs. 9M24)\"\n\n**Conexão com o contexto:** O crescimento da receita total e a estabilidade nas áreas de negócio indicam uma resiliência operacional do fundo imobiliário, apesar das dificuldades macroeconômicas mencionadas no comunicado mais recente."
   },
-  "modelo": "qwen2.5:7b",
   "parecer": {
     "id": 792214438458552390,
     "data_entrega": "05/02/2026 00:00",
@@ -26,5 +25,11 @@
     "grave": false,
     "continuidade": false,
     "trecho": ""
+  },
+  "processos": {
+    "id": 158394,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Cível** - R$ 808.780,00 - Provável - O processo envolve uma reclamação trabalhista contra a BR Partners Banco de Investimento S.A., Phibra Fort Serviços e Eventos Ltda. e Edifício Brasília Magestic, relacionada à condenação ao pagamento de diferenças de FGTS, verbas rescisórias, horas extras e reflexos, férias acrescidas de 1/3, multa do artigo 477 da CLT, indenização por danos morais, ressarcimento de descontos indevidos, honorários de sucumbência e justiça gratuita.\n\n2. **Trabalhista** - R$ 527.970,00 - Provável - O processo envolve uma reclamação trabalhista contra a BR Partners Banco de Investimento S.A., relacionada ao pagamento de horas extras e seus reflexos, férias laboradas, justiça gratuita e honorários advocatícios."
   }
 }

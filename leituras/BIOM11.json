@@ -1,7 +1,7 @@
 {
   "ticker": "BIOM11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:40:24",
+  "verificado_em": "2026-07-23T18:39:43",
   "comunicados": {
     "ids": [
       1028651223291639323,
@@ -19,6 +19,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### Fato Relevante entregue em 09/06/2026\n\n**O que aconteceu:** A BIOMM S.A. aprovou a adoção de práticas de divulgação de projeções financeiras gerenciais (guidance) e estabeleceu um guidance de EBITDA para o exercício social de 2026.\n\n**Resumo:** A companhia decidiu incluir disciplina específica sobre projeções financeiras no seu plano de divulgação e divulgou um guidance de EBITDA para 2026 entre R$90 milhões a R$100 milhões, com base em várias premissas.\n\n**Trecho-chave:** \"A Companhia divulga o seguinte guidance de EBITDA para o exercício social encerrado em 31 de dezembro de 2026: EBITDA 2026 (Guidance) | R$90 milhões — R$100 milhões\" (p. 1).\n\n---\n\n### Comunicado ao Mercado entregue em 15/05/2026\n\n**O que aconteceu:** A BIOMM S.A. apresentou os resultados financeiros do primeiro trimestre de 2026, destacando a evolução do market share da empresa no mercado de insulina glargina.\n\n**Resumo:** Os resultados mostraram uma expansão significativa na participação de mercado da BIOMM em comparação com concorrentes como Sanofi e Lilly. A empresa também apresentou dados sobre a distribuição de doses no mercado privado de enoxaparina.\n\n**Trecho-chave:** \"Mercado +58% / BIOMM +280%\" (p. 4) e \"Mercado -12% / BIOMM -32%\" (p. 4).\n\n---\n\n### Comunicado ao Mercado entregue em 04/05/2026\n\n**O que aconteceu:** A BIOMM S.A. informou sobre o aumento da participação acionária relevante do BTG Pactual Gestão, que chegou a 12,203% das ações ordinárias emitidas pela companhia.\n\n**Resumo:** O BTGP Gestão atingiu uma posição significativa de ações sem intenção de alterar a composição do controle ou estrutura administrativa da BIOMM S.A.\n\n**Trecho-chave:** \"recebeu correspondência do BTG Pactual Gestão e Consultoria de Investimento LTDA. informando que atingiu posição de 16.700.000 de ações ordinárias emitidas pela Biomm, equivalendo a, aproximadamente, 12,203% do total de ações ordinárias emitidas pela Companhia\" (p. 1)."
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

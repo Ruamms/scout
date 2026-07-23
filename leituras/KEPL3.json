@@ -1,7 +1,7 @@
 {
   "ticker": "KEPL3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:29:32",
+  "verificado_em": "2026-07-23T20:09:00",
   "comunicados": {
     "ids": [
       619633276375498322,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 22/05/2026\n\n**O QUE aconteceu:** A Kepler Weber S/A efetivou a compra de 17.924 ações ordinárias da Procer, aumentando sua participação no capital social para 62,6%.\n\n**Resumo:** A Kepler Weber concluiu a aquisição de ações da Procer, reforçando sua posição na empresa.\n\n**Trecho-chave:**\n\"concluiu nesta data de dois dos acionistas fundadores da Procer Automação S/A (“Procer”), a aquisição de 17.924 (dezessete mil e novecentos e vinte e quatro) ações ordinárias de emissão desta controlada, aumentando, portanto, a sua participação no capital social nesta sociedade, chegando em 62,6% nesta data.\"\n\n### COMUNICADO AO MERCADO entregue em 06/07/2026\n\n**O QUE aconteceu:** Um executivo da Kepler Weber S/A participou de uma entrevista online sobre a atuação da empresa no mercado.\n\n**Resumo:** O Diretor Financeiro e de Relações com Investidores, Renato Arroyo, participou de uma entrevista na MRT News sobre a performance da Kepler Weber.\n\n**Trecho-chave:**\n\"Evento: Entrevista | MRT News.\"\n\"Executivo: Renato Arroyo – Diretor Financeiro e de Relações com Investidores.\"\n\n### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O QUE aconteceu:** Um executivo da Kepler Weber S/A participou de uma entrevista online sobre a atuação da empresa no mercado de armazenagem de grãos.\n\n**Resumo:** O Diretor Presidente, Bernardo Osborn Gomes Nogueira, participou de uma entrevista na CNN Money sobre o desempenho da Kepler Weber no mercado de armazenagem de grãos.\n\n**Trecho-chave:**\n\"Evento: Entrevista | CNN Money.\"\n\"Executivo: Bernardo Nogueira – Diretor Presidente.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159071,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Cível - R$ 50,328,863,57 (provável)**\n   * \"Trata-se de ação ordinária proposta pela CEEE, em face da KEPLER e demais empresas do Consórcio Pedras Altas, visando à condenação dos então réus a indenizarem a CEEE por perdas e danos, em razão do alegado atraso no adimplemento de obrigações contratuais.\"\n\n2. **Tributário - R$ 109,000 (provável)**\n   * \"Trata-se de um dos processos tributários com provisão constituída, representando um valor total provisionado de R$ 109 mil.\"\n\n3. **Cível - R$ 6,218,259,21 (provável)**\n   * \"Trata-se da segunda instância de uma ação ordinária proposta pela CEEE, que julgou provável a perda com um valor provisionado de R$ 6.218.259,21.\"\n\n4. **Tributário - R$ 7,345,000 (provável)**\n   * \"Trata-se do total provisionado para os processos tributários em 2024, representando um valor de R$ 7.345 milhares.\"\n\n5. **Cível - US$ 9,156,974,50 (remota)**\n   * \"Indenização cível por danos materiais e morais em razão da morte do trabalhador Juan Silva, irmão da autora, em decorrência de colapso de um silo.\"\n\n6. **Cível - R$ 108,769,607,42 (remota)**\n   * \"Ação de cobrança proposta pela CONAB contra a KEPLER WEBER e outras empresas, envolvendo danos emergentes, lucros cessantes e dano moral.\"\n\n7. **Trabalhista - R$ 363,000 (remota)**\n   * \"Representa o valor total provisionado para os processos trabalhistas em 2024.\"\n\n8. **Tributário - R$ 12,575,000 (remota)**\n   * \"Trata-se do total provisionado para os processos tributários em 2025.\""
+  }
 }

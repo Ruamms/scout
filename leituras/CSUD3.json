@@ -1,7 +1,7 @@
 {
   "ticker": "CSUD3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:59:54",
+  "verificado_em": "2026-07-23T19:17:15",
   "comunicados": {
     "ids": [
       576018759967772203,
@@ -17,5 +17,10 @@
     ],
     "texto": "### O QUE aconteceu em 01/07/2026\n\nA CSU Digital S.A. elegeram o Sr. Leonardo Paes de Barros De Cara como Diretor Executivo de Relações com Investidores e M&A, substituindo o Sr. André Lapola.\n\n**Resumo:** A empresa nomeou um novo executivo para a área de relações com investidores e M&A, enquanto outro passa a se dedicar exclusivamente ao cargo de CFO.\n\n**Trecho-chave:**\n\"O Sr. Leonardo é bacharel em Direito pela Universidade Presbiteriana Mackenzie e possui MBA pela Tuck School of Business at Dartmouth. Executivo com mais de 16 anos de experiência em corporate finance, investment banking e mercado de capitais...\"\n\n### O QUE aconteceu em 11/05/2026\n\nA CSU Digital S.A. informou que a Real Investor Asset Management reduziu sua participação acionária na empresa para aproximadamente 2,80% das ações ordinárias.\n\n**Resumo:** A Real Investor vendeu ações da CSU, diminuindo seu controle na companhia.\n\n**Trecho-chave:**\n\"A Real Investor, gestora de fundos de investimento, inscrita no CNPJ nº 11.570.951/0001-12, passou a deter aproximadamente 2,80% das ações ordinárias, totalizando 1.161.500 ações.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159526,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Cível**  \n   - **Valor:** R$ 813 milhões (atualizados)  \n   - **Chance de perda:** Possível  \n   - **Resumo:** Trata-se de um contrato firmado em 2005 entre a CSU Digital S.A. e a Caixa Econômica Federal, onde a Companhia pleiteia ressarcimento por serviços não reconhecidos.\n\n2. **Cível**  \n   - **Valor:** R$ 127 milhões (atualizados)  \n   - **Chance de perda:** Remota  \n   - **Resumo:** Processos em que a Caixa Econômica Federal pleiteia indenização por supostos prejuízos causados na execução do contrato, com julgamentos parciais e extinção sem resolução de mérito."
+  }
 }

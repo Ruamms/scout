@@ -1630,3 +1630,242 @@
 2026-07-23 00:09:59	--- 2a passada automatica em 4 fundos com timeout de rede
 2026-07-23 00:10:16	--- lote iniciado · modelo qwen2.5:7b · 4 fundos na fila
 2026-07-23 00:10:41	--- lote encerrado · 0 lidos, 4 em dia/sem relatório, 0 erros
+2026-07-23 17:44:38	--- lote iniciado · modelo qwen2.5:7b · 1052 fundos na fila
+2026-07-23 17:46:08	PBLV11	erro	The read operation timed out
+2026-07-23 17:46:24	CHLL11	erro	The read operation timed out
+2026-07-23 17:47:32	BRRI11	erro	The read operation timed out
+2026-07-23 17:48:41	BRCO11	lido	69s
+2026-07-23 17:48:41	MCLO11	erro	The read operation timed out
+2026-07-23 17:48:41	VILG11	erro	The read operation timed out
+2026-07-23 17:49:37	VGIP11	erro	The read operation timed out
+2026-07-23 17:50:20	FATN11	lido	39s
+2026-07-23 17:50:31	BCRI11	erro	The read operation timed out
+2026-07-23 17:51:27	PRPY11	erro	The read operation timed out
+2026-07-23 17:51:56	VRTM11	erro	The read operation timed out
+2026-07-23 17:53:11	LASC11	erro	The read operation timed out
+2026-07-23 17:53:18	AZPL11	erro	The read operation timed out
+2026-07-23 17:54:06	MANA11	lido	48s
+2026-07-23 17:55:18	XPSF11	lido	72s
+2026-07-23 17:55:18	BETW11	erro	The read operation timed out
+2026-07-23 17:55:36	PCIV11	erro	The read operation timed out
+2026-07-23 17:56:17	CLSM11	erro	The read operation timed out
+2026-07-23 17:57:06	BLCA11	erro	The read operation timed out
+2026-07-23 17:57:06	FIGS11	erro	The read operation timed out
+2026-07-23 17:57:46	PMEP11	erro	The read operation timed out
+2026-07-23 17:58:26	SIGR11	erro	The read operation timed out
+2026-07-23 17:58:40	ASMT11	erro	The read operation timed out
+2026-07-23 18:00:33	HUSI11	sem-relatorio-fatos-lidos	75s
+2026-07-23 18:00:33	BTSG11	erro	The read operation timed out
+2026-07-23 18:00:33	RSPD11	erro	The read operation timed out
+2026-07-23 18:01:31	JPAU11	erro	The read operation timed out
+2026-07-23 18:01:34	MAXR11	erro	The read operation timed out
+2026-07-23 18:01:34	DVLP11	erro	HTTP Error 520: <none>
+2026-07-23 18:01:57	DVFF11	erro	The read operation timed out
+2026-07-23 18:04:04	APXR11	erro	The read operation timed out
+2026-07-23 18:04:14	GCOI11	erro	The read operation timed out
+2026-07-23 18:04:50	PATL11	erro	The read operation timed out
+2026-07-23 18:06:53	BULZ11	sem-relatorio-fatos-lidos	37s
+2026-07-23 18:08:35	ABCB4	sem-relatorio
+2026-07-23 18:09:24	ABEV3	sem-relatorio
+2026-07-23 18:10:11	AERI3	sem-relatorio
+2026-07-23 18:10:25	AFLT3	sem-relatorio
+2026-07-23 18:11:53	AGRO3	sem-relatorio
+2026-07-23 18:12:00	AHEB3	sem-relatorio
+2026-07-23 18:12:00	ALLD3	sem-relatorio
+2026-07-23 18:13:08	ALOS3	sem-relatorio
+2026-07-23 18:13:55	ALPA3	sem-relatorio
+2026-07-23 18:14:50	ALPK3	sem-relatorio
+2026-07-23 18:16:01	ALUP11	sem-relatorio
+2026-07-23 18:17:05	AMAR3	sem-relatorio
+2026-07-23 18:17:40	AMBP3	sem-relatorio
+2026-07-23 18:19:38	AMER11	sem-relatorio
+2026-07-23 18:20:20	AMOB3	sem-relatorio
+2026-07-23 18:21:08	ANIM3	sem-relatorio
+2026-07-23 18:21:08	ARML3	sem-relatorio
+2026-07-23 18:22:22	ARND3	sem-relatorio
+2026-07-23 18:22:22	ASAI3	sem-relatorio
+2026-07-23 18:22:38	ATED3	sem-relatorio
+2026-07-23 18:23:18	AUAU3	sem-relatorio
+2026-07-23 18:24:31	AURE3	sem-relatorio
+2026-07-23 18:24:57	AVLL11	sem-relatorio
+2026-07-23 18:26:01	AXIA3	sem-relatorio
+2026-07-23 18:26:11	AZEV11	sem-relatorio
+2026-07-23 18:26:18	AZTE11	sem-relatorio
+2026-07-23 18:27:25	AZUL3	sem-relatorio
+2026-07-23 18:27:25	AZZA3	sem-relatorio
+2026-07-23 18:27:25	B1003	sem-relatorio
+2026-07-23 18:28:56	B3SA3	sem-relatorio
+2026-07-23 18:29:14	BALM3	sem-relatorio
+2026-07-23 18:29:25	BAUH3	sem-relatorio
+2026-07-23 18:30:48	BAZA3	sem-relatorio
+2026-07-23 18:32:25	BBAS11	sem-relatorio
+2026-07-23 18:33:48	BBDC3	sem-relatorio
+2026-07-23 18:34:10	BBSE3	sem-relatorio
+2026-07-23 18:35:36	BEEF11	sem-relatorio
+2026-07-23 18:36:56	BEES3	sem-relatorio
+2026-07-23 18:38:02	BGIP3	sem-relatorio
+2026-07-23 18:39:29	BHIA3	sem-relatorio
+2026-07-23 18:39:43	BIED3	sem-relatorio
+2026-07-23 18:39:43	BIOM11	sem-relatorio
+2026-07-23 18:40:58	BLAU3	sem-relatorio
+2026-07-23 18:42:58	BMEB3	sem-relatorio
+2026-07-23 18:44:10	BMGB4	sem-relatorio
+2026-07-23 18:44:11	BMIN3	sem-relatorio
+2026-07-23 18:44:39	BMOB3	sem-relatorio
+2026-07-23 18:45:27	BNBR3	sem-relatorio
+2026-07-23 18:46:48	BPAC11	sem-relatorio
+2026-07-23 18:48:10	BPAR3	sem-relatorio
+2026-07-23 18:48:21	BRAP3	sem-relatorio
+2026-07-23 18:49:54	BRAV3	sem-relatorio
+2026-07-23 18:50:16	BRBI11	sem-relatorio
+2026-07-23 18:51:45	BRKM3	sem-relatorio
+2026-07-23 18:52:27	BRSR3	sem-relatorio
+2026-07-23 18:53:32	BRST3	sem-relatorio
+2026-07-23 18:53:54	CALI11	sem-relatorio
+2026-07-23 18:53:55	CAMB3	sem-relatorio
+2026-07-23 18:55:34	CAML3	sem-relatorio
+2026-07-23 18:55:42	CASH3	sem-relatorio
+2026-07-23 18:57:03	CBAV3	sem-relatorio
+2026-07-23 18:58:23	CBEE3	sem-relatorio
+2026-07-23 18:59:29	CEAB3	sem-relatorio
+2026-07-23 19:00:16	CEBR3	sem-relatorio
+2026-07-23 19:00:31	CEDO3	sem-relatorio
+2026-07-23 19:01:36	CEEB3	sem-relatorio
+2026-07-23 19:02:20	CEED3	sem-relatorio
+2026-07-23 19:03:42	CEGR3	sem-relatorio
+2026-07-23 19:05:04	CGAS3	sem-relatorio
+2026-07-23 19:05:24	CGRA3	sem-relatorio
+2026-07-23 19:05:24	CLSC3	sem-relatorio
+2026-07-23 19:06:44	CMIG3	sem-relatorio
+2026-07-23 19:07:45	CMIN3	sem-relatorio
+2026-07-23 19:09:05	COCE3	sem-relatorio
+2026-07-23 19:09:49	COGN3	sem-relatorio
+2026-07-23 19:10:56	CPFE3	sem-relatorio
+2026-07-23 19:12:08	CPLE3	sem-relatorio
+2026-07-23 19:12:08	CRPG3	sem-relatorio
+2026-07-23 19:13:10	CSAN3	sem-relatorio
+2026-07-23 19:14:34	CSED3	sem-relatorio
+2026-07-23 19:15:43	CSMG3	sem-relatorio
+2026-07-23 19:17:15	CSNA3	sem-relatorio
+2026-07-23 19:17:39	CSUD3	sem-relatorio
+2026-07-23 19:17:40	CTKA3	sem-relatorio
+2026-07-23 19:18:57	CURY3	sem-relatorio
+2026-07-23 19:20:29	CVCB3	sem-relatorio
+2026-07-23 19:20:42	CXSE3	sem-relatorio
+2026-07-23 19:20:47	CYRE3	sem-relatorio
+2026-07-23 19:20:47	DASA3	sem-relatorio
+2026-07-23 19:21:25	DESK3	sem-relatorio
+2026-07-23 19:22:07	DEXP3	sem-relatorio
+2026-07-23 19:23:05	DIRR3	sem-relatorio
+2026-07-23 19:23:45	DMVF3	sem-relatorio
+2026-07-23 19:24:14	DOHL3	sem-relatorio
+2026-07-23 19:24:14	DOTZ3	sem-relatorio
+2026-07-23 19:24:22	DTCY3	sem-relatorio
+2026-07-23 19:25:55	DXCO3	sem-relatorio
+2026-07-23 19:26:11	EALT3	sem-relatorio
+2026-07-23 19:26:11	ECOM3	sem-relatorio
+2026-07-23 19:27:23	ECOR3	sem-relatorio
+2026-07-23 19:27:34	EGGY3	sem-relatorio
+2026-07-23 19:27:34	EGIE3	sem-relatorio
+2026-07-23 19:29:07	EKTR3	sem-relatorio
+2026-07-23 19:29:07	EMAE3	sem-relatorio
+2026-07-23 19:29:22	EMBJ3	sem-relatorio
+2026-07-23 19:30:12	ENEV3	sem-relatorio
+2026-07-23 19:30:12	ENGI11	sem-relatorio
+2026-07-23 19:31:27	ENJU3	sem-relatorio
+2026-07-23 19:32:33	ENMT3	sem-relatorio
+2026-07-23 19:32:36	EPAR3	sem-relatorio
+2026-07-23 19:33:23	EQPA3	sem-relatorio
+2026-07-23 19:34:34	EQTL3	sem-relatorio
+2026-07-23 19:34:34	ESPA3	sem-relatorio
+2026-07-23 19:35:58	ETER3	sem-relatorio
+2026-07-23 19:37:00	EUCA3	sem-relatorio
+2026-07-23 19:37:07	EVEN3	sem-relatorio
+2026-07-23 19:38:16	EZTC3	sem-relatorio
+2026-07-23 19:39:20	FESA3	sem-relatorio
+2026-07-23 19:40:04	FHER3	sem-relatorio
+2026-07-23 19:40:49	FIEI3	sem-relatorio
+2026-07-23 19:41:49	FIQE3	sem-relatorio
+2026-07-23 19:42:09	FLRY3	sem-relatorio
+2026-07-23 19:42:55	FRAS3	sem-relatorio
+2026-07-23 19:43:23	FRIO3	sem-relatorio
+2026-07-23 19:44:14	GEPA3	sem-relatorio
+2026-07-23 19:45:14	GFSA3	sem-relatorio
+2026-07-23 19:46:05	GGBR3	sem-relatorio
+2026-07-23 19:47:12	GGPS3	sem-relatorio
+2026-07-23 19:48:52	GMAT3	sem-relatorio
+2026-07-23 19:48:52	GOAU3	sem-relatorio
+2026-07-23 19:49:10	GPAR3	sem-relatorio
+2026-07-23 19:49:59	GRND3	sem-relatorio
+2026-07-23 19:49:59	GSHP3	sem-relatorio
+2026-07-23 19:49:59	HAGA3	sem-relatorio
+2026-07-23 19:51:11	HAPV3	sem-relatorio
+2026-07-23 19:52:09	HBOR3	sem-relatorio
+2026-07-23 19:52:09	HBRE3	sem-relatorio
+2026-07-23 19:53:24	HBSA3	sem-relatorio
+2026-07-23 19:54:28	HBTS3	sem-relatorio
+2026-07-23 19:54:37	HETA3	sem-relatorio
+2026-07-23 19:55:28	HYPE3	sem-relatorio
+2026-07-23 19:56:40	IFCM3	sem-relatorio
+2026-07-23 19:57:53	IGTI11	sem-relatorio
+2026-07-23 19:57:53	INEP3	sem-relatorio
+2026-07-23 19:59:15	INTB3	sem-relatorio
+2026-07-23 20:00:39	IRBR3	sem-relatorio
+2026-07-23 20:01:50	ISAE3	sem-relatorio
+2026-07-23 20:02:48	ITSA3	sem-relatorio
+2026-07-23 20:04:13	ITUB3	sem-relatorio
+2026-07-23 20:05:54	JALL3	sem-relatorio
+2026-07-23 20:07:23	JHSF3	sem-relatorio
+2026-07-23 20:09:00	JOPA3	sem-relatorio
+2026-07-23 20:09:00	JSLG3	sem-relatorio
+2026-07-23 20:09:40	KEPL3	sem-relatorio
+2026-07-23 20:10:57	KLBN11	sem-relatorio
+2026-07-23 20:10:57	LAND3	sem-relatorio
+2026-07-23 20:11:02	LAVV3	sem-relatorio
+2026-07-23 20:11:09	LEVE3	sem-relatorio
+2026-07-23 20:12:08	LIGT3	sem-relatorio
+2026-07-23 20:12:22	LJQQ3	sem-relatorio
+2026-07-23 20:12:38	LOGG3	sem-relatorio
+2026-07-23 20:13:56	LOGN3	sem-relatorio
+2026-07-23 20:13:57	LPSB3	sem-relatorio
+2026-07-23 20:15:02	LREN3	sem-relatorio
+2026-07-23 20:15:21	LUPA3	sem-relatorio
+2026-07-23 20:16:19	LUXM3	sem-relatorio
+2026-07-23 20:16:19	LWSA3	sem-relatorio
+2026-07-23 20:16:28	MAPT3	sem-relatorio
+2026-07-23 20:17:59	MATD3	sem-relatorio
+2026-07-23 20:19:38	MBRF3	sem-relatorio
+2026-07-23 20:19:38	MDIA3	sem-relatorio
+2026-07-23 20:20:39	MDNE3	sem-relatorio
+2026-07-23 20:21:31	MEAL3	sem-relatorio
+2026-07-23 20:22:37	MELK3	sem-relatorio
+2026-07-23 20:22:43	MGEL3	sem-relatorio
+2026-07-23 20:23:59	MGLU3	sem-relatorio
+2026-07-23 20:25:18	MILS3	sem-relatorio
+2026-07-23 20:26:37	MLAS3	sem-relatorio
+2026-07-23 20:27:10	MNDL3	sem-relatorio
+2026-07-23 20:27:10	MNPR3	sem-relatorio
+2026-07-23 20:28:25	MOTV3	sem-relatorio
+2026-07-23 20:29:53	MOVI3	sem-relatorio
+2026-07-23 20:31:31	MRVE3	sem-relatorio
+2026-07-23 20:33:00	MSPA3	sem-relatorio
+2026-07-23 20:33:12	MTRE3	sem-relatorio
+2026-07-23 20:33:28	MTSA3	sem-relatorio
+2026-07-23 20:35:32	MULT3	sem-relatorio
+2026-07-23 20:35:50	MWET3	sem-relatorio
+2026-07-23 20:36:35	MYPK3	sem-relatorio
+2026-07-23 20:38:07	NATU3	sem-relatorio
+2026-07-23 20:38:30	NORD3	sem-relatorio
+2026-07-23 20:38:30	NUTR3	sem-relatorio
+2026-07-23 20:38:46	OBTC3	sem-relatorio
+2026-07-23 20:39:58	OFSA3	sem-relatorio
+2026-07-23 20:41:20	ONCO11	sem-relatorio
+2026-07-23 20:42:48	OPCT3	sem-relatorio
+2026-07-23 20:42:48	ORVR11	sem-relatorio
+2026-07-23 20:43:58	OSXB3	sem-relatorio
+2026-07-23 20:45:02	PASS3	sem-relatorio
+2026-07-23 20:45:05	PATI3	sem-relatorio
+2026-07-23 20:46:14	PCAR3	sem-relatorio
+2026-07-23 20:46:14	PDGR3	sem-relatorio
+2026-07-23 20:47:47	PDTC3	sem-relatorio
+2026-07-23 20:47:48	PEAB3	sem-relatorio

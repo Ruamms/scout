@@ -1,7 +1,7 @@
 {
   "ticker": "ENEV3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T17:33:21",
+  "verificado_em": "2026-07-23T19:29:22",
   "comunicados": {
     "ids": [
       488043532123824818,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 25/06/2026\n\n**O QUE aconteceu:** A ENEVA S.A. aprovou um novo Programa de Recompra de Ações.\n\n**Resumo:** A companhia anunciou o encerramento do Programa de Recompra 2025 e a implementação de um novo programa, com objetivo de maximizar valor para acionistas através da administração eficiente do capital.\n\n**Trecho-chave:**\n\"O Programa de Recompra 2026 ora aprovado é regido pelos seguintes principais termos e condições:\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 18/06/2026\n\n**O QUE aconteceu:** A ENEVA S.A. informou sobre mudanças no Comitê de Auditoria Estatutário.\n\n**Resumo:** O Comitê de Auditoria Estatutário teve seu membro efetivo Sr. Fabricio Casali Reis substituído, alterando a composição do comitê.\n\n**Trecho-chave:**\n\"O CAE passa a ser composto pelos seguintes membros:\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 16/07/2026\n\n**O QUE aconteceu:** A ENEVA S.A. divulgou informações operacionais do segundo trimestre de 2026.\n\n**Resumo:** A companhia relatou aumento na geração bruta total e despacho térmico, além dos avanços nos projetos CRCAP 2021 e UTE Azulão I.\n\n**Trecho-chave:**\n\"▪ Geração bruta total atinge 2.537 GWh no 2T26, aumento de 35% frente à geração do 2T25, impulsionada pelo despacho termelétrico no mérito no período;\" (p. 2)"
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159327,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Tributário**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 195.261.180,72 (atualizado até 31 de dezembro de 2025)\n   - **Chance de perda:** Possível\n   - **Resumo:** Processo administrativo e judicial em andamento envolvendo prejuízos fiscais de R$ 195.261.180,72 que podem ser glosados pela Receita Federal, sem crédito tributário constituído.\n\n2. **Tributário**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 113.753.437,72 (atualizado até 31 de dezembro de 2025)\n   - **Chance de perda:** Possível\n   - **Resumo:** Embargos à execução fiscal ajuizados pela CGTF visando o cancelamento da execução fiscal por PIS e COFINS supostamente recolhidos a menor, com valor envolvido significativo.\n\n3. **Cível**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 186.583.277,70 (atualizado até 31 de dezembro de 2025)\n   - **Chance de perda:** Possível\n   - **Resumo:** Ação ordinária com pedido liminar de antecipação dos efeitos da tutela contra a Companhia, envolvendo um valor significativo.\n\n4. **Cível**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 83.205.434,82 (atualizado até 31 de dezembro de 2025)\n   - **Chance de perda:** Possível\n   - **Resumo:** Ação ordinária ajuizada pela Montcalm contra a Companhia e outras partes envolvendo prejuízos não previstos no contrato, com valor significativo."
+  }
 }

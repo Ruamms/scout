@@ -1,7 +1,7 @@
 {
   "ticker": "MGEL3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:41:56",
+  "verificado_em": "2026-07-23T20:22:37",
   "comunicados": {
     "ids": [
       577226365767618161,
@@ -17,5 +17,10 @@
     ],
     "texto": "### COMUNICADO AO MERCADO ENTREGUE EM 18/05/2026\n\n**O QUE ACONTECEU:** Mangels Industrial S.A. concluiu com sucesso as assinaturas do \"Acordo para Extensão de Vencimento\" da sua dívida junto ao Banco Bradesco, Itaú Unibanco e Banco do Brasil.\n\n**RESUMO:** A Companhia prorrogou a Data de Vencimento Original das Parcelas para 15/08/2026 e 15/11/2026, assegurando a adimplência durante o processo de Recuperação Judicial.\n\n**TRECHO-CHAVE:** \"MANGELS INDUSTRIAL S.A., Companhia Aberta, inscrita no CNPJ nº 61.065.298/0001-02 - Código CVM n.º 00839-7 (\"Companhia\"), em atendimento ao disposto na Resolução CVM n.º 44/2021, informa aos seus acionistas e ao mercado que concluiu com sucesso as assinaturas do “Acordo para Extensão de Vencimento” da sua dívida junto ao Banco Bradesco S.A., Itaú Unibanco S.A. e Banco do Brasil (“Acordo”) para prorrogar a Data de Vencimento Original das Parcelas de 15/05/2026 para 15/08/2026 e 15/11/2026, cuja adimplência é ora assegurada e decorre do processo de Recuperação Judicial nº 1085973-43.2013.8.26.0100, perante a 2ª Vara de Falências e Recuperações Judiciais de São Paulo (\"Recuperação Judicial\").\"\n\n**CONEXÃO COM O CONTEXTO:** Este comunicado afirma que a Companhia está em processo de Recuperação Judicial, o que pode impactar os pagamentos futuros.\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 31/03/2026\n\n**O QUE ACONTECEU:** Mangels Industrial S.A. destituiu o Diretor sem designação específica, Sr. Eduardo Morais de Campos, em razão de reestruturações.\n\n**RESUMO:** O Conselho de Administração deliberou pela destituição do Diretor sem designação específico e manteve os cargos dos Diretores Presidente, Sr. Ivan Zanovello Ciruelos, e o Diretor de Finanças, Administração e Relação com Investidores, Sr. Pedro Galvão Filho.\n\n**TRECHO-CHAVE:** \"MANGELS INDUSTRIAL S.A.,  nos termos da Resolução da Comissão de Valores Mobiliários (\"CVM\") nº 44, de 23/08/2021, conforme alterada (\"RCVM 44\"), comunica aos seus acionistas e ao mercado em geral que o Conselho de Administração, em reunião realizada em 30 de março de 2026, deliberou pela destituição do Diretor sem designação específica, Sr. Eduardo Morais de Campos, em razão de reestruturações.\"\n\n**CONEXÃO COM O CONTEXTO:** Esta mudança na diretoria pode indicar ajustes operacionais ou estratégicos da empresa durante o processo de Recuperação Judicial."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158349,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos judiciais, administrativos ou arbitrais que sejam individualmente relevantes para a Companhia ou suas controladas."
+  }
 }

@@ -1,7 +1,7 @@
 {
   "ticker": "HYPE3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T17:41:42",
+  "verificado_em": "2026-07-23T19:54:37",
   "comunicados": {
     "ids": [
       1050820397649233668,
@@ -17,5 +17,10 @@
     ],
     "texto": "### O QUE aconteceu em 11/05/2026\n\n**Companhia recebeu notificação de aumento da participação acionária:**\nA Hypera S.A. informou que a Votorantim S.A. aumentou sua participação acionária na companhia, passando a deter 111.097.489 ações ordinárias, correspondentes a aproximadamente 15,781% do capital social.\n\n*\"A Votorantim informou que passou a deter 111.097.489 ações ordinárias de emissão da Hypera Pharma, correspondentes a 15,781% do seu capital social.\"* (p. 2)\n\n---\n\n### O QUE aconteceu em 11/05/2026\n\n**Companhia recebeu notificação de redução da participação acionária:**\nA Hypera S.A. informou que a FMR LCC (\"Fidelity\") reduziu sua participação acionária na companhia, passando a deter 32.557.475 ações ordinárias, correspondentes a aproximadamente 4,624% do capital social.\n\n*\"A Fidelity informa que passou a deter 32.557.475 ações ordinárias de emissão da Companhia, correspondentes a aproximadamente 4,624% do seu capital social total.\"* (p. 1)"
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158593,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Processos Tributários**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 96.529.841,20\n   - **Chance de perda:** Provável (a partir de 2026)\n   - **Resumo do objeto:** \"Majoração da alíquota da contribuição ao SAT/RAT pelo Decreto n° 6.957/09 e definição da alíquota da mesma contribuição por estabelecimento com inscrição no CNPJ.\"\n\n2. **Processos Tributários**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 21.140.214,24\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** \"Afastamento da aplicação do Fator Acidentário de Prevenção - FAP à alíquota da contribuição ao SAT/RAT.\"\n\n3. **Processos Tributários**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 13.979.412,43\n   - **Chance de perda:** Parcialmente provável (a partir de 2026)\n   - **Resumo do objeto:** \"Majoração da alíquota da contribuição ao SAT/RAT pelo Decreto n° 6.957/09 e definição da alíquota da mesma contribuição por estabelecimento com inscrição no CNPJ.\"\n\n4. **Processos Cíveis**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 7.933.545,89\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** \"Multa aplicada contra a Mantecorp por suposta comercialização do medicamento Desalex por preço superior ao permitido.\""
+  }
 }

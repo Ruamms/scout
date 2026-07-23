@@ -1,7 +1,7 @@
 {
   "ticker": "AMBP3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:24:46",
+  "verificado_em": "2026-07-23T18:17:05",
   "comunicados": {
     "ids": [
       910438626990199276,
@@ -20,7 +20,6 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 08/07/2026\n\n**O que aconteceu:** Acordos firmados com credores para reestruturação do endividamento.\n\n**Resumo:** A Ambipar e a ESG, ambas em recuperação judicial, assinaram um acordo de apoio formal para a reestruturação do endividamento do Grupo Ambipar, incluindo Green Notes emitidas por uma subsidiária. O processo ainda depende de aprovações adicionais.\n\n**Citação:** \"Após meses de negociações com certos credores detentores de uma parcela majoritária dos Green Notes (em conjunto, os “Credores Apoiadores”), com vencimentos em 2031 e 2033, emitidos por uma subsidiária da Ambipar, tais credores decidiram apoiar formalmente a reestruturação do endividamento da Ambipar e determinadas subsidiárias diretas e indiretas (‘Grupo Ambipar’), por meio da celebração do Acordo de Apoio.\"\n\n### COMUNICADO AO MERCADO entregue em 14/05/2026\n\n**O que aconteceu:** Adiamento da divulgação das informações trimestrais.\n\n**Resumo:** A Ambipar informou o adiamento da divulgação do 1° ITR de 2026, originalmente prevista para 15 de maio de 2026, devido ao processo de recuperação judicial em andamento.\n\n**Citação:** \"O adiamento decorre, principalmente, do processo de recuperação judicial da Companhia, conforme Fatos Relevantes divulgados em 25 de setembro de 2025, 20 de outubro de 2025 e 30 de outubro de 2025, que impactou a conclusão dos trabalhos de apuração e elaboração das informações financeiras e contábeis.\"\n\n### COMUNICADO AO MERCADO entregue em 29/04/2026\n\n**O que aconteceu:** Esclarecimentos sobre inadimplência de juros remuneratórios.\n\n**Resumo:** A Ambipar esclareceu que a inadimplência dos juros remuneratórios das debêntures da 5ª emissão não é resultado de uma decisão discricionária, mas sim de imposição legal decorrente do processo de recuperação judicial em andamento.\n\n**Citação:** \"Considerando que as Debêntures da 5ª Emissão são anteriores ao ajuizamento do pedido de recuperação judicial, os juros remuneratórios delas decorrentes constituem crédito de natureza concursal consoante o art. 49 da Lei 11.101/05.\"\n\n**Conexão com contexto:** Este comunicado se conecta ao contexto do processo de recuperação judicial em andamento, que afeta a capacidade da empresa de realizar pagamentos regulares e atrasados de juros remuneratórios."
   },
-  "modelo": "qwen2.5:7b",
   "parecer": {
     "id": 196479695576181966,
     "data_entrega": "30/03/2026 00:00",
@@ -29,5 +28,11 @@
     "grave": false,
     "continuidade": false,
     "trecho": ""
+  },
+  "processos": {
+    "id": 158896,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Cível**\n   - **Valor envolvido:** R$ 32.982.861,03 (Ação Civil Pública 0002592-78.2015.8.08.0006)\n   - **Chance de perda:** Remota\n   - **Resumo do objeto:** \"Trata-se de Ação Civil Pública por ato de improbidade administrativa ajuizada pelo Ministério Público do Estado do Espírito Santo contra Ambitec S.A., controlada indireta da Companhia no segmento Environment, e outros requeridos.\"\n\n2. **Cível**\n   - **Valor envolvido:** R$ 11.419.200,00 (Ação Civil Pública 0006131-88.2009.8.26.0288)\n   - **Chance de perda:** Remota\n   - **Resumo do objeto:** \"Trata-se de Ação Civil Pública por ato de improbidade administrativa ajuizada pelo Ministério Público de São Paulo contra Ambitec Ltda., controlada indireta da Companhia no segmento Environment, e o então prefeito municipal.\"\n\n3. **Cível**\n   - **Valor envolvido:** R$ 1.000.000,00 (Ação Civil Pública 0015593-38.2012.8.08.0006)\n   - **Chance de perda:** Remota\n   - **Resumo do objeto:** \"Trata-se de Ação Civil Pública por ato de improbidade administrativa ajuizada pelo Ministério Público do Estado do Espírito Santo contra Ambitec S.A., controlada indireta da Companhia no segmento Environment, e outros requeridos.\""
   }
 }

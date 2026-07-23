@@ -13,7 +13,6 @@ from datetime import datetime
 from pathlib import Path
 
 from .. import analise, armazenamento, formato, ranking
-from . import apoio
 from . import html as relatorio_html
 from .html import CSS_MENU, JS_MENU, _e, menu_html
 
@@ -215,7 +214,6 @@ def gerar(
     (destino / "metodologia.html").write_text(
         _pagina_metodologia(agora or datetime.now()), encoding="utf-8"
     )
-    apoio.salvar(destino, analytics)
     # fonte display auto-hospedada (sem CDN, sem fetch externo) — um único
     # arquivo no destino, cacheado pelo navegador; @font-face aponta para ela
     _fonte = Path(__file__).parent / "assets" / "scout-display.ttf"
@@ -485,6 +483,9 @@ input#busca:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color
   <h1>Exploramos os relatórios oficiais para você não se perder neles</h1>
   <div class="meta">Percorremos os dados públicos oficiais (CVM, B3, Banco Central), marcamos cada alerta
   com a conta e a fonte, e uma IA local vasculha os relatórios — fatos, não dicas. A decisão é sua.</div>
+  <div class="meta" style="margin-top:6px">🎓 O Scout é um <b>projeto particular, de cunho educacional</b> —
+  um estudo aberto de desenvolvimento de software sobre dados públicos do mercado. Não é um serviço de
+  análise nem recomendação de investimento · <a href="metodologia.html">metodologia e aviso legal</a></div>
 
   <div class="busca-caixa">
     <input id="busca" type="search" autocomplete="off"
@@ -537,7 +538,7 @@ input#busca:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color
   <div class="rodape">Não é recomendação de investimento. Fontes: dados abertos da CVM, B3 (COTAHIST
   e fundos listados) e Banco Central. Critérios públicos e auditáveis:
   <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
-  <a href="apoie.html">apoie o projeto</a> · atualizado em {agora.strftime("%d/%m/%Y %H:%M")}</div>
+  atualizado em {agora.strftime("%d/%m/%Y %H:%M")}</div>
 </div>
 <script>
 const ATIVOS = {json_ativos};
@@ -746,8 +747,7 @@ tbody tr:hover td {{ background:#161D20; }}
   <div class="meta" style="margin:0 0 14px">fatos ordenados com critério explícito — não recomendação · retorno passado não garante futuro</div>
   <div class="blocos">{rankings_etf}</div>
   <div class="rodape">Não é recomendação de investimento. Fontes: B3 e CVM — critérios públicos:
-  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
-  <a href="apoie.html">apoie o projeto</a></div>
+  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>
 </div>
 <script>
 let classeAtiva = '';
@@ -940,8 +940,7 @@ tbody tr:hover td {{ background:#161D20; }}
   <div class="meta" style="margin:0 0 14px">fatos ordenados com critério explícito — não recomendação · retorno passado não garante futuro</div>
   <div class="blocos">{rankings}</div>
   <div class="rodape">Não é recomendação de investimento. Fontes: B3 e CVM — critérios públicos:
-  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
-  <a href="apoie.html">apoie o projeto</a></div>
+  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>
 </div>
 <script>
 let classeAtiva = '';
@@ -1052,8 +1051,7 @@ tbody tr:hover td {{ background:#161D20; }}
   </div>
   <div id="tabela"></div>
   <div class="rodape">Comparação factual com dados públicos oficiais — não é recomendação de investimento.
-  Critérios e código: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
-  <a href="apoie.html">apoie o projeto</a></div>
+  Critérios e código: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>
 </div>
 <script>
 const DADOS = {json_dados};
@@ -1221,8 +1219,7 @@ tbody tr:hover td {{ background:#161D20; }}
   Basileia alta não é "seguro" nem baixa é "vai quebrar": é o colchão de capital, leia a página do banco</div>
   <div class="blocos">{rankings}</div>
   <div class="rodape">Não é recomendação de investimento. Fonte: IF.data (Banco Central) — critérios públicos:
-  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
-  <a href="apoie.html">apoie o projeto</a></div>
+  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>
 </div>
 <script>
 let todosVisiveis = false;
@@ -1336,8 +1333,7 @@ tbody tr:hover td {{ background:#161D20; }}
   múltiplos como P/L e P/VP têm réguas próprias por setor e não se comparam diretamente entre eles.</div>
   <div id="tabela"></div>
   <div class="rodape">Comparação factual com dados públicos oficiais (B3 + CVM) — não é recomendação
-  de investimento. Critérios e código: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
-  <a href="apoie.html">apoie o projeto</a></div>
+  de investimento. Critérios e código: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>
 </div>
 <script>
 const DADOS = {json_dados};
@@ -1448,8 +1444,7 @@ tbody tr:hover td {{ background:#161D20; }}
   <div id="{aviso_id}" hidden>{aviso_html}</div>
   <div id="tabela"></div>
   <div class="rodape">Comparação factual com dados públicos oficiais — não é recomendação
-  de investimento. Critérios e código: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
-  <a href="apoie.html">apoie o projeto</a></div>
+  de investimento. Critérios e código: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>
 </div>
 <script>
 const DADOS = {json_dados};
@@ -1738,8 +1733,7 @@ h2 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:22px; font-wei
   <div class="meta">{len(fundos)} fundos negociáveis analisados com dados públicos oficiais ·
   atualizado em {agora.strftime("%d/%m/%Y %H:%M")} ·
   <a href="etfs.html">ETFs</a> ·
-  <a href="comparar.html">comparar fundos</a> ·
-  <a href="apoie.html">apoie o projeto</a></div>
+  <a href="comparar.html">comparar fundos</a></div>
 
   <div class="atualizacao">
     <span id="atu-texto" class="meta">verificando status da atualização…</span>
@@ -1769,8 +1763,7 @@ h2 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:22px; font-wei
 
   <div class="rodape">Isto não é recomendação de investimento. Fontes: dados abertos da CVM,
   Banco Central (SGS) e cotações oficiais da B3 (COTAHIST). Critérios de todos os alertas são públicos:
-  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
-  <a href="apoie.html">apoie o projeto</a></div>
+  <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a></div>
 </div>
 <script>
 // aviso de beta: aparece só na primeira visita (dispensado fica em localStorage)
@@ -1912,7 +1905,9 @@ a {{ color:#8FCB9B; }}
   {menu_html()}
   <h1>Metodologia e aviso legal</h1>
 
-  <div class="destaque"><p><b>O Scout não é recomendação de investimento.</b> Não somos analistas nem
+  <div class="destaque"><p><b>O Scout é um projeto particular, de cunho educacional</b> — um estudo
+  aberto de desenvolvimento de software sobre dados públicos do mercado, sem fins comerciais.
+  <b>Não é recomendação de investimento.</b> Não somos analistas nem
   consultores de valores mobiliários (Resoluções CVM 20/2021 e 19/2021) e não recomendamos comprar,
   vender ou manter nenhum ativo. O que fazemos: organizar DADOS PÚBLICOS OFICIAIS com critérios
   abertos e auditáveis. A decisão é sempre sua — e retorno passado não garante futuro.</p></div>
@@ -1964,7 +1959,7 @@ a {{ color:#8FCB9B; }}
 
   <div class="rodape">Não é recomendação de investimento · critérios e código:
   <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
-  <a href="apoie.html">apoie o projeto</a> · atualizado em {agora.strftime("%d/%m/%Y")}</div>
+  atualizado em {agora.strftime("%d/%m/%Y")}</div>
 </div>
 <script>
 {_JS_RK_MAIS}{JS_MENU}

@@ -1,7 +1,7 @@
 {
   "ticker": "BRCO11",
   "modelo": "qwen2.5:7b",
-  "gerada_em": "2026-07-21T11:15:37",
+  "gerada_em": "2026-07-23T17:48:41",
   "relatorio": {
     "id": 1260703,
     "data_entrega": "20/07/2026 21:03",
@@ -9,18 +9,18 @@
   },
   "comunicados": {
     "ids": [
+      1262336,
       1206490,
       1204080,
-      1155791,
       1127897,
       1073464,
       1182094,
       1154701
     ],
     "datas": [
+      "23/07/2026",
       "28/05/2026",
       "26/05/2026",
-      "07/04/2026",
       "04/03/2026",
       "30/12/2025",
       "07/05/2026",
@@ -35,7 +35,7 @@
       "Assembleia AGO",
       "Assembleia AGO"
     ],
-    "texto": "### 28/05/2026\n**Contrato de Formador de Mercado com Suno Desenvolvimento Ltda.**\nO Fundo BRESCO LOGÍSTICA celebrou um contrato para prestação de serviços de formador de mercado com a SUNO DESENVOLVIMENTO LTDA., que entrará em vigor na data da assinatura e vigerá por 6 meses, renovável automaticamente por períodos iguais e sucessivos.\n\n### 26/05/2026\n**Contrato de Locação com Expresso 3300**\nO Fundo celebrou um contrato de locação com a EXPRESSO 3300 TRANSPORTE LOGÍSTICA E ARMAZENAGEM LTDA. para uma área de 7.629 m² de galpão e 14.084 m² de pátio operacional, equivalente a 100% da ABL do IMÓVEL BRESCO EMBU. O contrato terá vigência de 3 anos com início na data da assinatura.\n\n### 07/04/2026\n**Aditivo ao Contrato de Locação Pague Menos**\nO Fundo celebrou o oitavo aditivo do contrato de locação com a EMPREENDIMENTOS PAGUE MENOS S.A. para o IMÓVEL BRESCO SIMÕES FILHO, prorrogando o contrato por mais 10 anos e reajustando positivamente o valor da remuneração mensal em 9,1%.\n\n### 04/03/2026\n**Disponibilização de Informes de Rendimentos**\nOs informes de rendimentos referentes ao ano-calendário de 2025 foram disponibilizados exclusivamente na modalidade digital através do Portal do Investidor ou aplicativo da Oliveira Trust.\n\n### 30/12/2025\n**Reavaliação dos Ativos pelo Cushman & Wakefield**\nO valor de mercado dos imóveis do Fundo foi reavaliado pela empresa CUSHMAN & WAKEFIELD SERVIÇOS GERAIS LTDA., resultando em um aumento de 0,05% sobre o valor de mercado da última avaliação.\n\n### 07/05/2026\n**Resultado da Consulta Formal aos Cotistas**\nA consulta formal realizada para aprovar as Demonstrações Financeiras do Fundo referentes ao período encerrado em 31 de dezembro de 2025 foi aprovada por cotistas representando 5,87% das cotas em circulação.\n\n### 06/04/2026\n**Convocação para Consulta Formal**\nA Oliveira Trust DTVM S.A. convoca os cotistas do Fundo BRESCO LOGÍSTICA para aprovar as demonstrações financeiras referentes ao período encerrado em 31 de dezembro de 2025, através de uma consulta formal via plataforma eletrônica até o dia 6 de maio de 2026."
+    "texto": "### Fato Relevante entregue em 23/07/2026\n\n**O QUE aconteceu:** Rescisão antecipada do contrato de locação com a Companhia Brasileira de Distribuição (GPA) no imóvel CD04 São Paulo.\n\n**Resumo:** A GPA notificou o Fundo sobre a decisão de rescindir antecipadamente o contrato de locação, que representava 6% da área bruta locável do fundo. \n\n**Trecho-chave:**\n\"O Contrato representa 6,0% da ABL do Fundo e a referida Locação representa, aproximadamente R$ 0,08 por cota.\"\n\n### Fato Relevante entregue em 28/05/2026\n\n**O QUE aconteceu:** Contratação de serviço de formador de mercado com a Suno Desenvolvimento.\n\n**Resumo:** O Fundo firmou um contrato para prestação de serviços de formador de mercado com a Suno Desenvolvimento, que entraria em vigor na data da assinatura e vigeria por 6 meses, podendo ser renovado automaticamente.\n\n### Fato Relevante entregue em 26/05/2026\n\n**O QUE aconteceu:** Contratação de novo contrato de locação com a Expresso 3300 no imóvel Bresco Embu.\n\n**Resumo:** O Fundo celebrou um novo contrato de locação com a Expresso 3300, que ocuparia o imóvel completo, resultando em zero vacância física. A locação teria vigência de 3 anos e representava 4% da área bruta locável do fundo.\n\n**Trecho-chave:**\n\"O Contrato representa 4,0% da ABL total do Fundo. Com esta locação, o Imóvel passa a ter zero vacância física.\"\n\n### Comunicado ao Mercado entregue em 04/03/2026\n\n**O QUE aconteceu:** Disponibilização dos Informes de Rendimentos para o ano-calendário 2025.\n\n**Resumo:** Os informes de rendimentos referentes ao ano-calendário 2025 foram disponibilizados exclusivamente pela modalidade digital, através do Portal do Investidor ou aplicativo da Oliveira Trust.\n\n### Comunicado ao Mercado entregue em 30/12/2025\n\n**O QUE aconteceu:** Reavaliação dos ativos do Fundo.\n\n**Resumo:** O valor de mercado dos imóveis do Fundo foi reavaliado a valor justo pela Avaliadora, resultando em um aumento de 0,05% no valor de mercado do portfólio.\n\n### Assembleia AGO entregue em 07/05/2026\n\n**O QUE aconteceu:** Apuração da consulta formal aos cotistas sobre as demonstrações financeiras do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A consulta formal foi realizada e aprovadas as Demonstrações Financeiras do Fundo, com quórum representando 6,18% das cotas em circulação.\n\n### Assembleia AGO entregue em 06/04/2026\n\n**O QUE aconteceu:** Convocação da assembleia geral ordinária para aprovar as demonstrações financeiras do Fundo referentes ao exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi convocada e os cotistas foram informados sobre a consulta formal, com prazo até o dia 6 de maio para votar."
   },
   "retrato": {
     "selo": "Atenção",
@@ -44,7 +44,7 @@
       "Rendimentos acima do resultado financeiro",
       "Emissão de cotas com VP/cota em queda"
     ],
-    "cota": 113.49
+    "cota": 113.2
   },
   "anterior": {
     "gerada_em": "2026-07-20T18:23:23",

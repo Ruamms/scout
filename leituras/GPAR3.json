@@ -1,7 +1,7 @@
 {
   "ticker": "GPAR3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:21:08",
+  "verificado_em": "2026-07-23T19:48:52",
   "comunicados": {
     "ids": [
       774818078650840020,
@@ -17,5 +17,10 @@
     ],
     "texto": "### 16/03/2026 - Extinção do Comitê de Auditoria Estatutário\n\n**O que aconteceu:** A Celgpar comunicou a extinção do Comitê de Auditoria Estatutário.\n\n**Resumo:** A companhia informou sobre a deliberação da 77ª Assembleia Geral Extraordinária de Acionistas, realizada em 13 de março de 2026, que resultou na extinção do Comitê de Auditoria Estatutário.\n\n**Trecho-chave:** \"A Companhia Celg de Participações - CELGPAR vem, em suporte ao disposto no artigo 25, § 3º, inciso I, da Resolução da Comissão de Valores Mobiliários nº 80, de 29 de março de 2022, comunicar aos seus acionistas e ao mercado em geral sobre a extinção do Comitê de Auditoria Estatutário, conforme deliberação proferida no âmbito da 77ª Assembleia Geral Extraordinária de Acionistas, realizada no dia 13 de março de 2026.\"\n\n---\n\n### 11/03/2026 - Distribuição de Dividendos Intermediários\n\n**O que aconteceu:** A Celgpar respondeu a uma solicitação da B3 S.A. sobre a distribuição de dividendos intermediários.\n\n**Resumo:** A companhia esclareceu as condições para o pagamento dos dividendos, incluindo a quantidade de ações da Planalto Solar Park S.A. que serão entregues por cada ação de Celgpar detida e detalhou se haveria tratamento diferenciado entre os acionistas.\n\n**Trecho-chave:** \"A declaração de Dividendos encontra-se, citado na Proposta da Administração (pág. 33, 1º parágrafo), no valor de R$ 120.781.381,91 (cento e vinte milhões, setecentos e oitenta e um mil, trezentos e oitenta e um reais, e noventa e um centavos). Os Dividendos, foco de distribuição, por 1 (uma) ação, relatado na Proposta da Administração (pág. 33, 2º parágrafo), é de R$ 1,515897145 (um real, e quinhentos e quinze milhões, oitocentos e noventa e sete mil, e cento e quarenta e cinco bilionésimos).\"\n\n**Conexão com indicadores:** A distribuição de dividendos intermediários está relacionada à política de distribuição de lucros da companhia."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158083,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes declarados para a GPAR3 na seção de Processos Judiciais do Formulário de Referência."
+  }
 }

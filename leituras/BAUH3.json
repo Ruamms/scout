@@ -1,11 +1,17 @@
 {
   "ticker": "BAUH3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:35:28",
+  "verificado_em": "2026-07-23T18:29:14",
   "comunicados": {
     "ids": [],
     "datas": [],
     "rotulos": [],
     "texto": null
+  },
+  "processos": {
+    "id": 158028,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes declarados pela BAUH3 conforme os critérios estabelecidos na seção de PROCESSOS JUDICIAIS do Formulário de Referência (FRE)."
   }
 }

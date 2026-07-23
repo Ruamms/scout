@@ -1,7 +1,7 @@
 {
   "ticker": "EUCA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:14:04",
+  "verificado_em": "2026-07-23T19:35:58",
   "comunicados": {
     "ids": [
       454409234351723233,
@@ -17,5 +17,10 @@
     ],
     "texto": "### O QUE ACONTECEU: Redução de Participação Acionária Relevante\n\n**O que aconteceu:** A ECONÔMICO AGRO PASTORIL INDUSTRIAL S.A passou a deter 30.649.818 ações preferenciais, representando aproximadamente 49,95% do total de ações preferenciais emitidas pela Eucatex S/A.\n\n**Resumo:** A companhia informa que não tem intenção de alterar a composição do controle ou estrutura administrativa da empresa e destaca que esta mudança não visa atingir qualquer participação acionária em particular.\n\n**Trecho-chave:**\n\"passou a deter 30.649.818 (trinta milhões, seiscentos e quarenta e nove mil, oitocentos e dezoito) ações preferenciais, que representam aproximadamente 49,95% do total de ações preferenciais emitidas pela Companhia.\" (p. 1)\n\n### O QUE ACONTECEU: Divulgação de Resultados\n\n**O que aconteceu:** A Eucatex S/A divulgou seus resultados referentes ao primeiro trimestre de 2026.\n\n**Resumo:** A apresentação contém declarações sobre perspectivas de negócios, projeções e metas operacionais e financeiras da companhia. As considerações futuras não são garantias de desempenho e envolvem riscos e incertezas.\n\n**Trecho-chave:**\n\"As informações contidas nesta apresentação e eventuais declarações que possam ser feitas durante a videoconferência, relativas às perspectivas de negócios, projeções e metas operacionais e financeiras da Eucatex, constituem-se em crenças e premissas da Administração da Companhia, bem como em informações atualmente disponíveis.\" (p. 1)\n\n**Conexão com o Contexto:** O documento de divulgação de resultados apresenta as perspectivas futuras da empresa, que podem ser afetadas por condições econômicas e de mercado, conforme mencionado no contexto fornecido."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159115,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Trabalhista**\n   - **Processo Nº 0011644-65.2022.5.15.0085**\n     - **Natureza:** Trabalhista\n     - **Valor envolvido:** R$1.500.000,00\n     - **Chance de perda:** Provável\n     - **Resumo:** Ação coletiva sobre exposição a agentes insalubres e periculosos com pedido de adicionais de periculosidade e insalubridade.\n\n2. **Trabalhista**\n   - **Processo Nº 0011571-45.2023.5.15.0025**\n     - **Natureza:** Trabalhista\n     - **Valor envolvido:** R$1.000.000,00\n     - **Chance de perda:** Provável\n     - **Resumo:** Reclamação trabalhista por indenização por danos morais.\n\n3. **Trabalhista**\n   - **Processo Nº 0010793-89.2023.5.15.0085**\n     - **Natureza:** Trabalhista\n     - **Valor envolvido:** R$1.248.785,00\n     - **Chance de perda:** Provável\n     - **Resumo:** Ação indenizatória por danos morais e estéticos após acidente de trabalho.\n\n4. **Tributário**\n   - **Processo Nº 17095-722.097/2025-62**\n     - **Natureza:** Tributário\n     - **Valor envolvido:** R$69.627.719,49\n     - **Chance de perda:** Possível\n     - **Resumo:** Auto de Infração para cobrança de contribuições ao PIS e à COFINS.\n\n5. **Tributário**\n   - **Processo Nº 17095.722096/2025-18**\n     - **Natureza:** Tributário\n     - **Valor envolvido:** R$13.405.223,16\n     - **Chance de perda:** Possível\n     - **Resumo:** Auto de Infração para cobrança de contribuições ao PIS e à COFINS.\n\nNão há processos relevantes declarados na seção."
+  }
 }

@@ -1,7 +1,7 @@
 {
   "ticker": "LUPA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:36:48",
+  "verificado_em": "2026-07-23T20:15:02",
   "comunicados": {
     "ids": [
       46822542719628580,
@@ -26,5 +26,10 @@
     ],
     "texto": "### O que aconteceu em 11/06/2026\n\n**Título:** Grupamento de Ações da Lupatech S.A.\n\n**Resumo:** A Lupatech S.A. convocou uma Assembleia Geral Extraordinária para deliberar sobre o grupamento das ações ordinárias na proporção 10:1, com objetivo de elevar o preço de negociação acima de R$ 1,00.\n\n**Trecho-chave:** \"A Companhia, em cumprimento ao disposto na Resolução CVM nº 44/2021, comunica aos seus acionistas e ao mercado em geral que, em 09 de junho de 2026, seu Conselho de Administração deliberou pela convocação de Assembleia Geral Extraordinária para deliberar sobre o grupamento da totalidade das ações ordinárias de emissão da Companhia, na proporção de 10:1.\"\n\n---\n\n### O que aconteceu em 25/05/2026\n\n**Título:** Pedido de Recuperação Extrajudicial da Lupatech S.A.\n\n**Resumo:** A Lupatech S.A. protocolou um pedido de homologação de plano de recuperação extrajudicial, visando reestruturar passivos trabalhistas e quirografários.\n\n**Trecho-chave:** \"O pedido de Recuperação Extrajudicial (i) foi protocolado pela Companhia, em conjunto com as seguintes subsidiárias Mipel Indústria e Comércio de Válvulas Ltda., Lochness Participações S.A., Prest Perfurações Ltda., UEP – Equipamentos e Serviços para Petróleo Ltda., UPC – Perfuração e Completação Ltda. e SOTEP Sociedade Técnica de Perfuração S.A., e (ii) tem por objetivo implementar a reestruturação de passivos de natureza trabalhista e quirografária das referidas sociedades.\"\n\n---\n\n### O que aconteceu em 21/05/2026\n\n**Título:** Contrato com o Banco Daycoval S.A.\n\n**Resumo:** A Lupatech S.A. celebrou um contrato de empréstimo bancário no valor total de R$ 27,795,558,56 para um período de 629 dias.\n\n**Trecho-chave:** \"A Companhia, em cumprimento ao disposto na Resolução CVM nº 44/2021, comunica aos seus acionistas e ao mercado em geral a concretização de operação de empréstimo bancário com o Banco Daycoval S.A., com o valor de dívida total de US$ 5.528.154,05 (cinco milhões, quinhentos e vinte e oito mil, cento e cinquenta e quatro dólares norte-americanos e cinco centavos de dólar), convertidos na presente data em R$ 27.795.558,56.\"\n\n---\n\n### O que aconteceu em 07/05/2026\n\n**Título:** Atualização & Perspectivas dos Resultados de 4T25\n\n**Resumo:** A Lupatech S.A. divulgou atualizações e perspectivas sobre os resultados do quarto trimestre de 2025.\n\n**Trecho-chave:** \"As informações contidas nesta apresentação relacionadas a perspectivas sobre os negócios e projeções sobre resultados operacionais e financeiros são meramente estimativas e, como tais, são baseadas principalmente em crenças e premissas da Administração da Companhia, não constituindo promessa de desempenho.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159538,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Cível** - R$ 11.167.447 - Possível - \"Trata-se de ação que visa promover a busca e apreensão de máquinas e equipamentos ofertados em alienação fiduciária por ocasião de financiamento concedido pelo BNDES às empresas do Grupo Lupatech.\"\n\n2. **Cível** - R$ 9.598.682 - Possível - \"Ação da Petrobras promovida em face da Sotep Sociedade Técnica de Perfuração S.A. para o reconhecimento e cobrança de penalidades contratuais dos instrumentos nº 2100.0033047.07.2 e n.º 2100.0033049.07.2.\""
+  }
 }

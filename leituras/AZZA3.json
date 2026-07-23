@@ -1,7 +1,7 @@
 {
   "ticker": "AZZA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T17:12:52",
+  "verificado_em": "2026-07-23T18:27:25",
   "comunicados": {
     "ids": [
       983622574091644249,
@@ -19,6 +19,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 19/06/2026\n\n**O QUE aconteceu:** Azzas 2154 S.A. contratou o Banco Morgan Stanley para avaliar a alienação de ativos relacionados à marca \"Farm Rio\".\n\n**Resumo:** A companhia está avaliando alternativas estratégicas envolvendo os ativos da marca Farm Rio, mas até o momento não há decisão formal ou operação definida.\n\n**Trecho-chave:**\n\"Conforme já informado anteriormente, a Companhia esclarece que, no curso regular de seus negócios e em linha com práticas usuais de mercado, avalia continuamente alternativas e oportunidades relacionadas à sua estrutura societária, organizacional e operacional, bem como aos seus negócios, controladas e ativos, contando, para tanto, com o suporte de assessores externos especializados.\"\n\n### COMUNICADO AO MERCADO entregue em 25/06/2026\n\n**O QUE aconteceu:** Azzas 2154 S.A. esclarece que a marca Hering não está à venda e não há tratativas ou negociações em curso envolvendo a marca.\n\n**Resumo:** A companhia reitera que, até o momento, não existe ato ou fato relevante passível de divulgação relacionado à marca Hering.\n\n**Trecho-chave:**\n\"Em atenção ao Ofício, a Companhia esclarece que, neste momento, a marca Hering não está à venda, e que não há, no âmbito da Companhia, quaisquer tratativas nem negociações em curso envolvendo a marca Hering ou os ativos e negócios a ela relacionados.\"\n\n### COMUNICADO AO MERCADO entregue em 22/06/2026\n\n**O QUE aconteceu:** Azzas 2154 S.A. esclarece que contratou o Morgan Stanley para avaliar alternativas estratégicas envolvendo os ativos relacionados à marca \"Farm Rio\".\n\n**Resumo:** A companhia está avaliando a alienação de ativos da marca Farm Rio, mas não há decisão formal ou operação definida.\n\n**Trecho-chave:**\n\"Em atenção ao Ofício, a Companhia esclarece que, ao tomar conhecimento da Notícia, diligenciou imediatamente para providenciar a publicidade das informações pertinentes, tendo divulgado, no próprio dia 19 de junho de 2026, Fato Relevante ('Fato Relevante 19.6.2026') por meio do qual esclareceu que contratou o Morgan Stanley para assessorar a avaliação de alternativas estratégicas envolvendo os ativos relacionados à marca 'Farm Rio', com o objetivo de destravar valor dessa marca, sendo que, até o presente momento, não há qualquer decisão tomada, operação aprovada, estrutura definida, proposta formal, instrumento vinculante celebrado ou definição acerca da efetiva implementação de qualquer eventual operação, tampouco sobre seus potenciais termos, condições, ativos envolvidos, cronograma ou viabilidade.\""
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

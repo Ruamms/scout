@@ -1,7 +1,7 @@
 {
   "ticker": "B1003",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:34:41",
+  "verificado_em": "2026-07-23T18:27:25",
   "comunicados": {
     "ids": [
       55656962430420929,
@@ -22,6 +22,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### O QUE ACONTECEU: Conclusão da Liquidação Física da Oferta Pública Unificada de Aquisição de Ações\n\n**Resumo:** A B100 S.A. concluiu a liquidação física da oferta pública unificada de aquisição de ações, alienando 77,45% das ações em circulação.\n\n**Trecho-chave:**\n\"Salvo definição diversa neste Fato Relevante, os termos iniciados em letra maiúscula têm o significado atribuído no Edital. Foram validamente alienadas no âmbito da Oferta 137.670 (cento e trinta e sete mil, seiscentas e setenta) ações ordinárias de emissão da Companhia, representativas de (i) aproximadamente 0,47% do capital social total da Companhia, e (ii) aproximadamente 77,45% das ações em circulação de emissão da Companhia.\"\n\n---\n\n### O QUE ACONTECEU: Aprovação da Incorporação de Ações da B100 Negócios\n\n**Resumo:** A B100 S.A. e a B100 Negócios S.A. aprovaram a incorporação das ações da B100 Negócios pela Companhia, aumentando o capital social em 80,197%.\n\n**Trecho-chave:**\n\"Em razão da consumação da Incorporação de Ações: (i) o capital social da Companhia será aumentado no montante de R$ 45.577.829,71, mediante a emissão de 23.625.969 novas ações ordinárias da Companhia, representativas de 80,197% do seu novo capital social, as quais terão os mesmos direitos das demais ações ordinárias emitidas pela Companhia e serão atribuídas à Controladora.\"\n\n---\n\n### O QUE ACONTECEU: Parecer Favorável do Conselho de Administração Sobre a Oferta Pública Unificada\n\n**Resumo:** O Conselho de Administração da B100 S.A. emitiu um parecer favorável sobre a oferta pública unificada para aquisição de ações ordinárias.\n\n**Trecho-chave:**\n\"A B100 S.A., em cumprimento ao disposto no artigo 157, §4º, da Lei nº 6.404, de 15 de dezembro de 1976, e na Resolução da CVM nº 44, de 23 de agosto de 2021, conforme alteradas, informa aos seus acionistas e ao mercado em geral que, em reunião do Conselho de Administração realizada nesta data, foi aprovada a emissão do parecer favorável do Conselho de Administração da Companhia sobre a oferta pública unificada para aquisição de ações ordinárias de emissão da Companhia.\"\n\n---\n\n### Contexto\n\n- **Oferta Pública Unificada:** As informações acima estão conectadas à Oferta Pública Unificada, que foi aprovada pelo Conselho de Administração e concluída com a liquidação física das ações."
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

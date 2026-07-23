@@ -1,7 +1,7 @@
 {
   "ticker": "MGLU3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T17:50:09",
+  "verificado_em": "2026-07-23T20:22:43",
   "comunicados": {
     "ids": [
       953069669660963277,
@@ -17,5 +17,10 @@
     ],
     "texto": "### 30/06/2026 - Renúncia de membro do Conselho de Administração e designação de Conselheiro Substituto\n\nA companhia informa a renúncia da Sra. Inês Corrêa de Souza ao cargo de membro efetivo do Conselho de Administração, mantendo-a como membro do Comitê de Finanças e Crédito ao Consumidor - COFIC. A Companhia nomeou a Sra. Priscyla Lopes Alves Laham para substituir a Sra. Inês Corrêa de Souza.\n\n\"Priscyla Lopes Alves Laham é Presidente da Microsoft Brasil desde janeiro de 2025, acumulando mais de 25 anos de experiência nas indústrias de tecnologia e cloud, eletrônicos de consumo e serviços digitais.\"\n\n### 27/05/2026 - Teleconferência de Resultados 1T26\n\nA companhia divulgou os resultados do primeiro trimestre de 2026. Os principais pontos incluem o excelente desempenho das lojas físicas, aumento da participação do CDC nas vendas, rigoroso controle das despesas e geração de Caixa Operacional de R$2,0 bilhões nos últimos doze meses.\n\n\"Margem Bruta: 30,8% (R$718 Mi); EBITDA Ajustado: R$6,2 Bi; Caixa total: R$15 bilhões em vendas no 1T26.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159326,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Processo Tributário - Processo nº 0002988-52.2016.4.01.3400**\n   - **Natureza:** Tributária\n   - **Valor envolvido:** R$ 1.319.345.688,00 (valor do principal)\n   - **Chance de perda:** Remota\n   - **Resumo:** Ação proposta para reconhecimento do direito da Companhia em manter o benefício da aplicação de alíquota zero das Contribuições ao PIS e COFINS sobre a receita bruta advinda da venda de produtos eletrônicos, conforme estabelecido na Lei nº 11.196/2005.\n\n2. **Processo Tributário - Processo Administrativo 11000-748.643/2024-30**\n   - **Natureza:** Tributária\n   - **Valor envolvido:** R$ 468.142.720,78\n   - **Chance de perda:** Possível\n   - **Resumo:** Cobrança de supostos débitos de PIS/COFINS do período de 2020 e 2021 referentes ao aproveitamento de crédito sobre insumos essenciais e relevantes para suas operações e ausência de tributação de reembolsos de despesas e de alienação de ativo intangível.\n\n3. **Ação Civil Pública nº 0000790-37.2020.5.10.0015**\n   - **Natureza:** Trabalhista\n   - **Valor envolvido:** R$ 10.000.000,00 (valor da causa)\n   - **Chance de perda:** Remota\n   - **Resumo:** Ação Civil Pública ajuizada pela Defensoria Pública do DF contra o Magazine Luiza, questionando a validade do programa de trainees voltado para a população negra.\n\n4. **Ação Civil Pública nº 0000633-07.2020.5.05.0661**\n   - **Natureza:** Trabalhista\n   - **Valor envolvido:** R$ 1.000.000,00 (valor da causa)\n   - **Chance de perda:** Possível\n   - **Resumo:** Ação Civil Pública ajuizada pelo Ministério Público do Trabalho na Bahia contra o Magazine Luiza, versando sobre jornada excessiva e assédio moral.\n\n5. **Ações Judiciais Trabalhistas**\n   - **Natureza:** Trabalhista\n   - **Valor envolvido:** R$ 85,4 milhões (valor provisionado)\n   - **Chance de perda:** Não declarada\n   - **Resumo:** A Companhia figurava como parte em 5.308 ações judiciais trabalhistas, com valor provisionado de R$ 85,4 milhões.\n\n6. **Processo Administrativo Vinculado nº 1020392-31.2018.4.01.3400**\n   - **Natureza:** Tributária\n   - **Valor envolvido:** R$ 280.148.704,32\n   - **Chance de perda:** Possível\n   - **Resumo:** Ação anulatória movida contra cobrança oriunda do Processo nº 13855.721.049/2011-51 e vinculada à Execução Fiscal nº 5001602-12.2020.4.03.6113, envolvendo cobrança de PIS/COFINS sobre bonificações, reembolsos de verbas de propaganda, créditos decorrentes da não cumulatividade e outros."
+  }
 }

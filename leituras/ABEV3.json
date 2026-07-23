@@ -1,7 +1,7 @@
 {
   "ticker": "ABEV3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T17:07:46",
+  "verificado_em": "2026-07-23T18:08:35",
   "comunicados": {
     "ids": [
       454580554686903491,
@@ -20,5 +20,10 @@
     ],
     "texto": "### O QUE aconteceu em 12/02/2026\n\n**Companhia espera crescimento do CPV por hectolitro no negócio de cerveja no Brasil.**\n\nA Ambev S.A. comunicou que espera um crescimento entre 4,5% e 7,5% para o CPV (custo dos produtos vendidos) por hectolitro em seu negócio de cerveja no Brasil no ano de 2026, excluindo a venda de produtos não Ambev no marketplace e assumindo os atuais preços das commodities e do câmbio. Este crescimento é atribuído principalmente aos custos relacionados às commodities, sobretudo o alumínio, e pelo mix de portfólio.\n\n*\"Ambev S.A. (“Companhia”) comunica que, conforme divulgado nesta data em seu earnings release, espera que o CPV (custo dos produtos vendidos) por hectolitro, excluindo depreciação e amortização, para seu negócio de cerveja no Brasil apresente crescimento entre 4,5% e 7,5% no ano de 2026...\"* (p. 1)\n\n### O QUE aconteceu em 05/05/2026\n\n**Ambev prepara apresentação para conferência de resultados do primeiro trimestre de 2026.**\n\nA Ambev S.A. preparou uma apresentação exclusiva para a conferência de resultados do primeiro trimestre de 2026, destacando que esta não deve ser considerada um documento completo e deve ser analisada em conjunto com o formulário de informações trimestrais (ITR) do primeiro trimestre.\n\n### O QUE aconteceu em 03/03/2026\n\n**Ambev arquiva relatório anual no Formulário 20-F na SEC.**\n\nA Ambev S.A. comunicou que arquivou o relatório anual da Companhia no Formulário 20-F referente ao exercício encerrado em 31 de dezembro de 2025, na U.S. Securities and Exchange Commission (SEC) em 3 de março de 2026.\n\n---\n\n**Conexão com o contexto:** O comunicado do primeiro trimestre de 2026 pode ser visto como uma continuação das projeções e desempenho apresentados no relatório anual arquivado em março, que provavelmente contém informações mais detalhadas sobre os resultados financeiros do ano anterior."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158168,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1 - **Tributário**\n   - **Valor envolvido:** R$ 5,9 bilhões atualizados até 31 de março de 2026\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** Processo judicial em 1ª instância contra a União (Fazenda Nacional) envolvendo glosa de despesas de amortização de ágio, com chance de condenação ao pagamento.\n\n2 - **Tributário**\n   - **Valor envolvido:** R$ 1,9 bilhões atualizados até 31 de março de 2026\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** Processo judicial em 1ª instância contra a União (Fazenda Nacional) envolvendo glosa de despesas de amortização de ágio, com chance de condenação ao pagamento.\n\n3 - **Tributário**\n   - **Valor envolvido:** R$ 1,6 bilhões atualizados até 31 de março de 2026\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** Processo judicial em 1ª instância contra a União (Fazenda Nacional) envolvendo cobrança de IRPJ e CSLL sobre lucros auferidos no exterior, com chance de condenação ao pagamento.\n\n4 - **Tributário**\n   - **Valor envolvido:** R$ 1,3 bilhões atualizados até 31 de março de 2026\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** Processo judicial em 2ª instância contra a União (Fazenda Nacional) envolvendo glosa de despesas de amortização de ágio, com chance de condenação ao pagamento.\n\n5 - **Trabalhista**\n   - **Valor envolvido:** R$ 36.153,00\n   - **Chance de perda:** Possível (com efeitos da decisão suspensos)\n   - **Resumo do objeto:** Processo administrativo contra a Transportadora Sider Limeira EIRELI, com chance de condenação ao pagamento de multas e inclusão no Cadastro de Empregadores."
+  }
 }

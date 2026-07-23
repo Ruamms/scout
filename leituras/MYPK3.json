@@ -1,7 +1,7 @@
 {
   "ticker": "MYPK3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:48:42",
+  "verificado_em": "2026-07-23T20:35:50",
   "comunicados": {
     "ids": [
       1056918800093413522,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 21/05/2026\n\n**O QUE aconteceu:** A aquisição de 50,1% do capital social da Polimetal S.A. foi aprovada pelo órgão de defesa da concorrência da Argentina.\n\n**Resumo:** A Companhia passa a exercer o controle sobre a Polimetal S.A., que será consolidada em suas demonstrações financeiras.\n\n**Trecho-chave:**\n\"A aquisição de 50,1% do capital social da Polimetal S.A. por sua controlada Iochpe-Maxion Austria GmbH (“IMA”), conforme divulgado em Fato Relevante datado de 3 de novembro de 2025, foi aprovada pelo órgão de defesa da concorrência da Argentina.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 17/06/2026\n\n**O QUE aconteceu:** A Charles River Administradora de Recursos Financeiros Ltda. informou sobre a sua participação acionária na IOCHPE-MAXION S.A.\n\n**Resumo:** A Charles River Capital possui 15,405,698 ações ordinárias (10,02%) e outras ações indiretamente avaliadas.\n\n**Trecho-chave:**\n\"nesta data, o somatório das ações ordinárias de emissão da Companhia de ƟƚƵůĂƌŝĚĂĚĞ͕ \u0003Ğŵ\u0003ĐŽŶũƵŶƚŽ͕ \u0003ĚŽƐ\u0003ĨƵŶĚŽƐ\u0003ŐĞƌŝĚŽƐ\u0003ƉĞůĂ\u0003\u0012ŚĂƌůĞƐ\u0003ZŝǀĞƌ\u0003\u0012ĂƉŝƚĂů\u0003ĂƟŶŐŝƵ\u0003Ž\u0003montante de 15.405.698 ações, equivalentes a 10,02% das ações ordinárias de emissão da Companhia (Ɵcker B3: MYPK3).\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 12/06/2026\n\n**O QUE aconteceu:** O Conselho de Administração aprovou a realização da 17ª emissão de debêntures.\n\n**Resumo:** A emissão totalizará R$ 400.000.000,00 e terá juros remuneratórios calculados com base nas taxas DI.\n\n**Trecho-chave:**\n\"A Iochpe-Maxion S.A. (“Companhia” – B3:MYPK3) vem informar aos seus acionistas e ao mercado em geral que, nesta data, seu Conselho de Administração aprovou a realização da 17ª (décima sétima) emissão, pela Companhia, de 400.000 debêntures simples, não conversíveis em ações, da espécie quirografária, em série única, nos termos da Lei nº 6.404, de 15 de dezembro de 1976.\" (p. 1)"
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159412,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Tributário**\n   - **Natureza**: Tributária\n   - **Valor envolvido**: R$ 248.772 mil\n   - **Chance de perda**: Possível (R$ 170.319 mil) e Remota (R$ 78.453 mil)\n   - **Resumo**: Trata-se de um auto de infração relativo ao período 2006 a 2008, envolvendo presunções de falta de emissão de documento fiscal e recebimento de mercadorias desacompanhadas.\n\n2. **Tributário**\n   - **Natureza**: Tributária\n   - **Valor envolvido**: R$ 202.262 mil\n   - **Chance de perda**: Possível\n   - **Resumo**: Auto de infração lavrado em face da Companhia para exigência de ICMS e aplicação de multa, relativo ao período de janeiro de 2016 a setembro de 2021.\n\n3. **Tributário**\n   - **Natureza**: Tributária\n   - **Valor envolvido**: R$ 88.801 mil\n   - **Chance de perda**: Possível\n   - **Resumo**: Autos de infração lavrados em face da Companhia que versam sobre cobrança de IRPJ e CSLL, ambos acrescidos de juros e multa.\n\n4. **Tributário**\n   - **Natureza**: Tributária\n   - **Valor envolvido**: R$ 38.976 mil (competências de 01.01.2019 a 31.12.2020) e R$ 43.078 mil (competências de 01.01.2021 a 31.12.2021)\n   - **Chance de perda**: Possível\n   - **Resumo**: Autos de infração que versam sobre cobrança de adicional ao GILRAT na alíquota de 6% para financiamento da aposentadoria especial.\n\n5. **Tributário**\n   - **Natureza**: Tributária\n   - **Valor envolvido**: R$ 34.335 mil\n   - **Chance de perda**: Possível\n   - **Resumo**: Manifestação de inconformidade em face de despachos decisórios relacionados a compensações não homologadas, em razão da suposta ausência de comprovação de recolhimento dos créditos."
+  }
 }

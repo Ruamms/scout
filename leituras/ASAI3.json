@@ -1,7 +1,7 @@
 {
   "ticker": "ASAI3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T17:09:29",
+  "verificado_em": "2026-07-23T18:22:22",
   "comunicados": {
     "ids": [
       51219848015007854,
@@ -16,6 +16,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 16/07/2026\n\n**O QUE aconteceu:** Esclarecimentos sobre questionamentos da CVM/B3 - Notícia divulgada na mídia.\n\n**Resumo:** A Sendas Distribuidora S.A. esclarece que notícias publicadas sobre o lançamento de farmácias dentro das lojas do Assaí são alinhadas com seu planejamento estratégico e prevê a abertura de 25 farmácias até o final de 2026.\n\n**Trecho-chave:**\n\"O projeto está alinhado com o planejamento estratégico da Companhia divulgado na apresentação Investors’ Day 2025, de 18 de novembro de 2025, e na apresentação de resultados publicada como Fato Relevante em 11 de fevereiro de 2026 (páginas 3 e 18).\"\n\n### COMUNICADO AO MERCADO entregue em 07/07/2026\n\n**O QUE aconteceu:** Redução da participação acionária por parte da Ninety One UK Ltd.\n\n**Resumo:** A Sendas Distribuidora S.A. informa a redução de participação acionária para 4,99% em ações ordinárias por parte da Ninety One UK Ltd.\n\n**Trecho-chave:**\n\"A Companhia recebeu correspondência da Ninety One UK Ltd comunicando a redução de participação acionária na Companhia, passando a deter 4,99% em ações ordinárias.\""
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

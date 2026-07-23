@@ -1,7 +1,7 @@
 {
   "ticker": "BMIN3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:43:18",
+  "verificado_em": "2026-07-23T18:44:11",
   "comunicados": {
     "ids": [
       741848619766909536,
@@ -16,6 +16,5 @@
       "Fato Relevante"
     ],
     "texto": "### O QUE aconteceu: PAGAMENTO DE DIVIDENDOS AOS ACIONISTAS\n\n**Resumo:** O Banco Mercantil de Investimentos S.A. (BMIN3; BMIN4) declarou e pagará dividendos no valor total de R$ 3.099.831,62 para o exercício social encerrado em 31 de dezembro de 2025.\n\n**Trecho-chave:** \"O valor total aprovado foi de R$ 3.099.831,62 (três milhões, noventa e nove mil, oitocentos e trinta e um reais, sessenta e dois centavos), sobre o qual incidirá retenção do imposto de renda na fonte, conforme aplicável e de acordo com a legislação vigente.\" (p. 1)\n\n---\n\n### O QUE aconteceu: PAGAMENTO DE DIVIDENDOS AOS ACIONISTAS\n\n**Resumo:** O Banco Mercantil de Investimentos S.A. (BMIN3; BMIN4) declarou e pagará dividendos no valor total de R$ 2.449.876,81 para o exercício social encerrado em 2024.\n\n**Trecho-chave:** \"O pagamento será efetuado em 19 de fevereiro de 2025 na proporção da participação de cada acionista no capital social do Banco, sendo certo que farão jus ao pagamento os acionistas constantes da base acionária do Banco em 7 de fevereiro de 2025 (data-com).\" (p. 1)"
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

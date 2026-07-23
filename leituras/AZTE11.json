@@ -1,7 +1,7 @@
 {
   "ticker": "AZTE11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:32:48",
+  "verificado_em": "2026-07-23T18:26:11",
   "comunicados": {
     "ids": [
       871745770361549234,
@@ -23,5 +23,9 @@
     ],
     "texto": "### O que aconteceu em 17/06/2026\n\n**Título:** Aprovação da incorporação da Andorinha Energia Ltda.\n\n**Resumo:** A AZEVEDO & TRAVASSOS ENERGIA S.A. aprovou, em Assembleia Geral Extraordinária, a incorporação da Andorinha Energia Ltda., aumentando seu portfólio com novos ativos de produção e exploração.\n\n**Trecho-chave:**\n\"A Incorporação será realizada conforme termos descritos no fato relevante divulgado em 15 de maio de 2026, e terá eficácia a partir da presente data, inclusive.\"\n\n### O que aconteceu em 15/05/2026\n\n**Título:** Submissão da incorporação da Andorinha Energia Ltda. e do Grupamento à Assembleia Geral Extraordinária\n\n**Resumo:** A AZEVEDO & TRAVASSOS ENERGIA S.A. submeteu a proposta de incorporação da Andorinha Energia Ltda. e do grupamento das ações para aprovação na Assembleia Geral Extraordinária.\n\n**Trecho-chave:**\n\"A Companhia manterá seus acionistas e o mercado em geral informados acerca dos fatos referentes à Incorporação e ao Grupamento, nos termos da regulamentação aplicável.\"\n\n### O que aconteceu em 09/07/2026\n\n**Título:** Resultados Operacionais - Junho 2026\n\n**Resumo:** A AZEVEDO & TRAVASSOS ENERGIA S.A. divulgou os dados de produção referentes ao mês de junho de 2026, com uma produção média diária de 114 barris de óleo equivalente por dia.\n\n**Trecho-chave:**\n\"A Azevedo & Travassos Energia S.A. encerrou o mês de junho de 2026 com uma produção média diária de 114 barris de óleo equivalente por dia (boe/d).\"\n\n### O que aconteceu em 10/06/2026\n\n**Título:** Resultados Operacionais - Maio 2026\n\n**Resumo:** A AZEVEDO & TRAVASSOS ENERGIA S.A. divulgou os dados de produção referentes ao mês de maio de 2026, com uma produção média diária de 126 barris de óleo equivalente por dia.\n\n**Trecho-chave:**\n\"A Azevedo & Travassos Energia S.A. encerrou o mês de maio de 2026 com uma produção média diária de 126 barris de óleo equivalente por dia (boe/d).\"\n\n---\n\nEstes são os principais fatos relevantes extraídos dos documentos fornecidos, sem opiniões ou recomendações adicionais."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159246,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null
+  }
 }

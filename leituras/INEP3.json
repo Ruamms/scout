@@ -1,7 +1,7 @@
 {
   "ticker": "INEP3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:27:51",
+  "verificado_em": "2026-07-23T19:57:53",
   "comunicados": {
     "ids": [
       3288790706385443,
@@ -16,6 +16,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 03/06/2026\n\n**O que aconteceu:** A Inepar S/A. Indústria e Construções – Em Recuperação Judicial reconduziu a diretoria e reestruturou o Comitê de Novos Negócios.\n\n**Resumo:** A empresa realizou mudanças na estrutura administrativa, incluindo a recondução dos membros atuais da diretoria e a formação de um novo Comitê de Novos Negócios com representantes diversificados.\n\n**Trecho-chave:**\n\"Na Reunião do Conselho de Administração, realizada em 27/05/2026, foram reconduzidos os membros da Diretoria e houve a reestruturação do Comitê de Novos Negócios.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 29/06/2026\n\n**O que aconteceu:** A B3 informou sobre oscilações atípicas nos valores mobiliários da Inepar S/A. Indústria e Construções – Em Recuperação Judicial.\n\n**Resumo:** A empresa esclareceu que não há fato conhecido que justifique as oscilações registradas, reiterando a conformidade com os requisitos legais de transparência.\n\n**Trecho-chave:**\n\"A Inepar esclarece que não há nenhum fato de nosso conhecimento, que justifique o aumento do número de negócios e da quantidade de ações de emissão da Companhia negociada nas datas indicadas.\"\n\n**Conexão com contexto:** Este comunicado responde à questão levantada sobre oscilações atípicas mencionada no contexto, esclarecendo que não há fato relevante conhecido."
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

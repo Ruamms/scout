@@ -1,7 +1,7 @@
 {
   "ticker": "FATN11",
-  "modelo": "qwen2.5:14b",
-  "gerada_em": "2026-07-20T13:12:28",
+  "modelo": "qwen2.5:7b",
+  "gerada_em": "2026-07-23T17:50:20",
   "relatorio": {
     "id": 1233080,
     "data_entrega": "29/06/2026 18:38",
@@ -9,21 +9,24 @@
   },
   "comunicados": {
     "ids": [
+      1262968,
       1202261,
       1180481,
       1152796
     ],
     "datas": [
+      "23/07/2026",
       "25/05/2026",
       "05/05/2026",
       "01/04/2026"
     ],
     "rotulos": [
       "Fato Relevante",
+      "Fato Relevante",
       "Assembleia AGO",
       "Assembleia AGO"
     ],
-    "texto": "### 25/05/2026\n**O QUE ACONTECEU:** O Fundo FATN11 aprovou a realização da 7ª emissão de cotas.\n- **RESUMO:** A BR-CAPITAL, administradora do fundo, anunciou que foi aprovada uma nova emissão de até R$300 milhões em novas cotas, com preço unitário de R$100 cada. O montante total da oferta será distribuído sob o regime de melhores esforços de colocação e registrada na B3.\n- **TRECHO CHAVE:** \"foi aprovado, por meio do “Ata de Reunião entre Gestor e Administrador do BRC RENDA CORPORATIVA FUNDO DE INVESTIMENTO IMOBILIÁRIO – RESPONSABILIDADE LIMITADA”, formalizada em 22 de outubro de 2025 (“Ato do Administrador”), a realização da 7ª (setima) emissão de cotas do Fundo (“Novas Cotas” e “Emissão”)\"\n\n### 05/05/2026\n**O QUE ACONTECEU:** O Fundo FATN11 concluiu uma consulta formal aos cotistas sobre as Demonstrações Financeiras referentes ao exercício de 2025.\n- **RESUMO:** A consulta foi realizada por correspondência, e os votos foram apurados. Os resultados mostraram que a ordem do dia foi aprovada por 81,921% dos cotistas participantes.\n- **TRECHO CHAVE:** \"A ordem do dia foi aprovada por cotistas representando 199.122 cotas, ou seja 81,921% das cotas votantes\"\n\n### 01/04/2026\n**O QUE ACONTECEU:** O Fundo FATN11 convocou uma consulta formal aos cotistas para analisar e deliberar sobre as Demonstrações Financeiras referentes ao exercício de 2025.\n- **RESUMO:** Os cotistas foram convidados a votar por escrito até o dia 4 de maio, com instruções detalhadas sobre como proceder na plataforma Cuore. A consulta inclui análise e deliberação das demonstrações financeiras do exercício encerrado em 31 de dezembro de 2025.\n- **TRECHO CHAVE:** \"BR-CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A., na qualidade de administradora do BRC RENDA CORPORATIVA FUNDO DE INVESTIMENTO IMOBILIÁRIO (O “FUNDO”), com base no artigo 27 do Regulamento do Fundo, vem pela presente consultar os cotistas, para que, no prazo de 30 dias, ou seja, até o dia 04 de maio, considerando o feriado nacional de 01 de maio de 2026, se manifestem por escrito sobre a seguinte matéria: Análise e deliberação acerca das Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025\""
+    "texto": "### FATO RELEVANTE entregue em 23/07/2026\n\n**O QUE aconteceu:** Encerramento do contrato com o Formador de Mercado.\n\n**Resumo:** A administradora decidiu encerrar o contrato com o Formador de Mercado, pois seus objetivos foram alcançados e não há motivo para manutenção.\n\n**Trecho-chave:**\n\"Como os objetivos que levaram a contratação do Formador de Mercado em 25 de novembro de 2024 foram alcançados e não havendo motivo para a manutenção do contrato, a Administradora decidiu pela seu encerramento.\"\n\n---\n\n### FATO RELEVANTE entregue em 25/05/2026\n\n**O QUE aconteceu:** Emissão de cotas.\n\n**Resumo:** A administradora aprovou a emissão de 3 milhões de novas cotas, com preço unitário de R$ 100,00, para cumprir os objetivos do fundo.\n\n**Trecho-chave:**\n\"O valor total da Oferta, incluindo a subscrição por meio do exercício do Direito de Preferência, e a subscrição no âmbito da Oferta, é de R$ 300.000.000,00 (trezentos milhões de reais) correspondente a 3.000.000 (três milhões) de Novas Cotas.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 05/05/2026\n\n**O QUE aconteceu:** Consulta formal aos cotistas sobre as demonstrações financeiras do exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A assembleia foi realizada por correspondência e teve aprovação de 81,921% dos votos emitidos.\n\n**Trecho-chave:**\n\"A ordem do dia foi aprovada por cotistas representando 199.122 cotas, ou seja 81,921% das cotas votantes.\"\n\n---\n\n### ASSEMBLEIA AGO entregue em 01/04/2026\n\n**O QUE aconteceu:** Convocação de consulta formal aos cotistas sobre as demonstrações financeiras do exercício encerrado em 31 de dezembro de 2025.\n\n**Resumo:** A consulta foi realizada por correspondência e os cotistas terão até o dia 4 de maio para se manifestar.\n\n**Trecho-chave:**\n\"Analisar e deliberar acerca das Demonstrações Financeiras referentes ao exercício encerrado em 31 de dezembro de 2025, bem como do relatório dos Auditores Independentes.\""
   },
   "retrato": {
     "selo": "Atenção",
@@ -33,7 +36,7 @@
       "Emissão de cotas com VP/cota em queda",
       "Vacância física alta"
     ],
-    "cota": 79.82
+    "cota": 79.8
   },
   "parecer": {
     "id": 1148954,

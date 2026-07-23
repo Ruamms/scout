@@ -1,7 +1,7 @@
 {
   "ticker": "LPSB3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:35:43",
+  "verificado_em": "2026-07-23T20:13:56",
   "comunicados": {
     "ids": [
       230379314942781674,
@@ -16,6 +16,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 08/05/2026\n\n**O QUE aconteceu:** Lucro Líquido Consolidado ex-IFRS aumentou 16% no 1T26.\n\n**Resumo:** O lucro líquido consolidado do primeiro trimestre de 2026 (1T26) da LPS Brasil atingiu R$ 8,1 milhões, representando um crescimento de 16% em comparação com o mesmo período do ano anterior.\n\n**Trecho-chave:** \"Lucro Líquido Consolidado ex-IFRS R$ 8,1 mm no 1T26 | +16% vs. 1T25\" (p. 3)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 25/03/2026\n\n**O QUE aconteceu:** A Lopes se consolidou como a única imobiliária presente em todos os estados do Brasil.\n\n**Resumo:** A Lopes & Ganho de Eficiência, comunicado destaca que a empresa é líder no setor imobiliário brasileiro e a mais reconhecida com 90 anos de experiência. Além disso, a Lopes se consolidou como a única companhia do mercado imobiliário presente em todos os estados do Brasil.\n\n**Trecho-chave:** \"A Lopes é a líder do setor imobiliáriobrasileiro a marcar mais reconhecida com 90 anos de experiência…\" (p. 3)\n\n\"Imobiliárias… Ao implementar sua rede de franquias, a Lopes se consolidou como a única companhia do mercado imobiliário a estar presente em todo os estados do Brasil…\" (p. 5)"
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

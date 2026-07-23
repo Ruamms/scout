@@ -1,7 +1,7 @@
 {
   "ticker": "LUXM3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:37:22",
+  "verificado_em": "2026-07-23T20:15:21",
   "comunicados": {
     "ids": [
       440624217963677565,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 29/04/2025\n\n**O que aconteceu:** Aumento do capital social mediante capitalização de Reserva de Lucros.\n\n**Resumo:** A Companhia aumentou seu capital social para R$ 90.000.000,00, emitindo 20.784.000 novas ações gratuitamente aos acionistas existentes.\n\n**Trecho-chave:**\n\"foi aprovado o aumento do capital social da Companhia para R$ 90.000.000,00, mediante capitalização de R$ 30.000.000,00 da Reserva de Lucros – Reserva para Investimentos e/ou Capital de Giro, passando o mesmo de R$ 60.000.000,00 para R$ 90.000.000,00.\"\n\n### COMUNICADO AO MERCADO entregue em 21/11/2025\n\n**O que aconteceu:** Mudança de Auditor Independente.\n\n**Resumo:** A Companhia trocou sua auditora independente da BDO RCS Auditores Independentes SS pela Ernst & Young Auditores Independentes SS, seguindo a rotatividade estabelecida pela Resolução CVM 23/2021.\n\n**Trecho-chave:**\n\"comunica a seus acionistas e ao mercado em geral, que em reunião realizada no dia 18 de novembro de 2025, o Conselho de Administração da Companhia, aprovou a contratação de prestação de serviços de auditoria externa, pelo prazo de um ano, com a Ernst & Young Auditores Independentes SS.\"\n\n### COMUNICADO AO MERCADO entregue em 03/09/2025\n\n**O que aconteceu:** Aumento na participação acionária.\n\n**Resumo:** O Rainbow Fund passou a deter 11,7029% das ações preferenciais da Companhia após aquisição de mais 750.000 ações.\n\n**Trecho-chave:**\n\"A TREVISA INVESTIMENTOS S.A. (“Trevisa” ou “Companhia”), nos termos do artigo 12 da Instrução CVM nº 44, de 23 de agosto de 2021, comunica aos seus acionistas e ao mercado em geral que recebeu, em 02 de setembro de 2025, notificação da Rainbow Fund, L.P. (“Rainbow Fund”), inscrita no CNPJ sob nº 15.737.719/0001-87, informando que, após a aquisição de 750.000 ações preferenciais de emissão da Companhia, passou a deter um total de 2.713.200 ações preferenciais, que representam 11,7029% do total das ações desta espécie.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158096,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Processos Trabalhistas - Trevisa Investimentos S.A.**\n   - **Natureza:** Trabalhista\n   - **Valor envolvido:** R$ 50.000,00 (cinquenta mil reais) a R$ 100.000,00 (cem mil reais)\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** Quatro processos envolvem dano moral e material por exposição a metais pesados em unidade industrial da ex-controlada.\n\n2. **Ação Civil Pública n° 0000519-90.1997.8.26.0030**\n   - **Natureza:** Cível\n   - **Valor envolvido:** Não declarado, mas envolve obrigações de fazer para recuperação de área minada.\n   - **Chance de perda:** Remota\n   - **Resumo do objeto:** Ação civil pública com objetivo de mitigar danos ambientais e recuperar área de mineração.\n\n3. **Ação Civil Pública n° 0000257-49.2003.4.01.3300**\n   - **Natureza:** Cível\n   - **Valor envolvido:** Não declarado, mas envolve obrigações de fazer para recuperação de área minada.\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** Ação civil pública com objetivo de mitigar danos ambientais e recuperar área da fábrica encerrada.\n\n4. **Processo Cível n° 0001334-69.2011.805.0228**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 5.000.000,00 (cinco milhões de reais) para constituição de fundo e indenização.\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** Ação coletiva por dano moral e material decorrente da contaminação por metais pesados.\n\n5. **Processo Cível n° 000096.96.2012.805.0028**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 5.000.000,00 (cinco milhões de reais) para constituição de fundo e indenização.\n   - **Chance de perda:** Remota\n   - **Resumo do objeto:** Ação coletiva por dano moral e material decorrente da contaminação por metais pesados."
+  }
 }

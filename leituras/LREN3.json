@@ -1,7 +1,7 @@
 {
   "ticker": "LREN3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T17:48:03",
+  "verificado_em": "2026-07-23T20:13:57",
   "comunicados": {
     "ids": [
       9692151839327082,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 09/03/2026\n\n**O que aconteceu:** Lojas Renner divulga projeções financeiras e operacionais para o período até 31/12/2026.\n\n**Resumo:** A companhia planeja investir R$ 1.050 milhões em capital fixo, abrir entre 22 a 30 lojas Renner BR, de 23 a 25 lojas Youcom e cerca de 5 lojas Camicado até o final de 2026.\n\n**Trecho-chave:** \"Indicador Financeiro / Investimento em Capital Fixo: R$ 1.050 milhões / Até 31/12/2026\" (p. 1).\n\n### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O que aconteceu:** Lojas Renner publica seu Relatório de Informações Financeiras Relacionadas à Sustentabilidade de 2025.\n\n**Resumo:** O relatório destaca a integração da sustentabilidade nas estratégias de negócios, financeira e operacional, incluindo novos riscos físicos relacionados a ventos fortes. A gestão dos desafios climáticos pode gerar valor através de oportunidades na eficiência hídrica.\n\n**Trecho-chave:** \"A Companhia também avançou na integração dos temas climáticos à matriz de riscos corporativos e ao planejamento estratégico, fortalecendo a consistência e a transparência na tomada de decisões.\" (p. 1).\n\n### COMUNICADO AO MERCADO entregue em 03/06/2026\n\n**O que aconteceu:** Lojas Renner anuncia mudanças na diretoria da subsidiária Realize SCFI.\n\n**Resumo:** Daniel Martins dos Santos, Vice-Presidente de Finanças e Relações com Investidores, foi eleito Diretor Presidente da Realize SCFI. Paula Luciana Viana da Silva Lima Mazanék iniciará um período de transição até julho de 2026, enquanto Tiago Nunes Nicolaidis permanecerá como Diretor Estatutário.\n\n**Trecho-chave:** \"O Sr. Daniel Martins dos Santos, Vice-Presidente de Finanças, Administrativo e de Relações com Investidores da Companhia foi eleito, nesta data, como Diretor Presidente da Realize SCFI.\" (p. 1)."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158494,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Processo IPI Revenda – Processo 10340.721238/2021-16**\n   - **Natureza:** Tributária\n   - **Valor envolvido:** R$ 146.222.194,00 (valor aproximado em janeiro de 2026)\n   - **Chance de perda:** Possível\n   - **Resumo:** Discute-se a exigência de IPI pela suposta ausência de recolhimento ou recolhimento a menor de IPI revenda, sem observância do Valor Tributável Mínimo.\n\n2. **Processo IPI Revenda – Processo 10340.721548/2021-22**\n   - **Natureza:** Tributária\n   - **Valor envolvido:** R$ 57.565.718,70 (valor aproximado em janeiro de 2026)\n   - **Chance de perda:** Possível\n   - **Resumo:** Discute-se a exigência de IPI pela suposta ausência de recolhimento ou recolhimento a menor de IPI revenda, sem observância do Valor Tributável Mínimo.\n\n3. **Processo IPI Revenda – Processo 10340.721452/2021-64**\n   - **Natureza:** Tributária\n   - **Valor envolvido:** R$ 95.829.594,71 (valor aproximado em janeiro de 2026)\n   - **Chance de perda:** Possível\n   - **Resumo:** Discute-se a exigência de IPI pela suposta ausência de recolhimento ou recolhimento a menor de IPI revenda, sem observância do Valor Tributável Mínimo.\n\n4. **Processo PIS/COFINS – Glosa de Créditos – Processo 11000.724636/2021-08**\n   - **Natureza:** Tributária\n   - **Valor envolvido:** R$ 236.553.490,72 (valor aproximado em janeiro de 2026)\n   - **Chance de perda:** Possível\n   - **Resumo:** Discute-se a exigência de PIS/COFINS pela suposta tomada de crédito indevida.\n\n5. **Processo IPI Revenda – Processo 11000737.797/2025-87**\n   - **Natureza:** Tributária\n   - **Valor envolvido:** R$ 135.114.617,67 (valor aproximado em janeiro de 2026)\n   - **Chance de perda:** Possível\n   - **Resumo:** Seis autos de infração que exigem IPI acrescido de multa de ofício, multa isolada e juros.\n\nNão há processos relevantes declarados com valores maiores ou menores nessa lista."
+  }
 }

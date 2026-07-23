@@ -1,7 +1,7 @@
 {
   "ticker": "ORVR11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T17:55:43",
+  "verificado_em": "2026-07-23T20:42:48",
   "comunicados": {
     "ids": [
       611925581658193252,
@@ -19,6 +19,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 10/07/2026\n\n**O que aconteceu:** Desdobramento de ações e recomposição do Conselho de Administração.\n\n**Resumo:** A OrizonVR propôs desdobrar suas ações ordinárias, passando cada uma a representar quatro ações. Além disso, a administração propôs destituir a atual composição do Conselho de Administração e reconstituí-lo com 11 membros.\n\n**Trecho-chave:** \"Caso aprovado o Desdobramento de Ações, as ações de emissão da Companhia passarão a ser negociadas ex-desdobramento a partir de 11 de agosto de 2026, considerando a posição acionária com data-base de 10 de agosto de 2026. As ações resultantes do desdobramento serão creditadas aos acionistas no dia 13 de agosto de 2026.\" (p. 2)\n\n### COMUNICADO AO MERCADO entregue em 15/07/2026\n\n**O que aconteceu:** Eleição de novo Diretor Operacional.\n\n**Resumo:** A OrizonVR e a OMA elegeram o Sr. Dalton Assumção Canelhas Filho como novo Diretor Operacional, substituindo o Sr. Hamilton Amadeo, que deixará a posição executiva nas empresas do grupo econômico.\n\n**Trecho-chave:** \"O Sr. Dalton Filho integra a Orizon desde fevereiro de 2013 e ocupou o cargo de Diretor Operacional das Companhias entre dezembro de 2013 e outubro de 2024, permanecendo, desde então, como membro do Conselho de Administração da OrizonVR.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 13/07/2026\n\n**O que aconteceu:** Reapresentação do Boletim de Voto a Distância para a AGE.\n\n**Resumo:** A OrizonVR reapresentou o BVD referente à AGE, incluindo a opção de eleição em separado de membro do Conselho de Administração. O prazo para envio do BVD se encerra em 6 de agosto de 2026.\n\n**Trecho-chave:** \"A reapresentação do BVD teve por objetivo incluir a opção de eleição em separado de membro do Conselho de Administração.\" (p. 1)"
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

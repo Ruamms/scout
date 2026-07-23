@@ -1,7 +1,7 @@
 {
   "ticker": "JSLG3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:29:04",
+  "verificado_em": "2026-07-23T20:09:00",
   "comunicados": {
     "ids": [
       436309806248347493,
@@ -19,6 +19,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 17/07/2026\n\n**O QUE aconteceu:** A JSL S.A. divulgou uma estimativa de receita bruta para o ano-calendário de 2030.\n\n**Resumo:** A companhia estima uma receita bruta de R$ 21,4 bilhões em 2030, com um crescimento médio anual de 14% a partir de 2025. Essa projeção é baseada na capacidade operacional e no processo de consolidação do setor logístico.\n\n**Trecho-chave:** \"A Companhia estima sua Receita Bruta para o ano-calendário de 2030 o valor de R$ 21,4 bilhões, uma projeção de crescimento médio anual de 14% ao ano desde 2025.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O QUE aconteceu:** A JSL S.A. realizou uma apresentação sobre o novo ciclo de geração de valor.\n\n**Resumo:** A companhia destacou a criação das empresas independentes e as bases preparadas para um novo ciclo transformacional, incluindo relistagem, fundação, IPO, aquisições e crescimento consistente em receita bruta e EBITDA.\n\n**Trecho-chave:** \"O NOVO CICLO DE GERAÇÃO DE VALOR / INÍCIO DE UM NOVO CICLO TRANSFORMACIONAL\" (p. 4)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O QUE aconteceu:** A JSL S.A. apresentou dados financeiros e estratégicos.\n\n**Resumo:** O comunicado destaca a receita bruta, EBITDA, margem EBITDA, giro de caixa líquido (CAPEX) e alavancagem desde o 3T20 até o atual momento, mostrando um crescimento significativo em todos esses indicadores.\n\n**Trecho-chave:** \"CAGR: 25% / RECEITA BRUTA / + R$8,1 bi / EBITDA Aj¹ / + R$1.5 bi / EBITDA Margin Aj¹ / + 3,4 p.p.\" (p. 6)\n\n---\n\n**Conexão com o contexto:** As projeções e dados financeiros apresentados no comunicado ao mercado refletem a estimativa de receita bruta para 2030 mencionada no fato relevante, demonstrando o compromisso da JSL em manter um crescimento consistente."
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

@@ -287,7 +287,6 @@ table.imoveis td:not(:first-child), table.imoveis th:not(:first-child) {{ text-a
 
   <div class="rodape">{_RODAPE}<br>
   Projeto open source: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a>
-  · <a href="apoie.html">apoie o projeto</a>
   · <a href="bancos.html">todos os bancos</a> · <a href="index.html">início</a></div>
 </div>
 <script>

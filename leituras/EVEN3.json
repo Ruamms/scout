@@ -1,7 +1,7 @@
 {
   "ticker": "EVEN3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:14:47",
+  "verificado_em": "2026-07-23T19:37:00",
   "comunicados": {
     "ids": [
       961383401630546161,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE ENTREGUE EM 20/05/2026\n\n**O QUE aconteceu:** Nova Milano Investimentos Ltda. passou a deter 50,06% das ações ordinárias da EVEN Construtora e Incorporadora S.A.\n\n**Resumo:** A empresa recebeu notificação de que um fundo administrado por uma outra empresa passou a detém 50,06% do capital social total e votante da Even.\n\n**Trecho-chave:**\n\"Os fundos e carteiras administradas sob sua gestão passaram a deter 100.117.420 (cem milhões, cento e dezessete mil, quatrocentas e vinte) ações ordinárias de emissão da Companhia, representativas de, aproximadamente, 50,06% (cinquenta inteiros e seis centésimos por cento) do seu capital social total e votante.\"\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 14/07/2026\n\n**O QUE aconteceu:** A EVEN Construtora e Incorporadora S.A. anunciou dados operacionais preliminares para o segundo trimestre de 2026.\n\n**Resumo:** A empresa relatou lançamentos, vendas líquidas e entregas de empreendimentos residenciais de alto padrão no segundo trimestre de 2026.\n\n**Trecho-chave:**\n\"Renato 410 – Perspectiva artística da fachada.\"\n\"Os lançamentos somaram R$ 677 milhões (R$ 281 milhões % Even). As vendas líquidas somaram R$ 156 milhões (% Even). As entregas totalizaram VGV de R$ 122 milhões (% Even), correspondentes a 153 unidades.\"\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 26/05/2026\n\n**O QUE aconteceu:** A EVEN Construtora e Incorporadora S.A. realizou uma chamada com investidores.\n\n**Resumo:** O documento não fornece detalhes específicos sobre o que ocorreu durante a chamada, mas indica que houve uma conversa entre a empresa e Santander IB Investimentos.\n\n**Trecho-chave:**\n\"Call c/ Investidores\nEven + Santander IB\n26/05/2026\"\n\n---\n\n### FATO RELEVANTE ENTREGUE EM 14/07/2026\n\nEste documento não é um fato relevante, mas um comunicado operacional. Portanto, ele não se enquadra na estrutura solicitada para fatos relevantes.\n\n---\n\n**Conexão com o contexto:** O aumento de participação da Nova Milano Investimentos Ltda. (50,06% do capital social) pode influenciar a estratégia e as decisões futuras da Even Construtora e Incorporadora S.A., especialmente em relação aos lançamentos e vendas de imóveis."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158375,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos judiciais, administrativos e arbitrais que não estejam sob sigilo e que sejam individualmente relevantes para os negócios da Companhia."
+  }
 }

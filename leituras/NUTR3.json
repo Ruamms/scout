@@ -1,7 +1,7 @@
 {
   "ticker": "NUTR3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:49:27",
+  "verificado_em": "2026-07-23T20:38:30",
   "comunicados": {
     "ids": [
       502321993736015152,
@@ -16,6 +16,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 24/03/2026\n\n**O que aconteceu:** A NUTRIPLANT INDÚSTRIA E COMÉRCIO S.A. anunciou a migração para o Segmento Básico de listagem da B3 S.A., em decorrência da descontinuidade do segmento Bovespa Mais.\n\n**Resumo:** A companhia passa a estar dispensada da obrigação de manter um percentual mínimo de ações em livre circulação, já que o Segmento Básico não prevê requisito mínimo obrigatório de free float.\n\n**Trecho-chave:**\n\"A Companhia foi informada pela B3 que, a partir de 16 de março de 2026, com a descontinuidade do Bovespa Mais e Bovespa Mais Nível 2, as companhias serão automaticamente migradas para o Segmento Básico, de forma que permanecerão listadas e suas ações admitidas à negociação no ambiente da B3.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 22/04/2026\n\n**O que aconteceu:** A NUTRIPLANT INDÚSTRIA E COMÉRCIO S.A. comunicou a divulgação dos resultados do primeiro trimestre de 2026 e estabeleceu um período de silêncio.\n\n**Resumo:** A companhia agendou a divulgação para o dia 12 de maio de 2026, antes da abertura do mercado, e informou que estará em período de silêncio de 27 de abril até 11 de maio de 2025.\n\n**Trecho-chave:**\n\"Divulgação de resultados do primeiro trimestre de 2026 (“1T26”) da Companhia está agendada para o dia 12 de maio de 2026 (antes da abertura do mercado). Em atenção às melhores práticas de governança corporativa, a Companhia informa que estará em período de silêncio (quiet period) de 27 de abril até 11 de maio de 2025.\" (p. 1)\n\n---\n\n**Conexão com o contexto:** A migração para o Segmento Básico de listagem da B3 S.A., anunciada em março, não afeta a continuidade das operações e negociação das ações na bolsa, conforme comunicado em abril."
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

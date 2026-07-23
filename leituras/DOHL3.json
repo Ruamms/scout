@@ -1,7 +1,7 @@
 {
   "ticker": "DOHL3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:03:21",
+  "verificado_em": "2026-07-23T19:23:45",
   "comunicados": {
     "ids": [
       590377738956858736,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 09/03/2026\n\n**O QUE aconteceu:** A DÖHLER S.A. adquiriu a totalidade das participações societárias da OMNITEK S.A., e firmou compromisso de compra de imóveis para instalar uma nova unidade produtiva no Paraguai.\n\n**Resumo:** A empresa expandiu sua operação internacional, comprando uma sociedade pré-constituída e adquirindo imóveis para a nova unidade fabril.\n\n**Trecho-chave:**\n\"Para viabilizar a operação no Paraguai, a Companhia adquiriu, em 10 de fevereiro de 2026, a totalidade das participações societárias da OMNITEK S.A., sociedade anônima pré-constituída e não operacional, com RUC nº 80161458-9, com sede na cidade de Assunção, República do Paraguai, pelo valor de US$ 4.000,00 (quatro mil dólares norte-americanos), equivalentes a aproximadamente R$ 20.806,00.\"\n\n### FATO RELEVANTE entregue em 04/03/2026\n\n**O QUE aconteceu:** A DÖHLER S.A. adquiriu a totalidade da participação societária da OMNITEK S.A., e firmou compromisso de compra de imóveis para instalar uma nova unidade produtiva no Paraguai.\n\n**Resumo:** A empresa expandiu sua operação internacional, comprando uma sociedade pré-constituída e adquirindo imóveis para a nova unidade fabril.\n\n**Trecho-chave:**\n\"A Companhia informa que, por meio da referida sociedade, firmou compromisso de aquisição de imóvel localizado na cidade de Coronel Oviedo, Paraguai, destinado à instalação de uma nova unidade produtiva.\"\n\n### FATO RELEVANTE entregue em 06/05/2025\n\n**O QUE aconteceu:** A DÖHLER S.A. retificou o prazo do programa de recompra de ações.\n\n**Resumo:** O Conselho de Administração da empresa aprovou a retificação do prazo do programa de recompra de ações, estendendo-o até 06 de novembro de 2026.\n\n**Trecho-chave:**\n\"Em cumprimento ao disposto nas Resoluções CVM 44/2021 e 77/2022, bem como, nos termos do parágrafo 4º do artigo 157 da Lei 6.404/1976, a DÖHLER S/A (“Companhia”), comunica aos seus acionistas e ao mercado em geral que seu Conselho de Administração, em reunião realizada nesta data, aprovou a retificação do prazo do programa de recompra de ações de emissão da própria Companhia.\"\n\n**Conexão com o contexto:** Este fato relevante não está diretamente conectado aos indicadores do contexto fornecido."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158234,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Cível** - R$ 12.475 mil\n   * \"Autuação fiscal sobre adicional de GILRAT – aposentadoria especial 25 anos – 01/2015 a 12/2016.\"\n\n2. **Cível** - R$ 12.272 mil\n   * \"Autuação fiscal sobre adicional de RAT – aposentadoria especial 25 anos – 01/2020 a 12/2021.\"\n\n3. **Tributário** - R$ 15.468 mil\n   * \"Notificação fiscal nº 2200000157222 – Operações Tributáveis pelo ICMS na remessa p/industrialização x destaque do imposto no período da apuração 01/2018 até 12/2020.\"\n\n4. **Tributário** - R$ 10.283 mil\n   * \"Execução fiscal CDA nº 914.23.024419-73 de origem previdenciária.\"\n\n5. **Trabalhista** - R$ 3.844 mil\n   * \"Reclamatória trabalhista envolvendo verbas rescisórias, indenizações (morais e materiais), doença ocupacional e horas extras.\""
+  }
 }

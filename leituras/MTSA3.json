@@ -1,7 +1,7 @@
 {
   "ticker": "MTSA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:47:12",
+  "verificado_em": "2026-07-23T20:33:12",
   "comunicados": {
     "ids": [
       1035334977878625669,
@@ -23,5 +23,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 05/08/2025\n\nO que aconteceu: A Metisa Metalúrgica Timboense S.A. aprovou o programa de recompra de ações próprias.\nResumo: A companhia autorizou a compra de até 200.000 ações preferenciais em circulação no mercado, sem valor nominal, para posterior alienação ou cancelamento.\nTrecho-chave: \"o Conselho de Administração da Companhia autorizou a aquisição, no período de 05.08.2025 a 31.07.2026, de até 200.000 ações preferenciais escriturais de emissão própria, sem valor nominal.\"\n\n### FATO RELEVANTE entregue em 07/07/2025\n\nO que aconteceu: A Metisa Metalúrgica Timboense S.A. comunicou o falecimento da Conselheira de Administração Márcia Valéria dos Santos Rosa e a nomeação do Conselheiro Suplente João Casagrande Angelo.\nResumo: Márcia Valéria dos Santos Rosa faleceu em 27 de junho de 2025, e João Casagrande Angelo assumiu o cargo efetivo imediatamente após a nomeação.\nTrecho-chave: \"METISA Metalúrgica Timboense S.A. comunica aos seus acionistas e ao mercado em geral o falecimento da sua Conselheira de Administração Márcia Valéria dos Santos Rosa, ocorrido em 27 de junho de 2025.\"\n\n### COMUNICADO AO MERCADO entregue em 11/12/2025\n\nO que aconteceu: A Metisa Metalúrgica Timboense S.A. aprovou a distribuição de dividendos.\nResumo: O Conselho de Administração deliberou e aprovou a proposta de distribuição de dividendos com base em reservas de lucros dos exercícios sociais de 2022, 2023 e 2024. Os valores serão R$1,50 por ação ordinária e R$1,65 por ação preferencial.\nTrecho-chave: \"o Conselho de Administração deliberou e aprovou a proposta de distribuição de dividendos com base em reservas de lucros dos exercícios sociais de 2022, 2023 e 2024. O valor será de R$1,50 por ação ordinária e de R$1,65 por ação preferencial.\"\n\n### COMUNICADO AO MERCADO entregue em 24/11/2025\n\nO que aconteceu: A Metisa Metalúrgica Timboense S.A. aprovou o pagamento de juros sobre o capital próprio.\nResumo: O Conselho de Administração deliberou e aprovou a proposta para pagamento de juros sobre o capital próprio, com valores de R$ 1,1000 por ação ordinária e R$ 1,2100 por ação preferencial, a serem pagos em 31 de março de 2026.\nTrecho-chave: \"o Conselho de Administração deliberou e aprovou a proposta para pagamento de juros sobre o capital próprio (“JCP”), ad referendum da Assembleia Geral Ordinária, com base na posição acionária do dia 01/12/2025.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158301,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes declarados para a empresa MTSA3 na seção de Processos Judiciais do FRE."
+  }
 }

@@ -1,7 +1,7 @@
 {
   "ticker": "CASH3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:51:14",
+  "verificado_em": "2026-07-23T18:55:34",
   "comunicados": {
     "ids": [
       616240639214765747,
@@ -20,5 +20,10 @@
     ],
     "texto": "### Ocorrência em 17/07/2026\n\n**Título:** Redução de participação acionária relevante\n\n**Resumo:** O Banco BTG Pactual S.A. informou que atingiu uma posição de aproximadamente 14,58% das ações ordinárias emitidas pela Méliuz S.A., além de ter exposição vendida equivalente a 12,44% do total de ações.\n\n**Trecho-chave:**\n\"Em conjunto com suas subsidiárias, o BTG Pactual S.A. informa que, atingiu a posição de aproximadamente 16,516,920 (dezesseis milhões, quinhentos e dezesseis mil, novecentos e vinte) ações ordinárias (CASH3), equivalente a aproximadamente 14,58% (quatorze vírgula cinco oito por cento) do total de ações ordinárias emitidas pela Companhia.\"\n\n### Ocorrência em 08/07/2026\n\n**Título:** Aumento de participação acionária relevante\n\n**Resumo:** O TZUR Fundo de Investimento Financeiro em Ações adquiriu 2.261.100 ações ordinárias (CASH3) da Méliuz S.A., atingindo uma posição equivalente a 15,24% do total de ações.\n\n**Trecho-chave:**\n\"Em cumprimento ao disposto no artigo 12 da Resolução CVM nº 44, o TZUR Fundo de Investimento Financeiro em Ações, inscrito no CNPJ/MF sob o n° 67.559.248/0001-68, cujo único cotista e beneficiário final é o Sr. Israel Fernandes Salmen, Presidente do Conselho de Administração do Méliuz S.A. (Companhia) e acionista integrante do Bloco de Referência, informa que adquiriu 2.261.100 (dois milhões, duzentos e sessenta um mil e cem) ações ordinárias (CASH3) emitidas pelo Méliuz S.A. (Companhia), atingindo a posição de 17.261.100 (dezessete milhões, duzentos e sessenta um mil e cem) ações ordinárias da Companhia, equivalentes a 15,24% do total de ações.\"\n\n### Ocorrência em 01/07/2026\n\n**Título:** Alteração relevante na participação do Bloco de Referência da Companhia\n\n**Resumo:** Israel Fernandes Salmen transferiu parcialmente suas ações para o veículo TZUR Fundo de Investimento Financeiro em Ações, passando a ser titular de 15.000.000 ações ordinárias (CASH3) e mantendo 1.808.410 ações em sua pessoa física.\n\n**Trecho-chave:**\n\"Com a alteração mencionada acima, o veículo TZUR Fundo de Investimento Financeiro em Ações passa a ser titular de 15.000.000 ações ordinárias de emissão da Companhia (CASH3) e o Sr. Israel Salmen permanece titular de 1.808.410 ações em sua pessoa física, sem alteração na posição total do beneficiário final.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159527,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes."
+  }
 }

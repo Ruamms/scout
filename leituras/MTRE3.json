@@ -1,7 +1,7 @@
 {
   "ticker": "MTRE3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:46:29",
+  "verificado_em": "2026-07-23T20:33:00",
   "comunicados": {
     "ids": [
       278190643321587667,
@@ -20,5 +20,10 @@
     ],
     "texto": "### O QUE aconteceu: FATO RELEVANTE entregue em 10/07/2026\n\n**Resumo:** A Mitre Realty assinou um acordo de acionistas com executivos para regular o exercício do direito de voto, sem alterar significativamente a estrutura de controle da empresa.\n\n**Trecho-chave:**\n\"A Companhia, em atendimento ao disposto na regulamentação aplicável da Comissão de Valores Mobiliários (\"CVM\"), especialmente na Resolução CVM nº 44, de 23 de agosto de 2021, vem comunicar aos seus acionistas e ao mercado em geral que, nesta data, foi arquivado em sua sede social o acordo de acionistas celebrado entre a Mitre Partners Participações S.A. (\"Mitre Partners\"), acionista integrante do grupo de controle da Companhia, e determinados executivos da Companhia (\"Executivos\" e, em conjunto com a Mitre Partners, os \"Acionistas Signatários\").\"\n\n### O QUE aconteceu: COMUNICADO AO MERCADO entregue em 10/07/2026\n\n**Resumo:** A Mitre Realty divulgou resultados do segundo trimestre de 2026, com destaque para vendas e lançamentos.\n\n**Trecho-chave:**\n\"VGV BRUTO R$ 917 MILHÕES1\nE N T R E G A S 2 T 2 6 \n658 unid ad es \nR $ 4 5 4 M I L H Õ E S E M V G V\n(-1,9 p.p. VS 2T25)\n5,1% de \nEstoque Pronto\nVENDAS BRU TAS\nR$ 609 MI LHÕES\nR $ 5 2 7 M I L H Õ E S\nde VENDAS LÍQUIDAS\n6M26\n53%\"\n### O QUE aconteceu: COMUNICADO AO MERCADO entregue em 21/05/2026\n\n**Resumo:** A Mitre Realty informou que a Mitre Partners e o Sr. Fabricio Mitre passaram a deter 37,86% do capital social da empresa.\n\n**Trecho-chave:**\n\"A Companhia recebeu, nesta data, comunicação na qual a Mitre Partners Participações Ltda. (\"Mitre Partners\") e o Sr. Fabricio Mitre (em conjunto com a Mitre Partners, \"Acionistas\") informaram que o bloco de controle da Companhia passou a deter 37,86% do capital social da Companhia.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159529,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Cível** - R$10.000,00 (dez mil reais) - Possível - \"Trata-se de ação popular por meio da qual a Autora pleiteia a realização das obras necessárias à correção de um alegado estreitamento da via pública.\"\n\nNão há outros processos relevantes declarados na seção."
+  }
 }

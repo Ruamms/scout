@@ -1,7 +1,7 @@
 {
   "ticker": "ALPA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:22:00",
+  "verificado_em": "2026-07-23T18:13:08",
   "comunicados": {
     "ids": [
       961834778861489969,
@@ -17,5 +17,10 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 13/07/2026\n\n**O QUE aconteceu:** Anúncio da agenda de divulgação dos resultados do 2T26.\n\n**Resumo:** A Alpargatas anunciou a data e horário para a divulgação dos resultados financeiros do segundo trimestre de 2026, bem como detalhes sobre uma videoconferência.\n\n**Trecho-chave:**\n\"DIVULGAÇÃO DOS RESULTADOS\n06 de agosto de 2026, quinta-feira (após o fechamento do mercado).\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 08/05/2026\n\n**O QUE aconteceu:** Anúncio dos resultados financeiros do primeiro trimestre de 2026.\n\n**Resumo:** O comunicado apresenta uma série de métricas e estratégias para o crescimento da Alpargatas, tanto no Brasil quanto internacionalmente, destacando a performance nas vendas, marketing, simplificação operacional e alocação de capital.\n\n**Trecho-chave:**\n\"MODELO DE CRES­CIMENTO NO BRASIL\n• Vencer no canal Especializado\n• Acelerar a expansão do canal Alimentar Moderno\n• Mitigar o declínio do canal Alimentar Tradicional\n• Melhora consistente nos níveis de serviço (OTIF), que atingiram 86%, acompanhada de crescimento de volume no DTC (+12%) e no canal Especializado (+5%), sustentando crescimento recorrente de sell-out.\"\n\n**Conexão com o contexto:** As estratégias mencionadas no comunicado do primeiro trimestre (2026) refletem os esforços contínuos da Alpargatas para manter seu crescimento, conforme indicado nos dados do contexto."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158198,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Execução Fiscal nº 5005591-42.2022.4.03.6182 e Ação Anulatória nº 5012201-78.2022.4.03.6100**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 144,3MM\n   - **Chance de perda:** Remota\n   - **Resumo:** Cobrança oriunda da não homologação de pedidos de compensação tributária com créditos relativos ao indébito de PIS (Lei complementar 7/70), reconhecidos por decisão judicial transitada em julgado favoravelmente à Companhia.\n\n2. **Execução Fiscal nº 0023171-38.2010.8.21.0078 e Embargos à Execução Fiscal nº 0004299-04.2012.8.21.0078**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 174,1MM\n   - **Chance de perda:** Remota\n   - **Resumo:** Execução fiscal remanescente de Auto de Infração lavrado pela Secretaria de Fazenda do Rio Grande do Sul em virtude de suposto não cumprimento de acordo celebrado com o FUNDOPEM.\n\n3. **Processo de Execução nº 1120643-92.2022.8.26.0100**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 442MM\n   - **Chance de perda:** Remota\n   - **Resumo:** Ação de execução dos valores fixados no Acordo de Compra e Venda e Outras Avenças firmado em 14.09.2018, em função do vencimento antecipado da dívida após o inadimplemento das obrigações pelo devedor.\n\n4. **Auto de Infração nº 15746.720156/2024-40**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 28,6MM\n   - **Chance de perda:** Remota\n   - **Resumo:** Auto de Infração visando a cobrança do adicional do RAT (Risco Ambiental do Trabalho) de 6%, relativo ao ano de 2020.\n\n5. **Auto de Infração nº 11234.720038/2025-31**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 29,3MM\n   - **Chance de perda:** Remota\n   - **Resumo:** Auto de Infração visando a cobrança do adicional do RAT (Risco Ambiental do Trabalho) de 6%, relativo ao ano de 2022."
+  }
 }

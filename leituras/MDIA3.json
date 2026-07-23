@@ -1,7 +1,7 @@
 {
   "ticker": "MDIA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:39:26",
+  "verificado_em": "2026-07-23T20:19:38",
   "comunicados": {
     "ids": [
       268431150452256406,
@@ -16,6 +16,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 26/06/2026\n\n**Data:** 26 de junho de 2026  \n**O QUE aconteceu:** Eleição e instalação do Comitê de Auditoria Estatutário (CAE).  \n**Resumo:** A M. Dias Branco realizou uma reunião do Conselho de Administração para eleger os membros do CAE, que passou a ser estatutário.  \n**Trecho-chave:**\n\"A Companhia, nos termos do artigo 33, XXVIII, da Resolução CVM nº 80/2022, comunica aos acionistas e ao mercado em geral que, em reunião do Conselho de Administração realizada em 18 de junho de 2026, foram eleitos os membros e instalado o Comitê de Auditoria Estatutário (CAE), anteriormente de natureza não estatutário.\"\n\n### COMUNICADO AO MERCADO entregue em 19/05/2026\n\n**Data:** 19 de maio de 2026  \n**O QUE aconteceu:** Informação sobre participação do executivo na Live com Fabio Cefaly e integrantes da Bastter.  \n**Resumo:** A M. Dias Branco informou que seu executivo participará de uma live online com Fabio Cefaly, Diretor de Novos Negócios e Relações com Investidores, e membros da Bastter.  \n**Trecho-chave:**\n\"A Companhia, em atendimento ao Ofício-Circular nº 7/2020-CVM/SEP, informa aos seus acionistas e ao mercado em geral a participação de seu executivo no seguinte evento online: Live com Fabio Cefaly (Diretor de Novos Negócios e Relações com Investidores | M. Dias Branco) e integrantes da Bastter.\""
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

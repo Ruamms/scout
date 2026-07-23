@@ -1,7 +1,7 @@
 {
   "ticker": "CEBR3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:54:03",
+  "verificado_em": "2026-07-23T18:59:29",
   "comunicados": {
     "ids": [
       54999218608147087,
@@ -17,5 +17,10 @@
     ],
     "texto": "### O que aconteceu em 01/07/2026\n\n**Resumo:** A CEB informou a redução da participação acionária relevante de um gestor de fundos, que passou a deter menos de 10% das ações preferenciais classe A.\n\n**Citação do trecho-chave:**\n\"Os fundos sob gestão da Trígono Capital Ltda. passaram a deter participação inferior ao patamar de 10% (dez por cento) das ações preferenciais classe A de emissão da Companhia.\"\n\n---\n\n### O que aconteceu em 19/06/2026\n\n**Resumo:** A CEB esclareceu que não há evidências de operações financeiras envolvendo seu FGCG e a BRB, negando possíveis rumores.\n\n**Citação do trecho-chave:**\n\"não há registros ou informações que indiquem a formalização, negociação ou implementação de operação financeira com as características mencionadas.\"\n\n**Conexão com o contexto:** Este comunicado responde a rumores sobre possíveis operações envolvendo a CEB e seu FGCG, mantendo a companhia alinhada às normas de transparência."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159139,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **CONTECIOSO JUDICIAL FISCAL/TRIBUTÁRIO  \nProcesso nº 0030918-50.2013.4.01.3400**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 123.137.490,79\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** \"Unia o impugnou exceça o de pre -executividade. A PGDF requereu o julgamento em conjunto da Execuça o Fiscal nº 30918-5020134013400 e das Aço es Declarato rias.\"\n\n2. **CONTECIOSO JUDICIAL FISCAL/TRIBUTÁRIO  \nProcesso nº 0032764-73.2011.4.01.3400**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 11.705.760,91\n   - **Chance de perda:** Prova vel\n   - **Resumo do objeto:** \"Execuça o Fiscal CDA. Processo aguarda a apreciaça o da exceça o de pre -executividade.\"\n\n3. **CONTENCIOSO ADMINISTRATIVO FISCAL/TRIBUTÁRIO  \nProcesso nº 14033.000225/2005-14**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 23.798.106,44\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** \"Aguardo designaça o de relator para julgamento de recurso voluntário - CARF.\"\n\n4. **CONTENCIOSO ADMINISTRATIVO FISCAL/TRIBUTÁRIO  \nProcesso nº 14033.000228/2005-40**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 16.248.489,01\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** \"Aguardo designaça o de relator para julgamento de recurso voluntário - CARF.\""
+  }
 }

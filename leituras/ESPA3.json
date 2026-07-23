@@ -1,7 +1,7 @@
 {
   "ticker": "ESPA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:12:23",
+  "verificado_em": "2026-07-23T19:34:34",
   "comunicados": {
     "ids": [
       75691220478901107,
@@ -25,6 +25,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 26/06/2026\n\n**O QUE aconteceu:** Oferta pública de distribuição secundária de ações ordinárias.\n\n**Resumo:** A MPM Corpóreos S.A. realizou uma oferta para vender ações ordinárias, resultando no total de R$38.471.309,10.\n\n**Trecho-chave:**\n\"foram colocadas ações ordinárias de emissão da Companhia e de titularidade do Acionista Vendedor, ao preço de R$6,30 por Ação, perfazendo o total de R$38.471.309,10.\"\n\n### FATO RELEVANTE entregue em 22/06/2026\n\n**O QUE aconteceu:** Protocolo do pedido de registro automático de oferta pública.\n\n**Resumo:** A MPM Corpóreos S.A. protocolou um pedido para vender até 6.106.557 ações ordinárias, exclusivamente para investidores profissionais.\n\n**Trecho-chave:**\n\"foi protocolado, perante a CVM, pedido de registro automático de oferta pública de distribuição secundária de até 6.106.557 ações ordinárias.\"\n\n### FATO RELEVANTE entregue em 11/05/2026\n\n**O QUE aconteceu:** Potencial evento de saída do Magnólia do bloco de controle.\n\n**Resumo:** O Magnólia, acionista integrante do bloco de controle da MPM, está conduzindo estudos para sua eventual saída e a MPM iniciou procedimentos para obter consentimentos antecipados.\n\n**Trecho-chave:**\n\"está conduzindo estudos, juntamente com assessores especializados por ele contratados, relacionados a alternativas e estruturas para sua eventual saída do bloco de controle da MPM.\"\n\n### COMUNICADO AO MERCADO entregue em 01/07/2026\n\n**O QUE aconteceu:** Renúncia dos membros do Conselho de Administração indicados pelo Magnólia.\n\n**Resumo:** Os administradores Peter Lohken, Mark Chaplin Hu e Farah Deeba Khan renunciaram aos seus cargos, em decorrência da alienação total das ações do FIP Magnólia.\n\n**Trecho-chave:**\n\"foram eleitos na Assembleia Geral Ordinária e Extraordinária realizada em 28 de abril de 2026, com efeitos a partir de 01 de julho de 2026.\"\n\n### COMUNICADO AO MERCADO entregue em 30/06/2026\n\n**O QUE aconteceu:** Alienação total da participação do FIP Magnólia.\n\n**Resumo:** O FIP Magnólia alienou a totalidade de suas ações na MPM Corpóreos S.A., deixando de integrar o bloco de controle e o acordo de acionistas.\n\n**Trecho-chave:**\n\"alienado a totalidade de sua participação acionária, correspondente ao número total de ações ordinárias de emissão da Espaçolaser então detidas.\""
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

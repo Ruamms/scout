@@ -1,7 +1,7 @@
 {
   "ticker": "NORD3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:49:01",
+  "verificado_em": "2026-07-23T20:38:07",
   "comunicados": {
     "ids": [
       856109768535382265,
@@ -17,5 +17,9 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 06/04/2026\n\n**O que aconteceu:** A NORDON INDÚSTRIAS METALÚRGICAS S.A. reapresentou o Boletim de Voto à Distância, a Proposta da Administração e o Edital de Convocação para atender às exigências do Ofício nº 74/2026/CVM/SEP/GEA-2.\n\n**Resumo:** As alterações incluem a inclusão de informações sobre pessoa de contato, deliberações relacionadas ao voto múltiplo e eleição em separado de membro do Conselho de Administração. A Proposta da Administração foi ajustada para informar uma condenação judicial. O Edital de Convocação foi atualizado com informações sobre percentuais mínimos de participação no capital social votante e documentos exigidos.\n\n**Trecho-chave:** \"A medida visa atender às exigências do Ofício nº 74/2026/CVM/SEP/GEA-2, recebido em 2 de abril de 2026\" (p. 1).\n\n---\n\n### COMUNICADO AO MERCADO entregue em 29/05/2026\n\n**O que aconteceu:** A NORDON INDÚSTRIAS METALÚRGICAS S.A. comunicou a colocação do novo site da Companhia no ar.\n\n**Resumo:** O novo site será acessível através do endereço eletrônico www.nordon.ind.br, e estará disponível na segunda-feira (01/06/2026).\n\n**Trecho-chave:** \"segunda-feira (01/06/2026) será colocado no ar o novo site da Companhia\" (p. 1)."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 157916,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null
+  }
 }

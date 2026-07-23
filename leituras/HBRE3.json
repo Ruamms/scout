@@ -1,7 +1,7 @@
 {
   "ticker": "HBRE3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:25:19",
+  "verificado_em": "2026-07-23T19:52:09",
   "comunicados": {
     "ids": [
       332931851847310845,
@@ -19,6 +19,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE ENTREGUE EM 03/07/2026\n\n**O que aconteceu:** A HBR Realty aprovou uma oferta pública de permuta unificada para aquisição do controle e cancelamento do registro da Helbor Empreendimentos S.A. no Novo Mercado.\n\n**Resumo:** A HBR planeja adquirir o controle total da Helbor através de uma OPA, formando uma nova plataforma de negócios diversificada com maior escala e alavancagem operacional.\n\n**Trecho-chave:**\n\"A Oferta, cujo pedido de registro foi protocolado nesta data perante a Comissão de Valores Mobiliários (\"CVM\"), tem por objeto a aquisição de até a totalidade das ações ordinárias de emissão da Helbor, excluídas as ações mantidas em tesouraria ('Ações Objeto'), por um preço por ação de R$ 2,52 (dois reais e cinquenta e dois centavos) (\"Preço por Ação\"), que será liquidado por meio da entrega de 0,81553398 ação ordinária de emissão de HBR para cada Ação Objeto ('Relação de Permuta').\"\n\n### COMUNICADO AO MERCADO ENTREGUE EM 06/07/2026\n\n**O que aconteceu:** Publicou um comunicado detalhando os principais termos da transação entre HBR Realty e Helbor Empreendimentos S.A.\n\n**Resumo:** A HBR está adquirindo o controle total da Helbor através de uma OPA, com a relação de troca sendo de 0.81553398 ações HBRE3 para cada ação HBOR3.\n\n**Trecho-chave:**\n\"Principais Termos da OPA\nInformações Chave\nOfertante\n▪HBR REALTY EMPREENDIMENTOS IMOBILIÁRIOS S.A. (“HBR”)\nEscopo da Transação\n▪OPA com permuta de ações para até 100% do total de ações da HELBOR EMPREENDIMENTOS S.A.\n(“Helbor”)\nNúmero de Ações\n▪Total de 132.693.612 (cento e trinta e dois milhões, seiscentos e noventa e três mil, seiscentos e doze) ações ordinárias representativas de 100% do capital social total e votante da Helbor\"\n\n### COMUNICADO AO MERCADO ENTREGUE EM 08/05/2026\n\n**O que aconteceu:** A HBR Realty apresentou seus resultados financeiros para o primeiro trimestre de 2026.\n\n**Resumo:** Os resultados mostraram uma receita líquida de R$ 449 milhões, com um aumento de 37,9% na receita bruta e 71,0% no lucro operacional gerencial. A taxa de ocupação atingiu 88%, um recorde histórico.\n\n**Trecho-chave:**\n\"DESTAQUES | DADOS OPERACIONAIS\nR$ 34,8 mi (+25,9%)\nNOI Gerencial\nR$ 59,6 mi (+38,7%)\nReceita Bruta\nR$ 53,4 mi (+37,9%)\nReceita Líquida \nR$ 449 mi em vendas de 2025 liquidadas até 1T26 (%Total)\nReceita líquida R$ 17,3 mi (+71,0%)\"\n\n**Conexão com o contexto:** Os resultados positivos refletem a força do portfólio imobiliário da HBR, preparando-a para futuras operações de fusões e aquisições."
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

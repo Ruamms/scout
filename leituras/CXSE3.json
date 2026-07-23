@@ -1,7 +1,7 @@
 {
   "ticker": "CXSE3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T17:28:03",
+  "verificado_em": "2026-07-23T19:20:29",
   "comunicados": {
     "ids": [
       11252720451067219,
@@ -17,5 +17,10 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 16/07/2026\n\n**O que aconteceu:** A Caixa Seguridade Participações S.A. aprovou o processo competitivo para seleção de uma seguradora para parceria comercial na exploração de seguros.\n\n**Resumo:** A companhia está buscando uma parceria com uma seguradora para explorar produtos relacionados a proteção financeira e pessoal, com foco em clientes pessoa física. O contrato terá vigência de 5 anos.\n\n**Trecho-chave:**\n\"A Caixa Seguridade Participações S.A. (“Caixa Seguridade” ou “Companhia”) comunica aos seus acionistas e ao mercado em geral que o Conselho de Administração da Companhia aprovou, nesta data, a instauração de processo competitivo destinado à seleção de seguradora para parceria comercial na exploração de seguros de Proteção para Transações Financeiras e Itens Pessoais (“Parceria”).\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 15/06/2026\n\n**O que aconteceu:** A Caixa Seguridade Participações S.A. divulgou o Relatório de Desempenho Mensal, contendo informações sobre a performance comercial dos seus produtos.\n\n**Resumo:** O relatório apresenta as informações comerciais consolidadas do mês de abril/2026, baseadas em dados públicos da Superintendência de Seguros Privados (FIP-Susep).\n\n**Trecho-chave:**\n\"A Caixa Seguridade Participações S.A. (“Caixa Seguridade” ou “Companhia”) comunica aos seus acionistas e ao mercado em geral a divulgação do Relatório de Desempenho Mensal, contendo informações sobre a performance comercial de seus produtos de seguros, de previdência e de capitalização no mês de abril/2026.\"\n\n---\n\n**Conexão com o contexto:** O relatório divulgado em junho de 2026 pode fornecer insights sobre as condições do mercado que levaram a companhia a buscar uma nova parceria comercial, como mencionada no comunicado mais recente."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159173,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes declarados na seção de PROCESSOS JUDICIAIS do Formulário de Referência (FRE) da CXSE3 para a data considerada."
+  }
 }

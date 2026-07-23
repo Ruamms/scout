@@ -1,7 +1,7 @@
 {
   "ticker": "LAVV3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:31:19",
+  "verificado_em": "2026-07-23T20:10:57",
   "comunicados": {
     "ids": [
       324894180191968191,
@@ -20,5 +20,9 @@
     ],
     "texto": "### FATO RELEVANTE ENTREGUE EM 06/05/2026\n\n**O que aconteceu:** A Lavvi Empreendimentos Imobiliários S.A. comunicou o pagamento da segunda parcela dos dividendos intermediários.\n\n**Resumo:** A companhia pagará R$ 30 milhões em 15 de maio de 2026, correspondente a R$ 0,15350423144 por ação ordinária.\n\n**Trecho-chave:**\n\"O pagamento da segunda parcela dos dividendos será realizado em 15 de maio de 2026, na respectiva conta corrente e domicílio bancário fornecido pelo acionista ao Itaú Corretora de Valores S.A., instituição responsável pela escrituração das ações da Companhia.\"\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 16/07/2026\n\n**O que aconteceu:** A Lavvi Empreendimentos Imobiliários S.A. divulgou os resultados operacionais preliminares do segundo trimestre de 2026.\n\n**Resumo:** As vendas líquidas totais foram de R$ 875 milhões, com um VSO (vendas sobre oferta) de 22% no trimestre e 50% LTM. O lançamento de R$ 1,4 bilhão foi o maior da história da empresa.\n\n**Trecho-chave:**\n\"Lançamentos: R$ 1,4 bilhão ou R$ 848 milhões no %Co. Os projetos lançados no tri foram as primeiras fases do Jardim da Hípica e do Novvo Santa Marina.\"\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 30/06/2026\n\n**O que aconteceu:** A Lavvi Empreendimentos Imobiliários S.A. apresentou sua institucional, destacando seu foco em São Paulo e seus projetos.\n\n**Resumo:** A empresa destaca sua expertise única no mercado de São Paulo, com uma landbank de R$ 10,4 bilhões (R$ 7,5 bilhões na participação da Lavvi) e um VSO LTM de R$ 1,8 bilhão.\n\n**Trecho-chave:**\n\"Lavvi: um caso único no mercado de São Paulo. Fundada em parceria com a Cyrela, a Lavvi é focada na cidade de São Paulo.\"\n\n---\n\n### FATO RELEVANTE ENTREGUE EM 28/01/2026 (contextual)\n\n**O que aconteceu:** A Lavvi Empreendimentos Imobiliários S.A. anunciou a distribuição de dividendos intermediários no montante total de R$ 200 milhões.\n\n**Resumo:** O Conselho de Administração aprovou e a Assembleia Geral Ordinária ratificou a distribuição de dividendos intermediários em 17 de março de 2026, com o pagamento da primeira parcela no valor de R$ 50 milhões.\n\n**Trecho-chave:**\n\"O Conselho de Administração aprovou e a Assembleia Geral Ordinária ratificou a distribuição de dividendos intermediários no montante total de R$ 200.000.000 (duzentos milhões de reais).\"\n\n---\n\n### FATO RELEVANTE ENTREGUE EM 11/03/2026 (contextual)\n\n**O que aconteceu:** A Lavvi Empreendimentos Imobiliários S.A. divulgou detalhes sobre a distribuição dos dividendos intermediários.\n\n**Resumo:** A primeira parcela de R$ 50 milhões foi paga em 17 de março de 2026, e a segunda parcela será paga em 15 de maio de 2026.\n\n**Trecho-chave:**\n\"O pagamento da primeira parcela dos dividendos intermediários foi realizado em 17 de março de 2026.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159485,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null
+  }
 }

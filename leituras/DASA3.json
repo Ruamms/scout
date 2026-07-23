@@ -1,7 +1,7 @@
 {
   "ticker": "DASA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:00:36",
+  "verificado_em": "2026-07-23T19:20:47",
   "comunicados": {
     "ids": [
       692888218308860878,
@@ -19,6 +19,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 27/03/2026\n\n**O QUE aconteceu:** Reorganização societária para incorporação de subsidiárias integrais.\n\n**Resumo:** A DIAGNÓSTICOS DA AMÉRICA S.A. aprovou o protocolo de incorporação de três subsidiárias: Fernando Henriques Pinto Junior & Cia Ltda., Aliança Biotecnologia Ltda. e Instituto de Hematologia de S.J.R. Preto Ltda.\n\n**Trecho-chave:** \"Em 26 de março de 2026, o Conselho de Administração aprovou a celebração do: (i) 'Protocolo e Justificação de Incorporação da Fernando Henriques Pinto Junior & Cia Ltda. pela Diagnósticos da América S.A.'; (ii) 'Protocolo e Justificação de Incorporação da Aliança Biotecnologia Ltda. pela Diagnósticos da América S.A.'; e (iii) 'Protocolo e Justificação de Incorporação do Instituto de Hematologia de S.J.R. Preto Ltda. pela Diagnósticos da América S.A.'\" (p. 1).\n\n---\n\n### COMUNICADO AO MERCADO entregue em 13/07/2026\n\n**O QUE aconteceu:** Convocação de Assembleia Geral Extraordinária para aprovar incorporação.\n\n**Resumo:** A DIAGNÓSTICOS DA AMÉRICA S.A. convocou a Assembleia Geral Extraordinária para deliberar sobre a incorporação da Patologia Clínica Dr. Geraldo Lustosa Cabral Ltda., sociedade 100% controlada pela Companhia.\n\n**Trecho-chave:** \"Em reunião realizada em 10 de julho de 2026, o seu Conselho de Administração aprovou a convocação da Assembleia Geral Extraordinária da Companhia, a ser realizada em 03 de agosto de 2026, às 14h00, de modo exclusivamente digital\" (p. 1).\n\n---\n\n### COMUNICADO AO MERCADO entregue em 13/05/2026\n\n**O QUE aconteceu:** Publicação dos resultados do primeiro trimestre de 2026.\n\n**Resumo:** A DIAGNÓSTICOS DA AMÉRICA S.A. divulgou os resultados financeiros e operacionais consolidados para o primeiro trimestre de 2026, com foco nas verticais Diagnósticos e Hospitais e Oncologia Nordeste.\n\n**Trecho-chave:** \"As informações financeiras apresentadas neste documento foram extraídas das informações contábeis intermediárias para o período de três meses findo em 31 de março de 2026\" (p. 2).\n\n---\n\n**Conexão com o contexto:** Os resultados do primeiro trimestre de 2026 podem refletir as operações após a incorporação das subsidiárias mencionadas no Fato Relevante, contribuindo para a evolução da qualidade dos resultados da companhia."
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

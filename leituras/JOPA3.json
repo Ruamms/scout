@@ -1,11 +1,17 @@
 {
   "ticker": "JOPA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:28:29",
+  "verificado_em": "2026-07-23T20:07:23",
   "comunicados": {
     "ids": [],
     "datas": [],
     "rotulos": [],
     "texto": null
+  },
+  "processos": {
+    "id": 158337,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Cível**\n   - **Processo:** 022/1.13.0018743-1 (Nº EPROC 5003011-70.2013.8.21.0022)\n     - **Valor envolvido:** R$ 1.834.831,23\n     - **Chance de perda:** Possível\n     - **Resumo do objeto:** Trata-se de ação de execução de título extrajudicial proposta pela Comil em face da Josapar objetivando o pagamento de R$ 1.834.831,23.\n\n2. **Cível**\n   - **Processo:** 022/1.16.0013319-1 (EPROC nº 5004927-37.2016.8.21.0022)\n     - **Valor envolvido:** R$ 901.029,29\n     - **Chance de perda:** Possível\n     - **Resumo do objeto:** Trata-se de ação monitória onde a Comil pretende o pagamento pela Josapar do valor de R$ 480.000,00.\n\n3. **Tributário**\n   - **Processo:** 15.790.160,08 (CARF)\n     - **Valor envolvido:** R$ 15.790.160,08\n     - **Chance de perda:** Possível\n     - **Resumo do objeto:** Trata-se de pedido de ressarcimento de IPI referente ao período de 01/1999 a 09/2013 no montante de R$ 15.123.353,06.\n\n4. **Tributário**\n   - **Processo:** 17.537.829,03 (CARF)\n     - **Valor envolvido:** R$ 17.537.829,03\n     - **Chance de perda:** Possível\n     - **Resumo do objeto:** Trata-se de pedido de ressarcimento de PIS e COFINS no valor de R$ 33.895.871,62.\n\n5. **Tributário**\n   - **Processo:** 6.357.996,13 (SEFAZ/PE)\n     - **Valor envolvido:** R$ 6.357.996,13\n     - **Chance de perda:** Possível\n     - **Resumo do objeto:** Trata-se de processo fiscal que imputa ao contribuinte o recolhimento de ICMS (normal), no valor original de R$ 2.066.286,85.\n\n6. **Tributário**\n   - **Processo:** 4.982.603,82 (SEFAZ/PE)\n     - **Valor envolvido:** R$ 4.982.603,82\n     - **Chance de perda:** Possível\n     - **Resumo do objeto:** Trata-se de processo fiscal que imputa ao contribuinte o recolhimento de ICMS (normal), no valor original de R$ 1.878.214,89.\n\n7. **Tributário**\n   - **Processo:** 329.146,80 (Juízo Cível)\n     - **Valor envolvido:** R$ 329.146,80\n     - **Chance de perda:** Possível\n     - **Resumo do objeto:** Embargos à execução em que o embargante sustenta a inexigibilidade do título executivo.\n\n8. **Tributário**\n   - **Processo:** 520.641,24 (CARF)\n     - **Valor envolvido:** R$ 520.641,24\n     - **Chance de perda:** Possível\n     - **Resumo do objeto:** Trata-se de pedido de ressarcimento de COFINS não-cumulativo referentes ao 1º trimestre de 2006 no montante de R$ 520.641,24."
   }
 }

@@ -1,7 +1,7 @@
 {
   "ticker": "ARML3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:27:42",
+  "verificado_em": "2026-07-23T18:21:08",
   "comunicados": {
     "ids": [
       619925161355865600,
@@ -22,6 +22,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 27/04/2026\n\n**O QUE aconteceu:** A Armac Locação, Logística e Serviços S.A. (ARMAC) celebrou um contrato de compra e venda para a aquisição de 100% das ações da Escad Rental Locadora de Equipamentos para Terraplenagem S.A.\n\n**Resumo:** A ARMAC adquiriu a Escad, uma empresa tradicional no mercado de locação de equipamentos, alinhada com sua estratégia de expansão em unidades de negócios com bons retornos e sinergias.\n\n**Trecho-chave:**\n\"A Operação está alinhada com a estratégia de expansão da Armac em Unidades de Negócio com bons retornos, modelo de negócio escalável e claros ganhos de sinergia e escala.\"\n\n---\n\n### FATO RELEVANTE entregue em 18/06/2026\n\n**O QUE aconteceu:** A ARMAC informou a celebração de um acordo de acionistas entre os acionistas da empresa, que irá vigorar por 30 anos. Além disso, o acordo anterior foi rescindido.\n\n**Resumo:** Foi celebrado um novo acordo de acionistas com vigência de 30 anos, substituindo o antigo acordo.\n\n**Trecho-chave:**\n\"O Acordo irá vigorar pelo prazo de 30 (trinta) anos e tem como objeto estabelecer determinadas regras, direitos e obrigações que deverão reger a relação entre os Acionistas.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 13/05/2026\n\n**O QUE aconteceu:** A ARMAC divulgou um comunicado ao mercado com dados financeiros do primeiro trimestre de 2026.\n\n**Resumo:** O comunicado apresenta resultados financeiros positivos, incluindo receita bruta e EBITDA ajustado.\n\n**Trecho-chave:**\n\"R$ 488,5 M\nReceita Bruta no 1T26\n+1,4%\nvs. 1T25\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 31/03/2026\n\n**O QUE aconteceu:** A ARMAC divulgou um comunicado ao mercado com dados financeiros do quarto trimestre de 2025.\n\n**Resumo:** O comunicado apresenta resultados financeiros positivos, incluindo receita bruta e EBITDA ajustado.\n\n**Trecho-chave:**\n\"R$ 541,4 M\nReceita Bruta no 4T25\n+4,4%\nvs. 4T24\"\n\n---\n\n### CONEXÃO COM O CONTEXTO:\n\n- **FATO RELEVANTE de 27/04/2026:** A aquisição da Escad alinha-se com a estratégia de expansão da ARMAC em unidades de negócios com bons retornos, o que pode refletir na receita bruta e EBITDA ajustado apresentados nos comunicados subsequentes.\n- **FATO RELEVANTE de 18/06/2026:** O novo acordo de acionistas não parece ter uma conexão direta com os indicadores financeiros apresentados, mas pode afetar a governança e a estrutura da empresa."
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

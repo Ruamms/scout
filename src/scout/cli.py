@@ -207,12 +207,10 @@ def _gerar_html(completo) -> None:
     import webbrowser
 
     from . import armazenamento
-    from .relatorio import apoio
     from .relatorio import html as relatorio_html
 
     destino = armazenamento.diretorio_dados() / "relatorios"
     caminho = relatorio_html.salvar(completo, destino)
-    apoio.salvar(destino)
     console.print(f"Relatório salvo em [bold]{caminho}[/] — abrindo no navegador…")
     webbrowser.open(caminho.as_uri())
 

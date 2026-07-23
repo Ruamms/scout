@@ -50,9 +50,9 @@ def test_analytics_sem_cookie_injeta_e_registra_buscas(con, tmp_path):
     assert "busca-vazia/" in home  # a demanda não coberta
     # termo sanitizado a [A-Z0-9] (texto livre/pessoal nunca é enviado)
     assert "replace(/[^A-Z0-9]/g,'')" in home
-    # nota de transparência na página de apoio
-    apoie = (tmp_path / "site" / "apoie.html").read_text(encoding="utf-8")
-    assert "sem cookies" in apoie and "GoatCounter" in apoie
+    # transparência de privacidade vive na página de metodologia
+    metodologia = (tmp_path / "site" / "metodologia.html").read_text(encoding="utf-8")
+    assert "não usamos cookies" in metodologia
 
 
 def test_gerar_site_completo(con, tmp_path):
@@ -65,7 +65,8 @@ def test_gerar_site_completo(con, tmp_path):
     assert (pasta / "index.html").exists()
     assert (pasta / "ALFA11.html").exists()
     assert (pasta / "BETA11.html").exists()
-    assert (pasta / "apoie.html").exists()
+    assert not (pasta / "apoie.html").exists()  # página de apoio foi removida (23/07/2026)
+    assert (pasta / "metodologia.html").exists()
 
     indice = (pasta / "fiis.html").read_text(encoding="utf-8")
     assert "3 fundos negociáveis" in indice
@@ -152,7 +153,7 @@ def test_paginas_sem_artefatos_de_template(con, tmp_path):
     _semear_etf(con)
     site.gerar(con, tmp_path / "site", com_cotacoes=False)
     paginas = list((tmp_path / "site").glob("*.html"))
-    assert len(paginas) >= 7  # home, fiis, etfs, comparar, apoie + fundos
+    assert len(paginas) >= 7  # home, fiis, etfs, comparar, metodologia + fundos
     for arquivo in paginas:
         conteudo = arquivo.read_text(encoding="utf-8")
         # escape de f-string vazando para o navegador
@@ -163,9 +164,8 @@ def test_paginas_sem_artefatos_de_template(con, tmp_path):
         # todo bloco <style> precisa ter chaves balanceadas (CSS válido de forma)
         for bloco in re.findall(r"<style>(.*?)</style>", conteudo, re.S):
             assert bloco.count("{") == bloco.count("}"), f"CSS desbalanceado em {arquivo.name}"
-        # o "apoie o projeto" tem que estar em TODA página (menos a própria apoie)
-        if arquivo.name != "apoie.html":
-            assert 'href="apoie.html"' in conteudo, f"sem link de apoio em {arquivo.name}"
+        # projeto educacional: nenhuma página pode pedir apoio/PIX
+        assert "apoie.html" not in conteudo, f"link de apoio remanescente em {arquivo.name}"
 
 
 def test_home_multiclasse_com_busca_ao_vivo_e_menu(con, tmp_path):
@@ -269,7 +269,8 @@ def test_pagina_metodologia_e_aviso_legal():
     from scout.relatorio import site as modulo_site
 
     pagina = modulo_site._pagina_metodologia(datetime(2026, 7, 23))
-    assert "não é recomendação de investimento" in pagina
+    assert "Não é recomendação de investimento" in pagina
+    assert "projeto particular, de cunho educacional" in pagina
     assert "Resoluções CVM 20/2021 e 19/2021" in pagina  # o que NÃO somos, com a norma
     assert "síntese mecânica" in pagina and "nunca uma acusação" in pagina
     assert "LGPD" in pagina and "nunca são exibidos" in pagina

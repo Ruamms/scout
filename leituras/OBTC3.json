@@ -1,7 +1,7 @@
 {
   "ticker": "OBTC3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:49:56",
+  "verificado_em": "2026-07-23T20:38:30",
   "comunicados": {
     "ids": [
       86508985010264767,
@@ -17,5 +17,10 @@
     ],
     "texto": "### Comunicação de 19/07/2026\n\n**O QUE aconteceu:** A OranjeBTC S.A. realizou uma recompra de ações e não adquiriu Bitcoin.\n\n**Resumo:** A companhia recomprou 3,926,667 ações ON por R$ 4,05 cada, totalizando aproximadamente R$ 15,9 milhões. Essa ação gerou um BTC Yield Bruto semanal de 2,68%, superior ao que seria obtido com a aquisição direta de Bitcoin.\n\n**Trecho-chave:**\n\"Essa operação ilustra nossa estratégia de alocação de capital: quando as ações da Companhia negociam com um desconto relevante em relação ao valor econômico de suas reservas em Bitcoin, a recompra pode representar uma forma ainda mais eficiente de aumentar o Bitcoin por ação do que a aquisição direta de Bitcoin.\" (p. 2)\n\n---\n\n### Comunicação de 12/07/2026\n\n**O QUE aconteceu:** A OranjeBTC S.A. adquiriu 8 Bitcoin e realizou uma recompra de ações.\n\n**Resumo:** A companhia adicionou 8 Bitcoin às suas reservas, aumentando o BTC por ação para 2,597 satoshis. Além disso, a empresa recomprou 70,000 ações ON ao longo da semana.\n\n**Trecho-chave:**\n\"Além disso, observamos que o preço das nossas ações voltou a refletir um desconto maior do valor da Companhia em relação às reservas de Bitcoin que possuímos. Aproveitando essa janela de oportunidade, retomamos nosso programa de recompra e adquirimos 70.000 ações ao longo da semana.\" (p. 2)"
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159013,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes."
+  }
 }

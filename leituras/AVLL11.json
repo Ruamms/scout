@@ -1,7 +1,7 @@
 {
   "ticker": "AVLL11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:30:48",
+  "verificado_em": "2026-07-23T18:24:31",
   "comunicados": {
     "ids": [
       360402080316404408,
@@ -26,5 +26,10 @@
     ],
     "texto": "### Ocorrência em 02/04/2026: Programa de Recompra de Ações\n\nA Alphaville S.A. aprovou um programa de recompra de ações para atender ao vesting das outorgas do Plano de Ações Diferidas da Companhia, podendo adquirir até 200.000 ações ordinárias em um prazo máximo de 18 meses.\n\n\"O Conselho de Administração, em reunião realizada nesta data, aprovou a abertura do Programa de Recompra de Ações da Companhia (\"Programa de Recompra\"). O objetivo do Programa de Recompra é atender ao vesting das outorgas do Plano de Ações Diferidas da Companhia, conforme aprovado em assembleia geral da Companhia realizada em 20 de julho de 2020 (\"Plano de Ações Diferidas\").\"\n\n### Ocorrência em 20/02/2026: Non-Compliance com o Preço Mínimo de Negociação\n\nA Alphaville S.A. informou que suas ações estão negociando abaixo do preço mínimo estabelecido pela B3, e planeja implementar um reverse stock split para sanar o problema.\n\n\"A Companhia (B3:AVLL3) recebeu uma notificação da B3 de non-compliance com o valor mínimo de cotação. A Companhia informa que pretende implementar um grupamento das ações em proporção a ser definida oportunamente, sem modificação no valor do capital social.\"\n\n### Ocorrência em 13/02/2026: Non-Compliance com o Preço Mínimo de Negociação\n\nA Alphaville S.A. informou que suas ações estão negociando abaixo do preço mínimo estabelecido pela B3, e planeja implementar um reverse stock split para sanar o problema.\n\n\"A Companhia (B3:AVLL3) recebeu uma notificação da B3 de non-compliance com o valor mínimo de cotação. A Companhia informa que pretende implementar um grupamento das ações em proporção a ser definida oportunamente, sem modificação no valor do capital social.\"\n\n### Ocorrência em 26/05/2026: Resultados do 3º Trimestre de 2025\n\nA Alphaville S.A. divulgou os resultados financeiros e operacionais do 3º trimestre de 2025, destacando vendas, estoque, receita líquida, lucro bruto, eficiência operacional e rentabilidade.\n\n\"Vendas brutas de estoque somaram R$ 197 milhões (R$ 123 milhões no %AVLL) no 9M25. No trimestre, as vendas de estoque somaram R$ 55 milhões (R$ 33 milhões no %AVLL). Vendas totais de R$ 320 milhões (R$185 milhões no %AVLL), com VSO de 30% no acumulado do ano, encerrando o trimestre com um estoque de R$ 615 milhões no %AVLL.\"\n\n### Ocorrência em 26/05/2026: Resultados do 4º Trimestre de 2025\n\nA Alphaville S.A. divulgou os resultados financeiros e operacionais do 4º trimestre de 2025, destacando vendas, estoque, receita líquida, lucro bruto, eficiência operacional e rentabilidade.\n\n\"Vendas brutas de estoque totalizaram R$ 257 milhões (R$ 220 milhões¹ no %AVLL) no acumulado 2025. No trimestre, as vendas de estoque somaram R$ 60 milhões (R$ 98 milhões¹ no %AVLL). Vendas totais alcançaram R$ 450 milhões (R$314 milhões no %AVLL), com VSO de 44% no acumulado do ano. A Companhia encerrou o trimestre com estoque de R$ 469 milhões (%AVLL).\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159282,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Cível**  \n   - **Valor envolvido:** R$ 7.690.863,79 (valor atualizado do débito)  \n   - **Chance de perda:** Possível  \n   - **Resumo:** Trata-se de uma ação de Execução Fiscal contra a Alphaville e suas controladas por não pagamento de IPTU referentes aos exercícios de 2015 a 2019, com decisão rejeitando a exceção de pré-executividade.\n\n2. **Trabalhista**  \n   - **Valor envolvido:** R$ 7.1 milhões (risco possível)  \n   - **Chance de perda:** Possível  \n   - **Resumo:** A Alphaville e suas controladas são parte em 61 processos trabalhistas, totalizando um risco possível de R$ 7.1 milhões, sem valores individualmente relevantes."
+  }
 }

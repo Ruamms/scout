@@ -1,7 +1,7 @@
 {
   "ticker": "GEPA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:19:51",
+  "verificado_em": "2026-07-23T19:43:23",
   "comunicados": {
     "ids": [
       496051133024122027,
@@ -17,5 +17,10 @@
     ],
     "texto": "### O QUE ACONTECEU: Transação entre partes relacionadas\n\n**Ocorrência:** A RIO PARANAPANEMA ENERGIA S.A. celebrou um Contrato de Empréstimo com a China Three Gorges (Luxembourg) Energy S.à.r.l.\n\n**Resumo:** A companhia obteve um empréstimo de RMB 350 milhões do CTG Lux, com uma taxa anual de 2,04% e prazo de 24 meses, visando a proteção cambial através de instrumentos derivativos. \n\n**Trecho-chave:** \"O Contrato de Empréstimo tem por objeto o empréstimo, à Companhia pela CTG Lux, do valor de RMB 350.000.000,00 (trezentos e cinquenta milhões de Renminbi), sobre o qual incidirá uma taxa de 2,04% ao ano, com prazo de 24 (vinte e quatro) meses, considerando a contratação de instrumento derivativo para proteção contra a variação cambial.\" (p. 1)\n\n### Conexão aos Indicadores do Contexto\nA transação entre partes relacionadas pode impactar os indicadores financeiros da companhia, especialmente no que diz respeito ao custo de financiamento e à dívida líquida."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158732,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Cível**\n   - **Valor envolvido**: R$ 451.462.253,40 (data-base: 31 de dezembro de 2025)\n   - **Chance de perda**: Provável\n   - **Resumo do objeto**: Ação ordinária questionando a legalidade da Resolução ANEEL nº 497/2007, que estabelece a Tarifa de Uso do Sistema de Distribuição (TUSDg) com base no critério postal ao invés do sinal locacional.\n\n2. **Cível**\n   - **Valor envolvido**: R$ 49.932.504,35 (data-base: 31 de dezembro de 2025)\n   - **Chance de perda**: Possível\n   - **Resumo do objeto**: Mandado de segurança contra multa aplicada pela ANEEL por suposto descumprimento das obrigações relacionadas à Tarifa de Uso do Sistema de Distribuição (TUSDg).\n\n3. **Cível**\n   - **Valor envolvido**: R$ 52.153.796,57 (data-base: 31 de dezembro de 2025)\n   - **Chance de perda**: Possível\n   - **Resumo do objeto**: Ação judicial da AES Sul Distribuidora Gaúcha de Energia S/A contra a ANEEL para não optar pelo alívio de exposição e condenação da ANEEL a refazer a contabilização da operação comercial.\n\n4. **Cível**\n   - **Valor envolvido**: R$ 10.525.569,50 (data-base: 31 de dezembro de 2025)\n   - **Chance de perda**: Possível\n   - **Resumo do objeto**: Mandado de segurança da ABRADEE contra o Despacho SFF/ANEEL nº 2.517, que estabelece a recomposição tarifária extraordinária (RTE)."
+  }
 }

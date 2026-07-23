@@ -1,7 +1,7 @@
 {
   "ticker": "AHEB3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T20:20:56",
+  "verificado_em": "2026-07-23T18:11:53",
   "comunicados": {
     "ids": [
       323649286400358046
@@ -14,5 +14,10 @@
     ],
     "texto": "### O QUE ACONTECEU: Instauração de Procedimentos Internos e Externos por Suspeitas de Irregularidades\n\nA São Paulo Turismo S.A. – SPTuris instaurou procedimentos internos para apurar suspeitas de conflito de interesses, favorecimento e eventuais irregularidades na contratação de serviços prestados por um fornecedor específico.\n\n**Resumo:** A companhia iniciou uma investigação interna e externa após notícias sobre possíveis irregularidades em contratos com um fornecedor. \n\n*\"Em razão desses fatos, a Companhia instaurou procedimento interno de apuração e, sob a nova Administração empossada em março de 2026, determinou a adoção imediata de medidas de saneamento administrativo, fiscalização contratual e verificação documental.\"* (p. 1)"
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158907,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes para os negócios do emissor ou de suas controladas."
+  }
 }

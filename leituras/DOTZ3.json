@@ -1,7 +1,7 @@
 {
   "ticker": "DOTZ3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:04:01",
+  "verificado_em": "2026-07-23T19:24:14",
   "comunicados": {
     "ids": [
       920865672449867532,
@@ -19,6 +19,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 30/03/2026\n\n**O QUE aconteceu:** A DOTZ S.A. aprovou um programa de recompra de ações.\n\n**Resumo:** A companhia planeja comprar até 410.049 ações ordinárias, representando até 10% das ações em circulação, com o objetivo de maximizar valor para os acionistas.\n\n**Trecho-chave:**\n\"Objetivo da Companhia com o Programa de Recompra: maximizar a geração de valor para os acionistas, podendo a Companhia manter as ações em tesouraria, para posterior cancelamento, bem como utilizá-las no plano de outorga de ações restritas da Companhia.\"\n\n### COMUNICADO AO MERCADO entregue em 18/06/2026\n\n**O QUE aconteceu:** A LA DZ HOLDCO LLC informou uma redução relevante na sua participação acionária.\n\n**Resumo:** A LA DZ HOLDCO LLC alienou 17.500 ações ordinárias da DOTZ S.A., resultando em uma participação de 4,94% das ações ordinárias.\n\n**Trecho-chave:**\n\"A LA DZ informou que realizou uma negociação relevante envolvendo ações ordinárias de emissão da Companhia, por meio da qual alienou 17.500 (dezessete mil e quinhentas) ações ordinárias.\"\n\n### COMUNICADO AO MERCADO entregue em 15/05/2026\n\n**O QUE aconteceu:** A DOTZ S.A. divulgou seus resultados do primeiro trimestre de 2026.\n\n**Resumo:** A empresa registrou um crescimento de 9% na originação de crédito, atingindo R$ 155,0 mm no primeiro trimestre de 2026. O EBITDA foi de R$ 31,8 mm e o lucro líquido foi de R$ 6,9 mm.\n\n**Trecho-chave:**\n\"Crescimento de 9% na Originação vs 4T25, atingindo R$ 155,0 mm no 1T26.\"\n\n---\n\n**Conexão com o contexto:** O crescimento da originação de crédito e a melhoria nos resultados financeiros (EBITDA e lucro líquido) refletem positivamente na geração de valor para os acionistas, alinhando-se ao objetivo do programa de recompra de ações anunciado em março de 2026."
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

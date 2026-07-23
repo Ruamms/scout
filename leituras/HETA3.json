@@ -1,7 +1,7 @@
 {
   "ticker": "HETA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:26:36",
+  "verificado_em": "2026-07-23T19:54:28",
   "comunicados": {
     "ids": [
       192580010756177205
@@ -14,5 +14,10 @@
     ],
     "texto": "**Data:** 25/11/2025  \n**O QUE aconteceu:** A Companhia alterou o agente escriturador das ações.  \n**Resumo:** O Conselho de Administração aprovou a contratação do Banco Itaú-Unibanco S.A. como novo agente escriturador, substituindo o Banco Bradesco S.A., a partir de 1º de dezembro de 2025.  \n**Trecho-chave:** \"em reunião realizada em 17 de julho de 2025, o Conselho de Administração da Companhia aprovou a contratação do Banco Itaú-Unibanco S.A como agente escriturador de suas ações\" (p. 1).\n\n---\n\nA mudança no agente escriturador pode impactar na eficiência e qualidade dos serviços prestados aos acionistas, mas não há detalhes específicos sobre isso neste comunicado."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158417,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes declarados na seção de PROCESSOS JUDICIAIS do Formulário de Referência (FRE) da HETA3."
+  }
 }

@@ -1,7 +1,7 @@
 {
   "ticker": "HAGA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:23:38",
+  "verificado_em": "2026-07-23T19:49:59",
   "comunicados": {
     "ids": [
       579721856992309323,
@@ -19,6 +19,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 18/06/2026\n\n**O QUE aconteceu:** A HAGA S.A. Indústria e Comércio divulgou a consolidação de sua Transação Tributária Individual.\n\n**Resumo:** As negociações resultaram nos seguintes valores após descontos: R$ 4.507.128,47 para demais débitos e R$ 2.341.044,84 para débitos previdenciários.\n\n**Trecho-chave:** \"As negociações (sob nº 16195770 para débitos previdenciários e nº 16195921 para demais débitos) abrangeram as dívidas inscritas em Dívida Ativa da União (DAU) a cargo da PGFN, resultando nos seguintes valores após a aplicação de descontos e créditos legais (Lei nº 13.988/2020 e Portaria nº 6.757/2022):\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 08/06/2026\n\n**O QUE aconteceu:** A HAGA S.A. Indústria e Comércio desistiu do pedido de enquadramento no regime Fácil para companhias de menor porte (CMP).\n\n**Resumo:** Diante da alteração na Resolução CVM n° 244 de 29/05/2026, a empresa decidiu desistir do pedido.\n\n**Trecho-chave:** \"O Diretor de Relações com o Mercado da HAGA S.A. Indústria e Comércio, vem comunicar ao mercado e a quem possa interessar, que diante a publicação da Resolução CVM n° 244 de 29/05/2026 que altera a Resolução CVM n° 193/2023, revogando a obrigatoriedade da elaboração e divulgação do relatório de informações financeiras relacionadas a sustentabilidade nos termos dos pronunciamentos Técnicos CBPS 01 e CBPS 02, que desistiu do pedido de enquadramento no regime Fácil, nos termos da Resolução CVM n° 232/2025.\"\n\n---\n\n### FATO RELEVANTE entregue em 19/03/2026\n\n**O QUE aconteceu:** A HAGA S.A. Indústria e Comércio assinou um Termo de Transação Individual com a Procuradoria Geral da Fazenda Nacional (PGFN).\n\n**Resumo:** O termo visa regularizar débitos inscritos em dívida ativa, com desconto máximo de 65% sobre acréscimos legais e garantia pelo imóvel sede.\n\n**Trecho-chave:** \"O Diretor de Relações com o Mercado da HAGA S.A. Indústria e Comércio, em sequência ao comunicado de 03 de dezembro de 2024, vêm informar ao mercado e a quem interessar possa, nos termos dos incisos I e II do Artigo 2ᵒ da Resolução CVM nᵒ 44 de 23 de agosto de 2021, que nesta data assinou conjuntamente com a Procuradoria Geral da Fazenda Nacional (PGFN), o TERMO DE TRANSAÇÃO INDIVIDUAL Processo SEI nº 19726.018233/2024-97, nos termos consignados na lei 13.988/2020 e na portaria 6.757 de 29.07.2022, considerando que a transação tem por finalidade a regularização dos débitos inscritos em dívida ativa e aqueles com vencimento até 29/02/2000, sob administração da Secretaria da Receita Federal do Brasil, inscritos após a desistência do REFIS, nas condições a seguir:\"\n\n**Conexão com indicadores:** Este fato relevante pode impactar os indicadores financeiros e de liquidez da empresa, já que envolve o pagamento de débitos significativos."
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

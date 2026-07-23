@@ -1,7 +1,7 @@
 {
   "ticker": "MNPR3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:45:02",
+  "verificado_em": "2026-07-23T20:27:10",
   "comunicados": {
     "ids": [
       626001599111782919,
@@ -22,6 +22,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 21/10/2025\n\n**O que aconteceu:** A Companhia aprovou o desdobramento das ações ordinárias e alteração estatutária.\n\n**Resumo:** A Minupar Participações S.A. realizou uma AGE onde foi aprovado o desdobramento de ações na proporção 1:10, sem alterar a participação percentual dos acionistas ou o valor do capital social.\n\n**Trecho-chave:** \"A Companhia informa o seguinte cronograma para o desdobramento das ações:\" (p. 1)\n\n### FATO RELEVANTE entregue em 30/04/2025\n\n**O que aconteceu:** A Companhia Minuano de Alimentos celebrou um termo de transação tributária com a PGFN.\n\n**Resumo:** A Controlada da Minupar Participações S.A. regularizou seus débitos tributários inscritos em dívida ativa, prevendo o pagamento gradual do passivo consolidado.\n\n**Trecho-chave:** \"O valor total dos débitos contemplados é de aproximadamente R$ 556 milhões, correspondente aos débitos inscritos em dívida ativa até abril de 2025. Após aplicação dos descontos previstos e da compensação com créditos de prejuízo fiscal e base negativa de CSLL, estima-se que o passivo consolidado será da ordem de R$ 80 milhões.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 24/04/2026\n\n**O que aconteceu:** A estrutura administrativa foi readequada.\n\n**Resumo:** A Companhia Minupar Participações S.A. encerrou o mandato da Sra. Chao En Hung e elegeram o Sr. Tiago Fonseca Siqueira como Diretor Presidente das sociedades controladas, acumulando a função com a de Diretor de Relações com Investidores.\n\n**Trecho-chave:** \"Para o cargo de Diretor Presidente das Companhias controladas, foi eleito o Sr. Tiago Fonseca Siqueira, que passará a liderar a operação de referidas sociedades, acumulando tais funções com o cargo de Diretor de Relações com Investidores da Minupar.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 23/03/2026\n\n**O que aconteceu:** Foi divulgada uma nova versão do Boletim de Voto à Distância.\n\n**Resumo:** A Minupar Participações S.A. atualizou o Boletim de Voto à Distância para incluir deliberações sobre a caracterização de independência dos candidatos ao Conselho de Administração, solicitadas pelos acionistas minoritários.\n\n**Trecho-chave:** \"A Companhia informa que não serão desconsiderados votos conferidos por meio da versão anterior do Boletim, entretanto, é necessário o envio de novo Boletim para votar nas deliberações inseridas na nova versão.\" (p. 1)"
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "ticker": "PCAR3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T21:55:34",
+  "verificado_em": "2026-07-23T20:45:05",
   "comunicados": {
     "ids": [
       109693281695547717,
@@ -17,5 +17,10 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O que aconteceu:** A Companhia Brasileira de Distribuição respondeu a um ofício da B3 sobre uma notícia veiculada na imprensa.\n\n**Resumo:** A companhia esclareceu que o plano de recuperação extrajudicial do GPA foi bem recebido pelos credores, com apenas seis impugnações apresentadas. As impugnações foram refutadas judicialmente e a Companhia confia na rejeição do plano.\n\n**Trecho-chave:**\n\"Em resposta ao Ofício, a Companhia presta os seguintes esclarecimentos.\nQuanto ao primeiro e ao segundo itens, a Companhia confirma que, em 13 de julho de \n2026, encerraram-se os prazos para a eleição das opções de pagamento e para a \napresentação de impugnações ao plano de recuperação extrajudicial (art. 164, § 2º, da Lei \nnº 11.101/2005 – “LFR”).\"\n\n### COMUNICADO AO MERCADO entregue em 02/07/2026\n\n**O que aconteceu:** A Companhia Brasileira de Distribuição informou sobre a conclusão da operação de alienação à Raia Drogasil S.A. (RD) de sua participação societária na Stix Fidelidade e Inteligência S.A., correspondente a 66,7% do capital social.\n\n**Resumo:** A venda foi concluída, encerrando a joint venture com a RD. Durante um período de transição, o programa Stix será mantido em condições equivalentes às atuais para preservar os benefícios aos clientes.\n\n**Trecho-chave:**\n\"Com a conclusão da Operação, a Companhia, a Stix e a RD celebraram instrumento particular \npara estabelecer período de transição, com o objetivo de preservar a experiência dos clientes \nnas lojas. Durante o período de transição, o GPA e a RD manterão o programa em condições \noperacionais equivalentes às atualmente praticadas, incluindo a possibilidade de acúmulo e \nresgate de Pontos Stix pelos clientes do GPA.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159407,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Processo nº 4036772-74.2026.8.26.0100 (Recuperação Extrajudicial)**\n   - Natureza: Cível\n   - Valor envolvido: R$ 4,5 bilhões\n   - Chance de perda: Não aplicável\n   - Resumo: Em março de 2026, a Companhia distribuiu um pedido de homologação de plano de recuperação extrajudicial para renegociar dívidas sem garantia não correntes.\n\n2. **Processo nº 16561.720195/2012-34 (Execução Fiscal)**\n   - Natureza: Tributário\n   - Valor envolvido: R$ 718,06 milhões\n   - Chance de perda: Possível\n   - Resumo: Trata-se de uma discussão sobre a cobrança de diferenças de recolhimento de IRPJ relativas aos anos-calendário de 2007 a 2009.\n\n3. **Processo nº 16561.720059/2013-25 (Ação Anulatória e Execução Fiscal)**\n   - Natureza: Tributário\n   - Valor envolvido: R$ 765,66 milhões\n   - Chance de perda: Possível\n   - Resumo: Auto de infração visando a cobrança de diferenças de recolhimento de IRPJ relativas ao ano-calendário de 2010.\n\n4. **Processo nº 40509904 (Ação Anulatória e Execução Fiscal)**\n   - Natureza: Tributário\n   - Valor envolvido: R$ 265,86 milhões\n   - Chance de perda: Possível\n   - Resumo: Discussão relativa ao creditamento indevido de ICMS referente a ressarcimento de ST.\n\n5. **Processo nº 19515.720040/2015-94 (Auto de Infração)**\n   - Natureza: Tributário\n   - Valor envolvido: R$ 844,16 milhões\n   - Chance de perda: Possível e Remoto\n   - Resumo: Auto de infração visando a cobrança de PIS/COFINS em razão da glosa de diversos créditos.\n\nNão há processos relevantes declarados com valores superiores aos acima mencionados."
+  }
 }

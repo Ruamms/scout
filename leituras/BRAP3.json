@@ -1,7 +1,7 @@
 {
   "ticker": "BRAP3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T17:16:33",
+  "verificado_em": "2026-07-23T18:48:11",
   "comunicados": {
     "ids": [
       1068522131765548333,
@@ -23,5 +23,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 15/12/2025\n\n**O QUE aconteceu:** A Bradespar anunciou o pagamento de dividendos e juros sobre o capital próprio.\n\n**Resumo:** A companhia planeja pagar R$330 milhões em dividendos e R$257 milhões em juros sobre o capital próprio a seus acionistas.\n\n**Trecho-chave:**\n\"1) dividendos, no montante de R$330.000.000,00, dos quais:\na) R$250.000.000,00 serão pagos em 30.12.2025, sendo R$0,597218470 por ação ordinária e \nR$0,656940317 por ação preferencial;\"\n\n**Conexão com o contexto:** Este anúncio de pagamento de dividendos e juros sobre o capital próprio se conecta aos indicadores do contexto, demonstrando a política de remuneração dos acionistas da companhia.\n\n### COMUNICADO AO MERCADO entregue em 08/04/2026\n\n**O QUE aconteceu:** A Bradespar apresentou um comunicado ao mercado destacando seus principais ativos e realizações.\n\n**Resumo:** O comunicado destaca a composição acionária, as principais ações realizadas pela companhia e seu histórico de investimentos.\n\n**Trecho-chave:**\n\"Principais Ações Realizadas pela BRADESPAR\n2015\nSexta Emissão de Debêntures no valor de R$ \n1,260 bilhão.\n2013\nLiquidação Financeira da Segunda Série da \nTerceira Emissão e Quarta Emissão de \nDebêntures.\nQuinta Emissão Pública de Debêntures.\"\n\n**Conexão com o contexto:** Este comunicado ao mercado se conecta aos indicadores do contexto, mostrando as principais ações realizadas pela companhia ao longo dos anos."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158171,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Cível  \nR$ 978.810.203,17  \nPossível  \n\"Autos de infração de Imposto sobre a Renda da Pessoa Jurídica e Contribuição Social sobre o Lucro Líquido lavrados em 22.08.2023 contra a Bradespar S.A., com o objetivo de glosar a dedução de despesa no valor de R$ 1.410.000.000,00.\""
+  }
 }

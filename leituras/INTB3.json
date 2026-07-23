@@ -1,7 +1,7 @@
 {
   "ticker": "INTB3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T17:43:12",
+  "verificado_em": "2026-07-23T19:57:53",
   "comunicados": {
     "ids": [
       306570038969604314,
@@ -17,5 +17,10 @@
     ],
     "texto": "### O QUE ACONTECEU: Reafirmação do Rating AA-(bra) pela Fitch com Perspectiva Estável\n\n**Resumo:** A Intelbras recebeu a confirmação de seu rating nacional de longo prazo pelo rating agency Fitch, mantendo o nível \"AA-(bra)\" e perspectiva estável.\n\n**Trecho-chave:**\n\"A INTELBRAS S.A. INDÚSTRIA DE TELECOMUNICAÇÃO ELETRÔNICA BRASILEIRA (B3: INTB3) (”Companhia” ou ”Intelbras”), comunica aos seus acionistas e ao mercado em geral, em atendimento ao disposto no artigo 33, XVI, da Resolução CVM nº 80, de 29 de março de 2022, que a agência de rating Fitch Ratings (“Fitch”) reafirmou, nesta data, o Rating Nacional de Longo Prazo “AA- (bra)” à Companhia, com Perspectiva Estável (“Relatório”).\"\n\n---\n\n### O QUE ACONTECEU: Apresentação dos Resultados do Primeiro Trimestre de 2026\n\n**Resumo:** A Intelbras apresentou seus resultados financeiros para o primeiro trimestre de 2026, mostrando crescimento significativo em receita líquida, EBITDA e lucro líquido.\n\n**Trecho-chave:**\n\"Destaques 1T26\nReceita Líquida (R$ mil)\nR$ 1.110.638\n20,6% 1T26/1T25\nEBITDA (R$ mil)\nR$ 156.260\n92,6% 1T26/1T25\nLucro Líquido (R$ mil)\nR$ 153.090\n148,5%1T26/1T25\"\n\n**Conexão com o Contexto:** O forte crescimento nos indicadores financeiros do primeiro trimestre de 2026 pode contribuir para a manutenção do rating positivo da Intelbras, conforme mencionado no comunicado ao mercado."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158315,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Tributário**  \n   - Valor: R$ 103.059.501,96 (provável) + R$ 101.328.641,09 (possível)\n   - Chance de perda: Provável e Possível\n   - Resumo: Involvimento em processos tributários com valores significativos, incluindo o Processo nº 11516.721498/2014, que envolve créditos de ICMS na base de PIS/COFINS e multas.\n\n2. **Trabalhista**  \n   - Valor: R$ 21.716.025,54 (provável)\n   - Chance de perda: Provável\n   - Resumo: Involvimento em processos trabalhistas com valores elevados, como o Processo nº 120, que envolve ações cíveis e de consumidor.\n\n3. **Tributário**  \n   - Valor: R$ 941.053,56 (provável)\n   - Chance de perda: Provável\n   - Resumo: Processo judicial nº 5005741-17.2020.4.04.7200 envolvendo ação anulatória de débito fiscal.\n\n4. **Tributário**  \n   - Valor: R$ 8.642.839,20 (possível)\n   - Chance de perda: Possível\n   - Resumo: Processo nº 10983.722269/2020 envolvendo auto de infração aduaneiro por discussão na classificação da NCM.\n\n5. **Tributário**  \n   - Valor: R$ 4.922.076,01 (possível)\n   - Chance de perda: Possível\n   - Resumo: Processo nº 10983-720.164/2015 envolvendo auto de infração aduaneiro por discussão na classificação da NCM.\n\n6. **Tributário**  \n   - Valor: R$ 5.700.543,74 (possível)\n   - Chance de perda: Possível\n   - Resumo: Processo nº 10314.720254/2022 envolvendo auto de infração aduaneiro por discussão na classificação da NCM.\n\n7. **Cível e Consumidor**  \n   - Valor: R$ 22.996.384,71 (possível)\n   - Chance de perda: Possível\n   - Resumo: Involvimento em processos cíveis e de consumidor com valores significativos.\n\n8. **Tributário**  \n   - Valor: R$ 12.007.236,81 (provável)\n   - Chance de perda: Provável\n   - Resumo: Processo nº 5005741-17.2020.4.04.7200 envolvendo ação anulatória de débito fiscal."
+  }
 }
