@@ -79,6 +79,23 @@ def test_home_busca_cobre_bancos(con):
     assert "Bancos (CDB)" in home  # card continua com a contagem derivada da lista
 
 
+def test_comparador_de_bancos(con):
+    _semear_banco(con)
+    dados = banco_html.montar_dados_banco(con, "C001")
+    pagina = modulo_site._pagina_comparar_bancos([dados])
+    assert "Comparar bancos" in pagina
+    assert '<option value="C001">BANCO TESTE</option>' in pagina
+    assert '"basileia": "15,00%"' in pagina
+    # aviso factual de portes + lembrete do FGC; nunca veredito
+    assert "portes regulatórios diferentes" in pagina and "R$ 250 mil" in pagina
+    assert "não é recomendação" in pagina
+    assert 'sem "vencedor"' in pagina  # a única menção é a própria negação
+    for veredito in ("melhor banco", "mais seguro", "vencedor:"):
+        assert veredito not in pagina.lower()
+    for placeholder in ("{CSS_", "{JS_", "{relatorio_html.", "{menu_html"):
+        assert placeholder not in pagina
+
+
 def test_indice_bancos_lista_e_rankings(con):
     _semear_banco(con)
     dados = banco_html.montar_dados_banco(con, "C001")

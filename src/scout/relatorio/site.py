@@ -180,6 +180,10 @@ def gerar(
     (destino / "etfs.html").write_text(
         _indice_etfs(etfs_publicados, agora or datetime.now()), encoding="utf-8"
     )
+    if etfs_publicados:
+        (destino / "comparar-etfs.html").write_text(
+            _pagina_comparar_etfs(etfs_publicados), encoding="utf-8"
+        )
     progresso(f"etfs: {len(etfs_publicados)} páginas")
 
     # páginas de BANCO emissor (R3 Renda Fixa): só conglomerados com série IF.data
@@ -197,6 +201,9 @@ def gerar(
     if bancos_publicados:
         (destino / "bancos.html").write_text(
             _indice_bancos(bancos_publicados, agora or datetime.now()), encoding="utf-8"
+        )
+        (destino / "comparar-bancos.html").write_text(
+            _pagina_comparar_bancos(bancos_publicados), encoding="utf-8"
         )
     progresso(f"bancos: {len(bancos_publicados)} páginas")
     if acoes_publicadas:
@@ -1364,6 +1371,236 @@ renderiza();
 </body>
 </html>
 """
+
+
+def _comparador(
+    titulo: str,
+    volta_href: str,
+    volta_texto: str,
+    dados: dict,
+    opcoes: str,
+    linhas_js: str,
+    aviso_id: str,
+    aviso_html: str,
+    aviso_js: str,
+    rotulo_opcao: str,
+) -> str:
+    """Esqueleto compartilhado dos comparadores (FII tem o seu próprio, legado)."""
+    import json as _json
+
+    json_dados = _json.dumps(dados, ensure_ascii=False).replace("</", "<\\/")
+    return f"""<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{titulo} — Scout</title>
+{relatorio_html.TAG_FAVICON}
+<style>
+:root {{ color-scheme: dark; }}
+* {{ box-sizing:border-box; margin:0; }}
+body {{ background:#0F1416; color:#EAEEF0; font-family:system-ui,sans-serif; line-height:1.5; }}
+.pagina {{ max-width:960px; margin:0 auto; padding:28px 20px 40px; }}
+h1 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:30px; font-weight:700; letter-spacing:-.02em; margin:8px 0 4px; }}
+.meta {{ color:#9AA7B2; font-size:13px; margin-bottom:16px; }}
+a {{ color:#8FCB9B; }}
+select {{ background:#161D20; color:#EAEEF0; border:1px solid #263034; border-radius:8px;
+  padding:9px 12px; font-size:14px; min-width:180px; max-width:280px; }}
+.seletores {{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px; }}
+#{aviso_id} {{ background:#2a2320; border:1px solid #6b5a2a; color:#e8d9a8; padding:9px 12px;
+  border-radius:8px; font-size:13px; margin-bottom:14px; }}
+table {{ width:100%; border-collapse:collapse; font-size:14px; font-variant-numeric:tabular-nums; }}
+th, td {{ padding:9px 10px; border-bottom:1px solid #1B2225; text-align:left; }}
+th {{ color:#9AA7B2; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; }}
+td:first-child {{ color:#9AA7B2; font-size:12.5px; text-transform:uppercase; letter-spacing:.04em; white-space:nowrap; }}
+tbody tr:hover td {{ background:#161D20; }}
+.selo {{ display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700;
+  font-size:11px; color:#0F1416; white-space:nowrap; }}
+.rodape {{ color:#9AA7B2; font-size:12.5px; border-top:1px solid #1B2225; margin-top:26px; padding-top:12px; }}
+{CSS_MENU}
+{relatorio_html.CSS_MARCA}
+</style>
+</head>
+<body>
+<div class="pagina">
+  {relatorio_html.marca_html("index.html")}
+  {menu_html()}
+  <h1>{titulo}</h1>
+  <div class="meta">os mesmos fatos, lado a lado — sem "vencedor": a decisão é sua ·
+  <a href="{volta_href}">{volta_texto}</a></div>
+  <div class="seletores">
+    <select id="f1" onchange="renderiza()"><option value="">{rotulo_opcao} 1…</option>{opcoes}</select>
+    <select id="f2" onchange="renderiza()"><option value="">{rotulo_opcao} 2…</option>{opcoes}</select>
+    <select id="f3" onchange="renderiza()"><option value="">{rotulo_opcao} 3 (opcional)…</option>{opcoes}</select>
+  </div>
+  <div id="{aviso_id}" hidden>{aviso_html}</div>
+  <div id="tabela"></div>
+  <div class="rodape">Comparação factual com dados públicos oficiais — não é recomendação
+  de investimento. Critérios e código: <a href="https://github.com/Ruamms/scout">github.com/Ruamms/scout</a> ·
+  <a href="apoie.html">apoie o projeto</a></div>
+</div>
+<script>
+const DADOS = {json_dados};
+const LINHAS = [
+{linhas_js}
+];
+function renderiza() {{
+  const escolhidos = ["f1", "f2", "f3"]
+    .map(id => document.getElementById(id).value)
+    .filter(t => t && DADOS[t]);
+  const alvo = document.getElementById("tabela");
+  const aviso = document.getElementById("{aviso_id}");
+  if (escolhidos.length < 2) {{ alvo.innerHTML = '<p class="meta">escolha pelo menos dois acima.</p>'; aviso.hidden = true; return; }}
+  aviso.hidden = {aviso_js};
+  const cabecalho = "<tr><th></th>" + escolhidos.map(t => `<th><a href="${{DADOS[t].url}}">${{DADOS[t].titulo_coluna}}</a></th>`).join("") + "</tr>";
+  const corpo = LINHAS.map(([rotulo, extrator]) =>
+    "<tr><td>" + rotulo + "</td>" + escolhidos.map(t => "<td>" + extrator(DADOS[t]) + "</td>").join("") + "</tr>"
+  ).join("");
+  alvo.innerHTML = "<table><thead>" + cabecalho + "</thead><tbody>" + corpo + "</tbody></table>";
+}}
+const parametros = new URLSearchParams(location.search);
+["f1", "f2", "f3"].forEach(id => {{
+  const escolhido = (parametros.get(id) || "").toUpperCase();
+  if (escolhido && DADOS[escolhido]) document.getElementById(id).value = escolhido;
+}});
+renderiza();
+{JS_MENU}
+</script>
+</body>
+</html>
+"""
+
+
+def _pagina_comparar_etfs(etfs: list[dict]) -> str:
+    """Comparador de ETFs: fatos por fundo, com aviso quando as CLASSES
+    diferem (renda fixa, cripto e ações têm regras e riscos próprios)."""
+    from .. import formato
+
+    def _ou_traco(valor, formatador):
+        return formatador(valor) if valor is not None else "—"
+
+    dados = {}
+    for d in sorted(etfs, key=lambda x: x["etf"]["ticker"]):
+        ticker = d["etf"]["ticker"]
+        taxa = d.get("taxa_adm") or {}
+        proventos = d.get("proventos") or []
+        pl_row = d.get("pl")  # Row (pl, competencia) do CDA — não um número
+        motivos = [f.titulo for f in d["flags"].flags] if d.get("flags") else []
+        dados[ticker] = {
+            "url": f"{ticker}.html",
+            "titulo_coluna": ticker,
+            "nome": (d["etf"]["denominacao"] or "")[:60],
+            "classe": d["classe"] or "ETF",
+            "selo": d["selo"].rotulo if d.get("selo") else "—",
+            "cor": _COR_SELO.get(d["selo"].nivel, "#7C8894") if d.get("selo") else "#7C8894",
+            "motivos": motivos,
+            "cotacao": _ou_traco(d.get("preco_atual"), lambda v: f"R$ {formato.decimal(v)}"),
+            "variacao": _ou_traco(d.get("variacao_12m"), formato.percentual),
+            "pl": _ou_traco(pl_row["pl"] if pl_row else None, formato.moeda_compacta),
+            "taxa": _ou_traco(taxa.get("taxa_adm_aa"), lambda v: f"{formato.percentual(v)} a.a."),
+            "liquidez": _ou_traco(d.get("liquidez"), lambda v: f"{formato.moeda_compacta(v)}/dia"),
+            "renda": (
+                f"sim — R$ {formato.decimal(proventos[0]['valor'])}/cota (NÃO isento de IR)"
+                if proventos
+                else "não distribui (acumula no preço)"
+            ),
+        }
+    opcoes = "".join(
+        f'<option value="{t}">{t} — {_e(v["nome"][:32])}</option>' for t, v in dados.items()
+    )
+    linhas_js = """
+  ["ETF", d => d.nome],
+  ["Classe", d => d.classe],
+  ["Selo", d => `<span class="selo" style="background:${d.cor}" title="${(d.motivos || []).join('; ')}">${d.selo}</span>`],
+  ["Cotação (D-1)", d => d.cotacao],
+  ["Variação 12 meses", d => d.variacao],
+  ["Patrimônio (CDA)", d => d.pl],
+  ["Taxa total", d => d.taxa],
+  ["Liquidez média", d => d.liquidez],
+  ["Distribui renda?", d => d.renda],
+  ["Alertas", d => (d.motivos && d.motivos.length) ? d.motivos.join("<br>") : "nenhum alerta disparado"],
+""".strip("\n")
+    return _comparador(
+        titulo="Comparar ETFs",
+        volta_href="etfs.html",
+        volta_texto="voltar para todos os ETFs",
+        dados=dados,
+        opcoes=opcoes,
+        linhas_js=linhas_js,
+        aviso_id="aviso-classe",
+        aviso_html=(
+            "Atenção: os ETFs escolhidos são de <b>classes diferentes</b> — renda fixa, ações e "
+            "cripto têm regras, tributação e riscos próprios; os números não se comparam diretamente."
+        ),
+        aviso_js='new Set(escolhidos.map(t => DADOS[t].classe)).size <= 1',
+        rotulo_opcao="ETF",
+    )
+
+
+def _pagina_comparar_bancos(bancos: list[dict]) -> str:
+    """Comparador de emissores de CDB: a saúde de cada banco lado a lado.
+    Números absolutos não se comparam entre portes — o aviso lembra isso."""
+    from .. import formato
+    from .banco_html import _TCB, _rotulo_tri, nome_curto, slug
+
+    def _ou_traco(valor, formatador):
+        return formatador(valor) if valor is not None else "—"
+
+    dados = {}
+    for d in sorted(bancos, key=lambda x: -(x["atual"].get("captacoes") or 0)):
+        banco = d["banco"]
+        cod = banco["cod_inst"]
+        atual = d["atual"]
+        motivos = [f.titulo for f in d["flags"].flags] if d.get("flags") else []
+        dados[cod] = {
+            "url": f"{slug(cod)}.html",
+            "titulo_coluna": nome_curto(banco["nome"])[:22],
+            "nome": nome_curto(banco["nome"])[:60],
+            "tipo": _TCB.get(banco["tcb"], banco["tcb"] or "—"),
+            "porte": banco["segmento"] or "—",
+            "selo": d["selo"].rotulo if d.get("selo") else "—",
+            "cor": _COR_SELO.get(d["selo"].nivel, "#7C8894") if d.get("selo") else "#7C8894",
+            "motivos": motivos,
+            "basileia": _ou_traco(atual.get("basileia"), formato.percentual),
+            "captacoes": _ou_traco(atual.get("captacoes"), formato.moeda_compacta),
+            "carteira": _ou_traco(atual.get("carteira"), formato.moeda_compacta),
+            "lucro": _ou_traco(atual.get("lucro"), formato.moeda_compacta),
+            "pl": _ou_traco(atual.get("pl"), formato.moeda_compacta),
+            "ate": _rotulo_tri(atual["anomes"]),
+        }
+    opcoes = "".join(
+        f'<option value="{c}">{_e(v["nome"][:36])}</option>' for c, v in dados.items()
+    )
+    linhas_js = """
+  ["Banco", d => d.nome],
+  ["Tipo", d => d.tipo],
+  ["Porte (BCB)", d => d.porte],
+  ["Selo", d => `<span class="selo" style="background:${d.cor}" title="${(d.motivos || []).join('; ')}">${d.selo}</span>`],
+  ["Índice de Basileia", d => d.basileia + ' <span style="color:#6B7681">(mínimo ~10,5%)</span>'],
+  ["Captações", d => d.captacoes],
+  ["Carteira de crédito", d => d.carteira],
+  ["Lucro no ano", d => d.lucro],
+  ["Patrimônio líquido", d => d.pl],
+  ["Dados até", d => d.ate],
+  ["Alertas", d => (d.motivos && d.motivos.length) ? d.motivos.join("<br>") : "nenhum alerta disparado"],
+""".strip("\n")
+    return _comparador(
+        titulo="Comparar bancos (CDB)",
+        volta_href="bancos.html",
+        volta_texto="voltar para todos os bancos",
+        dados=dados,
+        opcoes=opcoes,
+        linhas_js=linhas_js,
+        aviso_id="aviso-porte",
+        aviso_html=(
+            "Atenção: os bancos escolhidos têm <b>portes regulatórios diferentes</b> — números "
+            "absolutos (captações, lucro, PL) não se comparam entre um banco sistêmico e um pequeno; "
+            "o que se compara é o índice (Basileia) e os alertas. O FGC cobre R$ 250 mil por CPF "
+            "por conglomerado, independentemente do tamanho do emissor."
+        ),
+        aviso_js='new Set(escolhidos.map(t => DADOS[t].porte)).size <= 1',
+        rotulo_opcao="banco",
+    )
 
 
 _VISIVEIS_DE_INICIO = 10  # tabela abre com o TOP 10 (rankings logo abaixo); o resto sob demanda

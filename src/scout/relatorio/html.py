@@ -180,6 +180,7 @@ def menu_html() -> str:
       <button class="topo-btn" type="button">ETFs ▾</button>
       <div class="painel">
         <a href="etfs.html">Todos os ETFs</a>
+        <a href="comparar-etfs.html">Comparar ETFs</a>
         <div class="grupo">por classe</div>
         <a href="etfs.html?classe=Ações Brasil">Ações Brasil</a>
         <a href="etfs.html?classe=Ações Internacionais">Ações Internacionais</a>
@@ -194,7 +195,13 @@ def menu_html() -> str:
         <a href="comparar-acoes.html">Comparar ações</a>
       </div>
     </div>
-    <a href="bancos.html">Bancos</a>
+    <div class="item">
+      <button class="topo-btn" type="button">Bancos ▾</button>
+      <div class="painel">
+        <a href="bancos.html">Todos os bancos</a>
+        <a href="comparar-bancos.html">Comparar bancos</a>
+      </div>
+    </div>
     <a href="apoie.html">Apoiar</a>
   </nav>
 """

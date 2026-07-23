@@ -665,3 +665,27 @@ def test_etf_em_liquidacao_ganha_flag_alta_na_pagina(con):
     codigos = {flag.codigo for flag in dados["flags"].flags}
     assert "etf_situacao_cvm" in codigos
     assert dados["selo"].nivel == "grave"
+
+
+def test_comparador_de_etfs(con):
+    from datetime import datetime  # noqa: F401 (paridade com os demais testes)
+
+    from scout.relatorio import etf_html
+    from scout.relatorio import site as modulo_site
+
+    _semear_etf(con)
+    dados = etf_html.montar_dados_etf(
+        con, "BOVA11", {"10406511000161": {"classificacao_scout": "Ações Brasil"}}
+    )
+    pagina = modulo_site._pagina_comparar_etfs([dados])
+    assert "Comparar ETFs" in pagina
+    assert '<option value="BOVA11">' in pagina
+    assert '"classe": "Ações Brasil"' in pagina
+    # aviso factual quando as classes diferem + sem veredito
+    assert "classes diferentes" in pagina
+    assert "não é recomendação" in pagina
+    assert 'sem "vencedor"' in pagina  # a única menção é a própria negação
+    for veredito in ("melhor etf", "vencedor:"):
+        assert veredito not in pagina.lower()
+    for placeholder in ("{CSS_", "{JS_", "{relatorio_html.", "{menu_html"):
+        assert placeholder not in pagina
