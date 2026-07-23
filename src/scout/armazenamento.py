@@ -58,6 +58,28 @@ CREATE TABLE IF NOT EXISTS auditores (
     fim     TEXT,
     PRIMARY KEY (cod_cvm, auditor, inicio)
 );
+CREATE TABLE IF NOT EXISTS bancos (
+    cod_inst      TEXT PRIMARY KEY,  -- CodInst do IF.data (conglomerado prudencial ou IF independente)
+    nome          TEXT,
+    tcb           TEXT,   -- tipo de consolidado bancário (b1/b2 = bancos que captam)
+    segmento      TEXT,   -- S1..S5 (porte regulatório)
+    uf            TEXT,
+    atualizado_em TEXT
+);
+CREATE TABLE IF NOT EXISTS bancos_tri (
+    cod_inst          TEXT NOT NULL,
+    anomes            INTEGER NOT NULL,  -- AAAAMM do trimestre IF.data
+    ativo             REAL,
+    carteira          REAL,   -- carteira de crédito classificada
+    captacoes         REAL,
+    pl                REAL,
+    lucro             REAL,   -- lucro líquido acumulado no ano até o trimestre
+    capital_principal REAL,
+    pr                REAL,   -- patrimônio de referência
+    rwa               REAL,   -- ativos ponderados pelo risco
+    basileia          REAL,   -- 100·PR/RWA (calculado, determinístico)
+    PRIMARY KEY (cod_inst, anomes)
+);
 CREATE TABLE IF NOT EXISTS fre_docs (
     cod_cvm    TEXT PRIMARY KEY,
     id_doc     INTEGER,  -- documento FRE vigente no RAD (última versão)
