@@ -81,6 +81,15 @@ CREATE TABLE IF NOT EXISTS bancos_tri (
     caixa             REAL,   -- disponibilidades + interfinanceiras (liquidez IMEDIATA)
     PRIMARY KEY (cod_inst, anomes)
 );
+CREATE TABLE IF NOT EXISTS etf_diario (
+    cnpj       TEXT NOT NULL,
+    data       TEXT NOT NULL,  -- DT_COMPT do informe diário (posição de fechamento)
+    vl_quota   REAL,           -- cota PATRIMONIAL (base do prêmio/desconto)
+    patrim_liq REAL,
+    cotistas   INTEGER,
+    id_doc     INTEGER,        -- documento FNET de origem
+    PRIMARY KEY (cnpj, data)
+);
 CREATE TABLE IF NOT EXISTS fii_posicoes_anuais (
     cnpj            TEXT NOT NULL,    -- formatado como no CSV da CVM (00.000.000/0001-00)
     data_referencia TEXT NOT NULL,    -- fim do exercício do fundo (AAAA-MM-DD)
@@ -754,6 +763,13 @@ def serie_imoveis(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:
     return con.execute(
         "SELECT * FROM imoveis WHERE cnpj = ? ORDER BY competencia, nome", (cnpj,)
     ).fetchall()
+
+
+def etf_diario_atual(con: sqlite3.Connection, cnpj: str) -> sqlite3.Row | None:
+    """Informe diário mais recente do ETF (cota patrimonial, PL, cotistas)."""
+    return con.execute(
+        "SELECT * FROM etf_diario WHERE cnpj = ? ORDER BY data DESC LIMIT 1", (cnpj,)
+    ).fetchone()
 
 
 def posicoes_anuais_fii(con: sqlite3.Connection, cnpj: str) -> list[sqlite3.Row]:

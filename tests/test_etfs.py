@@ -689,3 +689,72 @@ def test_comparador_de_etfs(con):
         assert veredito not in pagina.lower()
     for placeholder in ("{CSS_", "{JS_", "{relatorio_html.", "{menu_html"):
         assert placeholder not in pagina
+
+
+_XML_INFORME_DIARIO = (
+    '<?xml version="1.0" encoding="windows-1252" ?><DOC_ARQ xmlns="urn:infdiario">'
+    "<CAB_INFORM><COD_DOC>1</COD_DOC><DT_COMPT>22/07/2026</DT_COMPT>"
+    "<DT_GERAC_ARQ>23/07/2026</DT_GERAC_ARQ><VERSAO>4.0</VERSAO></CAB_INFORM>"
+    "<LISTA_INFORM><INFORM><CNPJ_FDO>10406511000161</CNPJ_FDO>"
+    "<VL_QUOTA>174,487880000000</VL_QUOTA><PATRIM_LIQ>14944886917,50</PATRIM_LIQ>"
+    "<NR_COTST>99857</NR_COTST></INFORM></LISTA_INFORM></DOC_ARQ>"
+).encode("windows-1252")
+
+
+def test_extrair_informe_diario():
+    from scout.coleta import etf_diario
+
+    informe = etf_diario.extrair_informe(_XML_INFORME_DIARIO)
+    assert informe == {
+        "data": "2026-07-22",
+        "vl_quota": 174.48788,
+        "patrim_liq": 14944886917.50,
+        "cotistas": 99857,
+    }
+    assert etf_diario.extrair_informe(b"nao e xml") is None
+
+
+def test_atualizar_informes_diarios(con, monkeypatch):
+    from datetime import date
+
+    from scout.coleta import etf_diario, fnet
+
+    _semear_etf(con)
+    monkeypatch.setattr(
+        fnet, "listar",
+        lambda cnpj, quantidade=10, timeout=12, tentativas=1: [
+            {"id": 99, "tipo": "Relatório Gerencial", "categoria": "x"},
+            {"id": 1262699, "tipo": "Informe Diário", "categoria": "Informes Periódicos"},
+        ],
+    )
+    monkeypatch.setattr(
+        fnet, "baixar", lambda id_doc, timeout=30, tentativas=1: _XML_INFORME_DIARIO
+    )
+    mensagem = etf_diario.atualizar_diarios(con, hoje=date(2026, 7, 23))
+    assert "1 novos" in mensagem
+    linha = con.execute("SELECT * FROM etf_diario").fetchone()
+    assert linha["vl_quota"] == 174.48788 and linha["cotistas"] == 99857
+    # mesma rodada no mesmo dia: não repete
+    assert etf_diario.atualizar_diarios(con, hoje=date(2026, 7, 23)) is None
+
+
+def test_pagina_etf_mostra_cota_patrimonial_e_premio(con):
+    from datetime import datetime
+
+    from scout.relatorio import etf_html
+
+    _semear_etf(con)  # preço de mercado semeado: R$ 169,12
+    con.execute(
+        "INSERT INTO etf_diario (cnpj, data, vl_quota, patrim_liq, cotistas, id_doc)"
+        " VALUES ('10406511000161', '2026-07-22', 174.48788, 14944886917.5, 99857, 1262699)"
+    )
+    con.commit()
+    dados = etf_html.montar_dados_etf(
+        con, "BOVA11", {"10406511000161": {"classificacao_scout": "Ações Brasil"}}
+    )
+    pagina = etf_html.gerar(dados, agora=datetime(2026, 7, 23, 12, 0))
+    assert "Cota patrimonial" in pagina and "R$ 174,49" in pagina
+    # 169,12 / 174,48788 - 1 = -3,08% — desconto declarado como FATO, sem alvo
+    assert "Prêmio/desconto" in pagina and "-3,08%" in pagina
+    assert "não um alvo" in pagina
+    assert "Cotistas" in pagina and "99.857" in pagina

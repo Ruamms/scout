@@ -131,6 +131,7 @@ def montar_dados_etf(con: sqlite3.Connection, ticker: str, classificacoes: dict 
         "divergencia_classe": divergencia_classe,
         "proventos": armazenamento.proventos_do_etf(con, etf["cnpj"]),
         "posicoes": _posicoes_com_links(con, etf["cnpj"]),
+        "diario": armazenamento.etf_diario_atual(con, etf["cnpj"]),
     }
     from ..coleta import taxas_etf
 
@@ -267,6 +268,19 @@ def gerar(
             f'{formato.percentual(taxa_info["taxa_adm_aa"])} a.a.',
             extra,
         )
+    diario = dados.get("diario")
+    if diario and diario["vl_quota"]:
+        _card("Cota patrimonial", f"R$ {formato.decimal(diario['vl_quota'])}",
+              f"informe diário de {formato.dia_br(diario['data'])} (FNET) — o valor da carteira por cota")
+        if dados.get("preco_atual"):
+            premio = 100 * (dados["preco_atual"] / diario["vl_quota"] - 1)
+            acima = "acima" if premio >= 0 else "abaixo"
+            _card("Prêmio/desconto", formato.percentual(premio, sinal=True),
+                  f"preço de mercado (D-1) {acima} da cota patrimonial — os dois são fatos "
+                  "de datas próximas, não um alvo")
+    if diario and diario["cotistas"]:
+        _card("Cotistas", f"{diario['cotistas']:,}".replace(",", "."),
+              f"informe diário de {formato.dia_br(diario['data'])}")
     proventos = dados.get("proventos") or []
     if proventos:
         ultimo = proventos[0]
