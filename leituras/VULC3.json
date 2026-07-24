@@ -1,7 +1,7 @@
 {
   "ticker": "VULC3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-23T00:05:45",
+  "verificado_em": "2026-07-23T22:02:24",
   "comunicados": {
     "ids": [
       7266051033900976,
@@ -20,5 +20,10 @@
     ],
     "texto": "### 08/05/2026 - Comunicado ao Mercado\n\n**O QUE aconteceu:** Análise do mercado de calçados esportivos no Brasil.\n\n**Resumo:** O comunicado destaca o crescimento do mercado de calçados esportivos no Brasil, com foco em dados demográficos e comportamento de consumo.\n\n**Trecho-chave:**\n\"Brasil é o 4º maior mercado do mundo com 801,0 milhões¹ de pares consumidos por ano. Considerando apenas calçados esportivos, o consumo é de 0,4 pares por habitante2.\"\n\n---\n\n### 05/05/2026 - Comunicado ao Mercado\n\n**O QUE aconteceu:** Apresentação dos resultados do primeiro trimestre de 2026.\n\n**Resumo:** Os resultados mostram crescimento nas receitas e lucros líquidos, mas uma redução no lucro líquido recorrente em comparação com o mesmo período anterior.\n\n**Trecho-chave:**\n\"RECEITA LÍQUIDA R$ 776,4 milhões no 1T26, crescimento de 10,7% em relação aos R$ 701,2 milhões registrados no 1T25. LUCRO LÍQUIDO RECORRENTE E MARGEM LÍQUIDA RECORRENTE R$ 86,1 milhões no 1T26, com recuo de 18,9% em relação ao 1T25.\"\n\n---\n\n### 29/04/2026 - Fato Relevante\n\n**O QUE aconteceu:** Aprovou um novo plano de opção de compra de ações para funcionários e administradores.\n\n**Resumo:** A Vulcabras S.A. aprovou um novo plano de opção de compra de ações, que será divulgado em detalhes por meio dos canais habituais da empresa.\n\n**Trecho-chave:**\n\"A Assembleia Geral Ordinária e Extraordinária realizada em 29 de abril de 2026 (‘AGOE 2026’), aprovou o novo plano de opção de compra de ações apresentado pela administração da Companhia, para funcionários e administradores da Companhia e de sociedades que estejam sob o seu controle direto ou indireto ('Plano 2026').\"\n\n---\n\n**Conexão com Indicadores do Contexto:** O plano de opções de ações pode influenciar positivamente os resultados financeiros futuros, considerando o crescimento previsto no mercado de calçados esportivos."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158195,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Tributário**  \n   - **Valor envolvido:** R$ 71.429.297,39  \n   - **Chance de perda:** Possível  \n   - **Resumo do objeto:** Trata-se de uma ação fiscal distribuída pela Receita Federal do Brasil em face da Vulcabras – BA Calçados E Artigos Esportivos S/A, objetivando a verificação do cumprimento das obrigações tributárias referentes ao IRPJ e CSLL nos períodos de 2017-2018. \"Trata-se de ação fiscal distribuída com base no Termo de Distribuição de Procedimento Fiscal – TDPF nº 05.1.01.00-2021-00386-1, em face da empresa objetivando a verificação do cumprimento das obrigações tributárias referentes ao IRPJ e CSLL, nos períodos de apuração compreendidos entre 01/01/2017 e 31/12/2017 e 01/01/2018 a 31/12/2018.\"\n\n2. **Cível**  \n   - **Valor envolvido:** R$ 362.345,20 (valor atualizado)  \n   - **Chance de perda:** Possível  \n   - **Resumo do objeto:** A Companhia foi condenada a pagar indenização por danos morais coletivos no importe de R$ 150.000,00 e custear as próteses dos trabalhadores vítimas de acidentes de trabalho apontados pelo Ministério Público do Trabalho nos autos em questão, sob pena de multa diária de R$ 100,00 por descumprimento da obrigação de fazer. \"Em 07 de junho de 2013, nos autos da Ação Civil Pública 0242000-36.2009.5.05.0621, a Companhia foi condenada a pagar indenização por danos morais coletivos no importe de R$ 300.000,00 e custear as próteses dos trabalhadores vítimas de acidentes de trabalho apontados pelo Ministério Público do Trabalho nos autos em questão, sob pena de multa diária de R$ 100,00 por descumprimento da obrigação de fazer.\""
+  }
 }

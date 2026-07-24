@@ -1,7 +1,7 @@
 {
   "ticker": "WIZC3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-23T00:09:19",
+  "verificado_em": "2026-07-23T22:08:48",
   "comunicados": {
     "ids": [
       207301947044872646,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 18/03/2026\n\n**O que aconteceu:** Diretoria Estatutária da WIZ CO PARTICIPAÇÕES E CORRETAGEM DE SEGUROS S.A. foi eleita.\n\n**Resumo:** A Companhia realizou a eleição de novos diretores para substituir os mandatos em curso, nomeando Lucas Moreno Neves como Diretor-Presidente e de Relações com Investidores, e Marcelo Pereira Kronemberg como Diretor Financeiro e Executivo.\n\n**Trecho-chave:** \"Na ocasião, o Sr. Lucas Moreno Neves foi eleito para o cargo de Diretor-Presidente e de Relações com Investidores em substituição ao Sr. Marcus Vinicius de Oliveira e o Sr. Marcelo Pereira Kronemberg foi eleito para os cargos de Diretor Financeiro e Diretor Executivo, cumulativamente.\"\n\n### COMUNICADO AO MERCADO entregue em 01/07/2026\n\n**O que aconteceu:** Lucas Neves participará do programa Money Report TV.\n\n**Resumo:** O Diretor Presidente e de Relações com Investidores da WIZ, Sr. Lucas Neves, participará do programa Money Report TV no dia 02/07 às 21h.\n\n**Trecho-chave:** \"A WIZ CO PARTICIPAÇÕES E CORRETAGEM DE SEGUROS S.A. (B3: WIZC3) (\"Companhia\" ou \"WIZ\"), em atendimento ao Ofício Circular nº 07/2020 – CVM/SEP, informa aos seus acionistas e ao mercado em geral que seu Diretor Presidente e de Relações com Investidores, Sr. Lucas Neves, participará, no dia 02 de julho, às 21h, do programa Money Report TV, transmitido pela BM&C News.\"\n\n### COMUNICADO AO MERCADO entregue em 29/05/2026\n\n**O que aconteceu:** Paraná Seguros e Paraná Banco celebraram instrumentos contratuais para distribuição de produtos financeiros.\n\n**Resumo:** A WIZ Co, através da sua investida Paraná Seguros, estabeleceu uma parceria com o Paraná Banco para a distribuição de produtos financeiros, sem alterar o controle acionário ou envolver aquisição/saída de participações societárias.\n\n**Trecho-chave:** \"A WIZ CO PARTICIPAÇÕES E CORRETAGEM DE SEGUROS S.A. (B3: WIZC3) (\"Companhia\" ou \"WIZ Co\"), em cumprimento ao disposto na Resolução CVM nº 44/2021 e alterações posteriores, comunica aos seus acionistas e ao mercado em geral que sua investida PARANÁ CORRETAGEM DE SEGUROS S.A. (\"Paraná Seguros\") celebrou com o PARANÁ BANCO S.A. (\"Paraná Banco\") instrumentos contratuais voltados à distribuição de produtos financeiros, conforme descrito a seguir.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159401,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Tributário**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 8,6 milhões\n   - **Chance de perda:** Provável\n   - **Resumo:** Trata-se de um processo administrativo tributário em que a empresa foi condenada por desconsideração de pagamentos realizados para prestadores de serviços e o consequente aproveitamento fiscal desses gastos. A chance de perda é provável.\n\n2. **Cível**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 24,1 milhões\n   - **Chance de perda:** Possível\n   - **Resumo:** O processo trata da prestação de serviços de correspondente no país e a apuração de comissões contratuais referentes ao período de 2017. A chance de perda é considerada possivel, mas a empresa espera que o impacto seja momentâneo e reembolsado pelo ex-sócio."
+  }
 }

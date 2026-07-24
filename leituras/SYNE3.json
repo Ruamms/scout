@@ -1,7 +1,7 @@
 {
   "ticker": "SYNE3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:52:09",
+  "verificado_em": "2026-07-23T21:36:28",
   "comunicados": {
     "ids": [
       551947548886542433,
@@ -17,5 +17,10 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 27/03/2026\n\n**O QUE aconteceu:** A SYN passou a integrar o Índice Great Place to Work (IGPTW) da B3.\n\n**Resumo:** A empresa foi certificada pelo Great Place to Work e entrou na carteira do índice, que reúne empresas listadas com boas práticas de gestão de pessoas.\n\n**Trecho-chave:**\n\"• A SYN passou a integrar a carteira do Índice Great Place to Work (IGPTW) da B3.\n• O índice reúne empresas listadas certificadas pelo Great Place to Work\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 15/05/2026\n\n**O QUE aconteceu:** A SYN concluiu as obras do Centro Logístico e Distribuição (CLD) do Shopping ABL.\n\n**Resumo:** As fases do CLD foram entregues, com participação direta de 17% e total de 26.2%, todas locadas a 100%.\n\n**Trecho-chave:**\n\"• Fase 4 (17 mil m²): março/26 (100% locada)\nREALIZAÇÕES\nCONCLUSÃO DAS OBRAS DO CLD\nABL total: 129 mil m² \n• Participação direta: 17,0% (33.656 m²)\n• Participação direta + indireta: 26,2% (33.656 m²)\nFases entregues:\n• Fase 1 (45 mil m²): outubro/23 (100% locada)\n• Fase 2 (29 mil m²): dezembro/24 (100% locada)\n• Fase 3 (38 mil m²): dezembro/25 (100% locada)\n• Fase 4 (17 mil m²): março/26 (100% locada)\"\n\n---\n\n**Conexão com o contexto:** As realizações mencionadas no comunicado de maio de 2026, como a conclusão do CLD, são resultado das atividades operacionais e estratégicas da empresa, que foram detalhadas no relatório de resultados de outubro de 2025."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158808,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Processo Tributário (Ação Anulatória de Débito de ISSQN)**\n   - **Natureza:** Tributária\n   - **Valor envolvido:** R$ 6.651.631,62\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** \"A tutela de urgência foi deferida sob o argumento de que a base de cálculo adotada pela Fazenda Municipal quando do lançamento complementar do ISSQN sobre os serviços de construção civil é ilegal.\"\n\n2. **Processo Tributário (Execução Fiscal)**\n   - **Natureza:** Tributária\n   - **Valor envolvido:** R$ 6.651.631,62\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** \"A execução fiscal aguarda julgamento da anulatória correlata.\"\n\n3. **Processo Tributário (Execução Fiscal)**\n   - **Natureza:** Tributária\n   - **Valor envolvido:** R$ 164,506,847,53\n   - **Chance de perda:** Remota/Provável\n   - **Resumo do objeto:** \"O CARF determinou a anulação da decisão de primeira instância em relação ao tratamento tributário aplicável ao FIIGPS.\"\n\n4. **Processo Tributário (Execução Fiscal)**\n   - **Natureza:** Tributária\n   - **Valor envolvido:** R$ 58,419,650,44\n   - **Chance de perda:** Remota/Provável\n   - **Resumo do objeto:** \"O CARF determinou a anulação da decisão de primeira instância em relação ao tratamento tributário aplicável ao FIIGPS.\"\n\n5. **Processo Tributário (Execução Fiscal)**\n   - **Natureza:** Tributária\n   - **Valor envolvido:** R$ 19,717,321,40\n   - **Chance de perda:** Remota/Provável\n   - **Resumo do objeto:** \"O CARF determinou a anulação da decisão de primeira instância em relação ao tratamento tributário aplicável ao FIIGPS.\"\n\n6. **Processo Cível (Revisional)**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 2,461,903,54\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** \"A CSN interpôs agravo em recurso especial, ao qual foi negado provimento. Perante o STJ, ainda está pendente o julgamento do recurso especial da Aquarius.\""
+  }
 }

@@ -1,7 +1,7 @@
 {
   "ticker": "TTEN3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:59:24",
+  "verificado_em": "2026-07-23T21:50:30",
   "comunicados": {
     "ids": [
       629907309962983496,
@@ -17,5 +17,10 @@
     ],
     "texto": "### 22/06/2026 - Aceleração da Expansão Nacional\n\nA **TRÊS TENTOS AGROINDUSTRIAL S/A** anunciou a abertura de oito novas lojas em Goiás, Pará, Tocantins e Minas Gerais. Essa expansão visa fortalecer sua presença em regiões estratégicas do agronegócio brasileiro.\n\n*\"As unidades já estão em operação, Rio Verde (GO), Goiatuba (GO), Jataí (GO), Santana do Araguaia (PA), Redenção (PA), Palmas (TO), Uberlândia (MG) e Uberaba (MG). Para o segundo semestre, estão previstas novas aberturas de lojas.\"* (p. 1)\n\n---\n\n### 15/06/2026 - História e Estrutura da Companhia\n\nO **COMUNICADO AO MERCADO** apresenta a história e estrutura atual da **TRÊS TENTOS AGROINDUSTRIAL S/A**, destacando sua consolidação no ecossistema agrícola brasileiro.\n\nA empresa foi fundada em 1995, com expansão regional nos anos seguintes. Atualmente, a companhia opera com uma estrutura padrão de lojas que inclui varejo de insumos e originação de grãos, totalizando 75 lojas em diversos estados.\n\n*\"Loja e Escritório\nDepósito de Insumos\nArmazenamento de grãos\"* (p. 4)\n\n---\n\n### Conexão com o Contexto\n\nO comunicado recente sobre a expansão nacional da **3tentos** se conecta diretamente ao contexto do agronegócio brasileiro, destacando a importância das novas regiões para o crescimento sustentável da empresa. A estrutura e operações das lojas refletem a estratégia de verticalização e fortalecimento da cadeia agroindustrial, conforme mencionado nos documentos anteriores."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158305,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes conforme definido pela companhia."
+  }
 }

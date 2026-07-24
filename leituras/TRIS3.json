@@ -1,7 +1,7 @@
 {
   "ticker": "TRIS3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:58:59",
+  "verificado_em": "2026-07-23T21:49:38",
   "comunicados": {
     "ids": [
       690090108635796175,
@@ -23,5 +23,10 @@
     ],
     "texto": "### O que aconteceu em 30/06/2026\n\n**Título:** Trisul S.A. aprova programa de recompra de ações.\n\n**Resumo:** A Companhia aprovou um novo programa de recompra de ações, com objetivo de promover a aplicação eficiente dos recursos disponíveis em caixa e maximizar o valor para os acionistas.\n\n**Trecho-chave:**\n\"Objetivo: Aquisição de ações para manutenção em tesouraria, cancelamento ou posterior alienação das ações, no mercado ou no âmbito do plano de incentivo baseado em ações, com o objetivo de promover a aplicação de forma eficiente dos recursos da Companhia disponíveis em caixa, visando maximizar a geração de valor para os acionistas da Companhia.\"\n\n### O que aconteceu em 15/06/2026\n\n**Título:** Trisul S.A. anuncia mudanças na liderança.\n\n**Resumo:** A Companhia nomeou João Eduardo de Azevedo Silva como Diretor Presidente, elegeram Jorge Cury Neto para a Presidência do Conselho de Administração e Michel Esper Saad Junior para a Vice-Presidência do Conselho. Fernando Salomão permaneceu no cargo de Vice-Presidente Financeiro e de Relações com Investidores.\n\n**Trecho-chave:**\n\"O Sr. João Eduardo de Azevedo Silva ingressou na Trisul em abril de 2024, tendo desempenhado papel central na condução operacional e estratégica da Companhia.\"\n\n### O que aconteceu em 16/04/2026\n\n**Título:** Trisul S.A. divulga prévia operacional do 1º trimestre de 2026.\n\n**Resumo:** A Companhia divulgou a prévia operacional para o primeiro trimestre de 2026, destacando vendas brutas e líquidas, lançamentos e entregas de empreendimentos. As vendas brutas (% Trisul) totalizaram R$ 433,5 milhões no 1T26.\n\n**Trecho-chave:**\n\"As Vendas Brutas (% Trisul) totalizaram R$ 433,5 milhões no 1T26 ou 27,9% superior ao mesmo período do ano anterior.\"\n\n### O que aconteceu em 14/05/2026\n\n**Título:** Trisul S.A. apresenta resultados do primeiro trimestre de 2026.\n\n**Resumo:** A Companhia divulgou os resultados operacionais do primeiro trimestre de 2026, com destaque para vendas brutas e líquidas, lançamentos e entregas de empreendimentos. As vendas brutas (% Trisul) atingiram R$ 392,6 milhões no trimestre.\n\n**Trecho-chave:**\n\"As Vendas Líquidas (% Trisul) atingiram R$ 392,6 milhões no trimestre, ou 34,4% maior que o 1T25.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159496,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Cível**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 9.352.836,43\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** \"Foi iniciado o cumprimento de sentença nº 0015890-49.2017.8.26.0562, por Erik Amigoni e Outros em face H Soler e Trisul, para o pagamento da quantia de R$ 9.352.836,43.\"\n\n2. **Tributário**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 18,2 milhões (total estimado)\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** \"Em 31 de dezembro de 2025, a Companhia e as SPEs eram réis em aproximadamente 335 processos tributários.\"\n\n3. **Trabalhistas**\n   - **Natureza:** Trabalhista\n   - **Valor envolvido:** R$ 1,2 milhão (total provável)\n   - **Chance de perda:** Provável\n   - **Resumo do objeto:** \"Em 31 de dezembro de 2025, a Companhia e as SPEs eram réis em aproximadamente 260 reclamações trabalhistas.\"\n\n4. **Cível**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 66,2 milhões (total estimado)\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** \"Em 31 de dezembro de 2025, a Companhia e as SPEs eram réis em aproximadamente 538 processos judiciais de natureza cível.\""
+  }
 }

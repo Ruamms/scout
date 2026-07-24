@@ -1,11 +1,17 @@
 {
   "ticker": "SNSY3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:51:03",
+  "verificado_em": "2026-07-23T21:32:49",
   "comunicados": {
     "ids": [],
     "datas": [],
     "rotulos": [],
     "texto": null
+  },
+  "processos": {
+    "id": 158767,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "### 1. Processo nº 0004913-36.2010.8.26.0176 (Execução Fiscal)\n**Natureza:** Tributário  \n**Valor envolvido:** R$ 46.094.014,91  \n**Chance de perda:** Provável - Não mensurável com segurança  \n**Resumo do objeto:** Trata-se de uma execução fiscal relativa a créditos tributários oriundos de ICMS correspondentes aos períodos de julho de 2002 a dezembro de 2003, relativos ao diferencial de alíquota de 17% para 18%.\n\n### 2. Processo nº 4.049.472-0 (Auto de Infração)\n**Natureza:** Tributário  \n**Valor envolvido:** R$ 215.092.493,36  \n**Chance de perda:** Provável - Não mensurável com segurança  \n**Resumo do objeto:** Trata-se de um auto de infração e imposição de multa relativa ao suposto creditamento indevido de ICMS no período de 01/2009 a 06/2009 e de 03/2010 a 07/2012, relativos ao diferencial de alíquota de 17% para 18%.\n\n### 3. Processo nº 4.049.471-8 (Auto de Infração)\n**Natureza:** Tributário  \n**Valor envolvido:** R$ 29.537.502,18  \n**Chance de perda:** Remoto  \n**Resumo do objeto:** Trata-se de um auto de infração e imposição de multa relativa ao suposto creditamento indevido de ICMS no período de 01/2011 a 12/2012, em razão da transferência de mercadorias da Sansuy da unidade da Bahia para São Paulo.\n\n### 4. Processo nº 0003031-68.2012.8.26.0176 (Execução Fiscal)\n**Natureza:** Tributário  \n**Valor envolvido:** R$ 37.849.656,49  \n**Chance de perda:** Provável - Não mensurável com segurança  \n**Resumo do objeto:** Trata-se de uma execução fiscal relativa a contribuições previdenciárias.\n\n### 5. Processo nº 0005768-49.2009.8.26.0176 (Execução Fiscal)\n**Natureza:** Tributário  \n**Valor envolvido:** R$ 33.575.130,64  \n**Chance de perda:** Provável - Não mensurável com segurança  \n**Resumo do objeto:** Trata-se de uma execução fiscal relativa a créditos tributários oriundos de ICMS correspondentes aos períodos de janeiro de 2004 a novembro de 2005, relativos ao diferencial de alíquota de 17% para 18%.\n\n### 6. Processo nº 1500157-94.2016.8.26.0176 (Execução Fiscal)\n**Natureza:** Tributário  \n**Valor envolvido:** R$ 55.016.190,65  \n**Chance de perda:** Provável - Não mensurável com segurança  \n**Resumo do objeto:** Trata-se de uma execução fiscal distribuída pela Fazenda Pública em face da Sansuy S/A, referente a cobrança de ICMS supostamente recolhido a menor.\n\n### 7. Processo nº 1501257-74.2022.8.26.0176 (Execução Fiscal)\n**Natureza:** Tributário  \n**Valor envolvido:** R$ 25.014.054,75  \n**Chance de perda:** Provável - Não mensurável com segurança  \n**Resumo do objeto:** Trata-se de uma execução fiscal referente ao ICMS exigido através do AIIM nº. 40379905 e multa aplicada com base no RICMS, por infração aos artigos do mesmo regulamento.\n\n### 8. Processo não há processos relevantes declarados."
   }
 }

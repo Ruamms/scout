@@ -1,7 +1,7 @@
 {
   "ticker": "RVEE3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:45:10",
+  "verificado_em": "2026-07-23T21:15:07",
   "comunicados": {
     "ids": [
       70501930504499721,
@@ -20,5 +20,9 @@
     ],
     "texto": "### Fato Relevante entregue em 31/03/2026\n\n**O QUE aconteceu:** Aquisição da R. Real Estate e Saída Voluntária do Novo Mercado.\n\n**Resumo:** A REVEE S.A. aprovou a aquisição total das ações da R. Real Estate e anunciou sua saída voluntária do Novo Mercado, com migração para o segmento básico de listagem da B3.\n\n**Trecho-chave:**\n\"foi aprovada a ratificação da celebração do Contrato de Compra e Venda de Ações, Investimento e Outras Avenças, celebrado em 30 de dezembro de 2025 e aditado em 09 de março de 2026, por meio do qual a Companhia adquiriu do Iduna Fundo de Investimento em Participações Multiestratégia a totalidade das ações representativas do capital social da Revee – Real Estate Venues & Entertainment Participações S.A.\"\n\n**Conexão com o contexto:** A aquisição e a migração para o segmento básico de listagem da B3 são consequências diretas da saída voluntária do Novo Mercado.\n\n---\n\n### Comunicado ao Mercado entregue em 15/04/2026\n\n**O QUE aconteceu:** Dissolução do Comitê de Auditoria Não Estatutário.\n\n**Resumo:** O Conselho de Administração da REVEE S.A. aprovou a dissolução imediata do Comitê de Auditoria Não Estatutário em virtude da migração para o segmento básico de listagem da B3.\n\n**Trecho-chave:**\n\"o Conselho de Administração da Companhia aprovou, em reunião realizada nesta data, a dissolução do Comitê de Auditoria Não Estatutário da Companhia, com efeitos imediatos.\"\n\n---\n\n### Comunicado ao Mercado entregue em 29/05/2026\n\n**O QUE aconteceu:** Apresentação dos Resultados do Primeiro Trimestre de 2026.\n\n**Resumo:** A REVEE S.A. divulgou as demonstrações financeiras referentes ao primeiro trimestre de 2026, alinhadas às práticas contábeis brasileiras e aos padrões internacionais IFRS.\n\n**Trecho-chave:**\n\"A REVEE S.A., companhia aberta e única do setor de real estate de entretenimento listada na B3, divulgou as demonstrações financeiras referentes ao período encerrado em 31 de março de 2026. Os demonstrativos foram elaborados conforme as práticas contábeis brasileiras (BR GAAP), alinhadas às normas da CVM, aos pronunciamentos do CPC e aos padrões internacionais IFRS emitidos pelo IASB.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159397,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null
+  }
 }

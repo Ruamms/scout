@@ -1,7 +1,7 @@
 {
   "ticker": "RAPT3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T18:00:19",
+  "verificado_em": "2026-07-23T21:08:31",
   "comunicados": {
     "ids": [
       24179331604238403,
@@ -17,5 +17,10 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 20/07/2026\n\n**O QUE aconteceu:** A Randoncorp S.A. anunciou a descontinuação da divulgação mensal da receita líquida consolidada, com o último comunicado ao mercado nesse formato tendo como referência novembro de 2026.\n\n**Resumo:** A companhia decidiu revisar suas práticas de divulgação financeira, optando por trimestrais em vez de mensais, acreditando que isso proporciona uma leitura mais consistente do ciclo operacional e financeiro da empresa.\n\n**Trecho-chave:**\n\"A decisão decorre de revisão periódica das práticas de divulgação adotadas pela Companhia e considera, entre outros aspectos:\n(i) o entendimento de que a leitura trimestral dos resultados confere maior aderência ao ciclo operacional e financeiro da Companhia, mitigando interpretações pontuais sobre variações mensais que, isoladamente, não refletem tendências consolidadas;\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 23/06/2026\n\n**O QUE aconteceu:** O documento contém avisos legais e informações sobre a agenda de um evento futuro da Randoncorp.\n\n**Resumo:** A companhia alerta que suas declarações sobre eventos futuros estão sujeitas a riscos e incertezas, pois dependem de circunstâncias que podem ou não ocorrer. O documento também lista os painéis programados para um evento futuro.\n\n**Trecho-chave:**\n\"Nós fazemos declarações sobre eventos futuros que estão sujeitas a riscos e incertezas. Tais declarações têm como base crenças e suposições de nossa Administração e informações as que a Companhia atualmente tem acesso.\"\n\n**Conexão com o contexto:** Este comunicado destaca os riscos associados às projeções futuras, que podem ser relevantes para entender a incerteza no cenário econômico apresentado nos painéis do evento futuro."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158385,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "A seção de processos judiciais do FRE não apresenta nenhum processo relevante para a RAPT3."
+  }
 }

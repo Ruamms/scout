@@ -1,7 +1,7 @@
 {
   "ticker": "VTRU3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-23T00:05:09",
+  "verificado_em": "2026-07-23T22:02:24",
   "comunicados": {
     "ids": [
       582844038983482122,
@@ -22,6 +22,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 28/04/2026\n\n**O QUE aconteceu:** A Vitru Educação S.A. anunciou a conclusão do processo de transição da posição de Diretor Presidente (CEO) e o início do mandato do Sr. José Aroldo Alves Jr.\n\n**Resumo:** A companhia informa que o Sr. William Matos, ex-CEO, renunciou ao cargo, sendo substituído pelo Sr. José Aroldo Alves Jr., em continuidade ao plano de sucessão para garantir a governança e criação de valor sustentável.\n\n**Trecho-chave:**\n\"O Conselho de Administração aprovou, nesta data, a eleição do Sr. José Aroldo Alves Jr. ao cargo de CEO de Vitru.\"\n\n### FATO RELEVANTE entregue em 15/04/2026\n\n**O QUE aconteceu:** A Vitru Educação S.A. anunciou o aumento do capital social através da oferta pública primária de ações ordinárias.\n\n**Resumo:** A companhia aprovou a emissão de 13,6 milhões de ações para aumentar seu capital social, com preços e destinatários especificados.\n\n**Trecho-chave:**\n\"O Conselho de Administração da Companhia aprovou, em reunião realizada nesta data, a fixação do preço de emissão de R$13,00 por ação.\"\n\n### COMUNICADO AO MERCADO entregue em 07/05/2026\n\n**O QUE aconteceu:** A Vitru Educação S.A. divulgou os resultados do primeiro trimestre de 2026.\n\n**Resumo:** A companhia apresentou dados operacionais, financeiros e de desempenho para o período, destacando crescimento na base de alunos e receita líquida.\n\n**Trecho-chave:**\n\"Encerramos o 1T26 com 972,8 mil alunos (+11,9% vs. 1T25) na Graduação Semi/EAD.\"\n\n### COMUNICADO AO MERCADO entregue em 13/07/2026\n\n**O QUE aconteceu:** A Vitru Educação S.A. anunciou sua agenda de divulgação dos resultados do segundo trimestre de 2026.\n\n**Resumo:** A companhia informa a data e horário da divulgação dos resultados, bem como os detalhes do webcast para investidores.\n\n**Trecho-chave:**\n\"Divulgação de Resultados 2T26\nTerça-feira, 11 de agosto de 2026 \nApós o fechamento do mercado.\""
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

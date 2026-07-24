@@ -1,7 +1,7 @@
 {
   "ticker": "VSTE3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-23T00:04:26",
+  "verificado_em": "2026-07-23T22:02:24",
   "comunicados": {
     "ids": [
       105735973191503777,
@@ -16,6 +16,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 28/05/2026\n\n**O QUE aconteceu:** A Veste S.A. Estilo divulgou seus resultados financeiros do primeiro trimestre de 2026.\n\n**Resumo:** O faturamento e o lucro líquido da companhia aumentaram, refletindo um crescimento consistente em suas vendas e rentabilidade.\n\n**Trecho-chave:**\n\"O Lucro Líquido foi de R$ 11,4 MM, melhor desempenho dos últimos sete anos. O Same Store Sales consolidado avançou 11,7% vs. o 1T25.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O QUE aconteceu:** A Veste S.A. Estilo recebeu uma comunicação da Kamari Participações S.A., informando a alienação de participação acionária e o novo percentual detido.\n\n**Resumo:** A Kamari passou a deter 14,99% das ações ordinárias da Veste S.A. Estilo, representando um aumento na participação acionária.\n\n**Trecho-chave:**\n\"KAMARI PARTICIPAÇÕES S.A., sociedade por ações, inscrita no CNPJ/MF sob o nº 43.513.998/0001-30, vem, em atendimento ao Art. 12 da Resolução CVM nº 44, comunicar que, em decorrência da alienação de participação acionária na Companhia, passou a deter 17.163.931 (dezessete milhões, cento e sessenta três mil, novecentas e trinta e uma) ações ordinárias de emissão da Companhia (\"Ações\"), correspondentes a 14,99% do total de Ações de emissão da Companhia.\"\n\n**Conexão com o contexto:** O aumento na participação acionária da Kamari pode impactar no desempenho financeiro e operacional da Veste S.A. Estilo, conforme relatado nos resultados recentes divulgados."
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

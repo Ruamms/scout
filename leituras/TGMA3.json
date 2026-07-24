@@ -1,7 +1,7 @@
 {
   "ticker": "TGMA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:56:20",
+  "verificado_em": "2026-07-23T21:44:34",
   "comunicados": {
     "ids": [
       1017427223944118950,
@@ -17,5 +17,10 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 04/05/2026\n\n**Data:** 04 de maio de 2026  \n**Título:** Tegma incluída no Índice de Sustentabilidade Empresarial da B3  \n**Resumo:** A Tegma foi incluída na carteira do ISE (Índice de Sustentabilidade Empresarial) da B3, demonstrando seu compromisso com a sustentabilidade e práticas de governança.  \n**Trecho-chave:**\n\"A Tegma agora faz parte do ISE B3! Índice de empresas reconhecidas pelos seus compro-\nmetimentos ASG. Esse resultado demonstra nosso compromisso com a pauta e seguimos avançando na agenda ASG!\" (p. 3)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 04/05/2026\n\n**Data:** 04 de maio de 2026  \n**Título:** Tegma anuncia resultados do 1º trimestre de 2026  \n**Resumo:** A Tegma apresentou seus resultados financeiros e operacionais para o primeiro trimestre de 2026, destacando crescimento nas vendas de veículos leves e comerciais leves no Brasil.  \n**Trecho-chave:**\n\"As vendas domésticas apresentaram um crescimento de 16% no 1T26 YoY, em função de melhores condições de financiamento e de promoções realizadas pelas montadoras.\" (p. 4)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 04/05/2026\n\n**Data:** 04 de maio de 2026  \n**Título:** Tegma anuncia resultados operacionais da logística automotiva  \n**Resumo:** Os resultados financeiros e operacionais da divisão de logística automotiva foram apresentados, mostrando crescimento na receita e distância média transportada, mas uma queda na margem EBITDA.  \n**Trecho-chave:**\n\"Resultados da divisão apresentaram crescimento de receita no 1T26, em função do aumento da quantidade de veículos transportados e da distância, além da receita da Fastline.\" (p. 5)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 04/05/2026\n\n**Data:** 04 de maio de 2026  \n**Título:** Tegma anuncia resultados financeiros do 1º trimestre de 2026  \n**Resumo:** A Tegma divulgou seus resultados financeiros para o primeiro trimestre de 2026, com destaque para a receita líquida e EBITDA da logística automotiva.  \n**Trecho-chave:**\n\"Resultados da divisão apre-\nsentaram crescimento de receita \nno 1T26, em função do aumento \nda quantidade de veículos trans-\nportados e da distância, além da \nreceita da Fastline.\" (p. 5)"
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158329,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes declarados na seção de PROCESSOS JUDICIAIS do Formulário de Referência (FRE) da companhia TGMA3."
+  }
 }

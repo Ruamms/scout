@@ -1,7 +1,7 @@
 {
   "ticker": "RNEW3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:43:05",
+  "verificado_em": "2026-07-23T21:14:15",
   "comunicados": {
     "ids": [
       764304487832741294,
@@ -26,5 +26,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 16/07/2026\n\n**O que aconteceu:** Alteração na composição da Diretoria e do Conselho de Administração.\n\n**Resumo:** A RENOVA ENERGIA S.A. elegera um novo diretor sem designação específica, enquanto dois conselheiros renunciaram.\n\n**Trecho-chave:**\n\"A Companhia agradece aos conselheiros renunciantes pela contribuição e dedicação durante o exercício de seus mandatos e manterá seus acionistas e o mercado devidamente informados sobre eventuais medidas relativas à recomposição do Conselho de Administração, na forma das normas legais e regulatórias aplicáveis.\" (p. 1)\n\n### FATO RELEVANTE entregue em 16/07/2026\n\n**O que aconteceu:** Homologação do Aumento de Capital.\n\n**Resumo:** O Conselho de Administração homologou um aumento de capital social, emitindo novas ações ordinárias para capitalização de adiantamento.\n\n**Trecho-chave:**\n\"O Aumento de Capital é homologado no valor de R$ 1.788,48, e representado pela emissão de 828 novas ações ordinárias, nominativas e sem valor nominal da Companhia, emitidas ao preço unitário de R$ 2,16.\" (p. 1)\n\n### FATO RELEVANTE entregue em 13/07/2026\n\n**O que aconteceu:** Prorrogação do prazo para Reenquadramento.\n\n**Resumo:** A B3 deferiu a prorrogação do prazo para o reenquadramento da cotação das ações, estendendo-o até 30 de novembro de 2026.\n\n**Trecho-chave:**\n\"Em razão do deferimento, o novo prazo para a implementação de medidas que promovam o referido Reenquadramento encerrar-se-á em 30 de novembro de 2026.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 28/04/2026\n\n**O que aconteceu:** Divulgação da Agenda de Resultados.\n\n**Resumo:** A RENOVA ENERGIA S.A. divulgou a agenda para a divulgação dos resultados do primeiro trimestre de 2026, incluindo data e horário da teleconferência.\n\n**Trecho-chave:**\n\"A Renova informa que estará em período de silêncio, de 29 de abril até a Divulgação de Resultados.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 14/05/2026\n\n**O que aconteceu:** Apresentação dos Resultados do 1T26.\n\n**Resumo:** A RENOVA ENERGIA S.A. apresentou os resultados financeiros consolidados e destacou indicadores como geração líquida, receita operacional líquida, lucro bruto de energia e EBITDA ajustado.\n\n**Trecho-chave:**\n\"Considerações futuras não são garantias de desempenho. Elas envolvem riscos, incertezas e premissas, pois se referem a eventos futuros e, portanto, dependem de circunstâncias que podem ou não ocorrer.\" (p. 2)"
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159542,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Cível**\n   - **Valor envolvido**: R$ 39.724.255,40\n   - **Chance de perda**: Possível\n   - *Resumo*: Cobrança de multa R$ 20MM por suposto descumprimento de contrato de arrendamento.\n\n2. **Trabalhista**\n   - **Valor envolvido**: R$ 120.677.687,07\n   - **Chance de perda**: Provável\n   - *Resumo*: Processo Administrativo. Auto de infração no valor de R$ 78.387.828,86 - custos, despesas operacionais e encargos por comprovação inidônea de despesas; R$ 8.036.715,86 - IRPJ apurado decorrente da indedutibilidade das despesas sem comprovação e multa isolada sobre o imposto apurado; R$ 2.893.217,69 - CSLL apurado decorrente da indedutibilidade das despesas sem comprovação e multa isolada sobre a CSLL apurada.\n\n3. **Ambiental**\n   - **Valor envolvido**: R$ 5.280.137,52\n   - **Chance de perda**: Provável\n   - *Resumo*: Processo Administrativo. Em 26.07.2022 recebida notificação com aplicação de penalidade e multa decorrentes do atraso no cronograma de entrada em operação.\n\n4. **Ambiental**\n   - **Valor envolvido**: R$ 5.259.263,44\n   - **Chance de perda**: Provável\n   - *Resumo*: Processo Administrativo. Em 26.07.2022 recebida notificação com aplicação de penalidade e multa decorrentes do atraso no cronograma de entrada em operação."
+  }
 }

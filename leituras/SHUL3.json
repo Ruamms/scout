@@ -1,7 +1,7 @@
 {
   "ticker": "SHUL3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:51:03",
+  "verificado_em": "2026-07-23T21:28:50",
   "comunicados": {
     "ids": [
       999989249466545405,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 18/05/2026\n\n**O que aconteceu:** A Schulz S.A. aprovou um Plano de Recompra de Ações.\n\n**Resumo:** A Companhia planeja adquirir até 2.500.000 ações ordinárias e 15.000.000 ações preferenciais para manutenção em tesouraria, cancelamento ou alienação, com o objetivo de maximizar valor para os acionistas.\n\n**Trecho-chave:** \"A Companhia possui 229.313.182 ações em circulação, sendo (i) 56.558.131 ações ordinárias e (ii) 171.934.490 ações preferenciais.\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 23/06/2026\n\n**O que aconteceu:** A Schulz S.A. anunciou o pagamento de juros sobre capital próprio.\n\n**Resumo:** A Companhia pagará R$ 26,5 milhões em juros sobre capital próprio aos titulares de ações preferenciais e ordinárias, com valores brutos de R$ 0,077333123 por ação preferencial e R$ 0,070302839 por ação ordinária.\n\n**Trecho-chave:** \"O pagamento de JCP ocorrerá em 28 de outubro de 2026 e será feito pelo valor líquido de R$ 0,063799827 (valor líquido) por ação preferencial e R$ 0,057999843 (valor líquido por ação ordinária, já deduzido o imposto de renda na fonte de 17,5%).\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 22/06/2026\n\n**O que aconteceu:** A Schulz S.A. anunciou o pagamento de juros sobre capital próprio.\n\n**Resumo:** A Companhia pagará R$ 26,5 milhões em juros sobre capital próprio aos titulares de ações preferenciais e ordinárias, com valores brutos de R$ 0,077333123 por ação preferencial e R$ 0,070302839 por ação ordinária.\n\n**Trecho-chave:** \"O pagamento de JCP ocorrerá em 28 de outubro de 2026 e será feito pelo valor líquido de R$ 0,063799827 (valor líquido) por ação preferencial e R$ 0,057999843 (valor líquido por ação ordinária, já deduzido o imposto de renda na fonte de 17,5%).\" (p. 1)\n\n**Conexão com indicadores:** O pagamento de juros sobre capital próprio pode impactar os resultados financeiros e a distribuição de lucros da Companhia, refletindo no valor das ações."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158720,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes para os negócios do emissor ou de suas controladas declarados na seção apresentada."
+  }
 }

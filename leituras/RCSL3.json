@@ -1,7 +1,7 @@
 {
   "ticker": "RCSL3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:39:42",
+  "verificado_em": "2026-07-23T21:09:03",
   "comunicados": {
     "ids": [
       1046927865818598945,
@@ -20,5 +20,9 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 15/05/2026\n\n**O que aconteceu:** Encerramento das negociações relativas à potencial aquisição da totalidade das cotas do PG Bank Ltda.\n\n**Resumo:** A Recrusul S/A decidiu encerrar as negociações devido à avaliação conjunta dos elementos apurados no processo de due diligence, que concluiu não haver condições necessárias para prosseguimento da operação.\n\n**Trecho-chave:**\n\"Após a conclusão das análises econômico-financeiras, regulatórias, contábeis, jurídicas e operacionais previstas no Memorando de Entendimentos vinculante celebrado em 07 de dezembro de 2025, a Companhia e os sócios-cotistas do PG Bank Ltda. decidiram, de comum acordo, encerrar as negociações relativas à potencial aquisição da totalidade das cotas representativas do capital social do PG Bank Ltda.\"\n\n### COMUNICADO AO MERCADO entregue em 09/06/2026\n\n**O que aconteceu:** Aumento de participação acionária por parte do Morgan Stanley.\n\n**Resumo:** O Morgan Stanley e suas subsidiárias aumentaram sua posição acionária, atingindo 5,1% das ações preferenciais da Recrusul S/A (RCSL4).\n\n**Trecho-chave:**\n\"A Companhia recebeu, na data de 05/06/2026, correspondência do Morgan Stanley (de forma agregada, por meio de suas subsidiárias) atingiu posição/exposição equivalente a 5,1% do número total de ações preferenciais da RECRUSUL S.A. (RCSL4), passando a deter, de forma agregada, 4,340,299 ações preferenciais e 0,0265% do número total de ações ordinárias (RCSL3) da RECRUSUL S.A.\"\n\n### COMUNICADO AO MERCADO entregue em 11/06/2026\n\n**O que aconteceu:** Redução de participação acionária por parte do Morgan Stanley.\n\n**Resumo:** O Morgan Stanley e suas subsidiárias reduziram sua posição acionária, atingindo 4,9% das ações preferenciais da Recrusul S/A (RCSL4).\n\n**Trecho-chave:**\n\"A Companhia recebeu, na data de 10/06/2026, correspondência do Morgan Stanley (de forma agregada, por meio de suas subsidiárias) atingiu posição/exposição equivalente a 4,9% do número total de ações preferenciais da RECRUSUL S.A. (RCSL4), passando a deter, de forma agregada, 4,149,840 ações preferenciais e 0,0265% do número total de ações ordinárias (RCSL3) da RECRUSUL S.A.\"\n\n**Conexão com o contexto:** As alterações na participação acionária podem refletir mudanças no interesse dos investidores institucionais na Recrusul S/A, que pode ser um indicador do desempenho ou perspectivas futuras da empresa."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158636,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null
+  }
 }

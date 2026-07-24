@@ -1,7 +1,7 @@
 {
   "ticker": "SMFT3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T18:08:03",
+  "verificado_em": "2026-07-23T21:31:26",
   "comunicados": {
     "ids": [
       244248803813944119,
@@ -19,6 +19,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 25/05/2026\n\n**O QUE aconteceu:** A SMARTFIT ESCOLA DE GINÁSTICA E DANÇA S.A. aprovou um programa de recompra de ações.\n\n**Resumo:** A empresa planeja comprar até 13,642.846 ações ordinárias para manter em tesouraria e posteriormente cancelar ou alienar no mercado, com duração de 18 meses.\n\n**Trecho-chave:**\n\"Objetivo: Aquisição de ações para manutenção em tesouraria e posterior cancelamento ou alienação no mercado, a fim de maximizar a geração de valor para os acionistas, mantendo a disciplina da alocação de capital da Companhia.\"\n\n### COMUNICADO AO MERCADO entregue em 02/07/2026\n\n**O QUE aconteceu:** Norges Bank alienou 180.000 ações ordinárias, reduzindo sua participação acionária para abaixo de 5%.\n\n**Resumo:** A participação do Norges Bank na SMARTFIT ESCOLA DE GINÁSTICA E DANÇA S.A. caiu para 4,99% após a alienação.\n\n**Trecho-chave:**\n\"Em decorrência da referida alienação, o Norges Bank passou a deter, de forma agregada, 30.721.393 ações ordinárias, correspondentes a 4,99% do total de 616.129.844 ações ordinárias de emissão da Companhia.\"\n\n### COMUNICADO AO MERCADO entregue em 25/06/2026\n\n**O QUE aconteceu:** Norges Bank aumentou sua participação acionária para 5,11% após aquisição de 1.015.500 ações ordinárias.\n\n**Resumo:** A participação do Norges Bank na SMARTFIT ESCOLA DE GINÁSTICA E DANÇA S.A. atingiu 5,11% após a aquisição.\n\n**Trecho-chave:**\n\"Ainda, de acordo com a correspondência recebida, o Norges Bank informou que em 24 de junho de 2026, o Norges Bank realizou a aquisição de 1.015.500 ações ordinárias da Companhia, que resultou no atingimento de participação acionária relevante de 5,11% do capital social da Companhia.\"\n\n---\n\n**Conexão com o contexto:** O comunicado sobre a aquisição de participação acionária relevante em junho de 2026 e o comunicado sobre a alienação que levou à redução abaixo dos 5% em julho de 2026 se conectam ao histórico do programa de recompra de ações da SMARTFIT, demonstrando movimentações significativas na estrutura acionária."
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

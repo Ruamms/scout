@@ -1,7 +1,7 @@
 {
   "ticker": "TIMS3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T18:11:21",
+  "verificado_em": "2026-07-23T21:45:07",
   "comunicados": {
     "ids": [
       568104897273974335,
@@ -17,5 +17,10 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 17/06/2026\n\n**O que aconteceu:** Eleição da Sra. Luciene Pandolfo como Diretora Jurídica da TIM S.A.\n\n**Resumo:** A TIM S.A. nomeou a Sra. Luciene Pandolfo para o cargo de Diretora Jurídica, com ampla experiência em gestão jurídica e indústrias relevantes.\n\n**Trecho-chave:**\n\"O Conselho de Administração da Companhia elegeu a Sra. Luciene Pandolfo para o cargo de Diretora Jurídica da Companhia.\"\n\n---\n\n### COMUNICADO AO MERCADO entregue em 16/06/2026\n\n**O que aconteceu:** Confirmação do Rating Nacional de Longo Prazo \"AAA (bra)\" pela Fitch Ratings.\n\n**Resumo:** A agência de classificação de risco Fitch Ratings confirmou o Rating Nacional de Longo Prazo da TIM S.A. em \"AAA (bra)\", com perspectiva estável.\n\n**Trecho-chave:**\n\"Fitch confirmou à Companhia o Rating Nacional de Longo Prazo “AAA (bra)”, com perspectiva estável.\"\n\n---\n\n**Conexão com indicadores do contexto:** A confirmação do rating \"AAA\" pela Fitch Ratings pode ser vista como um sinal positivo para a TIM S.A., potencialmente influenciando a percepção de risco e a atratividade financeira da empresa."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159323,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "### Tópicos Relevantes\n\n1. **Ação de Indenização 5000013-34.2015.8.21.1001**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 64.669.195,44 (atualizado)\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** Trata-se de uma ação de indenização movida por um autor em face da TIM S/A e outras empresas, alegando danos materiais e morais decorrentes de um incêndio que afetou o prédio onde estava localizado o depósito, escritório e showroom da sociedade Decorville.\n\n2. **Mandado de Segurança nº 0036314-18.2007.4.01.3400**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 1.299 milhões (atualizado)\n   - **Chance de perda:** Possível (R$ 832 milhões) / Remota (R$ 467 milhões)\n   - **Resumo do objeto:** O Ministério das Comunicações lavrou autos de infração contra a TIM Celular S/A e outras empresas, no montante total de R$ 581,9 milhões, referentes a valores de FUNTTEL sobre receitas de interconexão supostamente relativas aos anos de 2001 a 2017.\n\n3. **Mandado de Segurança nº 0002837-38.2006.4.01.3400**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 3.941,5 (atualizado)\n   - **Chance de perda:** Possível (R$ 3.690 milhões) / Remota (R$ 156 milhões) / Provável (R$ 95 milhões)\n   - **Resumo do objeto:** A ANATEL emitiu uma súmula visando a cobrança da contribuição para o FUST sobre as receitas de interconexão, que a TIM contesta. A pretensão encontra-se suspensa por sentença judicial favorável à Companhia.\n\n4. **Processo Administrativo n° 18470.921423/2024-70**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 1.924 milhões (atualizado)\n   - **Chance de perda:** Possível (R$ 1.359 milhões) / Remota (R$ 565 milhões)\n   - **Resumo do objeto:** A Companhia foi intimada pela Receita Federal com um direito creditório pleiteado e decorrente da exclusão do ICMS na Base de Cálculo de PIS/COFINS, que foi parcialmente reconhecido."
+  }
 }

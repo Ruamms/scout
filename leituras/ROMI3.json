@@ -1,7 +1,7 @@
 {
   "ticker": "ROMI3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:43:25",
+  "verificado_em": "2026-07-23T21:14:47",
   "comunicados": {
     "ids": [
       469671426360950858,
@@ -17,5 +17,10 @@
     ],
     "texto": "### O QUE ACONTECEU EM 15/07/2026\n\n**O que aconteceu:** A ROMI S.A. divulgou seus resultados do segundo trimestre de 2026.\n\n**Resumo:** A companhia apresentou um forte desempenho, com receita operacional líquida de R$ 88,7 milhões e uma carteira de pedidos de R$ 486,9 milhões. Além disso, a empresa celebrou os 70 anos da Romi-Isetta.\n\n**Trecho-chave:** \"Em maio de 2026, a ROMI participou da FEIMEC, destacando soluções com inteligência artificial, o ROMI Pulse e a nova geração do VTL 850.\" (p. 3)\n\n---\n\n### O QUE ACONTECEU EM 30/06/2026\n\n**O que aconteceu:** A ROMI S.A. anunciou eventos de divulgação dos resultados do segundo trimestre de 2026.\n\n**Resumo:** A empresa convidou investidores para uma teleconferência e webcast, programados para o dia 15 de julho de 2026, com transmissão ao vivo em português e tradução simultânea para inglês. Durante esse período, a ROMI entrou em um \"período de silêncio\" para evitar vazamento de informações.\n\n**Trecho-chave:** \"A teleconferência contará com uma apresentação de slides e será transmitida ao vivo via webcast.\" (p. 1)"
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158278,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Cível** - R$ 76.073 milhões (03/2026) - Possível  \n   \"Trata-se de auto de infração lavrado pela Receita Federal do Brasil para exigir créditos de IRPJ e CSLL, referentes aos 1º, 3º e 4º trimestre de 2020.\"\n\n2. **Cível** - R$ 21.352 milhões (03/2026) - Possível  \n   \"Trata-se de auto de infração lavrado pela Receita Federal do Brasil para exigir créditos de IRPJ e CSLL, referentes aos 1º, 3º e 4º trimestre de 2019.\"\n\n3. **Cível** - R$ 15.574 milhões (03/2026) - Possível  \n   \"A Companhia recebeu duas cartas cobranças da Receita Federal determinando o pagamento de valores obtidos através da apuração do PIS e COFINS incidentes sobre o ICMS destacado nas notas fiscais de saída.\""
+  }
 }

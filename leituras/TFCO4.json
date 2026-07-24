@@ -1,7 +1,7 @@
 {
   "ticker": "TFCO4",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:55:44",
+  "verificado_em": "2026-07-23T21:44:34",
   "comunicados": {
     "ids": [
       277974796084422335,
@@ -22,6 +22,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 23/06/2026\n\n**O que aconteceu:** A Track&Field Co. S.A. aprovou o pagamento de juros sobre o capital próprio.\n\n**Resumo:** A Companhia decidiu pagar R$ 12,932,817,64 em juros sobre o capital próprio aos acionistas, com pagamento previsto para 31/05/2027. O valor bruto por ação será de R$ 0,00852202560 para as ações ordinárias e R$ 0,08522025597 para as preferenciais.\n\n**Trecho-chave:** \"O Conselho de Administração, reunido em 23/06/2026, aprovou a declaração e o pagamento aos acionistas de juros sobre o capital próprio no valor bruto de R$ 12.932.817,64.\" (p. 1)\n\n---\n\n### FATO RELEVANTE entregue em 24/03/2026\n\n**O que aconteceu:** A Track&Field Co. S.A. aprovou o pagamento de juros sobre o capital próprio.\n\n**Resumo:** A Companhia decidiu pagar R$ 12,823,737,89 em juros sobre o capital próprio aos acionistas, com pagamento previsto para 31/05/2027. O valor bruto por ação será de R$ 0,00845014796 para as ações ordinárias e R$ 0,08450147956 para as preferenciais.\n\n**Trecho-chave:** \"O Conselho de Administração, reunido em 24/03/2026, aprovou a declaração e o pagamento aos acionistas de juros sobre o capital próprio no valor bruto de R$ 12.823.737,89.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 17/06/2026\n\n**O que aconteceu:** A Track&Field Co. S.A. informou sobre a redução da participação acionária relevante.\n\n**Resumo:** A Brasil Capital, gestora de fundos de investimento, informou que reduziu sua participação para 3.202.985 ações preferenciais, equivalente a 4,89% das ações preferenciais da Companhia.\n\n**Trecho-chave:** \"a BC Gestão de Recursos Ltda. (“Brasil Capital”), inscrita no CNPJ/MF sob o nº 08.752.088/0001-00, informou que os fundos de investimento sob sua gestão reduziram sua participação para um total de 3.202.985 ações preferenciais.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 12/05/2026\n\n**O que aconteceu:** A Track&Field Co. S.A. divulgou os resultados do primeiro trimestre de 2026.\n\n**Resumo:** Os resultados mostraram uma receita líquida consolidada de R$442,9 milhões, com um crescimento de 12,1% em conceito de mesmas lojas e 16,4% no sell out. O EBITDA ajustado foi de R$41,5 milhões, representando uma margem de 16,5%. A expansão da rede incluiu a inauguração de 6 novas franquias e reforma de 3 unidades.\n\n**Trecho-chave:** \"No 1T26, o sell out apresentou um crescimento de 16,4%, e 12,1% no conceito de mesmas lojas.\" (p. 2)"
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "ticker": "TAEE11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T18:10:41",
+  "verificado_em": "2026-07-23T21:37:43",
   "comunicados": {
     "ids": [
       252127107049893815,
@@ -17,5 +17,10 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 14/07/2026\n\n**O QUE aconteceu:** Ratificação da aquisição das empresas da Energisa.\n**Resumo:** A TAESA ratificou a aquisição de 100% do capital das empresas da Energisa, sujeita à aprovação da ANEEL.\n**Trecho-chave:**\n\"Em Assembleia Geral Extraordinária realizada nesta data (“AGE”), foi ratificada, nos termos do art. 256 da Lei nº 6.404, de 15 de dezembro de 1976, conforme alterada (“Lei das S.A.”), a aquisição, pela Companhia, de 100% (cem por cento) das ações representativas do capital total e votante da Energisa Goiás Transmissora de Energia I S.A., da Energisa Pará Transmissora de Energia I S.A., da Energisa Pará Transmissora de Energia II S.A., da Energisa Tocantins Transmissora de Energia S.A. e da Energisa Tocantins Transmissora de Energia II S.A.\"\n\n### COMUNICADO AO MERCADO entregue em 08/07/2026\n\n**O QUE aconteceu:** Conclusão da captação de recursos por meio de emissão de debêntures.\n**Resumo:** A TAESA concluiu a captação de R$ 1.700.000.000,00 em debêntures para reforço de capital e/ou aquisições.\n**Trecho-chave:**\n\"A Emissão foi coordenada pelo Banco Bradesco BBI S.A. e pelo Itaú BBA Assessoria Financeira S.A. (“Coordenadores”). Nos termos do “Instrumento Particular de Escritura da 22ª (Vigésima Segunda) Emissão de Debêntures Simples, Não Conversíveis em Ações, da Espécie Quirografária, em Série Única, para Distribuição Pública, sob o Rito de Registro Automático de Distribuição, da Transmissora Aliança de Energia Elétrica S.A.” (“Escritura de Emissão”), os recursos captados pela Companhia por meio da integralização das Debêntures, excluídos os custos incorridos para pagamento de despesas decorrentes da Emissão, serão utilizados para reforço de capital de giro e/ou aquisições.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159540,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "### Processos Tributários\n\n**Processo nº 0030429-48.2018.4.02.5101**\n- **Natureza:** Tributária  \n- **Valor envolvido:** R$ 23.413.669,13  \n- **Chance de perda:** Provável  \n- **Resumo:** Trata-se de uma execução fiscal ajuizada pela União com vistas à cobrança de supostos créditos tributários de IRRF e CSRF. O processo está em 1ª instância e há provável chance de perda, impactando significativamente o caixa da empresa.\n\n**Processo nº 16682.901.750/2018-46**\n- **Natureza:** Tributária  \n- **Valor envolvido:** R$ 28.618.144,13  \n- **Chance de perda:** Possível  \n- **Resumo:** Este processo trata de uma decisão da Receita Federal que homologou parcialmente um pedido de compensação e não homologou outros pedidos. A Companhia apresentou manifestações de inconformidade, mas o processo ainda aguarda julgamento.\n\n**Processo Administrativo nº 16682.720585/2019-12**\n- **Natureza:** Tributária  \n- **Valor envolvido:** R$ 216.662.962,16  \n- **Chance de perda:** Possível  \n- **Resumo:** Este processo trata de uma autuação da Receita Federal que exige o recolhimento de PIS/COFINS sob o regime não cumulativo para contratos de concessão firmados antes de 31 de outubro de 2003. O processo está em fase recursal e há possibilidade de perda.\n\n**Processo Administrativo nº 16682.720880/2019-61**\n- **Natureza:** Tributária  \n- **Valor envolvido:** R$ 267.519.279,38  \n- **Chance de perda:** Possível  \n- **Resumo:** Este processo também trata da mesma questão tributária dos processos anteriores, exigindo o recolhimento de PIS/COFINS sob o regime não cumulativo para contratos de concessão firmados antes de 31 de outubro de 2003. O processo está em fase recursal e há possibilidade de perda.\n\n### Observação\nNão foram encontrados processos relevantes além dos tributários mencionados acima, que envolvem valores significativos para a companhia."
+  }
 }

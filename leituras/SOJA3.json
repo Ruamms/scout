@@ -1,7 +1,7 @@
 {
   "ticker": "SOJA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:51:22",
+  "verificado_em": "2026-07-23T21:34:30",
   "comunicados": {
     "ids": [
       149734403106265585,
@@ -17,5 +17,10 @@
     ],
     "texto": "### O QUE ACONTECEU: Relatório Financeiro do Primeiro Trimestre de 2026 (1T26)\n**Resumo:** O Boa Safra apresentou um relatório financeiro para o primeiro trimestre de 2026, mostrando crescimento significativo em várias métricas financeiras.\n\n**Trecho-chave:**\n\"Consolidado (R$ Mil)  \n1T25\n1T26\n∆ Var.\nLTM25\nLTM26\n∆ Var.  \nReceita Operacional Líquida\n109.630\n132.079\n20%\n1.855.510\n2.591.076\n40%\" (p. 5)\n\n**Conexão com o Contexto:** O relatório apresenta um crescimento de 20% na Receita Operacional Líquida no primeiro trimestre de 2026 em comparação ao mesmo período do ano anterior, e um aumento de 40% no Lucro Líquido LTM (três últimos trimestres) em relação ao mesmo período do ano passado."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159384,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Tributário  \n- Natureza: tributário  \n- Valor envolvido: R$ 89.734.781,95  \n- Chance de perda: não aplicável  \n- Resumo do objeto: Trata-se de intimação relacionada ao início de fiscalização pela Receita Federal do Brasil em face da Companhia, visando a verificação de regularidade de IPRJ e reflexos referentes ao período de 2020 a 2022."
+  }
 }

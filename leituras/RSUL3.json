@@ -1,7 +1,7 @@
 {
   "ticker": "RSUL3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:44:34",
+  "verificado_em": "2026-07-23T21:15:07",
   "comunicados": {
     "ids": [
       999905504702691439,
@@ -22,6 +22,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### 10/12/2025 - REAPRESENTAÇÃO DA PROPOSTA DE PAGAMENTO DE DIVIDENDOS INTERMEDIÁRIOS\n\n**Resumo:** A Metalúrgica Riosulense S.A. rerepresentou a proposta de pagamento de dividendos intermediários, aumentando o valor dos pagamentos.\n\n**Trecho-chave:**\n\"A Metalúrgica Riosulense S.A. (\"Companhia\") vem comunicar aos seus acionistas e ao mercado em geral a REAPRESENTAÇÃO DA PROPOSTA DE PAGAMENTO DE DIVIDENDOS INTERMEDIÁRIOS COM VALORES SUPERIORES AOS JÁ DIVULGADOS, a serem submetida à Assembleia Geral Extraordinária (\"AGE\"), a realizar-se em 17 de dezembro de 2025, às 15 horas, conforme previamente divulgado.\"\n\n---\n\n### 09/06/2026 - PARTICIPAÇÃO ACIONÁRIA RELEVANTE\n\n**Resumo:** A Trígono Capital Ltda. informou que atingiu uma participação de 19,98% das ações preferenciais da Metalúrgica Riosulense S.A.\n\n**Trecho-chave:**\n\"Através dos fundos sob sua gestão, na data 03/06/2026, atingimos participação de 19,98% de ações PN – RSUL4.\"\n\n---\n\n### 26/06/2026 - PARTICIPAÇÃO ACIONÁRIA RELEVANTE\n\n**Resumo:** A Trígono Capital Ltda. confirmou a informação sobre a participação acionária relevante e forneceu detalhes adicionais.\n\n**Trecho-chave:**\n\"Através dos fundos sob sua gestão, na data 03/06/2026, atingimos participação de 19,98% de ações PN – RSUL4.\"\n\n---\n\n### 09/06/2026 - PARTICIPAÇÃO ACIONÁRIA RELEVANTE\n\n**Resumo:** A Metalúrgica Riosulense S.A. confirmou a informação sobre a participação acionária relevante da Trígono Capital Ltda.\n\n**Trecho-chave:**\n\"Através dos fundos sob sua gestão, em 03 de junho de 2026, atingiu participação correspondente a 19,98% das ações preferenciais de emissão da Companhia, negociadas sob o código RSUL4.\""
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

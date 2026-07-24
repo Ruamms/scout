@@ -1,7 +1,7 @@
 {
   "ticker": "UCAS3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-23T00:00:58",
+  "verificado_em": "2026-07-23T21:50:38",
   "comunicados": {
     "ids": [
       511223242823069551,
@@ -20,5 +20,10 @@
     ],
     "texto": "### 01/06/2026 - Aquisição de Participação Relevante\n\n**O que aconteceu:** Alexandre Grendene Bartelle passou a deter 34.323.165 ações ordinárias, representando aproximadamente 51,9368% do capital social da Unicasa.\n\n**Resumo:** A Unicasa informou que o Sr. Alexandre Grendene Bartelle aumentou sua participação no capital social da empresa, passando a deter mais de 51% das ações ordinárias.\n\n**Trecho-chave:**\n\"passou a deter 34.323.165 (trinta e quatro milhões, trezentas e vinte e três mil, cento e sessenta e cinco) ações ordinárias, escriturais e sem valor nominal de emissão da Companhia, representando, aproximadamente, 51,9368% (cinquenta e um vírgula nove três seis oito por cento) da totalidade do capital social da Companhia.\"\n\n---\n\n### 02/06/2026 - Redução de Participação Relevante\n\n**O que aconteceu:** Fundos geridos pela OPPORTUNITY HDF Administradora de Recursos venderam a totalidade das suas ações ordinárias na Unicasa.\n\n**Resumo:** A Unicasa informou que os fundos administrados pela OPPORTUNITY HDF venderam todas as suas ações, resultando em uma redução significativa da participação relevante no capital social da empresa.\n\n**Trecho-chave:**\n\"ALIENARAM a totalidade das ações ordinárias de emissão da Companhia de sua propriedade, equivalente a 6.758.100 ações ordinárias (UCAS3). Desta forma, no fechamento do dia 29 de maio de 2026, os INVESTIDORES deixaram de deter quaisquer valores mobiliários de emissão da Companhia.\"\n\n---\n\n### 29/05/2026 - Abertura Flagship da Dell Anno\n\n**O que aconteceu:** A Unicasa anunciou a previsão de abertura, para o segundo semestre de 2026, da flagship da Dell Anno no número 1.998 na Alameda Gabriel Monteiro da Silva, em São Paulo.\n\n**Resumo:** A Unicasa planeja abrir uma loja flagship da marca Dell Anno em São Paulo, com investimento de R$45 milhões e projeto assinado pelo arquiteto espanhol Fran Silvestre.\n\n**Trecho-chave:**\n\"Com investimento de R$ 45 milhões, a Companhia adquiriu o terreno e conduziu o desenvolvimento do empreendimento, concebido para consolidar a presença da Dell Anno em um dos endereços mais relevantes do segmento de arquitetura e design do país.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158955,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes declarados pela companhia UCAS3 na seção de Processos Judiciais do FRE."
+  }
 }

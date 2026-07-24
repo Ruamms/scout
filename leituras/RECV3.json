@@ -1,7 +1,7 @@
 {
   "ticker": "RECV3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T18:01:31",
+  "verificado_em": "2026-07-23T21:10:28",
   "comunicados": {
     "ids": [
       288560136817905466,
@@ -17,5 +17,10 @@
     ],
     "texto": "### O QUE aconteceu em 08/07/2026\n\n**Resumo:** A PetroReconcavo relatou a produção média de junho de 2026, com um aumento de 0,8% em comparação ao mês anterior. A produção foi impactada principalmente pelo incremento no campo Tiê devido aos projetos de workover.\n\n**Citação do trecho-chave:**\n\"Produção média registrada em junho foi de 24,1 mil boe/dia, representando aumento de 0,8% em comparação ao mês anterior. A produção foi impactada, principalmente, pelo incremento de produção no campo de Tiê devido aos projetos de workover.\"\n\n---\n\n### O QUE aconteceu em 31/12/2025\n\n**Resumo:** A PetroReconcavo apresentou dados operacionais para o ano de 2025, destacando a produção e entrega de óleo e gás.\n\n**Citação do trecho-chave:**\n\"Produção média registrada em junho foi de 24,1 mil boe/dia, representando aumento de 0,8% em comparação ao mês anterior. A produção foi impactada, principalmente, pelo incremento de produção no campo de Tiê devido aos projetos de workover.\"\n\n---\n\n### O QUE aconteceu em 31/12/2024\n\n**Resumo:** Não há informações específicas sobre o ano de 2024 nos documentos fornecidos.\n\n---\n\n### O QUE aconteceu em 31/12/2023\n\n**Resumo:** Não há informações específicas sobre o ano de 2023 nos documentos fornecidos.\n\n---\n\n### O QUE aconteceu em 31/12/2022\n\n**Resumo:** Não há informações específicas sobre o ano de 2022 nos documentos fornecidos.\n\n---\n\n### O QUE aconteceu em 31/12/2021\n\n**Resumo:** Não há informações específicas sobre o ano de 2021 nos documentos fornecidos.\n\n---\n\n### O QUE aconteceu em 31/12/2020\n\n**Resumo:** Não há informações específicas sobre o ano de 2020 nos documentos fornecidos."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159375,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **TRIBUTÁRIO**  \n   *Valor envolvido:* R$ 42.668.469,25 corrigidos pelo IGP-DI de agosto de 2023 a fevereiro de 2026  \n   *Chance de perda:* provável  \n   *\"A SPE Tiêta Ltda., subsidiária da Companhia, figura no polo passivo de 2 (dois) autos de infração...\"*\n\n2. **REGULATÓRIO**  \n   *Valor envolvido:* R$ 36.145.322,30 corrigidos pelo IGP-M de março de 2019 a março de 2026  \n   *Chance de perda:* provável  \n   *\"Os valores envolvidos nesses processos são: (i) R$ 36.145.322,30...\"*\n\n3. **TRABALHISTA**  \n   *Valor envolvido:* R$ 9.369.647,49 corrigidos pelo IGP-M de setembro de 2024 a março de 2026  \n   *Chance de perda:* possível  \n   *\"e (iii) R$ 9.369.647,49...\"*\n\n4. **TRABALHISTA**  \n   *Valor envolvido:* R$ 5.749.353,99 corrigidos pelo IGP-M de setembro de 2024 a março de 2026  \n   *Chance de perda:* possível  \n   *\"R$ 5.749.353,99...\"*"
+  }
 }

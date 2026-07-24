@@ -1,7 +1,7 @@
 {
   "ticker": "TELB3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:54:58",
+  "verificado_em": "2026-07-23T21:42:01",
   "comunicados": {
     "ids": [
       229730191312361693,
@@ -17,5 +17,10 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O QUE aconteceu:** Substituição de Auditor Independente.\n\n**Resumo:** A TELEBRÁS anunciou a contratação da Metrópole Auditores Independentes Associados S/S como novo auditor independente, substituindo a Consult - Auditores Independentes. \n\n**Trecho-chave:**\n\"A presente substituição ocorre em virtude do encerramento do contrato de prestação de serviços de auditoria, de comum acordo, não havendo qualquer divergência contábil, fiscal ou de procedimentos de auditoria que tenha motivado o término da relação contratual.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 28/04/2026\n\n**O QUE aconteceu:** Posse do Conselho de Administração e Eleição do Presidente e Vice-Presidente.\n\n**Resumo:** A TELEBRÁS comunicou a posse dos novos membros do Conselho de Administração eleitos na 54ª Assembleia Geral Ordinária (AGO) e a eleição de JÚLIO FRANCISCO SEMEGHINI NETO como Presidente e GIL PINTO LOJA NETO como Vice-Presidente.\n\n**Trecho-chave:**\n\"Registra-se que os demais membros, o senhor JORGE RICARDO BITTAR, o senhor JÚLIO FRANCISCO SEMEGHINI NETO e o senhor JOÃO CALDEIRA BRANT MONTEIRO DE CASTRO permanecem no exercício de seus cargos em regime de prorrogação de mandato.\" (p. 1)\n\n**Conexão com indicadores:** A mudança na composição do Conselho de Administração pode impactar a governança corporativa e, por extensão, os indicadores financeiros da empresa."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159532,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "### Tópicos\n\n1. **NATUREZA:** Tributário  \n   **VALOR:** R$ 71.718.723,22  \n   **CHANCE DE PERDA:** Provável  \n   **RESUMO:** A TELEBRAS é parte em um processo judicial envolvendo cobrança de valores relacionados a serviços prestados durante a Copa do Mundo FIFA de 2014.\n\n2. **NATUREZA:** Cível  \n   **VALOR:** R$ 78.960.263,51 (R$ 25.667.245,39 + R$ 20.241.740,13)  \n   **CHANCE DE PERDA:** Provável  \n   **RESUMO:** A TELEBRAS é parte em dois processos cíveis com alto valor envolvido, relacionados à distribuição de dividendos.\n\n3. **NATUREZA:** Cível  \n   **VALOR:** R$ 48.152.524,12  \n   **CHANCE DE PERDA:** Possível  \n   **RESUMO:** A TELEBRAS é parte em um processo judicial envolvendo cobrança de impostos.\n\n4. **NATUREZA:** Cível  \n   **VALOR:** R$ 33.387.009,92 (potencial)  \n   **CHANCE DE PERDA:** Possível  \n   **RESUMO:** A TELEBRAS é parte em um processo judicial envolvendo revisão de contratos de cessão onerosa de infraestrutura de telecomunicação.\n\n5. **NATUREZA:** Cível  \n   **VALOR:** R$ 136.452.943,53 (potencial)  \n   **CHANCE DE PERDA:** Possível  \n   **RESUMO:** A TELEBRAS é parte em um processo judicial envolvendo sanções contratuais indevidamente impostas pela União.\n\n### Não há processos relevantes declarados com valores menores."
+  }
 }

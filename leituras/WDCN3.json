@@ -1,7 +1,7 @@
 {
   "ticker": "WDCN3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-23T00:07:30",
+  "verificado_em": "2026-07-23T22:04:30",
   "comunicados": {
     "ids": [
       894563597393818357,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE ENTREGUE EM 19/01/2026\n\n**O que aconteceu:** A Livetech da Bahia Indústria e Comércio S.A. celebrou o \"Terceiro Aditamento e Consolidação ao Acordo de Acionistas\".\n\n**Resumo:** O aditamento tem como objetivo alterar e consolidar disposições do acordo inicialmente celebrado em 2017, refletindo a atual composição acionária da companhia.\n\n**Trecho-chave:**\n\"O Terceiro Aditamento tem por objeto alterar e consolidar determinadas disposições do “Acordo de Acionistas”, inicialmente celebrado em 17 de abril de 2017, de modo a refletir a atual composição acionária da Companhia.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 16/06/2026\n\n**O que aconteceu:** Não há informações específicas sobre fatos relevantes neste documento.\n\n**Resumo:** O comunicado apresenta uma breve história da empresa desde 2019, destacando suas principais marcas e soluções de negócios.\n\n**Trecho-chave:**\n\"Desde 2019\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO ENTREGUE EM 12/05/2026\n\n**O que aconteceu:** A Livetech da Bahia apresentou seus resultados do primeiro trimestre de 2026.\n\n**Resumo:** Os resultados indicam uma margem EBITDA de 30,2%, alavancagem de 1,8x e conversão de caixa EBITDA/FCOp de 115,8%. O lucro líquido foi de R$7,0 milhões, com um fluxo de caixa operacional positivo.\n\n**Trecho-chave:**\n\"30,2% Margem EBITDA vs. 4T25\" (p. 4)\n\n---\n\n### CONEXÃO COM O CONTEXTUALIZAÇÃO\n\n- **Fato Relevante:** Este aditamento ao acordo de acionistas pode refletir mudanças na estrutura de controle da empresa, o que pode afetar a governança e as decisões estratégicas futuras.\n- **Comunicado ao Mercado (16/06/2026):** Embora não haja fatos relevantes neste documento específico, ele fornece uma visão histórica da empresa, que pode ser útil para entender o contexto do negócio e suas evoluções estratégicas."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 157899,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes."
+  }
 }

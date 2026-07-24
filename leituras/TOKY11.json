@@ -1,7 +1,7 @@
 {
   "ticker": "TOKY11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:56:51",
+  "verificado_em": "2026-07-23T21:46:21",
   "comunicados": {
     "ids": [
       508310549212932111,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 15/06/2026\n\n**O QUE aconteceu:** A Companhia foi deferida o pedido de recuperação judicial.\n\n**Resumo:** O Grupo Toky S.A. obteve a aprovação para processar um pedido de recuperação judicial, conforme decisão da 3ª Vara de Falências e Recuperações Judiciais do Foro Central Cível do Estado de São Paulo.\n\n**Trecho-chave:**\n\"A Companhia foi deferida o processamento do pedido de recuperação judicial da Companhia e de suas subsidiárias.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 23/06/2026\n\n**O QUE aconteceu:** Apresentação dos resultados do primeiro trimestre de 2026.\n\n**Resumo:** O Grupo Toky S.A. apresentou os resultados financeiros do primeiro trimestre de 2026, mostrando uma receita líquida e lucro bruto em declínio, além de uma margem EBITDA ajustada significativamente reduzida.\n\n**Trecho-chave:**\n\"CM III\nReceita Líquida\nCM II\nMargem EBITDA Ajus.\nLucro Bruto\n-15,7% A/A\nR$ 418,6 M\n-18,9% A/A\nR$ 309,4 M\n-6.6 p.p. A/A\n24,0%\" (p. 3)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 23/06/2026\n\n**O QUE aconteceu:** Apresentação dos resultados do quarto trimestre de 2025.\n\n**Resumo:** O Grupo Toky S.A. apresentou os resultados financeiros do quarto trimestre de 2025, destacando uma expansão robusta das margens e a captura acelerada de sinergias entre as empresas Mobly e Tok&Stok.\n\n**Trecho-chave:**\n\"CM III\nReceita Líquida\nCM II\nEBITDA Ajustado\nLucro Bruto\nGMV\n+8,8% A/A\nR$ 507,9 M\n+5,4% A/A\nR$ 393,5 M\n+4,9 p.p. A/A\n52,9%\n+4.3 p.p. A/A\n40,6%\" (p. 4)"
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159195,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Tributário**\n   - **Valor envolvido:** R$ 52.148.797,06\n   - **Chance de perda:** Remota\n   - **Resumo do objeto:** Processo envolvendo execução fiscal decorrente de créditos tributários de ICMS relacionados a vendas emitidas pela filial BA.\n\n2. **Tributário**\n   - **Valor envolvido:** R$ 30.611.076,13\n   - **Chance de perda:** Remota\n   - **Resumo do objeto:** Processo de execução fiscal referente a divergências entre informações declaradas pela Estok e transações com cartões de débito e crédito.\n\n3. **Tributário**\n   - **Valor envolvido:** R$ 10.659.982,87\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** Auto de infração referente ao ano-base de 2017, relacionado a glosa de créditos de PIS e COFINS.\n\n4. **Tributário**\n   - **Valor envolvido:** R$ 9.202.922,73\n   - **Chance de perda:** Remoto\n   - **Resumo do objeto:** Processo administrativo sobre a extinção dos débitos de PIS e COFINS de março, abril e maio de 2017.\n\n5. **Tributário**\n   - **Valor envolvido:** R$ 8.577.818,15\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** Processo administrativo sobre a exigência de IPI do ano-calendário de 2019.\n\n6. **Tributário**\n   - **Valor envolvido:** R$ 8.021.372,68\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** Auto de infração de cobrança de IPI após constatação de creditamento indevido.\n\n7. **Tributário**\n   - **Valor envolvido:** R$ 37.020.469,38\n   - **Chance de perda:**\n     - Provável: R$ 22.211.049,44\n     - Possível: R$ 14.809.419,93\n   - **Resumo do objeto:** Cobrança de contribuição ao PIS e COFINS decorrente da glosa de créditos apropriados.\n\n8. **Trabalhista**\n   - **Valor envolvido:** R$ 200.000,00\n   - **Chance de perda:** Possível\n   - **Resumo do objeto:** Ação civil pública movida pelo sindicato para reconhecimento de legitimidade ativa em face da Companhia e suas controladas."
+  }
 }

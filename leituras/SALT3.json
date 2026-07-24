@@ -1,7 +1,7 @@
 {
   "ticker": "SALT3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:45:29",
+  "verificado_em": "2026-07-23T21:15:22",
   "comunicados": {
     "ids": [
       469326353005170405,
@@ -20,5 +20,10 @@
     ],
     "texto": "### O que aconteceu em 22/04/2026\n\nA Companhia Grupo Salta Educação S.A. celebrou o 3° Aditamento ao Acordo de Acionistas, formalizando ajustes nos Planos de Incentivo de Longo Prazo e outras atualizações necessárias.\n\n*\"O Aditamento teve como finalidade formalizar as alterações decorrentes de ajustes nos Planos de Incentivo de Longo Prazo da Companhia, bem como outros ajustes de atualização necessários.\"* (p. 1)\n\n### O que aconteceu em 15/05/2026\n\nA Companhia Grupo Salta Educação S.A. comunicou a divulgação antecipada das informações trimestrais referentes ao primeiro trimestre de 2026, traduzidas para o inglês.\n\n*\"A Companhia esclarece que a antecipação da referida data está em conformidade com os prazos regulamentares da B3 S.A. – Brasil, Bolsa, Balcão (“B3”) e da Comissão de Valores Mobiliários (\"CVM\"), bem como informa que o calendário de eventos corporativos atualizado se encontra disponível para consulta por meio dos websites da Companhia (https://ri.gruposaltaedu.com/), da CVM (www.gov.br/cvm/pt-br) e da B3 (www.b3.com.br).\"* (p. 1)"
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158479,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Processo n° 5004288-96.2021.4.02.5101 (Tributário)**\n   - **Natureza:** Tributária\n   - **Valor envolvido:** R$ 89.709.350,76\n   - **Chance de perda:** Possível\n   - **Resumo:** Trata-se de uma Ação Declaratória ajuizada pela Companhia em 2021 contra a União Federal, envolvendo um valor significativo relacionado ao IRPJ e CSLL.\n\n2. **Processo n° 0035826-14.2020.8.16.0019 (Cível)**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 6.989.165,04\n   - **Chance de perda:** Possível\n   - **Resumo:** Ação ordinária de cobrança c/c indenização de lucros cessantes e danos morais contra o Sistema Elite de Ensino S.A., envolvendo um valor significativo.\n\n3. **Processo n° 04/351.273/2019 (Tributário)**\n   - **Natureza:** Tributária\n   - **Valor envolvido:** R$ 2.684.077,81\n   - **Chance de perda:** Possível\n   - **Resumo:** Auto de Infração lavrado pela Secretaria Municipal de Fazenda do RJ exigindo ISS referente ao período de julho/2014 a outubro/2018.\n\n4. **Processo n° 0010231-88.2024.5.03.0179 (Trabalhista)**\n   - **Natureza:** Trabalhista\n   - **Valor envolvido:** R$ 74.539,93\n   - **Chance de perda:** Possível\n   - **Resumo:** Ação ajuizada pelo SINPRO/MG contra o Colégio Vimasa S.A., requerendo a declaração de ilegalidade da dispensa dos professores e reintegração com pagamento dos salários vencidos.\n\n5. **Processo n° 0001137-09.2025.5.21.0009 (Trabalhista)**\n   - **Natureza:** Trabalhista\n   - **Valor envolvido:** R$ 10.000,00\n   - **Chance de perda:** Possível\n   - **Resumo:** Ação ajuizada pelo Sindicato dos Empregados em Est Part de Ensino do RN contra o CEI - Centro de Educação Integrada Ltda., requerendo implementação imediata e pagamento retroativo de adicional de insalubridade.\n\n6. **Processo n° 0000910-16.2025.5.21.0010 (Trabalhista)**\n   - **Natureza:** Trabalhista\n   - **Valor envolvido:** R$ 10.000,00\n   - **Chance de perda:** Possível\n   - **Resumo:** Ação ajuizada pelo Sindicato dos Empregados em Est Part de Ensino do RN contra o CELP - Centro Educacional de Parnamirim LTDA - EPP, requerendo implementação imediata e pagamento retroativo de adicional de insalubridade.\n\n7. **Processo n° 0000879-11.2025.5.21.0005 (Trabalhista)**\n   - **Natureza:** Trabalhista\n   - **Valor envolvido:** R$ 10.000,00\n   - **Chance de perda:** Possível\n   - **Resumo:** Ação ajuizada pelo Sindicato dos Empregados em Est Part de Ensino do RN contra o Centro de Educação Integrada Mais LTDA, requerendo implementação imediata e pagamento retroativo de adicional de insalubridade."
+  }
 }

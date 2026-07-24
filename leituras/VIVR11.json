@@ -1,7 +1,7 @@
 {
   "ticker": "VIVR11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-23T00:03:06",
+  "verificado_em": "2026-07-23T21:58:56",
   "comunicados": {
     "ids": [
       826112774699113363,
@@ -20,5 +20,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 30/04/2026\n\n**O que aconteceu:** A Viver Incorporadora e Construtora S.A. aprovou um grupamento de ações.\n\n**Resumo:** A Companhia realizou um grupamento das suas ações ordinárias na proporção de 10:1, com objetivo de adequar o valor de negociação das ações ao mercado de valores mobiliários brasileiro e aumentar a liquidez delas no mercado secundário.\n\n**Trecho-chave:** \"O Grupamento tem como objetivo o enquadramento da cotação das ações de emissão da Companhia em valor igual ou superior a R$ 1,00 (um real) por unidade, conforme exigido no artigo 46, inciso I, do Regulamento de Emissores da B3 S.A. – Brasil, Bolsa, Balcão (\"B3\").\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 22/05/2026\n\n**O que aconteceu:** A Viver Incorporadora e Construtora S.A. alterou a data de divulgação dos resultados do primeiro trimestre de 2026.\n\n**Resumo:** A Companhia adiou a divulgação dos resultados financeiros do 1T26 para o dia 8 de junho de 2026, com apresentação marcada para 12 de junho de 2026 às 14 horas (Horário de Brasília).\n\n**Trecho-chave:** \"Divulgação de Resultados 1T26: 08 de junho de 2026\" e \"Apresentação de Resultados 1T26: 12 de junho de 2026, às 14 horas (Horário de Brasília)\" (p. 1)\n\n### COMUNICADO AO MERCADO entregue em 12/06/2026\n\n**O que aconteceu:** A Viver Incorporadora e Construtora S.A. divulgou os resultados do primeiro trimestre de 2026.\n\n**Resumo:** O comunicado destaca a conclusão do Station Vila Madalena, a redução da dívida total para R$ 21 milhões e a geração de recebíveis de R$ 26,7 milhões. A Companhia também abordou sua visão de futuro focada em novas oportunidades de investimento na cidade de São Paulo.\n\n**Trecho-chave:** \"A obtenção do Habite-se do Station Vila Madalena representa a conclusão de um ciclo relevante para a Companhia e o início da conversão dos recebíveis em caixa por meio dos repasses das unidades comercializadas.\" (p. 5)"
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159413,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "### Processos Relevantes\n\n1. **Processo nº 5012756-17.2020.8.24.0064**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 42.873.263,65\n   - **Chance de perda:** Remoto\n   - **Resumo:** Trata-se de uma ação de execução de quantia certa com pedido de tutela de urgência contra o Projeto Imobiliário Línea SPE 96 LTDA., relacionada ao atraso na conclusão do empreendimento. A sentença final, proferida em 2025, reconheceu a prescrição da pretensão condenatória e extinguiu o processo sem resolução de mérito.\n\n2. **Processo nº 1063175-20.2022.8.26.0053**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 10.000,00\n   - **Chance de perda:** Possível\n   - **Resumo:** Ação de nulidade de atos administrativos c/c obrigação de não fazer contra a Prefeitura do Município de São Paulo, relacionada à implantação do empreendimento no Jardim Alfomares. A sentença parcialmente procedente, proferida em 2023, determinou que o município aprecie a defesa administrativa apresentada pela autora. O processo aguarda arquivamento definitivo.\n\n### Não há processos relevantes declarados para os demais valores informados."
+  }
 }
