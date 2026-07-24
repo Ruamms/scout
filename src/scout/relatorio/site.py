@@ -273,7 +273,7 @@ def _injetar_reportar(destino: Path, url: str) -> int:
 
 def _injetar_analytics(destino: Path, codigo: str) -> int:
     """Injeta o snippet de analytics antes de `</head>` em TODAS as páginas —
-    um único ponto cobre home, listagens, páginas de ativo e apoio. Vazio
+    um único ponto cobre home, listagens e páginas de ativo. Vazio
     quando não há código: nada é injetado (build local/testes ficam limpos)."""
     snippet = relatorio_html.analytics_script(codigo)
     if not snippet:
@@ -472,8 +472,8 @@ input#busca:focus {{ outline:2px solid #8FCB9B; outline-offset:1px; border-color
   <div class="beta-caixa">
     <b>O Scout está em beta.</b>
     <p>Os dados vêm de fontes oficiais, mas o site é novo e pode conter falhas. Encontrou algo estranho?
-    Reporte em <a href="https://github.com/Ruamms/scout/issues" target="_blank" rel="noopener">github.com/Ruamms/scout/issues</a>
-    ou por e-mail: <a href="mailto:ruamms3@gmail.com">ruamms3@gmail.com</a>.</p>
+    Reporte pelo botão "reportar" da página ou em
+    <a href="https://github.com/Ruamms/scout/issues" target="_blank" rel="noopener">github.com/Ruamms/scout/issues</a>.</p>
     <button onclick="fecharBeta()">Entendi</button>
   </div>
 </div>
@@ -1718,8 +1718,7 @@ h2 {{ font-family:'Scout Display',system-ui,sans-serif; font-size:22px; font-wei
     <b>O Scout está em beta.</b>
     <p>Os dados vêm de fontes oficiais, mas o site é novo e pode conter falhas de exibição ou
     leitura. Encontrou algo estranho? Ajude reportando em
-    <a href="https://github.com/Ruamms/scout/issues" target="_blank" rel="noopener">github.com/Ruamms/scout/issues</a>
-    ou por e-mail: <a href="mailto:ruamms3@gmail.com">ruamms3@gmail.com</a>.</p>
+    <a href="https://github.com/Ruamms/scout/issues" target="_blank" rel="noopener">github.com/Ruamms/scout/issues</a>.</p>
     <button onclick="fecharBeta()">Entendi</button>
   </div>
 </div>

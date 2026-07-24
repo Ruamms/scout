@@ -1,7 +1,7 @@
 {
   "ticker": "RAIZ4",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:38:51",
+  "verificado_em": "2026-07-23T21:06:58",
   "comunicados": {
     "ids": [
       758879475324611495,
@@ -19,6 +19,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 06/06/2026\n\n**O que aconteceu:** Raízen S.A. submeteu seu Plano de Recuperação Extrajudicial.\n\n**Resumo:** A Raízen S.A. apresentou um plano para reestruturação financeira, obtendo apoio relevante dos credores e esperando reduzir significativamente sua alavancagem.\n\n**Trecho-chave:**\n\"O Plano conta com a adesão relevante de todos os grupos de credores (detentores de títulos internacionais, títulos locais e bancos) totalizando um apoio de 75,45% dos créditos financeiros e quirografários abrangidos pela Recuperação Extrajudicial e pelo Plano, cujo valor total é de R$ 64,7 bilhões, excluídos os créditos intercompany (os “Créditos Reestruturados”), atendendo aos requisitos do artigo 163 da Lei nº 11.101/2005 (“LFR”).\"\n\n### COMUNICADO AO MERCADO entregue em 20/07/2026\n\n**O que aconteceu:** Raízen S.A. vendeu a Usina Caarapó.\n\n**Resumo:** A Raízen S.A. e sua controlada, Raízen Energia S.A., venderam a Usina Caarapó para Adecoagro Vale do Ivinhema S.A., alinhando-se com a estratégia de otimização do portfólio.\n\n**Trecho-chave:**\n\"O montante total da Operação é estimado em R$ 760.000.000,00 (setecentos e sessenta milhões de reais), sendo que o pagamento será realizado à vista na data de conclusão da Operação, sujeito a eventuais ajustes usuais para negócios desta natureza.\"\n\n### COMUNICADO AO MERCADO entregue em 17/07/2026\n\n**O que aconteceu:** Prorrogação do prazo para reenquadramento da cotação das ações preferenciais.\n\n**Resumo:** A Raízen S.A. obteve um prazo até março de 2027 para apresentar o cronograma e os procedimentos necessários para que as ações preferenciais atinjam o valor mínimo exigido pela B3.\n\n**Trecho-chave:**\n\"A Companhia manterá o mercado oportunamente informado sobre eventuais desdobramentos relevantes relacionados ao tema, nos termos da regulamentação aplicável.\""
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

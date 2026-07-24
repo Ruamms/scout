@@ -1,7 +1,7 @@
 {
   "ticker": "PINE3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:32:42",
+  "verificado_em": "2026-07-23T20:52:01",
   "comunicados": {
     "ids": [
       265860356951633082,
@@ -25,6 +25,5 @@
       "Comunicado ao Mercado"
     ],
     "texto": "### FATO RELEVANTE entregue em 16/07/2026\n\n**O QUE aconteceu:** Cancelamento de ações em tesouraria.\n\n**Resumo:** O Banco Pine S.A. aprovou o cancelamento de 2 milhões de ações preferenciais nominativas mantidas em tesouraria, sem redução do capital social.\n\n**Trecho-chave:**\n\"O Conselho de Administração aprovou, em 16 de julho de 2026, o cancelamento de 2.000.000 (dois milhões) ações preferenciais nominativas de emissão do Banco, atualmente mantidas em tesouraria.\"\n\n### FATO RELEVANTE entregue em 29/06/2026\n\n**O QUE aconteceu:** Reorganização societária no âmbito do controle.\n\n**Resumo:** O acionista controlador do Banco Pine S.A. integralizou a transferência de suas ações para uma sociedade holding, sem alteração do controle da Companhia ou dos direitos dos acionistas.\n\n**Trecho-chave:**\n\"O seu acionista controlador, Sr. Noberto Nogueira Pinheiro, integralizou a totalidade das ações de emissão da Companhia de sua titularidade em aumento de capital da GW Holding Financeira S.A.\"\n\n### FATO RELEVANTE entregue em 12/05/2026\n\n**O QUE aconteceu:** Aprovação de aquisição de ações próprias.\n\n**Resumo:** O Conselho de Administração aprovou a aquisição de até 10 milhões de ações preferenciais e ordinárias para permanência em tesouraria, com objetivo de viabilizar o pagamento de remuneração variável aos administradores e maximizar valor para acionistas.\n\n**Trecho-chave:**\n\"O Conselho de Administração aprovou, em 12 de maio de 2026, a aquisição de ações de emissão do Banco para permanência em tesouraria.\"\n\n### COMUNICADO AO MERCADO entregue em 01/06/2026\n\n**O QUE aconteceu:** Solicitação de esclarecimentos sobre oscilação atípica.\n\n**Resumo:** O Banco Pine S.A. informou que não tem conhecimento de qualquer fato relevante não público que justifique as oscilações nos preços das ações.\n\n**Trecho-chave:**\n\"A Companhia esclarece que não tem conhecimento de qualquer fato ou informação relevante não pública que possa justificar as oscilações mencionadas no Ofício.\"\n\n### COMUNICADO AO MERCADO entregue em 26/05/2026\n\n**O QUE aconteceu:** Reunião do Conselho de Administração para aprovar proposta de Assembleia Geral Extraordinária.\n\n**Resumo:** O Conselho de Administração aprovou a redefinição da quantidade de membros do Conselho e eleição de um novo membro. A Assembleia será realizada em 26 de junho de 2026.\n\n**Trecho-chave:**\n\"Em Reunião do Conselho de Administração da Companhia realizada em 25 de maio de 2026, foi aprovada a apresentação de proposta para aprovação na próxima Assembleia Geral Extraordinária.\""
-  },
-  "modelo": "qwen2.5:7b"
+  }
 }

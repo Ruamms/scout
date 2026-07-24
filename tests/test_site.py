@@ -196,7 +196,8 @@ def test_indice_tem_aviso_de_beta_dispensavel(con, tmp_path):
     indice = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
     assert 'id="aviso-beta"' in indice
     assert "github.com/Ruamms/scout/issues" in indice
-    assert "ruamms3@gmail.com" in indice
+    assert "ruamms3@gmail.com" not in indice  # e-mail pessoal fora do site
+    assert "github.com/Ruamms/scout/issues" in indice
     # dispensável e lembrado entre visitas
     assert "scout-beta-visto" in indice
     assert "function fecharBeta" in indice

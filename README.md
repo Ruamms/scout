@@ -104,13 +104,15 @@ funciona em qualquer Windows sem Python instalado.
 
 **v1 FIIs completa**: Fase 1 (raio-x quantitativo + site) e Fase 2 (IA local sobre relatórios gerenciais, fatos relevantes, comunicados e assembleias + parecer do auditor + gestora + oscilações com contexto + comparador) concluídas. Próximo: outras classes de ativos — acompanhe o [ROADMAP](ROADMAP.md) e a [visão de produto](docs/VISAO.md).
 
-## Apoie
+## Propósito
 
-O projeto é gratuito e sem anúncios. Se ele te ajudou: [página de apoio (PIX)](https://ruamms.github.io/scout/apoie.html).
+O Scout é um **projeto particular, de cunho educacional** — um estudo aberto de desenvolvimento
+de software sobre dados públicos do mercado. É gratuito, sem anúncios, sem doações e **sem fins
+comerciais**; existe para aprender e demonstrar engenharia em público.
 
 ## Aviso legal
 
-Este projeto **não é recomendação de investimento** e seu autor não é analista de valores mobiliários credenciado (Resolução CVM 20/2021). A ferramenta apresenta fatos, indicadores e alertas extraídos de dados públicos, com as respectivas fontes. Rentabilidade passada não garante resultado futuro. Toda decisão de investimento é de responsabilidade exclusiva do investidor.
+Este é um projeto **de cunho educacional**, **não é recomendação de investimento** e seu autor não é analista de valores mobiliários credenciado (Resolução CVM 20/2021). A ferramenta apresenta fatos, indicadores e alertas extraídos de dados públicos, com as respectivas fontes. Rentabilidade passada não garante resultado futuro. Toda decisão de investimento é de responsabilidade exclusiva do investidor.
 
 ## Licença
 

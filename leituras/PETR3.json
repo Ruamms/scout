@@ -1,7 +1,7 @@
 {
   "ticker": "PETR3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T17:56:11",
+  "verificado_em": "2026-07-23T20:47:48",
   "comunicados": {
     "ids": [
       366215782845628680,
@@ -17,5 +17,10 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 13/07/2026\n\n**O QUE aconteceu:** Alteração de participação acionária relevante.\n\n**Resumo:** A Petrobras informou que a GQG Partners LLC passou a ter exposição total de sua carteira de clientes a 185.869.498 ADRs, representando aproximadamente 4,99% das ações ordinárias emitidas pela companhia.\n\n**Trecho-chave:** \"A GQG Partners LLC passaram a ter exposição total de sua carteira de clientes a 185.869.498 (cento e oitenta e cinco milhões, oitocentos e sessenta e nove mil e quatrocentos e noventa e oito) American Depositary Receipts - ADRs, representando aproximadamente 4,99% das ações ordinárias emitidas pela companhia.\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 09/07/2026\n\n**O QUE aconteceu:** Conclusão da aquisição de bloco exploratório em São Tomé e Príncipe.\n\n**Resumo:** A Petrobras concluiu a aquisição do bloco 3, localizado no offshore de São Tomé e Príncipe, na África. O consórcio agora é composto pela Petrobras (operadora, com 75% de participação), Oranto (15%) e a Agência Nacional do Petróleo de São Tomé e Príncipe (10%).\n\n**Trecho-chave:** \"A Petrobras, em continuidade ao comunicado de 17 de abril de 2026, informa que concluiu a aquisição da participação e a assunção da operação do bloco 3, localizado no offshore de São Tomé e Príncipe, na África.\" (p. 1)\n\n**Conexão com o contexto:** Esta aquisição alinha-se à estratégia da Petrobras de recomposição das reservas de óleo e gás por meio da exploração de novas fronteiras, tanto no Brasil quanto no exterior, conforme previsto em seu Plano de Negócios."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159462,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Processo nº 0259040-67.2013.8.19.0001 (Cível)**\n   - Natureza: Cível\n   - Valor envolvido: R$ 2.307.269.142,46\n   - Chance de perda: Remota\n   - Resumo: Condenação da Petrobras por suposta conduta anticoncorrencial na venda de gasolina e derivados no mercado interno.\n\n2. **Processo nº 0008611-60.2006.4.02.5101 (Cível)**\n   - Natureza: Cível\n   - Valor envolvido: R$ 1.107.219.037,13 (contingência ativa)\n   - Chance de perda: Possível\n   - Resumo: Ação em que a Petrobras pleiteia compensação de créditos e débitos existentes com a ANP.\n\n3. **Processo nº 0006519-75.2014.4.03.6112 (Cível)**\n   - Natureza: Cível\n   - Valor envolvido: R$ 26.713.569,45\n   - Chance de perda: Possível\n   - Resumo: Ação que busca anular a 12ª Rodada de Licitações da ANP em relação aos blocos da bacia do Paraná.\n\n4. **Processo nº 0099211-70.2001.8.19.0001 (Trabalhista)**\n   - Natureza: Trabalhista\n   - Valor envolvido: R$ 18.055.160.567,35\n   - Chance de perda: Remota e Possível\n   - Resumo: Ação civil pública para a Petrobras aportar no Plano Petros do Sistema Petrobras.\n\n5. **Processo nº 1002728-84.2018.4.01.3400 (Cível)**\n   - Natureza: Cível\n   - Valor envolvido: R$ 24.389.060.166,12\n   - Chance de perda: Não declarada\n   - Resumo: Ação civil pública para suspensão do plano de equacionamento de déficit e condenação da Petrobras a recompor o déficit."
+  }
 }

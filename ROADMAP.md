@@ -20,7 +20,7 @@ A visão de produto completa (referências de mercado, backlog e decisões de de
 - [x] **M7 — Raio-x do administrador** — seção "Administrador" no terminal e no HTML: outros FIIs da mesma casa com ticker (derivado do ISIN), idade, segmento e **selo individual** (calculado sem cotação), com link cruzado entre relatórios; migração automática da base (recarrega informes mensais para preencher o administrador histórico)
 - [x] **M8 — Ranking / pesquisa avançada** — `scout ranking --por dy|pvp|pl|cotistas|cotacao --top N --sem-alertas --segmento X`: varre a base inteira (~1.300 fundos ativos em segundos), por padrão só fundos com ticker (negociáveis); "sem alertas" = selo verde/amarelo; critério e filtros sempre explícitos no rodapé ("fato ordenado, não recomendação"); relatório do fundo ganhou a seção **Pares do segmento** (5 maiores por PL + média do segmento, com selo e links cruzados)
   - P/VP e cotação nos rankings dependem do cache de cotações (o site do M9 terá todas)
-- [x] **M9 — Site estático** — `scout site` gera índice buscável + página de cada FII negociável + rankings do dia + página de apoio; workflow do GitHub Actions (`.github/workflows/site.yml`) roda 1x/dia útil e publica no GitHub Pages (requer habilitar Pages: Settings → Pages → Source: GitHub Actions)
+- [x] **M9 — Site estático** — `scout site` gera índice buscável + página de cada FII negociável + rankings do dia; workflow do GitHub Actions (`.github/workflows/site.yml`) roda 1x/dia útil e publica no GitHub Pages (requer habilitar Pages: Settings → Pages → Source: GitHub Actions)
 
 ## Fase 2 — Camada qualitativa
 
@@ -81,7 +81,7 @@ Tese: FRE lido por IA (diretoria/processos/partes relacionadas), parecer do audi
 - [x] **Rankings com "ver mais" (23/07/2026, pedido do dono)** — os rankings de FIIs, ETFs, ações e bancos abrem no top 5 e o botão "ver top N" expande até o 20º na própria página (helpers `_rk_oculto`/`_rk_botao` + CSS/JS injetados junto ao menu em todas as listagens)
 
 ## Instrumentação e operação
-- [x] **Analytics sem cookie (GoatCounter)** — FEITO (19/07/2026): páginas vistas + termos de busca (anônimos, agregados), sem cookie e sem banner (LGPD-friendly); só liga com código configurado (`SCOUT_ANALYTICS`); a busca SEM resultado vira caminho próprio (demanda não coberta = combustível do roadmap); sanitizado a `[A-Z0-9]` (texto livre descartado); nota de transparência na página de apoio
+- [x] **Analytics sem cookie (GoatCounter)** — FEITO (19/07/2026): páginas vistas + termos de busca (anônimos, agregados), sem cookie e sem banner (LGPD-friendly); só liga com código configurado (`SCOUT_ANALYTICS`); a busca SEM resultado vira caminho próprio (demanda não coberta = combustível do roadmap); sanitizado a `[A-Z0-9]` (texto livre descartado); nota de transparência (hoje na página de metodologia)
 - [x] **docs/FONTES.md** — referência única de todas as fontes/APIs e o porquê de cada uma
 
 ## Fase 5 — Demais classes
@@ -92,7 +92,7 @@ Tese: FRE lido por IA (diretoria/processos/partes relacionadas), parecer do audi
 
 
 ## Jurídico
-- [x] **Blindagem jurídica v1 (23/07/2026, pedido do dono)** — página pública `metodologia.html` (metodologia, aviso legal, LGPD, canal de correção) linkada no menu de TODO o site; varredura de linguagem confirmou zero termos acusatórios/recomendatórios; flags citam fonte NOMINAL. **Reposicionamento (23/07/2026, decisão do dono)**: o Scout é declarado PROJETO PARTICULAR DE CUNHO EDUCACIONAL (estudo aberto de desenvolvimento de software) na home e na metodologia; a página de apoio/PIX foi REMOVIDA (sem fins comerciais) e o docs/JURIDICO.md foi excluído do repo a pedido — o checklist fora do código segue valendo de memória: advogado de mercado de capitais p/ selos (CVM 20/2021), LGPD/DPO, termos de market data da B3 antes de qualquer monetização, INPI
+- [x] **Blindagem jurídica v1 (23/07/2026, pedido do dono)** — página pública `metodologia.html` (metodologia, aviso legal, LGPD, canal de correção) linkada no menu de TODO o site; varredura de linguagem confirmou zero termos acusatórios/recomendatórios; flags citam fonte NOMINAL. **Reposicionamento (23/07/2026, decisão do dono)**: o Scout é declarado PROJETO PARTICULAR DE CUNHO EDUCACIONAL (estudo aberto de desenvolvimento de software) na home e na metodologia; a página de apoio/PIX foi REMOVIDA (sem fins comerciais) e o docs/JURIDICO.md foi excluído do repo a pedido — o checklist fora do código segue valendo de memória: advogado de mercado de capitais p/ selos (CVM 20/2021), LGPD/DPO, termos de market data da B3 e INPI só se o projeto um dia deixar de ser puramente educacional
 
 ## Princípios que não mudam
 

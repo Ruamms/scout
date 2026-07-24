@@ -1,7 +1,7 @@
 {
   "ticker": "PSSA3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T17:58:41",
+  "verificado_em": "2026-07-23T21:00:05",
   "comunicados": {
     "ids": [
       316509873984680970,
@@ -23,5 +23,10 @@
     ],
     "texto": "### FATO RELEVANTE entregue em 07/05/2026\n\n**O QUE aconteceu:** A Porto Seguro S.A. divulgou projeções de desempenho para o exercício de 2026.\n\n**Resumo:** A companhia apresentou expectativas para seus negócios, mas esclareceu que essas projeções não representam promessas de resultados e podem variar dependendo de fatores externos.\n\n**Trecho-chave:**\n\"A Companhia esclarece que as projeções divulgadas refletem as expectativas da Administração com relação aos negócios da Companhia e não representam, portanto, promessa de desempenho ou resultado. A concretização dessas expectativas dependerá de diversos fatores, muitos deles externos à Companhia, podendo os resultados efetivos diferirem das projeções apresentadas.\"\n\n### FATO RELEVANTE entregue em 06/05/2026\n\n**O QUE aconteceu:** A Porto Seguro S.A. informou que o Conselho de Administração aprovou alterações no programa de recompra de ações.\n\n**Resumo:** O programa foi atualizado para incluir outras corretoras como intermediárias, permitindo maior flexibilidade nos procedimentos da recompra.\n\n**Trecho-chave:**\n\"Os demais termos e condições do Programa de Recompra permanecem inalterados e estarão descritos no Anexo I da Ata de Reunião do Conselho de Administração realizada nesta data, disponibilizada no site de Relações com Investidores da Companhia (https://ri.portoseguro.com.br/) e no sistema da Comissão de Valores Mobiliários (https://sistemas.cvm.gov.br/).\"\n\n### COMUNICADO AO MERCADO entregue em 15/06/2026\n\n**O QUE aconteceu:** A Porto Seguro S.A. divulgou indicadores financeiros e operacionais para o mês de abril de 2026.\n\n**Resumo:** As projeções de prêmios diretos e sinistralidade foram apresentadas, com variações em comparação ao mesmo período do ano anterior.\n\n**Trecho-chave:**\n\"Auto Consolidado: R$ 1,41 bilhão de Prêmios Diretos (+7,4% vs. abr/25) e Sinistralidade de 61,0% (+1,6 p.p. vs. abr/25) em abr/26.\"\n\n### COMUNICADO AO MERCADO entregue em 11/05/2026\n\n**O QUE aconteceu:** A Porto Seguro S.A. divulgou indicadores financeiros e operacionais para o primeiro trimestre de 2026.\n\n**Resumo:** As projeções de prêmios diretos e sinistralidade foram apresentadas, com variações em comparação ao mesmo período do ano anterior.\n\n**Trecho-chave:**\n\"Auto Consolidado: R$ 1,51 bilhão de Prêmios Diretos (+13,1% vs. mar/25) e Sinistralidade de 62,4% (+7,5 p.p. vs. mar/25) em mar/26.\""
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158504,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Natureza:** Tributário  \n   **Valor envolvido:** R$ 881 milhões  \n   **Chance de perda:** Provável  \n   **Resumo:** O processo trata da obrigatoriedade de recolhimento do PIS sobre o faturamento das empresas seguradoras, com valores discutidos superando significativamente o patrimônio líquido da companhia. A chance de perda é provável, já que a decisão final favoreceu a União Federal.\n\n2. **Natureza:** Tributário  \n   **Valor envolvido:** Não declarado (mas referenciado como relevante)  \n   **Chance de perda:** Remota  \n   **Resumo:** O processo trata da conversão em renda dos depósitos judiciais, com a chance remota de perda se o pedido não for atendido."
+  }
 }

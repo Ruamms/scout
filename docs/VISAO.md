@@ -100,16 +100,14 @@ Auditoria do que usamos das referências (Investidor10, AUVP) e das fontes:
 - **O que evitamos de propósito**: nomes dos selos da AUVP (nossos níveis têm nomes e critérios próprios; "Requer atenção" foi renomeado para "Atenção" por coincidir com rótulo deles); textos e thresholds do checklist do Investidor10 (quando implementarmos, critérios e redação próprios); qualquer asset (ícone, imagem, trecho de página) das referências — nada foi copiado para o repo.
 - **Citação de concorrentes**: mencionar Investidor10/AUVP em documentação de análise é uso nominativo legítimo; não usar as marcas deles na interface do produto.
 - **Dados**: CVM e Banco Central são dados públicos oficiais (uso livre). ~~Yahoo Finance é o ponto de atenção~~ — **RESOLVIDO em 19/07/2026**: as cotações migraram para a Série Histórica oficial da B3 (COTAHIST): fechamento D-1, um arquivo cobre a base inteira, ajustes de desdobramento/proventos calculados por código auditável. O Yahoo saiu do projeto; não há mais dependência de API não-oficial.
-- **Nossa marca**: o produto nasceu como "Fato Relevante" (termo genérico de mercado) e foi **renomeado para "Scout" em 18/07/2026** — motivos: o nome antigo nomeava o objeto que o produto lê (ambíguo em conversa e impossível de rankear em busca, que devolve os comunicados reais), e "Scout" funciona como marca-empresa para além de FIIs. Pendências do rebrand antes de uso comercial: busca no INPI (classes de software/serviços financeiros — há "Scout" em outros nichos, ex.: gestora americana Scout Investments) e domínio próprio (scout.com.br está tomado).
+- **Nossa marca**: o produto nasceu como "Fato Relevante" (termo genérico de mercado) e foi **renomeado para "Scout" em 18/07/2026** — motivos: o nome antigo nomeava o objeto que o produto lê (ambíguo em conversa e impossível de rankear em busca, que devolve os comunicados reais), e "Scout" funciona como marca-empresa para além de FIIs. Pendência do rebrand (só se o projeto um dia deixar de ser puramente educacional): busca no INPI e domínio próprio (scout.com.br está tomado).
 
-## Sustentação financeira do site (estratégia registrada em 18/07/2026)
+## Natureza do projeto (decisão de 23/07/2026)
 
-Princípio: transparência radical — o usuário sempre sabe por que está vendo o que está vendo.
-
-1. **Apoio voluntário (já implementado)**: página de PIX com a mensagem "mantenha o site sem anúncios". É o modelo padrão do site.
-2. **Janela de anúncios transparente (ideia para o site, M9+)**: nos períodos de maior volume da B3 (5–10 dias, ex.: temporadas de resultados), exibir anúncios COM aviso prévio: "durante o período X exibiremos anúncios para pagar os custos do site". Fora da janela, zero anúncio.
-   - Pontos a resolver antes de ligar: rede de anúncios sem tracking invasivo (avaliar EthicalAds/Carbon Ads vs AdSense), banner de consentimento/LGPD se houver cookies, e o texto do aviso — a coerência com a promessa "sem anúncios" exige que a janela seja exceção anunciada, não regra silenciosa.
-   - Métrica de decisão: se o apoio voluntário cobrir os custos (GitHub Pages = R$ 0 no início), a janela nem liga.
+O Scout é um **projeto particular, de cunho educacional** — um estudo aberto de desenvolvimento de
+software sobre dados públicos do mercado. **Sem fins comerciais**: sem anúncios, sem doações, sem
+venda de nada. A infraestrutura é gratuita (GitHub Pages) e o custo é zero por desenho. Estratégias
+antigas de sustentação financeira foram descartadas e removidas deste documento.
 
 ## Distribuição / site
 - v1 site: **GitHub Pages + GitHub Actions** (grátis, sem servidor, repo público já dá tudo). Limites confortáveis: 1 GB de site, ~100 GB/mês de banda.

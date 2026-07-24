@@ -1,7 +1,7 @@
 {
   "ticker": "POSI3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:35:15",
+  "verificado_em": "2026-07-23T20:56:55",
   "comunicados": {
     "ids": [
       206975852026500384,
@@ -17,5 +17,10 @@
     ],
     "texto": "### COMUNICADO AO MERCADO entregue em 19/06/2026\n\n**Título:** Executivos realizam entrevista sobre estratégia de transformação da Positivo Tecnologia.\n\n**Resumo:** Os executivos Fabio Faigle e André Kriger discutiram a estratégia de transformação da Positivo Tecnologia em provedor brasileiro de infraestrutura de TI integrada durante uma entrevista com a Ágora Investimentos, que será disponibilizada no canal do YouTube da empresa.\n\n**Trecho-chave:** \"A POSITIVO TECNOLOGIA S.A. (''Companhia'') (B3: POSI3), comunica que os executivos da companhia Fabio Faigle, CFO, e André Kriger, Vice Presidente de Estratégia, realizaram uma entrevista com a Ágora Investimentos (“Ágora”), intitulada “O Novo Ciclo da Positivo Tecnologia”...\" (p. 1)\n\n---\n\n### COMUNICADO AO MERCADO entregue em 11/06/2026\n\n**Título:** Café da Manhã com Investidores discute estratégia de transformação.\n\n**Resumo:** A Positivo Tecnologia realizou um café da manhã com investidores para apresentar sua agenda estratégica, focando na transformação do modelo de negócio do fabricante de hardware em provedor integrado de soluções de infraestrutura e serviços de TI.\n\n**Trecho-chave:** \"AGENDA ESTRATÉGICA: DA VISÃO À REALIDADE\" (p. 1)\n\n**Conexão com indicadores:** O documento apresenta a transformação do modelo de negócio da Positivo Tecnologia, que passará de fabricante de hardware para provedor integrado de soluções de infraestrutura e serviços de TI, refletindo mudanças significativas em sua estratégia e portfólio."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159321,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "1. **Processo Cível e Trabalhista:**\n   - **Natureza:** Cível e Trabalhista\n   - **Valor envolvido:** R$ 26,670,756,32 (trabalhista) + R$ 9,083,798,35 (cível)\n   - **Chance de perda:** Provável (trabalhista), Possível (cível)\n   - **Resumo:** Ação trabalhista proposta pela ECT contra a Positivo Tecnologia S.A. e Novadata Sistemas e Computadores S.A., com valor atualizado de R$ 71,799,416,00, envolvendo multas e questões relacionadas à inscrição nos cadastros restritivos do poder público.\n\n2. **Processo Cível:**\n   - **Natureza:** Cível\n   - **Valor envolvido:** R$ 44,117,016,65 (consumidor) + R$ 9,083,798,35 (cível)\n   - **Chance de perda:** Possível\n   - **Resumo:** Processo judicial com 934 ações consumidoras e 466 ações cíveis, totalizando uma provisão de R$ 40,166,256,32.\n\n3. **Processo Tributário:**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 52,845,668,72 (tributário)\n   - **Chance de perda:** Possível\n   - **Resumo:** Processo administrativo e judicial tributário contra a Receita Federal do Brasil, com valor atualizado de R$ 52,845,668,72 envolvendo diferenças de impostos.\n\n4. **Processo Tributário:**\n   - **Natureza:** Tributário\n   - **Valor envolvido:** R$ 162,268,240,88 (tributário)\n   - **Chance de perda:** Provável\n   - **Resumo:** Processo judicial tributário contra a União – Fazenda Nacional, com valor atualizado de R$ 162,268,240,88 envolvendo o aproveitamento do crédito de II e pagamento da diferença relativa à liminar."
+  }
 }

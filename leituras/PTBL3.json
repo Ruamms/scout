@@ -1,7 +1,7 @@
 {
   "ticker": "PTBL3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:37:40",
+  "verificado_em": "2026-07-23T21:00:32",
   "comunicados": {
     "ids": [
       473805913002353078,
@@ -26,5 +26,10 @@
     ],
     "texto": "### O que aconteceu em 04/05/2026\n\n**Título:** Diretor Vice-Presidente de Finanças e Relações com Investidores (CFO) troca de comando.\n\n**Resumo:** PBG S.A. anunciou a renúncia do Sr. Caio Gonçalves de Moraes ao cargo de CFO, seguida pela eleição do Sr. Ronei Gomes para o mesmo cargo. O Sr. Ronei possui mais de 30 anos de experiência em finanças e liderou processos de transformação na PBG.\n\n**Trecho-chave:**\n\"Na mesma reunião, o Conselho de Administração elegeu o Sr. Ronei Gomes para o cargo de Diretor Vice-Presidente de Finanças e de Relações com Investidores (CFO). O Sr. Ronei é executivo com mais de 30 anos de experiência na área de Finanças, incluindo 20 anos de atuação como CFO em organizações globais.\"\n\n### O que aconteceu em 02/07/2026\n\n**Título:** Autorização para potencial alienação dos ativos da Unidade de Negócios Pointer.\n\n**Resumo:** PBG S.A. autorizou a Diretoria Executiva a dar prosseguimento ao processo visando à potencial alienação dos ativos e marca vinculados à unidade de negócios Pointer para a Cerâmica Almeida Ltda., com condições precedentes usuais.\n\n**Trecho-chave:**\n\"O Conselho de Administração da Companhia autorizou a Diretoria Executiva dar prosseguimento ao processo visando à potencial alienação dos ativos e da marca vinculados à unidade de negócios Pointer para a Cerâmica Almeida Ltda., inscrita no CNPJ sob o nº 44.676.633/0001-90.\"\n\n### O que aconteceu em 03/07/2026\n\n**Título:** Autorização para potencial alienação dos ativos da Unidade de Negócios Pointer.\n\n**Resumo:** PBG S.A. confirmou a autorização anterior, reiterando as condições precedentes e o alinhamento com a estratégia de equalização da estrutura de capital e fortalecimento da execução da estratégia de longo prazo.\n\n**Trecho-chave:**\n\"A potencial transação está alinhada à estratégia da Companhia de equalização de sua estrutura de capital e de fortalecimento da execução de sua estratégia de longo prazo.\"\n\n### Conexão com o contexto:\n- **Fato Relevante entregue em 02/07/2026** e **Fato Relevante entregue em 03/07/2026**: Ambos os comunicados tratam da mesma transação potencial, confirmando a autorização e as condições associadas."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158646,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "### Processo Tributário\n**Processo nº 5043288-86.2023.4.04.7200 e 5005612-70.2024.4.04.7200**\n- **Natureza:** Tributário\n- **Valor envolvido:** R$ 21.827.168,32\n- **Chance de perda:** Possível\n- **Resumo:** Trata-se de uma execução fiscal ajuizada para cobrança de débitos de CSLL remanescentes, com origem em um auto de infração administrativo.\n\n**Processo nº 5000338-70.2021.4.04.7220**\n- **Natureza:** Tributário\n- **Valor envolvido:** R$ 45.109.672,71\n- **Chance de perda:** Possível\n- **Resumo:** Processo de execução fiscal relacionado a glosa de despesas relativas a débitos tributários incluídos no parcelamento instituído pela MP 470/2009.\n\n### Processo Cível\n**Processo nº 5014615-66.2012.4.04.7201**\n- **Natureza:** Cível\n- **Valor envolvido:** R$ 17.005.440,95 (valor provisionado)\n- **Chance de perda:** Possível\n- **Resumo:** Trata-se de um processo em que a União Federal pleiteia indenização por danos materiais causados pela exploração ilegal de minérios, com valor estimado e pendente de decisão judicial.\n\n**Observação:** Não há processos trabalhistas ou ambientais relevantes declarados como prováveis."
+  }
 }

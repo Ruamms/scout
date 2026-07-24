@@ -1,7 +1,7 @@
 {
   "ticker": "PSVM11",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:36:49",
+  "verificado_em": "2026-07-23T21:00:26",
   "comunicados": {
     "ids": [
       895582770151859054,
@@ -23,5 +23,10 @@
     ],
     "texto": "### Ocorrências mais recentes\n\n**07/07/2026 - FATO RELEVANTE**\nO Porto Sudeste V.M. S.A. anunciou um aditivo contratual que aumenta o volume anual para embarques de minério de ferro, passando de 1 milhão de toneladas para até 3 milhões a partir de 2031, e estende o prazo do contrato de 10 para 20 anos. O aditivo também prevê um possível aumento no volume contratado até 7 milhões de toneladas por ano a partir de 2035.\n\n*\"O aditivo contratual, assinado na data de hoje, aumenta o volume anual para os embarques a partir de 1° de janeiro de 2031 de até 2 milhões de toneladas para até 3 milhões, e estende o prazo do contrato de 10 para 20 anos. O aditivo ainda prevê a possibilidade de um novo aumento no volume contratado, sujeito a certas condições previstas no aditivo, podendo chegar até 7 milhões de toneladas por ano a partir de 2035.\"* (p. 1)\n\n---\n\n**15/07/2026 - COMUNICADO AO MERCADO**\nA Porto Sudeste V.M. S.A. informou que não haverá pagamento de royalties aos detentores dos títulos PSVM11 no segundo trimestre de 2026, pois não foi apurado Caixa Disponível para Royalties.\n\n*\"Em decorrência do aviso feito pela PSB, a administração da Companhia informa que não são devidos, portanto não haverá pagamento relativo a Royalties aos titulares de Título PSVM11 com relação ao segundo trimestre de 2026.\"* (p. 1)\n\n---\n\n### Ocorrências anteriores\n\n**04/08/2025 - FATO RELEVANTE**\nA Porto Sudeste V.M. S.A. anunciou a prorrogação e aumento do volume anual de contratos de serviço portuário para embarque de minério de ferro, com empresas como JMN Mineração S.A., Ferro+ Mineração S.A., Empresa de Mineração Esperança S.A. - AVG, e Itaminas Comércio de Minérios S.A.\n\n*\"A Porto Sudeste do Brasil S.A. concluiu a negociação da prorrogação do prazo, do aumento de volume anual e do aumento dos compromissos mínimos de movimentação previstos nos contratos de serviço portuário para embarque de minério de ferro celebrados (i) com a Empresa de Mineração Esperança S.A. - AVG, aumentando o volume anual de aproximadamente até 2 milhões de toneladas para até aproximadamente 4 milhões de toneladas; e (ii) com a Itaminas Comércio de Minérios S.A., aumentando o volume anual de até 4 milhões de toneladas para até aproximadamente 8 milhões de toneladas.\"* (p. 1)\n\n---\n\n**27/04/2026 - COMUNICADO AO MERCADO**\nA Porto Sudeste V.M. S.A. informou o pagamento dos royalties aos detentores dos títulos PSVM11 no primeiro trimestre de 2026, com um valor total bruto de R$ 28.792,89.\n\n*\"Em decorrência do aviso feito pela PSB na presente data, acerca do pagamento de proventos oriundos dos Títulos Port11 de que a Companhia é titular, relativo ao primeiro trimestre de 2026, no montante total bruto de R$ 28.792,89 (vinte e oito mil, setecentos e oitenta e dois reais e oitenta e nove centavos), a administração da Companhia informa que, mediante o efetivo recebimento de tal montante, efetuará o pagamento dos Royalties no valor de R$ 0,00687171800 por Título PSVM11.\"* (p. 2)"
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 159552,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos judiciais relevantes declarados pela companhia até 31 de dezembro de 2025."
+  }
 }

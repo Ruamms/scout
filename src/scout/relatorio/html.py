@@ -50,7 +50,7 @@ TAG_FAVICON = f'<link rel="icon" href="{FAVICON}">'
 
 _SVG_MARCA = _SVG_FAVICON.replace("<svg ", "<svg width='34' height='34' ")
 
-# CSS do cabeçalho de marca, compartilhado por todas as páginas (site, relatório, apoio)
+# CSS do cabeçalho de marca, compartilhado por todas as páginas (site e relatório)
 CSS_MARCA = """
 @font-face { font-family:'Scout Display'; src:url('scout-display.ttf') format('truetype');
   font-weight:400 700; font-display:swap; }

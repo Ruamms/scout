@@ -1,7 +1,7 @@
 {
   "ticker": "PLAS3",
   "sem_relatorio": true,
-  "verificado_em": "2026-07-22T23:32:53",
+  "verificado_em": "2026-07-23T20:52:01",
   "comunicados": {
     "ids": [
       977989944801773438
@@ -14,5 +14,10 @@
     ],
     "texto": "**Data:** 01/08/2025  \n**Título:** Diretor Financeiro e de Relações com Investidores destituído; novo diretor nomeado  \n**Resumo:** Fernando Magano Henriques foi destituído do cargo de Diretor Financeiro e de Relações com Investidores, sendo substituído por Anderson Roveri.  \n**Trecho-chave:** \"Plascar Participações Industriais S.A. vem informar a seus acionistas e ao mercado em geral a destituição de Fernando Magano Henriques do cargo de Diretor Financeiro e de Relações com Investidores na Companhia, para o qual havia sido contratado em julho de 2024.\" (p. 1)\n\nA destituição de Fernando Magano Henriques está relacionada à mudança no departamento financeiro da empresa, que agora será liderado por Anderson Roveri, um profissional com larga experiência na companhia desde 2006."
   },
-  "modelo": "qwen2.5:7b"
+  "processos": {
+    "id": 158006,
+    "referencia": "2026-12-31",
+    "valor_provisionado": null,
+    "texto": "Não há processos relevantes declarados com valores específicos e classificação de risco provável nos termos do FRE da PLAS3."
+  }
 }
