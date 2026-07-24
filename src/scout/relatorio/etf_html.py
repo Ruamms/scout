@@ -174,6 +174,7 @@ def _posicoes_com_links(con: sqlite3.Connection, cnpj: str) -> list[dict]:
                 "pct": linha["pct"],
                 "quantidade": linha["quantidade"] if "quantidade" in linha.keys() else None,
                 "vencimento": linha["vencimento"] if "vencimento" in linha.keys() else None,
+                "grupo": linha["grupo"] if "grupo" in linha.keys() else None,
                 "competencia": linha["competencia"],
                 "ticker_alvo": ticker_alvo,
                 "classe_alvo": classe_alvo,
@@ -346,7 +347,8 @@ def gerar(
         cobertura = (dados.get("reprecificacao") or {}).get("cobertura_pct") or 0
         nota_cobertura = (
             f" · <b>{formato.percentual(cobertura)}</b> da carteira já tem preço de hoje na nossa base "
-            "(ações/FII/ETF, fechamento oficial D-1); o restante (renda fixa/exterior) fica no valor do CDA"
+            "(ações/FII/ETF pelo fechamento oficial D-1; títulos públicos e debêntures pelo PU "
+            "indicativo da ANBIMA); o restante (exterior/cripto) fica no valor do CDA"
             if cobertura
             else ""
         )

@@ -68,3 +68,52 @@ def test_anbima_fora_do_ar_nao_quebra(con, monkeypatch):
     enriquecidas, resumo = precos.reprecificar_posicoes(con, posicoes)
     assert enriquecidas[0]["preco_hoje"] is None  # posição fica no valor do CDA
     assert resumo["cobertura_pct"] == 0.0
+
+
+_DB_ANBIMA = (
+    "ANBIMA - Associacao\n"
+    "\n"
+    "Código@Nome@Repac./  Venc.@Índice/ Correção@Taxa de Compra@Taxa de Venda@Taxa Indicativa@"
+    "Desvio Padrão@Intervalo Min@Intervalo Máx@PU@% PU Par@Duration@% Reune@Referência NTN-B\n"
+    "SBSPD7@CIA SANEAMENTO BASICO SP (*)@15/12/2031@IPCA + 5,2%@--@--@5,1@0@5,0@5,2@1.234,567890@101,2@800@@\n"
+    "JBSS32@JBS S/A (*) (**)@01/08/2030@DI + 1,2%@--@--@1,3@0@1,2@1,4@1042,5@100,1@600@@\n"
+).encode("latin-1")
+
+
+def test_reprecifica_debenture_pelo_pu_anbima(con, monkeypatch):
+    monkeypatch.setattr(precos, "_cache_debentures", None)
+    monkeypatch.setattr(precos, "_baixar_anbima", lambda dia, url=None: _DB_ANBIMA)
+    posicoes = [
+        # debênture com código = nome no CDA: preço + nome do emissor
+        {"codigo": "SBSPD7", "nome": "SBSPD7", "pct": 60.0, "quantidade": 100.0,
+         "vencimento": None, "ticker_alvo": None, "grupo": "Renda Fixa"},
+        # PU pt-BR sem milhar também parseia
+        {"codigo": "JBSS32", "nome": "JBSS32", "pct": 30.0, "quantidade": 10.0,
+         "vencimento": None, "ticker_alvo": None, "grupo": "Renda Fixa"},
+        # fora do arquivo: fica no valor do CDA (nunca inventa)
+        {"codigo": "XXXX99", "nome": "XXXX99", "pct": 10.0, "quantidade": 1.0,
+         "vencimento": None, "ticker_alvo": None, "grupo": "Renda Fixa"},
+    ]
+    enriquecidas, resumo = precos.reprecificar_posicoes(con, posicoes)
+    assert enriquecidas[0]["preco_hoje"] == 1234.56789
+    assert enriquecidas[0]["nome"] == "debênture CIA SANEAMENTO BASICO SP"  # (*) limpo
+    assert enriquecidas[1]["preco_hoje"] == 1042.5
+    assert enriquecidas[2]["preco_hoje"] is None
+    assert resumo["cobertura_pct"] == 90.0
+
+
+def test_debenture_so_consulta_anbima_para_renda_fixa(con, monkeypatch):
+    chamadas = []
+    monkeypatch.setattr(precos, "_cache_debentures", None)
+    monkeypatch.setattr(
+        precos, "_baixar_anbima", lambda dia, url=None: chamadas.append(1) or _DB_ANBIMA
+    )
+    # ação sem pregão e ativo do exterior NÃO disparam o download do arquivo
+    posicoes = [
+        {"codigo": "MORT11", "nome": "deslistada", "pct": 50.0, "quantidade": 1.0,
+         "vencimento": None, "ticker_alvo": None, "grupo": "Ações"},
+        {"codigo": "BRCYCRD03M11", "nome": "exterior", "pct": 50.0, "quantidade": 1.0,
+         "vencimento": None, "ticker_alvo": None, "grupo": "Exterior"},
+    ]
+    precos.reprecificar_posicoes(con, posicoes)
+    assert chamadas == []

@@ -11,9 +11,14 @@ ativo — e cada tipo pluga na sua fonte:
   (ms{AAMMDD}.txt, público, diário, sem autenticação) — cobre TODOS os
   vencimentos (o Tesouro Direto só tem os de varejo). A chave é
   (Código SELIC, vencimento), exatamente o que o CDA informa (CD_SELIC+DT_VENC).
-- Debêntures / Exterior / Cripto -> ainda sem preço POR ATIVO; retorna None e a
-  posição fica no valor informado à CVM. Quando a fonte existir, é só adicionar
-  um ramo aqui — nada mais no resto do código muda ("deixa tudo pronto").
+- Debênture -> PU indicativo do secundário de DEBÊNTURES da ANBIMA
+  (db{AAMMDD}.txt, mesma família pública do ms — o endpoint NOVO da ANBIMA
+  cobra auth, mas a rota legada segue aberta; probe 23/07/2026, ~1.270
+  debêntures/dia). A chave é o próprio CÓDIGO do papel (SBSPD7, JBSS32…),
+  que é o CD_ATIVO que o CDA informa.
+- Exterior / Cripto -> ainda sem preço POR ATIVO; retorna None e a posição
+  fica no valor informado à CVM. Quando a fonte existir, é só adicionar um
+  ramo aqui — nada mais no resto do código muda ("deixa tudo pronto").
 
 Nunca inventa preço: se não há fonte, é None.
 """
@@ -28,16 +33,18 @@ from . import armazenamento
 
 _TICKER_ACAO = re.compile(r"^[A-Z]{4}\d{1,2}$")  # PETR4, VALE3, ITUB4…
 _URL_ANBIMA = "https://www.anbima.com.br/informacoes/merc-sec/arqs/ms{d:%y%m%d}.txt"
+_URL_ANBIMA_DEB = "https://www.anbima.com.br/informacoes/merc-sec-debentures/arqs/db{d:%y%m%d}.txt"
 _cache_anbima: dict | None = None  # {(cd_selic, venc_iso): {pu, titulo, data}} — 1 download por run
+_cache_debentures: dict | None = None  # {codigo: {pu, data, emissor}} — 1 download por run
 
 
-def _baixar_anbima(dia: date) -> bytes | None:
+def _baixar_anbima(dia: date, url: str = _URL_ANBIMA) -> bytes | None:
     import urllib.error
     import urllib.request
 
     try:
         requisicao = urllib.request.Request(
-            _URL_ANBIMA.format(d=dia), headers={"User-Agent": "Mozilla/5.0"}
+            url.format(d=dia), headers={"User-Agent": "Mozilla/5.0"}
         )
         with urllib.request.urlopen(requisicao, timeout=30) as resposta:
             return resposta.read()
@@ -79,6 +86,40 @@ def _pu_titulos_publicos(hoje: date | None = None) -> dict:
         if tabela:
             break
     _cache_anbima = tabela
+    return tabela
+
+
+def _pu_debentures(hoje: date | None = None) -> dict:
+    """PU indicativo do secundário de debêntures da ANBIMA, por CÓDIGO do
+    papel. Recuo de até 5 dias (fim de semana/feriado); falhou tudo = vazio,
+    as posições ficam no valor do CDA (nunca inventa)."""
+    global _cache_debentures
+    if _cache_debentures is not None:
+        return _cache_debentures
+    hoje = hoje or date.today()
+    tabela: dict = {}
+    for recuo in range(6):
+        dia = hoje - timedelta(days=recuo)
+        conteudo = _baixar_anbima(dia, _URL_ANBIMA_DEB)
+        if not conteudo:
+            continue
+        for linha in conteudo.decode("latin-1", "replace").splitlines():
+            partes = linha.split("@")
+            # Código@Nome@Repac/Venc@Índice@TxCompra@TxVenda@TxIndicativa@Desvio@Min@Máx@PU@...
+            if len(partes) < 11:
+                continue
+            codigo = partes[0].strip().upper()
+            if not re.fullmatch(r"[A-Z0-9]{4,8}", codigo):
+                continue  # cabeçalho e linhas de texto ficam de fora
+            try:
+                pu = float(partes[10].replace(".", "").replace(",", "."))
+            except ValueError:
+                continue
+            emissor = re.sub(r"\s*\(\*+\)", "", partes[1]).strip()
+            tabela[codigo] = {"pu": pu, "data": dia.isoformat(), "emissor": emissor}
+        if tabela:
+            break
+    _cache_debentures = tabela
     return tabela
 
 
@@ -128,6 +169,19 @@ def reprecificar_posicoes(
                     nome_novo = (
                         f"{titulo['titulo']} (venc. {vencimento[8:10]}/{vencimento[5:7]}/{vencimento[:4]})"
                     )
+            elif (
+                posicao.get("grupo") == "Renda Fixa"
+                and 4 <= len(codigo) <= 8
+                and not codigo.startswith("TPF")
+            ):
+                # renda fixa privada do CDA: o código do papel é a chave do
+                # secundário de debêntures da ANBIMA (o gate pelo grupo evita
+                # baixar o arquivo à toa para ações/exterior sem preço)
+                debenture = _pu_debentures().get(codigo)
+                if debenture:
+                    cotacao = {"preco": debenture["pu"], "cotado_em": debenture["data"]}
+                    if debenture["emissor"] and (posicao.get("nome") or "") in ("", codigo):
+                        nome_novo = f"debênture {debenture['emissor']}"
         quantidade = posicao.get("quantidade")
         valor_hoje = (
             cotacao["preco"] * quantidade if (cotacao and quantidade) else None
